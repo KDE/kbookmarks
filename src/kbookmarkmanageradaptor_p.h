@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2006 Thiago Macieira <thiago@kde.org>
 
@@ -36,9 +35,9 @@ public Q_SLOTS:
     void notifyCompleteChange();
 
 Q_SIGNALS:
-    void bookmarkCompleteChange( QString caller );
+    void bookmarkCompleteChange(QString caller);
 
-    void bookmarksChanged( QString groupAddress );
+    void bookmarksChanged(QString groupAddress);
 
     void bookmarkConfigChanged();
 };

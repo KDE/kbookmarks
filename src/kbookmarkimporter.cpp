@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2003 Alexander Kellett <lypanov@kde.org>
 
@@ -38,61 +37,63 @@
 
 void KXBELBookmarkImporterImpl::parse()
 {
-  // qDebug() << "KXBELBookmarkImporterImpl::parse()";
-  KBookmarkManager *manager = KBookmarkManager::managerForFile(m_fileName, QString());
-  KBookmarkGroup root = manager->root();
-  traverse(root);
-  // FIXME delete it!
-  // delete manager;
+    // qDebug() << "KXBELBookmarkImporterImpl::parse()";
+    KBookmarkManager *manager = KBookmarkManager::managerForFile(m_fileName, QString());
+    KBookmarkGroup root = manager->root();
+    traverse(root);
+    // FIXME delete it!
+    // delete manager;
 }
 
 void KXBELBookmarkImporterImpl::visit(const KBookmark &bk)
 {
-  // qDebug() << "KXBELBookmarkImporterImpl::visit";
-  if (bk.isSeparator())
-    emit newSeparator();
-  else
-    emit newBookmark(bk.fullText(), bk.url().toString(), "");
+    // qDebug() << "KXBELBookmarkImporterImpl::visit";
+    if (bk.isSeparator()) {
+        emit newSeparator();
+    } else {
+        emit newBookmark(bk.fullText(), bk.url().toString(), "");
+    }
 }
 
 void KXBELBookmarkImporterImpl::visitEnter(const KBookmarkGroup &grp)
 {
-  // qDebug() << "KXBELBookmarkImporterImpl::visitEnter";
-  emit newFolder(grp.fullText(), false, "");
+    // qDebug() << "KXBELBookmarkImporterImpl::visitEnter";
+    emit newFolder(grp.fullText(), false, "");
 }
 
 void KXBELBookmarkImporterImpl::visitLeave(const KBookmarkGroup &)
 {
-  // qDebug() << "KXBELBookmarkImporterImpl::visitLeave";
-  emit endFolder();
+    // qDebug() << "KXBELBookmarkImporterImpl::visitLeave";
+    emit endFolder();
 }
 
 void KBookmarkImporterBase::setupSignalForwards(QObject *src, QObject *dst)
 {
-  connect(src, SIGNAL( newBookmark( const QString &, const QString &, const QString & ) ),
-          dst, SIGNAL( newBookmark( const QString &, const QString &, const QString & ) ));
-  connect(src, SIGNAL( newFolder( const QString &, bool, const QString & ) ),
-          dst, SIGNAL( newFolder( const QString &, bool, const QString & ) ));
-  connect(src, SIGNAL( newSeparator() ),
-          dst, SIGNAL( newSeparator() ) );
-  connect(src, SIGNAL( endFolder() ),
-          dst, SIGNAL( endFolder() ) );
+    connect(src, SIGNAL(newBookmark(QString,QString,QString)),
+            dst, SIGNAL(newBookmark(QString,QString,QString)));
+    connect(src, SIGNAL(newFolder(QString,bool,QString)),
+            dst, SIGNAL(newFolder(QString,bool,QString)));
+    connect(src, SIGNAL(newSeparator()),
+            dst, SIGNAL(newSeparator()));
+    connect(src, SIGNAL(endFolder()),
+            dst, SIGNAL(endFolder()));
 }
 
-KBookmarkImporterBase* KBookmarkImporterBase::factory( const QString &type )
+KBookmarkImporterBase *KBookmarkImporterBase::factory(const QString &type)
 {
-  if (type == "netscape")
-    return new KNSBookmarkImporterImpl;
-  else if (type == "mozilla")
-    return new KMozillaBookmarkImporterImpl;
-  else if (type == "xbel")
-    return new KXBELBookmarkImporterImpl;
-  else if (type == "ie")
-    return new KIEBookmarkImporterImpl;
-  else if (type == "opera")
-    return new KOperaBookmarkImporterImpl;
-  else
-    return 0;
+    if (type == "netscape") {
+        return new KNSBookmarkImporterImpl;
+    } else if (type == "mozilla") {
+        return new KMozillaBookmarkImporterImpl;
+    } else if (type == "xbel") {
+        return new KXBELBookmarkImporterImpl;
+    } else if (type == "ie") {
+        return new KIEBookmarkImporterImpl;
+    } else if (type == "opera") {
+        return new KOperaBookmarkImporterImpl;
+    } else {
+        return 0;
+    }
 }
 
 #include "moc_kbookmarkimporter.cpp"

@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2006 Thiago Macieira <thiago@kde.org>
 
@@ -29,7 +28,7 @@ KBookmarkManagerAdaptor::KBookmarkManagerAdaptor(KBookmarkManager *parent)
 
 void KBookmarkManagerAdaptor::notifyCompleteChange()
 {
-    static_cast<KBookmarkManager*>(parent())->notifyCompleteChange(QString());
+    static_cast<KBookmarkManager *>(parent())->notifyCompleteChange(QString());
 }
 
 #include "moc_kbookmarkmanageradaptor_p.cpp"

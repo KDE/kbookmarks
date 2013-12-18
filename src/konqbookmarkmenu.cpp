@@ -35,7 +35,7 @@
 #include "kbookmarkimporter_ie.h"
 #include "kbookmarkmenu_p.h"
 
-KonqBookmarkContextMenu::KonqBookmarkContextMenu(const KBookmark & bm, KBookmarkManager * mgr, KBookmarkOwner * owner)
+KonqBookmarkContextMenu::KonqBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *mgr, KBookmarkOwner *owner)
     : KBookmarkContextMenu(bm, mgr, owner)
 {
 }
@@ -44,42 +44,35 @@ KonqBookmarkContextMenu::~KonqBookmarkContextMenu()
 {
 }
 
-
 void KonqBookmarkContextMenu::addActions()
 {
-  KConfigGroup config = KSharedConfig::openConfig("kbookmarkrc", KConfig::NoGlobals)->group("Bookmarks");
-  bool filteredToolbar = config.readEntry( "FilteredToolbar", false );
+    KConfigGroup config = KSharedConfig::openConfig("kbookmarkrc", KConfig::NoGlobals)->group("Bookmarks");
+    bool filteredToolbar = config.readEntry("FilteredToolbar", false);
 
-  if (bookmark().isGroup())
-  {
-    addOpenFolderInTabs();
-    addBookmark();
+    if (bookmark().isGroup()) {
+        addOpenFolderInTabs();
+        addBookmark();
 
-    if(filteredToolbar)
-    {
-        QString text = bookmark().showInToolbar() ? tr("Hide in toolbar") : tr("Show in toolbar");
-        addAction( QIcon::fromTheme(""), text, this, SLOT( toggleShowInToolbar()));
+        if (filteredToolbar) {
+            QString text = bookmark().showInToolbar() ? tr("Hide in toolbar") : tr("Show in toolbar");
+            addAction(QIcon::fromTheme(""), text, this, SLOT(toggleShowInToolbar()));
+        }
+
+        addFolderActions();
+    } else {
+        if (owner()) {
+            addAction(QIcon::fromTheme("window-new"), tr("Open in New Window"), this, SLOT(openInNewWindow()));
+            addAction(QIcon::fromTheme("tab-new"), tr("Open in New Tab"), this, SLOT(openInNewTab()));
+        }
+        addBookmark();
+
+        if (filteredToolbar) {
+            QString text = bookmark().showInToolbar() ? tr("Hide in toolbar") : tr("Show in toolbar");
+            addAction(QIcon::fromTheme(""), text, this, SLOT(toggleShowInToolbar()));
+        }
+
+        addBookmarkActions();
     }
-
-    addFolderActions();
-  }
-  else
-  {
-    if(owner())
-    {
-      addAction( QIcon::fromTheme("window-new"), tr( "Open in New Window" ), this, SLOT( openInNewWindow() ) );
-      addAction( QIcon::fromTheme("tab-new"), tr( "Open in New Tab" ), this, SLOT( openInNewTab() ) );
-    }
-    addBookmark();
-
-    if(filteredToolbar)
-    {
-        QString text = bookmark().showInToolbar() ? tr("Hide in toolbar") : tr("Show in toolbar");
-        addAction( QIcon::fromTheme(""), text, this, SLOT( toggleShowInToolbar()));
-    }
-
-    addBookmarkActions();
-  }
 }
 
 void KonqBookmarkContextMenu::toggleShowInToolbar()
@@ -90,12 +83,12 @@ void KonqBookmarkContextMenu::toggleShowInToolbar()
 
 void KonqBookmarkContextMenu::openInNewTab()
 {
-  owner()->openInNewTab(bookmark());
+    owner()->openInNewTab(bookmark());
 }
 
 void KonqBookmarkContextMenu::openInNewWindow()
 {
-  owner()->openInNewWindow(bookmark());
+    owner()->openInNewWindow(bookmark());
 }
 
 /******************************/
@@ -104,80 +97,75 @@ void KonqBookmarkContextMenu::openInNewWindow()
 
 void KonqBookmarkMenu::fillDynamicBookmarks()
 {
-  if ( isDirty()
-       && KBookmarkManager::userBookmarksManager()->path() == manager()->path() )
-  {
-    bool haveSep = false;
+    if (isDirty()
+            && KBookmarkManager::userBookmarksManager()->path() == manager()->path()) {
+        bool haveSep = false;
 
-    const QStringList keys = KonqBookmarkMenu::dynamicBookmarksList();
-    for ( QStringList::const_iterator it = keys.begin(); it != keys.end(); ++it )
-    {
-      DynMenuInfo info;
-      info = showDynamicBookmarks((*it));
+        const QStringList keys = KonqBookmarkMenu::dynamicBookmarksList();
+        for (QStringList::const_iterator it = keys.begin(); it != keys.end(); ++it) {
+            DynMenuInfo info;
+            info = showDynamicBookmarks((*it));
 
-      if ( !info.show || !QFile::exists( info.location ) )
-        continue;
+            if (!info.show || !QFile::exists(info.location)) {
+                continue;
+            }
 
-      if (!haveSep)
-      {
-        parentMenu()->addSeparator();
-        haveSep = true;
-      }
+            if (!haveSep) {
+                parentMenu()->addSeparator();
+                haveSep = true;
+            }
 
-      KActionMenu * actionMenu;
-      actionMenu = new KActionMenu( QIcon::fromTheme(info.type), info.name, this );
-      m_actionCollection->addAction( "kbookmarkmenu", actionMenu );
+            KActionMenu *actionMenu;
+            actionMenu = new KActionMenu(QIcon::fromTheme(info.type), info.name, this);
+            m_actionCollection->addAction("kbookmarkmenu", actionMenu);
 
-      parentMenu()->addAction(actionMenu);
-      m_actions.append( actionMenu );
+            parentMenu()->addAction(actionMenu);
+            m_actions.append(actionMenu);
 
-      KImportedBookmarkMenu *subMenu =
-        new KImportedBookmarkMenu( manager(), owner(), actionMenu->menu(),
-                                   info.type, info.location);
-      m_lstSubMenus.append( subMenu );
+            KImportedBookmarkMenu *subMenu =
+                new KImportedBookmarkMenu(manager(), owner(), actionMenu->menu(),
+                                          info.type, info.location);
+            m_lstSubMenus.append(subMenu);
+        }
     }
-  }
 }
 
 void KonqBookmarkMenu::refill()
 {
-  if(isRoot())
-    addActions();
-  fillDynamicBookmarks();
-  fillBookmarks();
-  if(!isRoot())
-    addActions();
+    if (isRoot()) {
+        addActions();
+    }
+    fillDynamicBookmarks();
+    fillBookmarks();
+    if (!isRoot()) {
+        addActions();
+    }
 }
 
-QAction* KonqBookmarkMenu::actionForBookmark(const KBookmark &bm)
+QAction *KonqBookmarkMenu::actionForBookmark(const KBookmark &bm)
 {
-  if ( bm.isGroup() )
-  {
-    // qDebug() << "Creating Konq bookmark submenu named " << bm.text();
-    KBookmarkActionMenu * actionMenu = new KBookmarkActionMenu( bm, this );
-    m_actionCollection->addAction( "kbookmarkmenu", actionMenu );
-    m_actions.append( actionMenu );
+    if (bm.isGroup()) {
+        // qDebug() << "Creating Konq bookmark submenu named " << bm.text();
+        KBookmarkActionMenu *actionMenu = new KBookmarkActionMenu(bm, this);
+        m_actionCollection->addAction("kbookmarkmenu", actionMenu);
+        m_actions.append(actionMenu);
 
-    KBookmarkMenu *subMenu = new KonqBookmarkMenu( manager(), owner(), actionMenu, bm.address() );
+        KBookmarkMenu *subMenu = new KonqBookmarkMenu(manager(), owner(), actionMenu, bm.address());
 
-    m_lstSubMenus.append( subMenu );
-    return actionMenu;
-  }
-  else if( bm.isSeparator() )
-  {
-    return KBookmarkMenu::actionForBookmark(bm);
-  }
-  else
-  {
-    // qDebug() << "Creating Konq bookmark action named " << bm.text();
-    KBookmarkAction * action = new KBookmarkAction( bm, owner(), this );
-    m_actionCollection->addAction(action->objectName(), action);
-    m_actions.append( action );
-    return action;
-  }
+        m_lstSubMenus.append(subMenu);
+        return actionMenu;
+    } else if (bm.isSeparator()) {
+        return KBookmarkMenu::actionForBookmark(bm);
+    } else {
+        // qDebug() << "Creating Konq bookmark action named " << bm.text();
+        KBookmarkAction *action = new KBookmarkAction(bm, owner(), this);
+        m_actionCollection->addAction(action->objectName(), action);
+        m_actions.append(action);
+        return action;
+    }
 }
 
-KonqBookmarkMenu::DynMenuInfo KonqBookmarkMenu::showDynamicBookmarks( const QString &id )
+KonqBookmarkMenu::DynMenuInfo KonqBookmarkMenu::showDynamicBookmarks(const QString &id)
 {
     KConfig bookmarkrc("kbookmarkrc", KConfig::NoGlobals);
     KConfigGroup config(&bookmarkrc, "Bookmarks");
@@ -202,8 +190,9 @@ QStringList KonqBookmarkMenu::dynamicBookmarksList()
     KConfigGroup config = KSharedConfig::openConfig("kbookmarkrc", KConfig::NoGlobals)->group("Bookmarks");
 
     QStringList mlist;
-    if (config.hasKey("DynamicMenus"))
+    if (config.hasKey("DynamicMenus")) {
         mlist = config.readEntry("DynamicMenus", QStringList());
+    }
 
     return mlist;
 }
@@ -234,11 +223,12 @@ void KonqBookmarkMenu::setDynamicBookmarks(const QString &id, const DynMenuInfo 
     config.sync();
 }
 
-QMenu * KonqBookmarkMenu::contextMenu(QAction * action)
+QMenu *KonqBookmarkMenu::contextMenu(QAction *action)
 {
-    KBookmarkActionInterface* act = dynamic_cast<KBookmarkActionInterface *>(action);
-    if (!act)
+    KBookmarkActionInterface *act = dynamic_cast<KBookmarkActionInterface *>(action);
+    if (!act) {
         return 0;
+    }
     return new KonqBookmarkContextMenu(act->bookmark(), manager(), owner());
 }
 

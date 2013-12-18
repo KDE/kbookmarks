@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2002 Alexander Kellett <lypanov@kde.org>
 
@@ -40,11 +39,13 @@ private:
 class KBOOKMARKS_EXPORT KIEBookmarkExporterImpl : public KBookmarkExporterBase
 {
 public:
-    KIEBookmarkExporterImpl(KBookmarkManager* mgr, const QString & path)
-      : KBookmarkExporterBase(mgr, path)
-    { ; }
+    KIEBookmarkExporterImpl(KBookmarkManager *mgr, const QString &path)
+        : KBookmarkExporterBase(mgr, path)
+    {
+        ;
+    }
     virtual ~KIEBookmarkExporterImpl() {}
-    virtual void write(const KBookmarkGroup&);
+    virtual void write(const KBookmarkGroup &);
 private:
     class KIEBookmarkExporterImplPrivate *d;
 };

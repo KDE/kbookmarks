@@ -40,9 +40,11 @@ private:
 class KBOOKMARKS_EXPORT KOperaBookmarkExporterImpl : public KBookmarkExporterBase
 {
 public:
-    KOperaBookmarkExporterImpl(KBookmarkManager* mgr, const QString & filename)
-      : KBookmarkExporterBase(mgr, filename)
-    { ; }
+    KOperaBookmarkExporterImpl(KBookmarkManager *mgr, const QString &filename)
+        : KBookmarkExporterBase(mgr, filename)
+    {
+        ;
+    }
     virtual ~KOperaBookmarkExporterImpl() {}
     virtual void write(const KBookmarkGroup &parent);
 private:

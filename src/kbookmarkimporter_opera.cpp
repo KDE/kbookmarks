@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2002-2003 Alexander Kellett <lypanov@kde.org>
 
@@ -33,35 +32,37 @@
 
 #include "kbookmarkimporter.h"
 
-void KOperaBookmarkImporter::parseOperaBookmarks( )
+void KOperaBookmarkImporter::parseOperaBookmarks()
 {
-   QFile file(m_fileName);
-   if(!file.open(QIODevice::ReadOnly)) {
-      return;
-   }
+    QFile file(m_fileName);
+    if (!file.open(QIODevice::ReadOnly)) {
+        return;
+    }
 
-   QTextCodec * codec = QTextCodec::codecForName("UTF-8");
-   Q_ASSERT(codec);
-   if (!codec)
-      return;
+    QTextCodec *codec = QTextCodec::codecForName("UTF-8");
+    Q_ASSERT(codec);
+    if (!codec) {
+        return;
+    }
 
-   QString url, name, type;
-   int lineno = 0;
-   QTextStream stream(&file);
-   stream.setCodec(codec);
-   while(! stream.atEnd()) {
+    QString url, name, type;
+    int lineno = 0;
+    QTextStream stream(&file);
+    stream.setCodec(codec);
+    while (! stream.atEnd()) {
         lineno++;
         QString line = stream.readLine().trimmed();
 
         // first two headers lines contain details about the format
         if (lineno <= 2) {
             if (line.toLower().startsWith(QLatin1String("options:"))) {
-                foreach(const QString &ba, line.mid(8).split(',')) {
+                foreach (const QString &ba, line.mid(8).split(',')) {
                     const int pos = ba.indexOf('=');
-                    if (pos < 1)
+                    if (pos < 1) {
                         continue;
+                    }
                     const QString key = ba.left(pos).trimmed().toLower();
-                    const QString value = ba.mid(pos+1).trimmed();
+                    const QString value = ba.mid(pos + 1).trimmed();
                 }
             }
             continue;
@@ -70,12 +71,13 @@ void KOperaBookmarkImporter::parseOperaBookmarks( )
         // at least up till version<=3 the following is valid
         if (line.isEmpty()) {
             // end of data block
-            if (type.isNull())
+            if (type.isNull()) {
                 continue;
-            else if ( type == "URL")
-                emit newBookmark( name, url, "" );
-            else if (type == "FOLDER" )
-                emit newFolder( name, false, "" );
+            } else if (type == "URL") {
+                emit newBookmark(name, url, "");
+            } else if (type == "FOLDER") {
+                emit newFolder(name, false, "");
+            }
 
             type.clear();
             name.clear();
@@ -86,61 +88,71 @@ void KOperaBookmarkImporter::parseOperaBookmarks( )
         } else {
             // data block line
             QString tag;
-            if ( tag = '#', line.startsWith( tag ) )
-                type = line.remove( 0, tag.length() );
-            else if ( tag = "NAME=", line.startsWith( tag ) )
+            if (tag = '#', line.startsWith(tag)) {
+                type = line.remove(0, tag.length());
+            } else if (tag = "NAME=", line.startsWith(tag)) {
                 name = line.remove(0, tag.length());
-            else if ( tag = "URL=", line.startsWith( tag ) )
+            } else if (tag = "URL=", line.startsWith(tag)) {
                 url = line.remove(0, tag.length());
+            }
         }
-   }
+    }
 }
 
 QString KOperaBookmarkImporter::operaBookmarksFile()
 {
-   static KOperaBookmarkImporterImpl *p = 0;
-   if (!p)
-       p = new KOperaBookmarkImporterImpl;
-   return p->findDefaultLocation();
+    static KOperaBookmarkImporterImpl *p = 0;
+    if (!p) {
+        p = new KOperaBookmarkImporterImpl;
+    }
+    return p->findDefaultLocation();
 }
 
-void KOperaBookmarkImporterImpl::parse() {
-   KOperaBookmarkImporter importer(m_fileName);
-   setupSignalForwards(&importer, this);
-   importer.parseOperaBookmarks();
+void KOperaBookmarkImporterImpl::parse()
+{
+    KOperaBookmarkImporter importer(m_fileName);
+    setupSignalForwards(&importer, this);
+    importer.parseOperaBookmarks();
 }
 
 QString KOperaBookmarkImporterImpl::findDefaultLocation(bool saving) const
 {
-   return saving ? QFileDialog::getSaveFileName(QApplication::activeWindow(), QString(),
-                       QDir::homePath() + "/.opera",
-                       tr("Opera Bookmark Files (*.adr)"))
-                 : QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(),
-                       QDir::homePath() + "/.opera",
-                       tr("*.adr|Opera Bookmark Files (*.adr)"));
+    return saving ? QFileDialog::getSaveFileName(QApplication::activeWindow(), QString(),
+            QDir::homePath() + "/.opera",
+            tr("Opera Bookmark Files (*.adr)"))
+           : QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(),
+                                          QDir::homePath() + "/.opera",
+                                          tr("*.adr|Opera Bookmark Files (*.adr)"));
 }
 
 /////////////////////////////////////////////////
 
-class OperaExporter : private KBookmarkGroupTraverser {
+class OperaExporter : private KBookmarkGroupTraverser
+{
 public:
     OperaExporter();
-    QString generate( const KBookmarkGroup &grp ) { traverse(grp); return m_string; }
+    QString generate(const KBookmarkGroup &grp)
+    {
+        traverse(grp);
+        return m_string;
+    }
 private:
-    virtual void visit( const KBookmark & );
-    virtual void visitEnter( const KBookmarkGroup & );
-    virtual void visitLeave( const KBookmarkGroup & );
+    virtual void visit(const KBookmark &);
+    virtual void visitEnter(const KBookmarkGroup &);
+    virtual void visitLeave(const KBookmarkGroup &);
 private:
     QString m_string;
     QTextStream m_out;
 };
 
-OperaExporter::OperaExporter() : m_out(&m_string, QIODevice::WriteOnly) {
+OperaExporter::OperaExporter() : m_out(&m_string, QIODevice::WriteOnly)
+{
     m_out << "Opera Hotlist version 2.0" << endl;
     m_out << "Options: encoding = utf8, version=3" << endl;
 }
 
-void OperaExporter::visit( const KBookmark &bk ) {
+void OperaExporter::visit(const KBookmark &bk)
+{
     // qDebug() << "visit(" << bk.text() << ")";
     m_out << "#URL" << endl;
     m_out << "\tNAME=" << bk.fullText() << endl;
@@ -148,26 +160,29 @@ void OperaExporter::visit( const KBookmark &bk ) {
     m_out << endl;
 }
 
-void OperaExporter::visitEnter( const KBookmarkGroup &grp ) {
+void OperaExporter::visitEnter(const KBookmarkGroup &grp)
+{
     // qDebug() << "visitEnter(" << grp.text() << ")";
     m_out << "#FOLDER" << endl;
-    m_out << "\tNAME="<< grp.fullText() << endl;
+    m_out << "\tNAME=" << grp.fullText() << endl;
     m_out << endl;
 }
 
-void OperaExporter::visitLeave( const KBookmarkGroup & ) {
+void OperaExporter::visitLeave(const KBookmarkGroup &)
+{
     // qDebug() << "visitLeave()";
     m_out << "-" << endl;
     m_out << endl;
 }
 
-void KOperaBookmarkExporterImpl::write(const KBookmarkGroup &parent) {
+void KOperaBookmarkExporterImpl::write(const KBookmarkGroup &parent)
+{
     OperaExporter exporter;
-    QString content = exporter.generate( parent );
+    QString content = exporter.generate(parent);
     QFile file(m_fileName);
     if (!file.open(QIODevice::WriteOnly)) {
-       qCritical() << "Can't write to file " << m_fileName << endl;
-       return;
+        qCritical() << "Can't write to file " << m_fileName << endl;
+        return;
     }
     QTextStream fstream(&file);
     fstream.setCodec(QTextCodec::codecForName("UTF-8"));

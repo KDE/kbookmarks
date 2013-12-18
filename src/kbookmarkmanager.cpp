@@ -1,5 +1,4 @@
 // -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2000 David Faure <faure@kde.org>
    Copyright (C) 2003 Alexander Kellett <lypanov@kde.org>
@@ -54,7 +53,8 @@
 class KBookmarkManagerList : public QList<KBookmarkManager *>
 {
 public:
-    ~KBookmarkManagerList() {
+    ~KBookmarkManagerList()
+    {
         QList<KBookmarkManager *> copy = *this;
         qDeleteAll(copy); // auto-delete functionality
     }
@@ -64,17 +64,29 @@ public:
 
 Q_GLOBAL_STATIC(KBookmarkManagerList, s_pSelf)
 
-class KBookmarkMap : private KBookmarkGroupTraverser {
+class KBookmarkMap : private KBookmarkGroupTraverser
+{
 public:
     KBookmarkMap() : m_mapNeedsUpdate(true) {}
-    void setNeedsUpdate() { m_mapNeedsUpdate = true; }
-    void update(KBookmarkManager*);
-    QList<KBookmark> find( const QString &url ) const
-    { return m_bk_map.value(url); }
+    void setNeedsUpdate()
+    {
+        m_mapNeedsUpdate = true;
+    }
+    void update(KBookmarkManager *);
+    QList<KBookmark> find(const QString &url) const
+    {
+        return m_bk_map.value(url);
+    }
 private:
     virtual void visit(const KBookmark &);
-    virtual void visitEnter(const KBookmarkGroup &) { ; }
-    virtual void visitLeave(const KBookmarkGroup &) { ; }
+    virtual void visitEnter(const KBookmarkGroup &)
+    {
+        ;
+    }
+    virtual void visitLeave(const KBookmarkGroup &)
+    {
+        ;
+    }
 private:
     typedef QList<KBookmark> KBookmarkList;
     QMap<QString, KBookmarkList> m_bk_map;
@@ -106,18 +118,19 @@ class KBookmarkManager::Private
 {
 public:
     Private(bool bDocIsloaded, const QString &dbusObjectName = QString())
-      : m_doc("xbel")
-      , m_dbusObjectName(dbusObjectName)
-      , m_docIsLoaded(bDocIsloaded)
-      , m_update(false)
-      , m_dialogAllowed(true)
-      , m_dialogParent(0)
-      , m_browserEditor(false)
-      , m_typeExternal(false)
-      , m_fsWatch(0)
+        : m_doc("xbel")
+        , m_dbusObjectName(dbusObjectName)
+        , m_docIsLoaded(bDocIsloaded)
+        , m_update(false)
+        , m_dialogAllowed(true)
+        , m_dialogParent(0)
+        , m_browserEditor(false)
+        , m_typeExternal(false)
+        , m_fsWatch(0)
     {}
 
-    ~Private() {
+    ~Private()
+    {
         delete m_fsWatch;
     }
 
@@ -134,7 +147,7 @@ public:
     QString m_editorCaption;
 
     bool m_typeExternal;
-    QFileSystemWatcher * m_fsWatch;  // for external bookmark files
+    QFileSystemWatcher *m_fsWatch;   // for external bookmark files
 
     KBookmarkMap m_map;
 };
@@ -142,20 +155,20 @@ public:
 // ################
 // KBookmarkManager
 
-static KBookmarkManager* lookupExisting(const QString& bookmarksFile)
+static KBookmarkManager *lookupExisting(const QString &bookmarksFile)
 {
-    for ( KBookmarkManagerList::ConstIterator bmit = s_pSelf()->constBegin(), bmend = s_pSelf()->constEnd();
-          bmit != bmend; ++bmit ) {
-        if ( (*bmit)->path() == bookmarksFile )
+    for (KBookmarkManagerList::ConstIterator bmit = s_pSelf()->constBegin(), bmend = s_pSelf()->constEnd();
+            bmit != bmend; ++bmit) {
+        if ((*bmit)->path() == bookmarksFile) {
             return *bmit;
+        }
     }
     return 0;
 }
 
-
-KBookmarkManager* KBookmarkManager::managerForFile( const QString& bookmarksFile, const QString& dbusObjectName )
+KBookmarkManager *KBookmarkManager::managerForFile(const QString &bookmarksFile, const QString &dbusObjectName)
 {
-    KBookmarkManager* mgr(0);
+    KBookmarkManager *mgr(0);
     {
         QReadLocker readLock(&s_pSelf()->lock);
         mgr = lookupExisting(bookmarksFile);
@@ -170,14 +183,14 @@ KBookmarkManager* KBookmarkManager::managerForFile( const QString& bookmarksFile
         return mgr;
     }
 
-    mgr = new KBookmarkManager( bookmarksFile, dbusObjectName );
-    s_pSelf()->append( mgr );
+    mgr = new KBookmarkManager(bookmarksFile, dbusObjectName);
+    s_pSelf()->append(mgr);
     return mgr;
 }
 
-KBookmarkManager* KBookmarkManager::managerForExternalFile( const QString& bookmarksFile )
+KBookmarkManager *KBookmarkManager::managerForExternalFile(const QString &bookmarksFile)
 {
-    KBookmarkManager* mgr(0);
+    KBookmarkManager *mgr(0);
     {
         QReadLocker readLock(&s_pSelf()->lock);
         mgr = lookupExisting(bookmarksFile);
@@ -192,71 +205,67 @@ KBookmarkManager* KBookmarkManager::managerForExternalFile( const QString& bookm
         return mgr;
     }
 
-    mgr = new KBookmarkManager( bookmarksFile );
-    s_pSelf()->append( mgr );
+    mgr = new KBookmarkManager(bookmarksFile);
+    s_pSelf()->append(mgr);
     return mgr;
 }
-
 
 // principally used for filtered toolbars
-KBookmarkManager* KBookmarkManager::createTempManager()
+KBookmarkManager *KBookmarkManager::createTempManager()
 {
-    KBookmarkManager* mgr = new KBookmarkManager();
-    s_pSelf()->append( mgr );
+    KBookmarkManager *mgr = new KBookmarkManager();
+    s_pSelf()->append(mgr);
     return mgr;
 }
 
 #define PI_DATA "version=\"1.0\" encoding=\"UTF-8\""
 
-static QDomElement createXbelTopLevelElement(QDomDocument & doc)
+static QDomElement createXbelTopLevelElement(QDomDocument &doc)
 {
     QDomElement topLevel = doc.createElement("xbel");
     topLevel.setAttribute("xmlns:mime", "http://www.freedesktop.org/standards/shared-mime-info");
     topLevel.setAttribute("xmlns:bookmark", "http://www.freedesktop.org/standards/desktop-bookmarks");
     topLevel.setAttribute("xmlns:kdepriv", "http://www.kde.org/kdepriv");
-    doc.appendChild( topLevel );
-    doc.insertBefore( doc.createProcessingInstruction( "xml", PI_DATA), topLevel );
+    doc.appendChild(topLevel);
+    doc.insertBefore(doc.createProcessingInstruction("xml", PI_DATA), topLevel);
     return topLevel;
 }
 
-KBookmarkManager::KBookmarkManager( const QString & bookmarksFile, const QString & dbusObjectName)
- : d(new Private(false, dbusObjectName))
+KBookmarkManager::KBookmarkManager(const QString &bookmarksFile, const QString &dbusObjectName)
+    : d(new Private(false, dbusObjectName))
 {
-    if(dbusObjectName.isNull()) // get dbusObjectName from file
-        if ( QFile::exists(d->m_bookmarksFile) )
-            parse(); //sets d->m_dbusObjectName
+    if (dbusObjectName.isNull()) // get dbusObjectName from file
+        if (QFile::exists(d->m_bookmarksFile)) {
+            parse();    //sets d->m_dbusObjectName
+        }
 
-    init( "/KBookmarkManager/"+d->m_dbusObjectName );
+    init("/KBookmarkManager/" + d->m_dbusObjectName);
 
     d->m_update = true;
 
-    Q_ASSERT( !bookmarksFile.isEmpty() );
+    Q_ASSERT(!bookmarksFile.isEmpty());
     d->m_bookmarksFile = bookmarksFile;
 
-    if ( !QFile::exists(d->m_bookmarksFile) )
-    {
+    if (!QFile::exists(d->m_bookmarksFile)) {
         QDomElement topLevel = createXbelTopLevelElement(d->m_doc);
         topLevel.setAttribute("dbusName", dbusObjectName);
         d->m_docIsLoaded = true;
     }
 }
 
-KBookmarkManager::KBookmarkManager(const QString & bookmarksFile)
+KBookmarkManager::KBookmarkManager(const QString &bookmarksFile)
     : d(new Private(false))
 {
     // use QFileSystemWatcher to monitor this bookmarks file
     d->m_typeExternal = true;
     d->m_update = true;
 
-    Q_ASSERT( !bookmarksFile.isEmpty() );
+    Q_ASSERT(!bookmarksFile.isEmpty());
     d->m_bookmarksFile = bookmarksFile;
 
-    if ( !QFile::exists(d->m_bookmarksFile) )
-    {
+    if (!QFile::exists(d->m_bookmarksFile)) {
         createXbelTopLevelElement(d->m_doc);
-    }
-    else
-    {
+    } else {
         parse();
     }
     d->m_docIsLoaded = true;
@@ -264,46 +273,44 @@ KBookmarkManager::KBookmarkManager(const QString & bookmarksFile)
     // start QFileSystemWatcher
     d->m_fsWatch = new QFileSystemWatcher;
     d->m_fsWatch->addPath(d->m_bookmarksFile);
-    QObject::connect( d->m_fsWatch, SIGNAL(fileChanged(QString)),
-            this, SLOT(slotFileChanged(const QString&)));
+    QObject::connect(d->m_fsWatch, SIGNAL(fileChanged(QString)),
+                     this, SLOT(slotFileChanged(QString)));
     // qDebug() << "starting QFileSystemWatcher for " << d->m_bookmarksFile;
 }
 
-KBookmarkManager::KBookmarkManager( )
+KBookmarkManager::KBookmarkManager()
     : d(new Private(true))
 {
-    init( "/KBookmarkManager/generated" );
+    init("/KBookmarkManager/generated");
     d->m_update = false; // TODO - make it read/write
 
     createXbelTopLevelElement(d->m_doc);
 }
 
-void KBookmarkManager::init( const QString& dbusPath )
+void KBookmarkManager::init(const QString &dbusPath)
 {
     // A KBookmarkManager without a dbus name is a temporary one, like those used by importers;
     // no need to register them to dbus
-    if ( dbusPath != "/KBookmarkManager/" && dbusPath != "/KBookmarkManager/generated")
-    {
+    if (dbusPath != "/KBookmarkManager/" && dbusPath != "/KBookmarkManager/generated") {
         new KBookmarkManagerAdaptor(this);
-        QDBusConnection::sessionBus().registerObject( dbusPath, this );
+        QDBusConnection::sessionBus().registerObject(dbusPath, this);
 
         QDBusConnection::sessionBus().connect(QString(), dbusPath, BOOKMARK_CHANGE_NOTIFY_INTERFACE,
-                                    "bookmarksChanged", this, SLOT(notifyChanged(QString,QDBusMessage)));
+                                              "bookmarksChanged", this, SLOT(notifyChanged(QString,QDBusMessage)));
         QDBusConnection::sessionBus().connect(QString(), dbusPath, BOOKMARK_CHANGE_NOTIFY_INTERFACE,
-                                    "bookmarkConfigChanged", this, SLOT(notifyConfigChanged()));
+                                              "bookmarkConfigChanged", this, SLOT(notifyConfigChanged()));
     }
 }
 
-void KBookmarkManager::slotFileChanged(const QString& path)
+void KBookmarkManager::slotFileChanged(const QString &path)
 {
-    if (path == d->m_bookmarksFile)
-    {
+    if (path == d->m_bookmarksFile) {
         // qDebug() << "file changed (QFileSystemWatcher) " << path ;
         // Reparse
         parse();
         // Tell our GUI
         // (emit where group is "" to directly mark the root menu as dirty)
-        emit changed( "", QString() );
+        emit changed("", QString());
     }
 }
 
@@ -321,43 +328,39 @@ bool KBookmarkManager::autoErrorHandlingEnabled() const
     return d->m_dialogAllowed;
 }
 
-void KBookmarkManager::setAutoErrorHandlingEnabled( bool enable, QWidget *parent )
+void KBookmarkManager::setAutoErrorHandlingEnabled(bool enable, QWidget *parent)
 {
     d->m_dialogAllowed = enable;
     d->m_dialogParent = parent;
 }
 
-void KBookmarkManager::setUpdate( bool update )
+void KBookmarkManager::setUpdate(bool update)
 {
     d->m_update = update;
 }
 
 QDomDocument KBookmarkManager::internalDocument() const
 {
-    if(!d->m_docIsLoaded)
-    {
+    if (!d->m_docIsLoaded) {
         parse();
         d->m_toolbarDoc.clear();
     }
     return d->m_doc;
 }
 
-
 void KBookmarkManager::parse() const
 {
     d->m_docIsLoaded = true;
     // qDebug() << "KBookmarkManager::parse " << d->m_bookmarksFile;
-    QFile file( d->m_bookmarksFile );
-    if ( !file.open( QIODevice::ReadOnly ) )
-    {
+    QFile file(d->m_bookmarksFile);
+    if (!file.open(QIODevice::ReadOnly)) {
         qWarning() << "Can't open " << d->m_bookmarksFile;
         return;
     }
     d->m_doc = QDomDocument("xbel");
-    d->m_doc.setContent( &file );
+    d->m_doc.setContent(&file);
 
-    if ( d->m_doc.documentElement().isNull() )
-    {
+    if (d->m_doc.documentElement().isNull()) {
         qWarning() << "KBookmarkManager::parse : main tag is missing, creating default " << d->m_bookmarksFile;
         QDomElement element = d->m_doc.createElement("xbel");
         d->m_doc.appendChild(element);
@@ -366,62 +369,56 @@ void KBookmarkManager::parse() const
     QDomElement docElem = d->m_doc.documentElement();
 
     QString mainTag = docElem.tagName();
-    if ( mainTag != "xbel" )
+    if (mainTag != "xbel") {
         qWarning() << "KBookmarkManager::parse : unknown main tag " << mainTag;
-
-    if(d->m_dbusObjectName.isNull())
-    {
-        d->m_dbusObjectName = docElem.attribute("dbusName");
     }
-    else if(docElem.attribute("dbusName") != d->m_dbusObjectName)
-    {
+
+    if (d->m_dbusObjectName.isNull()) {
+        d->m_dbusObjectName = docElem.attribute("dbusName");
+    } else if (docElem.attribute("dbusName") != d->m_dbusObjectName) {
         docElem.setAttribute("dbusName", d->m_dbusObjectName);
         save();
     }
 
     QDomNode n = d->m_doc.documentElement().previousSibling();
-    if ( n.isProcessingInstruction() )
-    {
+    if (n.isProcessingInstruction()) {
         QDomProcessingInstruction pi = n.toProcessingInstruction();
         pi.parentNode().removeChild(pi);
     }
 
     QDomProcessingInstruction pi;
-    pi = d->m_doc.createProcessingInstruction( "xml", PI_DATA );
-    d->m_doc.insertBefore( pi, docElem );
+    pi = d->m_doc.createProcessingInstruction("xml", PI_DATA);
+    d->m_doc.insertBefore(pi, docElem);
 
     file.close();
 
     d->m_map.setNeedsUpdate();
 }
 
-bool KBookmarkManager::save( bool toolbarCache ) const
+bool KBookmarkManager::save(bool toolbarCache) const
 {
-    return saveAs( d->m_bookmarksFile, toolbarCache );
+    return saveAs(d->m_bookmarksFile, toolbarCache);
 }
 
-bool KBookmarkManager::saveAs( const QString & filename, bool toolbarCache ) const
+bool KBookmarkManager::saveAs(const QString &filename, bool toolbarCache) const
 {
     // qDebug() << "KBookmarkManager::save " << filename;
 
     // Save the bookmark toolbar folder for quick loading
     // but only when it will actually make things quicker
     const QString cacheFilename = filename + QLatin1String(".tbcache");
-    if(toolbarCache && !root().isToolbarGroup())
-    {
-        QSaveFile cacheFile( cacheFilename );
+    if (toolbarCache && !root().isToolbarGroup()) {
+        QSaveFile cacheFile(cacheFilename);
         if (cacheFile.open(QIODevice::WriteOnly)) {
             QString str;
             QTextStream stream(&str, QIODevice::WriteOnly);
             stream << root().findToolbar();
             const QByteArray cstr = str.toUtf8();
-            cacheFile.write( cstr.data(), cstr.length() );
+            cacheFile.write(cstr.data(), cstr.length());
             cacheFile.commit();
         }
-    }
-    else // remove any (now) stale cache
-    {
-        QFile::remove( cacheFilename );
+    } else { // remove any (now) stale cache
+        QFile::remove(cacheFilename);
     }
 
     // Create parent dirs
@@ -430,9 +427,9 @@ bool KBookmarkManager::saveAs( const QString & filename, bool toolbarCache ) con
 
     QSaveFile file(filename);
     if (file.open(QIODevice::WriteOnly)) {
-        KBackup::simpleBackupFile( file.fileName(), QString(), ".bak" );
+        KBackup::simpleBackupFile(file.fileName(), QString(), ".bak");
         QTextStream stream(&file);
-        stream.setCodec( QTextCodec::codecForName( "UTF-8" ) );
+        stream.setCodec(QTextCodec::codecForName("UTF-8"));
         stream << internalDocument().toString();
         stream.flush();
         if (file.commit()) {
@@ -441,17 +438,18 @@ bool KBookmarkManager::saveAs( const QString & filename, bool toolbarCache ) con
     }
 
     static int hadSaveError = false;
-    if ( !hadSaveError ) {
+    if (!hadSaveError) {
         QString err = tr("Unable to save bookmarks in %1. Reported error was: %2. "
                          "This error message will only be shown once. The cause "
                          "of the error needs to be fixed as quickly as possible, "
                          "which is most likely a full hard drive.").arg(filename).arg(file.errorString());
 
-        if (d->m_dialogAllowed && qobject_cast<QApplication *>(qApp) && QThread::currentThread() == qApp->thread())
-            QMessageBox::critical( QApplication::activeWindow(), QApplication::applicationName(), err );
+        if (d->m_dialogAllowed && qobject_cast<QApplication *>(qApp) && QThread::currentThread() == qApp->thread()) {
+            QMessageBox::critical(QApplication::activeWindow(), QApplication::applicationName(), err);
+        }
 
         qCritical() << QString("Unable to save bookmarks in %1. File reported the following error-code: %2.").arg(filename).arg(file.error());
-        emit const_cast<KBookmarkManager*>(this)->error(err);
+        emit const_cast<KBookmarkManager *>(this)->error(err);
     }
     hadSaveError = true;
     return false;
@@ -471,28 +469,24 @@ KBookmarkGroup KBookmarkManager::toolbar()
 {
     // qDebug() << "KBookmarkManager::toolbar begin";
     // Only try to read from a toolbar cache if the full document isn't loaded
-    if(!d->m_docIsLoaded)
-    {
+    if (!d->m_docIsLoaded) {
         // qDebug() << "KBookmarkManager::toolbar trying cache";
         const QString cacheFilename = d->m_bookmarksFile + QLatin1String(".tbcache");
         QFileInfo bmInfo(d->m_bookmarksFile);
         QFileInfo cacheInfo(cacheFilename);
         if (d->m_toolbarDoc.isNull() &&
-            QFile::exists(cacheFilename) &&
-            bmInfo.lastModified() < cacheInfo.lastModified())
-        {
+                QFile::exists(cacheFilename) &&
+                bmInfo.lastModified() < cacheInfo.lastModified()) {
             // qDebug() << "KBookmarkManager::toolbar reading file";
-            QFile file( cacheFilename );
+            QFile file(cacheFilename);
 
-            if ( file.open( QIODevice::ReadOnly ) )
-            {
+            if (file.open(QIODevice::ReadOnly)) {
                 d->m_toolbarDoc = QDomDocument("cache");
-                d->m_toolbarDoc.setContent( &file );
+                d->m_toolbarDoc.setContent(&file);
                 // qDebug() << "KBookmarkManager::toolbar opened";
             }
         }
-        if (!d->m_toolbarDoc.isNull())
-        {
+        if (!d->m_toolbarDoc.isNull()) {
             // qDebug() << "KBookmarkManager::toolbar returning element";
             QDomElement elem = d->m_toolbarDoc.firstChild().toElement();
             return KBookmarkGroup(elem);
@@ -502,54 +496,51 @@ KBookmarkGroup KBookmarkManager::toolbar()
     // Fallback to the normal way if there is no cache or if the bookmark file
     // is already loaded
     QDomElement elem = root().findToolbar();
-    if (elem.isNull())
-    {
+    if (elem.isNull()) {
         // Root is the bookmark toolbar if none has been set.
         // Make it explicit to speed up invocations of findToolbar()
         root().internalElement().setAttribute("toolbar", "yes");
         return root();
-    }
-    else
+    } else {
         return KBookmarkGroup(elem);
+    }
 }
 
-KBookmark KBookmarkManager::findByAddress( const QString & address )
+KBookmark KBookmarkManager::findByAddress(const QString &address)
 {
     // qDebug() << "KBookmarkManager::findByAddress " << address;
     KBookmark result = root();
     // The address is something like /5/10/2+
-    const QStringList addresses = address.split(QRegExp("[/+]"),QString::SkipEmptyParts);
+    const QStringList addresses = address.split(QRegExp("[/+]"), QString::SkipEmptyParts);
     // qWarning() << addresses.join(",");
-    for ( QStringList::const_iterator it = addresses.begin() ; it != addresses.end() ; )
-    {
-       bool append = ((*it) == "+");
-       uint number = (*it).toUInt();
-       Q_ASSERT(result.isGroup());
-       KBookmarkGroup group = result.toGroup();
-       KBookmark bk = group.first(), lbk = bk; // last non-null bookmark
-       for ( uint i = 0 ; ( (i<number) || append ) && !bk.isNull() ; ++i ) {
-           lbk = bk;
-           bk = group.next(bk);
-         // qWarning() << i;
-       }
-       it++;
-       // qWarning() << "found section";
-       result = bk;
+    for (QStringList::const_iterator it = addresses.begin(); it != addresses.end();) {
+        bool append = ((*it) == "+");
+        uint number = (*it).toUInt();
+        Q_ASSERT(result.isGroup());
+        KBookmarkGroup group = result.toGroup();
+        KBookmark bk = group.first(), lbk = bk; // last non-null bookmark
+        for (uint i = 0; ((i < number) || append) && !bk.isNull(); ++i) {
+            lbk = bk;
+            bk = group.next(bk);
+            // qWarning() << i;
+        }
+        it++;
+        // qWarning() << "found section";
+        result = bk;
     }
     if (result.isNull()) {
-       qWarning() << "KBookmarkManager::findByAddress: couldn't find item " << address;
+        qWarning() << "KBookmarkManager::findByAddress: couldn't find item " << address;
     }
     // qWarning() << "found " << result.address();
     return result;
- }
+}
 
 void KBookmarkManager::emitChanged()
 {
     emitChanged(root());
 }
 
-
-void KBookmarkManager::emitChanged( const KBookmarkGroup & group )
+void KBookmarkManager::emitChanged(const KBookmarkGroup &group)
 {
     (void) save(); // KDE5 TODO: emitChanged should return a bool? Maybe rename it to saveAndEmitChanged?
 
@@ -567,10 +558,11 @@ void KBookmarkManager::emitConfigChanged()
     emit bookmarkConfigChanged();
 }
 
-void KBookmarkManager::notifyCompleteChange( const QString &caller ) // DBUS call
+void KBookmarkManager::notifyCompleteChange(const QString &caller)   // DBUS call
 {
-    if (!d->m_update)
+    if (!d->m_update) {
         return;
+    }
 
     // qDebug() << "KBookmarkManager::notifyCompleteChange";
     // The bk editor tells us we should reload everything
@@ -578,7 +570,7 @@ void KBookmarkManager::notifyCompleteChange( const QString &caller ) // DBUS cal
     parse();
     // Tell our GUI
     // (emit where group is "" to directly mark the root menu as dirty)
-    emit changed( "", caller );
+    emit changed("", caller);
 }
 
 void KBookmarkManager::notifyConfigChanged() // DBUS call
@@ -589,24 +581,26 @@ void KBookmarkManager::notifyConfigChanged() // DBUS call
     emit configChanged();
 }
 
-void KBookmarkManager::notifyChanged( const QString &groupAddress, const QDBusMessage &msg ) // DBUS call
+void KBookmarkManager::notifyChanged(const QString &groupAddress, const QDBusMessage &msg)   // DBUS call
 {
     // qDebug() << "KBookmarkManager::notifyChanged ( "<<groupAddress<<")";
-    if (!d->m_update)
+    if (!d->m_update) {
         return;
+    }
 
     // Reparse (the whole file, no other choice)
     // if someone else notified us
-    if (msg.service() != QDBusConnection::sessionBus().baseService())
-       parse();
+    if (msg.service() != QDBusConnection::sessionBus().baseService()) {
+        parse();
+    }
 
     // qDebug() << "KBookmarkManager::notifyChanged " << groupAddress;
     //KBookmarkGroup group = findByAddress( groupAddress ).toGroup();
     //Q_ASSERT(!group.isNull());
-    emit changed( groupAddress, QString() );
+    emit changed(groupAddress, QString());
 }
 
-void KBookmarkManager::setEditorOptions( const QString& caption, bool browser )
+void KBookmarkManager::setEditorOptions(const QString &caption, bool browser)
 {
     d->m_editorCaption = caption;
     d->m_browserEditor = browser;
@@ -615,91 +609,98 @@ void KBookmarkManager::setEditorOptions( const QString& caption, bool browser )
 void KBookmarkManager::slotEditBookmarks()
 {
     QStringList args;
-    if ( !d->m_editorCaption.isEmpty() )
-       args << QLatin1String("--customcaption") << d->m_editorCaption;
-    if ( !d->m_browserEditor )
-       args << QLatin1String("--nobrowser");
-    if( !d->m_dbusObjectName.isEmpty() )
-      args << QLatin1String("--dbusObjectName") << d->m_dbusObjectName;
+    if (!d->m_editorCaption.isEmpty()) {
+        args << QLatin1String("--customcaption") << d->m_editorCaption;
+    }
+    if (!d->m_browserEditor) {
+        args << QLatin1String("--nobrowser");
+    }
+    if (!d->m_dbusObjectName.isEmpty()) {
+        args << QLatin1String("--dbusObjectName") << d->m_dbusObjectName;
+    }
     args << d->m_bookmarksFile;
     QProcess::startDetached("keditbookmarks", args);
 }
 
-void KBookmarkManager::slotEditBookmarksAtAddress( const QString& address )
+void KBookmarkManager::slotEditBookmarksAtAddress(const QString &address)
 {
     QStringList args;
-    if ( !d->m_editorCaption.isEmpty() )
-       args << QLatin1String("--customcaption") << d->m_editorCaption;
-    if ( !d->m_browserEditor )
-       args << QLatin1String("--nobrowser");
-    if( !d->m_dbusObjectName.isEmpty() )
-      args << QLatin1String("--dbusObjectName") << d->m_dbusObjectName;
+    if (!d->m_editorCaption.isEmpty()) {
+        args << QLatin1String("--customcaption") << d->m_editorCaption;
+    }
+    if (!d->m_browserEditor) {
+        args << QLatin1String("--nobrowser");
+    }
+    if (!d->m_dbusObjectName.isEmpty()) {
+        args << QLatin1String("--dbusObjectName") << d->m_dbusObjectName;
+    }
     args << QLatin1String("--address") << address
          << d->m_bookmarksFile;
     QProcess::startDetached("keditbookmarks", args);
 }
 
 ///////
-bool KBookmarkManager::updateAccessMetadata( const QString & url )
+bool KBookmarkManager::updateAccessMetadata(const QString &url)
 {
     d->m_map.update(this);
     QList<KBookmark> list = d->m_map.find(url);
-    if ( list.count() == 0 )
+    if (list.count() == 0) {
         return false;
+    }
 
-    for ( QList<KBookmark>::iterator it = list.begin();
-          it != list.end(); ++it )
+    for (QList<KBookmark>::iterator it = list.begin();
+            it != list.end(); ++it) {
         (*it).updateAccessMetadata();
+    }
 
     return true;
 }
 
-void KBookmarkManager::updateFavicon( const QString &url, const QString &/*faviconurl*/ )
+void KBookmarkManager::updateFavicon(const QString &url, const QString &/*faviconurl*/)
 {
     d->m_map.update(this);
     QList<KBookmark> list = d->m_map.find(url);
-    for ( QList<KBookmark>::iterator it = list.begin();
-          it != list.end(); ++it )
-    {
+    for (QList<KBookmark>::iterator it = list.begin();
+            it != list.end(); ++it) {
         // TODO - update favicon data based on faviconurl
         //        but only when the previously used icon
         //        isn't a manually set one.
     }
 }
 
-KBookmarkManager* KBookmarkManager::userBookmarksManager()
+KBookmarkManager *KBookmarkManager::userBookmarksManager()
 {
-     const QString bookmarksFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + QString::fromLatin1("konqueror/bookmarks.xml");
-     KBookmarkManager* bookmarkManager = KBookmarkManager::managerForFile( bookmarksFile, "konqueror" );
-     QString caption = QGuiApplication::applicationDisplayName();
-     if (caption.isEmpty())
-         caption = QCoreApplication::applicationName();
-     bookmarkManager->setEditorOptions(caption, true);
-     return bookmarkManager;
+    const QString bookmarksFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + QString::fromLatin1("konqueror/bookmarks.xml");
+    KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(bookmarksFile, "konqueror");
+    QString caption = QGuiApplication::applicationDisplayName();
+    if (caption.isEmpty()) {
+        caption = QCoreApplication::applicationName();
+    }
+    bookmarkManager->setEditorOptions(caption, true);
+    return bookmarkManager;
 }
 
-KBookmarkSettings* KBookmarkSettings::s_self = 0;
+KBookmarkSettings *KBookmarkSettings::s_self = 0;
 
 void KBookmarkSettings::readSettings()
 {
-   KConfig config("kbookmarkrc", KConfig::NoGlobals);
-   KConfigGroup cg(&config, "Bookmarks");
+    KConfig config("kbookmarkrc", KConfig::NoGlobals);
+    KConfigGroup cg(&config, "Bookmarks");
 
-   // add bookmark dialog usage - no reparse
-   s_self->m_advancedaddbookmark = cg.readEntry("AdvancedAddBookmarkDialog", false);
+    // add bookmark dialog usage - no reparse
+    s_self->m_advancedaddbookmark = cg.readEntry("AdvancedAddBookmarkDialog", false);
 
-   // this one alters the menu, therefore it needs a reparse
-   s_self->m_contextmenu = cg.readEntry("ContextMenuActions", true);
+    // this one alters the menu, therefore it needs a reparse
+    s_self->m_contextmenu = cg.readEntry("ContextMenuActions", true);
 }
 
 KBookmarkSettings *KBookmarkSettings::self()
 {
-   if (!s_self)
-   {
-      s_self = new KBookmarkSettings;
-      readSettings();
-   }
-   return s_self;
+    if (!s_self) {
+        s_self = new KBookmarkSettings;
+        readSettings();
+    }
+    return s_self;
 }
 
 #include "moc_kbookmarkmanager.cpp"

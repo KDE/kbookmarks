@@ -1,5 +1,4 @@
 // -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2000 David Faure <faure@kde.org>
    Copyright (C) 2003 Alexander Kellett <lypanov@kde.org>
@@ -44,7 +43,7 @@ KBookmarkOwner::FutureBookmark::FutureBookmark(const FutureBookmark &other)
 {
 }
 
-KBookmarkOwner::FutureBookmark& KBookmarkOwner::FutureBookmark::operator=(const FutureBookmark &other)
+KBookmarkOwner::FutureBookmark &KBookmarkOwner::FutureBookmark::operator=(const FutureBookmark &other)
 {
     d = other.d;
     return *this;
@@ -71,14 +70,16 @@ QString KBookmarkOwner::FutureBookmark::icon() const
 
 bool KBookmarkOwner::enableOption(BookmarkOption action) const
 {
-    if(action == ShowAddBookmark)
+    if (action == ShowAddBookmark) {
         return true;
-    if(action == ShowEditBookmark)
+    }
+    if (action == ShowEditBookmark) {
         return true;
+    }
     return false;
 }
 
-KBookmarkDialog * KBookmarkOwner::bookmarkDialog(KBookmarkManager * mgr, QWidget * parent)
+KBookmarkDialog *KBookmarkOwner::bookmarkDialog(KBookmarkManager *mgr, QWidget *parent)
 {
     return new KBookmarkDialog(mgr, parent);
 }

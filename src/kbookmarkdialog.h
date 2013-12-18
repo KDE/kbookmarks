@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright 2007 Daniel Teske <teske@squorn.de>
 
@@ -38,47 +37,47 @@ class KBookmarkDialogPrivate;
 
 class KBOOKMARKS_EXPORT KBookmarkDialog : public QDialog
 {
-  Q_OBJECT
+    Q_OBJECT
 
 public:
-  /**
-   * Creates a new KBookmarkDialog
-   */
-  KBookmarkDialog(  KBookmarkManager *, QWidget * = 0);
-  /**
-   * shows a propeties dialog
-   * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged
-   */
-  KBookmark editBookmark(const KBookmark & bm);
-  /**
-   * shows a add Bookmark dialog
-   * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged   
-   */
-  KBookmark addBookmark(const QString &title, const QUrl &url, const QString &icon, KBookmark parent = KBookmark());
-  /**
-   * Creates a folder from a list of bookmarks
-   * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged
-   */
-  KBookmarkGroup addBookmarks(const QList<KBookmarkOwner::FutureBookmark>& list, const QString & name = QString(), KBookmarkGroup parent = KBookmarkGroup());
-  /**
-   * A dialog to create a new folder.
-   */
-  KBookmarkGroup createNewFolder(const QString & name, KBookmark parent = KBookmark());
-  /**
-   * A dialog to select a folder.
-   */
-  KBookmarkGroup selectFolder(KBookmark start = KBookmark());
+    /**
+     * Creates a new KBookmarkDialog
+     */
+    KBookmarkDialog(KBookmarkManager *, QWidget * = 0);
+    /**
+     * shows a propeties dialog
+     * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged
+     */
+    KBookmark editBookmark(const KBookmark &bm);
+    /**
+     * shows a add Bookmark dialog
+     * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged
+     */
+    KBookmark addBookmark(const QString &title, const QUrl &url, const QString &icon, KBookmark parent = KBookmark());
+    /**
+     * Creates a folder from a list of bookmarks
+     * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged
+     */
+    KBookmarkGroup addBookmarks(const QList<KBookmarkOwner::FutureBookmark> &list, const QString &name = QString(), KBookmarkGroup parent = KBookmarkGroup());
+    /**
+     * A dialog to create a new folder.
+     */
+    KBookmarkGroup createNewFolder(const QString &name, KBookmark parent = KBookmark());
+    /**
+     * A dialog to select a folder.
+     */
+    KBookmarkGroup selectFolder(KBookmark start = KBookmark());
 
-  ~KBookmarkDialog();
+    ~KBookmarkDialog();
 protected:
-  void accept();
+    void accept();
 
 protected Q_SLOTS:
-  void newFolderButton();
+    void newFolderButton();
 
 private:
-  KBookmarkDialogPrivate * const d;
-  friend class KBookmarkDialogPrivate;
+    KBookmarkDialogPrivate *const d;
+    friend class KBookmarkDialogPrivate;
 };
 
 #endif

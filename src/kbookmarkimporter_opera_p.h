@@ -27,7 +27,7 @@ class KOperaBookmarkImporter : public QObject
 {
     Q_OBJECT
 public:
-    KOperaBookmarkImporter( const QString & fileName ) : m_fileName(fileName) {}
+    KOperaBookmarkImporter(const QString &fileName) : m_fileName(fileName) {}
     ~KOperaBookmarkImporter() {}
 
     void parseOperaBookmarks();
@@ -36,8 +36,8 @@ public:
     static QString operaBookmarksFile();
 
 Q_SIGNALS:
-    void newBookmark( const QString & text, const QString & url, const QString & additionalInfo );
-    void newFolder( const QString & text, bool open, const QString & additionalInfo );
+    void newBookmark(const QString &text, const QString &url, const QString &additionalInfo);
+    void newFolder(const QString &text, bool open, const QString &additionalInfo);
     void newSeparator();
     void endFolder();
 

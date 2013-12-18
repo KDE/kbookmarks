@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright 2013 Jignesh Kakadiya <jigneshhk1992@gmail.com>
 
@@ -34,33 +33,33 @@ class QTreeWidgetItem;
 class KBookmarkDialogPrivate
 {
 public:
-  KBookmarkDialogPrivate(KBookmarkDialog *q);
-  ~KBookmarkDialogPrivate();
+    KBookmarkDialogPrivate(KBookmarkDialog *q);
+    ~KBookmarkDialogPrivate();
 
-  typedef enum { NewFolder, NewBookmark, EditBookmark, NewMultipleBookmarks, SelectFolder } BookmarkDialogMode;
+    typedef enum { NewFolder, NewBookmark, EditBookmark, NewMultipleBookmarks, SelectFolder } BookmarkDialogMode;
 
-  void initLayout();
-  void initLayoutPrivate();
-  // selects the specified bookmark in the folder tree
-  void setParentBookmark(const KBookmark & bm);
-  KBookmarkGroup parentBookmark();
-  void fillGroup (QTreeWidgetItem * parentItem, const KBookmarkGroup &group);
+    void initLayout();
+    void initLayoutPrivate();
+    // selects the specified bookmark in the folder tree
+    void setParentBookmark(const KBookmark &bm);
+    KBookmarkGroup parentBookmark();
+    void fillGroup(QTreeWidgetItem *parentItem, const KBookmarkGroup &group);
 
-  KBookmarkDialog *q;
-  BookmarkDialogMode mode;
-  QDialogButtonBox *buttonBox;
-  QLineEdit *url;
-  QLineEdit *title;
-  QLineEdit *comment;
-  QLabel *titleLabel;
-  QLabel *urlLabel;
-  QLabel *commentLabel;
-  QString icon;
-  QTreeWidget *folderTree;
-  KBookmarkManager *mgr;
-  KBookmark bm;
-  QList<KBookmarkOwner::FutureBookmark> list;
-  bool layout;
+    KBookmarkDialog *q;
+    BookmarkDialogMode mode;
+    QDialogButtonBox *buttonBox;
+    QLineEdit *url;
+    QLineEdit *title;
+    QLineEdit *comment;
+    QLabel *titleLabel;
+    QLabel *urlLabel;
+    QLabel *commentLabel;
+    QString icon;
+    QTreeWidget *folderTree;
+    KBookmarkManager *mgr;
+    KBookmark bm;
+    QList<KBookmarkOwner::FutureBookmark> list;
+    bool layout;
 };
 
 #endif

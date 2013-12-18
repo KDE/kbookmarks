@@ -31,5 +31,4 @@ private Q_SLOTS:
     void testBookmarkManager();
 };
 
-
 #endif

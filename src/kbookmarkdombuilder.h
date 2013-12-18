@@ -24,22 +24,23 @@
 #include <QtCore/QObject>
 #include <kbookmark.h>
 
-class KBOOKMARKS_EXPORT KBookmarkDomBuilder : public QObject {
-   Q_OBJECT
+class KBOOKMARKS_EXPORT KBookmarkDomBuilder : public QObject
+{
+    Q_OBJECT
 public:
-   KBookmarkDomBuilder(const KBookmarkGroup &group, KBookmarkManager *);
-   virtual ~KBookmarkDomBuilder();
-   void connectImporter(const QObject *);
+    KBookmarkDomBuilder(const KBookmarkGroup &group, KBookmarkManager *);
+    virtual ~KBookmarkDomBuilder();
+    void connectImporter(const QObject *);
 protected Q_SLOTS:
-   void newBookmark(const QString &text, const QString &url, const QString &additionalInfo);
-   void newFolder(const QString &text, bool open, const QString &additionalInfo);
-   void newSeparator();
-   void endFolder();
+    void newBookmark(const QString &text, const QString &url, const QString &additionalInfo);
+    void newFolder(const QString &text, bool open, const QString &additionalInfo);
+    void newSeparator();
+    void endFolder();
 private:
-   QStack<KBookmarkGroup> m_stack;
-   QList<KBookmarkGroup> m_list;
-   KBookmarkManager *m_manager;
-   class KBookmarkDomBuilderPrivate *p;
+    QStack<KBookmarkGroup> m_stack;
+    QList<KBookmarkGroup> m_list;
+    KBookmarkManager *m_manager;
+    class KBookmarkDomBuilderPrivate *p;
 };
 
 #endif

@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2000 David Faure <faure@kde.org>
 
@@ -32,7 +31,10 @@ class KBOOKMARKS_EXPORT KNSBookmarkImporterImpl : public KBookmarkImporterBase
 {
 public:
     KNSBookmarkImporterImpl() : m_utf8(false) { }
-    void setUtf8(bool utf8) { m_utf8 = utf8; }
+    void setUtf8(bool utf8)
+    {
+        m_utf8 = utf8;
+    }
     virtual void parse();
     virtual QString findDefaultLocation(bool forSaving = false) const;
 private:
@@ -47,7 +49,10 @@ private:
 class KBOOKMARKS_EXPORT KMozillaBookmarkImporterImpl : public KNSBookmarkImporterImpl
 {
 public:
-    KMozillaBookmarkImporterImpl() { setUtf8(true); }
+    KMozillaBookmarkImporterImpl()
+    {
+        setUtf8(true);
+    }
 private:
     class KMozillaBookmarkImporterImplPrivate *d;
 };
@@ -55,9 +60,11 @@ private:
 class KBOOKMARKS_EXPORT KNSBookmarkExporterImpl : public KBookmarkExporterBase
 {
 public:
-    KNSBookmarkExporterImpl(KBookmarkManager* mgr, const QString & fileName)
-      : KBookmarkExporterBase(mgr, fileName)
-    { ; }
+    KNSBookmarkExporterImpl(KBookmarkManager *mgr, const QString &fileName)
+        : KBookmarkExporterBase(mgr, fileName)
+    {
+        ;
+    }
     virtual ~KNSBookmarkExporterImpl() {}
     virtual void write(const KBookmarkGroup &parent);
     void setUtf8(bool);

@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE libraries
    Copyright (C) 2000 David Faure <faure@kde.org>
 
@@ -38,7 +37,10 @@ public:
     KBookmarkImporterBase() {}
     virtual ~KBookmarkImporterBase() {}
 
-    void setFilename(const QString &filename) { m_fileName = filename; }
+    void setFilename(const QString &filename)
+    {
+        m_fileName = filename;
+    }
 
     virtual void parse() = 0;
     virtual QString findDefaultLocation(bool forSaving = false) const = 0;
@@ -52,13 +54,13 @@ Q_SIGNALS:
      * Notify about a new bookmark
      * Use "html" for the icon
      */
-    void newBookmark(const QString & text, const QString & url, const QString & additionalInfo);
+    void newBookmark(const QString &text, const QString &url, const QString &additionalInfo);
 
     /**
      * Notify about a new folder
      * Use "bookmark_folder" for the icon
      */
-    void newFolder(const QString & text, bool open, const QString & additionalInfo);
+    void newFolder(const QString &text, bool open, const QString &additionalInfo);
 
     /**
      * Notify about a new separator
@@ -87,7 +89,10 @@ class KBOOKMARKS_EXPORT KXBELBookmarkImporterImpl : public KBookmarkImporterBase
 public:
     KXBELBookmarkImporterImpl() {}
     virtual void parse();
-    virtual QString findDefaultLocation(bool = false) const { return QString(); }
+    virtual QString findDefaultLocation(bool = false) const
+    {
+        return QString();
+    }
 protected:
     virtual void visit(const KBookmark &);
     virtual void visitEnter(const KBookmarkGroup &);
@@ -95,6 +100,5 @@ protected:
 private:
     class KXBELBookmarkImporterImplPrivate *d;
 };
-
 
 #endif

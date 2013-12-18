@@ -1,5 +1,4 @@
 //  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
-// vim: set ts=4 sts=4 sw=4 et:
 /* This file is part of the KDE project
    Copyright (C) 2003 Alexander Kellett <lypanov@kde.org>
 
@@ -42,30 +41,29 @@ class KBookmarkMenu;
 class KImportedBookmarkMenu : public KBookmarkMenu
 {
     friend class KBookmarkMenuImporter;
-  Q_OBJECT
+    Q_OBJECT
 public:
-  //TODO simplfy
-  KImportedBookmarkMenu( KBookmarkManager* mgr,
-                 KBookmarkOwner * owner, QMenu * parentMenu,
-                 const QString & type, const QString & location );
-  KImportedBookmarkMenu( KBookmarkManager* mgr,
-                 KBookmarkOwner * owner, QMenu * parentMenu);
-  ~KImportedBookmarkMenu();
-  virtual void clear();
-  virtual void refill();
+    //TODO simplfy
+    KImportedBookmarkMenu(KBookmarkManager *mgr,
+                          KBookmarkOwner *owner, QMenu *parentMenu,
+                          const QString &type, const QString &location);
+    KImportedBookmarkMenu(KBookmarkManager *mgr,
+                          KBookmarkOwner *owner, QMenu *parentMenu);
+    ~KImportedBookmarkMenu();
+    virtual void clear();
+    virtual void refill();
 protected Q_SLOTS:
-  void slotNSLoad();
+    void slotNSLoad();
 private:
-   QString m_type;
-   QString m_location;
+    QString m_type;
+    QString m_location;
 };
-
 
 class KBookmarkTreeItem : public QTreeWidgetItem
 {
 public:
-    KBookmarkTreeItem(QTreeWidget * tree);
-    KBookmarkTreeItem(QTreeWidgetItem * parent, QTreeWidget * tree, const KBookmarkGroup &bk);
+    KBookmarkTreeItem(QTreeWidget *tree);
+    KBookmarkTreeItem(QTreeWidgetItem *parent, QTreeWidget *tree, const KBookmarkGroup &bk);
     ~KBookmarkTreeItem();
     QString address();
 private:
@@ -75,11 +73,11 @@ private:
 class KBookmarkSettings
 {
 public:
-  bool m_advancedaddbookmark;
-  bool m_contextmenu;
-  static KBookmarkSettings *s_self;
-  static void readSettings();
-  static KBookmarkSettings *self();
+    bool m_advancedaddbookmark;
+    bool m_contextmenu;
+    static KBookmarkSettings *s_self;
+    static void readSettings();
+    static KBookmarkSettings *self();
 };
 
 /**
@@ -87,36 +85,36 @@ public:
  */
 class KBookmarkMenuImporter : public QObject
 {
-  Q_OBJECT
+    Q_OBJECT
 public:
-  KBookmarkMenuImporter( KBookmarkManager* mgr, KImportedBookmarkMenu * menu ) :
-     m_menu(menu), m_pManager(mgr) {}
+    KBookmarkMenuImporter(KBookmarkManager *mgr, KImportedBookmarkMenu *menu) :
+        m_menu(menu), m_pManager(mgr) {}
 
-  void openBookmarks( const QString &location, const QString &type );
-  void connectToImporter( const QObject &importer );
+    void openBookmarks(const QString &location, const QString &type);
+    void connectToImporter(const QObject &importer);
 
 protected Q_SLOTS:
-  void newBookmark( const QString & text, const QString & url, const QString & );
-  void newFolder( const QString & text, bool, const QString & );
-  void newSeparator();
-  void endFolder();
+    void newBookmark(const QString &text, const QString &url, const QString &);
+    void newFolder(const QString &text, bool, const QString &);
+    void newSeparator();
+    void endFolder();
 
 protected:
-  QStack<KImportedBookmarkMenu*> mstack;
-  KImportedBookmarkMenu * m_menu;
-  KBookmarkManager* m_pManager;
+    QStack<KImportedBookmarkMenu *> mstack;
+    KImportedBookmarkMenu *m_menu;
+    KBookmarkManager *m_pManager;
 };
 
 class KImportedBookmarkActionMenu : public KActionMenu, public KBookmarkActionInterface
 {
 public:
-  KImportedBookmarkActionMenu(const QIcon &icon, const QString &text, QObject *parent)
-    : KActionMenu(icon, text, parent),
-      KBookmarkActionInterface(KBookmark())
-  {
-  }
-  ~KImportedBookmarkActionMenu()
-  {}
+    KImportedBookmarkActionMenu(const QIcon &icon, const QString &text, QObject *parent)
+        : KActionMenu(icon, text, parent),
+          KBookmarkActionInterface(KBookmark())
+    {
+    }
+    ~KImportedBookmarkActionMenu()
+    {}
 };
 
 #endif

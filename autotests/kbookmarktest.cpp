@@ -33,40 +33,40 @@ void KBookmarkTest::initTestCase()
     QStandardPaths::setTestModeEnabled(true);
 }
 
-static void compareBookmarks( const KBookmark& initialBookmark, const KBookmark& decodedBookmark )
+static void compareBookmarks(const KBookmark &initialBookmark, const KBookmark &decodedBookmark)
 {
-    QCOMPARE( decodedBookmark.url(), initialBookmark.url() );
-    QCOMPARE( decodedBookmark.icon(), initialBookmark.icon() );
-    QCOMPARE( decodedBookmark.text(), initialBookmark.text() );
-    QCOMPARE( decodedBookmark.description(), initialBookmark.description() );
+    QCOMPARE(decodedBookmark.url(), initialBookmark.url());
+    QCOMPARE(decodedBookmark.icon(), initialBookmark.icon());
+    QCOMPARE(decodedBookmark.text(), initialBookmark.text());
+    QCOMPARE(decodedBookmark.description(), initialBookmark.description());
     QDomNamedNodeMap decodedAttribs = decodedBookmark.internalElement().attributes();
     QDomNamedNodeMap initialAttribs = initialBookmark.internalElement().attributes();
-    QCOMPARE( decodedAttribs.count(), initialAttribs.count() );
-    for ( int i = 0; i < decodedAttribs.length(); ++i ) {
-        QDomAttr decodedAttr = decodedAttribs.item( i ).toAttr();
-        QDomAttr initialAttr = initialAttribs.item( i ).toAttr();
-        QCOMPARE( decodedAttr.name(), initialAttr.name() );
-        QCOMPARE( decodedAttr.value(), initialAttr.value() );
+    QCOMPARE(decodedAttribs.count(), initialAttribs.count());
+    for (int i = 0; i < decodedAttribs.length(); ++i) {
+        QDomAttr decodedAttr = decodedAttribs.item(i).toAttr();
+        QDomAttr initialAttr = initialAttribs.item(i).toAttr();
+        QCOMPARE(decodedAttr.name(), initialAttr.name());
+        QCOMPARE(decodedAttr.value(), initialAttr.value());
     }
 }
 
 void KBookmarkTest::testMimeDataOneBookmark()
 {
-    QMimeData* mimeData = new QMimeData;
+    QMimeData *mimeData = new QMimeData;
 
-    KBookmark bookmark = KBookmark::standaloneBookmark( "KDE", QUrl( "http://www.kde.org" ), "icon" );
-    bookmark.setDescription( "Comment" );
-    QVERIFY( !bookmark.isNull() );
-    bookmark.populateMimeData( mimeData );
+    KBookmark bookmark = KBookmark::standaloneBookmark("KDE", QUrl("http://www.kde.org"), "icon");
+    bookmark.setDescription("Comment");
+    QVERIFY(!bookmark.isNull());
+    bookmark.populateMimeData(mimeData);
 
     QDomDocument doc;
     QVERIFY(mimeData->hasUrls());
-    QVERIFY( KBookmark::List::canDecode( mimeData ) );
-    const KBookmark::List decodedBookmarks = KBookmark::List::fromMimeData( mimeData, doc );
-    QVERIFY( !decodedBookmarks.isEmpty() );
-    QCOMPARE( decodedBookmarks.count(), 1 );
-    QVERIFY( !decodedBookmarks[0].isNull() );
-    compareBookmarks( bookmark, decodedBookmarks[0] );
+    QVERIFY(KBookmark::List::canDecode(mimeData));
+    const KBookmark::List decodedBookmarks = KBookmark::List::fromMimeData(mimeData, doc);
+    QVERIFY(!decodedBookmarks.isEmpty());
+    QCOMPARE(decodedBookmarks.count(), 1);
+    QVERIFY(!decodedBookmarks[0].isNull());
+    compareBookmarks(bookmark, decodedBookmarks[0]);
 
     // Do like keditbookmarks's paste code: (CreateCommand::execute)
     // Crashed before passing "doc" to fromMimeData (#160679)
@@ -77,30 +77,30 @@ void KBookmarkTest::testMimeDataOneBookmark()
 
 void KBookmarkTest::testMimeDataBookmarkList()
 {
-    QMimeData* mimeData = new QMimeData;
+    QMimeData *mimeData = new QMimeData;
 
-    KBookmark bookmark1 = KBookmark::standaloneBookmark( "KDE", QUrl( "http://www.kde.org" ), "icon" );
-    bookmark1.setDescription( "KDE comment" );
-    QVERIFY( !bookmark1.isNull() );
-    KBookmark bookmark2 = KBookmark::standaloneBookmark( "KOffice", QUrl( "http://www.koffice.org" ), "koicon" );
-    bookmark2.setDescription( "KOffice comment" );
-    QVERIFY( !bookmark2.isNull() );
-    bookmark2.setMetaDataItem( "key", "value" );
+    KBookmark bookmark1 = KBookmark::standaloneBookmark("KDE", QUrl("http://www.kde.org"), "icon");
+    bookmark1.setDescription("KDE comment");
+    QVERIFY(!bookmark1.isNull());
+    KBookmark bookmark2 = KBookmark::standaloneBookmark("KOffice", QUrl("http://www.koffice.org"), "koicon");
+    bookmark2.setDescription("KOffice comment");
+    QVERIFY(!bookmark2.isNull());
+    bookmark2.setMetaDataItem("key", "value");
 
     KBookmark::List initialBookmarks;
-    initialBookmarks.append( bookmark1 );
-    initialBookmarks.append( bookmark2 );
-    initialBookmarks.populateMimeData( mimeData );
+    initialBookmarks.append(bookmark1);
+    initialBookmarks.append(bookmark2);
+    initialBookmarks.populateMimeData(mimeData);
 
     QDomDocument doc;
     QVERIFY(mimeData->hasUrls());
-    QVERIFY( KBookmark::List::canDecode( mimeData ) );
-    const KBookmark::List decodedBookmarks = KBookmark::List::fromMimeData( mimeData, doc );
-    QCOMPARE( decodedBookmarks.count(), 2 );
-    QVERIFY( !decodedBookmarks[0].isNull() );
-    QVERIFY( !decodedBookmarks[1].isNull() );
-    compareBookmarks( bookmark1, decodedBookmarks[0] );
-    compareBookmarks( bookmark2, decodedBookmarks[1] );
+    QVERIFY(KBookmark::List::canDecode(mimeData));
+    const KBookmark::List decodedBookmarks = KBookmark::List::fromMimeData(mimeData, doc);
+    QCOMPARE(decodedBookmarks.count(), 2);
+    QVERIFY(!decodedBookmarks[0].isNull());
+    QVERIFY(!decodedBookmarks[1].isNull());
+    compareBookmarks(bookmark1, decodedBookmarks[0]);
+    compareBookmarks(bookmark2, decodedBookmarks[1]);
 
     delete mimeData;
 }
@@ -109,20 +109,20 @@ void KBookmarkTest::testBookmarkManager()
 {
     // like kfileplacesmodel.cpp does
     const QString placesModelFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfileplaces/bookmarks.xml";
-    KBookmarkManager* bookmarkManager = KBookmarkManager::managerForFile(placesModelFile, "kfilePlaces");
+    KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(placesModelFile, "kfilePlaces");
 
     // like kfileplacessharedbookmarks.cpp does
     const QString datadir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
     QDir().mkpath(datadir);
     const QString placesFile = datadir + "user-places.xbel";
-    KBookmarkManager* sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile);
+    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile);
 
     // like kfilebookmarkhandler.cpp does
-    QString file = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kfile/bookmarks.xml" );
+    QString file = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kfile/bookmarks.xml");
     if (file.isEmpty()) {
-        file = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfile/bookmarks.xml" ;
+        file = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfile/bookmarks.xml";
     }
-    KBookmarkManager *manager = KBookmarkManager::managerForFile( file, "kfile" );
+    KBookmarkManager *manager = KBookmarkManager::managerForFile(file, "kfile");
 
     // This is just to check an old crash in the global-static destructor, not doing anything with
     // these managers yet.
