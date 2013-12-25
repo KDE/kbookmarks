@@ -99,12 +99,16 @@ void KBookmarkDialogPrivate::initLayoutPrivate()
     layout = true;
 }
 
-void KBookmarkDialogPrivate::fillGroup(QTreeWidgetItem *parentItem, const KBookmarkGroup &group)
+void KBookmarkDialogPrivate::fillGroup(QTreeWidgetItem *parentItem, const KBookmarkGroup &group, const KBookmarkGroup &selectGroup)
 {
     for (KBookmark bk = group.first(); !bk.isNull(); bk = group.next(bk)) {
         if (bk.isGroup()) {
-            QTreeWidgetItem *item = new KBookmarkTreeItem(parentItem, folderTree, bk.toGroup());
-            fillGroup(item, bk.toGroup());
+            const KBookmarkGroup bkGroup = bk.toGroup();
+            QTreeWidgetItem* item = new KBookmarkTreeItem(parentItem, m_folderTree, bkGroup);
+            if (selectGroup == bkGroup) {
+                m_folderTree->setCurrentItem(item);
+            }
+            fillGroup(item, bkGroup, selectGroup);
         }
     }
 }
@@ -370,7 +374,7 @@ void KBookmarkDialog::newFolderButton()
         d->mgr->emitChanged(parentGroup);
         d->folderTree->clear();
         QTreeWidgetItem *root = new KBookmarkTreeItem(d->folderTree);
-        d->fillGroup(root, d->mgr->root());
+        d->fillGroup(root, d->mgr->root(), group);
     }
 }
 

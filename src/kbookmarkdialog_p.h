@@ -43,7 +43,7 @@ public:
     // selects the specified bookmark in the folder tree
     void setParentBookmark(const KBookmark &bm);
     KBookmarkGroup parentBookmark();
-    void fillGroup(QTreeWidgetItem *parentItem, const KBookmarkGroup &group);
+    void fillGroup(QTreeWidgetItem *parentItem, const KBookmarkGroup &group, const KBookmarkGroup &selectGroup = KBookmarkGroup());
 
     KBookmarkDialog *q;
     BookmarkDialogMode mode;
