@@ -3,6 +3,10 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 
 set(kbookmarks_SRCS
   kbookmark.cpp
+  kbookmarkaction.cpp
+  kbookmarkactioninterface.cpp
+  kbookmarkactionmenu.cpp
+  kbookmarkcontextmenu.cpp
   kbookmarkimporter.cpp
   kbookmarkmanager.cpp
   kbookmarkmanageradaptor.cpp
@@ -37,6 +41,10 @@ install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${INSTALL_TARGETS_DEFAUL
 
 install( FILES
   kbookmark.h
+  kbookmarkaction.h
+  kbookmarkactioninterface.h
+  kbookmarkactionmenu.h
+  kbookmarkcontextmenu.h
   kbookmarkexporter.h
   kbookmarkimporter.h
   kbookmarkmanager.h

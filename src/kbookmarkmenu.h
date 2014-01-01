@@ -1,4 +1,3 @@
-//  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
 /* This file is part of the KDE project
    Copyright (C) 1998, 1999 Torben Weis <weis@kde.org>
    Copyright (C) 2006 Daniel Teske <teske@squorn.de>
@@ -22,19 +21,15 @@
 #ifndef __kbookmarkmenu_h__
 #define __kbookmarkmenu_h__
 
-#include <sys/types.h>
+#include <kbookmarks_export.h>
 
 #include <QtCore/QObject>
-#include <QMenu>
 
-#include <kactionmenu.h>
-
-#include "kbookmark.h"
-#include "kbookmarkmanager.h"
-
-class QString;
+class QAction;
+class QMenu;
 class KBookmark;
 class KActionCollection;
+class KBookmarkManager;
 class KBookmarkOwner;
 class KBookmarkMenu;
 class KBookmarkActionInterface;
@@ -168,87 +163,6 @@ private:
 
 private:
     QString m_parentAddress;
-};
-
-class KBOOKMARKS_EXPORT KBookmarkContextMenu : public QMenu
-{
-    Q_OBJECT
-
-public:
-    KBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *manager, KBookmarkOwner *owner, QWidget *parent = 0);
-    virtual ~KBookmarkContextMenu();
-    virtual void addActions();
-
-public Q_SLOTS:
-    void slotEditAt();
-    void slotProperties();
-    void slotInsert();
-    void slotRemove();
-    void slotCopyLocation();
-    void slotOpenFolderInTabs();
-
-protected:
-    void addBookmark();
-    void addFolderActions();
-    void addProperties();
-    void addBookmarkActions();
-    void addOpenFolderInTabs();
-
-    KBookmarkManager *manager() const;
-    KBookmarkOwner *owner() const;
-    KBookmark bookmark() const;
-
-private Q_SLOTS:
-    void slotAboutToShow();
-
-private:
-    KBookmark bm;
-    KBookmarkManager *m_pManager;
-    KBookmarkOwner *m_pOwner;
-};
-
-class KBOOKMARKS_EXPORT KBookmarkActionInterface
-{
-public:
-    KBookmarkActionInterface(const KBookmark &bk);
-    virtual ~KBookmarkActionInterface();
-    const KBookmark bookmark() const;
-private:
-    KBookmark bm;
-};
-
-/***
- * A wrapper around KActionMenu to provide a nice constructor for bookmark groups.
- *
- */
-
-class KBOOKMARKS_EXPORT KBookmarkActionMenu : public KActionMenu, public KBookmarkActionInterface
-{
-public:
-    KBookmarkActionMenu(const KBookmark &bm, QObject *parent);
-    KBookmarkActionMenu(const KBookmark &bm, const QString &text, QObject *parent);
-    virtual ~KBookmarkActionMenu();
-};
-
-/***
- * This class is a KAction for bookmarks.
- * It provides a nice constructor.
- * And on triggered uses the owner to open the bookmark.
- *
- */
-
-class KBOOKMARKS_EXPORT KBookmarkAction : public QAction, public KBookmarkActionInterface
-{
-    Q_OBJECT
-public:
-    KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent);
-    virtual ~KBookmarkAction();
-
-public Q_SLOTS:
-    void slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km);
-
-private:
-    KBookmarkOwner *m_pOwner;
 };
 
 #endif

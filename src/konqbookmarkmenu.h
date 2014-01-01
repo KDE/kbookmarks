@@ -20,7 +20,10 @@
 
 #ifndef __konqbookmarkmenu_h__
 #define __konqbookmarkmenu_h__
+
 #include "kbookmarkmenu.h"
+#include "kbookmarkactionmenu.h"
+#include "kbookmarkcontextmenu.h"
 
 typedef KBookmarkOwner KonqBookmarkOwner; // KF5: KonqBookmarkOwner is deprecated, use KBookmarkOwner
 

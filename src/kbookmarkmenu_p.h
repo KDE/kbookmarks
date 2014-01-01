@@ -28,6 +28,7 @@
 #include <QStack>
 
 #include "kbookmark.h"
+#include "kbookmarkactioninterface.h"
 #include "kbookmarkimporter.h"
 #include "kbookmarkmanager.h"
 

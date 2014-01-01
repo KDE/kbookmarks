@@ -20,6 +20,8 @@
 
 #include "konqbookmarkmenu.h"
 #include "kbookmarkowner.h"
+#include "kbookmarkaction.h"
+#include "kbookmarkcontextmenu.h"
 
 #include <QtCore/QDebug>
 #include <QMenu>
