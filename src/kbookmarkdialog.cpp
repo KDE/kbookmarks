@@ -17,20 +17,21 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include <QInputDialog>
-#include <QLineEdit>
-
 #include "kbookmarkdialog.h"
 #include "kbookmarkdialog_p.h"
 #include "kbookmarkmanager.h"
 #include "kbookmarkmenu.h"
 #include "kbookmarkmenu_p.h"
+
 #include <QDialogButtonBox>
 #include <QFormLayout>
+#include <QInputDialog>
 #include <QLabel>
+#include <QLineEdit>
 #include <QPushButton>
 #include <QTreeWidget>
 #include <QHeaderView>
+
 #include <kiconloader.h>
 #include <kguiitem.h>
 

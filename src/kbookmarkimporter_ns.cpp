@@ -19,13 +19,12 @@
    Boston, MA 02110-1301, USA.
 */
 
-#include <QFileDialog>
-#include <QMessageBox>
-
 #include "kbookmarkimporter_ns.h"
 #include "kbookmarkimporter.h"
 #include "kbookmarkexporter.h"
 #include "kbookmarkmanager.h"
+#include <QFileDialog>
+#include <QMessageBox>
 #include <QtCore/QDebug>
 #include <kcharsets.h>
 
