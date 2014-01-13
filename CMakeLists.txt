@@ -24,9 +24,9 @@ ecm_setup_version(${KF5_VERSION}
                   PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5BookmarksConfigVersion.cmake")
 
 # Dependencies
-set(QT_REQUIRED_VERSION 5.2.0)
+set(REQUIRED_QT_VERSION 5.2.0)
 
-find_package(Qt5 ${QT_REQUIRED_VERSION} NO_MODULE REQUIRED Widgets Xml DBus)
+find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets Xml DBus)
 
 if ("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")
   find_package(KF5ConfigWidgets ${KF5_VERSION} REQUIRED)
