@@ -25,10 +25,7 @@
 #include <qtextcodec.h>
 #include <QApplication>
 
-#include <sys/types.h>
-#include <stddef.h>
-#include <dirent.h>
-#include <sys/stat.h>
+#include <qplatformdefs.h>
 
 #include "kbookmarkimporter.h"
 

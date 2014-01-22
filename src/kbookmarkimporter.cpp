@@ -23,11 +23,10 @@
 #include <kcharsets.h>
 #include <qtextcodec.h>
 
-#include <sys/types.h>
+#include <qplatformdefs.h>
 #include <stddef.h>
-#include <dirent.h>
-#include <sys/stat.h>
 #include <assert.h>
+
 
 #include "kbookmarkmanager.h"
 
