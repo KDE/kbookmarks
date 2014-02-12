@@ -104,9 +104,9 @@ void KBookmarkDialogPrivate::fillGroup(QTreeWidgetItem *parentItem, const KBookm
     for (KBookmark bk = group.first(); !bk.isNull(); bk = group.next(bk)) {
         if (bk.isGroup()) {
             const KBookmarkGroup bkGroup = bk.toGroup();
-            QTreeWidgetItem* item = new KBookmarkTreeItem(parentItem, m_folderTree, bkGroup);
+            QTreeWidgetItem* item = new KBookmarkTreeItem(parentItem, folderTree, bkGroup);
             if (selectGroup == bkGroup) {
-                m_folderTree->setCurrentItem(item);
+                folderTree->setCurrentItem(item);
             }
             fillGroup(item, bkGroup, selectGroup);
         }
