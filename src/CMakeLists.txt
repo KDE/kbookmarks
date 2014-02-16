@@ -39,7 +39,8 @@ set_target_properties(KF5Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION_STR
                                               EXPORT_NAME Bookmarks
 )
 
-ecm_generate_headers(
+ecm_generate_headers(KBookmarks_HEADERS
+  HEADER_NAMES
   KBookmark
   KBookmarkAction
   KBookmarkActionInterface
@@ -52,10 +53,8 @@ ecm_generate_headers(
   KBookmarkDialog
   KonqBookmarkMenu
 
-  MODULE_NAME KBookmarks
   REQUIRED_HEADERS KBookmarks_HEADERS
 )
-install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/KBookmarks DESTINATION ${INCLUDE_INSTALL_DIR} COMPONENT Devel)
 
 install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${INSTALL_TARGETS_DEFAULT_ARGS})
 
