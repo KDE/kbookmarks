@@ -29,6 +29,7 @@
  */
 class KBOOKMARKS_EXPORT KNSBookmarkImporterImpl : public KBookmarkImporterBase
 {
+    Q_OBJECT // For QObject::tr
 public:
     KNSBookmarkImporterImpl() : m_utf8(false) { }
     void setUtf8(bool utf8)

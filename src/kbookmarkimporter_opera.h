@@ -29,6 +29,7 @@
  */
 class KBOOKMARKS_EXPORT KOperaBookmarkImporterImpl : public KBookmarkImporterBase
 {
+    Q_OBJECT // For QObject::tr
 public:
     KOperaBookmarkImporterImpl() { }
     virtual void parse();
