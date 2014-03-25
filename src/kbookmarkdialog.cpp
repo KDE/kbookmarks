@@ -23,6 +23,7 @@
 #include "kbookmarkmenu.h"
 #include "kbookmarkmenu_p.h"
 
+#include <QCoreApplication>
 #include <QDialogButtonBox>
 #include <QFormLayout>
 #include <QInputDialog>
@@ -67,17 +68,17 @@ void KBookmarkDialogPrivate::initLayoutPrivate()
 {
     title = new QLineEdit(q);
     title->setMinimumWidth(300);
-    titleLabel = new QLabel(QObject::tr("Name:", "@label:textbox"), q);
+    titleLabel = new QLabel(QCoreApplication::translate("KBookmarkDialog", "Name:", "@label:textbox"), q);
     titleLabel->setBuddy(title);
 
     url = new QLineEdit(q);
     url->setMinimumWidth(300);
-    urlLabel = new QLabel(QObject::tr("Location:", "@label:textbox"), q);
+    urlLabel = new QLabel(QCoreApplication::translate("KBookmarkDialog", "Location:", "@label:textbox"), q);
     urlLabel->setBuddy(url);
 
     comment = new QLineEdit(q);
     comment->setMinimumWidth(300);
-    commentLabel = new QLabel(QObject::tr("Comment:", "@label:textbox"), q);
+    commentLabel = new QLabel(QCoreApplication::translate("KBookmarkDialog", "Comment:", "@label:textbox"), q);
     commentLabel->setBuddy(comment);
 
     folderTree = new QTreeWidget(q);
