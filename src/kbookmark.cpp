@@ -304,7 +304,7 @@ QString KBookmark::text() const
 QString KBookmark::fullText() const
 {
     if (isSeparator()) {
-        return QCoreApplication::translate("Bookmark separator", "--- separator ---");
+        return QCoreApplication::translate("KBookmark", "--- separator ---", "Bookmark separator");
     }
 
     QString text = element.namedItem("title").toElement().text();
