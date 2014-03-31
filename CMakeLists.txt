@@ -37,6 +37,16 @@ if ("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")
   find_package(KF5XmlGui ${KF5_VERSION} REQUIRED)
 endif()
 
+if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/po)
+  include(ECMCreateQmFromPoFiles)
+  ecm_create_qm_from_po_files(
+    PO_DIR po
+    POT_NAME kbookmarks5.pot
+    DATA_INSTALL_SUB_DIR kbookmarks
+    CREATE_LOADER kbookmarks_QM_LOADER
+  )
+endif()
+
 add_subdirectory(src)
 add_subdirectory(tests)
 add_subdirectory(autotests)

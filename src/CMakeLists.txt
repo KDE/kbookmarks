@@ -18,6 +18,7 @@ set(kbookmarks_SRCS
   kbookmarkimporter_ns.cpp
   kbookmarkdombuilder.cpp
   kbookmarkdialog.cpp
+  ${kbookmarks_QM_LOADER}
 )
 
 add_library(KF5Bookmarks ${kbookmarks_SRCS})
