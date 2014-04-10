@@ -54,6 +54,8 @@ class KBookmarkMenuPrivate; // Not implemented
  *    menu as a parameter
  * 3) Insert your (now full) popup menu wherever you wish
  *
+ * The functionality of this class can be disabled with the "action/bookmarks"
+ * Kiosk action (see the KAuthorized namespace).
  */
 class KBOOKMARKS_EXPORT KBookmarkMenu : public QObject
 {
