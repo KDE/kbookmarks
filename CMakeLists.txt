@@ -16,6 +16,8 @@ include(GenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 
+include(ECMCreateQmFromPoFiles)
+
 set(KF5_VERSION "4.98.0")
 
 ecm_setup_version(${KF5_VERSION}
@@ -37,14 +39,9 @@ if ("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")
   find_package(KF5XmlGui ${KF5_VERSION} REQUIRED)
 endif()
 
-if (EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/po)
-  include(ECMCreateQmFromPoFiles)
-  ecm_create_qm_from_po_files(
-    PO_DIR po
-    POT_NAME kbookmarks5.pot
-    DATA_INSTALL_SUB_DIR kbookmarks
-    CREATE_LOADER kbookmarks_QM_LOADER
-  )
+file(GLOB PO_FILES "po/*.po")
+if (PO_FILES)
+  ecm_create_qm_from_po_files(PO_FILES ${PO_FILES} CATALOG_NAME kbookmarks5)
 endif()
 
 add_subdirectory(src)

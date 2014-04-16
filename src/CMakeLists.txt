@@ -1,6 +1,8 @@
 # TODO
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 
+ecm_create_qm_loader(kbookmarks_QM_LOADER kbookmarks5)
+
 set(kbookmarks_SRCS
   kbookmark.cpp
   kbookmarkaction.cpp
