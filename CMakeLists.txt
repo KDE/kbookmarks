@@ -31,13 +31,11 @@ set(REQUIRED_QT_VERSION 5.2.0)
 
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets Xml DBus)
 
-if ("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")
-  find_package(KF5ConfigWidgets ${KF5_VERSION} REQUIRED)
-  find_package(KF5CoreAddons ${KF5_VERSION} REQUIRED)
-  find_package(KF5IconThemes ${KF5_VERSION} REQUIRED)
-  find_package(KF5WidgetsAddons ${KF5_VERSION} REQUIRED)
-  find_package(KF5XmlGui ${KF5_VERSION} REQUIRED)
-endif()
+find_package(KF5ConfigWidgets ${KF5_VERSION} REQUIRED)
+find_package(KF5CoreAddons ${KF5_VERSION} REQUIRED)
+find_package(KF5IconThemes ${KF5_VERSION} REQUIRED)
+find_package(KF5WidgetsAddons ${KF5_VERSION} REQUIRED)
+find_package(KF5XmlGui ${KF5_VERSION} REQUIRED)
 
 file(GLOB PO_FILES "po/*.po")
 if (PO_FILES)
@@ -73,6 +71,4 @@ install(FILES
   DESTINATION ${INCLUDE_INSTALL_DIR} COMPONENT Devel
 )
 
-if ("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")
-  feature_summary(WHAT ALL   FATAL_ON_MISSING_REQUIRED_PACKAGES)
-endif()
+feature_summary(WHAT ALL   FATAL_ON_MISSING_REQUIRED_PACKAGES)
