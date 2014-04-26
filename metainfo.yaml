@@ -1,1 +1,9 @@
+maintainer:
+description: Support for bookmarks and the XBEL format
 tier: 3
+type: functional
+platforms:
+    - name: All
+portingAid: false
+deprecated: false
+release: true
