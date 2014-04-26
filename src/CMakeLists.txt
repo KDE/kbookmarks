@@ -27,7 +27,7 @@ add_library(KF5Bookmarks ${kbookmarks_SRCS})
 generate_export_header(KF5Bookmarks BASE_NAME KBookmarks)
 add_library(KF5::Bookmarks ALIAS KF5Bookmarks)
 
-target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KBookmarks>")
+target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KF5_INCLUDE_INSTALL_DIR}/KBookmarks>")
 
 target_link_libraries(KF5Bookmarks PUBLIC Qt5::Widgets Qt5::Xml)
 target_link_libraries(KF5Bookmarks PRIVATE
@@ -59,7 +59,7 @@ ecm_generate_headers(KBookmarks_HEADERS
   REQUIRED_HEADERS KBookmarks_HEADERS
 )
 
-install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
   # These classes have weirdly named classes, no forwarding headers.
@@ -70,7 +70,7 @@ install(FILES
   kbookmarkimporter_ns.h
   ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_export.h
   ${KBookmarks_HEADERS}
-  DESTINATION ${INCLUDE_INSTALL_DIR}/KBookmarks COMPONENT Devel
+  DESTINATION ${KF5_INCLUDE_INSTALL_DIR}/KBookmarks COMPONENT Devel
 )
 include(ECMGeneratePriFile)
 ecm_generate_pri_file(BASE_NAME KBookmarks LIB_NAME KF5Bookmarks DEPS "widgets xml" FILENAME_VAR PRI_FILENAME)
