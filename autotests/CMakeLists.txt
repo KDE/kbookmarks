@@ -7,10 +7,6 @@ if(NOT Qt5Test_FOUND)
     return()
 endif()
 
-include(ECMMarkAsTest)
+include(ECMAddTests)
 
-add_executable(kbookmarktest kbookmarktest.cpp)
-ecm_mark_as_test(kbookmarktest)
-add_test(kbookmark-kbookmarktest kbookmarktest)
-target_link_libraries(kbookmarktest KF5::Bookmarks Qt5::Test)
-
+ecm_add_test(kbookmarktest.cpp TEST_NAME kbookmarktest LINK_LIBRARIES KF5::Bookmarks Qt5::Test)
