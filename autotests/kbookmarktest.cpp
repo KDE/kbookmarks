@@ -114,7 +114,7 @@ void KBookmarkTest::testBookmarkManager()
     // like kfileplacessharedbookmarks.cpp does
     const QString datadir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
     QDir().mkpath(datadir);
-    const QString placesFile = datadir + "user-places.xbel";
+    const QString placesFile = datadir + "/user-places.xbel";
     KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile);
 
     // like kfilebookmarkhandler.cpp does
