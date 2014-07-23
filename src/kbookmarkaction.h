@@ -39,6 +39,9 @@ public:
 public Q_SLOTS:
     void slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km);
 
+private Q_SLOTS:
+    void slotTriggered();
+
 private:
     KBookmarkOwner *m_pOwner;
 };

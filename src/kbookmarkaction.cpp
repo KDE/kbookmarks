@@ -21,6 +21,7 @@
 #include "kbookmarkaction.h"
 #include "kbookmarkowner.h"
 #include <QDesktopServices>
+#include <QApplication>
 
 KBookmarkAction::KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent)
     : QAction(bk.text().replace('&', "&&"), parent),
@@ -36,12 +37,16 @@ KBookmarkAction::KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QOb
     if (!description.isEmpty()) {
         setToolTip(description);
     }
-    connect(this, SIGNAL(triggered(Qt::MouseButtons,Qt::KeyboardModifiers)),
-            SLOT(slotSelected(Qt::MouseButtons,Qt::KeyboardModifiers)));
+    connect(this, SIGNAL(triggered(bool)), this, SLOT(slotTriggered()));
 }
 
 KBookmarkAction::~KBookmarkAction()
 {
+}
+
+void KBookmarkAction::slotTriggered()
+{
+    slotSelected(QApplication::mouseButtons(), QApplication::keyboardModifiers());
 }
 
 void KBookmarkAction::slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km)
