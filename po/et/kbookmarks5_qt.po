@@ -1,0 +1,392 @@
+# translation of kio4.po to Estonian
+# translation of kdelibs.po to Estonian
+# Copyright (C) 1999,2002,2003, 2005 Free Software Foundation, Inc.
+#
+# Hasso Tepper <hasso@linux.ee>, 1999, 2003.
+# Hasso Tepper <hasso@estpak.ee>, 2002,2003.
+# Marek Laane <bald@smail.ee>, 2003-2009.
+# Peeter Russak <pezz@tkwcy.ee>, 2005.
+# Hasso Tepper <hasso@kde.org>, 2005.
+# Marek Laane <bald@smail.ee>, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2012-12-17 15:51+0200\n"
+"Last-Translator: Marek Laane <bald@smail.ee>\n"
+"Language-Team: Estonian <kde-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: kbookmark.cpp:307
+#, fuzzy
+#| msgid "--- separator ---"
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- eraldaja ---"
+
+#: kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "Lisa järjehoidja siia"
+
+#: kbookmarkcontextmenu.cpp:68
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Ava kataloog järjehoidjate redaktoris"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "Kustuta kataloog"
+
+#: kbookmarkcontextmenu.cpp:76
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "Omadused"
+
+#: kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "Kopeeri viida aadress"
+
+#: kbookmarkcontextmenu.cpp:84
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "Kustuta järjehoidja"
+
+#: kbookmarkcontextmenu.cpp:90
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Ava kataloog kaartidel"
+
+#: kbookmarkcontextmenu.cpp:116
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Olematu URL-iga järjehoidjat ei saa lisada."
+
+#: kbookmarkcontextmenu.cpp:146
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "Järjehoidjate kataloogi eemaldamine"
+
+#: kbookmarkcontextmenu.cpp:147
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "Järjehoidja eemaldamine"
+
+#: kbookmarkcontextmenu.cpp:148
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Kas tõesti eemaldada järjehoidjate kataloog\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:149
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Kas tõesti eemaldada järjehoidja\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:70
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Nimi:"
+
+#: kbookmarkdialog.cpp:75
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Asukoht:"
+
+#: kbookmarkdialog.cpp:80
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Kommentaar:"
+
+#: kbookmarkdialog.cpp:191
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Uuenda"
+
+#: kbookmarkdialog.cpp:192
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Järjehoidja omadused"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Uus kataloog..."
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Lisa"
+
+#: kbookmarkdialog.cpp:228
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Lisa järjehoidja"
+
+#: kbookmarkdialog.cpp:266
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Järjehoidjate lisamine"
+
+#: kbookmarkdialog.cpp:299
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Kataloogi valimine"
+
+#: kbookmarkdialog.cpp:327
+#, fuzzy
+#| msgctxt "folder name"
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Uus kataloog"
+
+#: kbookmarkdialog.cpp:362
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Uue järjehoidjate kataloogi loomine"
+
+#: kbookmarkdialog.cpp:363
+#, fuzzy, qt-format
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Uue järjehoidjate kataloogi loomine asukohas %1"
+
+#: kbookmarkdialog.cpp:365
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Uus kataloog:"
+
+#: kbookmarkdialog.cpp:386
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Järjehoidjad"
+
+#: kbookmarkimporter_ns.cpp:115
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|HTML failid (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML failid (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:137
+#, fuzzy
+#| msgid "Netscape Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Netscape järjehoidjad"
+
+#: kbookmarkimporter_ns.cpp:158
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Selle faili genereeris Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Järjehoidjad"
+
+#: kbookmarkimporter_opera.cpp:119
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera järjehoidjafailid (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:122
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera järjehoidjafailid (*.adr)"
+
+#: kbookmarkmanager.cpp:442
+#, fuzzy, qt-format
+#| msgid ""
+#| "Unable to save bookmarks in %1. Reported error was: %2. This error "
+#| "message will only be shown once. The cause of the error needs to be fixed "
+#| "as quickly as possible, which is most likely a full hard drive."
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Järjehoidjate salvestamine asukohta %1 nurjus. Teatati veast: %2. Seda "
+"veateadet näidatakse ainult üks kord. Veapõhjus tuleb kõrvaldada nii "
+"kiiresti kui võimalik; tõneäoliselt on põhjuseks täis saanud kõvaketas."
+
+#: kbookmarkmenu.cpp:260
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Ava kataloog kaartidel"
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "Kõik selle kataloogi järjehoidjad avatakse uue kaardina."
+
+#: kbookmarkmenu.cpp:279
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Lisa kaardid järjehoidjatesse kataloogina..."
+
+#: kbookmarkmenu.cpp:283
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "Järjehoidjate kataloogi lisamine kõigi praegu avatud kaartidega."
+
+#: kbookmarkmenu.cpp:320
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Redigeeri järjehoidjaid eraldi aknas"
+
+#: kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "Uus järjehoidjate kataloog..."
+
+#: kbookmarkmenu.cpp:333
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Loo uus järjehoidjate kataloog selles menüüs"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+#| msgid "Hide in toolbar"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "Peida tööriistaribal"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+#| msgid "Show in toolbar"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "Näita tööriistariba"
+
+#: konqbookmarkmenu.cpp:66
+#, fuzzy
+#| msgid "Open in New Window"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "Ava uues aknas"
+
+#: konqbookmarkmenu.cpp:67
+#, fuzzy
+#| msgid "Open in New Tab"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "Ava uuel kaardil"
