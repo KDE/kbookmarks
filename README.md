@@ -1,7 +1,5 @@
 # KBookmarks
 
-Web browser bookmark management
-
 ## Introduction
 
 KBookmarks lets you access and manipulate bookmarks stored using the
