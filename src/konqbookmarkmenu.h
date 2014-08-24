@@ -96,11 +96,6 @@ protected:
     virtual QAction *actionForBookmark(const KBookmark &bm);
     QMenu *contextMenu(QAction *action);
     void fillDynamicBookmarks();
-private:
-    KBookmarkOwner *owner()
-    {
-        return static_cast<KBookmarkOwner *>(KBookmarkMenu::owner());
-    }
 };
 
 class KBOOKMARKS_EXPORT KonqBookmarkContextMenu : public KBookmarkContextMenu
@@ -115,11 +110,6 @@ public Q_SLOTS:
     void openInNewTab();
     void openInNewWindow();
     void toggleShowInToolbar();
-private:
-    KBookmarkOwner *owner()
-    {
-        return static_cast<KBookmarkOwner *>(KBookmarkContextMenu::owner());
-    }
 };
 #endif
 
