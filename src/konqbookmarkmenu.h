@@ -24,6 +24,7 @@
 #include "kbookmarkmenu.h"
 #include "kbookmarkactionmenu.h"
 #include "kbookmarkcontextmenu.h"
+#include "kbookmarkowner.h" // for SC reasons
 
 typedef KBookmarkOwner KonqBookmarkOwner; // KF5: KonqBookmarkOwner is deprecated, use KBookmarkOwner
 
