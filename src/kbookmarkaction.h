@@ -18,6 +18,9 @@
    Boston, MA 02110-1301, USA.
 */
 
+#ifndef KBOOKMARKACTION_H
+#define KBOOKMARKACTION_H
+
 #include "kbookmarkactioninterface.h"
 #include <QAction>
 
@@ -46,3 +49,4 @@ private:
     KBookmarkOwner *m_pOwner;
 };
 
+#endif
