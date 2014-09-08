@@ -1,0 +1,333 @@
+# translation of kdelibs.po to
+# translation of kdelibs.po to
+# translation of kdelibs.po to
+# translation of kdelibs.po to Xhosa
+# K Desktop Environment - kdelibs
+# Copyright (C) 2001 translate.org.za
+# Antoinette Dekeni <antoinette@transalate.org.za>, 2001.
+# Lwandle Mgidlana <lwandle@translate.org.za>, 2002
+# Thelma Lungcuzo <thelma@translate.org.za>, 2002
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2002-12-13 17:20SAST\n"
+"Last-Translator: Lwandle Mgidlana <lwandle@translate.org.za>\n"
+"Language-Team: Xhosa <xhosa@translate.org.za>\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.0beta2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: kbookmark.cpp:307
+#, fuzzy
+#| msgid "--- separator ---"
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- umahluli ---"
+
+#: kbookmarkcontextmenu.cpp:62
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "Yongeza Inqaku lencwadi"
+
+#: kbookmarkcontextmenu.cpp:68
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Amanqaku eencwadi"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "Cima Ifayile"
+
+#: kbookmarkcontextmenu.cpp:76
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "Izinto zobumnini ze%1"
+
+#: kbookmarkcontextmenu.cpp:81
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "Idilesi ye Email"
+
+#: kbookmarkcontextmenu.cpp:84
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "Amanqaku encwadi e Netscape"
+
+#: kbookmarkcontextmenu.cpp:90
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Amanqaku eencwadi"
+
+#: kbookmarkcontextmenu.cpp:116
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Ayinakudibanisa inqaku lencwadi kwi URL engenanto"
+
+#: kbookmarkcontextmenu.cpp:146
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "&Incwadi eneenkcukacha Entsha Yenqaku lencwadi..."
+
+#: kbookmarkcontextmenu.cpp:147
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "Ukhetho lwelaphu elinomyalezo"
+
+#: kbookmarkcontextmenu.cpp:148
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+
+#: kbookmarkcontextmenu.cpp:149
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+
+#: kbookmarkdialog.cpp:70
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Igama:"
+
+#: kbookmarkdialog.cpp:75
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Indawo ekuyo:"
+
+#: kbookmarkdialog.cpp:80
+#, fuzzy
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Gqabaza:"
+
+#: kbookmarkdialog.cpp:191
+#, fuzzy
+#| msgid "Date"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Umhla"
+
+#: kbookmarkdialog.cpp:192
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Iimpahla"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "Incwadi enenkcukacha Entsha:"
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+#, fuzzy
+#| msgid "&Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "&Yongeza"
+
+#: kbookmarkdialog.cpp:228
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Yongeza Inqaku lencwadi"
+
+#: kbookmarkdialog.cpp:266
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Yongeza Inqaku lencwadi"
+
+#: kbookmarkdialog.cpp:299
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Cima Ifayile"
+
+#: kbookmarkdialog.cpp:327
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Incwadi enenkcukacha Entsha:"
+
+#: kbookmarkdialog.cpp:362
+#, fuzzy
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Yenza Inqaku lencwadi Elitsha Lencwadi eneenkcukacha"
+
+#: kbookmarkdialog.cpp:363
+#, fuzzy, qt-format
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Yenza Inqaku Lencwadi Elitsha Lencwadi Eneenkcukacha kwi %1"
+
+#: kbookmarkdialog.cpp:365
+#, fuzzy
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Incwadi enenkcukacha entsha:"
+
+#: kbookmarkdialog.cpp:386
+#, fuzzy
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Amanqaku eencwadi"
+
+#: kbookmarkimporter_ns.cpp:115
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|HTML iifayile (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML iifayile (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:137
+#, fuzzy
+#| msgid "Netscape Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Amanqaku encwadi e Netscape"
+
+#: kbookmarkimporter_ns.cpp:158
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Lefayile yenziwa yi Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Amanqaku eencwadi"
+
+#: kbookmarkimporter_opera.cpp:119
+#, fuzzy
+#| msgid "&New Bookmark Folder..."
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "&Incwadi eneenkcukacha Entsha Yenqaku lencwadi..."
+
+#: kbookmarkimporter_opera.cpp:122
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr ""
+
+#: kbookmarkmanager.cpp:442
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+
+#: kbookmarkmenu.cpp:260
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Amanqaku eencwadi"
+
+#: kbookmarkmenu.cpp:264
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr ""
+
+#: kbookmarkmenu.cpp:279
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "&Incwadi eneenkcukacha Entsha Yenqaku lencwadi..."
+
+#: kbookmarkmenu.cpp:283
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr ""
+
+#: kbookmarkmenu.cpp:320
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Hlela uqokelelo lwakho lwenqaku lencwadi kwi window eyahlukileyo"
+
+#: kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgid "&New Bookmark Folder..."
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "&Incwadi eneenkcukacha Entsha Yenqaku lencwadi..."
+
+#: kbookmarkmenu.cpp:333
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Yenza inqaku elitsha lencwadi eneenkcukacha kule menu"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "Amanqaku eencwadi"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "Bonisa Ibar yesixhobo"
+
+#: konqbookmarkmenu.cpp:66
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr ""
+
+#: konqbookmarkmenu.cpp:67
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "Amanqaku eencwadi"

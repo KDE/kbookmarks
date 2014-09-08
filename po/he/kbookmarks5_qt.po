@@ -1,0 +1,399 @@
+# translation of kio4.po to hebrew
+# Translation of kio4.po to Hebrew
+# translation of kio4.po to
+# KDE Hebrew Localization Project
+#
+# In addition to the copyright owners of the program
+# which this translation accompanies, this translation is
+# Copyright (C) 1998 Erez Nir <erez-n@actcom.co.il>
+# Copyright (C) 1999-2003 Meni Livne <livne@kde.org>
+#
+# This translation is subject to the same Open Source
+# license as the program which it accompanies.
+#
+# Diego Iastrubni <elcuco@kde.org>, 2003.
+# Diego Iastrubni <elcuco@kde.org>, 2004.
+# Diego Iastrubni <elcuco@kde.org>, 2005, 2007, 2008.
+# דיאגו יסטרובני <elcuco@kde.org>, 2005, 2012, 2013.
+# Meni Livne <livne@kde.org>, 2007.
+# tahmar1900 <tahmar1900@gmail.com>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2013-11-29 23:45+0200\n"
+"Last-Translator: Diego Iastrubni <elcuco@kde.org>\n"
+"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: kbookmark.cpp:307
+#, fuzzy
+#| msgid "--- separator ---"
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- מפריד ---"
+
+#: kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "הוסף סימנייה כאן"
+
+#: kbookmarkcontextmenu.cpp:68
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "פתח תיקייה בעורך הסימניות"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "מחק תיקייה"
+
+#: kbookmarkcontextmenu.cpp:76
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "מאפיינים"
+
+#: kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "העתק כתובת הקישור"
+
+#: kbookmarkcontextmenu.cpp:84
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "מחק סימנייה"
+
+#: kbookmarkcontextmenu.cpp:90
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "פתח תיקייה בלשוניות"
+
+#: kbookmarkcontextmenu.cpp:116
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "אין אפשרות להוסיף סימנייה עם כתובת ריקה."
+
+#: kbookmarkcontextmenu.cpp:146
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "מחיקת תיקיית סימניות"
+
+#: kbookmarkcontextmenu.cpp:147
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "מחיקת סימנייה"
+
+#: kbookmarkcontextmenu.cpp:148
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"האם אתה בטוח שברצונך להסיר את תיקיית הסימניות\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:149
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"האם אתה בטוח שברצונך להסיר את הסימנייה\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:70
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "שם:"
+
+#: kbookmarkdialog.cpp:75
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "מיקום:"
+
+#: kbookmarkdialog.cpp:80
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "הערה:"
+
+#: kbookmarkdialog.cpp:191
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "עדכן"
+
+#: kbookmarkdialog.cpp:192
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "מאפייני הסימנייה"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&תיקייה חדשה..."
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "הוסף"
+
+#: kbookmarkdialog.cpp:228
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "הוסף לסימניות"
+
+#: kbookmarkdialog.cpp:266
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "הוסף סימניות"
+
+#: kbookmarkdialog.cpp:299
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "בחר תיקייה"
+
+#: kbookmarkdialog.cpp:327
+#, fuzzy
+#| msgctxt "folder name"
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "תיקייה חדשה"
+
+#: kbookmarkdialog.cpp:362
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "יצירת תיקיית סימניות חדשה"
+
+#: kbookmarkdialog.cpp:363
+#, fuzzy, qt-format
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "יצירת תיקיית סימניות חדשה ב־%1"
+
+#: kbookmarkdialog.cpp:365
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "תיקייה חדשה:"
+
+#: kbookmarkdialog.cpp:386
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "סימניות"
+
+#: kbookmarkimporter_ns.cpp:115
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html| HTML קבצי (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html| HTML קבצי (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:137
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:158
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- קובץ זה נוצר על ידי Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "סימניות"
+
+#: kbookmarkimporter_opera.cpp:119
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr| Opera קבצי סימניות של  (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:122
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr| Opera קבצי סימניות של  (*.adr)"
+
+#: kbookmarkmanager.cpp:442
+#, fuzzy, qt-format
+#| msgid ""
+#| "Unable to save bookmarks in %1. Reported error was: %2. This error "
+#| "message will only be shown once. The cause of the error needs to be fixed "
+#| "as quickly as possible, which is most likely a full hard drive."
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"אין אפשרות לשמור את הסימניות ב־%1. השגיאה שהתקבלה היא: %2. הודעת שגיאה זו "
+"תוצג פעם אחת בלבד. יש לתקן בהקדם האפשרי את הגורם לשגיאה, שהוא ככל הנראה כונן "
+"קשיח מלא."
+
+#: kbookmarkmenu.cpp:260
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "פתח תיקייה בלשוניות"
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "פתח את כל הסימניות בתיקייה זאת בלשונית חדשה."
+
+#: kbookmarkmenu.cpp:279
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "הוסף לשוניות לסימניות בתור תיקייה..."
+
+#: kbookmarkmenu.cpp:283
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "הוסף תיקיית סימניות עבור כל הלשוניות הפתוחות."
+
+#: kbookmarkmenu.cpp:320
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "עריכת אוסף הסימניות שלך בחלון נפרד"
+
+#: kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "תיקיית סימניות חדשה..."
+
+#: kbookmarkmenu.cpp:333
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "צור תיקיית סימניות חדשה בתפריט זה"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+#| msgid "Hide in toolbar"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "הסתר בסרגל־כלים"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+#| msgid "Show in toolbar"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "הצג בסרגל־כלים"
+
+#: konqbookmarkmenu.cpp:66
+#, fuzzy
+#| msgid "Open in New Window"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "פתח בחלון חדש"
+
+#: konqbookmarkmenu.cpp:67
+#, fuzzy
+#| msgid "Open in New Tab"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "פתח בלשונית חדשה"
