@@ -331,7 +331,7 @@ void KBookmark::setFullText(const QString &fullText)
 
 QUrl KBookmark::url() const
 {
-    return QUrl(element.attribute("href").toLatin1());
+    return QUrl(element.attribute("href"));
 }
 
 void KBookmark::setUrl(const QUrl &url)
