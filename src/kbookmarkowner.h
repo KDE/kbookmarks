@@ -114,7 +114,7 @@ public:
      * Represents the data for a bookmark that will be added.
      * @since 5.0
      */
-    class FutureBookmark
+    class KBOOKMARKS_EXPORT FutureBookmark
     {
     public:
         FutureBookmark(const QString &title, const QUrl &url, const QString &icon);
