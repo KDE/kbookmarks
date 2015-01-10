@@ -27,7 +27,7 @@ add_library(KF5Bookmarks ${kbookmarks_SRCS})
 generate_export_header(KF5Bookmarks BASE_NAME KBookmarks)
 add_library(KF5::Bookmarks ALIAS KF5Bookmarks)
 
-target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KF5_INCLUDE_INSTALL_DIR}/KBookmarks>")
+target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks>")
 
 target_link_libraries(KF5Bookmarks PUBLIC Qt5::Widgets Qt5::Xml)
 target_link_libraries(KF5Bookmarks PRIVATE
@@ -70,8 +70,8 @@ install(FILES
   kbookmarkimporter_ns.h
   ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_export.h
   ${KBookmarks_HEADERS}
-  DESTINATION ${KF5_INCLUDE_INSTALL_DIR}/KBookmarks COMPONENT Devel
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks COMPONENT Devel
 )
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KBookmarks LIB_NAME KF5Bookmarks DEPS "widgets xml" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KF5_INCLUDE_INSTALL_DIR}/KBookmarks)
+ecm_generate_pri_file(BASE_NAME KBookmarks LIB_NAME KF5Bookmarks DEPS "widgets xml" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
