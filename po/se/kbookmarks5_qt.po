@@ -1,0 +1,330 @@
+# Translation of kbookmarks5_qt to Northern Sami
+#
+# Børre Gaup <boerre@skolelinux.no>, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-14 04:54+0000\n"
+"PO-Revision-Date: 2012-06-03 01:00+0200\n"
+"Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
+"Language-Team: Northern Sami <i18n-sme@lister.ping.uio.no>\n"
+"Language: se\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: qtrich\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:307
+#, fuzzy
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "— earrolinnjá —"
+
+#: kbookmarkcontextmenu.cpp:62
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "Lasit girjemearkka dása"
+
+#: kbookmarkcontextmenu.cpp:68
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Raba máhpa girjemearkadoaimmaheaddjis"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "Sihko máhpa"
+
+#: kbookmarkcontextmenu.cpp:76
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "Iešvuođat"
+
+#: kbookmarkcontextmenu.cpp:81
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "Máŋge liŋkačujuhusa"
+
+#: kbookmarkcontextmenu.cpp:84
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "Sihko girjemearkka"
+
+#: kbookmarkcontextmenu.cpp:90
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Raba máhpa gilkoriin"
+
+#: kbookmarkcontextmenu.cpp:116
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Ii sáhte lasihit girjemearkka guorus čujuhusain."
+
+#: kbookmarkcontextmenu.cpp:146
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "Váldde eret girjemearkamáhpa"
+
+#: kbookmarkcontextmenu.cpp:147
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "Sihku girjemearkka"
+
+#: kbookmarkcontextmenu.cpp:148
+#, fuzzy, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr "Háliidatgo duođaid dán «%1»-girjemearkamáhpa váldit eret?"
+
+#: kbookmarkcontextmenu.cpp:149
+#, fuzzy, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr "Háliidatgo duođaid «%1»-girjemearkka váldit eret?"
+
+#: kbookmarkdialog.cpp:70
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Namma:"
+
+#: kbookmarkdialog.cpp:75
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Čujuhus:"
+
+#: kbookmarkdialog.cpp:80
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Kommeanta:"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:191
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Ođasmáhte"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:192
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Girjemearkkaid iešvuođát"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Ođđa máhppa …"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Lasit"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:228
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Lasit girjemearkka"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:266
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Lasit girjemearkkaid"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:299
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Vállje máhpa"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:327
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Ođđa máhppa"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:362
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Ráhkat ođđa girjemearkkamáhpa"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:363
+#, fuzzy, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Ráhkat ođđa girjemearkamáhpa dáppe %1"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:365
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Ođđa máhppa:"
+
+#: kbookmarkdialog.cpp:386
+#, fuzzy
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Girjemearkkat"
+
+#: kbookmarkimporter_ns.cpp:115
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|HTML-fiillat (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML-fiillat (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:137
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:158
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Konqueror ráhkadii dán fiilla -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Girjemearkkat"
+
+#: kbookmarkimporter_opera.cpp:119
+#, fuzzy
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera girjemearkafiillat (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:122
+#, fuzzy
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera girjemearkafiillat (*.adr)"
+
+#: kbookmarkmanager.cpp:442
+#, fuzzy, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Ii lean vejolaš vurket girjemearkkaid deikke: %1. Dieđihuvvon meattáhus "
+"lei: %2. Dát vihkedieđáhus čájehuvvo dušše oktii. Fertet divvut meattáhusa "
+"siva nu johtilit go lea vojolaš, mii árvideames lea deavva garraskearru."
+
+#: kbookmarkmenu.cpp:260
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Raba máhpa gilkoriin"
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "Raba buot girjemearkkaid dán máhpas ođđa gilkorin."
+
+#: kbookmarkmenu.cpp:279
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Merke gilkoriid máhppan …"
+
+#: kbookmarkmenu.cpp:283
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "Lasit girjemearkemáhpa buot rabas gilkoriid várás."
+
+#: kbookmarkmenu.cpp:320
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Doaimmat girjemearkkaid sierra láses"
+
+#: kbookmarkmenu.cpp:331
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "Ođđa girjemearkamáhppa …"
+
+#: kbookmarkmenu.cpp:333
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Ráhkat ođđa girjemearkamáhpa dán fálus"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "Čiega reaidoholggas"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "Čájet reaidoholggas"
+
+#: konqbookmarkmenu.cpp:66
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "Raba ođđa láses"
+
+#: konqbookmarkmenu.cpp:67
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "Raba ođđa gilkoris"
