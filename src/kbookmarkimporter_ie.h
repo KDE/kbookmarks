@@ -30,8 +30,8 @@ class KBOOKMARKS_EXPORT KIEBookmarkImporterImpl : public KBookmarkImporterBase
 {
 public:
     KIEBookmarkImporterImpl() { }
-    virtual void parse();
-    virtual QString findDefaultLocation(bool forSaving = false) const;
+    void parse() Q_DECL_OVERRIDE;
+    QString findDefaultLocation(bool forSaving = false) const Q_DECL_OVERRIDE;
 private:
     class KIEBookmarkImporterImplPrivate *d;
 };
@@ -45,7 +45,7 @@ public:
         ;
     }
     virtual ~KIEBookmarkExporterImpl() {}
-    virtual void write(const KBookmarkGroup &);
+    void write(const KBookmarkGroup &) Q_DECL_OVERRIDE;
 private:
     class KIEBookmarkExporterImplPrivate *d;
 };

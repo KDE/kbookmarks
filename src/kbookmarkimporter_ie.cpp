@@ -167,9 +167,9 @@ public:
         traverse(grp);
     }
 private:
-    virtual void visit(const KBookmark &);
-    virtual void visitEnter(const KBookmarkGroup &);
-    virtual void visitLeave(const KBookmarkGroup &);
+    void visit(const KBookmark &) Q_DECL_OVERRIDE;
+    void visitEnter(const KBookmarkGroup &) Q_DECL_OVERRIDE;
+    void visitLeave(const KBookmarkGroup &) Q_DECL_OVERRIDE;
 private:
     QDir m_currentDir;
 };

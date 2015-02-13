@@ -36,8 +36,8 @@ public:
     {
         m_utf8 = utf8;
     }
-    virtual void parse();
-    virtual QString findDefaultLocation(bool forSaving = false) const;
+    void parse() Q_DECL_OVERRIDE;
+    QString findDefaultLocation(bool forSaving = false) const Q_DECL_OVERRIDE;
 private:
     bool m_utf8;
     class KNSBookmarkImporterImplPrivate *d;
@@ -67,7 +67,7 @@ public:
         ;
     }
     virtual ~KNSBookmarkExporterImpl() {}
-    virtual void write(const KBookmarkGroup &parent);
+    void write(const KBookmarkGroup &parent) Q_DECL_OVERRIDE;
     void setUtf8(bool);
 protected:
     QString folderAsString(const KBookmarkGroup &parent) const;

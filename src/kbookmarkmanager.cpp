@@ -78,12 +78,12 @@ public:
         return m_bk_map.value(url);
     }
 private:
-    virtual void visit(const KBookmark &);
-    virtual void visitEnter(const KBookmarkGroup &)
+    void visit(const KBookmark &) Q_DECL_OVERRIDE;
+    void visitEnter(const KBookmarkGroup &) Q_DECL_OVERRIDE
     {
         ;
     }
-    virtual void visitLeave(const KBookmarkGroup &)
+    void visitLeave(const KBookmarkGroup &) Q_DECL_OVERRIDE
     {
         ;
     }
