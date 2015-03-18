@@ -29,9 +29,12 @@ add_library(KF5::Bookmarks ALIAS KF5Bookmarks)
 
 target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks>")
 
-target_link_libraries(KF5Bookmarks PUBLIC Qt5::Widgets Qt5::Xml)
+target_link_libraries(KF5Bookmarks PUBLIC Qt5::Widgets Qt5::Xml KF5::WidgetsAddons)
 target_link_libraries(KF5Bookmarks PRIVATE
     Qt5::DBus # dbus usage in kbookmarkmanager.cpp
+    KF5::CoreAddons # for KStringHandler
+    KF5::Codecs # for KCharsets
+    KF5::ConfigCore # for KConfigGroup
     KF5::ConfigWidgets # for KStandardAction
     KF5::XmlGui # for KActionCollection
     KF5::IconThemes # for SmallIcon

@@ -38,6 +38,7 @@
 
 #include <QDBusMessage>
 #include <kbackup.h>
+#include <kconfig.h>
 #include <kconfiggroup.h>
 #include <qsavefile.h>
 #include <qstandardpaths.h>
