@@ -21,6 +21,7 @@
 #define __kbookmarkimporter_h
 
 #include <QtCore/QStringList>
+#include <QtCore/QObject>
 
 #include "kbookmark.h"
 
