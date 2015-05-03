@@ -1,0 +1,390 @@
+# translation of kio4.po to Irish
+# Copyright (C) 1999,2002,2003,2004 Free Software Foundation, Inc.
+# Sean V. Kelley <s_oceallaigh@yahoo.com>, 1999.
+# Séamus Ó Ciardhuáin <seoc at iolfree.ie>, 2003,2004
+# Kevin Scannell <kscanne@gmail.com>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs/kio4.po\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2004-12-03 14:52-0500\n"
+"Last-Translator: Kevin Scannell <kscanne@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 0.9.6\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n < 11 ? "
+"3 : 4\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:307
+#, fuzzy
+#| msgid "--- separator ---"
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- deighilteoir ---"
+
+#: kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "Cruthaigh Leabharmharc Anseo"
+
+#: kbookmarkcontextmenu.cpp:68
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Oscail Fillteán san Eagarthóir Leabharmharcanna"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "Scrios Fillteán"
+
+#: kbookmarkcontextmenu.cpp:76
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "Airíonna"
+
+#: kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "Cóipeáil Seoladh an Naisc"
+
+#: kbookmarkcontextmenu.cpp:84
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "Scrios Leabharmharc"
+
+#: kbookmarkcontextmenu.cpp:90
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Oscail Fillteán i gCluaisíní"
+
+#: kbookmarkcontextmenu.cpp:116
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Ní cheadaítear leabharmharc le URL folamh."
+
+#: kbookmarkcontextmenu.cpp:146
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "Scriosadh Fillteán Leabharmharcanna"
+
+#: kbookmarkcontextmenu.cpp:147
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "Scriosadh Leabharmharcanna"
+
+#: kbookmarkcontextmenu.cpp:148
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"An bhfuil tú cinnte go dteastaíonn uait an fillteán leabharmharcanna\n"
+"\"%1\" a bhaint?"
+
+#: kbookmarkcontextmenu.cpp:149
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"An bhfuil tú cinnte go dteastaíonn uait an leabharmharc\n"
+"\"%1\" a bhaint?"
+
+#: kbookmarkdialog.cpp:70
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Ainm:"
+
+#: kbookmarkdialog.cpp:75
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Suíomh:"
+
+#: kbookmarkdialog.cpp:80
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Nóta:"
+
+#: kbookmarkdialog.cpp:191
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Nuashonraigh"
+
+#: kbookmarkdialog.cpp:192
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Airíonna an Leabharmhairc"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "Fillteán &Nua..."
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Cuir Leis"
+
+#: kbookmarkdialog.cpp:228
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Cuir Leabharmharc Leis"
+
+#: kbookmarkdialog.cpp:266
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Cuir Leabharmharcanna Leis"
+
+#: kbookmarkdialog.cpp:299
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Roghnaigh Fillteán"
+
+#: kbookmarkdialog.cpp:327
+#, fuzzy
+#| msgctxt "folder name"
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Fillteán Nua"
+
+#: kbookmarkdialog.cpp:362
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Cruthaigh Fillteán Nua Leabharmharcanna"
+
+#: kbookmarkdialog.cpp:363
+#, fuzzy, qt-format
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Cruthaigh Fillteán Nua Leabharmharcanna i %1"
+
+#: kbookmarkdialog.cpp:365
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Fillteán nua:"
+
+#: kbookmarkdialog.cpp:386
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Leabharmharcanna"
+
+#: kbookmarkimporter_ns.cpp:115
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|Comhaid HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|Comhaid HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:137
+#, fuzzy
+#| msgid "Netscape Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Leabharmharcanna Netscape"
+
+#: kbookmarkimporter_ns.cpp:158
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Chruthaigh Konqueror an comhad seo -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Leabharmharcanna"
+
+#: kbookmarkimporter_opera.cpp:119
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Leabharmharcanna Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:122
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Leabharmharcanna Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:443
+#, fuzzy, qt-format
+#| msgid ""
+#| "Unable to save bookmarks in %1. Reported error was: %2. This error "
+#| "message will only be shown once. The cause of the error needs to be fixed "
+#| "as quickly as possible, which is most likely a full hard drive."
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Ní féidir leabharmharcanna a shábháil i %1. Seo é an earráid: %2. Ní "
+"thaispeánfar an teachtaireacht earráide seo ach uair amháin. Ní mór duit "
+"bunchúis na hearráid (diosca lán is dócha) a réiteach chomh luath agus is "
+"féidir."
+
+#: kbookmarkmenu.cpp:260
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Oscail Fillteán i gCluaisíní"
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "Oscail na leabharmharcanna san fhillteán seo mar chluaisín nua."
+
+#: kbookmarkmenu.cpp:279
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Cruthaigh fillteán leabharmharcanna do na cluaisíní..."
+
+#: kbookmarkmenu.cpp:283
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "Cruthaigh fillteán le leabharmharc ann do gach cluaisín oscailte."
+
+#: kbookmarkmenu.cpp:320
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Cuir do leabharmharcanna in eagar i bhfuinneog ar leith"
+
+#: kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "Fillteán Nua Leabharmharcanna..."
+
+#: kbookmarkmenu.cpp:333
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Cruthaigh fillteán nua leabharmharcanna sa roghchlár seo"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+#| msgid "Hide in toolbar"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "Folaigh sa bharra uirlisí"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+#| msgid "Show in toolbar"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "Taispeáin sa bharra uirlisí"
+
+#: konqbookmarkmenu.cpp:66
+#, fuzzy
+#| msgid "Open in New Window"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "Oscail i bhFuinneog Nua"
+
+#: konqbookmarkmenu.cpp:67
+#, fuzzy
+#| msgid "Open in New Tab"
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "Oscail i gCluaisín Nua"

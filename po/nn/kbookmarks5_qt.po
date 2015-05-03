@@ -1,0 +1,326 @@
+# Translation of kbookmarks5_qt to Norwegian Nynorsk
+#
+# Gaute Hvoslef Kvalnes <gaute@verdsveven.com>, 2003, 2004, 2005, 2006.
+# Håvard Korsvoll <korsvoll@skulelinux.no>, 2003.
+# Karl Ove Hufthammer <karl@huftis.org>, 2004, 2005, 2007, 2008, 2009, 2010, 2011.
+# Eirik U. Birkeland <eirbir@gmail.com>, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-14 04:54+0000\n"
+"PO-Revision-Date: 2011-07-07 17:32+0200\n"
+"Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
+"Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
+"Language: nn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: qtrich\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:307
+#, fuzzy
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "— delelinje —"
+
+#: kbookmarkcontextmenu.cpp:62
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "Legg til bokmerke her"
+
+#: kbookmarkcontextmenu.cpp:68
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Opna mappe i bokmerkeredigerar"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "Slett mappe"
+
+#: kbookmarkcontextmenu.cpp:76
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "Eigenskapar"
+
+#: kbookmarkcontextmenu.cpp:81
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "Kopier lenkjeadresse"
+
+#: kbookmarkcontextmenu.cpp:84
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "Slett bokmerke"
+
+#: kbookmarkcontextmenu.cpp:90
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Opna mappe i faner"
+
+#: kbookmarkcontextmenu.cpp:116
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Kan ikkje leggja til eit bokmerke med tom adresse."
+
+#: kbookmarkcontextmenu.cpp:146
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "Fjerning av bokmerkemappe"
+
+#: kbookmarkcontextmenu.cpp:147
+#, fuzzy
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "Fjerning av bokmerke"
+
+#: kbookmarkcontextmenu.cpp:148
+#, fuzzy, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Vil du verkeleg fjerna bokmerkemappa\n"
+"«%1»?"
+
+#: kbookmarkcontextmenu.cpp:149
+#, fuzzy, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Vil du verkeleg fjerna bokmerket\n"
+"«%1»?"
+
+#: kbookmarkdialog.cpp:70
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Namn:"
+
+#: kbookmarkdialog.cpp:75
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Adresse:"
+
+#: kbookmarkdialog.cpp:80
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Komm&entar:"
+
+#: kbookmarkdialog.cpp:191
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Oppdater"
+
+#: kbookmarkdialog.cpp:192
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Bokmerkeeigenskapar"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Ny mappe …"
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Legg til"
+
+#: kbookmarkdialog.cpp:228
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Legg til bokmerke"
+
+#: kbookmarkdialog.cpp:266
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Legg til bokmerke"
+
+#: kbookmarkdialog.cpp:299
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Vel mappe"
+
+#: kbookmarkdialog.cpp:327
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Ny mappe"
+
+#: kbookmarkdialog.cpp:362
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Lag ny bokmerkemappe"
+
+#: kbookmarkdialog.cpp:363
+#, fuzzy, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Lag ny bokmerkemappe i %1"
+
+#: kbookmarkdialog.cpp:365
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Ny mappe:"
+
+#: kbookmarkdialog.cpp:386
+#, fuzzy
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Bokmerke"
+
+#: kbookmarkimporter_ns.cpp:115
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|HTML-filer (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML-filer (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:137
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:158
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Denne fila er laga av Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Bokmerke"
+
+#: kbookmarkimporter_opera.cpp:119
+#, fuzzy
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera bokmerkefiler (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:122
+#, fuzzy
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera bokmerkefiler (*.adr)"
+
+#: kbookmarkmanager.cpp:443
+#, fuzzy, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Klarte ikkje lagra bokmerket i %1. Raportert feil var: %2. Denne "
+"feilmeldinga vil berre visast ein gong. Årsaka til feilen må fiksast så "
+"raskt som mogleg, som truleg er ein full harddisk."
+
+#: kbookmarkmenu.cpp:260
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Opna mappe i faner"
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "Opna alle bokmerka i denne mappa som ei ny fane."
+
+#: kbookmarkmenu.cpp:279
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Merk faner som mappe …"
+
+#: kbookmarkmenu.cpp:283
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "Legg til ei mappe med bokmerker for alle opne vindauge med faner."
+
+#: kbookmarkmenu.cpp:320
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Rediger bokmerkesamlinga i eit eige vindauge"
+
+#: kbookmarkmenu.cpp:331
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "Ny bokmerkemappe …"
+
+#: kbookmarkmenu.cpp:333
+#, fuzzy
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Lag ei ny bokmerkemappe i denne menyen"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "Ikkje vis på verktøylinja"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "Vis på verktøylinja"
+
+#: konqbookmarkmenu.cpp:66
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "Opna i nytt vindauge"
+
+#: konqbookmarkmenu.cpp:67
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "Opna i ny fane"
