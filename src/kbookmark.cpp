@@ -213,7 +213,7 @@ KBookmark KBookmarkGroup::addBookmark(const QString &text, const QUrl &url, cons
     }
     QDomDocument doc = element.ownerDocument();
     QDomElement elem = doc.createElement("bookmark");
-    elem.setAttribute("href", url.toString());
+    elem.setAttribute("href", url.toString(QUrl::FullyEncoded));
 
     QDomElement textElem = doc.createElement("title");
     elem.appendChild(textElem);
