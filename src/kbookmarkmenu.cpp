@@ -95,7 +95,7 @@ void KBookmarkMenu::addActions()
         addNewFolder();
         addEditBookmarks();
     } else {
-        if (m_parentMenu->actions().count() > 0) {
+        if (!m_parentMenu->actions().isEmpty()) {
             m_parentMenu->addSeparator();
         }
 
