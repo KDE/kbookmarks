@@ -393,6 +393,9 @@ void KBookmarkMenu::slotAddBookmark()
     if (!m_pOwner) {
         return;
     }
+    if (m_pOwner->currentTitle().isEmpty() && m_pOwner->currentUrl().isEmpty()) {
+        return;
+    }
     KBookmarkGroup parentBookmark = m_pManager->findByAddress(m_parentAddress).toGroup();
 
     if (KBookmarkSettings::self()->m_advancedaddbookmark) {
