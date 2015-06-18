@@ -211,7 +211,7 @@ QMenu *KBookmarkMenu::parentMenu() const
 
 void KBookmarkMenu::slotBookmarksChanged(const QString &groupAddress)
 {
-    qDebug() << "KBookmarkMenu::slotBookmarksChanged( " << groupAddress;
+    qDebug() << "KBookmarkMenu::slotBookmarksChanged groupAddress: " << groupAddress;
     if (groupAddress == m_parentAddress) {
         //qDebug() << "KBookmarkMenu::slotBookmarksChanged -> setting m_bDirty on " << groupAddress;
         m_bDirty = true;
