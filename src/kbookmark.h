@@ -328,7 +328,7 @@ class KBOOKMARKS_EXPORT KBookmarkGroup : public KBookmark
 {
 public:
     /**
-     * Create an invalid group. This is mostly for use in QValueList,
+     * Create an invalid group. This is mostly for use in QList,
      * and other places where we need a null group.
      * Also used as a parent for a bookmark that doesn't have one
      * (e.g. Netscape bookmarks)
