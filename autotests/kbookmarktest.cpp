@@ -16,10 +16,7 @@
     Boston, MA 02110-1301, USA.
 */
 
-#include "kbookmarktest.h"
 #include <qtest.h>
-
-QTEST_MAIN(KBookmarkTest)
 
 #include <kbookmark.h>
 #include <kbookmarkmanager.h>
@@ -27,10 +24,36 @@ QTEST_MAIN(KBookmarkTest)
 #include <QtCore/QMimeData>
 #include <QtCore/QStandardPaths>
 #include <QtCore/QDir>
+#include <QtCore/QObject>
+
+class KBookmarkTest : public QObject
+{
+    Q_OBJECT
+private Q_SLOTS:
+    void initTestCase();
+    void cleanupTestCase();
+    void testMimeDataOneBookmark();
+    void testMimeDataBookmarkList();
+    void testFileCreatedExternally();
+    void testBookmarkManager();
+};
+
+static const QString placesFile()
+{
+    const QString datadir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
+    QDir().mkpath(datadir);
+    return datadir + "/user-places.xbel";
+}
 
 void KBookmarkTest::initTestCase()
 {
     QStandardPaths::setTestModeEnabled(true);
+    QFile::remove(placesFile());
+}
+
+void KBookmarkTest::cleanupTestCase()
+{
+    QFile::remove(placesFile());
 }
 
 static void compareBookmarks(const KBookmark &initialBookmark, const KBookmark &decodedBookmark)
@@ -105,17 +128,31 @@ void KBookmarkTest::testMimeDataBookmarkList()
     delete mimeData;
 }
 
+void KBookmarkTest::testFileCreatedExternally()
+{
+    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile());
+    QVERIFY(sharedBookmarkManager->root().first().isNull());
+
+    QFile file(placesFile());
+    QVERIFY(file.open(QIODevice::WriteOnly));
+    file.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?><xbel version=\"1.0\"><bookmark href=\"file:///external\"><title>external</title></bookmark></xbel>");
+    file.close();
+
+    QTRY_VERIFY(!sharedBookmarkManager->root().first().isNull());
+    KBookmark bk = sharedBookmarkManager->root().first();
+    QCOMPARE(bk.url().toString(), QString("file:///external"));
+    QCOMPARE(bk.fullText(), QString("external"));
+
+}
+
 void KBookmarkTest::testBookmarkManager()
 {
-    // like kfileplacesmodel.cpp does
+    // like kfileplacesmodel.cpp used to do
     const QString placesModelFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfileplaces/bookmarks.xml";
     KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(placesModelFile, "kfilePlaces");
 
     // like kfileplacessharedbookmarks.cpp does
-    const QString datadir = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation);
-    QDir().mkpath(datadir);
-    const QString placesFile = datadir + "/user-places.xbel";
-    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile);
+    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile());
 
     // like kfilebookmarkhandler.cpp does
     QString file = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kfile/bookmarks.xml");
@@ -129,6 +166,8 @@ void KBookmarkTest::testBookmarkManager()
     Q_UNUSED(bookmarkManager);
     Q_UNUSED(sharedBookmarkManager);
     Q_UNUSED(manager);
-
 }
 
+QTEST_MAIN(KBookmarkTest)
+
+#include "kbookmarktest.moc"
