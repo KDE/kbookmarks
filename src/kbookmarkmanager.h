@@ -23,6 +23,7 @@
 #include <QtCore/QObject>
 #include <QtXml/QDomDocument>
 #include <QtXml/QDomElement>
+class KBookmarkManagerPrivate;
 
 #include "kbookmark.h"
 #include "kbookmarkowner.h" // for SC reasons
@@ -332,8 +333,7 @@ private:
     void parse() const;
     void init(const QString &dbusPath);
 
-    class Private;
-    Private *const d;
+    KBookmarkManagerPrivate *const d;
 
     friend class KBookmarkGroup;
 };

@@ -114,11 +114,11 @@ void KBookmarkMap::visit(const KBookmark &bk)
 }
 
 // #########################
-// KBookmarkManager::Private
-class KBookmarkManager::Private
+// KBookmarkManagerPrivate
+class KBookmarkManagerPrivate
 {
 public:
-    Private(bool bDocIsloaded, const QString &dbusObjectName = QString())
+    KBookmarkManagerPrivate(bool bDocIsloaded, const QString &dbusObjectName = QString())
         : m_doc("xbel")
         , m_dbusObjectName(dbusObjectName)
         , m_docIsLoaded(bDocIsloaded)
@@ -130,7 +130,7 @@ public:
         , m_dirWatch(0)
     {}
 
-    ~Private()
+    ~KBookmarkManagerPrivate()
     {
         delete m_dirWatch;
     }
@@ -233,7 +233,7 @@ static QDomElement createXbelTopLevelElement(QDomDocument &doc)
 }
 
 KBookmarkManager::KBookmarkManager(const QString &bookmarksFile, const QString &dbusObjectName)
-    : d(new Private(false, dbusObjectName))
+    : d(new KBookmarkManagerPrivate(false, dbusObjectName))
 {
     if (dbusObjectName.isNull()) // get dbusObjectName from file
         if (QFile::exists(d->m_bookmarksFile)) {
@@ -255,7 +255,7 @@ KBookmarkManager::KBookmarkManager(const QString &bookmarksFile, const QString &
 }
 
 KBookmarkManager::KBookmarkManager(const QString &bookmarksFile)
-    : d(new Private(false))
+    : d(new KBookmarkManagerPrivate(false))
 {
     // use QFileSystemWatcher to monitor this bookmarks file
     d->m_typeExternal = true;
@@ -285,7 +285,7 @@ KBookmarkManager::KBookmarkManager(const QString &bookmarksFile)
 }
 
 KBookmarkManager::KBookmarkManager()
-    : d(new Private(true))
+    : d(new KBookmarkManagerPrivate(true))
 {
     init("/KBookmarkManager/generated");
     d->m_update = false; // TODO - make it read/write
