@@ -74,9 +74,9 @@ void KIEBookmarkImporter::parseIEBookmarks_url_file(const QString &filename, con
                 continue;
             }
             QByteArray t = s.trimmed();
-            QRegExp rx("URL=(.*)");
+            QRegExp rx(QStringLiteral("URL=(.*)"));
             if (rx.exactMatch(t)) {
-                emit newBookmark(name, rx.cap(1), QString(""));
+                emit newBookmark(name, rx.cap(1), QLatin1String(""));
             }
         }
 
@@ -90,7 +90,7 @@ void KIEBookmarkImporter::parseIEBookmarks_dir(const QString &dirname, const QSt
     QDir dir(dirname);
     dir.setFilter(QDir::Files | QDir::Dirs | QDir::AllDirs);
     dir.setSorting(QFlags<QDir::SortFlag>(QDir::Name | QDir::DirsFirst));
-    dir.setNameFilters(QStringList("*.url")); // AK - possibly add ";index.ini" ?
+    dir.setNameFilters(QStringList(QStringLiteral("*.url"))); // AK - possibly add ";index.ini" ?
 
     const QFileInfoList list = dir.entryInfoList();
     if (list.isEmpty()) {
@@ -98,11 +98,11 @@ void KIEBookmarkImporter::parseIEBookmarks_dir(const QString &dirname, const QSt
     }
 
     if (dirname != m_fileName) {
-        emit newFolder(foldername, false, "");
+        emit newFolder(foldername, false, QLatin1String(""));
     }
 
     foreach (const QFileInfo &fi, list) {
-        if (fi.fileName() == "." || fi.fileName() == "..") {
+        if (fi.fileName() == QLatin1String(".") || fi.fileName() == QLatin1String("..")) {
             continue;
         }
 
@@ -177,7 +177,7 @@ private:
 static QString ieStyleQuote(const QString &str)
 {
     QString s(str);
-    s.replace(QRegExp("[/\\:*?\"<>|]"), "_");
+    s.replace(QRegExp(QStringLiteral("[/\\:*?\"<>|]")), QStringLiteral("_"));
     return s;
 }
 

@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
     KBookmarkDialog dlg(KBookmarkManager::userBookmarksManager());
-    dlg.addBookmark("KDE", QUrl("http://www.kde.org"), "www"); // calls exec()
+    dlg.addBookmark(QStringLiteral("KDE"), QUrl(QStringLiteral("http://www.kde.org")), QStringLiteral("www")); // calls exec()
     return 0;
 }
 

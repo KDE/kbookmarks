@@ -77,8 +77,8 @@ void KBookmarkTest::testMimeDataOneBookmark()
 {
     QMimeData *mimeData = new QMimeData;
 
-    KBookmark bookmark = KBookmark::standaloneBookmark("KDE", QUrl("http://www.kde.org"), "icon");
-    bookmark.setDescription("Comment");
+    KBookmark bookmark = KBookmark::standaloneBookmark(QStringLiteral("KDE"), QUrl(QStringLiteral("http://www.kde.org")), QStringLiteral("icon"));
+    bookmark.setDescription(QStringLiteral("Comment"));
     QVERIFY(!bookmark.isNull());
     bookmark.populateMimeData(mimeData);
 
@@ -102,13 +102,13 @@ void KBookmarkTest::testMimeDataBookmarkList()
 {
     QMimeData *mimeData = new QMimeData;
 
-    KBookmark bookmark1 = KBookmark::standaloneBookmark("KDE", QUrl("http://www.kde.org"), "icon");
-    bookmark1.setDescription("KDE comment");
+    KBookmark bookmark1 = KBookmark::standaloneBookmark(QStringLiteral("KDE"), QUrl(QStringLiteral("http://www.kde.org")), QStringLiteral("icon"));
+    bookmark1.setDescription(QStringLiteral("KDE comment"));
     QVERIFY(!bookmark1.isNull());
-    KBookmark bookmark2 = KBookmark::standaloneBookmark("KOffice", QUrl("http://www.koffice.org"), "koicon");
-    bookmark2.setDescription("KOffice comment");
+    KBookmark bookmark2 = KBookmark::standaloneBookmark(QStringLiteral("KOffice"), QUrl(QStringLiteral("http://www.koffice.org")), QStringLiteral("koicon"));
+    bookmark2.setDescription(QStringLiteral("KOffice comment"));
     QVERIFY(!bookmark2.isNull());
-    bookmark2.setMetaDataItem("key", "value");
+    bookmark2.setMetaDataItem(QStringLiteral("key"), QStringLiteral("value"));
 
     KBookmark::List initialBookmarks;
     initialBookmarks.append(bookmark1);
@@ -149,17 +149,17 @@ void KBookmarkTest::testBookmarkManager()
 {
     // like kfileplacesmodel.cpp used to do
     const QString placesModelFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfileplaces/bookmarks.xml";
-    KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(placesModelFile, "kfilePlaces");
+    KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(placesModelFile, QStringLiteral("kfilePlaces"));
 
     // like kfileplacessharedbookmarks.cpp does
     KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile());
 
     // like kfilebookmarkhandler.cpp does
-    QString file = QStandardPaths::locate(QStandardPaths::GenericDataLocation, "kfile/bookmarks.xml");
+    QString file = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kfile/bookmarks.xml"));
     if (file.isEmpty()) {
         file = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfile/bookmarks.xml";
     }
-    KBookmarkManager *manager = KBookmarkManager::managerForFile(file, "kfile");
+    KBookmarkManager *manager = KBookmarkManager::managerForFile(file, QStringLiteral("kfile"));
 
     // This is just to check an old crash in the global-static destructor, not doing anything with
     // these managers yet.

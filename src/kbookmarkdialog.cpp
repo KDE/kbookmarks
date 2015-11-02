@@ -93,7 +93,7 @@ void KBookmarkDialogPrivate::initLayoutPrivate()
     buttonBox = new QDialogButtonBox(q);
     buttonBox->setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
     q->connect(buttonBox, SIGNAL(accepted()), q, SLOT(accept()));
-    q->connect(buttonBox, SIGNAL(rejected()), q, SLOT(reject()));
+    q->connect(buttonBox, &QDialogButtonBox::rejected, q, &QDialog::reject);
 
     initLayout();
     layout = true;
@@ -147,7 +147,7 @@ void KBookmarkDialog::accept()
     if (d->mode == KBookmarkDialogPrivate::NewFolder) {
         KBookmarkGroup parent = d->parentBookmark();
         if (d->title->text().isEmpty()) {
-            d->title->setText("New Folder");
+            d->title->setText(QStringLiteral("New Folder"));
         }
         d->bm = parent.createNewFolder(d->title->text());
         d->bm.setDescription(d->comment->text());
@@ -155,7 +155,7 @@ void KBookmarkDialog::accept()
     } else if (d->mode == KBookmarkDialogPrivate::NewBookmark) {
         KBookmarkGroup parent = d->parentBookmark();
         if (d->title->text().isEmpty()) {
-            d->title->setText("New Bookmark");
+            d->title->setText(QStringLiteral("New Bookmark"));
         }
         d->bm = parent.addBookmark(d->title->text(), QUrl(d->url->text()), d->icon);
         d->bm.setDescription(d->comment->text());
@@ -163,7 +163,7 @@ void KBookmarkDialog::accept()
     } else if (d->mode == KBookmarkDialogPrivate::NewMultipleBookmarks) {
         KBookmarkGroup parent = d->parentBookmark();
         if (d->title->text().isEmpty()) {
-            d->title->setText("New Folder");
+            d->title->setText(QStringLiteral("New Folder"));
         }
         d->bm = parent.createNewFolder(d->title->text());
         d->bm.setDescription(d->comment->text());
@@ -220,11 +220,11 @@ KBookmark KBookmarkDialog::addBookmark(const QString &title, const QUrl &url, co
     }
 
     QPushButton *newButton = new QPushButton;
-    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), "folder-new"));
+    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), QStringLiteral("folder-new")));
     d->buttonBox->addButton(newButton, QDialogButtonBox::ActionRole);
-    connect(newButton, SIGNAL(clicked()), SLOT(newFolderButton()));
+    connect(newButton, &QAbstractButton::clicked, this, &KBookmarkDialog::newFolderButton);
 
-    KGuiItem::assign(d->buttonBox->button(QDialogButtonBox::Ok), KGuiItem(tr("Add", "@action:button"), "bookmark-new"));
+    KGuiItem::assign(d->buttonBox->button(QDialogButtonBox::Ok), KGuiItem(tr("Add", "@action:button"), QStringLiteral("bookmark-new")));
     setWindowTitle(tr("Add Bookmark", "@title:window"));
     d->url->setVisible(true);
     d->urlLabel->setVisible(true);
@@ -258,11 +258,11 @@ KBookmarkGroup KBookmarkDialog::addBookmarks(const QList<KBookmarkOwner::FutureB
     d->list = list;
 
     QPushButton *newButton = new QPushButton;
-    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), "folder-new"));
+    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), QStringLiteral("folder-new")));
     d->buttonBox->addButton(newButton, QDialogButtonBox::ActionRole);
-    connect(newButton, SIGNAL(clicked()), SLOT(newFolderButton()));
+    connect(newButton, &QAbstractButton::clicked, this, &KBookmarkDialog::newFolderButton);
 
-    KGuiItem::assign(d->buttonBox->button(QDialogButtonBox::Ok), KGuiItem(tr("Add", "@action:button"), "bookmark-new"));
+    KGuiItem::assign(d->buttonBox->button(QDialogButtonBox::Ok), KGuiItem(tr("Add", "@action:button"), QStringLiteral("bookmark-new")));
     setWindowTitle(tr("Add Bookmarks", "@title:window"));
     d->url->setVisible(false);
     d->urlLabel->setVisible(false);
@@ -292,9 +292,9 @@ KBookmarkGroup KBookmarkDialog::selectFolder(KBookmark parent)
     }
 
     QPushButton *newButton = new QPushButton;
-    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), "folder-new"));
+    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), QStringLiteral("folder-new")));
     d->buttonBox->addButton(newButton, QDialogButtonBox::ActionRole);
-    connect(newButton, SIGNAL(clicked()), SLOT(newFolderButton()));
+    connect(newButton, &QAbstractButton::clicked, this, &KBookmarkDialog::newFolderButton);
 
     setWindowTitle(tr("Select Folder", "@title:window"));
     d->url->setVisible(false);
@@ -381,10 +381,10 @@ void KBookmarkDialog::newFolderButton()
 /********************************************************************/
 
 KBookmarkTreeItem::KBookmarkTreeItem(QTreeWidget *tree)
-    : QTreeWidgetItem(tree), m_address("")
+    : QTreeWidgetItem(tree), m_address(QLatin1String(""))
 {
     setText(0, KBookmarkDialog::tr("Bookmarks", "name of the container of all browser bookmarks"));
-    setIcon(0, SmallIcon("bookmarks"));
+    setIcon(0, SmallIcon(QStringLiteral("bookmarks")));
     tree->expandItem(this);
     tree->setCurrentItem(this);
     tree->setItemSelected(this, true);

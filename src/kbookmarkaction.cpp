@@ -24,7 +24,7 @@
 #include <QApplication>
 
 KBookmarkAction::KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent)
-    : QAction(bk.text().replace('&', "&&"), parent),
+    : QAction(bk.text().replace('&', QLatin1String("&&")), parent),
       KBookmarkActionInterface(bk),
       m_pOwner(owner)
 {
@@ -37,7 +37,7 @@ KBookmarkAction::KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QOb
     if (!description.isEmpty()) {
         setToolTip(description);
     }
-    connect(this, SIGNAL(triggered(bool)), this, SLOT(slotTriggered()));
+    connect(this, &QAction::triggered, this, &KBookmarkAction::slotTriggered);
 }
 
 KBookmarkAction::~KBookmarkAction()

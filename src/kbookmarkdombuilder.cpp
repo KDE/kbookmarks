@@ -59,7 +59,7 @@ void KBookmarkDomBuilder::newBookmark(
                            QUrl(url),
                            QString());
         // store additional info
-        bk.internalElement().setAttribute("netscapeinfo", additionalInfo);
+        bk.internalElement().setAttribute(QStringLiteral("netscapeinfo"), additionalInfo);
     } else {
         qWarning() << "m_stack is empty. This should not happen when importing a valid bookmarks file!";
     }
@@ -76,8 +76,8 @@ void KBookmarkDomBuilder::newFolder(
         m_stack.push(m_list.last());
         // store additional info
         QDomElement element = m_list.last().internalElement();
-        element.setAttribute("netscapeinfo", additionalInfo);
-        element.setAttribute("folded", (open ? "no" : "yes"));
+        element.setAttribute(QStringLiteral("netscapeinfo"), additionalInfo);
+        element.setAttribute(QStringLiteral("folded"), (open ? "no" : "yes"));
     } else {
         qWarning() << "m_stack is empty. This should not happen when importing a valid bookmarks file!";
     }

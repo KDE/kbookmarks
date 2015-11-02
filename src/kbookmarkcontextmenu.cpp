@@ -31,7 +31,7 @@
 KBookmarkContextMenu::KBookmarkContextMenu(const KBookmark &bk, KBookmarkManager *manager, KBookmarkOwner *owner, QWidget *parent)
     : QMenu(parent), bm(bk), m_pManager(manager), m_pOwner(owner)
 {
-    connect(this, SIGNAL(aboutToShow()), SLOT(slotAboutToShow()));
+    connect(this, &QMenu::aboutToShow, this, &KBookmarkContextMenu::slotAboutToShow);
 }
 
 void KBookmarkContextMenu::slotAboutToShow()
@@ -59,7 +59,7 @@ KBookmarkContextMenu::~KBookmarkContextMenu()
 void KBookmarkContextMenu::addBookmark()
 {
     if (m_pOwner && m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark)) {
-        addAction(QIcon::fromTheme("bookmark-new"), tr("Add Bookmark Here"), this, SLOT(slotInsert()));
+        addAction(QIcon::fromTheme(QStringLiteral("bookmark-new")), tr("Add Bookmark Here"), this, SLOT(slotInsert()));
     }
 }
 
@@ -68,7 +68,7 @@ void KBookmarkContextMenu::addFolderActions()
     addAction(tr("Open Folder in Bookmark Editor"), this, SLOT(slotEditAt()));
     addProperties();
     addSeparator();
-    addAction(QIcon::fromTheme("edit-delete"), tr("Delete Folder"), this, SLOT(slotRemove()));
+    addAction(QIcon::fromTheme(QStringLiteral("edit-delete")), tr("Delete Folder"), this, SLOT(slotRemove()));
 }
 
 void KBookmarkContextMenu::addProperties()
@@ -81,13 +81,13 @@ void KBookmarkContextMenu::addBookmarkActions()
     addAction(tr("Copy Link Address"), this, SLOT(slotCopyLocation()));
     addProperties();
     addSeparator();
-    addAction(QIcon::fromTheme("edit-delete"), tr("Delete Bookmark"), this, SLOT(slotRemove()));
+    addAction(QIcon::fromTheme(QStringLiteral("edit-delete")), tr("Delete Bookmark"), this, SLOT(slotRemove()));
 }
 
 void KBookmarkContextMenu::addOpenFolderInTabs()
 {
     if (m_pOwner->supportsTabs()) {
-        addAction(QIcon::fromTheme("tab-new"), tr("Open Folder in Tabs"), this, SLOT(slotOpenFolderInTabs()));
+        addAction(QIcon::fromTheme(QStringLiteral("tab-new")), tr("Open Folder in Tabs"), this, SLOT(slotOpenFolderInTabs()));
     }
 }
 

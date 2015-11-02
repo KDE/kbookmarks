@@ -48,7 +48,7 @@ KonqBookmarkContextMenu::~KonqBookmarkContextMenu()
 
 void KonqBookmarkContextMenu::addActions()
 {
-    KConfigGroup config = KSharedConfig::openConfig("kbookmarkrc", KConfig::NoGlobals)->group("Bookmarks");
+    KConfigGroup config = KSharedConfig::openConfig(QStringLiteral("kbookmarkrc"), KConfig::NoGlobals)->group("Bookmarks");
     bool filteredToolbar = config.readEntry("FilteredToolbar", false);
 
     if (bookmark().isGroup()) {
@@ -57,20 +57,20 @@ void KonqBookmarkContextMenu::addActions()
 
         if (filteredToolbar) {
             QString text = bookmark().showInToolbar() ? tr("Hide in toolbar") : tr("Show in toolbar");
-            addAction(QIcon::fromTheme(""), text, this, SLOT(toggleShowInToolbar()));
+            addAction(QIcon::fromTheme(QLatin1String("")), text, this, SLOT(toggleShowInToolbar()));
         }
 
         addFolderActions();
     } else {
         if (owner()) {
-            addAction(QIcon::fromTheme("window-new"), tr("Open in New Window"), this, SLOT(openInNewWindow()));
-            addAction(QIcon::fromTheme("tab-new"), tr("Open in New Tab"), this, SLOT(openInNewTab()));
+            addAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Open in New Window"), this, SLOT(openInNewWindow()));
+            addAction(QIcon::fromTheme(QStringLiteral("tab-new")), tr("Open in New Tab"), this, SLOT(openInNewTab()));
         }
         addBookmark();
 
         if (filteredToolbar) {
             QString text = bookmark().showInToolbar() ? tr("Hide in toolbar") : tr("Show in toolbar");
-            addAction(QIcon::fromTheme(""), text, this, SLOT(toggleShowInToolbar()));
+            addAction(QIcon::fromTheme(QLatin1String("")), text, this, SLOT(toggleShowInToolbar()));
         }
 
         addBookmarkActions();
@@ -119,7 +119,7 @@ void KonqBookmarkMenu::fillDynamicBookmarks()
 
             KActionMenu *actionMenu;
             actionMenu = new KActionMenu(QIcon::fromTheme(info.type), info.name, this);
-            m_actionCollection->addAction("kbookmarkmenu", actionMenu);
+            m_actionCollection->addAction(QStringLiteral("kbookmarkmenu"), actionMenu);
 
             parentMenu()->addAction(actionMenu);
             m_actions.append(actionMenu);
@@ -149,7 +149,7 @@ QAction *KonqBookmarkMenu::actionForBookmark(const KBookmark &bm)
     if (bm.isGroup()) {
         // qDebug() << "Creating Konq bookmark submenu named " << bm.text();
         KBookmarkActionMenu *actionMenu = new KBookmarkActionMenu(bm, this);
-        m_actionCollection->addAction("kbookmarkmenu", actionMenu);
+        m_actionCollection->addAction(QStringLiteral("kbookmarkmenu"), actionMenu);
         m_actions.append(actionMenu);
 
         KBookmarkMenu *subMenu = new KonqBookmarkMenu(manager(), owner(), actionMenu, bm.address());
@@ -169,7 +169,7 @@ QAction *KonqBookmarkMenu::actionForBookmark(const KBookmark &bm)
 
 KonqBookmarkMenu::DynMenuInfo KonqBookmarkMenu::showDynamicBookmarks(const QString &id)
 {
-    KConfig bookmarkrc("kbookmarkrc", KConfig::NoGlobals);
+    KConfig bookmarkrc(QStringLiteral("kbookmarkrc"), KConfig::NoGlobals);
     KConfigGroup config(&bookmarkrc, "Bookmarks");
 
     DynMenuInfo info;
@@ -189,7 +189,7 @@ KonqBookmarkMenu::DynMenuInfo KonqBookmarkMenu::showDynamicBookmarks(const QStri
 
 QStringList KonqBookmarkMenu::dynamicBookmarksList()
 {
-    KConfigGroup config = KSharedConfig::openConfig("kbookmarkrc", KConfig::NoGlobals)->group("Bookmarks");
+    KConfigGroup config = KSharedConfig::openConfig(QStringLiteral("kbookmarkrc"), KConfig::NoGlobals)->group("Bookmarks");
 
     QStringList mlist;
     if (config.hasKey("DynamicMenus")) {
@@ -201,7 +201,7 @@ QStringList KonqBookmarkMenu::dynamicBookmarksList()
 
 void KonqBookmarkMenu::setDynamicBookmarks(const QString &id, const DynMenuInfo &newMenu)
 {
-    KSharedConfig::Ptr kbookmarkrc = KSharedConfig::openConfig("kbookmarkrc", KConfig::NoGlobals);
+    KSharedConfig::Ptr kbookmarkrc = KSharedConfig::openConfig(QStringLiteral("kbookmarkrc"), KConfig::NoGlobals);
     KConfigGroup dynConfig = kbookmarkrc->group(QString("DynamicMenu-" + id));
 
     // add group unconditionally

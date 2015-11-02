@@ -65,23 +65,23 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
       m_bIsRoot(true),
       m_pManager(mgr), m_pOwner(_owner),
       m_parentMenu(_parentMenu),
-      m_parentAddress(QString(""))   //TODO KBookmarkAdress::root
+      m_parentAddress(QLatin1String(""))   //TODO KBookmarkAdress::root
 {
     // TODO KDE5 find a QMenu equvalnet for this one
     //m_parentMenu->setKeyboardShortcutsEnabled( true );
 
     // qDebug() << "KBookmarkMenu::KBookmarkMenu " << this << " address : " << m_parentAddress;
 
-    connect(_parentMenu, SIGNAL(aboutToShow()),
-            SLOT(slotAboutToShow()));
+    connect(_parentMenu, &QMenu::aboutToShow,
+            this, &KBookmarkMenu::slotAboutToShow);
 
     if (KBookmarkSettings::self()->m_contextmenu) {
         m_parentMenu->setContextMenuPolicy(Qt::CustomContextMenu);
-        connect(m_parentMenu, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotCustomContextMenu(QPoint)));
+        connect(m_parentMenu, &QWidget::customContextMenuRequested, this, &KBookmarkMenu::slotCustomContextMenu);
     }
 
-    connect(m_pManager, SIGNAL(changed(QString,QString)),
-            SLOT(slotBookmarksChanged(QString)));
+    connect(m_pManager, &KBookmarkManager::changed,
+            this, &KBookmarkMenu::slotBookmarksChanged);
 
     m_bDirty = true;
     addActions();
@@ -119,10 +119,10 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
 {
     // TODO KDE5 find a QMenu equvalnet for this one
     //m_parentMenu->setKeyboardShortcutsEnabled( true );
-    connect(_parentMenu, SIGNAL(aboutToShow()), SLOT(slotAboutToShow()));
+    connect(_parentMenu, &QMenu::aboutToShow, this, &KBookmarkMenu::slotAboutToShow);
     if (KBookmarkSettings::self()->m_contextmenu) {
         m_parentMenu->setContextMenuPolicy(Qt::CustomContextMenu);
-        connect(m_parentMenu, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(slotCustomContextMenu(QPoint)));
+        connect(m_parentMenu, &QWidget::customContextMenuRequested, this, &KBookmarkMenu::slotCustomContextMenu);
     }
     m_bDirty = true;
 }
@@ -253,17 +253,17 @@ void KBookmarkMenu::refill()
 
 void KBookmarkMenu::addOpenInTabs()
 {
-    if (!m_pOwner || !m_pOwner->supportsTabs() || !KAuthorized::authorizeKAction("bookmarks")) {
+    if (!m_pOwner || !m_pOwner->supportsTabs() || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
     QString title = tr("Open Folder in Tabs");
 
     QAction *paOpenFolderInTabs = new QAction(title, this);
-    paOpenFolderInTabs->setIcon(QIcon::fromTheme("tab-new"));
+    paOpenFolderInTabs->setIcon(QIcon::fromTheme(QStringLiteral("tab-new")));
     paOpenFolderInTabs->setToolTip(tr("Open all bookmarks in this folder as a new tab."));
     paOpenFolderInTabs->setStatusTip(paOpenFolderInTabs->toolTip());
-    connect(paOpenFolderInTabs, SIGNAL(triggered(bool)), this, SLOT(slotOpenFolderInTabs()));
+    connect(paOpenFolderInTabs, &QAction::triggered, this, &KBookmarkMenu::slotOpenFolderInTabs);
 
     m_parentMenu->addAction(paOpenFolderInTabs);
     m_actions.append(paOpenFolderInTabs);
@@ -271,7 +271,7 @@ void KBookmarkMenu::addOpenInTabs()
 
 void KBookmarkMenu::addAddBookmarksList()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !m_pOwner->supportsTabs() || !KAuthorized::authorizeKAction("bookmarks")) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !m_pOwner->supportsTabs() || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -279,10 +279,10 @@ void KBookmarkMenu::addAddBookmarksList()
         QString title = tr("Bookmark Tabs as Folder...");
         d->bookmarksToFolder = new QAction(title, this);
         m_actionCollection->addAction(m_bIsRoot ? "add_bookmarks_list" : 0, d->bookmarksToFolder);
-        d->bookmarksToFolder->setIcon(QIcon::fromTheme("bookmark-new-list"));
+        d->bookmarksToFolder->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new-list")));
         d->bookmarksToFolder->setToolTip(tr("Add a folder of bookmarks for all open tabs."));
         d->bookmarksToFolder->setStatusTip(d->bookmarksToFolder->toolTip());
-        connect(d->bookmarksToFolder, SIGNAL(triggered(bool)), this, SLOT(slotAddBookmarksList()));
+        connect(d->bookmarksToFolder, &QAction::triggered, this, &KBookmarkMenu::slotAddBookmarksList);
     }
 
     m_parentMenu->addAction(d->bookmarksToFolder);
@@ -290,7 +290,7 @@ void KBookmarkMenu::addAddBookmarksList()
 
 void KBookmarkMenu::addAddBookmark()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !KAuthorized::authorizeKAction("bookmarks")) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -310,11 +310,11 @@ void KBookmarkMenu::addAddBookmark()
 
 void KBookmarkMenu::addEditBookmarks()
 {
-    if ((m_pOwner && !m_pOwner->enableOption(KBookmarkOwner::ShowEditBookmark)) || !KAuthorized::authorizeKAction("bookmarks")) {
+    if ((m_pOwner && !m_pOwner->enableOption(KBookmarkOwner::ShowEditBookmark)) || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
-    QAction *m_paEditBookmarks = m_actionCollection->addAction(KStandardAction::EditBookmarks, "edit_bookmarks",
+    QAction *m_paEditBookmarks = m_actionCollection->addAction(KStandardAction::EditBookmarks, QStringLiteral("edit_bookmarks"),
                                  m_pManager, SLOT(slotEditBookmarks()));
     m_parentMenu->addAction(m_paEditBookmarks);
     m_paEditBookmarks->setToolTip(tr("Edit your bookmark collection in a separate window"));
@@ -323,16 +323,16 @@ void KBookmarkMenu::addEditBookmarks()
 
 void KBookmarkMenu::addNewFolder()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !KAuthorized::authorizeKAction("bookmarks")) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
     if (d->newBookmarkFolder == 0) {
         d->newBookmarkFolder = new QAction(tr("New Bookmark Folder..."), this);
-        d->newBookmarkFolder->setIcon(QIcon::fromTheme("folder-new"));
+        d->newBookmarkFolder->setIcon(QIcon::fromTheme(QStringLiteral("folder-new")));
         d->newBookmarkFolder->setToolTip(tr("Create a new bookmark folder in this menu"));
         d->newBookmarkFolder->setStatusTip(d->newBookmarkFolder->toolTip());
-        connect(d->newBookmarkFolder, SIGNAL(triggered(bool)), this, SLOT(slotNewFolder()));
+        connect(d->newBookmarkFolder, &QAction::triggered, this, &KBookmarkMenu::slotNewFolder);
     }
 
     m_parentMenu->addAction(d->newBookmarkFolder);
@@ -384,7 +384,7 @@ void KBookmarkMenu::slotAddBookmarksList()
     KBookmarkGroup parentBookmark = m_pManager->findByAddress(m_parentAddress).toGroup();
 
     KBookmarkDialog *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
-    dlg->addBookmarks(m_pOwner->currentBookmarkList(), "", parentBookmark);
+    dlg->addBookmarks(m_pOwner->currentBookmarkList(), QLatin1String(""), parentBookmark);
     delete dlg;
 }
 
@@ -422,7 +422,7 @@ void KBookmarkMenu::slotNewFolder()
     KBookmarkGroup parentBookmark = m_pManager->findByAddress(m_parentAddress).toGroup();
     Q_ASSERT(!parentBookmark.isNull());
     KBookmarkDialog *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
-    dlg->createNewFolder("", parentBookmark);
+    dlg->createNewFolder(QLatin1String(""), parentBookmark);
     delete dlg;
 }
 
@@ -442,7 +442,7 @@ KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr,
         const QString &type, const QString &location)
     : KBookmarkMenu(mgr, owner, parentMenu, QString()), m_type(type), m_location(location)
 {
-    connect(parentMenu, SIGNAL(aboutToShow()), this, SLOT(slotNSLoad()));
+    connect(parentMenu, &QMenu::aboutToShow, this, &KImportedBookmarkMenu::slotNSLoad);
 }
 
 KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr,
@@ -498,7 +498,7 @@ void KBookmarkMenuImporter::connectToImporter(const QObject &importer)
 
 void KBookmarkMenuImporter::newBookmark(const QString &text, const QString &url, const QString &)
 {
-    KBookmark bm = KBookmark::standaloneBookmark(text, QUrl(url), QString("html"));
+    KBookmark bm = KBookmark::standaloneBookmark(text, QUrl(url), QStringLiteral("html"));
     QAction *action = new KBookmarkAction(bm, mstack.top()->owner(), this);
     mstack.top()->parentMenu()->addAction(action);
     mstack.top()->m_actions.append(action);
@@ -506,8 +506,8 @@ void KBookmarkMenuImporter::newBookmark(const QString &text, const QString &url,
 
 void KBookmarkMenuImporter::newFolder(const QString &text, bool, const QString &)
 {
-    QString _text = KStringHandler::csqueeze(text).replace('&', "&&");
-    KActionMenu *actionMenu = new KImportedBookmarkActionMenu(QIcon::fromTheme("folder"), _text, this);
+    QString _text = KStringHandler::csqueeze(text).replace('&', QLatin1String("&&"));
+    KActionMenu *actionMenu = new KImportedBookmarkActionMenu(QIcon::fromTheme(QStringLiteral("folder")), _text, this);
     mstack.top()->parentMenu()->addAction(actionMenu);
     mstack.top()->m_actions.append(actionMenu);
     KImportedBookmarkMenu *subMenu = new KImportedBookmarkMenu(m_pManager, m_menu->owner(), actionMenu->menu());

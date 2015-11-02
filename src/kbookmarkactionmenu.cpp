@@ -21,7 +21,7 @@
 #include "kbookmarkactionmenu.h"
 
 KBookmarkActionMenu::KBookmarkActionMenu(const KBookmark &bm, QObject *parent)
-    : KActionMenu(QIcon::fromTheme(bm.icon()), bm.text().replace('&', "&&"), parent),
+    : KActionMenu(QIcon::fromTheme(bm.icon()), bm.text().replace('&', QLatin1String("&&")), parent),
       KBookmarkActionInterface(bm)
 {
     setToolTip(bm.description());

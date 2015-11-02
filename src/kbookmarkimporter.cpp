@@ -50,14 +50,14 @@ void KXBELBookmarkImporterImpl::visit(const KBookmark &bk)
     if (bk.isSeparator()) {
         emit newSeparator();
     } else {
-        emit newBookmark(bk.fullText(), bk.url().toString(), "");
+        emit newBookmark(bk.fullText(), bk.url().toString(), QLatin1String(""));
     }
 }
 
 void KXBELBookmarkImporterImpl::visitEnter(const KBookmarkGroup &grp)
 {
     // qDebug() << "KXBELBookmarkImporterImpl::visitEnter";
-    emit newFolder(grp.fullText(), false, "");
+    emit newFolder(grp.fullText(), false, QLatin1String(""));
 }
 
 void KXBELBookmarkImporterImpl::visitLeave(const KBookmarkGroup &)
@@ -80,15 +80,15 @@ void KBookmarkImporterBase::setupSignalForwards(QObject *src, QObject *dst)
 
 KBookmarkImporterBase *KBookmarkImporterBase::factory(const QString &type)
 {
-    if (type == "netscape") {
+    if (type == QLatin1String("netscape")) {
         return new KNSBookmarkImporterImpl;
-    } else if (type == "mozilla") {
+    } else if (type == QLatin1String("mozilla")) {
         return new KMozillaBookmarkImporterImpl;
-    } else if (type == "xbel") {
+    } else if (type == QLatin1String("xbel")) {
         return new KXBELBookmarkImporterImpl;
-    } else if (type == "ie") {
+    } else if (type == QLatin1String("ie")) {
         return new KIEBookmarkImporterImpl;
-    } else if (type == "opera") {
+    } else if (type == QLatin1String("opera")) {
         return new KOperaBookmarkImporterImpl;
     } else {
         return 0;
