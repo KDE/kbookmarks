@@ -11,3 +11,7 @@ libraries:
  - qmake: KBookmarks
    cmake: "KF5::Bookmarks"
 cmakename: KF5Bookmarks
+
+public_lib: true
+group: Frameworks
+subgroup: Tier 3
