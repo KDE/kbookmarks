@@ -54,16 +54,33 @@
 class KBookmarkManagerList : public QList<KBookmarkManager *>
 {
 public:
+    KBookmarkManagerList();
     ~KBookmarkManagerList()
     {
+        cleanup();
+    }
+    void cleanup() {
         QList<KBookmarkManager *> copy = *this;
         qDeleteAll(copy); // auto-delete functionality
+        clear();
     }
 
     QReadWriteLock lock;
 };
 
 Q_GLOBAL_STATIC(KBookmarkManagerList, s_pSelf)
+
+static void deleteManagers() {
+    if (s_pSelf.exists()) {
+        s_pSelf->cleanup();
+    }
+}
+
+KBookmarkManagerList::KBookmarkManagerList()
+{
+    // Delete the KBookmarkManagers while qApp exists, since we interact with the DBus thread
+    qAddPostRoutine(deleteManagers);
+}
 
 class KBookmarkMap : private KBookmarkGroupTraverser
 {
