@@ -191,6 +191,9 @@ bool KBookmarkGroup::moveBookmark(const KBookmark &item, const KBookmark &after)
         // we have to skip everything up to the first valid child
         QDomElement firstChild = nextKnownTag(element.firstChild().toElement(), true);
         if (!firstChild.isNull()) {
+            if (firstChild == item.element) { // item is already the first child, done
+                return true;
+            }
             n = element.insertBefore(item.element, firstChild);
         } else {
             // No real first child -> append after the <title> etc.
