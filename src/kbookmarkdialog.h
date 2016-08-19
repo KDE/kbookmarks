@@ -1,4 +1,3 @@
-//  -*- c-basic-offset:4; indent-tabs-mode:nil -*-
 /* This file is part of the KDE libraries
    Copyright 2007 Daniel Teske <teske@squorn.de>
 
@@ -41,30 +40,30 @@ class KBOOKMARKS_EXPORT KBookmarkDialog : public QDialog
 
 public:
     /**
-     * Creates a new KBookmarkDialog
+     * Creates a KBookmarkDialog instance
      */
-    KBookmarkDialog(KBookmarkManager *, QWidget * = 0);
+    KBookmarkDialog(KBookmarkManager *manager, QWidget *parent = Q_NULLPTR);
     /**
-     * shows a propeties dialog
-     * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged
+     * Shows a properties dialog
+     * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmark editBookmark(const KBookmark &bm);
     /**
-     * shows a add Bookmark dialog
-     * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged
+     * Shows a "Add Bookmark" dialog
+     * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmark addBookmark(const QString &title, const QUrl &url, const QString &icon, KBookmark parent = KBookmark());
     /**
      * Creates a folder from a list of bookmarks
-     * Note: That this  updates the bookmark and calls KBookmarkManager::emitChanged
+     * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmarkGroup addBookmarks(const QList<KBookmarkOwner::FutureBookmark> &list, const QString &name = QString(), KBookmarkGroup parent = KBookmarkGroup());
     /**
-     * A dialog to create a new folder.
+     * Shows a dialog to create a new folder.
      */
     KBookmarkGroup createNewFolder(const QString &name, KBookmark parent = KBookmark());
     /**
-     * A dialog to select a folder.
+     * Shows a dialog to select a folder.
      */
     KBookmarkGroup selectFolder(KBookmark start = KBookmark());
 
