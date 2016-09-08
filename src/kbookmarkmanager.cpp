@@ -26,7 +26,7 @@
 #include <QtCore/QFile>
 #include <QtCore/QFileInfo>
 #include <QtCore/QProcess>
-#include <QtCore/QRegExp>
+#include <QtCore/QRegularExpression>
 #include <QtCore/QTextStream>
 #include <QTextCodec>
 #include <QDBusConnection>
@@ -534,7 +534,7 @@ KBookmark KBookmarkManager::findByAddress(const QString &address)
     // qDebug() << "KBookmarkManager::findByAddress " << address;
     KBookmark result = root();
     // The address is something like /5/10/2+
-    const QStringList addresses = address.split(QRegExp(QStringLiteral("[/+]")), QString::SkipEmptyParts);
+    const QStringList addresses = address.split(QRegularExpression(QStringLiteral("[/+]")), QString::SkipEmptyParts);
     // qWarning() << addresses.join(",");
     for (QStringList::const_iterator it = addresses.begin(); it != addresses.end();) {
         bool append = ((*it) == QLatin1String("+"));

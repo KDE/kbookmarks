@@ -24,6 +24,7 @@
 #include <QtCore/QDebug>
 #include <qtextcodec.h>
 #include <QApplication>
+#include <QRegularExpression>
 
 #include <qplatformdefs.h>
 
@@ -74,9 +75,10 @@ void KIEBookmarkImporter::parseIEBookmarks_url_file(const QString &filename, con
                 continue;
             }
             QByteArray t = s.trimmed();
-            QRegExp rx(QStringLiteral("URL=(.*)"));
-            if (rx.exactMatch(t)) {
-                emit newBookmark(name, rx.cap(1), QLatin1String(""));
+            QRegularExpression rx(QStringLiteral("URL=(.*)"));
+            auto match = rx.match(t);
+            if (match.hasMatch()) {
+                emit newBookmark(name, match.captured(1), QLatin1String(""));
             }
         }
 
@@ -177,7 +179,7 @@ private:
 static QString ieStyleQuote(const QString &str)
 {
     QString s(str);
-    s.replace(QRegExp(QStringLiteral("[/\\:*?\"<>|]")), QStringLiteral("_"));
+    s.replace(QRegularExpression(QStringLiteral("[/\\:*?\"<>|]")), QStringLiteral("_"));
     return s;
 }
 
