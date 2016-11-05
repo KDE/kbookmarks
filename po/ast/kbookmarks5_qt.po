@@ -1,0 +1,347 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# enolp <enolp@softastur.org>, 2015, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4-v1\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2016-02-03 01:30+0100\n"
+"Last-Translator: enolp <enolp@sofastur.org>\n"
+"Language-Team: Asturian <>\n"
+"Language: ast\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: asturian\n"
+"X-Qt-Contexts: true\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: kbookmark.cpp:310
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- separtador ---"
+
+#: kbookmarkcontextmenu.cpp:62
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "Amestar marcador equí"
+
+#: kbookmarkcontextmenu.cpp:68
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Abrir carpeta nel editor de marcadores"
+
+#: kbookmarkcontextmenu.cpp:71
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "Desaniciar carpeta"
+
+#: kbookmarkcontextmenu.cpp:76
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "Propiedaes"
+
+#: kbookmarkcontextmenu.cpp:81
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "Copiar direición d'enllaz"
+
+#: kbookmarkcontextmenu.cpp:84
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "Desaniciar marcador"
+
+#: kbookmarkcontextmenu.cpp:90
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Abrir carpetes en llingüetes"
+
+#: kbookmarkcontextmenu.cpp:116
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Nun pue amestase un marcador cola URL balera."
+
+#: kbookmarkcontextmenu.cpp:146
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "Desaniciu de la carpeta de marcadores"
+
+#: kbookmarkcontextmenu.cpp:147
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "Desaniciu de marcador"
+
+#: kbookmarkcontextmenu.cpp:148
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"¿De xuru que deseyes desaniciar la carpeta del\n"
+"marcador «%1»?"
+
+#: kbookmarkcontextmenu.cpp:149
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"¿De xuru que deseyes desaniciar el marcador\n"
+"«%1»?"
+
+#: kbookmarkdialog.cpp:70
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Nome:"
+
+#: kbookmarkdialog.cpp:75
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Allugamientu:"
+
+#: kbookmarkdialog.cpp:80
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Comentariu:"
+
+#: kbookmarkdialog.cpp:191
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Anovar"
+
+#: kbookmarkdialog.cpp:192
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Propiedaes del marcador"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "Carpeta &nueva..."
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Amestar"
+
+#: kbookmarkdialog.cpp:228
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Amiestu de marcadores"
+
+#: kbookmarkdialog.cpp:266
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Amiestu de marcadores"
+
+#: kbookmarkdialog.cpp:299
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Esbilla de carpeta"
+
+#: kbookmarkdialog.cpp:327
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Carpeta nueva"
+
+#: kbookmarkdialog.cpp:362
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Creación de carpeta de marcadores nueva"
+
+#: kbookmarkdialog.cpp:363
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Creación de carpeta de marcadores nueva en %1"
+
+#: kbookmarkdialog.cpp:365
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Carpeta nueva:"
+
+#: kbookmarkdialog.cpp:386
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Marcadores"
+
+#: kbookmarkimporter_ns.cpp:115
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "Ficheros HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|Ficheros HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Nun pudo alcontrase %1. Quiciabes Netscape nun tea instaláu. Albortando la "
+"esportación."
+
+#: kbookmarkimporter_ns.cpp:137
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Nun s'alcontró Netscape"
+
+#: kbookmarkimporter_ns.cpp:158
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Esti ficheru xenerólu Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Marcadores"
+
+#: kbookmarkimporter_opera.cpp:119
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Ficheros de marcadores d'Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:122
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Ficheros de marcadores d'Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:465
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Nun puen salvase los marcadores en %1. El fallu informáu foi: %2. Esti "
+"mensaxe de fallu namái s'amosará una vegada. La causa'l fallu necesita "
+"iguase tan aína como sía posible, lo más probable ye que'l discu duru tea "
+"enllén."
+
+#: kbookmarkmenu.cpp:260
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Abrie les carpetes en llingüetes"
+
+#: kbookmarkmenu.cpp:264
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "Abre tolos marcadores nesta carpeta como una llingüeta nueva."
+
+#: kbookmarkmenu.cpp:279
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Llingüetes de marcadores como carpeta..."
+
+#: kbookmarkmenu.cpp:283
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "Amiesta una carpeta de los marcadores pa toles llingüetes abiertes."
+
+#: kbookmarkmenu.cpp:320
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Edita la to coleición de marcadores nuna ventana separtada"
+
+#: kbookmarkmenu.cpp:331
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "Carpeta de marcadores nueva..."
+
+#: kbookmarkmenu.cpp:333
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Crea una carpeta de marcadores nueva nesti menú"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "Anubrir na barra de ferramientes"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "Amosar na barra de ferramientes"
+
+#: konqbookmarkmenu.cpp:66
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "Abrir nuna ventana nueva"
+
+#: konqbookmarkmenu.cpp:67
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "Abrir nuna llingüeta nueva"
+
+#, fuzzy
+#~ msgid "All Files"
+#~ msgstr "1 File"
+
+#~ msgctxt "@title:window"
+#~ msgid "Places"
+#~ msgstr "Llugares"
+
+#~ msgid "Places"
+#~ msgstr "Llugares"
+
+#~ msgid "1 Folder"
+#~ msgid_plural "%1 Folders"
+#~ msgstr[0] "1 Carpeta"
+#~ msgstr[1] "%1 Carpetes"
+
+#~ msgid "1 File"
+#~ msgid_plural "%1 Files"
+#~ msgstr[0] "1 File"
+#~ msgstr[1] "%1 Ficheros"
+
+#~ msgctxt "folders, files (size)"
+#~ msgid "%1, %2 (%3)"
+#~ msgstr "%1, %2 (%3)"
+
+#~ msgctxt "folders, files"
+#~ msgid "%1, %2"
+#~ msgstr "%1, %2"
+
+#~ msgctxt "files (size)"
+#~ msgid "%1 (%2)"
+#~ msgstr "%1 (%2)"
+
+#~ msgctxt "items: folders, files (size)"
+#~ msgid "%1: %2"
+#~ msgstr "%1: %2"
+
+#~ msgid "Could not read %1."
+#~ msgstr "Nun puede lleese %1."
+
+#~ msgid "Could not write to %1."
+#~ msgstr "Nun puede escribise en %1."
+
+#~ msgid "&Yes"
+#~ msgstr "&Sí"
+
+#~ msgid "&No"
+#~ msgstr "&Non"
+
+#, fuzzy
+#~ msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
+#~ msgid "%1 to %2"
+#~ msgstr "%1, %2"
+
+#, fuzzy
+#~ msgctxt "%1, using %2 bits of a %3 bit key"
+#~ msgid "%1, %2 %3"
+#~ msgstr "%1, %2 (%3)"
+
+#, fuzzy
+#~ msgctxt "@label"
+#~ msgid "Folder"
+#~ msgstr "1 Carpeta"
