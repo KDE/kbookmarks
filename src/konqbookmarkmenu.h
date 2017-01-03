@@ -93,9 +93,9 @@ protected:
      */
     static QStringList dynamicBookmarksList();
 
-    virtual void refill();
-    virtual QAction *actionForBookmark(const KBookmark &bm);
-    QMenu *contextMenu(QAction *action);
+    void refill() Q_DECL_OVERRIDE;
+    QAction *actionForBookmark(const KBookmark &bm) Q_DECL_OVERRIDE;
+    QMenu *contextMenu(QAction *action) Q_DECL_OVERRIDE;
     void fillDynamicBookmarks();
 };
 
@@ -105,7 +105,7 @@ class KBOOKMARKS_EXPORT KonqBookmarkContextMenu : public KBookmarkContextMenu
 public:
     KonqBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *mgr, KBookmarkOwner *owner);
     virtual ~KonqBookmarkContextMenu();
-    virtual void addActions();
+    void addActions() Q_DECL_OVERRIDE;
 
 public Q_SLOTS:
     void openInNewTab();
