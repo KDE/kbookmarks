@@ -42,7 +42,7 @@ public:
     /**
      * Creates a KBookmarkDialog instance
      */
-    KBookmarkDialog(KBookmarkManager *manager, QWidget *parent = Q_NULLPTR);
+    KBookmarkDialog(KBookmarkManager *manager, QWidget *parent = nullptr);
     /**
      * Shows a properties dialog
      * Note: this updates the bookmark and calls KBookmarkManager::emitChanged

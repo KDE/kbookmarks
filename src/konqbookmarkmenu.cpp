@@ -174,7 +174,7 @@ KonqBookmarkMenu::DynMenuInfo KonqBookmarkMenu::showDynamicBookmarks(const QStri
 
     DynMenuInfo info;
     info.show = false;
-    info.d = Q_NULLPTR;
+    info.d = nullptr;
 
     if (!config.hasKey("DynamicMenus")) {
         if (bookmarkrc.hasGroup("DynamicMenu-" + id)) {
