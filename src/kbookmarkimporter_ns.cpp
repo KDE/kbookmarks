@@ -134,7 +134,7 @@ void KNSBookmarkExporterImpl::write(const KBookmarkGroup &parent)
     if (!QFile::exists(m_fileName)) {
         QString errorMsg = KNSBookmarkImporterImpl::tr("Could not find %1. Netscape is probably not installed. "
                            "Aborting the export.").arg(m_fileName);
-        QMessageBox::critical(0, KNSBookmarkImporterImpl::tr("Netscape not found"), errorMsg);
+        QMessageBox::critical(nullptr, KNSBookmarkImporterImpl::tr("Netscape not found"), errorMsg);
         return;
     }
     if (QFile::exists(m_fileName)) {

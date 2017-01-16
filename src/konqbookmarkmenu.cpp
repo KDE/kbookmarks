@@ -230,7 +230,7 @@ QMenu *KonqBookmarkMenu::contextMenu(QAction *action)
 {
     KBookmarkActionInterface *act = dynamic_cast<KBookmarkActionInterface *>(action);
     if (!act) {
-        return 0;
+        return nullptr;
     }
     return new KonqBookmarkContextMenu(act->bookmark(), manager(), owner());
 }

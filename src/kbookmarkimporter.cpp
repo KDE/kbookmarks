@@ -91,7 +91,7 @@ KBookmarkImporterBase *KBookmarkImporterBase::factory(const QString &type)
     } else if (type == QLatin1String("opera")) {
         return new KOperaBookmarkImporterImpl;
     } else {
-        return 0;
+        return nullptr;
     }
 }
 

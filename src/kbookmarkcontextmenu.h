@@ -33,7 +33,7 @@ class KBOOKMARKS_EXPORT KBookmarkContextMenu : public QMenu
     Q_OBJECT
 
 public:
-    KBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *manager, KBookmarkOwner *owner, QWidget *parent = 0);
+    KBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *manager, KBookmarkOwner *owner, QWidget *parent = nullptr);
     virtual ~KBookmarkContextMenu();
     virtual void addActions();
 

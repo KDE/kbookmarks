@@ -37,7 +37,7 @@
 
 KBookmarkDialogPrivate::KBookmarkDialogPrivate(KBookmarkDialog *q)
     : q(q)
-    , folderTree(0)
+    , folderTree(nullptr)
     , layout(false)
 {
 }

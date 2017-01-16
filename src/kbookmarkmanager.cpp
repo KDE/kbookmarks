@@ -141,10 +141,10 @@ public:
         , m_docIsLoaded(bDocIsloaded)
         , m_update(false)
         , m_dialogAllowed(true)
-        , m_dialogParent(0)
+        , m_dialogParent(nullptr)
         , m_browserEditor(false)
         , m_typeExternal(false)
-        , m_dirWatch(0)
+        , m_dirWatch(nullptr)
     {}
 
     ~KBookmarkManagerPrivate()
@@ -181,12 +181,12 @@ static KBookmarkManager *lookupExisting(const QString &bookmarksFile)
             return *bmit;
         }
     }
-    return 0;
+    return nullptr;
 }
 
 KBookmarkManager *KBookmarkManager::managerForFile(const QString &bookmarksFile, const QString &dbusObjectName)
 {
-    KBookmarkManager *mgr(0);
+    KBookmarkManager *mgr(nullptr);
     {
         QReadLocker readLock(&s_pSelf()->lock);
         mgr = lookupExisting(bookmarksFile);
@@ -208,7 +208,7 @@ KBookmarkManager *KBookmarkManager::managerForFile(const QString &bookmarksFile,
 
 KBookmarkManager *KBookmarkManager::managerForExternalFile(const QString &bookmarksFile)
 {
-    KBookmarkManager *mgr(0);
+    KBookmarkManager *mgr(nullptr);
     {
         QReadLocker readLock(&s_pSelf()->lock);
         mgr = lookupExisting(bookmarksFile);
@@ -703,7 +703,7 @@ KBookmarkManager *KBookmarkManager::userBookmarksManager()
     return bookmarkManager;
 }
 
-KBookmarkSettings *KBookmarkSettings::s_self = 0;
+KBookmarkSettings *KBookmarkSettings::s_self = nullptr;
 
 void KBookmarkSettings::readSettings()
 {

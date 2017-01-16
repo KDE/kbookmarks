@@ -133,7 +133,7 @@ void KIEBookmarkImporter::parseIEBookmarks()
 
 QString KIEBookmarkImporter::IEBookmarksDir()
 {
-    static KIEBookmarkImporterImpl *p = 0;
+    static KIEBookmarkImporterImpl *p = nullptr;
     if (!p) {
         p = new KIEBookmarkImporterImpl;
     }
