@@ -1,0 +1,284 @@
+# translation of kio4.po to Lithuanian
+# Ričardas Čepas <rch@richard.eu.org>, 2002-2003.
+# Donatas Glodenis <dgvirtual@akl.lt>, 2004-2009.
+# Remigijus Jarmalavičius <remigijus@jarmalavicius.lt>, 2011.
+# Liudas Ališauskas <liudas.alisauskas@gmail.com>, 2011, 2014.
+# Liudas Alisauskas <liudas@akmc.lt>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2014-11-11 00:02+0200\n"
+"Last-Translator: Liudas Ališauskas <liudas@aksioma.lt>\n"
+"Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Lokalize 1.5\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:310
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- skirtukas ---"
+
+#: kbookmarkcontextmenu.cpp:62
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "Pridėti žymelę čia"
+
+#: kbookmarkcontextmenu.cpp:68
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Atverti aplanką žymelių redagavimo programoje"
+
+#: kbookmarkcontextmenu.cpp:71
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "Ištrinti aplanką"
+
+#: kbookmarkcontextmenu.cpp:76
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "Savybės"
+
+#: kbookmarkcontextmenu.cpp:81
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "Kopijuoti nuorodos adresą"
+
+#: kbookmarkcontextmenu.cpp:84
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "Ištrinti žymelę"
+
+#: kbookmarkcontextmenu.cpp:90
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Atverti aplanką kortelėse"
+
+#: kbookmarkcontextmenu.cpp:116
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Nepavyksta pridėti žymelės su tuščiu URL."
+
+#: kbookmarkcontextmenu.cpp:146
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "Žymelių aplanko trynimas"
+
+#: kbookmarkcontextmenu.cpp:147
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "Žymelių trynimas"
+
+#: kbookmarkcontextmenu.cpp:148
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Ar tikrai norite pašalinti žymelių aplanką\n"
+"„%1“?"
+
+#: kbookmarkcontextmenu.cpp:149
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Ar tikrai norite pašalinti žymelę\n"
+"„%1“?"
+
+#: kbookmarkdialog.cpp:70
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Pavadinimas:"
+
+#: kbookmarkdialog.cpp:75
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Vieta:"
+
+#: kbookmarkdialog.cpp:80
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Komentaras:"
+
+#: kbookmarkdialog.cpp:191
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Atnaujinti"
+
+#: kbookmarkdialog.cpp:192
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Žymelės savybės"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Naujas aplankas..."
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Pridėti"
+
+#: kbookmarkdialog.cpp:228
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Pridėti žymelę"
+
+#: kbookmarkdialog.cpp:266
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Pridėti žymelę"
+
+#: kbookmarkdialog.cpp:299
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Pasirinkite aplanką"
+
+#: kbookmarkdialog.cpp:327
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Naujas aplankas"
+
+#: kbookmarkdialog.cpp:362
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Sukurti naują žymelių aplanką"
+
+#: kbookmarkdialog.cpp:363
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Sukurti naują žymelių aplanką, esantį %1"
+
+#: kbookmarkdialog.cpp:365
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Naujas aplankas:"
+
+#: kbookmarkdialog.cpp:386
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Žymelės"
+
+#: kbookmarkimporter_ns.cpp:115
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "HTML failai (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML failai (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Nepavyko rasti %1. Netscape tikriausiai nėra įdiegtas. Nutraukiamas "
+"eksportas."
+
+#: kbookmarkimporter_ns.cpp:137
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Netscape nerastas"
+
+#: kbookmarkimporter_ns.cpp:158
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Šis failas buvo sugeneruotas su Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Žymelės"
+
+#: kbookmarkimporter_opera.cpp:119
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Opera žymelių failai (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:122
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera žymelių failai (*.adr)"
+
+#: kbookmarkmanager.cpp:465
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Nepavyksta išsaugoti žymelių %1. Pranešta klaida: %2. Ši klaida bus rodoma "
+"tik vieną kartą. Greičiausiai klaidos priežastis yra perpildytas kietasis "
+"diskas, prašome skubiai ištaisyti situaciją."
+
+#: kbookmarkmenu.cpp:260
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Atverti aplanką kortelėse"
+
+#: kbookmarkmenu.cpp:264
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "Atverti visas šio aplanko žymeles naujose kortelėse."
+
+#: kbookmarkmenu.cpp:279
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Sukurti žymelių aplanką iš kortelių..."
+
+#: kbookmarkmenu.cpp:283
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "Iš visų atvertų kortelių sukurti žymelių aplanką."
+
+#: kbookmarkmenu.cpp:320
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Redaguoti Jūsų žymelių rinkinį atskirame lange"
+
+#: kbookmarkmenu.cpp:331
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "Naujas žymelių aplankas..."
+
+#: kbookmarkmenu.cpp:333
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Sukurti naują žymelių aplanką šiame meniu"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "Slėpti įrankinėje"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "Rodyti įrankinėje"
+
+#: konqbookmarkmenu.cpp:66
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "Atverti naujame lange"
+
+#: konqbookmarkmenu.cpp:67
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "Atverti naujoje kortelėje"
