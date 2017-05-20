@@ -22,7 +22,11 @@ include(GenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
 
+include(ECMAddQch)
 include(ECMPoQmTools)
+
+option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
+add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 ecm_setup_version(PROJECT
                   VARIABLE_PREFIX KBOOKMARKS
@@ -53,6 +57,16 @@ add_subdirectory(autotests)
 
 # create a Config.cmake and a ConfigVersion.cmake file and install them
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Bookmarks")
+
+if (BUILD_QCH)
+    ecm_install_qch_export(
+        TARGETS KF5Bookmarks_QCH
+        FILE KF5BookmarksQchTargets.cmake
+        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
+        COMPONENT Devel
+    )
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF5BookmarksQchTargets.cmake\")")
+endif()
 
 include(CMakePackageConfigHelpers)
 
