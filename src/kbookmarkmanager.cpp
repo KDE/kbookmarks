@@ -325,6 +325,23 @@ void KBookmarkManager::init(const QString &dbusPath)
     }
 }
 
+void KBookmarkManager::startKEditBookmarks(const QStringList &args)
+{
+    bool success = QProcess::startDetached(QStringLiteral("keditbookmarks"), args);
+
+    if (!success) {
+        QString err = tr("Cannot launch keditbookmarks.\n\n"
+                         "Most likely you do not have keditbookmarks currently installed");
+
+        if (d->m_dialogAllowed && qobject_cast<QApplication *>(qApp) && QThread::currentThread() == qApp->thread()) {
+            QMessageBox::warning(QApplication::activeWindow(), QApplication::applicationName(), err);
+        }
+
+        qWarning() << QStringLiteral("Failed to start keditbookmarks");
+        emit this->error(err);
+    }
+}
+
 void KBookmarkManager::slotFileChanged(const QString &path)
 {
     if (path == d->m_bookmarksFile) {
@@ -642,7 +659,7 @@ void KBookmarkManager::slotEditBookmarks()
         args << QStringLiteral("--dbusObjectName") << d->m_dbusObjectName;
     }
     args << d->m_bookmarksFile;
-    QProcess::startDetached(QStringLiteral("keditbookmarks"), args);
+    startKEditBookmarks(args);
 }
 
 void KBookmarkManager::slotEditBookmarksAtAddress(const QString &address)
@@ -659,7 +676,7 @@ void KBookmarkManager::slotEditBookmarksAtAddress(const QString &address)
     }
     args << QStringLiteral("--address") << address
          << d->m_bookmarksFile;
-    QProcess::startDetached(QStringLiteral("keditbookmarks"), args);
+    startKEditBookmarks(args);
 }
 
 ///////

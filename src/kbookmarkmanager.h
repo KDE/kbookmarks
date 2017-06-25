@@ -333,6 +333,8 @@ private:
     void parse() const;
     void init(const QString &dbusPath);
 
+    void startKEditBookmarks(const QStringList &args);
+
     KBookmarkManagerPrivate *const d;
 
     friend class KBookmarkGroup;
