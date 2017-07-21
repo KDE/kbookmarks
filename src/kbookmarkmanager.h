@@ -73,8 +73,8 @@ private:
      * @param dbusObjectName a unique name that represents this bookmark collection,
      * usually your component (e.g. application) name. This is "konqueror" for the
      * konqueror bookmarks, "kfile" for KFileDialog bookmarks, etc.
-     * The final DBus object path is /KBookmarkManager/dbusObjectName
-     * An empty dbusObjectName disables the registration to dbus (used for temporary managers)
+     * The final D-Bus object path is /KBookmarkManager/dbusObjectName
+     * An empty @p dbusObjectName disables the registration to D-Bus (used for temporary managers)
      */
     KBookmarkManager(const QString &bookmarksFile, const QString &dbusObjectName);
 
@@ -122,7 +122,7 @@ public:
 
     /**
      * Set the update flag. Defaults to true.
-     * @param update if true then KBookmarkManager will listen to DBUS update requests.
+     * @param update if true then KBookmarkManager will listen to D-Bus update requests.
      */
     void setUpdate(bool update);
 
@@ -235,8 +235,8 @@ public:
      * @param dbusObjectName a unique name that represents this bookmark collection,
      * usually your component (e.g. application) name. This is "konqueror" for the
      * konqueror bookmarks, "kfile" for KFileDialog bookmarks, etc.
-     * The final DBus object path is /KBookmarkManager/dbusObjectName
-     * An empty dbusObjectName disables the registration to dbus (used for temporary managers)
+     * The final D-Bus object path is /KBookmarkManager/dbusObjectName
+     * An empty @p dbusObjectName disables the registration to D-Bus (used for temporary managers)
      *
      */
     static KBookmarkManager *managerForFile(const QString &bookmarksFile,
@@ -271,7 +271,7 @@ public Q_SLOTS:
 
     /**
      * Reparse the whole bookmarks file and notify about the change
-     * Doesn't send signal over DBUS to the other Bookmark Managers
+     * Doesn't send signal over D-Bus to the other Bookmark Managers
      * You probably want to use emitChanged()
      *
      */
@@ -282,7 +282,7 @@ public Q_SLOTS:
      * @see KBookmark::address()
      * Called by the process that saved the file after
      * a small change (new bookmark or new folder).
-     * Does not send signal over DBUS to the other Bookmark Managers
+     * Does not send signal over D-Bus to the other Bookmark Managers
      * You probably want to call emitChanged()
      */
     void notifyChanged(const QString &groupAddress, const QDBusMessage &msg);
@@ -291,17 +291,17 @@ public Q_SLOTS:
 
 Q_SIGNALS:
     /**
-     * Signal send over DBUS
+     * Signal send over D-Bus
      */
     void bookmarkCompleteChange(QString caller);
 
     /**
-     * Signal send over DBUS
+     * Signal send over D-Bus
      */
     void bookmarksChanged(QString groupAddress);
 
     /**
-     * Signal send over DBUS
+     * Signal send over D-Bus
      */
     void bookmarkConfigChanged();
 
