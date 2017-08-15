@@ -22,7 +22,7 @@
 #include "kbookmarkowner.h"
 #include "kbookmarkdialog.h"
 
-class KBookmarkOwner::FutureBookmarkPrivate : public QSharedData
+class Q_DECL_HIDDEN KBookmarkOwner::FutureBookmarkPrivate : public QSharedData
 {
 public:
     QString title;
