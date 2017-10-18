@@ -33,7 +33,7 @@
 #include <kactioncollection.h>
 
 #include <QtCore/QObject>
-#include <QtCore/QDebug>
+#include <QDebug>
 #include <QtCore/QStack>
 #include <QApplication>
 #include <QMenu>

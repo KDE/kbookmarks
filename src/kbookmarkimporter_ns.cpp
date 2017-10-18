@@ -25,7 +25,7 @@
 #include "kbookmarkmanager.h"
 #include <QFileDialog>
 #include <QMessageBox>
-#include <QtCore/QDebug>
+#include <QDebug>
 #include <kcharsets.h>
 
 #include <qtextcodec.h>

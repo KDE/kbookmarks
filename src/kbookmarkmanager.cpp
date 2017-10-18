@@ -21,7 +21,7 @@
 
 #include "kbookmarkmanager.h"
 
-#include <QtCore/QDebug>
+#include <QDebug>
 #include <QtCore/QDir>
 #include <QtCore/QFile>
 #include <QtCore/QFileInfo>

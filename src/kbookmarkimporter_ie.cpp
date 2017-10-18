@@ -21,7 +21,7 @@
 
 #include <QFileDialog>
 
-#include <QtCore/QDebug>
+#include <QDebug>
 #include <qtextcodec.h>
 #include <QApplication>
 #include <QRegularExpression>

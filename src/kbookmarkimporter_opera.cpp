@@ -21,7 +21,7 @@
 #include "kbookmarkimporter_opera_p.h"
 
 #include <QFileDialog>
-#include <QtCore/QDebug>
+#include <QDebug>
 #include <qtextcodec.h>
 #include <QApplication>
 

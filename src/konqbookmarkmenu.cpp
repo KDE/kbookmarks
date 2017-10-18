@@ -23,7 +23,7 @@
 #include "kbookmarkaction.h"
 #include "kbookmarkcontextmenu.h"
 
-#include <QtCore/QDebug>
+#include <QDebug>
 #include <QMenu>
 #include <QFile>
 

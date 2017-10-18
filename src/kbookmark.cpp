@@ -23,7 +23,7 @@
 #include <QStack>
 #include <QCoreApplication>
 #include <qmimedatabase.h>
-#include <QtCore/QDebug>
+#include <QDebug>
 #include <kstringhandler.h>
 #include <kurlmimedata.h>
 #include <kbookmarkmanager.h>
