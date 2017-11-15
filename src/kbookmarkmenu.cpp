@@ -27,16 +27,15 @@
 #include "kbookmarkdialog.h"
 #include "kbookmarkowner.h"
 
+#include <kactioncollection.h>
 #include <kauthorized.h>
 #include <kstandardaction.h>
 #include <kstringhandler.h>
-#include <kactioncollection.h>
 
-#include <QtCore/QObject>
-#include <QDebug>
-#include <QtCore/QStack>
 #include <QApplication>
+#include <QDebug>
 #include <QMenu>
+#include <QObject>
 
 /********************************************************************/
 /********************************************************************/
