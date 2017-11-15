@@ -252,7 +252,8 @@ void KBookmarkMenu::refill()
 
 void KBookmarkMenu::addOpenInTabs()
 {
-    if (!m_pOwner || !m_pOwner->supportsTabs() || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
+    if (!m_pOwner || !m_pOwner->supportsTabs() ||
+            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -270,7 +271,8 @@ void KBookmarkMenu::addOpenInTabs()
 
 void KBookmarkMenu::addAddBookmarksList()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !m_pOwner->supportsTabs() || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !m_pOwner->supportsTabs() ||
+            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -289,7 +291,8 @@ void KBookmarkMenu::addAddBookmarksList()
 
 void KBookmarkMenu::addAddBookmark()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) ||
+            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -309,7 +312,8 @@ void KBookmarkMenu::addAddBookmark()
 
 void KBookmarkMenu::addEditBookmarks()
 {
-    if ((m_pOwner && !m_pOwner->enableOption(KBookmarkOwner::ShowEditBookmark)) || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
+    if ((m_pOwner && !m_pOwner->enableOption(KBookmarkOwner::ShowEditBookmark)) ||
+            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -322,7 +326,8 @@ void KBookmarkMenu::addEditBookmarks()
 
 void KBookmarkMenu::addNewFolder()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) ||
+            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
