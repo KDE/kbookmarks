@@ -36,6 +36,7 @@
 #include <QDebug>
 #include <QMenu>
 #include <QObject>
+#include <QStandardPaths>
 
 /********************************************************************/
 /********************************************************************/
@@ -313,7 +314,8 @@ void KBookmarkMenu::addAddBookmark()
 void KBookmarkMenu::addEditBookmarks()
 {
     if ((m_pOwner && !m_pOwner->enableOption(KBookmarkOwner::ShowEditBookmark)) ||
-            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
+            QStandardPaths::findExecutable(QStringLiteral(KEDITBOOKMARKS_BINARY)).isEmpty() ||
+            !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
         return;
     }
 

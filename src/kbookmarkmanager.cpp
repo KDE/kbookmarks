@@ -327,7 +327,7 @@ void KBookmarkManager::init(const QString &dbusPath)
 
 void KBookmarkManager::startKEditBookmarks(const QStringList &args)
 {
-    bool success = QProcess::startDetached(QStringLiteral("keditbookmarks"), args);
+    bool success = QProcess::startDetached(QStringLiteral(KEDITBOOKMARKS_BINARY), args);
 
     if (!success) {
         QString err = tr("Cannot launch keditbookmarks.\n\n"

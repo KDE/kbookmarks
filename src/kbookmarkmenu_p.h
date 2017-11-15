@@ -39,6 +39,8 @@ class KBookmarkGroup;
 class KBookmarkOwner;
 class KBookmarkMenu;
 
+#define KEDITBOOKMARKS_BINARY "keditbookmarks"
+
 class KImportedBookmarkMenu : public KBookmarkMenu
 {
     friend class KBookmarkMenuImporter;
