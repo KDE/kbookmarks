@@ -23,7 +23,7 @@
 #include "kbookmarkaction.h"
 #include "kbookmarkcontextmenu.h"
 
-#include <QDebug>
+#include "kbookmarks_debug.h"
 #include <QMenu>
 #include <QFile>
 
@@ -147,7 +147,7 @@ void KonqBookmarkMenu::refill()
 QAction *KonqBookmarkMenu::actionForBookmark(const KBookmark &bm)
 {
     if (bm.isGroup()) {
-        // qDebug() << "Creating Konq bookmark submenu named " << bm.text();
+        // qCDebug(KBOOKMARKS_LOG) << "Creating Konq bookmark submenu named " << bm.text();
         KBookmarkActionMenu *actionMenu = new KBookmarkActionMenu(bm, this);
         m_actionCollection->addAction(QStringLiteral("kbookmarkmenu"), actionMenu);
         m_actions.append(actionMenu);
@@ -159,7 +159,7 @@ QAction *KonqBookmarkMenu::actionForBookmark(const KBookmark &bm)
     } else if (bm.isSeparator()) {
         return KBookmarkMenu::actionForBookmark(bm);
     } else {
-        // qDebug() << "Creating Konq bookmark action named " << bm.text();
+        // qCDebug(KBOOKMARKS_LOG) << "Creating Konq bookmark action named " << bm.text();
         KBookmarkAction *action = new KBookmarkAction(bm, owner(), this);
         m_actionCollection->addAction(action->objectName(), action);
         m_actions.append(action);

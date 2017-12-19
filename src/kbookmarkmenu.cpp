@@ -33,7 +33,7 @@
 #include <kstringhandler.h>
 
 #include <QApplication>
-#include <QDebug>
+#include "kbookmarks_debug.h"
 #include <QMenu>
 #include <QObject>
 #include <QStandardPaths>
@@ -70,7 +70,7 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
     // TODO KDE5 find a QMenu equvalnet for this one
     //m_parentMenu->setKeyboardShortcutsEnabled( true );
 
-    // qDebug() << "KBookmarkMenu::KBookmarkMenu " << this << " address : " << m_parentAddress;
+    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::KBookmarkMenu " << this << " address : " << m_parentAddress;
 
     connect(_parentMenu, &QMenu::aboutToShow,
             this, &KBookmarkMenu::slotAboutToShow);
@@ -211,9 +211,9 @@ QMenu *KBookmarkMenu::parentMenu() const
 
 void KBookmarkMenu::slotBookmarksChanged(const QString &groupAddress)
 {
-    qDebug() << "KBookmarkMenu::slotBookmarksChanged groupAddress: " << groupAddress;
+    qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotBookmarksChanged groupAddress: " << groupAddress;
     if (groupAddress == m_parentAddress) {
-        //qDebug() << "KBookmarkMenu::slotBookmarksChanged -> setting m_bDirty on " << groupAddress;
+        //qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotBookmarksChanged -> setting m_bDirty on " << groupAddress;
         m_bDirty = true;
     } else {
         // Iterate recursively into child menus
@@ -241,7 +241,7 @@ void KBookmarkMenu::clear()
 
 void KBookmarkMenu::refill()
 {
-    //qDebug() << "KBookmarkMenu::refill()";
+    //qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::refill()";
     if (m_bIsRoot) {
         addActions();
     }
@@ -362,7 +362,7 @@ void KBookmarkMenu::fillBookmarks()
 QAction *KBookmarkMenu::actionForBookmark(const KBookmark &bm)
 {
     if (bm.isGroup()) {
-        //qDebug() << "Creating bookmark submenu named " << bm.text();
+        //qCDebug(KBOOKMARKS_LOG) << "Creating bookmark submenu named " << bm.text();
         KActionMenu *actionMenu = new KBookmarkActionMenu(bm, this);
         m_actions.append(actionMenu);
         KBookmarkMenu *subMenu = new KBookmarkMenu(m_pManager, m_pOwner, actionMenu->menu(), bm.address());
@@ -374,7 +374,7 @@ QAction *KBookmarkMenu::actionForBookmark(const KBookmark &bm)
         m_actions.append(sa);
         return sa;
     } else {
-        //qDebug() << "Creating bookmark menu item for " << bm.text();
+        //qCDebug(KBOOKMARKS_LOG) << "Creating bookmark menu item for " << bm.text();
         QAction *action = new KBookmarkAction(bm, m_pOwner, this);
         m_actions.append(action);
         return action;
@@ -434,7 +434,7 @@ void KBookmarkMenu::slotNewFolder()
 
 void KImportedBookmarkMenu::slotNSLoad()
 {
-    // qDebug()<<"**** slotNSLoad  ****"<<m_type<<"  "<<m_location;
+    // qCDebug(KBOOKMARKS_LOG)<<"**** slotNSLoad  ****"<<m_type<<"  "<<m_location;
     // only fill menu once
     parentMenu()->disconnect(SIGNAL(aboutToShow()));
 

@@ -21,7 +21,7 @@
 #include "kbookmarkimporter_opera_p.h"
 
 #include <QFileDialog>
-#include <QDebug>
+#include "kbookmarks_debug.h"
 #include <qtextcodec.h>
 #include <QApplication>
 
@@ -150,7 +150,7 @@ OperaExporter::OperaExporter() : m_out(&m_string, QIODevice::WriteOnly)
 
 void OperaExporter::visit(const KBookmark &bk)
 {
-    // qDebug() << "visit(" << bk.text() << ")";
+    // qCDebug(KBOOKMARKS_LOG) << "visit(" << bk.text() << ")";
     m_out << "#URL" << endl;
     m_out << "\tNAME=" << bk.fullText() << endl;
     m_out << "\tURL=" << bk.url().toString().toUtf8() << endl;
@@ -159,7 +159,7 @@ void OperaExporter::visit(const KBookmark &bk)
 
 void OperaExporter::visitEnter(const KBookmarkGroup &grp)
 {
-    // qDebug() << "visitEnter(" << grp.text() << ")";
+    // qCDebug(KBOOKMARKS_LOG) << "visitEnter(" << grp.text() << ")";
     m_out << "#FOLDER" << endl;
     m_out << "\tNAME=" << grp.fullText() << endl;
     m_out << endl;
@@ -167,7 +167,7 @@ void OperaExporter::visitEnter(const KBookmarkGroup &grp)
 
 void OperaExporter::visitLeave(const KBookmarkGroup &)
 {
-    // qDebug() << "visitLeave()";
+    // qCDebug(KBOOKMARKS_LOG) << "visitLeave()";
     m_out << "-" << endl;
     m_out << endl;
 }
@@ -178,7 +178,7 @@ void KOperaBookmarkExporterImpl::write(const KBookmarkGroup &parent)
     QString content = exporter.generate(parent);
     QFile file(m_fileName);
     if (!file.open(QIODevice::WriteOnly)) {
-        qCritical() << "Can't write to file " << m_fileName << endl;
+        qCCritical(KBOOKMARKS_LOG) << "Can't write to file " << m_fileName << endl;
         return;
     }
     QTextStream fstream(&file);

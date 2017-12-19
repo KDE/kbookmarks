@@ -21,7 +21,7 @@
 
 #include <QFileDialog>
 
-#include <QDebug>
+#include "kbookmarks_debug.h"
 #include <qtextcodec.h>
 #include <QApplication>
 #include <QRegularExpression>
@@ -71,7 +71,7 @@ void KIEBookmarkImporter::parseIEBookmarks_url_file(const QString &filename, con
 
         while (f.readLine(s.data(), g_lineLimit) >= 0) {
             if (s[s.length() - 1] != '\n') { // Gosh, this line is longer than g_lineLimit. Skipping.
-                qWarning() << "IE bookmarks contain a line longer than " << g_lineLimit << ". Skipping.";
+                qCWarning(KBOOKMARKS_LOG) << "IE bookmarks contain a line longer than " << g_lineLimit << ". Skipping.";
                 continue;
             }
             QByteArray t = s.trimmed();
@@ -191,7 +191,7 @@ IEExporter::IEExporter(const QString &dname)
 void IEExporter::visit(const KBookmark &bk)
 {
     QString fname = m_currentDir.path() + '/' + ieStyleQuote(bk.fullText()) + ".url";
-    // qDebug() << "visit(" << bk.text() << "), fname == " << fname;
+    // qCDebug(KBOOKMARKS_LOG) << "visit(" << bk.text() << "), fname == " << fname;
     QFile file(fname);
     if (file.open(QIODevice::WriteOnly)) {
         QTextStream ts(&file);
@@ -203,14 +203,14 @@ void IEExporter::visit(const KBookmark &bk)
 void IEExporter::visitEnter(const KBookmarkGroup &grp)
 {
     QString dname = m_currentDir.path() + '/' + ieStyleQuote(grp.fullText());
-    // qDebug() << "visitEnter(" << grp.text() << "), dname == " << dname;
+    // qCDebug(KBOOKMARKS_LOG) << "visitEnter(" << grp.text() << "), dname == " << dname;
     m_currentDir.mkdir(dname);
     m_currentDir.cd(dname);
 }
 
 void IEExporter::visitLeave(const KBookmarkGroup &)
 {
-    // qDebug() << "visitLeave()";
+    // qCDebug(KBOOKMARKS_LOG) << "visitLeave()";
     m_currentDir.cdUp();
 }
 

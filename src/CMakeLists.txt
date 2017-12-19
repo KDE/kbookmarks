@@ -23,6 +23,9 @@ set(kbookmarks_SRCS
   ${kbookmarks_QM_LOADER}
 )
 
+
+ecm_qt_declare_logging_category(kbookmarks_SRCS HEADER kbookmarks_debug.h IDENTIFIER KBOOKMARKS_LOG CATEGORY_NAME kf5.kbookmarks)
+
 add_library(KF5Bookmarks ${kbookmarks_SRCS})
 generate_export_header(KF5Bookmarks BASE_NAME KBookmarks)
 add_library(KF5::Bookmarks ALIAS KF5Bookmarks)

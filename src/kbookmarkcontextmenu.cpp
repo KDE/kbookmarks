@@ -93,13 +93,13 @@ void KBookmarkContextMenu::addOpenFolderInTabs()
 
 void KBookmarkContextMenu::slotEditAt()
 {
-    // qDebug() << "KBookmarkMenu::slotEditAt" << m_highlightedAddress;
+    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotEditAt" << m_highlightedAddress;
     m_pManager->slotEditBookmarksAtAddress(bm.address());
 }
 
 void KBookmarkContextMenu::slotProperties()
 {
-    // qDebug() << "KBookmarkMenu::slotProperties" << m_highlightedAddress;
+    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotProperties" << m_highlightedAddress;
 
     KBookmarkDialog   *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
     dlg->editBookmark(bm);
@@ -108,7 +108,7 @@ void KBookmarkContextMenu::slotProperties()
 
 void KBookmarkContextMenu::slotInsert()
 {
-    // qDebug() << "KBookmarkMenu::slotInsert" << m_highlightedAddress;
+    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotInsert" << m_highlightedAddress;
 
     QUrl url = m_pOwner->currentUrl();
     if (url.isEmpty()) {
@@ -137,7 +137,7 @@ void KBookmarkContextMenu::slotInsert()
 
 void KBookmarkContextMenu::slotRemove()
 {
-    // qDebug() << "KBookmarkMenu::slotRemove" << m_highlightedAddress;
+    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotRemove" << m_highlightedAddress;
 
     bool folder = bm.isGroup();
 
@@ -160,7 +160,7 @@ void KBookmarkContextMenu::slotRemove()
 
 void KBookmarkContextMenu::slotCopyLocation()
 {
-    // qDebug() << "KBookmarkMenu::slotCopyLocation" << m_highlightedAddress;
+    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotCopyLocation" << m_highlightedAddress;
 
     if (!bm.isGroup()) {
         QMimeData *mimeData = new QMimeData;

@@ -25,7 +25,7 @@
 #include "kbookmarkmanager.h"
 #include <QFileDialog>
 #include <QMessageBox>
-#include <QDebug>
+#include "kbookmarks_debug.h"
 #include <kcharsets.h>
 
 #include <qtextcodec.h>
@@ -51,7 +51,7 @@ void KNSBookmarkImporterImpl::parse()
 
         while (int size = f.readLine(s.data(), g_lineLimit) >= 1) {
             if (size == g_lineLimit) { // Gosh, this line is longer than g_lineLimit. Skipping.
-                qWarning() << "Netscape bookmarks contain a line longer than " << g_lineLimit << ". Skipping.";
+                qCWarning(KBOOKMARKS_LOG) << "Netscape bookmarks contain a line longer than " << g_lineLimit << ". Skipping.";
                 continue;
             }
             QByteArray t = s.trimmed();
@@ -144,7 +144,7 @@ void KNSBookmarkExporterImpl::write(const KBookmarkGroup &parent)
     QFile file(m_fileName);
 
     if (!file.open(QIODevice::WriteOnly)) {
-        qCritical() << "Can't write to file " << m_fileName << endl;
+        qCCritical(KBOOKMARKS_LOG) << "Can't write to file " << m_fileName << endl;
         return;
     }
 

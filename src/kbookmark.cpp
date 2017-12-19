@@ -23,7 +23,7 @@
 #include <QStack>
 #include <QCoreApplication>
 #include <qmimedatabase.h>
-#include <QDebug>
+#include "kbookmarks_debug.h"
 #include <kstringhandler.h>
 #include <kurlmimedata.h>
 #include <kbookmarkmanager.h>
@@ -533,7 +533,7 @@ QString KBookmark::commonParent(const QString &first, const QString &second)
 
 void KBookmark::updateAccessMetadata()
 {
-    // qDebug() << "KBookmark::updateAccessMetadata " << address() << " " << url();
+    // qCDebug(KBOOKMARKS_LOG) << "KBookmark::updateAccessMetadata " << address() << " " << url();
 
     const uint timet = QDateTime::currentDateTime().toTime_t();
     setMetaDataItem(QStringLiteral("time_added"), QString::number(timet), DontOverwriteMetaData);
