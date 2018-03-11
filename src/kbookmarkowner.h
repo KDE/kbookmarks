@@ -18,8 +18,8 @@
 #ifndef KBOOKMARK_OWNER_H
 #define KBOOKMARK_OWNER_H
 
-#include <QtCore/QString>
-#include <QtCore/QSharedDataPointer>
+#include <QString>
+#include <QSharedDataPointer>
 
 #include "kbookmark.h"
 

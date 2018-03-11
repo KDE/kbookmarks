@@ -23,7 +23,7 @@
 
 #include <kbookmarks_export.h>
 
-#include <QtCore/QObject>
+#include <QObject>
 
 class QAction;
 class QMenu;

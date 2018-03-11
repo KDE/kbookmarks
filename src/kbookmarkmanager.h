@@ -19,10 +19,10 @@
 #ifndef __kbookmarkmanager_h
 #define __kbookmarkmanager_h
 
-#include <QtCore/QString>
-#include <QtCore/QObject>
-#include <QtXml/QDomDocument>
-#include <QtXml/QDomElement>
+#include <QString>
+#include <QObject>
+#include <QDomDocument>
+#include <QDomElement>
 class KBookmarkManagerPrivate;
 
 #include "kbookmark.h"

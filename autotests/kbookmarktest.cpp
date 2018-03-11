@@ -21,10 +21,10 @@
 #include <kbookmark.h>
 #include <kbookmarkmanager.h>
 #include <QDebug>
-#include <QtCore/QMimeData>
-#include <QtCore/QStandardPaths>
-#include <QtCore/QDir>
-#include <QtCore/QObject>
+#include <QMimeData>
+#include <QStandardPaths>
+#include <QDir>
+#include <QObject>
 
 class KBookmarkTest : public QObject
 {

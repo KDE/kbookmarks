@@ -19,7 +19,7 @@
 #ifndef __kbookmarkimporter_opera_h
 #define __kbookmarkimporter_opera_h
 
-#include <QtCore/QStringList>
+#include <QStringList>
 
 #include <kbookmarkimporter.h>
 #include <kbookmarkexporter.h>

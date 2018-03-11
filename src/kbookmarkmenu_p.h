@@ -21,7 +21,7 @@
 #ifndef __kbookmarkmenu_p_h__
 #define __kbookmarkmenu_p_h__
 
-#include <QtCore/QObject>
+#include <QObject>
 
 #include <kactionmenu.h>
 #include <QTreeWidget>

@@ -20,11 +20,11 @@
 
 #include <kbookmarks_export.h>
 
-#include <QtCore/QString>
-#include <QtCore/QUrl>
-#include <QtCore/QList>
-#include <QtCore/QMetaType>
-#include <QtXml/QDomElement>
+#include <QString>
+#include <QUrl>
+#include <QList>
+#include <QMetaType>
+#include <QDomElement>
 
 class QMimeData;
 class KBookmarkManager;

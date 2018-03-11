@@ -22,12 +22,12 @@
 #include "kbookmarkmanager.h"
 
 #include "kbookmarks_debug.h"
-#include <QtCore/QDir>
-#include <QtCore/QFile>
-#include <QtCore/QFileInfo>
-#include <QtCore/QProcess>
-#include <QtCore/QRegularExpression>
-#include <QtCore/QTextStream>
+#include <QDir>
+#include <QFile>
+#include <QFileInfo>
+#include <QProcess>
+#include <QRegularExpression>
+#include <QTextStream>
 #include <QTextCodec>
 #include <QDBusConnection>
 #include <QMessageBox>
