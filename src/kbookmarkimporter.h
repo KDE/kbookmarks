@@ -88,15 +88,15 @@ class KBOOKMARKS_EXPORT KXBELBookmarkImporterImpl : public KBookmarkImporterBase
     Q_OBJECT
 public:
     KXBELBookmarkImporterImpl() {}
-    void parse() Q_DECL_OVERRIDE;
-    QString findDefaultLocation(bool = false) const Q_DECL_OVERRIDE
+    void parse() override;
+    QString findDefaultLocation(bool = false) const override
     {
         return QString();
     }
 protected:
-    void visit(const KBookmark &) Q_DECL_OVERRIDE;
-    void visitEnter(const KBookmarkGroup &) Q_DECL_OVERRIDE;
-    void visitLeave(const KBookmarkGroup &) Q_DECL_OVERRIDE;
+    void visit(const KBookmark &) override;
+    void visitEnter(const KBookmarkGroup &) override;
+    void visitLeave(const KBookmarkGroup &) override;
 private:
     class KXBELBookmarkImporterImplPrivate *d;
 };

@@ -32,8 +32,8 @@ class KBOOKMARKS_EXPORT KOperaBookmarkImporterImpl : public KBookmarkImporterBas
     Q_OBJECT // For QObject::tr
 public:
     KOperaBookmarkImporterImpl() { }
-    void parse() Q_DECL_OVERRIDE;
-    QString findDefaultLocation(bool forSaving = false) const Q_DECL_OVERRIDE;
+    void parse() override;
+    QString findDefaultLocation(bool forSaving = false) const override;
 private:
     class KOperaBookmarkImporterImplPrivate *d;
 };
@@ -46,8 +46,8 @@ public:
     {
         ;
     }
-    virtual ~KOperaBookmarkExporterImpl() {}
-    void write(const KBookmarkGroup &parent) Q_DECL_OVERRIDE;
+    ~KOperaBookmarkExporterImpl() override {}
+    void write(const KBookmarkGroup &parent) override;
 private:
     class KOperaBookmarkExporterImplPrivate *d;
 };

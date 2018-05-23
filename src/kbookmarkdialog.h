@@ -67,9 +67,9 @@ public:
      */
     KBookmarkGroup selectFolder(KBookmark start = KBookmark());
 
-    ~KBookmarkDialog();
+    ~KBookmarkDialog() override;
 protected:
-    void accept() Q_DECL_OVERRIDE;
+    void accept() override;
 
 protected Q_SLOTS:
     void newFolderButton();

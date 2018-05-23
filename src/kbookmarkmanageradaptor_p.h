@@ -35,9 +35,9 @@ public Q_SLOTS:
     void notifyCompleteChange();
 
 Q_SIGNALS:
-    void bookmarkCompleteChange(QString caller);
+    void bookmarkCompleteChange(const QString &caller);
 
-    void bookmarksChanged(QString groupAddress);
+    void bookmarksChanged(const QString &groupAddress);
 
     void bookmarkConfigChanged();
 };

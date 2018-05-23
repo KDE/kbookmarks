@@ -125,7 +125,7 @@ KBookmark KBookmarkGroup::next(const KBookmark &current) const
 
 int KBookmarkGroup::indexOf(const KBookmark &child) const
 {
-    uint counter = 0;
+    int counter = 0;
     for (KBookmark bk = first(); !bk.isNull(); bk = next(bk), ++counter) {
         if (bk.element == child.element) {
             return counter;
@@ -518,9 +518,9 @@ QString KBookmark::commonParent(const QString &first, const QString &second)
     A += '/';
     B += '/';
 
-    uint lastCommonSlash = 0;
-    uint lastPos = A.length() < B.length() ? A.length() : B.length();
-    for (uint i = 0; i < lastPos; ++i) {
+    int lastCommonSlash = 0;
+    int lastPos = A.length() < B.length() ? A.length() : B.length();
+    for (int i = 0; i < lastPos; ++i) {
         if (A[i] != B[i]) {
             return A.left(lastCommonSlash);
         }

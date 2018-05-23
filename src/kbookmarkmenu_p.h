@@ -53,8 +53,8 @@ public:
     KImportedBookmarkMenu(KBookmarkManager *mgr,
                           KBookmarkOwner *owner, QMenu *parentMenu);
     ~KImportedBookmarkMenu();
-    void clear() Q_DECL_OVERRIDE;
-    void refill() Q_DECL_OVERRIDE;
+    void clear() override;
+    void refill() override;
 protected Q_SLOTS:
     void slotNSLoad();
 private:

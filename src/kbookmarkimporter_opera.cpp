@@ -134,9 +134,9 @@ public:
         return m_string;
     }
 private:
-    void visit(const KBookmark &) Q_DECL_OVERRIDE;
-    void visitEnter(const KBookmarkGroup &) Q_DECL_OVERRIDE;
-    void visitLeave(const KBookmarkGroup &) Q_DECL_OVERRIDE;
+    void visit(const KBookmark &) override;
+    void visitEnter(const KBookmarkGroup &) override;
+    void visitLeave(const KBookmarkGroup &) override;
 private:
     QString m_string;
     QTextStream m_out;

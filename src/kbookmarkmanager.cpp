@@ -96,12 +96,12 @@ public:
         return m_bk_map.value(url);
     }
 private:
-    void visit(const KBookmark &) Q_DECL_OVERRIDE;
-    void visitEnter(const KBookmarkGroup &) Q_DECL_OVERRIDE
+    void visit(const KBookmark &) override;
+    void visitEnter(const KBookmarkGroup &) override
     {
         ;
     }
-    void visitLeave(const KBookmarkGroup &) Q_DECL_OVERRIDE
+    void visitLeave(const KBookmarkGroup &) override
     {
         ;
     }
