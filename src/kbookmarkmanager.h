@@ -113,7 +113,7 @@ public:
     * error occurs. It is turned on by default.
     * If disabled, the application should react on the error() signal.
     * @param enable true to enable auto error handling, false to disable
-    * @param parent the parent widget for the error dialogs, can be 0 for
+    * @param parent the parent widget for the error dialogs, can be @c nullptr for
     *               top-level
     * @since 4.6
     * @see autoErrorHandlingEnabled()
