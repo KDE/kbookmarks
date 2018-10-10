@@ -705,12 +705,14 @@ KBookmark::List KBookmark::List::fromMimeData(const QMimeData *mimeData, QDomDoc
         doc.setContent(payload);
         QDomElement elem = doc.documentElement();
         const QDomNodeList children = elem.childNodes();
+        bookmarks.reserve(children.count());
         for (int childno = 0; childno < children.count(); childno++) {
             bookmarks.append(KBookmark(children.item(childno).toElement()));
         }
         return bookmarks;
     }
     const QList<QUrl> urls = KUrlMimeData::urlsFromMimeData(mimeData);
+    bookmarks.reserve(urls.size());
     for (int i = 0; i < urls.size(); ++i) {
         const QUrl url = urls.at(i);
         bookmarks.append(KBookmark::standaloneBookmark(url.toDisplayString(), url, QString()/*TODO icon*/));
