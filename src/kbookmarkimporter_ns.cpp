@@ -77,7 +77,6 @@ void KNSBookmarkImporterImpl::parse()
 
                     QByteArray name = t.mid(endTag + 1, closeTag - endTag - 1);
                     QString qname = KCharsets::resolveEntities(codec->toUnicode(name));
-                    QByteArray additionalInfo = t.mid(secondQuotes + 1, endTag - secondQuotes - 1);
 
                     emit newBookmark(qname,
                                      codec->toUnicode(link),
