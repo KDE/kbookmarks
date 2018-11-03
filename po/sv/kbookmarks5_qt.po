@@ -1,0 +1,287 @@
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2014, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"PO-Revision-Date: 2017-06-26 18:34+0100\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: kbookmark.cpp:310
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- avskiljare ---"
+
+#: kbookmarkcontextmenu.cpp:62
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "Lägg till bokmärke här"
+
+#: kbookmarkcontextmenu.cpp:68
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Öppna katalog i bokmärkeseditor"
+
+#: kbookmarkcontextmenu.cpp:71
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "Ta bort katalog"
+
+#: kbookmarkcontextmenu.cpp:76
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "Egenskaper"
+
+#: kbookmarkcontextmenu.cpp:81
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "Kopiera länkadress"
+
+#: kbookmarkcontextmenu.cpp:84
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "Ta bort bokmärke"
+
+#: kbookmarkcontextmenu.cpp:90
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Öppna katalog under flikar"
+
+#: kbookmarkcontextmenu.cpp:116
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Kan inte lägga till bokmärke med tom webbadress."
+
+#: kbookmarkcontextmenu.cpp:146
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "Borttagning av bokmärkeskatalog"
+
+#: kbookmarkcontextmenu.cpp:147
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "Borttagning av bokmärke"
+
+#: kbookmarkcontextmenu.cpp:148
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Är du säker på att du vill ta bort bokmärkeskatalogen\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:149
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Är du säker på att du vill ta bort bokmärket\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:70
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Namn:"
+
+#: kbookmarkdialog.cpp:75
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Plats:"
+
+#: kbookmarkdialog.cpp:80
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#: kbookmarkdialog.cpp:191
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Uppdatera"
+
+#: kbookmarkdialog.cpp:192
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Bokmärkesegenskaper"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Ny katalog..."
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Lägg till"
+
+#: kbookmarkdialog.cpp:228
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Lägg till bokmärke"
+
+#: kbookmarkdialog.cpp:266
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Lägg till bokmärken"
+
+#: kbookmarkdialog.cpp:299
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Välj katalog"
+
+#: kbookmarkdialog.cpp:327
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Ny katalog"
+
+#: kbookmarkdialog.cpp:362
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Skapa ny bokmärkeskatalog"
+
+#: kbookmarkdialog.cpp:363
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Skapa ny bokmärkeskatalog i %1"
+
+#: kbookmarkdialog.cpp:365
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Ny katalog:"
+
+#: kbookmarkdialog.cpp:386
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Bokmärken"
+
+#: kbookmarkimporter_ns.cpp:114
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "HTML-filer (*.html)"
+
+#: kbookmarkimporter_ns.cpp:118
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML-filer (*.html)"
+
+#: kbookmarkimporter_ns.cpp:134
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Kunde inte hitta %1. Netscape är troligen inte installerat. Avbryter "
+"exporten."
+
+#: kbookmarkimporter_ns.cpp:136
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Netscape hittades inte"
+
+#: kbookmarkimporter_ns.cpp:157
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Filen skapades av Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:160 kbookmarkimporter_ns.cpp:161
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Bokmärken"
+
+#: kbookmarkimporter_opera.cpp:119
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Opera bokmärkesfiler (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:122
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera bokmärkesfiler (*.adr)"
+
+#: kbookmarkmanager.cpp:333
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+"Kan inte starta keditbookmarks.\n"
+"\n"
+"Troligtvis är inte keditbookmarks för närvarande installerat."
+
+#: kbookmarkmanager.cpp:482
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Kan inte spara bokmärken i %1. Det rapporterade felet var: %2. "
+"Felmeddelandet visas bara en gång. Orsaken till felet, som troligen är att "
+"hårddisken är full, bör korrigeras så snart som möjligt."
+
+#: kbookmarkmenu.cpp:261
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "Öppna katalog under flikar"
+
+#: kbookmarkmenu.cpp:265
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "Öppna alla bokmärken i katalogen som en ny flik."
+
+#: kbookmarkmenu.cpp:281
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Bokmärkesflikar som katalog..."
+
+#: kbookmarkmenu.cpp:285
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "Lägg till en katalog med bokmärken för alla öppna flikar."
+
+#: kbookmarkmenu.cpp:325
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Redigera bokmärkessamling i ett separat fönster"
+
+#: kbookmarkmenu.cpp:337
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "Ny bokmärkeskatalog..."
+
+#: kbookmarkmenu.cpp:339
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Skapa en ny bokmärkeskatalog i den här menyn"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "Dölj i verktygsrad"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "Visa i verktygsrad"
+
+#: konqbookmarkmenu.cpp:66
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "Öppna i nytt fönster"
+
+#: konqbookmarkmenu.cpp:67
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "Öppna under ny flik"
