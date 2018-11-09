@@ -31,6 +31,7 @@
 
 class KBOOKMARKS_EXPORT KBookmarkActionMenu : public KActionMenu, public KBookmarkActionInterface
 {
+    Q_OBJECT
 public:
     KBookmarkActionMenu(const KBookmark &bm, QObject *parent);
     KBookmarkActionMenu(const KBookmark &bm, const QString &text, QObject *parent);

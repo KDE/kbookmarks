@@ -110,6 +110,7 @@ protected:
 
 class KImportedBookmarkActionMenu : public KActionMenu, public KBookmarkActionInterface
 {
+    Q_OBJECT
 public:
     KImportedBookmarkActionMenu(const QIcon &icon, const QString &text, QObject *parent)
         : KActionMenu(icon, text, parent),

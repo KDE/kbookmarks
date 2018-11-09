@@ -49,6 +49,7 @@ private:
  */
 class KBOOKMARKS_EXPORT KMozillaBookmarkImporterImpl : public KNSBookmarkImporterImpl
 {
+    Q_OBJECT
 public:
     KMozillaBookmarkImporterImpl()
     {

@@ -28,6 +28,7 @@
  */
 class KBOOKMARKS_EXPORT KIEBookmarkImporterImpl : public KBookmarkImporterBase
 {
+    Q_OBJECT
 public:
     KIEBookmarkImporterImpl() { }
     void parse() override;
