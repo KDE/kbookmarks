@@ -177,8 +177,9 @@ KonqBookmarkMenu::DynMenuInfo KonqBookmarkMenu::showDynamicBookmarks(const QStri
     info.d = nullptr;
 
     if (!config.hasKey("DynamicMenus")) {
-        if (bookmarkrc.hasGroup("DynamicMenu-" + id)) {
-            KConfigGroup dynGroup(&bookmarkrc, "DynamicMenu-" + id);
+        const QString dynamicMenuGroupId = QLatin1String("DynamicMenu-") + id;
+        if (bookmarkrc.hasGroup(dynamicMenuGroupId)) {
+            KConfigGroup dynGroup(&bookmarkrc, dynamicMenuGroupId);
             info.show = dynGroup.readEntry("Show", false);
             info.location = dynGroup.readPathEntry("Location", QString());
             info.type = dynGroup.readEntry("Type");
@@ -203,7 +204,7 @@ QStringList KonqBookmarkMenu::dynamicBookmarksList()
 void KonqBookmarkMenu::setDynamicBookmarks(const QString &id, const DynMenuInfo &newMenu)
 {
     KSharedConfig::Ptr kbookmarkrc = KSharedConfig::openConfig(QStringLiteral("kbookmarkrc"), KConfig::NoGlobals);
-    KConfigGroup dynConfig = kbookmarkrc->group(QString("DynamicMenu-" + id));
+    KConfigGroup dynConfig = kbookmarkrc->group(QLatin1String("DynamicMenu-") + id);
 
     // add group unconditionally
     dynConfig.writeEntry("Show", newMenu.show);

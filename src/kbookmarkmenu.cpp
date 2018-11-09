@@ -280,7 +280,7 @@ void KBookmarkMenu::addAddBookmarksList()
     if (d->bookmarksToFolder == nullptr) {
         QString title = tr("Bookmark Tabs as Folder...");
         d->bookmarksToFolder = new QAction(title, this);
-        m_actionCollection->addAction(m_bIsRoot ? "add_bookmarks_list" : nullptr, d->bookmarksToFolder);
+        m_actionCollection->addAction(m_bIsRoot ? QStringLiteral("add_bookmarks_list") : QString(), d->bookmarksToFolder);
         d->bookmarksToFolder->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new-list")));
         d->bookmarksToFolder->setToolTip(tr("Add a folder of bookmarks for all open tabs."));
         d->bookmarksToFolder->setStatusTip(d->bookmarksToFolder->toolTip());
@@ -300,7 +300,7 @@ void KBookmarkMenu::addAddBookmark()
     if (d->addAddBookmark == nullptr) {
         d->addAddBookmark = m_actionCollection->addAction(
                                 KStandardAction::AddBookmark,
-                                m_bIsRoot ? "add_bookmark" : nullptr,
+                                m_bIsRoot ? QStringLiteral("add_bookmark") : QString(),
                                 this,
                                 SLOT(slotAddBookmark()));
         if (!m_bIsRoot) {
@@ -512,7 +512,7 @@ void KBookmarkMenuImporter::newBookmark(const QString &text, const QString &url,
 
 void KBookmarkMenuImporter::newFolder(const QString &text, bool, const QString &)
 {
-    QString _text = KStringHandler::csqueeze(text).replace('&', QLatin1String("&&"));
+    QString _text = KStringHandler::csqueeze(text).replace(QLatin1Char('&'), QLatin1String("&&"));
     KActionMenu *actionMenu = new KImportedBookmarkActionMenu(QIcon::fromTheme(QStringLiteral("folder")), _text, this);
     mstack.top()->parentMenu()->addAction(actionMenu);
     mstack.top()->m_actions.append(actionMenu);

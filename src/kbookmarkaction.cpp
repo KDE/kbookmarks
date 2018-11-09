@@ -24,7 +24,7 @@
 #include <QApplication>
 
 KBookmarkAction::KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent)
-    : QAction(bk.text().replace('&', QLatin1String("&&")), parent),
+    : QAction(bk.text().replace(QLatin1Char('&'), QLatin1String("&&")), parent),
       KBookmarkActionInterface(bk),
       m_pOwner(owner)
 {

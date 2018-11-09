@@ -76,7 +76,7 @@ void KBookmarkDomBuilder::newFolder(
         // store additional info
         QDomElement element = m_list.last().internalElement();
         element.setAttribute(QStringLiteral("netscapeinfo"), additionalInfo);
-        element.setAttribute(QStringLiteral("folded"), (open ? "no" : "yes"));
+        element.setAttribute(QStringLiteral("folded"), open ? QStringLiteral("no") : QStringLiteral("yes"));
     } else {
         qCWarning(KBOOKMARKS_LOG) << "m_stack is empty. This should not happen when importing a valid bookmarks file!";
     }

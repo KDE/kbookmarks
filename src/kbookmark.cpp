@@ -31,9 +31,15 @@
 #include <qdatetime.h>
 #include <qmimedata.h>
 
-#define METADATA_KDE_OWNER "http://www.kde.org"
-#define METADATA_FREEDESKTOP_OWNER "http://freedesktop.org"
-#define METADATA_MIME_OWNER "http://www.freedesktop.org/standards/shared-mime-info"
+namespace {
+namespace Strings {
+QString metaDataKDEOwner() { return QStringLiteral("http://www.kde.org"); }
+QString metaDataFreedesktopOwner() { return QStringLiteral("http://freedesktop.org"); }
+QString metaDataMimeOwner() { return QStringLiteral("http://www.freedesktop.org/standards/shared-mime-info"); }
+
+QString xbelMimeType() { return QStringLiteral("application/x-xbel"); }
+}
+}
 
 ////// utility functions
 
@@ -64,7 +70,7 @@ static QDomText get_or_create_text(QDomNode node)
 
 static QDomNode findMetadata(const QString &forOwner, QDomNode &parent, bool create)
 {
-    bool forOwnerIsKDE = forOwner == METADATA_KDE_OWNER;
+    const bool forOwnerIsKDE = (forOwner == Strings::metaDataKDEOwner());
 
     QDomElement metadataElement;
     for (QDomNode _node = parent.firstChild(); !_node.isNull(); _node = _node.nextSibling()) {
@@ -86,7 +92,7 @@ static QDomNode findMetadata(const QString &forOwner, QDomNode &parent, bool cre
 
     } else if (!metadataElement.isNull() && forOwnerIsKDE) {
         // i'm not sure if this is good, we shouln't take over foreign metatdata
-        metadataElement.setAttribute(QStringLiteral("owner"), METADATA_KDE_OWNER);
+        metadataElement.setAttribute(QStringLiteral("owner"), Strings::metaDataKDEOwner());
     }
     return metadataElement;
 }
@@ -311,7 +317,7 @@ QString KBookmark::fullText() const
     }
 
     QString text = element.namedItem(QStringLiteral("title")).toElement().text();
-    text.replace('\n', ' '); // #140673
+    text.replace(QLatin1Char('\n'), QLatin1Char(' ')); // #140673
     return text;
 }
 
@@ -344,7 +350,7 @@ void KBookmark::setUrl(const QUrl &url)
 
 QString KBookmark::icon() const
 {
-    QDomNode metaDataNode = metaData(METADATA_FREEDESKTOP_OWNER, false);
+    QDomNode metaDataNode = metaData(Strings::metaDataFreedesktopOwner(), false);
     QDomElement iconElement = cd(metaDataNode, QStringLiteral("bookmark:icon"), false).toElement();
 
     QString icon = iconElement.attribute(QStringLiteral("name"));
@@ -390,7 +396,7 @@ QString KBookmark::icon() const
 
 void KBookmark::setIcon(const QString &icon)
 {
-    QDomNode metaDataNode = metaData(METADATA_FREEDESKTOP_OWNER, true);
+    QDomNode metaDataNode = metaData(Strings::metaDataFreedesktopOwner(), true);
     QDomElement iconElement = cd_or_create(metaDataNode, QStringLiteral("bookmark:icon")).toElement();
     iconElement.setAttribute(QStringLiteral("name"), icon);
 
@@ -407,7 +413,7 @@ QString KBookmark::description() const
     }
 
     QString description = element.namedItem(QStringLiteral("desc")).toElement().text();
-    description.replace('\n', ' '); // #140673
+    description.replace(QLatin1Char('\n'), QLatin1Char(' ')); // #140673
     return description;
 }
 
@@ -430,14 +436,14 @@ void KBookmark::setDescription(const QString &description)
 
 QString KBookmark::mimeType() const
 {
-    QDomNode metaDataNode = metaData(METADATA_MIME_OWNER, false);
+    QDomNode metaDataNode = metaData(Strings::metaDataMimeOwner(), false);
     QDomElement mimeTypeElement = cd(metaDataNode, QStringLiteral("mime:mime-type"), false).toElement();
     return mimeTypeElement.attribute(QStringLiteral("type"));
 }
 
 void KBookmark::setMimeType(const QString &mimeType)
 {
-    QDomNode metaDataNode = metaData(METADATA_MIME_OWNER, true);
+    QDomNode metaDataNode = metaData(Strings::metaDataMimeOwner(), true);
     QDomElement iconElement = cd_or_create(metaDataNode, QStringLiteral("mime:mime-type")).toElement();
     iconElement.setAttribute(QStringLiteral("type"), mimeType);
 }
@@ -454,7 +460,7 @@ bool KBookmark::showInToolbar() const
 
 void KBookmark::setShowInToolbar(bool show)
 {
-    setMetaDataItem(QStringLiteral("showintoolbar"), show ? "yes" : "no");
+    setMetaDataItem(QStringLiteral("showintoolbar"), show ? QStringLiteral("yes") : QStringLiteral("no"));
 }
 
 KBookmarkGroup KBookmark::parentGroup() const
@@ -482,7 +488,7 @@ QString KBookmark::address() const
         QString parentAddress = group.address();
         int pos = group.indexOf(*this);
         Q_ASSERT(pos != -1);
-        return parentAddress + '/' + QString::number(pos);
+        return parentAddress + QLatin1Char('/') + QString::number(pos);
     }
 }
 
@@ -515,8 +521,8 @@ QString KBookmark::commonParent(const QString &first, const QString &second)
         return error;
     }
 
-    A += '/';
-    B += '/';
+    A += QLatin1Char('/');
+    B += QLatin1Char('/');
 
     int lastCommonSlash = 0;
     int lastPos = A.length() < B.length() ? A.length() : B.length();
@@ -524,7 +530,7 @@ QString KBookmark::commonParent(const QString &first, const QString &second)
         if (A[i] != B[i]) {
             return A.left(lastCommonSlash);
         }
-        if (A[i] == '/') {
+        if (A[i] == QLatin1Char('/')) {
             lastCommonSlash = i;
         }
     }
@@ -586,7 +592,7 @@ QDomNode KBookmark::metaData(const QString &owner, bool create) const
 
 QString KBookmark::metaDataItem(const QString &key) const
 {
-    QDomNode metaDataNode = metaData(METADATA_KDE_OWNER, false);
+    QDomNode metaDataNode = metaData(Strings::metaDataKDEOwner(), false);
     for (QDomElement e = metaDataNode.firstChildElement(); !e.isNull(); e = e.nextSiblingElement()) {
         if (e.tagName() == key) {
             return e.text();
@@ -597,7 +603,7 @@ QString KBookmark::metaDataItem(const QString &key) const
 
 void KBookmark::setMetaDataItem(const QString &key, const QString &value, MetaDataOverwriteMode mode)
 {
-    QDomNode metaDataNode = metaData(METADATA_KDE_OWNER, true);
+    QDomNode metaDataNode = metaData(Strings::metaDataKDEOwner(), true);
     QDomNode item = cd_or_create(metaDataNode, key);
     QDomText text = get_or_create_text(item);
     if (mode == DontOverwriteMetaData && !text.data().isEmpty()) {
@@ -684,23 +690,23 @@ void KBookmark::List::populateMimeData(QMimeData *mimeData) const
     // This sets text/uri-list and text/plain into the mimedata
     mimeData->setUrls(urls);
 
-    mimeData->setData(QStringLiteral("application/x-xbel"), doc.toByteArray());
+    mimeData->setData(Strings::xbelMimeType(), doc.toByteArray());
 }
 
 bool KBookmark::List::canDecode(const QMimeData *mimeData)
 {
-    return mimeData->hasFormat(QStringLiteral("application/x-xbel"))  || mimeData->hasUrls();
+    return mimeData->hasFormat(Strings::xbelMimeType()) || mimeData->hasUrls();
 }
 
 QStringList KBookmark::List::mimeDataTypes()
 {
-    return QStringList() << ("application/x-xbel") << KUrlMimeData::mimeDataTypes();
+    return QStringList() << Strings::xbelMimeType() << KUrlMimeData::mimeDataTypes();
 }
 
 KBookmark::List KBookmark::List::fromMimeData(const QMimeData *mimeData, QDomDocument &doc)
 {
     KBookmark::List bookmarks;
-    QByteArray payload = mimeData->data(QStringLiteral("application/x-xbel"));
+    const QByteArray payload = mimeData->data(Strings::xbelMimeType());
     if (!payload.isEmpty()) {
         doc.setContent(payload);
         QDomElement elem = doc.documentElement();

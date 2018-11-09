@@ -49,7 +49,12 @@
 #include "kbookmarkdialog.h"
 #include "kbookmarkmanageradaptor_p.h"
 
-#define BOOKMARK_CHANGE_NOTIFY_INTERFACE "org.kde.KIO.KBookmarkManager"
+namespace {
+namespace Strings {
+QString bookmarkChangeNotifyInterface() { return QStringLiteral("org.kde.KIO.KBookmarkManager"); }
+QString piData() { return QStringLiteral("version=\"1.0\" encoding=\"UTF-8\""); }
+}
+}
 
 class KBookmarkManagerList : public QList<KBookmarkManager *>
 {
@@ -236,8 +241,6 @@ KBookmarkManager *KBookmarkManager::createTempManager()
     return mgr;
 }
 
-#define PI_DATA "version=\"1.0\" encoding=\"UTF-8\""
-
 static QDomElement createXbelTopLevelElement(QDomDocument &doc)
 {
     QDomElement topLevel = doc.createElement(QStringLiteral("xbel"));
@@ -245,7 +248,7 @@ static QDomElement createXbelTopLevelElement(QDomDocument &doc)
     topLevel.setAttribute(QStringLiteral("xmlns:bookmark"), QStringLiteral("http://www.freedesktop.org/standards/desktop-bookmarks"));
     topLevel.setAttribute(QStringLiteral("xmlns:kdepriv"), QStringLiteral("http://www.kde.org/kdepriv"));
     doc.appendChild(topLevel);
-    doc.insertBefore(doc.createProcessingInstruction(QStringLiteral("xml"), PI_DATA), topLevel);
+    doc.insertBefore(doc.createProcessingInstruction(QStringLiteral("xml"), Strings::piData()), topLevel);
     return topLevel;
 }
 
@@ -257,7 +260,7 @@ KBookmarkManager::KBookmarkManager(const QString &bookmarksFile, const QString &
             parse();    //sets d->m_dbusObjectName
         }
 
-    init("/KBookmarkManager/" + d->m_dbusObjectName);
+    init(QLatin1String("/KBookmarkManager/") + d->m_dbusObjectName);
 
     d->m_update = true;
 
@@ -318,9 +321,9 @@ void KBookmarkManager::init(const QString &dbusPath)
         new KBookmarkManagerAdaptor(this);
         QDBusConnection::sessionBus().registerObject(dbusPath, this);
 
-        QDBusConnection::sessionBus().connect(QString(), dbusPath, BOOKMARK_CHANGE_NOTIFY_INTERFACE,
+        QDBusConnection::sessionBus().connect(QString(), dbusPath, Strings::bookmarkChangeNotifyInterface(),
                                               QStringLiteral("bookmarksChanged"), this, SLOT(notifyChanged(QString,QDBusMessage)));
-        QDBusConnection::sessionBus().connect(QString(), dbusPath, BOOKMARK_CHANGE_NOTIFY_INTERFACE,
+        QDBusConnection::sessionBus().connect(QString(), dbusPath, Strings::bookmarkChangeNotifyInterface(),
                                               QStringLiteral("bookmarkConfigChanged"), this, SLOT(notifyConfigChanged()));
     }
 }
@@ -427,7 +430,7 @@ void KBookmarkManager::parse() const
     }
 
     QDomProcessingInstruction pi;
-    pi = d->m_doc.createProcessingInstruction(QStringLiteral("xml"), PI_DATA);
+    pi = d->m_doc.createProcessingInstruction(QStringLiteral("xml"), Strings::piData());
     d->m_doc.insertBefore(pi, docElem);
 
     file.close();

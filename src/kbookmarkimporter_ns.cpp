@@ -80,7 +80,7 @@ void KNSBookmarkImporterImpl::parse()
 
                     emit newBookmark(qname,
                                      codec->toUnicode(link),
-                                     QByteArray());
+                                     QString());
                 }
             } else if (t.left(7).toUpper() == "<DT><H3") {
                 int endTag = t.indexOf('>', 7);
@@ -95,7 +95,7 @@ void KNSBookmarkImporterImpl::parse()
 
                 emit newFolder(qname,
                                !folded,
-                               QByteArray());
+                               QString());
             } else if (t.left(8).toUpper() == "</DL><P>") {
                 emit endFolder();
             }
@@ -108,16 +108,17 @@ void KNSBookmarkImporterImpl::parse()
 QString KNSBookmarkImporterImpl::findDefaultLocation(bool forSaving) const
 {
     if (m_utf8) {
+        const QString mozillaHomePath = QDir::homePath() + QLatin1String("/.mozilla");
         if (forSaving)
             return QFileDialog::getSaveFileName(QApplication::activeWindow(), QString(),
-                                                QDir::homePath() + "/.mozilla",
+                                                mozillaHomePath,
                                                 tr("HTML Files (*.html)"));
         else
             return QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(),
-                                                QDir::homePath() + "/.mozilla",
+                                                mozillaHomePath,
                                                 tr("*.html|HTML Files (*.html)"));
     } else {
-        return QDir::homePath() + "/.netscape/bookmarks.html";
+        return QDir::homePath() + QLatin1String("/.netscape/bookmarks.html");
     }
 }
 
@@ -137,7 +138,7 @@ void KNSBookmarkExporterImpl::write(const KBookmarkGroup &parent)
         return;
     }
     if (QFile::exists(m_fileName)) {
-        (void)QFile::rename(m_fileName, m_fileName + ".beforekde");
+        (void)QFile::rename(m_fileName, m_fileName + QLatin1String(".beforekde"));
     }
 
     QFile file(m_fileName);
