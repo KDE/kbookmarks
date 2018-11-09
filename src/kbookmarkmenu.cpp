@@ -436,7 +436,7 @@ void KImportedBookmarkMenu::slotNSLoad()
 {
     // qCDebug(KBOOKMARKS_LOG)<<"**** slotNSLoad  ****"<<m_type<<"  "<<m_location;
     // only fill menu once
-    parentMenu()->disconnect(SIGNAL(aboutToShow()));
+    disconnect(parentMenu(), &QMenu::aboutToShow, nullptr, nullptr);
 
     // not NSImporter, but kept old name for BC reasons
     KBookmarkMenuImporter importer(manager(), this);

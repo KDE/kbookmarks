@@ -92,7 +92,7 @@ void KBookmarkDialogPrivate::initLayoutPrivate()
 
     buttonBox = new QDialogButtonBox(q);
     buttonBox->setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    q->connect(buttonBox, SIGNAL(accepted()), q, SLOT(accept()));
+    q->connect(buttonBox, &QDialogButtonBox::accepted, q, &KBookmarkDialog::accept);
     q->connect(buttonBox, &QDialogButtonBox::rejected, q, &QDialog::reject);
 
     initLayout();
