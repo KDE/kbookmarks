@@ -315,7 +315,7 @@ void KBookmarkMenu::addEditBookmarks()
 {
     if ((m_pOwner && !m_pOwner->enableOption(KBookmarkOwner::ShowEditBookmark)) ||
             QStandardPaths::findExecutable(QStringLiteral(KEDITBOOKMARKS_BINARY)).isEmpty() ||
-            !KAuthorized::authorizeKAction(QStringLiteral("bookmarks"))) {
+            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
