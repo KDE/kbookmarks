@@ -27,7 +27,7 @@ class KOperaBookmarkImporter : public QObject
 {
     Q_OBJECT
 public:
-    KOperaBookmarkImporter(const QString &fileName) : m_fileName(fileName) {}
+    explicit KOperaBookmarkImporter(const QString &fileName) : m_fileName(fileName) {}
     ~KOperaBookmarkImporter() {}
 
     void parseOperaBookmarks();

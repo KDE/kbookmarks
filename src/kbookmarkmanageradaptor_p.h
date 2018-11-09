@@ -28,7 +28,7 @@ class KBookmarkManagerAdaptor: public QDBusAbstractAdaptor
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.KIO.KBookmarkManager")
 public:
-    KBookmarkManagerAdaptor(KBookmarkManager *parent);
+    explicit KBookmarkManagerAdaptor(KBookmarkManager *parent);
 
 public Q_SLOTS:
     // Not used by KDE, but useful for scripts, after changing the bookmarks.xml file.
