@@ -634,7 +634,7 @@ void KBookmarkGroupTraverser::traverse(const KBookmarkGroup &root)
             if (stack.count() == 1) { // only root is on the stack
                 return;
             }
-            if (stack.count() > 0) {
+            if (!stack.isEmpty()) {
                 visitLeave(stack.top());
                 bk = stack.pop();
             }
