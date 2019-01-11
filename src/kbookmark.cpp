@@ -53,7 +53,7 @@ static QDomNode cd(QDomNode node, const QString &name, bool create)
     return subnode;
 }
 
-static QDomNode cd_or_create(QDomNode node, const QString &name)
+static QDomNode cd_or_create(const QDomNode &node, const QString &name)
 {
     return cd(node, name, true);
 }
