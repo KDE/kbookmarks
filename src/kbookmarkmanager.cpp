@@ -29,13 +29,15 @@
 #include <QRegularExpression>
 #include <QTextStream>
 #include <QTextCodec>
+#ifndef KBOOKMARKS_NO_DBUS
 #include <QDBusConnection>
+#include <QDBusMessage>
+#endif
 #include <QMessageBox>
 #include <QApplication>
 #include <QReadWriteLock>
 #include <QThread>
 
-#include <QDBusMessage>
 #include <kbackup.h>
 #include <kconfig.h>
 #include <kconfiggroup.h>
@@ -47,7 +49,9 @@
 #include "kbookmarkmenu_p.h"
 #include "kbookmarkimporter.h"
 #include "kbookmarkdialog.h"
+#ifndef KBOOKMARKS_NO_DBUS
 #include "kbookmarkmanageradaptor_p.h"
+#endif
 
 namespace {
 namespace Strings {
@@ -315,6 +319,7 @@ KBookmarkManager::KBookmarkManager()
 
 void KBookmarkManager::init(const QString &dbusPath)
 {
+#ifndef KBOOKMARKS_NO_DBUS
     // A KBookmarkManager without a dbus name is a temporary one, like those used by importers;
     // no need to register them to dbus
     if (dbusPath != QLatin1String("/KBookmarkManager/") && dbusPath != QLatin1String("/KBookmarkManager/generated")) {
@@ -326,6 +331,7 @@ void KBookmarkManager::init(const QString &dbusPath)
         QDBusConnection::sessionBus().connect(QString(), dbusPath, Strings::bookmarkChangeNotifyInterface(),
                                               QStringLiteral("bookmarkConfigChanged"), this, SLOT(notifyConfigChanged()));
     }
+#endif
 }
 
 void KBookmarkManager::startKEditBookmarks(const QStringList &args)
@@ -624,6 +630,7 @@ void KBookmarkManager::notifyConfigChanged() // DBUS call
     emit configChanged();
 }
 
+#ifndef KBOOKMARKS_NO_DBUS
 void KBookmarkManager::notifyChanged(const QString &groupAddress, const QDBusMessage &msg)   // DBUS call
 {
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkManager::notifyChanged ( "<<groupAddress<<")";
@@ -642,6 +649,7 @@ void KBookmarkManager::notifyChanged(const QString &groupAddress, const QDBusMes
     //Q_ASSERT(!group.isNull());
     emit changed(groupAddress, QString());
 }
+#endif
 
 void KBookmarkManager::setEditorOptions(const QString &caption, bool browser)
 {

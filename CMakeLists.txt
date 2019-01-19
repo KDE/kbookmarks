@@ -38,7 +38,10 @@ ecm_setup_version(PROJECT
 # Dependencies
 set(REQUIRED_QT_VERSION 5.10.0)
 
-find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets Xml DBus)
+find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets Xml)
+if (NOT ANDROID)
+  find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED DBus)
+endif()
 
 find_package(KF5Config ${KF5_DEP_VERSION} REQUIRED)
 find_package(KF5CoreAddons ${KF5_DEP_VERSION} REQUIRED)

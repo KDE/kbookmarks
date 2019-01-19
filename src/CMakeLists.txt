@@ -8,7 +8,6 @@ set(kbookmarks_SRCS
   kbookmarkcontextmenu.cpp
   kbookmarkimporter.cpp
   kbookmarkmanager.cpp
-  kbookmarkmanageradaptor.cpp
   kbookmarkmenu.cpp
   kbookmarkowner.cpp
   konqbookmarkmenu.cpp
@@ -19,7 +18,9 @@ set(kbookmarks_SRCS
   kbookmarkdialog.cpp
   ${kbookmarks_QM_LOADER}
 )
-
+if (TARGET Qt5::DBus)
+  list(APPEND kbookmarks_SRCS kbookmarkmanageradaptor.cpp)
+endif()
 
 ecm_qt_declare_logging_category(kbookmarks_SRCS HEADER kbookmarks_debug.h IDENTIFIER KBOOKMARKS_LOG CATEGORY_NAME kf5.kbookmarks)
 
@@ -31,7 +32,6 @@ target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INS
 
 target_link_libraries(KF5Bookmarks PUBLIC Qt5::Widgets Qt5::Xml KF5::WidgetsAddons)
 target_link_libraries(KF5Bookmarks PRIVATE
-    Qt5::DBus # dbus usage in kbookmarkmanager.cpp
     KF5::CoreAddons # for KStringHandler
     KF5::Codecs # for KCharsets
     KF5::ConfigCore # for KConfigGroup
@@ -39,6 +39,11 @@ target_link_libraries(KF5Bookmarks PRIVATE
     KF5::XmlGui # for KActionCollection
     KF5::IconThemes # for SmallIcon
 )
+if (TARGET Qt5::DBus)
+  target_link_libraries(KF5Bookmarks PRIVATE Qt5::DBus) # dbus usage in kbookmarkmanager.cpp
+else()
+  target_compile_definitions(KF5Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
+endif()
 
 set_target_properties(KF5Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION_STRING}
                                               SOVERSION ${KBOOKMARKS_SOVERSION}

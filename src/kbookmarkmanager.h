@@ -277,6 +277,7 @@ public Q_SLOTS:
      */
     void notifyCompleteChange(const QString &caller);
 
+#ifndef KBOOKMARKS_NO_DBUS
     /**
      * Emit the changed signal for the group whose address is given
      * @see KBookmark::address()
@@ -286,6 +287,7 @@ public Q_SLOTS:
      * You probably want to call emitChanged()
      */
     void notifyChanged(const QString &groupAddress, const QDBusMessage &msg);
+#endif
 
     void notifyConfigChanged();
 
