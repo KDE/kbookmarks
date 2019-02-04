@@ -32,7 +32,7 @@
 #include <QTreeWidget>
 #include <QHeaderView>
 
-#include <kiconloader.h>
+#include <QIcon>
 #include <kguiitem.h>
 
 KBookmarkDialogPrivate::KBookmarkDialogPrivate(KBookmarkDialog *q)
@@ -384,7 +384,7 @@ KBookmarkTreeItem::KBookmarkTreeItem(QTreeWidget *tree)
     : QTreeWidgetItem(tree), m_address(QLatin1String(""))
 {
     setText(0, KBookmarkDialog::tr("Bookmarks", "name of the container of all browser bookmarks"));
-    setIcon(0, SmallIcon(QStringLiteral("bookmarks")));
+    setIcon(0, QIcon::fromTheme(QStringLiteral("bookmarks")));
     tree->expandItem(this);
     tree->setCurrentItem(this);
     tree->setItemSelected(this, true);
@@ -393,7 +393,7 @@ KBookmarkTreeItem::KBookmarkTreeItem(QTreeWidget *tree)
 KBookmarkTreeItem::KBookmarkTreeItem(QTreeWidgetItem *parent, QTreeWidget *tree, const KBookmarkGroup &bk)
     : QTreeWidgetItem(parent)
 {
-    setIcon(0, SmallIcon(bk.icon()));
+    setIcon(0, QIcon::fromTheme(bk.icon()));
     setText(0, bk.fullText());
     tree->expandItem(this);
     m_address = bk.address();

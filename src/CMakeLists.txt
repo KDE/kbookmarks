@@ -37,7 +37,6 @@ target_link_libraries(KF5Bookmarks PRIVATE
     KF5::ConfigCore # for KConfigGroup
     KF5::ConfigWidgets # for KStandardAction
     KF5::XmlGui # for KActionCollection
-    KF5::IconThemes # for SmallIcon
 )
 if (TARGET Qt5::DBus)
   target_link_libraries(KF5Bookmarks PRIVATE Qt5::DBus) # dbus usage in kbookmarkmanager.cpp
