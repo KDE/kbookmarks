@@ -103,7 +103,7 @@ void KIEBookmarkImporter::parseIEBookmarks_dir(const QString &dirname, const QSt
         emit newFolder(foldername, false, QLatin1String(""));
     }
 
-    foreach (const QFileInfo &fi, list) {
+    for (const QFileInfo &fi : list) {
         if (fi.fileName() == QLatin1String(".") || fi.fileName() == QLatin1String("..")) {
             continue;
         }
