@@ -10,3 +10,4 @@ endif()
 include(ECMAddTests)
 
 ecm_add_test(kbookmarktest.cpp TEST_NAME kbookmarktest LINK_LIBRARIES KF5::Bookmarks Qt5::Test)
+ecm_add_test(kbookmarkmenutest.cpp TEST_NAME kbookmarkmenutest LINK_LIBRARIES KF5::Bookmarks KF5::XmlGui Qt5::Test)

@@ -95,6 +95,23 @@ public:
      **/
     void ensureUpToDate();
 
+    /**
+     * @brief Sets the number of currently open tabs
+     * @param numberOfOpenTabs The number of currently open tabs
+     * @see numberOfOpenTabs()
+     * @since 5.58
+     */
+    void setNumberOfOpenTabs(int numberOfOpenTabs);
+    /**
+     * This function returns how many (if any) tabs the application has open.
+     * This is used to determine if the Add a folder for all open
+     * tabs should be added to the menu, so if the application has more than
+     * one tab open, then the menu will be added.
+     * Default returns @c 2.
+     * @since 5.58
+     */
+    int numberOfOpenTabs() const;
+
 public Q_SLOTS:
     // public for KonqBookmarkBar
     void slotBookmarksChanged(const QString &);

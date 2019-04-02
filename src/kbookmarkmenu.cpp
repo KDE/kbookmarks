@@ -47,13 +47,15 @@ public:
     KBookmarkMenuPrivate()
         : newBookmarkFolder(nullptr),
           addAddBookmark(nullptr),
-          bookmarksToFolder(nullptr)
+          bookmarksToFolder(nullptr),
+          numberOfOpenTabs(2)
     {
     }
 
     QAction *newBookmarkFolder;
     QAction *addAddBookmark;
     QAction *bookmarksToFolder;
+    int numberOfOpenTabs;
 };
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
@@ -137,6 +139,20 @@ KBookmarkMenu::~KBookmarkMenu()
 void KBookmarkMenu::ensureUpToDate()
 {
     slotAboutToShow();
+}
+
+void KBookmarkMenu::setNumberOfOpenTabs(int numberOfOpenTabs)
+{
+    if (numberOfOpenTabs == d->numberOfOpenTabs) {
+        return;
+    }
+    m_bDirty = (d->numberOfOpenTabs < 2) != (numberOfOpenTabs < 2);
+    d->numberOfOpenTabs = numberOfOpenTabs;
+}
+
+int KBookmarkMenu::numberOfOpenTabs() const
+{
+    return d->numberOfOpenTabs;
 }
 
 void KBookmarkMenu::slotAboutToShow()
@@ -273,7 +289,7 @@ void KBookmarkMenu::addOpenInTabs()
 void KBookmarkMenu::addAddBookmarksList()
 {
     if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !m_pOwner->supportsTabs() ||
-            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
+            (d->numberOfOpenTabs < 2) || !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
