@@ -695,7 +695,7 @@ bool KBookmarkManager::updateAccessMetadata(const QString &url)
 {
     d->m_map.update(this);
     QList<KBookmark> list = d->m_map.find(url);
-    if (list.count() == 0) {
+    if (list.isEmpty()) {
         return false;
     }
 
