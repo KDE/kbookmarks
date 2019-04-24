@@ -102,7 +102,7 @@ void KBookmarkMenuTest::tabsOpen()
     QScopedPointer<TestKBookmarkOwner> bookmarkOwner(new TestKBookmarkOwner(supportsTabs));
     QMenu* menu = new QMenu;
     QScopedPointer<KActionCollection> actionCollection(new KActionCollection(nullptr, QString()));
-    QScopedPointer<KBookmarkMenu> testObject(new KBookmarkMenu(manager, bookmarkOwner.get(), menu, actionCollection.get()));
+    QScopedPointer<KBookmarkMenu> testObject(new KBookmarkMenu(manager, bookmarkOwner.data(), menu, actionCollection.data()));
     testObject->setNumberOfOpenTabs(numberOfOpenTabs);
     testObject->ensureUpToDate();
     if (supportsTabs && numberOfOpenTabs > 1) {
@@ -118,7 +118,7 @@ void KBookmarkMenuTest::tabsOpenChanges()
     QScopedPointer<TestKBookmarkOwner> bookmarkOwner(new TestKBookmarkOwner(true));
     QMenu* menu = new QMenu;
     QScopedPointer<KActionCollection> actionCollection(new KActionCollection(nullptr, QString()));
-    QScopedPointer<KBookmarkMenu> testObject(new KBookmarkMenu(manager, bookmarkOwner.get(), menu, actionCollection.get()));
+    QScopedPointer<KBookmarkMenu> testObject(new KBookmarkMenu(manager, bookmarkOwner.data(), menu, actionCollection.data()));
     testObject->ensureUpToDate();
     // If the number of open tabs has not been set it will default to 2
     const int DefaultNumberOfOpenTabs = 2;
