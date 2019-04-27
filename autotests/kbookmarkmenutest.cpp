@@ -24,6 +24,7 @@
 
 #include <QDebug>
 #include <QMenu>
+#include <QStandardPaths>
 #include <QStringLiteral>
 #include <QTest>
 
@@ -37,6 +38,22 @@ private Q_SLOTS:
     void tabsOpen();
     void tabsOpenChanges();
 };
+
+static bool hasBookmarkEditorInstalled()
+{
+    static bool isInstalled = !QStandardPaths::findExecutable(QStringLiteral("keditbookmarks")).isEmpty();
+    return isInstalled;
+}
+
+static int actionCountWithoutBookmarkTabsAsFolder()
+{
+    return hasBookmarkEditorInstalled() ? 3 : 2;
+}
+
+static int actionCountWithBookmarkTabsAsFolder()
+{
+    return hasBookmarkEditorInstalled() ? 4 : 3;
+}
 
 class TestKBookmarkOwner final : public KBookmarkOwner
 {
@@ -64,19 +81,23 @@ bool TestKBookmarkOwner::supportsTabs() const
 
 #define VERIFY_MENU_WITHOUT_BOOKMARK_TABS_AS_FOLDER() \
     do { \
-    QCOMPARE(menu->actions().count(), 3); \
+    QCOMPARE(menu->actions().count(), actionCountWithoutBookmarkTabsAsFolder()); \
         QCOMPARE(menu->actions().at(0)->text(), QStringLiteral("&Add Bookmark")); \
         QCOMPARE(menu->actions().at(1)->text(), QStringLiteral("New Bookmark Folder...")); \
-        QCOMPARE(menu->actions().at(2)->text(), QStringLiteral("&Edit Bookmarks...")); \
+        if (hasBookmarkEditorInstalled()) { \
+            QCOMPARE(menu->actions().at(2)->text(), QStringLiteral("&Edit Bookmarks...")); \
+        } \
     } while (false)
 
 #define VERIFY_MENU_WITH_BOOKMARK_TABS_AS_FOLDER() \
     do { \
-        QCOMPARE(menu->actions().count(), 4); \
+        QCOMPARE(menu->actions().count(), actionCountWithBookmarkTabsAsFolder()); \
         QCOMPARE(menu->actions().at(0)->text(), QStringLiteral("&Add Bookmark")); \
         QCOMPARE(menu->actions().at(1)->text(), QStringLiteral("Bookmark Tabs as Folder...")); \
         QCOMPARE(menu->actions().at(2)->text(), QStringLiteral("New Bookmark Folder...")); \
-        QCOMPARE(menu->actions().at(3)->text(), QStringLiteral("&Edit Bookmarks...")); \
+        if (hasBookmarkEditorInstalled()) { \
+            QCOMPARE(menu->actions().at(3)->text(), QStringLiteral("&Edit Bookmarks...")); \
+        } \
     } while (false)
 
 void KBookmarkMenuTest::tabsOpen_data()
