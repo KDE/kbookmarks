@@ -22,7 +22,6 @@
 #include <kbookmarkmanager.h>
 #include <KXmlGui/kactioncollection.h>
 
-#include <QDebug>
 #include <QMenu>
 #include <QStandardPaths>
 #include <QStringLiteral>

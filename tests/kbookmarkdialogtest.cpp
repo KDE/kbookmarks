@@ -18,9 +18,7 @@
     Boston, MA 02110-1301, USA.
 */
 
-#include <QLabel>
 #include <QApplication>
-#include <QLayout>
 #include <QPushButton>
 
 #include <kbookmarkdialog.h>

@@ -20,7 +20,6 @@
 
 #include <kbookmark.h>
 #include <kbookmarkmanager.h>
-#include <QDebug>
 #include <QMimeData>
 #include <QStandardPaths>
 #include <QDir>

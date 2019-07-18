@@ -22,7 +22,6 @@
 #ifndef __kbookmarkexporter_h
 #define __kbookmarkexporter_h
 
-#include <QTextStream>
 #include <kbookmark.h>
 
 class KBOOKMARKS_EXPORT KBookmarkExporterBase

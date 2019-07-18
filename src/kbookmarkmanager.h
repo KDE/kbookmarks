@@ -22,7 +22,6 @@
 #include <QString>
 #include <QObject>
 #include <QDomDocument>
-#include <QDomElement>
 class KBookmarkManagerPrivate;
 
 #include "kbookmark.h"

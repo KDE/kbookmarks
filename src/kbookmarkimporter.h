@@ -20,7 +20,6 @@
 #ifndef __kbookmarkimporter_h
 #define __kbookmarkimporter_h
 
-#include <QStringList>
 #include <QObject>
 
 #include "kbookmark.h"
