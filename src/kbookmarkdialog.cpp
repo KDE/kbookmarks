@@ -387,7 +387,7 @@ KBookmarkTreeItem::KBookmarkTreeItem(QTreeWidget *tree)
     setIcon(0, QIcon::fromTheme(QStringLiteral("bookmarks")));
     tree->expandItem(this);
     tree->setCurrentItem(this);
-    tree->setItemSelected(this, true);
+    setSelected(true);
 }
 
 KBookmarkTreeItem::KBookmarkTreeItem(QTreeWidgetItem *parent, QTreeWidget *tree, const KBookmarkGroup &bk)
