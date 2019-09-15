@@ -28,7 +28,7 @@ class KBookmark;
 class KBookmarkOwner;
 
 /**
- * This class is a KAction for bookmarks.
+ * This class is a QAction for bookmarks.
  * It provides a nice constructor.
  * And on triggered uses the owner to open the bookmark.
  */

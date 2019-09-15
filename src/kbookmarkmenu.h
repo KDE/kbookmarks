@@ -49,7 +49,7 @@ class KBookmarkMenuPrivate; // Not implemented
  *
  * Using this class is very simple:
  *
- * 1) Create a popup menu (either KActionMenu or KMenu will do)
+ * 1) Create a popup menu (either KActionMenu or QMenu will do)
  * 2) Instantiate a new KBookmarkMenu object using the above popup
  *    menu as a parameter
  * 3) Insert your (now full) popup menu wherever you wish
