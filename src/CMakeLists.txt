@@ -97,6 +97,8 @@ if(BUILD_QCH)
             Qt5Widgets_QCH
             Qt5Xml_QCH
             KF5WidgetsAddons_QCH
+        INCLUDE_DIRS
+            ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
             KBOOKMARKS_EXPORT
             KBOOKMARKS_DEPRECATED
