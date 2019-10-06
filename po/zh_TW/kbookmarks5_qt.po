@@ -1,0 +1,296 @@
+# translation of kio4.po to Chinese Traditional
+# Copyright (C) 2001, 2002, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Chih-Wei Huang <cwhuang@linux.org.tw>, 2001.
+# Kenduest Lee <kenduest@i18n.linux.org.tw>, 2001, 2002.
+# Jouston Huang (Huang, Jiun-Jeng) <jouston@housediy.com>, 2002.
+# Frank Weng (a.k.a. Franklin) <franklin@goodhorse.idv.tw>, 2009.
+# Franklin Weng <franklin@goodhorse.idv.tw>, 2010, 2011, 2012, 2014.
+# Jeff Huang <s8321414@gmail.com>, 2017.
+#
+# This file referenced zh_CN translation (as of 2002-11-08)
+# Frank Weng (a.k.a. Franklin) <franklin at goodhorse dot idv dot tw>, 2006, 2007, 2008, 2009, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2017-06-27 21:15+0800\n"
+"Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
+"Language-Team: Chinese <kde-i18n-doc@kde.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:316
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- 分隔符號 ---"
+
+#: kbookmarkcontextmenu.cpp:62
+msgctxt "KBookmarkContextMenu|"
+msgid "Add Bookmark Here"
+msgstr "加入書籤於此"
+
+#: kbookmarkcontextmenu.cpp:68
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Bookmark Editor"
+msgstr "在書籤編輯器中開啟資料夾"
+
+#: kbookmarkcontextmenu.cpp:71
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Folder"
+msgstr "刪除資料夾"
+
+#: kbookmarkcontextmenu.cpp:76
+msgctxt "KBookmarkContextMenu|"
+msgid "Properties"
+msgstr "屬性"
+
+#: kbookmarkcontextmenu.cpp:81
+msgctxt "KBookmarkContextMenu|"
+msgid "Copy Link Address"
+msgstr "複製連結位址"
+
+#: kbookmarkcontextmenu.cpp:84
+msgctxt "KBookmarkContextMenu|"
+msgid "Delete Bookmark"
+msgstr "刪除書籤"
+
+#: kbookmarkcontextmenu.cpp:90
+msgctxt "KBookmarkContextMenu|"
+msgid "Open Folder in Tabs"
+msgstr "在分頁中開啟資料夾"
+
+#: kbookmarkcontextmenu.cpp:116
+msgctxt "KBookmarkContextMenu|"
+msgid "Cannot add bookmark with empty URL."
+msgstr "無法新增一個空的 URL 書籤。"
+
+#: kbookmarkcontextmenu.cpp:146
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Folder Deletion"
+msgstr "書籤資料夾刪除"
+
+#: kbookmarkcontextmenu.cpp:147
+msgctxt "KBookmarkContextMenu|"
+msgid "Bookmark Deletion"
+msgstr "書籤刪除"
+
+#: kbookmarkcontextmenu.cpp:148
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"您確定希望移除書籤資料夾\n"
+"「%1」？"
+
+#: kbookmarkcontextmenu.cpp:149
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"您是否確定想要移除此書籤\n"
+"「%1」？"
+
+#: kbookmarkdialog.cpp:70
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "名稱："
+
+#: kbookmarkdialog.cpp:75
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "位置："
+
+#: kbookmarkdialog.cpp:80
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "註解："
+
+#: kbookmarkdialog.cpp:191
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "更新"
+
+#: kbookmarkdialog.cpp:192
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "書籤屬性"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "新增資料夾(&N)..."
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "新增"
+
+#: kbookmarkdialog.cpp:228
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "加入書籤"
+
+#: kbookmarkdialog.cpp:266
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "新增書籤"
+
+#: kbookmarkdialog.cpp:299
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "選擇資料夾"
+
+#: kbookmarkdialog.cpp:327
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "新資料夾"
+
+#: kbookmarkdialog.cpp:362
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "建立新書籤資料夾"
+
+#: kbookmarkdialog.cpp:363
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "建立新書籤資料夾於 %1"
+
+#: kbookmarkdialog.cpp:365
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "新資料夾:"
+
+#: kbookmarkdialog.cpp:386
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "書籤"
+
+#: kbookmarkimporter_ns.cpp:115
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "HTML 檔 (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML 檔案 (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr "找不到 %1。可能沒有安裝 Netscape。將中止匯出。"
+
+#: kbookmarkimporter_ns.cpp:137
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "找不到 Netscape"
+
+#: kbookmarkimporter_ns.cpp:158
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- 這個檔案由 Konqueror 程式所產生 -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "書籤"
+
+#: kbookmarkimporter_opera.cpp:121
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Opera 書籤檔案 (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:124
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera 書籤檔案 (*.adr)"
+
+#: kbookmarkmanager.cpp:342
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+"無法執行 keditbookmarks。\n"
+"\n"
+"最有可能的是您未安裝 keditbookmarks"
+
+#: kbookmarkmanager.cpp:491
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"無法儲存書籤於 %1。回報的錯誤為： %2。這個錯誤訊息將只會顯示一次。造成錯誤的"
+"原因需要盡速修正，大多數的情況可能是硬碟已經滿了。"
+
+#: kbookmarkmenu.cpp:277
+msgctxt "KBookmarkMenu|"
+msgid "Open Folder in Tabs"
+msgstr "在分頁中開啟資料夾"
+
+#: kbookmarkmenu.cpp:281
+msgctxt "KBookmarkMenu|"
+msgid "Open all bookmarks in this folder as a new tab."
+msgstr "在此資料夾中以新分頁開啟所有的書籤。"
+
+#: kbookmarkmenu.cpp:297
+msgctxt "KBookmarkMenu|"
+msgid "Bookmark Tabs as Folder..."
+msgstr "書籤分頁成為資料夾..."
+
+#: kbookmarkmenu.cpp:301
+msgctxt "KBookmarkMenu|"
+msgid "Add a folder of bookmarks for all open tabs."
+msgstr "把所有開啟的分頁加入成為書籤的資料夾。"
+
+#: kbookmarkmenu.cpp:341
+msgctxt "KBookmarkMenu|"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "在另外的視窗編輯書籤內容"
+
+#: kbookmarkmenu.cpp:353
+msgctxt "KBookmarkMenu|"
+msgid "New Bookmark Folder..."
+msgstr "新書籤資料夾(&N)..."
+
+#: kbookmarkmenu.cpp:355
+msgctxt "KBookmarkMenu|"
+msgid "Create a new bookmark folder in this menu"
+msgstr "在該選單內建立新書籤資料夾"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Hide in toolbar"
+msgstr "在工具列中隱藏"
+
+#: konqbookmarkmenu.cpp:59 konqbookmarkmenu.cpp:72
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Show in toolbar"
+msgstr "顯示於工具列"
+
+#: konqbookmarkmenu.cpp:66
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Window"
+msgstr "在新視窗開啟"
+
+#: konqbookmarkmenu.cpp:67
+msgctxt "KonqBookmarkContextMenu|"
+msgid "Open in New Tab"
+msgstr "在新分頁開啟"
