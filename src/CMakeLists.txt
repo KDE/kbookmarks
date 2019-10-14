@@ -25,8 +25,15 @@ endif()
 ecm_qt_declare_logging_category(kbookmarks_SRCS HEADER kbookmarks_debug.h IDENTIFIER KBOOKMARKS_LOG CATEGORY_NAME kf5.kbookmarks)
 
 add_library(KF5Bookmarks ${kbookmarks_SRCS})
-generate_export_header(KF5Bookmarks BASE_NAME KBookmarks)
 add_library(KF5::Bookmarks ALIAS KF5Bookmarks)
+ecm_generate_export_header(KF5Bookmarks
+    BASE_NAME KBookmarks
+    # GROUP_BASE_NAME KF <- enable once all of KF modules use ecm_generate_export_header
+    VERSION ${KF5_VERSION}
+    DEPRECATED_BASE_VERSION 0
+    DEPRECATION_VERSIONS 5.0
+    EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
+)
 
 target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks>")
 
