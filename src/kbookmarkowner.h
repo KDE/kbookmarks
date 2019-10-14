@@ -31,7 +31,7 @@ class KBookmarkDialog;
  * The KBookmarkMenu and KBookmarkBar classes gives the user
  * the ability to either edit bookmarks or add their own.  In the
  * first case, the app may want to open the bookmark in a special way.
- * In the second case, the app <em>must</em> supply the name and the
+ * In the second case, the app @em must supply the name and the
  * URL for the bookmark.
  *
  * This class gives the app this callback-like ability.
@@ -41,9 +41,9 @@ class KBookmarkDialog;
  * bookmarks, then you don't need to overload this class at all.
  * Rather, just use something like:
  *
- * <CODE>
- * bookmarks = new KBookmarkMenu(manager, 0, menu, actionCollection);
- * </CODE>
+ * @code
+ * bookmarks = new KBookmarkMenu(manager, nullptr, menu, actionCollection);
+ * @endcode
  *
  * If you wish to use your own editor or allow the user to add
  * bookmarks, you must overload this class.
