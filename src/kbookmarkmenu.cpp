@@ -59,13 +59,15 @@ public:
 };
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
-                             KBookmarkOwner *_owner, QMenu *_parentMenu,
+                             KBookmarkOwner *_owner,
+                             QMenu *_parentMenu,
                              KActionCollection *actionCollection)
     : QObject(),
       m_actionCollection(actionCollection),
       d(new KBookmarkMenuPrivate()),
       m_bIsRoot(true),
-      m_pManager(mgr), m_pOwner(_owner),
+      m_pManager(mgr),
+      m_pOwner(_owner),
       m_parentMenu(_parentMenu),
       m_parentAddress(QLatin1String(""))   //TODO KBookmarkAdress::root
 {
@@ -109,13 +111,15 @@ void KBookmarkMenu::addActions()
 }
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
-                             KBookmarkOwner *_owner, QMenu *_parentMenu,
+                             KBookmarkOwner *_owner,
+                             QMenu *_parentMenu,
                              const QString &parentAddress)
     : QObject(),
       m_actionCollection(new KActionCollection(this)),
       d(new KBookmarkMenuPrivate()),
       m_bIsRoot(false),
-      m_pManager(mgr), m_pOwner(_owner),
+      m_pManager(mgr),
+      m_pOwner(_owner),
       m_parentMenu(_parentMenu),
       m_parentAddress(parentAddress)
 {
