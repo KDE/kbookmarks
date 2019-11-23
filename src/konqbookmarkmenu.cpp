@@ -36,7 +36,7 @@
 #include "kbookmarkimporter.h"
 #include "kbookmarkimporter_opera.h"
 #include "kbookmarkimporter_ie.h"
-#include "kbookmarkmenu_p.h"
+#include "kbookmarkmanager.h"
 #include "konqbookmarkmenu_p.h"
 
 
