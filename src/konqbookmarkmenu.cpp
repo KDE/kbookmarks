@@ -31,11 +31,110 @@
 #include <ksharedconfig.h>
 #include <kconfiggroup.h>
 #include <kactioncollection.h>
+#include <kstringhandler.h>
 
 #include "kbookmarkimporter.h"
 #include "kbookmarkimporter_opera.h"
 #include "kbookmarkimporter_ie.h"
 #include "kbookmarkmenu_p.h"
+#include "konqbookmarkmenu_p.h"
+
+
+KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr,
+        KBookmarkOwner *owner, QMenu *parentMenu,
+        const QString &type, const QString &location)
+    : KBookmarkMenu(mgr, owner, parentMenu, QString()), m_type(type), m_location(location)
+{
+    connect(parentMenu, &QMenu::aboutToShow, this, &KImportedBookmarkMenu::slotNSLoad);
+}
+
+KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr,
+        KBookmarkOwner *owner, QMenu *parentMenu)
+    : KBookmarkMenu(mgr, owner, parentMenu, QString()), m_type(QString()), m_location(QString())
+{
+}
+
+KImportedBookmarkMenu::~KImportedBookmarkMenu()
+{
+}
+
+void KImportedBookmarkMenu::refill()
+{
+}
+
+void KImportedBookmarkMenu::clear()
+{
+}
+
+void KImportedBookmarkMenu::slotNSLoad()
+{
+    // qCDebug(KBOOKMARKS_LOG)<<"**** slotNSLoad  ****"<<m_type<<"  "<<m_location;
+    // only fill menu once
+    disconnect(parentMenu(), &QMenu::aboutToShow, nullptr, nullptr);
+
+    // not NSImporter, but kept old name for BC reasons
+    KBookmarkMenuImporter importer(manager(), this);
+    importer.openBookmarks(m_location, m_type);
+}
+
+/********************************************************************/
+
+void KBookmarkMenuImporter::openBookmarks(const QString &location, const QString &type)
+{
+    mstack.push(m_menu);
+
+    KBookmarkImporterBase *importer = KBookmarkImporterBase::factory(type);
+    if (!importer) {
+        return;
+    }
+    importer->setFilename(location);
+    connectToImporter(*importer);
+    importer->parse();
+
+    delete importer;
+}
+
+void KBookmarkMenuImporter::connectToImporter(const QObject &importer)
+{
+    connect(&importer, SIGNAL(newBookmark(QString,QString,QString)),
+            SLOT(newBookmark(QString,QString,QString)));
+    connect(&importer, SIGNAL(newFolder(QString,bool,QString)),
+            SLOT(newFolder(QString,bool,QString)));
+    connect(&importer, SIGNAL(newSeparator()), SLOT(newSeparator()));
+    connect(&importer, SIGNAL(endFolder()), SLOT(endFolder()));
+}
+
+void KBookmarkMenuImporter::newBookmark(const QString &text, const QString &url, const QString &)
+{
+    KBookmark bm = KBookmark::standaloneBookmark(text, QUrl(url), QStringLiteral("html"));
+    QAction *action = new KBookmarkAction(bm, mstack.top()->owner(), this);
+    mstack.top()->parentMenu()->addAction(action);
+    mstack.top()->m_actions.append(action);
+}
+
+void KBookmarkMenuImporter::newFolder(const QString &text, bool, const QString &)
+{
+    QString _text = KStringHandler::csqueeze(text).replace(QLatin1Char('&'), QLatin1String("&&"));
+    KActionMenu *actionMenu = new KImportedBookmarkActionMenu(QIcon::fromTheme(QStringLiteral("folder")), _text, this);
+    mstack.top()->parentMenu()->addAction(actionMenu);
+    mstack.top()->m_actions.append(actionMenu);
+    KImportedBookmarkMenu *subMenu = new KImportedBookmarkMenu(m_pManager, m_menu->owner(), actionMenu->menu());
+    mstack.top()->m_lstSubMenus.append(subMenu);
+
+    mstack.push(subMenu);
+}
+
+void KBookmarkMenuImporter::newSeparator()
+{
+    mstack.top()->parentMenu()->addSeparator();
+}
+
+void KBookmarkMenuImporter::endFolder()
+{
+    mstack.pop();
+}
+
+/********************************************************************/
 
 KonqBookmarkContextMenu::KonqBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *mgr, KBookmarkOwner *owner)
     : KBookmarkContextMenu(bm, mgr, owner)

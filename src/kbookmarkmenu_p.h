@@ -23,13 +23,9 @@
 
 #include <QObject>
 
-#include <kactionmenu.h>
 #include <QTreeWidget>
-#include <QStack>
 
 #include "kbookmark.h"
-#include "kbookmarkactioninterface.h"
-#include "kbookmarkimporter.h"
 #include "kbookmarkmanager.h"
 
 class QString;
@@ -40,27 +36,6 @@ class KBookmarkOwner;
 class KBookmarkMenu;
 
 #define KEDITBOOKMARKS_BINARY "keditbookmarks"
-
-class KImportedBookmarkMenu : public KBookmarkMenu
-{
-    friend class KBookmarkMenuImporter;
-    Q_OBJECT
-public:
-    //TODO simplfy
-    KImportedBookmarkMenu(KBookmarkManager *mgr,
-                          KBookmarkOwner *owner, QMenu *parentMenu,
-                          const QString &type, const QString &location);
-    KImportedBookmarkMenu(KBookmarkManager *mgr,
-                          KBookmarkOwner *owner, QMenu *parentMenu);
-    ~KImportedBookmarkMenu();
-    void clear() override;
-    void refill() override;
-protected Q_SLOTS:
-    void slotNSLoad();
-private:
-    QString m_type;
-    QString m_location;
-};
 
 class KBookmarkTreeItem : public QTreeWidgetItem
 {
@@ -81,44 +56,6 @@ public:
     static KBookmarkSettings *s_self;
     static void readSettings();
     static KBookmarkSettings *self();
-};
-
-/**
- * A class connected to KNSBookmarkImporter, to fill KActionMenus.
- */
-class KBookmarkMenuImporter : public QObject
-{
-    Q_OBJECT
-public:
-    KBookmarkMenuImporter(KBookmarkManager *mgr, KImportedBookmarkMenu *menu) :
-        m_menu(menu), m_pManager(mgr) {}
-
-    void openBookmarks(const QString &location, const QString &type);
-    void connectToImporter(const QObject &importer);
-
-protected Q_SLOTS:
-    void newBookmark(const QString &text, const QString &url, const QString &);
-    void newFolder(const QString &text, bool, const QString &);
-    void newSeparator();
-    void endFolder();
-
-protected:
-    QStack<KImportedBookmarkMenu *> mstack;
-    KImportedBookmarkMenu *m_menu;
-    KBookmarkManager *m_pManager;
-};
-
-class KImportedBookmarkActionMenu : public KActionMenu, public KBookmarkActionInterface
-{
-    Q_OBJECT
-public:
-    KImportedBookmarkActionMenu(const QIcon &icon, const QString &text, QObject *parent)
-        : KActionMenu(icon, text, parent),
-          KBookmarkActionInterface(KBookmark())
-    {
-    }
-    ~KImportedBookmarkActionMenu()
-    {}
 };
 
 #endif
