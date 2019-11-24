@@ -30,6 +30,7 @@ class KBookmark;
 class KBookmarkGroup;
 class KBookmarkOwner;
 
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 65)
 class KImportedBookmarkMenu : public KBookmarkMenu
 {
     friend class KBookmarkMenuImporter;
@@ -91,3 +92,5 @@ public:
     ~KImportedBookmarkActionMenu()
     {}
 };
+
+#endif

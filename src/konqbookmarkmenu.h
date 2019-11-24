@@ -31,6 +31,11 @@
 typedef KBookmarkOwner KonqBookmarkOwner; // KF5: KonqBookmarkOwner is deprecated, use KBookmarkOwner
 #endif
 
+#if KBOOKMARKS_ENABLE_DEPRECATED_SINCE(5, 65)
+/**
+ * Bookmark menu with dynamic import features, only used by Konqueror
+ * @deprecated since 5.65, this class has moved to Konqueror
+ */
 class KBOOKMARKS_EXPORT KonqBookmarkMenu : public KBookmarkMenu
 {
     //friend class KBookmarkBar;
@@ -47,7 +52,9 @@ public:
      * URLs are openend by QDesktopServices::openUrl and "Add Bookmark" is disabled.
      * @param parentMenu menu to be filled
      * @param collec parent collection for the KActions.
+     * @deprecated since 5.65 This class has moved to Konqueror
      */
+    KBOOKMARKS_DEPRECATED_VERSION(5, 65, "This class has moved to Konqueror")
     KonqBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, KBookmarkActionMenu *parentMenu, KActionCollection *collec)
         : KBookmarkMenu(mgr, owner, parentMenu->menu(), collec)
     {
@@ -58,7 +65,9 @@ public:
     /**
      * Creates a bookmark submenu.
      * Only used internally and for bookmark toolbar.
+     * @deprecated since 5.65 This class has moved to Konqueror
      */
+    KBOOKMARKS_DEPRECATED_VERSION(5, 65, "This class has moved to Konqueror")
     KonqBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, KBookmarkActionMenu *parentMenu, QString parentAddress)
         : KBookmarkMenu(mgr, owner, parentMenu->menu(), parentAddress)
     {
@@ -102,10 +111,19 @@ protected:
     void fillDynamicBookmarks();
 };
 
+/**
+ * Browser-specific context menu
+ * @deprecated since 5.65, this class has moved to Konqueror
+ */
 class KBOOKMARKS_EXPORT KonqBookmarkContextMenu : public KBookmarkContextMenu
 {
     Q_OBJECT
 public:
+   /**
+    * Browser-specific context menu
+    * @deprecated since 5.65, this class has moved to Konqueror
+    */
+    KBOOKMARKS_DEPRECATED_VERSION(5, 65, "This class has moved to Konqueror")
     KonqBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *mgr, KBookmarkOwner *owner);
     ~KonqBookmarkContextMenu() override;
     void addActions() override;
@@ -115,5 +133,8 @@ public Q_SLOTS:
     void openInNewWindow();
     void toggleShowInToolbar();
 };
+
+#endif
+
 #endif
 

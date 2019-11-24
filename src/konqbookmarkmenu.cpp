@@ -39,6 +39,7 @@
 #include "kbookmarkmanager.h"
 #include "konqbookmarkmenu_p.h"
 
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 65)
 
 KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr,
         KBookmarkOwner *owner, QMenu *parentMenu,
@@ -336,3 +337,5 @@ QMenu *KonqBookmarkMenu::contextMenu(QAction *action)
 }
 
 #include "moc_konqbookmarkmenu.cpp"
+
+#endif // KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 65)
