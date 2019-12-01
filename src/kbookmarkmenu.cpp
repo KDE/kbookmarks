@@ -450,7 +450,3 @@ void KBookmarkMenu::slotNewFolder()
     dlg->createNewFolder(QLatin1String(""), parentBookmark);
     delete dlg;
 }
-
-
-/********************************************************************/
-#include "moc_kbookmarkmenu.cpp"
