@@ -177,10 +177,7 @@ private:
     bool m_bDirty;
     KBookmarkManager *m_pManager;
     KBookmarkOwner *m_pOwner;
-
     QMenu *m_parentMenu;
-
-private:
     QString m_parentAddress;
 };
 
