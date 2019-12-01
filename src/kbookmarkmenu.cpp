@@ -24,15 +24,15 @@
 #include "kbookmarkaction.h"
 #include "kbookmarkactionmenu.h"
 #include "kbookmarkcontextmenu.h"
+#include "kbookmarks_debug.h"
 #include "kbookmarkdialog.h"
 #include "kbookmarkowner.h"
 
-#include <kactioncollection.h>
-#include <kauthorized.h>
-#include <kstandardaction.h>
+#include <KActionCollection>
+#include <KAuthorized>
+#include <KStandardAction>
 
 #include <QApplication>
-#include "kbookmarks_debug.h"
 #include <QMenu>
 #include <QObject>
 #include <QStandardPaths>
