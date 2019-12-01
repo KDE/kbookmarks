@@ -70,9 +70,6 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
       m_parentMenu(_parentMenu),
       m_parentAddress(QLatin1String(""))   //TODO KBookmarkAdress::root
 {
-    // TODO KDE5 find a QMenu equvalnet for this one
-    //m_parentMenu->setKeyboardShortcutsEnabled( true );
-
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::KBookmarkMenu " << this << " address : " << m_parentAddress;
 
     connect(_parentMenu, &QMenu::aboutToShow,
@@ -122,8 +119,6 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
       m_parentMenu(_parentMenu),
       m_parentAddress(parentAddress)
 {
-    // TODO KDE5 find a QMenu equvalnet for this one
-    //m_parentMenu->setKeyboardShortcutsEnabled( true );
     connect(_parentMenu, &QMenu::aboutToShow, this, &KBookmarkMenu::slotAboutToShow);
     if (KBookmarkSettings::self()->m_contextmenu) {
         m_parentMenu->setContextMenuPolicy(Qt::CustomContextMenu);
