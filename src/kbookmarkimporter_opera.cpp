@@ -146,32 +146,36 @@ private:
 
 OperaExporter::OperaExporter() : m_out(&m_string, QIODevice::WriteOnly)
 {
-    m_out << "Opera Hotlist version 2.0" << endl;
-    m_out << "Options: encoding = utf8, version=3" << endl;
+    m_out << "Opera Hotlist version 2.0\n";
+    m_out << "Options: encoding = utf8, version=3\n";
+    m_out.flush();
 }
 
 void OperaExporter::visit(const KBookmark &bk)
 {
     // qCDebug(KBOOKMARKS_LOG) << "visit(" << bk.text() << ")";
-    m_out << "#URL" << endl;
-    m_out << "\tNAME=" << bk.fullText() << endl;
-    m_out << "\tURL=" << bk.url().toString().toUtf8() << endl;
-    m_out << endl;
+    m_out << "#URL\n";
+    m_out << "\tNAME=" << bk.fullText() << '\n';
+    m_out << "\tURL=" << bk.url().toString().toUtf8() << '\n';
+    m_out << '\n';
+    m_out.flush();
 }
 
 void OperaExporter::visitEnter(const KBookmarkGroup &grp)
 {
     // qCDebug(KBOOKMARKS_LOG) << "visitEnter(" << grp.text() << ")";
-    m_out << "#FOLDER" << endl;
-    m_out << "\tNAME=" << grp.fullText() << endl;
-    m_out << endl;
+    m_out << "#FOLDER\n";
+    m_out << "\tNAME=" << grp.fullText() << '\n';
+    m_out << '\n';
+    m_out.flush();
 }
 
 void OperaExporter::visitLeave(const KBookmarkGroup &)
 {
     // qCDebug(KBOOKMARKS_LOG) << "visitLeave()";
-    m_out << "-" << endl;
-    m_out << endl;
+    m_out << "-\n";
+    m_out << '\n';
+    m_out.flush();
 }
 
 void KOperaBookmarkExporterImpl::write(const KBookmarkGroup &parent)
@@ -180,7 +184,7 @@ void KOperaBookmarkExporterImpl::write(const KBookmarkGroup &parent)
     QString content = exporter.generate(parent);
     QFile file(m_fileName);
     if (!file.open(QIODevice::WriteOnly)) {
-        qCCritical(KBOOKMARKS_LOG) << "Can't write to file " << m_fileName << endl;
+        qCCritical(KBOOKMARKS_LOG) << "Can't write to file " << m_fileName;
         return;
     }
     QTextStream fstream(&file);
