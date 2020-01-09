@@ -45,14 +45,14 @@ class KBookmarkMenuPrivate
 public:
     KBookmarkMenuPrivate()
         : newBookmarkFolder(nullptr),
-          addAddBookmark(nullptr),
+          addBookmarkAction(nullptr),
           bookmarksToFolder(nullptr),
           numberOfOpenTabs(2)
     {
     }
 
     QAction *newBookmarkFolder;
-    QAction *addAddBookmark;
+    QAction *addBookmarkAction;
     QAction *bookmarksToFolder;
     int numberOfOpenTabs;
 };
@@ -311,18 +311,18 @@ void KBookmarkMenu::addAddBookmark()
         return;
     }
 
-    if (!d->addAddBookmark) {
-        d->addAddBookmark = m_actionCollection->addAction(
+    if (!d->addBookmarkAction) {
+        d->addBookmarkAction = m_actionCollection->addAction(
                                 KStandardAction::AddBookmark,
                                 m_bIsRoot ? QStringLiteral("add_bookmark") : QString(),
                                 this,
                                 SLOT(slotAddBookmark()));
         if (!m_bIsRoot) {
-            d->addAddBookmark->setShortcut(QKeySequence());
+            d->addBookmarkAction->setShortcut(QKeySequence());
         }
     }
 
-    m_parentMenu->addAction(d->addAddBookmark);
+    m_parentMenu->addAction(d->addBookmarkAction);
 }
 
 void KBookmarkMenu::addEditBookmarks()
