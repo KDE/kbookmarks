@@ -22,7 +22,13 @@ if (TARGET Qt5::DBus)
   list(APPEND kbookmarks_SRCS kbookmarkmanageradaptor.cpp)
 endif()
 
-ecm_qt_declare_logging_category(kbookmarks_SRCS HEADER kbookmarks_debug.h IDENTIFIER KBOOKMARKS_LOG CATEGORY_NAME kf5.kbookmarks)
+ecm_qt_declare_logging_category(kbookmarks_SRCS
+    HEADER kbookmarks_debug.h
+    IDENTIFIER KBOOKMARKS_LOG
+    CATEGORY_NAME kf5.kbookmarks
+    DESCRIPTION "KBookmarks"
+    EXPORT KBOOKMARKS
+)
 
 add_library(KF5Bookmarks ${kbookmarks_SRCS})
 add_library(KF5::Bookmarks ALIAS KF5Bookmarks)
@@ -88,6 +94,12 @@ install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_export.h
   ${KBookmarks_HEADERS}
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks COMPONENT Devel
+)
+
+ecm_qt_install_logging_categories(
+    EXPORT KBOOKMARKS
+    FILE kbookmarks.categories
+    DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
 )
 
 if(BUILD_QCH)
