@@ -44,16 +44,16 @@ class KBookmarkMenuPrivate
 {
 public:
     KBookmarkMenuPrivate()
-        : newBookmarkFolder(nullptr),
+        : newBookmarkFolderAction(nullptr),
           addBookmarkAction(nullptr),
-          bookmarksToFolder(nullptr),
+          bookmarksToFolderAction(nullptr),
           numberOfOpenTabs(2)
     {
     }
 
-    QAction *newBookmarkFolder;
+    QAction *newBookmarkFolderAction;
     QAction *addBookmarkAction;
-    QAction *bookmarksToFolder;
+    QAction *bookmarksToFolderAction;
     int numberOfOpenTabs;
 };
 
@@ -291,17 +291,17 @@ void KBookmarkMenu::addAddBookmarksList()
         return;
     }
 
-    if (!d->bookmarksToFolder) {
+    if (!d->bookmarksToFolderAction) {
         QString title = tr("Bookmark Tabs as Folder...");
-        d->bookmarksToFolder = new QAction(title, this);
-        m_actionCollection->addAction(m_bIsRoot ? QStringLiteral("add_bookmarks_list") : QString(), d->bookmarksToFolder);
-        d->bookmarksToFolder->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new-list")));
-        d->bookmarksToFolder->setToolTip(tr("Add a folder of bookmarks for all open tabs."));
-        d->bookmarksToFolder->setStatusTip(d->bookmarksToFolder->toolTip());
-        connect(d->bookmarksToFolder, &QAction::triggered, this, &KBookmarkMenu::slotAddBookmarksList);
+        d->bookmarksToFolderAction = new QAction(title, this);
+        m_actionCollection->addAction(m_bIsRoot ? QStringLiteral("add_bookmarks_list") : QString(), d->bookmarksToFolderAction);
+        d->bookmarksToFolderAction->setIcon(QIcon::fromTheme(QStringLiteral("bookmark-new-list")));
+        d->bookmarksToFolderAction->setToolTip(tr("Add a folder of bookmarks for all open tabs."));
+        d->bookmarksToFolderAction->setStatusTip(d->bookmarksToFolderAction->toolTip());
+        connect(d->bookmarksToFolderAction, &QAction::triggered, this, &KBookmarkMenu::slotAddBookmarksList);
     }
 
-    m_parentMenu->addAction(d->bookmarksToFolder);
+    m_parentMenu->addAction(d->bookmarksToFolderAction);
 }
 
 void KBookmarkMenu::addAddBookmark()
@@ -347,15 +347,15 @@ void KBookmarkMenu::addNewFolder()
         return;
     }
 
-    if (!d->newBookmarkFolder) {
-        d->newBookmarkFolder = new QAction(tr("New Bookmark Folder..."), this);
-        d->newBookmarkFolder->setIcon(QIcon::fromTheme(QStringLiteral("folder-new")));
-        d->newBookmarkFolder->setToolTip(tr("Create a new bookmark folder in this menu"));
-        d->newBookmarkFolder->setStatusTip(d->newBookmarkFolder->toolTip());
-        connect(d->newBookmarkFolder, &QAction::triggered, this, &KBookmarkMenu::slotNewFolder);
+    if (!d->newBookmarkFolderAction) {
+        d->newBookmarkFolderAction = new QAction(tr("New Bookmark Folder..."), this);
+        d->newBookmarkFolderAction->setIcon(QIcon::fromTheme(QStringLiteral("folder-new")));
+        d->newBookmarkFolderAction->setToolTip(tr("Create a new bookmark folder in this menu"));
+        d->newBookmarkFolderAction->setStatusTip(d->newBookmarkFolderAction->toolTip());
+        connect(d->newBookmarkFolderAction, &QAction::triggered, this, &KBookmarkMenu::slotNewFolder);
     }
 
-    m_parentMenu->addAction(d->newBookmarkFolder);
+    m_parentMenu->addAction(d->newBookmarkFolderAction);
 
 }
 
