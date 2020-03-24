@@ -61,6 +61,7 @@ class KBOOKMARKS_EXPORT KBookmarkMenu : public QObject
 {
     Q_OBJECT
 public:
+#if KBOOKMARKS_ENABLE_DEPRECATED_SINCE(5, 69)
     /**
      * Fills a bookmark menu
      * (one instance of KBookmarkMenu is created for the toplevel menu,
@@ -75,8 +76,38 @@ public:
      *
      * @todo KDE 5: give ownership of the bookmarkmenu to another qobject, e.g. parentMenu.
      * Currently this is a QObject without a parent, use setParent to benefit from automatic deletion.
+     *
+     * @deprecated since 5.69. Use overload without KActionCollection and add actions manually to your actioncollection if desired.
+     * @code
+     * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
+     *
+     * QAction *addAction = menu->addBookmarkAction();
+     * actionCollection()->addAction(addAction->objectName(), addAction);
+     *
+     * QAction *bookmarkTabsAction = menu->bookmarkTabsAsFolderAction();
+     * actionCollection()->addAction(bookmarkTabsAction->objectName(), bookmarkTabsAction);
+     *
+     * QAction *editAction = menu->editBookmarksAction();
+     * actionCollection()->addAction(editAction->objectName(), editAction);
+     * @endcode
      */
+    KBOOKMARKS_DEPRECATED_VERSION(5, 69, "Use overload without KActionCollection and add actions manually to your actionCollection if desired")
     KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, KActionCollection *collec);
+#endif
+
+    /**
+     * Fills a bookmark menu
+     * (one instance of KBookmarkMenu is created for the toplevel menu,
+     *  but also one per submenu).
+     *
+     * @param manager the bookmark manager to use (i.e. for reading and writing)
+     * @param owner implementation of the KBookmarkOwner callback interface.
+     * @note If you pass a null KBookmarkOwner to the constructor, the
+     * openBookmark signal is not emitted, instead QDesktopServices::openUrl is used to open the bookmark.
+     * @param parentMenu menu to be filled
+     * @since 5.69
+     */
+    KBookmarkMenu(KBookmarkManager *manager, KBookmarkOwner *owner, QMenu *parentMenu);
 
     /**
      * Creates a bookmark submenu
@@ -111,6 +142,42 @@ public:
      * @since 5.58
      */
     int numberOfOpenTabs() const;
+
+    /**
+     * Returns the action for adding a bookmark. If you are using KXmlGui add it to your action collection.
+     * @code
+     * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
+     * QAction *addAction = menu->addBookmarkAction();
+     * actionCollection()->addAction(addAction->objectName(), addAction);
+     * @endcode
+     * @return the action for adding a bookmark.
+     * @since 5.69
+     */
+    QAction *addBookmarkAction() const;
+
+    /**
+     * Returns the action for adding all current tabs as bookmarks. If you are using KXmlGui add it to your action collection.
+     * @code
+     * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
+     * QAction *bookmarkTabsAction = menu->bookmarkTabsAsFolderAction();
+     * actionCollection()->addAction(bookmarkTabsAction->objectName(), bookmarkTabsAction);
+     * @endcode
+     * @return the action for adding all current tabs as bookmarks.
+     * @since 5.69
+     */
+    QAction *bookmarkTabsAsFolderAction() const;
+
+    /**
+     * Returns the action for editing bookmarks. If you are using KXmlGui add it to your action collection.
+     * @code
+     * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
+     * QAction *editAction = menu->editBookmarksAction();
+     * actionCollection()->addAction(editAction->objectName(), editAction);
+     * @endcode
+     * @return the action for editing bookmarks.
+     * @since 5.69
+     */
+    QAction *editBookmarksAction() const;
 
 public Q_SLOTS:
     // public for KonqBookmarkBar
