@@ -72,7 +72,7 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager* manager, KBookmarkOwner* _owner, QMenu* _parentMenu)
     : QObject(),
-    m_actionCollection(nullptr),
+    m_actionCollection(new KActionCollection(this)),
     d(new KBookmarkMenuPrivate()),
     m_bIsRoot(true),
     m_pManager(manager),
@@ -124,7 +124,7 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
                              QMenu *_parentMenu,
                              const QString &parentAddress)
     : QObject(),
-      m_actionCollection(nullptr),
+      m_actionCollection(new KActionCollection(this)),
       d(new KBookmarkMenuPrivate()),
       m_bIsRoot(false),
       m_pManager(mgr),
