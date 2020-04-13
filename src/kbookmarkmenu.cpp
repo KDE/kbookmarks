@@ -382,6 +382,11 @@ void KBookmarkMenu::addNewFolder()
         d->newBookmarkFolderAction->setIcon(QIcon::fromTheme(QStringLiteral("folder-new")));
         d->newBookmarkFolderAction->setToolTip(tr("Create a new bookmark folder in this menu"));
         d->newBookmarkFolderAction->setStatusTip(d->newBookmarkFolderAction->toolTip());
+
+        if (m_bIsRoot) {
+            d->newBookmarkFolderAction->setObjectName(QStringLiteral("new_bookmark_folder"));
+        }
+
         connect(d->newBookmarkFolderAction, &QAction::triggered, this, &KBookmarkMenu::slotNewFolder);
     }
 
@@ -484,6 +489,11 @@ QAction * KBookmarkMenu::addBookmarkAction() const
 QAction * KBookmarkMenu::bookmarkTabsAsFolderAction() const
 {
     return d->bookmarksToFolderAction;
+}
+
+QAction *KBookmarkMenu::newBookmarkFolderAction() const
+{
+    return d->newBookmarkFolderAction;
 }
 
 QAction * KBookmarkMenu::editBookmarksAction() const

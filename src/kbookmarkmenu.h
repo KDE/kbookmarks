@@ -90,6 +90,17 @@ public:
      * QAction *editAction = menu->editBookmarksAction();
      * actionCollection()->addAction(editAction->objectName(), editAction);
      * @endcode
+     *
+     * Alternatively you can get a list of the actions from @p parentMenu, and add them to your
+     * actionCollection:
+     * @code
+     * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
+     * actionCollection()->addActions(parentMenu->actions());
+     * @endcode
+     *
+     * Note that adding the actions to your KActionCollection will make them show up in the shortcuts editor
+     * dialog.
+     *
      */
     KBOOKMARKS_DEPRECATED_VERSION(5, 69, "Use overload without KActionCollection and add actions manually to your actionCollection if desired")
     KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, KActionCollection *collec);
@@ -144,7 +155,8 @@ public:
     int numberOfOpenTabs() const;
 
     /**
-     * Returns the action for adding a bookmark. If you are using KXmlGui add it to your action collection.
+     * Returns the action for adding a bookmark. If you are using KXmlGui, you can add it to your
+     * action collection.
      * @code
      * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
      * QAction *addAction = menu->addBookmarkAction();
@@ -156,7 +168,8 @@ public:
     QAction *addBookmarkAction() const;
 
     /**
-     * Returns the action for adding all current tabs as bookmarks. If you are using KXmlGui add it to your action collection.
+     * Returns the action for adding all current tabs as bookmarks. If you are using KXmlGui, you can
+     * add it to your action collection.
      * @code
      * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
      * QAction *bookmarkTabsAction = menu->bookmarkTabsAsFolderAction();
@@ -168,7 +181,21 @@ public:
     QAction *bookmarkTabsAsFolderAction() const;
 
     /**
-     * Returns the action for editing bookmarks. If you are using KXmlGui add it to your action collection.
+     * Returns the action for adding a new bookmarks folder. If you are using KXmlGui, you can add it
+     * to your action collection.
+     * @code
+     * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
+     * QAction *newBookmarkFolderAction = menu->bookmarkTabsAsFolderAction();
+     * actionCollection()->addAction(newBookmarkFolderAction->objectName(), newBookmarkFolderAction);
+     * @endcode
+     * @return the action for adding a new bookmarks folder
+     * @since 5.70
+     */
+    QAction *newBookmarkFolderAction() const;
+
+    /**
+     * Returns the action for editing bookmarks.  If you are using KXmlGui, you can add it to your
+     * action collection.
      * @code
      * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
      * QAction *editAction = menu->editBookmarksAction();
