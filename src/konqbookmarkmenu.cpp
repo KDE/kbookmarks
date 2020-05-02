@@ -156,20 +156,20 @@ void KonqBookmarkContextMenu::addActions()
         addBookmark();
 
         if (filteredToolbar) {
-            QString text = bookmark().showInToolbar() ? tr("Hide in toolbar") : tr("Show in toolbar");
+            QString text = bookmark().showInToolbar() ? tr("Hide in Toolbar", "@action:inmenu") : tr("Show in Toolbar", "@action:inmenu");
             addAction(text, this, &KonqBookmarkContextMenu::toggleShowInToolbar);
         }
 
         addFolderActions();
     } else {
         if (owner()) {
-            addAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Open in New Window"), this, &KonqBookmarkContextMenu::openInNewWindow);
-            addAction(QIcon::fromTheme(QStringLiteral("tab-new")), tr("Open in New Tab"), this, &KonqBookmarkContextMenu::openInNewTab);
+            addAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Open in New Window", "@action:inmenu"), this, &KonqBookmarkContextMenu::openInNewWindow);
+            addAction(QIcon::fromTheme(QStringLiteral("tab-new")), tr("Open in New Tab", "@action:inmenu"), this, &KonqBookmarkContextMenu::openInNewTab);
         }
         addBookmark();
 
         if (filteredToolbar) {
-            QString text = bookmark().showInToolbar() ? tr("Hide in toolbar") : tr("Show in toolbar");
+            const QString text = bookmark().showInToolbar() ? tr("Hide in Toolbar", "@action:inmenu") : tr("Show in Toolbar", "@action:inmenu");
             addAction(text, this, &KonqBookmarkContextMenu::toggleShowInToolbar);
         }
 
