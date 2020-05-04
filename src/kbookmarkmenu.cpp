@@ -64,10 +64,18 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
                              KBookmarkOwner *_owner,
                              QMenu *_parentMenu,
                              KActionCollection *actionCollection)
-    : KBookmarkMenu(mgr, _owner, _parentMenu)
+    : QObject(),
+      m_actionCollection(actionCollection),
+      d(new KBookmarkMenuPrivate()),
+      m_bIsRoot(true),
+      m_pManager(mgr),
+      m_pOwner(_owner),
+      m_parentMenu(_parentMenu),
+      m_parentAddress(QString())   //TODO KBookmarkAdress::root
 {
-    m_actionCollection = actionCollection;
+    init();
 }
+
 #endif
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager* manager, KBookmarkOwner* _owner, QMenu* _parentMenu)
@@ -83,8 +91,11 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager* manager, KBookmarkOwner* _owner, 
     // TODO KDE5 find a QMenu equvalnet for this one
     //m_parentMenu->setKeyboardShortcutsEnabled( true );
 
-    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::KBookmarkMenu " << this << " address : " << m_parentAddress;
+    init();
+}
 
+void KBookmarkMenu::init()
+{
     connect(m_parentMenu, &QMenu::aboutToShow,
             this, &KBookmarkMenu::slotAboutToShow);
 
