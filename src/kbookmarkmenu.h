@@ -265,6 +265,8 @@ private Q_SLOTS:
     void slotCustomContextMenu(const QPoint &);
 
 private:
+    void init();
+
     KBookmarkMenuPrivate *d;
 
     bool m_bIsRoot;
