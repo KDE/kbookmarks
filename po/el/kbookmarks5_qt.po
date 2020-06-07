@@ -1,0 +1,368 @@
+# translation of kio4.po to Greek
+# translation of kio4.po to
+# Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+# Last MAJOR revision (whole file) (29-03-2003 - Stergios Dramis).
+#
+# Dimitris Kamenopoulos <d.kamenopoulos@mail.ntua.gr>, 2000-2002.
+# Stergios Dramis <sdramis@egnatia.ee.auth.gr>, 2002-2004.
+# Spiros Georgaras <sngeorgaras@otenet.gr>, 2005, 2006, 2007, 2008.
+# Toussis Manolis <manolis@koppermind.homelinux.org>, 2007, 2008, 2009.
+# Spiros Georgaras <sng@hellug.gr>, 2007, 2008.
+# Σπύρος Γεωργαράς <sngeorgaras@otenet.gr>, 2008.
+# Glentadakis Dimitrios <dglent@gmail.com>, 2009.
+# Petros <pvidalis@gmail.com>, 2009, 2010.
+# Dimitrios Glentadakis <dglent@gmail.com>, 2010, 2011, 2012, 2013.
+# Nikos Pantazis <pantazisnikolaos@gmail.com>, 2011.
+# Stelios <sstavra@gmail.com>, 2012.
+# Antonis Geralis <capoiosct@gmail.com>, 2013, 2014.
+# Dimitris Kardarakos <dimkard@gmail.com>, 2015, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2016-09-16 14:04+0200\n"
+"Last-Translator: Dimitris Kardarakos <dimkard@gmail.com>\n"
+"Language-Team: Greek <kde-i18n-el@kde.org>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:316
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- διαχωριστικό ---"
+
+#: kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Προσθήκη σελιδοδείκτη εδώ"
+
+#: kbookmarkcontextmenu.cpp:68
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Άνοιγμα φακέλου στον επεξεργαστή σελιδοδεικτών"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Διαγραφή φακέλου"
+
+#: kbookmarkcontextmenu.cpp:76
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Ιδιότητες"
+
+#: kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Αντιγραφή διεύθυνσης δεσμού"
+
+#: kbookmarkcontextmenu.cpp:84
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Διαγραφή σελιδοδείκτη"
+
+#: kbookmarkcontextmenu.cpp:90
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Άνοιγμα φακέλου σε καρτέλες"
+
+#: kbookmarkcontextmenu.cpp:116
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Αδύνατη η προσθήκη σελιδοδείκτη με κενό URL."
+
+#: kbookmarkcontextmenu.cpp:146
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Διαγραφή φακέλου σελιδοδεικτών"
+
+#: kbookmarkcontextmenu.cpp:147
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Διαγραφή σελιδοδείκτη"
+
+#: kbookmarkcontextmenu.cpp:148
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Σίγουρα θέλετε να αφαιρέσετε τον φάκελο σελιδοδεικτών\n"
+"\"%1\";"
+
+#: kbookmarkcontextmenu.cpp:149
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Σίγουρα θέλετε να αφαιρέσετε τον σελιδοδείκτη\n"
+"\"%1\";"
+
+#: kbookmarkdialog.cpp:70
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Όνομα:"
+
+#: kbookmarkdialog.cpp:75
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Τοποθεσία:"
+
+#: kbookmarkdialog.cpp:80
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Σχόλιο:"
+
+#: kbookmarkdialog.cpp:191
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Ενημέρωση"
+
+#: kbookmarkdialog.cpp:192
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Ιδιότητες σελιδοδείκτη"
+
+#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Νέος φάκελος..."
+
+#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Προσθήκη"
+
+#: kbookmarkdialog.cpp:228
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Προσθήκη σελιδοδείκτη"
+
+#: kbookmarkdialog.cpp:266
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Προσθήκη σελιδοδεικτών"
+
+#: kbookmarkdialog.cpp:299
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Επιλογή φακέλου"
+
+#: kbookmarkdialog.cpp:327
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Νέος φάκελος"
+
+#: kbookmarkdialog.cpp:362
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Δημιουργία νέου φακέλου σελιδοδεικτών"
+
+#: kbookmarkdialog.cpp:363
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Δημιουργία νέου φακέλου σελιδοδεικτών στο %1"
+
+#: kbookmarkdialog.cpp:365
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Νέος φάκελος:"
+
+#: kbookmarkdialog.cpp:386
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Σελιδοδείκτες"
+
+#: kbookmarkimporter_ns.cpp:115
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "HTML αρχεία (*.html)"
+
+#: kbookmarkimporter_ns.cpp:119
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML Αρχεία (*.html)"
+
+#: kbookmarkimporter_ns.cpp:135
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Αδυναμία εύρεσης του %1. Το Netscape πιθανώς δεν είναι εγκατεστημένο. "
+"Εγκατάλειψη εξαγωγής."
+
+#: kbookmarkimporter_ns.cpp:137
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Δε βρέθηκε το Netscape"
+
+#: kbookmarkimporter_ns.cpp:158
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Αυτό το αρχείο δημιουργήθηκε από τον Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Σελιδοδείκτες"
+
+#: kbookmarkimporter_opera.cpp:121
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Αρχεία σελιδοδεικτών Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:124
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Αρχεία σελιδοδεικτών Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:342
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+
+#: kbookmarkmanager.cpp:491
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Αδύνατη η αποθήκευση των σελιδοδεικτών στο %1. Το σφάλμα που αναφέρθηκε "
+"ήταν: %2. Αυτό το μήνυμα σφάλματος θα εμφανιστεί μόνο μία φορά. Η αιτία "
+"αυτού του σφάλματος πρέπει να διορθωθεί το συντομότερο δυνατό, το πιο πιθανό "
+"είναι ο σκληρός δίσκος να είναι γεμάτος."
+
+#: kbookmarkmenu.cpp:299
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Άνοιγμα φακέλου σε καρτέλες"
+
+#: kbookmarkmenu.cpp:303
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Άνοιγμα όλων των σελιδοδεικτών του φακέλου ως νέα καρτέλα."
+
+#: kbookmarkmenu.cpp:319
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Προσθήκη σελιδοδεικτών για τις καρτέλες σαν φάκελο..."
+
+#: kbookmarkmenu.cpp:327
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr ""
+"Προσθήκη ενός φακέλου από σελιδοδείκτες για όλες τις ανοικτές καρτέλες."
+
+#: kbookmarkmenu.cpp:376
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Επεξεργασία της συλλογής σελιδοδεικτών σας σε ένα ξεχωριστό παράθυρο"
+
+#: kbookmarkmenu.cpp:392
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Νέος φάκελος σελιδοδεικτών..."
+
+#: kbookmarkmenu.cpp:394
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Δημιουργία ενός νέου φακέλου σελιδοδεικτών σε αυτό το μενού"
+
+#: konqbookmarkmenu.cpp:159 konqbookmarkmenu.cpp:172
+#, fuzzy
+#| msgctxt "KonqBookmarkContextMenu|"
+#| msgid "Hide in toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Απόκρυψη στη γραμμή εργαλείων"
+
+#: konqbookmarkmenu.cpp:159 konqbookmarkmenu.cpp:172
+#, fuzzy
+#| msgctxt "KonqBookmarkContextMenu|"
+#| msgid "Show in toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Εμφάνιση στη γραμμή εργαλείων"
+
+#: konqbookmarkmenu.cpp:166
+#, fuzzy
+#| msgctxt "KonqBookmarkContextMenu|"
+#| msgid "Open in New Window"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Άνοιγμα σε νέο παράθυρο"
+
+#: konqbookmarkmenu.cpp:167
+#, fuzzy
+#| msgctxt "KonqBookmarkContextMenu|"
+#| msgid "Open in New Tab"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Άνοιγμα σε νέα καρτέλα"
