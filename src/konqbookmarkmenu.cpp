@@ -27,11 +27,11 @@
 #include <QMenu>
 #include <QFile>
 
-#include <kconfig.h>
-#include <ksharedconfig.h>
-#include <kconfiggroup.h>
-#include <kactioncollection.h>
-#include <kstringhandler.h>
+#include <KConfig>
+#include <KSharedConfig>
+#include <KConfigGroup>
+#include <KActionCollection>
+#include <KStringHandler>
 
 #include "kbookmarkimporter.h"
 #include "kbookmarkimporter_opera.h"

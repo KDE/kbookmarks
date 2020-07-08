@@ -38,12 +38,12 @@
 #include <QReadWriteLock>
 #include <QThread>
 
-#include <kbackup.h>
-#include <kconfig.h>
-#include <kconfiggroup.h>
+#include <KBackup>
+#include <KConfig>
+#include <KConfigGroup>
 #include <KDirWatch>
-#include <qsavefile.h>
-#include <qstandardpaths.h>
+#include <QSaveFile>
+#include <QStandardPaths>
 
 #include "kbookmarkmenu.h"
 #include "kbookmarkmenu_p.h"

@@ -22,14 +22,14 @@
 #include "kbookmark.h"
 #include <QStack>
 #include <QCoreApplication>
-#include <qmimedatabase.h>
+#include <QMimeDatabase>
 #include "kbookmarks_debug.h"
-#include <kstringhandler.h>
+#include <KStringHandler>
 #include <kurlmimedata.h>
 #include <kbookmarkmanager.h>
 
-#include <qdatetime.h>
-#include <qmimedata.h>
+#include <QDateTime>
+#include <QMimeData>
 
 namespace {
 namespace Strings {

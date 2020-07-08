@@ -26,9 +26,9 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include "kbookmarks_debug.h"
-#include <kcharsets.h>
+#include <KCharsets>
 
-#include <qtextcodec.h>
+#include <QTextCodec>
 #include <QApplication>
 
 void KNSBookmarkImporterImpl::parse()

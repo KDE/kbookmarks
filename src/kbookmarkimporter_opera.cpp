@@ -22,7 +22,7 @@
 
 #include <QFileDialog>
 #include "kbookmarks_debug.h"
-#include <qtextcodec.h>
+#include <QTextCodec>
 #include <QApplication>
 
 #include <qplatformdefs.h>

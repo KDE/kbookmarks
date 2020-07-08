@@ -22,7 +22,7 @@
 #define KBOOKMARKACTIONMENU_H
 
 #include "kbookmarkactioninterface.h"
-#include "kactionmenu.h"
+#include <KActionMenu>
 
 /***
  * A wrapper around KActionMenu to provide a nice constructor for bookmark groups.

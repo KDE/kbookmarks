@@ -21,7 +21,7 @@
 #include "kbookmarkmenu.h"
 #include "kbookmarkimporter.h"
 
-#include <kactionmenu.h>
+#include <KActionMenu>
 #include <QStack>
 
 class QString;
