@@ -25,7 +25,8 @@ endif()
 ecm_qt_declare_logging_category(kbookmarks_SRCS
     HEADER kbookmarks_debug.h
     IDENTIFIER KBOOKMARKS_LOG
-    CATEGORY_NAME kf5.kbookmarks
+    CATEGORY_NAME kf.bookmarks
+    OLD_CATEGORY_NAMES kf5.kbookmarks
     DESCRIPTION "KBookmarks"
     EXPORT KBOOKMARKS
 )
