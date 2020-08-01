@@ -1,0 +1,293 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013, 2014, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2020-05-10 18:26+0100\n"
+"Last-Translator: Giovanni Sora <g.sora@tiscali.it>\n"
+"Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
+"Language: ia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:305
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- separator ---"
+
+#: kbookmarkcontextmenu.cpp:50
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Adde ci marcator de libro"
+
+#: kbookmarkcontextmenu.cpp:56
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Aperi dossier in editor de marcator de libro"
+
+#: kbookmarkcontextmenu.cpp:59
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Dele dossier"
+
+#: kbookmarkcontextmenu.cpp:64
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Proprietates"
+
+#: kbookmarkcontextmenu.cpp:69
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Copia adresse de ligamine"
+
+#: kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Dele Marcator de libro"
+
+#: kbookmarkcontextmenu.cpp:78
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Aperi dossier in schedas"
+
+#: kbookmarkcontextmenu.cpp:104
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Non pote adder marcator de libro con URL vacue."
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Cancellation de dossier de marcator de libro"
+
+#: kbookmarkcontextmenu.cpp:135
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Cancellation de Marcator de libro"
+
+#: kbookmarkcontextmenu.cpp:136
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Tu es secur que tu vole remover le dossier del marcator de libro\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:137
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Tu es secur que tu vole remover le marcator de libro\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:59
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Nomine:"
+
+#: kbookmarkdialog.cpp:64
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Location:"
+
+#: kbookmarkdialog.cpp:69
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Commento:"
+
+#: kbookmarkdialog.cpp:180
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Actualisa"
+
+#: kbookmarkdialog.cpp:181
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Proprietates de Marcator de Libro"
+
+#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250 kbookmarkdialog.cpp:284
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Nove dossier..."
+
+#: kbookmarkdialog.cpp:216 kbookmarkdialog.cpp:254
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Adde"
+
+#: kbookmarkdialog.cpp:217
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Adde marcator de libro"
+
+#: kbookmarkdialog.cpp:255
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Adde marcatores de libro"
+
+#: kbookmarkdialog.cpp:288
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Selige dossier"
+
+#: kbookmarkdialog.cpp:316
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nove dossier"
+
+#: kbookmarkdialog.cpp:351
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Crea nove dossier de marcator de libro"
+
+#: kbookmarkdialog.cpp:352
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Crea nove dossier de marcator de libro in %1"
+
+#: kbookmarkdialog.cpp:354
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nove dossier:"
+
+#: kbookmarkdialog.cpp:375
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Marcatores de libro"
+
+#: kbookmarkimporter_ns.cpp:104
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "Files HTML (*html)"
+
+#: kbookmarkimporter_ns.cpp:108
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML Files (*.html)"
+
+#: kbookmarkimporter_ns.cpp:124
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Il non pote trovar '%1. Probabilmente Netscape nones installate. On aborta "
+"le exportation."
+
+#: kbookmarkimporter_ns.cpp:126
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Il nontrovava Netscape"
+
+#: kbookmarkimporter_ns.cpp:147
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Iste file esseva generate per Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:150 kbookmarkimporter_ns.cpp:151
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Marcatores de libro"
+
+#: kbookmarkimporter_opera.cpp:110
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Files de marcator de libro de Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:113
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Files de marcator de Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:331
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+"Non pote lancear keditbookmarks.\n"
+"\n"
+"Plus probabilemente tu non ha actualmente installate keditbookmarks"
+
+#: kbookmarkmanager.cpp:480
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Incapace de  salveguardar marcatores de libro in %1. Le error reportate "
+"esseva: %2. Isto message de error essera monstrate solmente un vice. Le "
+"causa del error necessita de esser fixate le plus rapidemente possibile, que "
+"le plus probabilemente es un integre disco dur."
+
+#: kbookmarkmenu.cpp:287
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Aperi dossier in schedas"
+
+#: kbookmarkmenu.cpp:291
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Aperi omne marcatores de libro in iste dossier como un nove scheda"
+
+#: kbookmarkmenu.cpp:307
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Schedas de marcator de libros como dossier..."
+
+#: kbookmarkmenu.cpp:315
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Adde un dossier de marcator de libros pro omne schedas aperite"
+
+#: kbookmarkmenu.cpp:364
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Edita tu collection de marcator de libro in un fenestra separate"
+
+#: kbookmarkmenu.cpp:380
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Nove dossier de marcator de libro..."
+
+#: kbookmarkmenu.cpp:382
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Crea un nove dossier de marcator de libro in iste menu"
+
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:160
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Cela in barra de instrumento"
+
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:160
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Monstra in barra de instrumento "
+
+#: konqbookmarkmenu.cpp:154
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Aperi in nove fenestra"
+
+#: konqbookmarkmenu.cpp:155
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Aperi in nove scheda"
