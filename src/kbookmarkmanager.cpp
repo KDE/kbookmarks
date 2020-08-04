@@ -392,7 +392,9 @@ void KBookmarkManager::parse() const
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkManager::parse " << d->m_bookmarksFile;
     QFile file(d->m_bookmarksFile);
     if (!file.open(QIODevice::ReadOnly)) {
-        qCWarning(KBOOKMARKS_LOG) << "Can't open " << d->m_bookmarksFile;
+        qCWarning(KBOOKMARKS_LOG) << "Can't open" << d->m_bookmarksFile;
+        d->m_doc = QDomDocument(QStringLiteral("xbel"));
+        createXbelTopLevelElement(d->m_doc);
         return;
     }
     d->m_doc = QDomDocument(QStringLiteral("xbel"));
