@@ -13,6 +13,9 @@
 
 #include <kbookmark.h>
 
+/**
+ * A class for exporting bookmarks
+ */
 class KBOOKMARKS_EXPORT KBookmarkExporterBase
 {
 public:

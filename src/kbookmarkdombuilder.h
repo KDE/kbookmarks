@@ -12,6 +12,9 @@
 #include <QtCore/QObject>
 #include <kbookmark.h>
 
+/**
+ * A class used for constructing bookmark objects during import.
+ */
 class KBOOKMARKS_EXPORT KBookmarkDomBuilder : public QObject
 {
     Q_OBJECT

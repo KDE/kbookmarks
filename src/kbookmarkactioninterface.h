@@ -11,6 +11,9 @@
 
 #include "kbookmark.h"
 
+/**
+ * The interface to implement by actions and menus which represent a bookimark
+ */
 class KBOOKMARKS_EXPORT KBookmarkActionInterface
 {
 public:

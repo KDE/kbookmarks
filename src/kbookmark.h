@@ -19,6 +19,9 @@ class QMimeData;
 class KBookmarkManager;
 class KBookmarkGroup;
 
+/**
+ * A class representing a bookmark.
+ */
 class KBOOKMARKS_EXPORT KBookmark
 {
     friend class KBookmarkGroup;
@@ -422,6 +425,9 @@ private:
     // has to be implemented as an attribute of the QDomElement.
 };
 
+/**
+ * A class to traverse bookarm groups
+ */
 class KBOOKMARKS_EXPORT KBookmarkGroupTraverser
 {
 protected:

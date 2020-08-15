@@ -16,6 +16,9 @@
 class KBookmarkManager;
 class KBookmarkOwner;
 
+/**
+ * A context menu for a bookmark.
+ */
 class KBOOKMARKS_EXPORT KBookmarkContextMenu : public QMenu
 {
     Q_OBJECT
