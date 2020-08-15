@@ -13,6 +13,8 @@
 #include <kbookmark.h>
 
 /**
+ * @class KBookmarkDomBuilder kbookmarkdombuilder.h KBookmarkDomBuilder
+ *
  * A class used for constructing bookmark objects during import.
  */
 class KBOOKMARKS_EXPORT KBookmarkDomBuilder : public QObject

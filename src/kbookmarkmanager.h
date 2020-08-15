@@ -22,6 +22,8 @@ class QDBusMessage;
 class KBookmarkDialog;
 
 /**
+ * @class KBookmarkManager kbookmarkmanager.h KBookmarkManager
+ *
  * This class implements the reading/writing of bookmarks in XML.
  * The bookmarks file is read and written using the XBEL standard
  * (http://pyxml.sourceforge.net/topics/xbel/)

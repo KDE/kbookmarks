@@ -25,6 +25,8 @@ class KBookmarkActionInterface;
 class KBookmarkMenuPrivate; // Not implemented
 
 /**
+ * @class KBookmarkMenu kbookmarkmenu.h KBookmarkMenu
+ *
  * This class provides a bookmark menu.  It is typically used in
  * cooperation with KActionMenu but doesn't have to be.
  *

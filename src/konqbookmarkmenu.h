@@ -21,6 +21,8 @@ typedef KBookmarkOwner KonqBookmarkOwner; // KF5: KonqBookmarkOwner is deprecate
 
 #if KBOOKMARKS_ENABLE_DEPRECATED_SINCE(5, 65)
 /**
+ * @class KonqBookmarkMenu konqbookmarkmenu.h KonqBookmarkMenu
+ *
  * Bookmark menu with dynamic import features, only used by Konqueror
  * @deprecated since 5.65, this class has moved to Konqueror
  */

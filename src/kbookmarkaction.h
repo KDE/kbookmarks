@@ -16,6 +16,8 @@ class KBookmark;
 class KBookmarkOwner;
 
 /**
+ * @class KBookmarkAction kbookmarkaction.h KBookmarkAction
+ *
  * This class is a QAction for bookmarks.
  * It provides a nice constructor.
  * And on triggered uses the owner to open the bookmark.

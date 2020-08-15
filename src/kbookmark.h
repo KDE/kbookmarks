@@ -20,6 +20,8 @@ class KBookmarkManager;
 class KBookmarkGroup;
 
 /**
+ * @class KBookmark kbookmark.h KBookmark
+ *
  * A class representing a bookmark.
  */
 class KBOOKMARKS_EXPORT KBookmark

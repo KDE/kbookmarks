@@ -17,6 +17,8 @@ class KBookmarkManager;
 class KBookmarkOwner;
 
 /**
+ * @class KBookmarkContextMenu kbookmarkcontextmenu.h KBookmarkContextMenu
+ *
  * A context menu for a bookmark.
  */
 class KBOOKMARKS_EXPORT KBookmarkContextMenu : public QMenu
