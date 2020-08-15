@@ -8,8 +8,8 @@
 #ifndef __kbookmarkdombuilder_h
 #define __kbookmarkdombuilder_h
 
-#include <QtCore/QStack>
-#include <QtCore/QObject>
+#include <QStack>
+#include <QObject>
 #include <kbookmark.h>
 
 /**
