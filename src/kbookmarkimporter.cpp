@@ -10,7 +10,6 @@
 
 #include "kbookmarks_debug.h"
 #include <KCharsets>
-#include <QTextCodec>
 
 #include <qplatformdefs.h>
 #include <stddef.h>

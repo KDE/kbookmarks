@@ -9,7 +9,6 @@
 #ifndef __kbookmarkmenu_p_h__
 #define __kbookmarkmenu_p_h__
 
-#include <QObject>
 
 #include <QTreeWidget>
 

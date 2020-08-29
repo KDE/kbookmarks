@@ -11,7 +11,6 @@
 #include <QFileDialog>
 
 #include "kbookmarks_debug.h"
-#include <QTextCodec>
 #include <QApplication>
 #include <QRegularExpression>
 
