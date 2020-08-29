@@ -19,7 +19,6 @@ class KBookmarkManagerPrivate;
 class KBookmarkGroup;
 class QDBusMessage;
 
-class KBookmarkDialog;
 
 /**
  * @class KBookmarkManager kbookmarkmanager.h KBookmarkManager

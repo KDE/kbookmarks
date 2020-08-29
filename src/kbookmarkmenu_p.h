@@ -17,11 +17,8 @@
 #include "kbookmarkmanager.h"
 
 class QString;
-class QMenu;
 class KBookmark;
 class KBookmarkGroup;
-class KBookmarkOwner;
-class KBookmarkMenu;
 
 #define KEDITBOOKMARKS_BINARY "keditbookmarks"
 

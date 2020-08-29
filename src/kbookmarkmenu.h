@@ -20,7 +20,6 @@ class KActionCollection;
 class KBookmarkManager;
 class KBookmarkOwner;
 class KBookmarkMenu;
-class KBookmarkActionInterface;
 
 class KBookmarkMenuPrivate; // Not implemented
 
