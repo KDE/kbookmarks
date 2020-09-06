@@ -1,0 +1,397 @@
+# translation of kio4.po to Kazakh
+# translation of kio4.po to
+#
+# Sairan Kikkarin <sairan@computer.org>, 2005, 2006, 2007, 2008.
+# Mambet Izbasarov <izbasar@sci.kz>, 2005, 2010.
+# Sairan Kikkarin <sairan@computer.org>, 2010, 2011.
+# Sairan Kikkarin <sairan(at)computer.org>, 2010, 2012, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2013-04-19 06:26+0600\n"
+"Last-Translator: Sairan Kikkarin <sairan@computer.org>\n"
+"Language-Team: Kazakh <kde-i18n-doc@kde.org>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:305
+#, fuzzy
+#| msgid "--- separator ---"
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- бөлгіш ---"
+
+#: kbookmarkcontextmenu.cpp:50
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Осыны бетбелгілеу"
+
+#: kbookmarkcontextmenu.cpp:56
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Қапшықты бетбелгі редакторында ашу"
+
+#: kbookmarkcontextmenu.cpp:59
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Қапшықты өшіру"
+
+#: kbookmarkcontextmenu.cpp:64
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Қасиеттері"
+
+#: kbookmarkcontextmenu.cpp:69
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Сілтеме адресін көшіріп алу"
+
+#: kbookmarkcontextmenu.cpp:72
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Бетбелгіні өшіру"
+
+#: kbookmarkcontextmenu.cpp:78
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Қапшық қойындыларда ашылсын"
+
+#: kbookmarkcontextmenu.cpp:104
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Бос URL адресі бетбелгіленбейді."
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Бетбелгілер қапшығын өшіру"
+
+#: kbookmarkcontextmenu.cpp:135
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Бетбелгіні өшіру"
+
+#: kbookmarkcontextmenu.cpp:136
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"\"%1\"\n"
+"бетбелгі қапшығын өшіргіңіз келгені рас па?"
+
+#: kbookmarkcontextmenu.cpp:137
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"\"%1\"\n"
+"бетбелгсін өшіргіңіз келгені рас па\n"
+"?"
+
+#: kbookmarkdialog.cpp:59
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Атауы:"
+
+#: kbookmarkdialog.cpp:64
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Орналасуы:"
+
+#: kbookmarkdialog.cpp:69
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Түсініктеме"
+
+#: kbookmarkdialog.cpp:180
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Жаңарту"
+
+#: kbookmarkdialog.cpp:181
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Бетбелгінің қасиеттері"
+
+#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250 kbookmarkdialog.cpp:284
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Жаңа қапшық..."
+
+#: kbookmarkdialog.cpp:216 kbookmarkdialog.cpp:254
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Қосу"
+
+#: kbookmarkdialog.cpp:217
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Бетбелгіні қосу"
+
+#: kbookmarkdialog.cpp:255
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Бетбелгілерді қосу"
+
+#: kbookmarkdialog.cpp:288
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Қапшықты таңдау"
+
+#: kbookmarkdialog.cpp:316
+#, fuzzy
+#| msgctxt "folder name"
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Жаңа қапшық"
+
+#: kbookmarkdialog.cpp:351
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Жаңа бетбелгі қапшығын кұру"
+
+#: kbookmarkdialog.cpp:352
+#, fuzzy, qt-format
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "%1 дегенде жаңа бетбелгі қапшығын кұру"
+
+#: kbookmarkdialog.cpp:354
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Жаңа қапшық:"
+
+#: kbookmarkdialog.cpp:375
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Бетбелгілер"
+
+#: kbookmarkimporter_ns.cpp:104
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|HTML файлдары (*.html)"
+
+#: kbookmarkimporter_ns.cpp:108
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML файлдары (*.html)"
+
+#: kbookmarkimporter_ns.cpp:124
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:126
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:147
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Бұл файлды Konqueror құрған -->"
+
+#: kbookmarkimporter_ns.cpp:150 kbookmarkimporter_ns.cpp:151
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Бетбелгілер"
+
+#: kbookmarkimporter_opera.cpp:110
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera бетбелгі файлдары (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:113
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera бетбелгі файлдары (*.adr)"
+
+#: kbookmarkmanager.cpp:331
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+
+#: kbookmarkmanager.cpp:482
+#, fuzzy, qt-format
+#| msgid ""
+#| "Unable to save bookmarks in %1. Reported error was: %2. This error "
+#| "message will only be shown once. The cause of the error needs to be fixed "
+#| "as quickly as possible, which is most likely a full hard drive."
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"%1 дегенде бетбелгі сақталынбады. Қате хабарламасы: %2. Қате хабарламасы тек "
+"бір рет көрсетіледі. Қате себептерін тезірек жою қажет, қатқыл диск толып "
+"кеткені ықтимал."
+
+#: kbookmarkmenu.cpp:287
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Қапшық қойындыларда ашылсын"
+
+#: kbookmarkmenu.cpp:291
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Бұл қапшығындағы барлық бетбелгілерді жаңа қойындыларда ашу"
+
+#: kbookmarkmenu.cpp:307
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Қойындылары бір қапшыққа бетбелгілеу..."
+
+#: kbookmarkmenu.cpp:315
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Барлық ашық қойындылар үшін бетбелгі қапшықты жасау."
+
+#: kbookmarkmenu.cpp:364
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Бетбелгі жинағын жеке терезеде өңдеу"
+
+#: kbookmarkmenu.cpp:380
+#, fuzzy
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Жаңа бетбелгі қапшығы..."
+
+#: kbookmarkmenu.cpp:382
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Осы мәзірге жаңа бетбелгі қапшығын қосу"
+
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:160
+#, fuzzy
+#| msgid "Hide in toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Құралдар панелінде жасыру"
+
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:160
+#, fuzzy
+#| msgid "Show in toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Құралдар панелінде көрсету"
+
+#: konqbookmarkmenu.cpp:154
+#, fuzzy
+#| msgid "Open in New Window"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Жаңа терезеде ашылсын"
+
+#: konqbookmarkmenu.cpp:155
+#, fuzzy
+#| msgid "Open in New Tab"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Жаңа қойындысында ашылсын"
