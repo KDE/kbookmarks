@@ -31,20 +31,11 @@
 class KBookmarkMenuPrivate
 {
 public:
-    KBookmarkMenuPrivate()
-        : newBookmarkFolderAction(nullptr),
-          addBookmarkAction(nullptr),
-          bookmarksToFolderAction(nullptr),
-          editBookmarksAction(nullptr),
-          numberOfOpenTabs(2)
-    {
-    }
-
-    QAction *newBookmarkFolderAction;
-    QAction *addBookmarkAction;
-    QAction *bookmarksToFolderAction;
-    QAction *editBookmarksAction;
-    int numberOfOpenTabs;
+    QAction *newBookmarkFolderAction = nullptr;
+    QAction *addBookmarkAction = nullptr;
+    QAction *bookmarksToFolderAction = nullptr;
+    QAction *editBookmarksAction = nullptr;
+    int numberOfOpenTabs = 2;
 };
 
 #if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)

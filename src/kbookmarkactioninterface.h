@@ -23,7 +23,7 @@ public:
     virtual ~KBookmarkActionInterface();
     const KBookmark bookmark() const;
 private:
-    KBookmark bm;
+    const KBookmark bm;
 };
 
 #endif

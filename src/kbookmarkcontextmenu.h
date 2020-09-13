@@ -53,9 +53,9 @@ private Q_SLOTS:
     void slotAboutToShow();
 
 private:
-    KBookmark bm;
-    KBookmarkManager *m_pManager;
-    KBookmarkOwner *m_pOwner;
+    const KBookmark bm;
+    KBookmarkManager *const m_pManager;
+    KBookmarkOwner *const m_pOwner;
 };
 
 #endif

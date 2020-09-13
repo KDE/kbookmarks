@@ -44,7 +44,7 @@ protected:
     void parseIEBookmarks_dir(const QString &dirname, const QString &name = QString());
     void parseIEBookmarks_url_file(const QString &filename, const QString &name);
 
-    QString m_fileName;
+    const QString m_fileName;
 };
 
 void KIEBookmarkImporter::parseIEBookmarks_url_file(const QString &filename, const QString &name)

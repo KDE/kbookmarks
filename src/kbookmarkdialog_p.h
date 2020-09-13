@@ -34,18 +34,18 @@ public:
     KBookmarkGroup parentBookmark();
     void fillGroup(QTreeWidgetItem *parentItem, const KBookmarkGroup &group, const KBookmarkGroup &selectGroup = KBookmarkGroup());
 
-    KBookmarkDialog *q;
+    KBookmarkDialog *const q;
     BookmarkDialogMode mode;
-    QDialogButtonBox *buttonBox;
-    QLineEdit *url;
-    QLineEdit *title;
-    QLineEdit *comment;
-    QLabel *titleLabel;
-    QLabel *urlLabel;
+    QDialogButtonBox *buttonBox = nullptr;
+    QLineEdit *url = nullptr;
+    QLineEdit *title = nullptr;
+    QLineEdit *comment = nullptr;
+    QLabel *titleLabel = nullptr;
+    QLabel *urlLabel = nullptr;
     QLabel *commentLabel;
     QString icon;
-    QTreeWidget *folderTree;
-    KBookmarkManager *mgr;
+    QTreeWidget *folderTree = nullptr;
+    KBookmarkManager *mgr = nullptr;
     KBookmark bm;
     QList<KBookmarkOwner::FutureBookmark> list;
     bool layout;

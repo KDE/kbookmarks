@@ -36,7 +36,7 @@ private Q_SLOTS:
     void slotTriggered();
 
 private:
-    KBookmarkOwner *m_pOwner;
+    KBookmarkOwner *const m_pOwner;
 };
 
 #endif
