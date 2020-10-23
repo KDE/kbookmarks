@@ -9,8 +9,6 @@
 */
 
 #include "kbookmarkimporter_ns.h"
-#include "kbookmarkimporter.h"
-#include "kbookmarkexporter.h"
 #include "kbookmarkmanager.h"
 #include <QFileDialog>
 #include <QMessageBox>

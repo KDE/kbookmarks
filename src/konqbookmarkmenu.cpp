@@ -7,9 +7,7 @@
 */
 
 #include "konqbookmarkmenu.h"
-#include "kbookmarkowner.h"
 #include "kbookmarkaction.h"
-#include "kbookmarkcontextmenu.h"
 
 #include "kbookmarks_debug.h"
 #include <QMenu>

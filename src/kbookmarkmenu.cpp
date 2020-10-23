@@ -22,7 +22,6 @@
 
 #include <QApplication>
 #include <QMenu>
-#include <QObject>
 #include <QStandardPaths>
 
 /********************************************************************/
