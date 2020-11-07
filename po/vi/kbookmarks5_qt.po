@@ -1,0 +1,295 @@
+# Vietnamese translation for KIO.
+# Copyright © 2007 KDE i18n Project for Vietnamese.
+#
+# Clytie Siddall <clytie@riverland.net.au>, 2006-2007.
+# Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>, 2007.
+# Lê Hoàng Phương <herophuong93@gmail.com>, 2012, 2013.
+# Phu Hung Nguyen <phuhnguyen@disroot.org>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2020-10-04 22:51+0200\n"
+"Last-Translator: Phu Hung Nguyen <phuhnguyen@disroot.org>\n"
+"Language-Team: Vietnamese <kde-l10n-vi@kde.org>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 19.12.2\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:305
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- phần phân cách ---"
+
+#: kbookmarkcontextmenu.cpp:50
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Thêm dấu nhớ ở đây"
+
+#: kbookmarkcontextmenu.cpp:56
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Mở thư mục trong trình sửa dấu nhớ"
+
+#: kbookmarkcontextmenu.cpp:59
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Xoá thư mục"
+
+#: kbookmarkcontextmenu.cpp:64
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Thuộc tính"
+
+#: kbookmarkcontextmenu.cpp:69
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Chép địa chỉ liên kết"
+
+#: kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Xoá dấu nhớ"
+
+#: kbookmarkcontextmenu.cpp:78
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Mở thư mục trong các thẻ"
+
+#: kbookmarkcontextmenu.cpp:104
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Không thể thêm dấu nhớ với URL trống."
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Xoá thư mục dấu nhớ"
+
+#: kbookmarkcontextmenu.cpp:135
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Xoá dấu nhớ"
+
+#: kbookmarkcontextmenu.cpp:136
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Bạn có chắc chắn muốn xoá thư mục dấu nhớ\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:137
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Bạn có chắc chắn muốn xoá dấu nhớ\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:59
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Tên:"
+
+#: kbookmarkdialog.cpp:64
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Địa điểm:"
+
+#: kbookmarkdialog.cpp:69
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Chú thích:"
+
+#: kbookmarkdialog.cpp:180
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Cập nhật"
+
+#: kbookmarkdialog.cpp:181
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Thuộc tính của dấu nhớ"
+
+#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250 kbookmarkdialog.cpp:284
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "Thư mục &mới..."
+
+#: kbookmarkdialog.cpp:216 kbookmarkdialog.cpp:254
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Thêm"
+
+#: kbookmarkdialog.cpp:217
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Thêm dấu nhớ"
+
+#: kbookmarkdialog.cpp:255
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Thêm dấu nhớ"
+
+#: kbookmarkdialog.cpp:288
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Chọn thư mục"
+
+#: kbookmarkdialog.cpp:316
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Thư mục mới"
+
+#: kbookmarkdialog.cpp:351
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Tạo thư mục dấu nhớ mới"
+
+#: kbookmarkdialog.cpp:352
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Tạo thư mục dấu nhớ mới trong %1"
+
+#: kbookmarkdialog.cpp:354
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Thư mục mới:"
+
+#: kbookmarkdialog.cpp:375
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Dấu nhớ"
+
+#: kbookmarkimporter_ns.cpp:102
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "Tệp HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:106
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|Tệp HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:122
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Không tìm được %1. Netscape có khả năng chưa được cài đặt. Đang huỷ bỏ việc "
+"xuất."
+
+#: kbookmarkimporter_ns.cpp:124
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Không tìm thấy Netscape"
+
+#: kbookmarkimporter_ns.cpp:145
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Tệp này được tạo bởi Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:148 kbookmarkimporter_ns.cpp:149
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Dấu nhớ"
+
+#: kbookmarkimporter_opera.cpp:110
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Tệp dấu nhớ Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:113
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Tệp dấu nhớ Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:331
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+"Không thể khởi chạy keditbookmarks.\n"
+"\n"
+"Khả năng lớn nhất là keditbookmarks đang không được cài đặt"
+
+#: kbookmarkmanager.cpp:482
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Không thể lưu dấu nhớ trong %1. Lỗi được báo là: %2. Thông điệp lỗi này sẽ "
+"chỉ được hiển thị một lần. Nguyên nhân của lỗi này cần được sửa càng nhanh "
+"càng tốt, mà có khả năng lớn nhất là vì ổ cứng đầy."
+
+#: kbookmarkmenu.cpp:277
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Mở thư mục trong các thẻ"
+
+#: kbookmarkmenu.cpp:281
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Mở tất cả dấu nhớ trong thư mục này thành một thẻ mới"
+
+#: kbookmarkmenu.cpp:297
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Lưu dấu các thẻ thành thư mục..."
+
+#: kbookmarkmenu.cpp:305
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Thêm một thư mục các dấu nhớ cho tất cả các thẻ đang mở"
+
+#: kbookmarkmenu.cpp:354
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Sửa bộ dấu nhớ của bạn trong một cửa sổ tách biệt"
+
+#: kbookmarkmenu.cpp:370
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Thư mục dấu nhớ mới..."
+
+#: kbookmarkmenu.cpp:372
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Tạo một thư mục dấu nhớ mới trong trình đơn này"
+
+#: konqbookmarkmenu.cpp:145 konqbookmarkmenu.cpp:158
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Ẩn khỏi thanh công cụ"
+
+#: konqbookmarkmenu.cpp:145 konqbookmarkmenu.cpp:158
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Hiện ở thanh công cụ"
+
+#: konqbookmarkmenu.cpp:152
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Mở trong cửa sổ mới"
+
+#: konqbookmarkmenu.cpp:153
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Mở trong thẻ mới"
