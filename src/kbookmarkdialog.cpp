@@ -37,7 +37,7 @@ KBookmarkDialogPrivate::~KBookmarkDialogPrivate()
 
 void KBookmarkDialogPrivate::initLayout()
 {
-    QBoxLayout *vbox = new QVBoxLayout;
+    QBoxLayout *vbox = new QVBoxLayout(q);
 
     QFormLayout *form = new QFormLayout();
     vbox->addLayout(form);
@@ -48,8 +48,6 @@ void KBookmarkDialogPrivate::initLayout()
 
     vbox->addWidget(folderTree);
     vbox->addWidget(buttonBox);
-
-    q->setLayout(vbox);
 }
 
 void KBookmarkDialogPrivate::initLayoutPrivate()
