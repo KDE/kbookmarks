@@ -1,0 +1,304 @@
+# translation of kio4.po to Slovenian
+# Translation of kio4.po to Slovenian
+# KDELIBS translation to Slovenian language
+# Copyright (C) 2002,2003, 2004, 2005, 2006 Free Software Foundation, Inc.
+# $Id: kio4.po 685124 2007-07-08 04:32:01Z scripty $
+# $Source$
+#
+# Roman Maurer <roman.maurer@amis.net>, 2002.
+# Gregor Rakar <gregor.rakar@kiss.uni-lj.si>, 2002,2003.
+# Gregor Rakar <gregor.rakar@kiss.si>, 2003, 2004, 2005.
+# Andrej Vernekar <andrej.vernekar@gmail.com>, 2005, 2007, 2008, 2009.
+# Jure Repinc <jlp@holodeck1.com>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# Andrej Vernekar <andrej.vernekar@gmail.com>, 2008, 2012.
+# Andrej Mernik <andrejm@ubuntu.si>, 2013, 2014, 2017.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2020-05-19 08:50+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100>=3 && n"
+"%100<=4 ? 2 : 3);\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:305
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- ločilnik ---"
+
+#: kbookmarkcontextmenu.cpp:50
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Tukaj dodaj zaznamek"
+
+#: kbookmarkcontextmenu.cpp:56
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Odpri mapo v urejevalniku zaznamkov"
+
+#: kbookmarkcontextmenu.cpp:59
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Izbriši mapo"
+
+#: kbookmarkcontextmenu.cpp:64
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Lastnosti"
+
+#: kbookmarkcontextmenu.cpp:69
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Kopiraj naslov povezave"
+
+#: kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Izbriši zaznamek"
+
+#: kbookmarkcontextmenu.cpp:78
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Odpri mapo v zavihkih"
+
+#: kbookmarkcontextmenu.cpp:104
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Ni mogoče dodati zaznamka s praznim naslovom."
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Brisanje mape z zaznamki"
+
+#: kbookmarkcontextmenu.cpp:135
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Brisanje zaznamka"
+
+#: kbookmarkcontextmenu.cpp:136
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti mapo z zaznamki\n"
+"»%1«?"
+
+#: kbookmarkcontextmenu.cpp:137
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Ali ste prepričani, da želite odstraniti zaznamek\n"
+"»%1«?"
+
+#: kbookmarkdialog.cpp:57
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Ime:"
+
+#: kbookmarkdialog.cpp:62
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Mesto:"
+
+#: kbookmarkdialog.cpp:67
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Opomba:"
+
+#: kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Posodobi"
+
+#: kbookmarkdialog.cpp:179
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Lastnosti zaznamka"
+
+#: kbookmarkdialog.cpp:210 kbookmarkdialog.cpp:248 kbookmarkdialog.cpp:282
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Nova mapa ..."
+
+#: kbookmarkdialog.cpp:214 kbookmarkdialog.cpp:252
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Dodaj"
+
+#: kbookmarkdialog.cpp:215
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Dodaj zaznamek"
+
+#: kbookmarkdialog.cpp:253
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Dodaj zaznamke"
+
+#: kbookmarkdialog.cpp:286
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Izberite mapo"
+
+#: kbookmarkdialog.cpp:314
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nova mapa"
+
+#: kbookmarkdialog.cpp:349
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Ustvari novo mapo z zaznamki"
+
+#: kbookmarkdialog.cpp:350
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Ustvari novo mapo z zaznamki v %1"
+
+#: kbookmarkdialog.cpp:352
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nova mapa:"
+
+#: kbookmarkdialog.cpp:373
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Zaznamki"
+
+#: kbookmarkimporter_ns.cpp:102
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "Datoteke HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:106
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|Datoteke HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:122
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Ni bilo mogoče najti %1. Netscape najbrž ni nameščen, zato se izvoz prekinja."
+
+#: kbookmarkimporter_ns.cpp:124
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Netscape ni bil najden"
+
+#: kbookmarkimporter_ns.cpp:145
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- To datoteko je ustvaril Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:148 kbookmarkimporter_ns.cpp:149
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Zaznamki"
+
+#: kbookmarkimporter_opera.cpp:110
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Datoteke z zaznamki Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:113
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Datoteke z zaznamki Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:331
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+"Ni mogoče zagnati programa keditbookmarks.\n"
+"\n"
+"Najbrž trenutno ni nameščen"
+
+#: kbookmarkmanager.cpp:482
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Ni mogoče shraniti zaznamka v %1. Sporočena napaka je: %2. To sporočilo "
+"napake bo prikazano samo enkrat. Vzrok napake je potrebno hitro popraviti, "
+"ta vzrok pa je verjetno poln trdi disk."
+
+#: kbookmarkmenu.cpp:277
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Odpri mapo v zavihkih"
+
+#: kbookmarkmenu.cpp:281
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Odpri vse zaznamke v tej mapi kot novi zavihek"
+
+#: kbookmarkmenu.cpp:297
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Zaznamuj zavihke kot mapo..."
+
+#: kbookmarkmenu.cpp:305
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Dodaj mapo z zaznamki za vse odprte zavihke"
+
+#: kbookmarkmenu.cpp:354
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Uredite vašo zbirko zaznamkov v ločenem oknu"
+
+#: kbookmarkmenu.cpp:370
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Nova mapa z zaznamki..."
+
+#: kbookmarkmenu.cpp:372
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Ustvari novo mapo z zaznamki v tem meniju"
+
+#: konqbookmarkmenu.cpp:145 konqbookmarkmenu.cpp:158
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Skrij v orodni vrstici"
+
+#: konqbookmarkmenu.cpp:145 konqbookmarkmenu.cpp:158
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Pokaži v orodni vrstici"
+
+#: konqbookmarkmenu.cpp:152
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Odpri v novem oknu"
+
+#: konqbookmarkmenu.cpp:153
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Odpri v novem zavihku"
