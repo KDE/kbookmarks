@@ -1,0 +1,370 @@
+# translation of kio4.po to Cymraeg
+# Translation of kdelibs.po to Cymraeg
+# Translation of clearfuzzytest.po to Cymraeg
+# translation of clearfuzzytest.po to Cymraeg
+# translation of clearfuzzy.po to Cymraeg
+# KDE yn Gymraeg.
+# Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+# www.kyfieithu.co.uk <kyfieithu@dotmon.com>, 2003.
+# Kgyfieithu <kyfieithu@dotmon.com>, 2003.
+# KGyfieithu <kyfieithu@dotmon.com>, 2003.
+# KD at KGyfieithu <kyfieithu@dotmon.com>, 2003, 2004.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2004-01-16 09:20+0000\n"
+"Last-Translator: KD at KGyfieithu <kyfieithu@dotmon.com>\n"
+"Language-Team: Cymraeg <cy@li.org>\n"
+"Language: cy\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:305
+#, fuzzy
+#| msgid "--- separator ---"
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- gwahanydd ---"
+
+#: kbookmarkcontextmenu.cpp:50
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Ychwanegu Tudnod Yma"
+
+#: kbookmarkcontextmenu.cpp:56
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Agor y Blygell yn y Golygydd Tudnodau"
+
+#: kbookmarkcontextmenu.cpp:59
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Dileu Plygell"
+
+#: kbookmarkcontextmenu.cpp:64
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Priodweddau i %1"
+
+#: kbookmarkcontextmenu.cpp:69
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Copïo Cyfeiriad Cyswllt"
+
+#: kbookmarkcontextmenu.cpp:72
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Dileu y Tudnod"
+
+#: kbookmarkcontextmenu.cpp:78
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Agor y Blygell yn y Golygydd Tudnodau"
+
+#: kbookmarkcontextmenu.cpp:104
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Methu ychwanegu tudnod efo URL gwag"
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Gwaredu Plygell Tudnodau"
+
+#: kbookmarkcontextmenu.cpp:135
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Dewis y Baner"
+
+#: kbookmarkcontextmenu.cpp:136
+#, fuzzy, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr "Ydych wir eisiau gwaredu'r plygell tudnodau yma?"
+
+#: kbookmarkcontextmenu.cpp:137
+#, fuzzy, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr "Ydych wir eisiau gwaredu'r tudnod yma?"
+
+#: kbookmarkdialog.cpp:57
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Enw:"
+
+#: kbookmarkdialog.cpp:62
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Lleoliad:"
+
+#: kbookmarkdialog.cpp:67
+#, fuzzy
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Esboniad:"
+
+#: kbookmarkdialog.cpp:178
+#, fuzzy
+#| msgid "Date"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Dyddiad"
+
+#: kbookmarkdialog.cpp:179
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Priodweddau"
+
+#: kbookmarkdialog.cpp:210 kbookmarkdialog.cpp:248 kbookmarkdialog.cpp:282
+#, fuzzy
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Plygell Newydd"
+
+#: kbookmarkdialog.cpp:214 kbookmarkdialog.cpp:252
+#, fuzzy
+#| msgid "&Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "&Ychwanegu"
+
+#: kbookmarkdialog.cpp:215
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Ychwanegu Tudnod"
+
+#: kbookmarkdialog.cpp:253
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Ychwanegu Tudnod"
+
+#: kbookmarkdialog.cpp:286
+#, fuzzy
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Dewis Plygell"
+
+#: kbookmarkdialog.cpp:314
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Plygell Newydd"
+
+#: kbookmarkdialog.cpp:349
+#, fuzzy
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Creu Plygell Newydd i Dudnodau"
+
+#: kbookmarkdialog.cpp:350
+#, fuzzy, qt-format
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Creu Plygell Newydd i Dudnodau yn %1"
+
+#: kbookmarkdialog.cpp:352
+#, fuzzy
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Plygell newydd:"
+
+#: kbookmarkdialog.cpp:373
+#, fuzzy
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Tudnod"
+
+#: kbookmarkimporter_ns.cpp:102
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "Ffeiliau *.html|HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:106
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "Ffeiliau *.html|HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:122
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:124
+#, fuzzy
+#| msgid "Netscape Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Tudnodau Netscape"
+
+#: kbookmarkimporter_ns.cpp:145
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Creuwyd y ffeil yma gan Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:148 kbookmarkimporter_ns.cpp:149
+#, fuzzy
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Tudnod"
+
+#: kbookmarkimporter_opera.cpp:110
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Ffeiliau Tudnodau Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:113
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Ffeiliau Tudnodau Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:331
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+
+#: kbookmarkmanager.cpp:482
+#, fuzzy, qt-format
+#| msgid ""
+#| "Unable to save bookmarks in %1. Reported error was: %2. This error "
+#| "message will only be shown once. The cause of the error needs to be fixed "
+#| "as quickly as possible, which is most likely a full hard drive."
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Methwyd cadw'r tudnodau yn %1.  Y gwall a hysbyswyd oedd: %2.  Bydd y neges "
+"gwall yma yn cael ei ddangos dim ond unwaith.  Trwsiwch yr achos posibl o'r "
+"gwall mor gyflym ac syn'n bosibl.  Yr achos mwyaf debygol yw disg caled "
+"llawn."
+
+#: kbookmarkmenu.cpp:277
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Agor y Blygell yn y Golygydd Tudnodau"
+
+#: kbookmarkmenu.cpp:281
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr ""
+
+#: kbookmarkmenu.cpp:297
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Creu Plygell allan o'r Tabiau Tudnodau..."
+
+#: kbookmarkmenu.cpp:305
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Ychwanegu plygell o dudnodau am bob tab sy'n agored."
+
+#: kbookmarkmenu.cpp:354
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Golygu eich casgliad tudnodau mewn ffenest gwahanol"
+
+#: kbookmarkmenu.cpp:370
+#, fuzzy
+#| msgid "&New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "&Plygell Newydd i Tudnodau..."
+
+#: kbookmarkmenu.cpp:372
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Creu plygell newydd i dudnodau yn y ddewislen yma"
+
+#: konqbookmarkmenu.cpp:145 konqbookmarkmenu.cpp:158
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Nodau tudalen"
+
+#: konqbookmarkmenu.cpp:145 konqbookmarkmenu.cpp:158
+#, fuzzy
+#| msgid "Show toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Dangos bar offer"
+
+#: konqbookmarkmenu.cpp:152
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Agor y Blygell yn y Golygydd Tudnodau"
+
+#: konqbookmarkmenu.cpp:153
+#, fuzzy
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Agor y Blygell yn y Golygydd Tudnodau"
