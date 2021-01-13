@@ -11,6 +11,7 @@
 #include <QString>
 #include <QObject>
 #include <QDomDocument>
+#include <memory>
 class KBookmarkManagerPrivate;
 
 #include "kbookmark.h"
@@ -326,7 +327,8 @@ private:
 
     void startKEditBookmarks(const QStringList &args);
 
-    KBookmarkManagerPrivate *const d;
+private:
+    std::unique_ptr<KBookmarkManagerPrivate> const d;
 
     friend class KBookmarkGroup;
 };

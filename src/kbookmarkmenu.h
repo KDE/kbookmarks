@@ -12,6 +12,7 @@
 #include <kbookmarks_export.h>
 
 #include <QObject>
+#include <memory>
 
 class QAction;
 class QMenu;
@@ -21,7 +22,7 @@ class KBookmarkManager;
 class KBookmarkOwner;
 class KBookmarkMenu;
 
-class KBookmarkMenuPrivate; // Not implemented
+class KBookmarkMenuPrivate;
 
 /**
  * @class KBookmarkMenu kbookmarkmenu.h KBookmarkMenu
@@ -256,8 +257,10 @@ private Q_SLOTS:
 private:
     void init();
 
-    KBookmarkMenuPrivate *d;
+private:
+    std::unique_ptr<KBookmarkMenuPrivate> const d;
 
+    // TODO KF6:: move into KBookmarkMenuPrivate
     bool m_bIsRoot;
     bool m_bDirty;
     KBookmarkManager *m_pManager;

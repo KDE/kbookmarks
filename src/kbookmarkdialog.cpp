@@ -337,10 +337,7 @@ KBookmarkDialog::KBookmarkDialog(KBookmarkManager *mgr, QWidget *parent)
     d->mgr = mgr;
 }
 
-KBookmarkDialog::~KBookmarkDialog()
-{
-    delete d;
-}
+KBookmarkDialog::~KBookmarkDialog() = default;
 
 void KBookmarkDialog::newFolderButton()
 {

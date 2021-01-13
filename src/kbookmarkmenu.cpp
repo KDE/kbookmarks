@@ -133,7 +133,6 @@ KBookmarkMenu::~KBookmarkMenu()
 {
     qDeleteAll(m_lstSubMenus);
     qDeleteAll(m_actions);
-    delete d;
 }
 
 void KBookmarkMenu::ensureUpToDate()

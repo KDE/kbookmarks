@@ -10,6 +10,7 @@
 #include "kbookmark.h"
 #include "kbookmarkowner.h"
 #include <QDialog>
+#include <memory>
 
 class KBookmarkManager;
 class KBookmarkDialogPrivate;
@@ -65,7 +66,7 @@ protected Q_SLOTS:
     void newFolderButton();
 
 private:
-    KBookmarkDialogPrivate *const d;
+    std::unique_ptr<KBookmarkDialogPrivate> const d;
     friend class KBookmarkDialogPrivate;
 };
 

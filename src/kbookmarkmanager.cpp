@@ -357,8 +357,6 @@ KBookmarkManager::~KBookmarkManager()
     if (!s_pSelf.isDestroyed()) {
         s_pSelf()->removeAll(this);
     }
-
-    delete d;
 }
 
 bool KBookmarkManager::autoErrorHandlingEnabled() const
