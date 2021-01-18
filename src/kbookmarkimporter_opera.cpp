@@ -61,9 +61,9 @@ void KOperaBookmarkImporter::parseOperaBookmarks()
             if (type.isNull()) {
                 continue;
             } else if (type == QLatin1String("URL")) {
-                emit newBookmark(name, url, QLatin1String(""));
+                Q_EMIT newBookmark(name, url, QLatin1String(""));
             } else if (type == QLatin1String("FOLDER")) {
-                emit newFolder(name, false, QLatin1String(""));
+                Q_EMIT newFolder(name, false, QLatin1String(""));
             }
 
             type.clear();
@@ -71,7 +71,7 @@ void KOperaBookmarkImporter::parseOperaBookmarks()
             url.clear();
         } else if (line == QLatin1String("-")) {
             // end of folder
-            emit endFolder();
+            Q_EMIT endFolder();
         } else {
             // data block line
             QString tag;

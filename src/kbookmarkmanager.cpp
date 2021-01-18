@@ -336,7 +336,7 @@ void KBookmarkManager::startKEditBookmarks(const QStringList &args)
         }
 
         qCWarning(KBOOKMARKS_LOG) << QStringLiteral("Failed to start keditbookmarks");
-        emit this->error(err);
+        Q_EMIT this->error(err);
     }
 }
 
@@ -348,7 +348,7 @@ void KBookmarkManager::slotFileChanged(const QString &path)
         parse();
         // Tell our GUI
         // (emit where group is "" to directly mark the root menu as dirty)
-        emit changed(QLatin1String(""), QString());
+        Q_EMIT changed(QLatin1String(""), QString());
     }
 }
 
@@ -487,7 +487,7 @@ bool KBookmarkManager::saveAs(const QString &filename, bool toolbarCache) const
         }
 
         qCCritical(KBOOKMARKS_LOG) << QStringLiteral("Unable to save bookmarks in %1. File reported the following error-code: %2.").arg(filename).arg(file.error());
-        emit const_cast<KBookmarkManager *>(this)->error(err);
+        Q_EMIT const_cast<KBookmarkManager *>(this)->error(err);
     }
     hadSaveError = true;
     return false;
@@ -585,7 +585,7 @@ void KBookmarkManager::emitChanged(const KBookmarkGroup &group)
     // Tell the other processes too
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkManager::emitChanged : broadcasting change " << group.address();
 
-    emit bookmarksChanged(group.address());
+    Q_EMIT bookmarksChanged(group.address());
 
     // We do get our own broadcast, so no need for this anymore
     //emit changed( group );
@@ -593,7 +593,7 @@ void KBookmarkManager::emitChanged(const KBookmarkGroup &group)
 
 void KBookmarkManager::emitConfigChanged()
 {
-    emit bookmarkConfigChanged();
+    Q_EMIT bookmarkConfigChanged();
 }
 
 void KBookmarkManager::notifyCompleteChange(const QString &caller)   // DBUS call
@@ -608,7 +608,7 @@ void KBookmarkManager::notifyCompleteChange(const QString &caller)   // DBUS cal
     parse();
     // Tell our GUI
     // (emit where group is "" to directly mark the root menu as dirty)
-    emit changed(QLatin1String(""), caller);
+    Q_EMIT changed(QLatin1String(""), caller);
 }
 
 void KBookmarkManager::notifyConfigChanged() // DBUS call
@@ -616,7 +616,7 @@ void KBookmarkManager::notifyConfigChanged() // DBUS call
     // qCDebug(KBOOKMARKS_LOG) << "reloaded bookmark config!";
     KBookmarkSettings::self()->readSettings();
     parse(); // reload, and thusly recreate the menus
-    emit configChanged();
+    Q_EMIT configChanged();
 }
 
 #ifndef KBOOKMARKS_NO_DBUS
@@ -636,7 +636,7 @@ void KBookmarkManager::notifyChanged(const QString &groupAddress, const QDBusMes
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkManager::notifyChanged " << groupAddress;
     //KBookmarkGroup group = findByAddress( groupAddress ).toGroup();
     //Q_ASSERT(!group.isNull());
-    emit changed(groupAddress, QString());
+    Q_EMIT changed(groupAddress, QString());
 }
 #endif
 

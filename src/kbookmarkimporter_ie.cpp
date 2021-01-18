@@ -66,7 +66,7 @@ void KIEBookmarkImporter::parseIEBookmarks_url_file(const QString &filename, con
             QRegularExpression rx(QStringLiteral("URL=(.*)"));
             auto match = rx.match(t);
             if (match.hasMatch()) {
-                emit newBookmark(name, match.captured(1), QLatin1String(""));
+                Q_EMIT newBookmark(name, match.captured(1), QLatin1String(""));
             }
         }
 
@@ -88,7 +88,7 @@ void KIEBookmarkImporter::parseIEBookmarks_dir(const QString &dirname, const QSt
     }
 
     if (dirname != m_fileName) {
-        emit newFolder(foldername, false, QLatin1String(""));
+        Q_EMIT newFolder(foldername, false, QLatin1String(""));
     }
 
     for (const QFileInfo &fi : list) {
@@ -110,7 +110,7 @@ void KIEBookmarkImporter::parseIEBookmarks_dir(const QString &dirname, const QSt
     }
 
     if (dirname != m_fileName) {
-        emit endFolder();
+        Q_EMIT endFolder();
     }
 }
 

@@ -44,7 +44,7 @@ void KNSBookmarkImporterImpl::parse()
             QByteArray t = s.trimmed();
 
             if (t.left(4).toUpper() == "<HR>") {
-                emit newSeparator();
+                Q_EMIT newSeparator();
                 t = t.mid(4).trimmed();
                 if (t.isEmpty()) {
                     continue;
@@ -65,7 +65,7 @@ void KNSBookmarkImporterImpl::parse()
                     QByteArray name = t.mid(endTag + 1, closeTag - endTag - 1);
                     QString qname = KCharsets::resolveEntities(codec->toUnicode(name));
 
-                    emit newBookmark(qname,
+                    Q_EMIT newBookmark(qname,
                                      codec->toUnicode(link),
                                      QString());
                 }
@@ -80,11 +80,11 @@ void KNSBookmarkImporterImpl::parse()
                     additionalInfo.remove(0, 7);
                 }
 
-                emit newFolder(qname,
+                Q_EMIT newFolder(qname,
                                !folded,
                                QString());
             } else if (t.left(8).toUpper() == "</DL><P>") {
-                emit endFolder();
+                Q_EMIT endFolder();
             }
         }
 

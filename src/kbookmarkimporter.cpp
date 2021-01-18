@@ -36,22 +36,22 @@ void KXBELBookmarkImporterImpl::visit(const KBookmark &bk)
 {
     // qCDebug(KBOOKMARKS_LOG) << "KXBELBookmarkImporterImpl::visit";
     if (bk.isSeparator()) {
-        emit newSeparator();
+        Q_EMIT newSeparator();
     } else {
-        emit newBookmark(bk.fullText(), bk.url().toString(), QLatin1String(""));
+        Q_EMIT newBookmark(bk.fullText(), bk.url().toString(), QLatin1String(""));
     }
 }
 
 void KXBELBookmarkImporterImpl::visitEnter(const KBookmarkGroup &grp)
 {
     // qCDebug(KBOOKMARKS_LOG) << "KXBELBookmarkImporterImpl::visitEnter";
-    emit newFolder(grp.fullText(), false, QLatin1String(""));
+    Q_EMIT newFolder(grp.fullText(), false, QLatin1String(""));
 }
 
 void KXBELBookmarkImporterImpl::visitLeave(const KBookmarkGroup &)
 {
     // qCDebug(KBOOKMARKS_LOG) << "KXBELBookmarkImporterImpl::visitLeave";
-    emit endFolder();
+    Q_EMIT endFolder();
 }
 
 void KBookmarkImporterBase::setupSignalForwards(QObject *src, QObject *dst)
