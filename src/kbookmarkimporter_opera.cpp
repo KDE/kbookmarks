@@ -48,8 +48,6 @@ void KOperaBookmarkImporter::parseOperaBookmarks()
                     if (pos < 1) {
                         continue;
                     }
-                    const QString key = ba.left(pos).trimmed().toLower();
-                    const QString value = ba.mid(pos + 1).trimmed();
                 }
             }
             continue;
