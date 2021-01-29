@@ -36,7 +36,7 @@ add_library(KF5::Bookmarks ALIAS KF5Bookmarks)
 ecm_generate_export_header(KF5Bookmarks
     BASE_NAME KBookmarks
     GROUP_BASE_NAME KF
-    VERSION ${KF5_VERSION}
+    VERSION ${KF_VERSION}
     DEPRECATED_BASE_VERSION 0
     DEPRECATION_VERSIONS 5.0 5.65 5.69
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
@@ -108,7 +108,7 @@ if(BUILD_QCH)
         KF5Bookmarks_QCH
         NAME KBookmarks
         BASE_NAME KF5Bookmarks
-        VERSION ${KF5_VERSION}
+        VERSION ${KF_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
             ${KBookmarks_HEADERS}
