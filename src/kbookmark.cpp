@@ -9,24 +9,38 @@
 */
 
 #include "kbookmark.h"
-#include <QStack>
-#include <QCoreApplication>
-#include <QMimeDatabase>
 #include "kbookmarks_debug.h"
 #include <KStringHandler>
-#include <kurlmimedata.h>
+#include <QCoreApplication>
+#include <QMimeDatabase>
+#include <QStack>
 #include <kbookmarkmanager.h>
+#include <kurlmimedata.h>
 
 #include <QDateTime>
 #include <QMimeData>
 
-namespace {
-namespace Strings {
-QString metaDataKDEOwner() { return QStringLiteral("http://www.kde.org"); }
-QString metaDataFreedesktopOwner() { return QStringLiteral("http://freedesktop.org"); }
-QString metaDataMimeOwner() { return QStringLiteral("http://www.freedesktop.org/standards/shared-mime-info"); }
+namespace
+{
+namespace Strings
+{
+QString metaDataKDEOwner()
+{
+    return QStringLiteral("http://www.kde.org");
+}
+QString metaDataFreedesktopOwner()
+{
+    return QStringLiteral("http://freedesktop.org");
+}
+QString metaDataMimeOwner()
+{
+    return QStringLiteral("http://www.freedesktop.org/standards/shared-mime-info");
+}
 
-QString xbelMimeType() { return QStringLiteral("application/x-xbel"); }
+QString xbelMimeType()
+{
+    return QStringLiteral("application/x-xbel");
+}
 }
 }
 
@@ -133,8 +147,7 @@ QDomElement KBookmarkGroup::nextKnownTag(const QDomElement &start, bool goNext) 
 {
     for (QDomElement elem = start; !elem.isNull();) {
         QString tag = elem.tagName();
-        if (tag == QLatin1String("folder") || tag == QLatin1String("bookmark")
-                || tag == QLatin1String("separator")) {
+        if (tag == QLatin1String("folder") || tag == QLatin1String("bookmark") || tag == QLatin1String("separator")) {
             return elem;
         }
         if (goNext) {
@@ -158,7 +171,6 @@ KBookmarkGroup KBookmarkGroup::createNewFolder(const QString &text)
     groupElem.appendChild(textElem);
     textElem.appendChild(doc.createTextNode(text));
     return KBookmarkGroup(groupElem);
-
 }
 
 KBookmark KBookmarkGroup::createNewSeparator()
@@ -217,7 +229,7 @@ KBookmark KBookmarkGroup::addBookmark(const QString &text, const QUrl &url, cons
     elem.appendChild(textElem);
     textElem.appendChild(doc.createTextNode(text));
 
-    KBookmark newBookmark =  addBookmark(KBookmark(elem));
+    KBookmark newBookmark = addBookmark(KBookmark(elem));
 
     // as icons are moved to metadata, we have to use the KBookmark API for this
     newBookmark.setIcon(icon);
@@ -239,8 +251,7 @@ QDomElement KBookmarkGroup::findToolbar() const
     if (element.attribute(QStringLiteral("toolbar")) == QLatin1String("yes")) {
         return element;
     }
-    for (QDomElement e = element.firstChildElement(QStringLiteral("folder")); !e.isNull();
-         e = e.nextSiblingElement(QStringLiteral("folder")) ) {
+    for (QDomElement e = element.firstChildElement(QStringLiteral("folder")); !e.isNull(); e = e.nextSiblingElement(QStringLiteral("folder"))) {
         QDomElement result = KBookmarkGroup(e).findToolbar();
         if (!result.isNull()) {
             return result;
@@ -267,15 +278,15 @@ KBookmark::KBookmark()
 {
 }
 
-KBookmark::KBookmark(const QDomElement &elem) : element(elem)
+KBookmark::KBookmark(const QDomElement &elem)
+    : element(elem)
 {
 }
 
 bool KBookmark::isGroup() const
 {
     QString tag = element.tagName();
-    return (tag == QLatin1String("folder")
-            || tag == QLatin1String("xbel"));  // don't forget the toplevel group
+    return (tag == QLatin1String("folder") || tag == QLatin1String("xbel")); // don't forget the toplevel group
 }
 
 bool KBookmark::isSeparator() const
@@ -444,7 +455,7 @@ bool KBookmark::showInToolbar() const
         const_cast<QDomElement *>(&element)->removeAttribute(QStringLiteral("showintoolbar"));
         const_cast<KBookmark *>(this)->setShowInToolbar(show);
     }
-    return  metaDataItem(QStringLiteral("showintoolbar")) == QLatin1String("yes");
+    return metaDataItem(QStringLiteral("showintoolbar")) == QLatin1String("yes");
 }
 
 void KBookmark::setShowInToolbar(bool show)
@@ -466,7 +477,7 @@ KBookmarkGroup KBookmark::toGroup() const
 QString KBookmark::address() const
 {
     if (element.tagName() == QLatin1String("xbel")) {
-        return QLatin1String("");    // not QString() !
+        return QLatin1String(""); // not QString() !
     } else {
         // Use keditbookmarks's DEBUG_ADDRESSES flag to debug this code :)
         if (element.parentNode().isNull()) {
@@ -534,7 +545,7 @@ void KBookmark::updateAccessMetadata()
     setMetaDataItem(QStringLiteral("time_added"), QString::number(timet), DontOverwriteMetaData);
     setMetaDataItem(QStringLiteral("time_visited"), QString::number(timet));
 
-    QString countStr = metaDataItem(QStringLiteral("visit_count"));   // TODO use spec'ed name
+    QString countStr = metaDataItem(QStringLiteral("visit_count")); // TODO use spec'ed name
     bool ok;
     int currentCount = countStr.toInt(&ok);
     if (!ok) {
@@ -559,15 +570,12 @@ uint KBookmark::positionInParent(const QString &address)
 QString KBookmark::previousAddress(const QString &address)
 {
     uint pp = positionInParent(address);
-    return pp > 0
-           ? parentAddress(address) + QLatin1Char('/') + QString::number(pp - 1)
-           : QString();
+    return pp > 0 ? parentAddress(address) + QLatin1Char('/') + QString::number(pp - 1) : QString();
 }
 
 QString KBookmark::nextAddress(const QString &address)
 {
-    return parentAddress(address) + QLatin1Char('/') +
-           QString::number(positionInParent(address) + 1);
+    return parentAddress(address) + QLatin1Char('/') + QString::number(positionInParent(address) + 1);
 }
 
 QDomNode KBookmark::metaData(const QString &owner, bool create) const
@@ -659,7 +667,8 @@ void KBookmark::populateMimeData(QMimeData *mimeData) const
     bookmarkList.populateMimeData(mimeData);
 }
 
-KBookmark::List::List() : QList<KBookmark>()
+KBookmark::List::List()
+    : QList<KBookmark>()
 {
 }
 
@@ -710,8 +719,7 @@ KBookmark::List KBookmark::List::fromMimeData(const QMimeData *mimeData, QDomDoc
     bookmarks.reserve(urls.size());
     for (int i = 0; i < urls.size(); ++i) {
         const QUrl url = urls.at(i);
-        bookmarks.append(KBookmark::standaloneBookmark(url.toDisplayString(), url, QString()/*TODO icon*/));
+        bookmarks.append(KBookmark::standaloneBookmark(url.toDisplayString(), url, QString() /*TODO icon*/));
     }
     return bookmarks;
 }
-

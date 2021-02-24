@@ -10,16 +10,15 @@
 
 #include "kbookmarks_debug.h"
 
+#include <assert.h>
 #include <qplatformdefs.h>
 #include <stddef.h>
-#include <assert.h>
-
 
 #include "kbookmarkmanager.h"
 
+#include "kbookmarkimporter_ie.h"
 #include "kbookmarkimporter_ns.h"
 #include "kbookmarkimporter_opera.h"
-#include "kbookmarkimporter_ie.h"
 
 void KXBELBookmarkImporterImpl::parse()
 {
@@ -59,10 +58,8 @@ void KBookmarkImporterBase::setupSignalForwards(QObject *src, QObject *dst)
     connect(src, SIGNAL(newBookmark(QString,QString,QString)), dst, SIGNAL(newBookmark(QString,QString,QString)));
     connect(src, SIGNAL(newFolder(QString,bool,QString)), dst, SIGNAL(newFolder(QString,bool,QString)));
     // clang-format on
-    connect(src, SIGNAL(newSeparator()),
-            dst, SIGNAL(newSeparator()));
-    connect(src, SIGNAL(endFolder()),
-            dst, SIGNAL(endFolder()));
+    connect(src, SIGNAL(newSeparator()), dst, SIGNAL(newSeparator()));
+    connect(src, SIGNAL(endFolder()), dst, SIGNAL(endFolder()));
 }
 
 KBookmarkImporterBase *KBookmarkImporterBase::factory(const QString &type)

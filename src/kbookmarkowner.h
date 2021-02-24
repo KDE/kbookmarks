@@ -7,8 +7,8 @@
 #ifndef KBOOKMARK_OWNER_H
 #define KBOOKMARK_OWNER_H
 
-#include <QString>
 #include <QSharedDataPointer>
+#include <QString>
 
 #include "kbookmark.h"
 
@@ -43,7 +43,9 @@ class KBOOKMARKS_EXPORT KBookmarkOwner
 {
 public:
     // TODO KF6: add non-inline constructor, de-inline destructor. Otherwise the d pointer cannot be used.
-    virtual ~KBookmarkOwner() {}
+    virtual ~KBookmarkOwner()
+    {
+    }
 
     /**
      * This function is called whenever the user wants to add the
@@ -117,6 +119,7 @@ public:
         QString title() const;
         QUrl url() const;
         QString icon() const;
+
     private:
         QSharedDataPointer<FutureBookmarkPrivate> d;
     };
@@ -149,7 +152,7 @@ public:
      * Called if the user wants to open every bookmark in this folder in a new tab.
      * The default implementation does nothing.
      * This is only called if supportsTabs() returns true
-    */
+     */
     virtual void openFolderinTabs(const KBookmarkGroup &bm);
 
     virtual KBookmarkDialog *bookmarkDialog(KBookmarkManager *mgr, QWidget *parent);
@@ -174,4 +177,3 @@ private:
 };
 
 #endif
-

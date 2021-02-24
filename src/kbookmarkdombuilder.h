@@ -8,8 +8,8 @@
 #ifndef __kbookmarkdombuilder_h
 #define __kbookmarkdombuilder_h
 
-#include <QStack>
 #include <QObject>
+#include <QStack>
 #include <kbookmark.h>
 
 /**
@@ -29,6 +29,7 @@ protected Q_SLOTS:
     void newFolder(const QString &text, bool open, const QString &additionalInfo);
     void newSeparator();
     void endFolder();
+
 private:
     QStack<KBookmarkGroup> m_stack;
     QList<KBookmarkGroup> m_list;

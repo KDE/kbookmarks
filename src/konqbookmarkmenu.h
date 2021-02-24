@@ -9,9 +9,9 @@
 #ifndef __konqbookmarkmenu_h__
 #define __konqbookmarkmenu_h__
 
-#include "kbookmarkmenu.h"
 #include "kbookmarkactionmenu.h"
 #include "kbookmarkcontextmenu.h"
+#include "kbookmarkmenu.h"
 
 #if KBOOKMARKS_ENABLE_DEPRECATED_SINCE(5, 0)
 #include "kbookmarkowner.h" // for SC reasons
@@ -28,7 +28,7 @@ typedef KBookmarkOwner KonqBookmarkOwner; // KF5: KonqBookmarkOwner is deprecate
  */
 class KBOOKMARKS_EXPORT KonqBookmarkMenu : public KBookmarkMenu
 {
-    //friend class KBookmarkBar;
+    // friend class KBookmarkBar;
     Q_OBJECT
 public:
     /**
@@ -50,7 +50,8 @@ public:
     {
     }
     ~KonqBookmarkMenu() override
-    {}
+    {
+    }
 
     /**
      * Creates a bookmark submenu.
@@ -109,10 +110,10 @@ class KBOOKMARKS_EXPORT KonqBookmarkContextMenu : public KBookmarkContextMenu
 {
     Q_OBJECT
 public:
-   /**
-    * Browser-specific context menu
-    * @deprecated since 5.65, this class has moved to Konqueror
-    */
+    /**
+     * Browser-specific context menu
+     * @deprecated since 5.65, this class has moved to Konqueror
+     */
     KBOOKMARKS_DEPRECATED_VERSION(5, 65, "This class has moved to Konqueror")
     KonqBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *mgr, KBookmarkOwner *owner);
     ~KonqBookmarkContextMenu() override;
@@ -127,4 +128,3 @@ public Q_SLOTS:
 #endif
 
 #endif
-

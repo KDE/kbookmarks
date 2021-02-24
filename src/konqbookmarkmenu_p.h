@@ -5,8 +5,8 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
-#include "kbookmarkmenu.h"
 #include "kbookmarkimporter.h"
+#include "kbookmarkmenu.h"
 
 #include <KActionMenu>
 #include <QStack>
@@ -22,22 +22,19 @@ class KImportedBookmarkMenu : public KBookmarkMenu
     friend class KBookmarkMenuImporter;
     Q_OBJECT
 public:
-    //TODO simplfy
-    KImportedBookmarkMenu(KBookmarkManager *mgr,
-                          KBookmarkOwner *owner, QMenu *parentMenu,
-                          const QString &type, const QString &location);
-    KImportedBookmarkMenu(KBookmarkManager *mgr,
-                          KBookmarkOwner *owner, QMenu *parentMenu);
+    // TODO simplfy
+    KImportedBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, const QString &type, const QString &location);
+    KImportedBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu);
     ~KImportedBookmarkMenu();
     void clear() override;
     void refill() override;
 protected Q_SLOTS:
     void slotNSLoad();
+
 private:
     QString m_type;
     QString m_location;
 };
-
 
 /**
  * A class connected to KNSBookmarkImporter, to fill KActionMenus.
@@ -46,8 +43,11 @@ class KBookmarkMenuImporter : public QObject
 {
     Q_OBJECT
 public:
-    KBookmarkMenuImporter(KBookmarkManager *mgr, KImportedBookmarkMenu *menu) :
-        m_menu(menu), m_pManager(mgr) {}
+    KBookmarkMenuImporter(KBookmarkManager *mgr, KImportedBookmarkMenu *menu)
+        : m_menu(menu)
+        , m_pManager(mgr)
+    {
+    }
 
     void openBookmarks(const QString &location, const QString &type);
     void connectToImporter(const QObject &importer);
@@ -71,12 +71,13 @@ class KImportedBookmarkActionMenu : public KActionMenu, public KBookmarkActionIn
     Q_OBJECT
 public:
     KImportedBookmarkActionMenu(const QIcon &icon, const QString &text, QObject *parent)
-        : KActionMenu(icon, text, parent),
-          KBookmarkActionInterface(KBookmark())
+        : KActionMenu(icon, text, parent)
+        , KBookmarkActionInterface(KBookmark())
     {
     }
     ~KImportedBookmarkActionMenu()
-    {}
+    {
+    }
 };
 
 #endif

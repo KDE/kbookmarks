@@ -8,9 +8,9 @@
 #ifndef __kbookmarkmanager_h
 #define __kbookmarkmanager_h
 
-#include <QString>
-#include <QObject>
 #include <QDomDocument>
+#include <QObject>
+#include <QString>
 #include <memory>
 class KBookmarkManagerPrivate;
 
@@ -21,7 +21,6 @@ class KBookmarkManagerPrivate;
 
 class KBookmarkGroup;
 class QDBusMessage;
-
 
 /**
  * @class KBookmarkManager kbookmarkmanager.h KBookmarkManager
@@ -100,16 +99,16 @@ public:
     bool autoErrorHandlingEnabled() const;
 
     /**
-    * Enable or disable auto error handling is enabled.
-    * If enabled, it will show an error dialog to the user when an
-    * error occurs. It is turned on by default.
-    * If disabled, the application should react on the error() signal.
-    * @param enable true to enable auto error handling, false to disable
-    * @param parent the parent widget for the error dialogs, can be @c nullptr for
-    *               top-level
-    * @since 4.6
-    * @see autoErrorHandlingEnabled()
-    */
+     * Enable or disable auto error handling is enabled.
+     * If enabled, it will show an error dialog to the user when an
+     * error occurs. It is turned on by default.
+     * If disabled, the application should react on the error() signal.
+     * @param enable true to enable auto error handling, false to disable
+     * @param parent the parent widget for the error dialogs, can be @c nullptr for
+     *               top-level
+     * @since 4.6
+     * @see autoErrorHandlingEnabled()
+     */
     void setAutoErrorHandlingEnabled(bool enable, QWidget *parent);
 
     /**
@@ -231,8 +230,7 @@ public:
      * An empty @p dbusObjectName disables the registration to D-Bus (used for temporary managers)
      *
      */
-    static KBookmarkManager *managerForFile(const QString &bookmarksFile,
-                                            const QString &dbusObjectName);
+    static KBookmarkManager *managerForFile(const QString &bookmarksFile, const QString &dbusObjectName);
 
     /**
      * Returns a KBookmarkManager, which will use QFileSystemWatcher for change detection
@@ -336,4 +334,3 @@ private:
 };
 
 #endif
-

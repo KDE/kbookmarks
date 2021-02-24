@@ -12,9 +12,9 @@
 #include "kbookmarkaction.h"
 #include "kbookmarkactionmenu.h"
 #include "kbookmarkcontextmenu.h"
-#include "kbookmarks_debug.h"
 #include "kbookmarkdialog.h"
 #include "kbookmarkowner.h"
+#include "kbookmarks_debug.h"
 
 #include <KActionCollection>
 #include <KAuthorized>
@@ -38,52 +38,47 @@ public:
 };
 
 #if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
-KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
-                             KBookmarkOwner *_owner,
-                             QMenu *_parentMenu,
-                             KActionCollection *actionCollection)
-    : QObject(),
-      m_actionCollection(actionCollection),
-      d(new KBookmarkMenuPrivate()),
-      m_bIsRoot(true),
-      m_pManager(mgr),
-      m_pOwner(_owner),
-      m_parentMenu(_parentMenu),
-      m_parentAddress(QString())   //TODO KBookmarkAdress::root
+KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *_owner, QMenu *_parentMenu, KActionCollection *actionCollection)
+    : QObject()
+    , m_actionCollection(actionCollection)
+    , d(new KBookmarkMenuPrivate())
+    , m_bIsRoot(true)
+    , m_pManager(mgr)
+    , m_pOwner(_owner)
+    , m_parentMenu(_parentMenu)
+    , m_parentAddress(QString()) // TODO KBookmarkAdress::root
 {
     init();
 }
 
 #endif
 
-KBookmarkMenu::KBookmarkMenu(KBookmarkManager* manager, KBookmarkOwner* _owner, QMenu* _parentMenu)
-    : QObject(),
-    m_actionCollection(new KActionCollection(this)),
-    d(new KBookmarkMenuPrivate()),
-    m_bIsRoot(true),
-    m_pManager(manager),
-    m_pOwner(_owner),
-    m_parentMenu(_parentMenu),
-    m_parentAddress(QString())   //TODO KBookmarkAdress::root
+KBookmarkMenu::KBookmarkMenu(KBookmarkManager *manager, KBookmarkOwner *_owner, QMenu *_parentMenu)
+    : QObject()
+    , m_actionCollection(new KActionCollection(this))
+    , d(new KBookmarkMenuPrivate())
+    , m_bIsRoot(true)
+    , m_pManager(manager)
+    , m_pOwner(_owner)
+    , m_parentMenu(_parentMenu)
+    , m_parentAddress(QString()) // TODO KBookmarkAdress::root
 {
     // TODO KDE5 find a QMenu equvalnet for this one
-    //m_parentMenu->setKeyboardShortcutsEnabled( true );
+    // m_parentMenu->setKeyboardShortcutsEnabled( true );
 
     init();
 }
 
 void KBookmarkMenu::init()
 {
-    connect(m_parentMenu, &QMenu::aboutToShow,
-            this, &KBookmarkMenu::slotAboutToShow);
+    connect(m_parentMenu, &QMenu::aboutToShow, this, &KBookmarkMenu::slotAboutToShow);
 
     if (KBookmarkSettings::self()->m_contextmenu) {
         m_parentMenu->setContextMenuPolicy(Qt::CustomContextMenu);
         connect(m_parentMenu, &QWidget::customContextMenuRequested, this, &KBookmarkMenu::slotCustomContextMenu);
     }
 
-    connect(m_pManager, &KBookmarkManager::changed,
-            this, &KBookmarkMenu::slotBookmarksChanged);
+    connect(m_pManager, &KBookmarkManager::changed, this, &KBookmarkMenu::slotBookmarksChanged);
 
     m_bDirty = true;
     addActions();
@@ -108,18 +103,15 @@ void KBookmarkMenu::addActions()
     }
 }
 
-KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr,
-                             KBookmarkOwner *_owner,
-                             QMenu *_parentMenu,
-                             const QString &parentAddress)
-    : QObject(),
-      m_actionCollection(new KActionCollection(this)),
-      d(new KBookmarkMenuPrivate()),
-      m_bIsRoot(false),
-      m_pManager(mgr),
-      m_pOwner(_owner),
-      m_parentMenu(_parentMenu),
-      m_parentAddress(parentAddress)
+KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *_owner, QMenu *_parentMenu, const QString &parentAddress)
+    : QObject()
+    , m_actionCollection(new KActionCollection(this))
+    , d(new KBookmarkMenuPrivate())
+    , m_bIsRoot(false)
+    , m_pManager(mgr)
+    , m_pOwner(_owner)
+    , m_parentMenu(_parentMenu)
+    , m_parentAddress(parentAddress)
 {
     connect(_parentMenu, &QMenu::aboutToShow, this, &KBookmarkMenu::slotAboutToShow);
     if (KBookmarkSettings::self()->m_contextmenu) {
@@ -219,7 +211,6 @@ QMenu *KBookmarkMenu::parentMenu() const
 /********************************************************************/
 /********************************************************************/
 
-
 /********************************************************************/
 /********************************************************************/
 /********************************************************************/
@@ -228,12 +219,11 @@ void KBookmarkMenu::slotBookmarksChanged(const QString &groupAddress)
 {
     qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotBookmarksChanged groupAddress: " << groupAddress;
     if (groupAddress == m_parentAddress) {
-        //qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotBookmarksChanged -> setting m_bDirty on " << groupAddress;
+        // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotBookmarksChanged -> setting m_bDirty on " << groupAddress;
         m_bDirty = true;
     } else {
         // Iterate recursively into child menus
-        for (QList<KBookmarkMenu *>::iterator it = m_lstSubMenus.begin(), end = m_lstSubMenus.end();
-                it != end; ++it) {
+        for (QList<KBookmarkMenu *>::iterator it = m_lstSubMenus.begin(), end = m_lstSubMenus.end(); it != end; ++it) {
             (*it)->slotBookmarksChanged(groupAddress);
         }
     }
@@ -244,8 +234,7 @@ void KBookmarkMenu::clear()
     qDeleteAll(m_lstSubMenus);
     m_lstSubMenus.clear();
 
-    for (QList<QAction *>::iterator it = m_actions.begin(), end = m_actions.end();
-            it != end; ++it) {
+    for (QList<QAction *>::iterator it = m_actions.begin(), end = m_actions.end(); it != end; ++it) {
         m_parentMenu->removeAction(*it);
         delete *it;
     }
@@ -256,7 +245,7 @@ void KBookmarkMenu::clear()
 
 void KBookmarkMenu::refill()
 {
-    //qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::refill()";
+    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::refill()";
     if (m_bIsRoot) {
         addActions();
     }
@@ -268,8 +257,7 @@ void KBookmarkMenu::refill()
 
 void KBookmarkMenu::addOpenInTabs()
 {
-    if (!m_pOwner || !m_pOwner->supportsTabs() ||
-            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
+    if (!m_pOwner || !m_pOwner->supportsTabs() || !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -287,8 +275,8 @@ void KBookmarkMenu::addOpenInTabs()
 
 void KBookmarkMenu::addAddBookmarksList()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !m_pOwner->supportsTabs() ||
-            (d->numberOfOpenTabs < 2) || !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !m_pOwner->supportsTabs() || (d->numberOfOpenTabs < 2)
+        || !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -315,8 +303,7 @@ void KBookmarkMenu::addAddBookmarksList()
 
 void KBookmarkMenu::addAddBookmark()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) ||
-            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -340,9 +327,8 @@ void KBookmarkMenu::addAddBookmark()
 
 void KBookmarkMenu::addEditBookmarks()
 {
-    if ((m_pOwner && !m_pOwner->enableOption(KBookmarkOwner::ShowEditBookmark)) ||
-            QStandardPaths::findExecutable(QStringLiteral(KEDITBOOKMARKS_BINARY)).isEmpty() ||
-            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
+    if ((m_pOwner && !m_pOwner->enableOption(KBookmarkOwner::ShowEditBookmark))
+        || QStandardPaths::findExecutable(QStringLiteral(KEDITBOOKMARKS_BINARY)).isEmpty() || !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -360,8 +346,7 @@ void KBookmarkMenu::addEditBookmarks()
 
 void KBookmarkMenu::addNewFolder()
 {
-    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) ||
-            !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
+    if (!m_pOwner || !m_pOwner->enableOption(KBookmarkOwner::ShowAddBookmark) || !KAuthorized::authorizeAction(QStringLiteral("bookmarks"))) {
         return;
     }
 
@@ -379,7 +364,6 @@ void KBookmarkMenu::addNewFolder()
     }
 
     m_parentMenu->addAction(d->newBookmarkFolderAction);
-
 }
 
 void KBookmarkMenu::fillBookmarks()
@@ -391,7 +375,7 @@ void KBookmarkMenu::fillBookmarks()
         m_parentMenu->addSeparator();
     }
 
-    for (KBookmark bm = parentBookmark.first(); !bm.isNull();  bm = parentBookmark.next(bm)) {
+    for (KBookmark bm = parentBookmark.first(); !bm.isNull(); bm = parentBookmark.next(bm)) {
         m_parentMenu->addAction(actionForBookmark(bm));
     }
 }
@@ -399,7 +383,7 @@ void KBookmarkMenu::fillBookmarks()
 QAction *KBookmarkMenu::actionForBookmark(const KBookmark &bm)
 {
     if (bm.isGroup()) {
-        //qCDebug(KBOOKMARKS_LOG) << "Creating bookmark submenu named " << bm.text();
+        // qCDebug(KBOOKMARKS_LOG) << "Creating bookmark submenu named " << bm.text();
         KActionMenu *actionMenu = new KBookmarkActionMenu(bm, this);
         m_actions.append(actionMenu);
         KBookmarkMenu *subMenu = new KBookmarkMenu(m_pManager, m_pOwner, actionMenu->menu(), bm.address());
@@ -411,7 +395,7 @@ QAction *KBookmarkMenu::actionForBookmark(const KBookmark &bm)
         m_actions.append(sa);
         return sa;
     } else {
-        //qCDebug(KBOOKMARKS_LOG) << "Creating bookmark menu item for " << bm.text();
+        // qCDebug(KBOOKMARKS_LOG) << "Creating bookmark menu item for " << bm.text();
         QAction *action = new KBookmarkAction(bm, m_pOwner, this);
         m_actions.append(action);
         return action;
@@ -449,7 +433,6 @@ void KBookmarkMenu::slotAddBookmark()
         parentBookmark.addBookmark(m_pOwner->currentTitle(), m_pOwner->currentUrl(), m_pOwner->currentIcon());
         m_pManager->emitChanged(parentBookmark);
     }
-
 }
 
 void KBookmarkMenu::slotOpenFolderInTabs()
@@ -460,7 +443,7 @@ void KBookmarkMenu::slotOpenFolderInTabs()
 void KBookmarkMenu::slotNewFolder()
 {
     if (!m_pOwner) {
-        return;    // this view doesn't handle bookmarks...
+        return; // this view doesn't handle bookmarks...
     }
     KBookmarkGroup parentBookmark = m_pManager->findByAddress(m_parentAddress).toGroup();
     Q_ASSERT(!parentBookmark.isNull());
@@ -469,12 +452,12 @@ void KBookmarkMenu::slotNewFolder()
     delete dlg;
 }
 
-QAction * KBookmarkMenu::addBookmarkAction() const
+QAction *KBookmarkMenu::addBookmarkAction() const
 {
     return d->addBookmarkAction;
 }
 
-QAction * KBookmarkMenu::bookmarkTabsAsFolderAction() const
+QAction *KBookmarkMenu::bookmarkTabsAsFolderAction() const
 {
     return d->bookmarksToFolderAction;
 }
@@ -484,7 +467,7 @@ QAction *KBookmarkMenu::newBookmarkFolderAction() const
     return d->newBookmarkFolderAction;
 }
 
-QAction * KBookmarkMenu::editBookmarksAction() const
+QAction *KBookmarkMenu::editBookmarksAction() const
 {
     return d->editBookmarksAction;
 }

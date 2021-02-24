@@ -75,7 +75,6 @@ KBookmarkDialog *KBookmarkOwner::bookmarkDialog(KBookmarkManager *mgr, QWidget *
 
 void KBookmarkOwner::openFolderinTabs(const KBookmarkGroup &)
 {
-
 }
 
 void KBookmarkOwner::openInNewTab(const KBookmark &bm)
@@ -89,4 +88,3 @@ void KBookmarkOwner::openInNewWindow(const KBookmark &bm)
     // fallback
     openBookmark(bm, Qt::LeftButton, Qt::NoModifier);
 }
-

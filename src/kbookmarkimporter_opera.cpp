@@ -9,10 +9,10 @@
 #include "kbookmarkimporter_opera.h"
 #include "kbookmarkimporter_opera_p.h"
 
-#include <QFileDialog>
 #include "kbookmarks_debug.h"
-#include <QTextCodec>
 #include <QApplication>
+#include <QFileDialog>
+#include <QTextCodec>
 
 #include <qplatformdefs.h>
 
@@ -35,7 +35,7 @@ void KOperaBookmarkImporter::parseOperaBookmarks()
     int lineno = 0;
     QTextStream stream(&file);
     stream.setCodec(codec);
-    while (! stream.atEnd()) {
+    while (!stream.atEnd()) {
         lineno++;
         QString line = stream.readLine().trimmed();
 
@@ -103,12 +103,8 @@ void KOperaBookmarkImporterImpl::parse()
 QString KOperaBookmarkImporterImpl::findDefaultLocation(bool saving) const
 {
     const QString operaHomePath = QDir::homePath() + QLatin1String("/.opera");
-    return saving ? QFileDialog::getSaveFileName(QApplication::activeWindow(), QString(),
-            operaHomePath,
-            tr("Opera Bookmark Files (*.adr)"))
-           : QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(),
-                                          operaHomePath,
-                                          tr("*.adr|Opera Bookmark Files (*.adr)"));
+    return saving ? QFileDialog::getSaveFileName(QApplication::activeWindow(), QString(), operaHomePath, tr("Opera Bookmark Files (*.adr)"))
+                  : QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(), operaHomePath, tr("*.adr|Opera Bookmark Files (*.adr)"));
 }
 
 /////////////////////////////////////////////////
@@ -122,16 +118,19 @@ public:
         traverse(grp);
         return m_string;
     }
+
 private:
     void visit(const KBookmark &) override;
     void visitEnter(const KBookmarkGroup &) override;
     void visitLeave(const KBookmarkGroup &) override;
+
 private:
     QString m_string;
     QTextStream m_out;
 };
 
-OperaExporter::OperaExporter() : m_out(&m_string, QIODevice::WriteOnly)
+OperaExporter::OperaExporter()
+    : m_out(&m_string, QIODevice::WriteOnly)
 {
     m_out << "Opera Hotlist version 2.0\n";
     m_out << "Options: encoding = utf8, version=3\n";

@@ -116,8 +116,7 @@ public:
      * @todo KF6: give ownership of the bookmarkmenu to another qobject, e.g. parentMenu.
      * Currently this is a QObject without a parent, use setParent to benefit from automatic deletion.
      */
-    KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner,
-                  QMenu *parentMenu, const QString &parentAddress);
+    KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, const QString &parentAddress);
 
     ~KBookmarkMenu();
 

@@ -10,34 +10,35 @@
 #include "kbookmarkaction.h"
 
 #include "kbookmarks_debug.h"
-#include <QMenu>
 #include <QFile>
+#include <QMenu>
 
-#include <KConfig>
-#include <KSharedConfig>
-#include <KConfigGroup>
 #include <KActionCollection>
+#include <KConfig>
+#include <KConfigGroup>
+#include <KSharedConfig>
 #include <KStringHandler>
 
 #include "kbookmarkimporter.h"
-#include "kbookmarkimporter_opera.h"
 #include "kbookmarkimporter_ie.h"
+#include "kbookmarkimporter_opera.h"
 #include "kbookmarkmanager.h"
 #include "konqbookmarkmenu_p.h"
 
 #if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 65)
 
-KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr,
-        KBookmarkOwner *owner, QMenu *parentMenu,
-        const QString &type, const QString &location)
-    : KBookmarkMenu(mgr, owner, parentMenu, QString()), m_type(type), m_location(location)
+KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, const QString &type, const QString &location)
+    : KBookmarkMenu(mgr, owner, parentMenu, QString())
+    , m_type(type)
+    , m_location(location)
 {
     connect(parentMenu, &QMenu::aboutToShow, this, &KImportedBookmarkMenu::slotNSLoad);
 }
 
-KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr,
-        KBookmarkOwner *owner, QMenu *parentMenu)
-    : KBookmarkMenu(mgr, owner, parentMenu, QString()), m_type(QString()), m_location(QString())
+KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu)
+    : KBookmarkMenu(mgr, owner, parentMenu, QString())
+    , m_type(QString())
+    , m_location(QString())
 {
 }
 
@@ -149,7 +150,10 @@ void KonqBookmarkContextMenu::addActions()
         addFolderActions();
     } else {
         if (owner()) {
-            addAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("Open in New Window", "@action:inmenu"), this, &KonqBookmarkContextMenu::openInNewWindow);
+            addAction(QIcon::fromTheme(QStringLiteral("window-new")),
+                      tr("Open in New Window", "@action:inmenu"),
+                      this,
+                      &KonqBookmarkContextMenu::openInNewWindow);
             addAction(QIcon::fromTheme(QStringLiteral("tab-new")), tr("Open in New Tab", "@action:inmenu"), this, &KonqBookmarkContextMenu::openInNewTab);
         }
         addBookmark();
@@ -185,8 +189,7 @@ void KonqBookmarkContextMenu::openInNewWindow()
 
 void KonqBookmarkMenu::fillDynamicBookmarks()
 {
-    if (isDirty()
-            && KBookmarkManager::userBookmarksManager()->path() == manager()->path()) {
+    if (isDirty() && KBookmarkManager::userBookmarksManager()->path() == manager()->path()) {
         bool haveSep = false;
 
         const QStringList keys = KonqBookmarkMenu::dynamicBookmarksList();
@@ -210,9 +213,7 @@ void KonqBookmarkMenu::fillDynamicBookmarks()
             parentMenu()->addAction(actionMenu);
             m_actions.append(actionMenu);
 
-            KImportedBookmarkMenu *subMenu =
-                new KImportedBookmarkMenu(manager(), owner(), actionMenu->menu(),
-                                          info.type, info.location);
+            KImportedBookmarkMenu *subMenu = new KImportedBookmarkMenu(manager(), owner(), actionMenu->menu(), info.type, info.location);
             m_lstSubMenus.append(subMenu);
         }
     }

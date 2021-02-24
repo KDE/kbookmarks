@@ -12,7 +12,7 @@
 #include <QDBusAbstractAdaptor>
 class KBookmarkManager;
 
-class KBookmarkManagerAdaptor: public QDBusAbstractAdaptor
+class KBookmarkManagerAdaptor : public QDBusAbstractAdaptor
 {
     Q_OBJECT
     Q_CLASSINFO("D-Bus Interface", "org.kde.KIO.KBookmarkManager")

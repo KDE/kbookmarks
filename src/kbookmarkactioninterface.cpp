@@ -10,7 +10,8 @@
 
 KBookmarkActionInterface::KBookmarkActionInterface(const KBookmark &bk)
     : bm(bk)
-{}
+{
+}
 
 KBookmarkActionInterface::~KBookmarkActionInterface()
 {
@@ -20,4 +21,3 @@ const KBookmark KBookmarkActionInterface::bookmark() const
 {
     return bm;
 }
-

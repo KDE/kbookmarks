@@ -10,9 +10,7 @@
 #include "kbookmarks_debug.h"
 #include <kbookmarkmanager.h>
 
-KBookmarkDomBuilder::KBookmarkDomBuilder(
-    const KBookmarkGroup &bkGroup, KBookmarkManager *manager
-)
+KBookmarkDomBuilder::KBookmarkDomBuilder(const KBookmarkGroup &bkGroup, KBookmarkManager *manager)
 {
     m_manager = manager;
     m_stack.push(bkGroup);
@@ -30,21 +28,14 @@ void KBookmarkDomBuilder::connectImporter(const QObject *importer)
     connect(importer, SIGNAL(newBookmark(QString,QString,QString)), SLOT(newBookmark(QString,QString,QString)));
     connect(importer, SIGNAL(newFolder(QString,bool,QString)), SLOT(newFolder(QString,bool,QString)));
     // clang-format on
-    connect(importer, SIGNAL(newSeparator()),
-            SLOT(newSeparator()));
-    connect(importer, SIGNAL(endFolder()),
-            SLOT(endFolder()));
+    connect(importer, SIGNAL(newSeparator()), SLOT(newSeparator()));
+    connect(importer, SIGNAL(endFolder()), SLOT(endFolder()));
 }
 
-void KBookmarkDomBuilder::newBookmark(
-    const QString &text, const QString &url, const QString &additionalInfo
-)
+void KBookmarkDomBuilder::newBookmark(const QString &text, const QString &url, const QString &additionalInfo)
 {
     if (!m_stack.isEmpty()) {
-        KBookmark bk = m_stack.top().addBookmark(
-                           text,
-                           QUrl(url),
-                           QString());
+        KBookmark bk = m_stack.top().addBookmark(text, QUrl(url), QString());
         // store additional info
         bk.internalElement().setAttribute(QStringLiteral("netscapeinfo"), additionalInfo);
     } else {
@@ -52,9 +43,7 @@ void KBookmarkDomBuilder::newBookmark(
     }
 }
 
-void KBookmarkDomBuilder::newFolder(
-    const QString &text, bool open, const QString &additionalInfo
-)
+void KBookmarkDomBuilder::newFolder(const QString &text, bool open, const QString &additionalInfo)
 {
     if (!m_stack.isEmpty()) {
         // we use a qvaluelist so that we keep pointers to valid objects in the stack

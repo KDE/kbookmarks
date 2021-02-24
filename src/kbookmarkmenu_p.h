@@ -9,7 +9,6 @@
 #ifndef __kbookmarkmenu_p_h__
 #define __kbookmarkmenu_p_h__
 
-
 #include <QTreeWidget>
 
 #include "kbookmark.h"
@@ -28,6 +27,7 @@ public:
     KBookmarkTreeItem(QTreeWidgetItem *parent, QTreeWidget *tree, const KBookmarkGroup &bk);
     ~KBookmarkTreeItem();
     QString address();
+
 private:
     QString m_address;
 };

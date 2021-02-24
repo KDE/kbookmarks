@@ -9,20 +9,19 @@
 #include "kbookmarkactionmenu.h"
 
 KBookmarkActionMenu::KBookmarkActionMenu(const KBookmark &bm, QObject *parent)
-    : KActionMenu(QIcon::fromTheme(bm.icon()), bm.text().replace(QLatin1Char('&'), QLatin1String("&&")), parent),
-      KBookmarkActionInterface(bm)
+    : KActionMenu(QIcon::fromTheme(bm.icon()), bm.text().replace(QLatin1Char('&'), QLatin1String("&&")), parent)
+    , KBookmarkActionInterface(bm)
 {
     setToolTip(bm.description());
     setIconText(text());
 }
 
 KBookmarkActionMenu::KBookmarkActionMenu(const KBookmark &bm, const QString &text, QObject *parent)
-    : KActionMenu(text, parent),
-      KBookmarkActionInterface(bm)
+    : KActionMenu(text, parent)
+    , KBookmarkActionInterface(bm)
 {
 }
 
 KBookmarkActionMenu::~KBookmarkActionMenu()
 {
 }
-

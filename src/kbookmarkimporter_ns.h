@@ -9,8 +9,8 @@
 #ifndef __kbookmarkimporter_ns_h
 #define __kbookmarkimporter_ns_h
 
-#include "kbookmarkimporter.h"
 #include "kbookmarkexporter.h"
+#include "kbookmarkimporter.h"
 
 /**
  * A class for importing NS bookmarks
@@ -19,14 +19,17 @@
 class KBOOKMARKS_EXPORT KNSBookmarkImporterImpl : public KBookmarkImporterBase
 {
     Q_OBJECT // For QObject::tr
-public:
-    KNSBookmarkImporterImpl() : m_utf8(false) { }
+        public : KNSBookmarkImporterImpl()
+        : m_utf8(false)
+    {
+    }
     void setUtf8(bool utf8)
     {
         m_utf8 = utf8;
     }
     void parse() override;
     QString findDefaultLocation(bool forSaving = false) const override;
+
 private:
     bool m_utf8;
     class KNSBookmarkImporterImplPrivate *d;
@@ -44,6 +47,7 @@ public:
     {
         setUtf8(true);
     }
+
 private:
     class KMozillaBookmarkImporterImplPrivate *d;
 };
@@ -56,11 +60,15 @@ public:
     {
         ;
     }
-    ~KNSBookmarkExporterImpl() override {}
+    ~KNSBookmarkExporterImpl() override
+    {
+    }
     void write(const KBookmarkGroup &parent) override;
     void setUtf8(bool);
+
 protected:
     QString folderAsString(const KBookmarkGroup &parent) const;
+
 private:
     bool m_utf8;
     class KNSBookmarkExporterImplPrivate *d;

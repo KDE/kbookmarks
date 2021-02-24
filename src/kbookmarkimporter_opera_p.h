@@ -16,8 +16,13 @@ class KOperaBookmarkImporter : public QObject
 {
     Q_OBJECT
 public:
-    explicit KOperaBookmarkImporter(const QString &fileName) : m_fileName(fileName) {}
-    ~KOperaBookmarkImporter() {}
+    explicit KOperaBookmarkImporter(const QString &fileName)
+        : m_fileName(fileName)
+    {
+    }
+    ~KOperaBookmarkImporter()
+    {
+    }
 
     void parseOperaBookmarks();
 
@@ -35,4 +40,3 @@ protected:
 };
 
 #endif /* KBOOKMARKIMPORTER_OPERA_P_H */
-

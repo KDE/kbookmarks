@@ -9,11 +9,11 @@
 
 #include <kbookmarks_export.h>
 
-#include <QString>
-#include <QUrl>
+#include <QDomElement>
 #include <QList>
 #include <QMetaType>
-#include <QDomElement>
+#include <QString>
+#include <QUrl>
 
 class QMimeData;
 class KBookmarkManager;
@@ -27,9 +27,11 @@ class KBookmarkGroup;
 class KBOOKMARKS_EXPORT KBookmark
 {
     friend class KBookmarkGroup;
+
 public:
     enum MetaDataOverwriteMode {
-        OverwriteMetaData, DontOverwriteMetaData,
+        OverwriteMetaData,
+        DontOverwriteMetaData,
     };
 
     /**
@@ -226,7 +228,7 @@ public:
     // knows about its manager, so that there can be several managers.
     // But if we say there is only one manager (i.e. set of bookmarks)
     // per application, then KBookmarkManager::self() is much easier.
-    //KBookmarkManager * manager() const { return m_manager; }
+    // KBookmarkManager * manager() const { return m_manager; }
 
     /**
      * @internal for KEditBookmarks
@@ -312,7 +314,6 @@ protected:
     // The KBookmarks are created on the fly, as wrappers
     // around internal QDomElements. Any additional information
     // has to be implemented as an attribute of the QDomElement.
-
 };
 
 /**
@@ -420,7 +421,6 @@ protected:
     QDomElement nextKnownTag(const QDomElement &start, bool goNext) const;
 
 private:
-
     // Note: you can't add other member variables here, except for caching info.
     // The KBookmarks are created on the fly, as wrappers
     // around internal QDomElements. Any additional information
@@ -445,7 +445,7 @@ Q_DECLARE_METATYPE(KBookmark)
 
 // needed when compiling this library with MSVC
 #if defined(Q_CC_MSVC) && defined(KF5Bookmarks_EXPORTS)
-inline uint qHash(const KBookmark&)
+inline uint qHash(const KBookmark &)
 {
     qWarning("inline uint qHash(const KBookmark&) was called");
     return 0;

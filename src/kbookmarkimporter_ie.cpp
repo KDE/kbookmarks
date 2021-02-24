@@ -22,12 +22,17 @@
  * A class for importing IE bookmarks
  * @deprecated
  */
-class  KIEBookmarkImporter : public QObject
+class KIEBookmarkImporter : public QObject
 {
     Q_OBJECT
 public:
-    KIEBookmarkImporter(const QString &fileName) : m_fileName(fileName) {}
-    ~KIEBookmarkImporter() {}
+    KIEBookmarkImporter(const QString &fileName)
+        : m_fileName(fileName)
+    {
+    }
+    ~KIEBookmarkImporter()
+    {
+    }
 
     void parseIEBookmarks();
 
@@ -54,7 +59,6 @@ void KIEBookmarkImporter::parseIEBookmarks_url_file(const QString &filename, con
     QFile f(filename);
 
     if (f.open(QIODevice::ReadOnly)) {
-
         QByteArray s(g_lineLimit, 0);
 
         while (f.readLine(s.data(), g_lineLimit) >= 0) {
@@ -76,7 +80,6 @@ void KIEBookmarkImporter::parseIEBookmarks_url_file(const QString &filename, con
 
 void KIEBookmarkImporter::parseIEBookmarks_dir(const QString &dirname, const QString &foldername)
 {
-
     QDir dir(dirname);
     dir.setFilter(QDir::Files | QDir::Dirs | QDir::AllDirs);
     dir.setSorting(QFlags<QDir::SortFlag>(QDir::Name | QDir::DirsFirst));
@@ -156,10 +159,12 @@ public:
     {
         traverse(grp);
     }
+
 private:
     void visit(const KBookmark &) override;
     void visitEnter(const KBookmarkGroup &) override;
     void visitLeave(const KBookmarkGroup &) override;
+
 private:
     QDir m_currentDir;
 };

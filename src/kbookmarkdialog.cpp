@@ -14,15 +14,15 @@
 
 #include <QDialogButtonBox>
 #include <QFormLayout>
+#include <QHeaderView>
 #include <QInputDialog>
 #include <QLabel>
 #include <QLineEdit>
 #include <QPushButton>
 #include <QTreeWidget>
-#include <QHeaderView>
 
-#include <QIcon>
 #include <KGuiItem>
+#include <QIcon>
 
 KBookmarkDialogPrivate::KBookmarkDialogPrivate(KBookmarkDialog *q)
     : q(q)
@@ -91,7 +91,7 @@ void KBookmarkDialogPrivate::fillGroup(QTreeWidgetItem *parentItem, const KBookm
     for (KBookmark bk = group.first(); !bk.isNull(); bk = group.next(bk)) {
         if (bk.isGroup()) {
             const KBookmarkGroup bkGroup = bk.toGroup();
-            QTreeWidgetItem* item = new KBookmarkTreeItem(parentItem, folderTree, bkGroup);
+            QTreeWidgetItem *item = new KBookmarkTreeItem(parentItem, folderTree, bkGroup);
             if (selectGroup == bkGroup) {
                 folderTree->setCurrentItem(item);
             }
@@ -194,7 +194,6 @@ KBookmark KBookmarkDialog::editBookmark(const KBookmark &bm)
     } else {
         return KBookmark();
     }
-
 }
 
 KBookmark KBookmarkDialog::addBookmark(const QString &title, const QUrl &url, const QString &icon, KBookmark parent)
@@ -341,13 +340,10 @@ KBookmarkDialog::~KBookmarkDialog() = default;
 
 void KBookmarkDialog::newFolderButton()
 {
-
-    QString caption = d->parentBookmark().fullText().isEmpty() ?
-                      tr("Create New Bookmark Folder", "@title:window") :
-                      tr("Create New Bookmark Folder in %1", "@title:window").arg(d->parentBookmark().text());
+    QString caption = d->parentBookmark().fullText().isEmpty() ? tr("Create New Bookmark Folder", "@title:window")
+                                                               : tr("Create New Bookmark Folder in %1", "@title:window").arg(d->parentBookmark().text());
     bool ok;
-    QString text = QInputDialog::getText(this, caption, tr("New folder:", "@label:textbox"),
-                                         QLineEdit::Normal, QString(), &ok);
+    QString text = QInputDialog::getText(this, caption, tr("New folder:", "@label:textbox"), QLineEdit::Normal, QString(), &ok);
     if (!ok) {
         return;
     }
@@ -365,7 +361,8 @@ void KBookmarkDialog::newFolderButton()
 /********************************************************************/
 
 KBookmarkTreeItem::KBookmarkTreeItem(QTreeWidget *tree)
-    : QTreeWidgetItem(tree), m_address(QLatin1String(""))
+    : QTreeWidgetItem(tree)
+    , m_address(QLatin1String(""))
 {
     setText(0, KBookmarkDialog::tr("Bookmarks", "name of the container of all browser bookmarks"));
     setIcon(0, QIcon::fromTheme(QStringLiteral("bookmarks")));

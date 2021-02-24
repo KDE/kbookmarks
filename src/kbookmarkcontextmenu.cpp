@@ -7,17 +7,20 @@
 */
 
 #include "kbookmarkcontextmenu.h"
-#include "kbookmarkowner.h"
-#include "kbookmarkmanager.h"
 #include "kbookmarkdialog.h"
+#include "kbookmarkmanager.h"
+#include "kbookmarkowner.h"
 
 #include <QApplication>
+#include <QClipboard>
 #include <QMessageBox>
 #include <QMimeData>
-#include <QClipboard>
 
 KBookmarkContextMenu::KBookmarkContextMenu(const KBookmark &bk, KBookmarkManager *manager, KBookmarkOwner *owner, QWidget *parent)
-    : QMenu(parent), bm(bk), m_pManager(manager), m_pOwner(owner)
+    : QMenu(parent)
+    , bm(bk)
+    , m_pManager(manager)
+    , m_pOwner(owner)
 {
     connect(this, &QMenu::aboutToShow, this, &KBookmarkContextMenu::slotAboutToShow);
 }
@@ -41,7 +44,6 @@ void KBookmarkContextMenu::addActions()
 
 KBookmarkContextMenu::~KBookmarkContextMenu()
 {
-
 }
 
 void KBookmarkContextMenu::addBookmark()
@@ -89,7 +91,7 @@ void KBookmarkContextMenu::slotProperties()
 {
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotProperties" << m_highlightedAddress;
 
-    KBookmarkDialog   *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
+    KBookmarkDialog *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
     dlg->editBookmark(bm);
     delete dlg;
 }
@@ -100,8 +102,7 @@ void KBookmarkContextMenu::slotInsert()
 
     QUrl url = m_pOwner->currentUrl();
     if (url.isEmpty()) {
-        QMessageBox::critical(QApplication::activeWindow(), QApplication::applicationName(),
-                              tr("Cannot add bookmark with empty URL.", "@info"));
+        QMessageBox::critical(QApplication::activeWindow(), QApplication::applicationName(), tr("Cannot add bookmark with empty URL.", "@info"));
         return;
     }
     QString title = m_pOwner->currentTitle();
@@ -129,15 +130,12 @@ void KBookmarkContextMenu::slotRemove()
 
     bool folder = bm.isGroup();
 
-    if (QMessageBox::warning(
-                QApplication::activeWindow(),
-                folder ? tr("Bookmark Folder Deletion", "@title:window")
-                : tr("Bookmark Deletion", "@title:window"),
-                folder ? tr("Are you sure you wish to remove the bookmark folder\n\"%1\"?").arg(bm.text())
-                : tr("Are you sure you wish to remove the bookmark\n\"%1\"?").arg(bm.text()),
-                QMessageBox::Yes | QMessageBox::Cancel)
-            != QMessageBox::Yes
-       ) {
+    if (QMessageBox::warning(QApplication::activeWindow(),
+                             folder ? tr("Bookmark Folder Deletion", "@title:window") : tr("Bookmark Deletion", "@title:window"),
+                             folder ? tr("Are you sure you wish to remove the bookmark folder\n\"%1\"?").arg(bm.text())
+                                    : tr("Are you sure you wish to remove the bookmark\n\"%1\"?").arg(bm.text()),
+                             QMessageBox::Yes | QMessageBox::Cancel)
+        != QMessageBox::Yes) {
         return;
     }
 

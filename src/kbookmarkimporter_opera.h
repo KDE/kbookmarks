@@ -8,9 +8,8 @@
 #ifndef __kbookmarkimporter_opera_h
 #define __kbookmarkimporter_opera_h
 
-
-#include <kbookmarkimporter.h>
 #include <kbookmarkexporter.h>
+#include <kbookmarkimporter.h>
 
 /**
  * A class for importing Opera bookmarks
@@ -18,10 +17,12 @@
 class KBOOKMARKS_EXPORT KOperaBookmarkImporterImpl : public KBookmarkImporterBase
 {
     Q_OBJECT // For QObject::tr
-public:
-    KOperaBookmarkImporterImpl() { }
+        public : KOperaBookmarkImporterImpl()
+    {
+    }
     void parse() override;
     QString findDefaultLocation(bool forSaving = false) const override;
+
 private:
     class KOperaBookmarkImporterImplPrivate *d;
 };
@@ -34,8 +35,11 @@ public:
     {
         ;
     }
-    ~KOperaBookmarkExporterImpl() override {}
+    ~KOperaBookmarkExporterImpl() override
+    {
+    }
     void write(const KBookmarkGroup &parent) override;
+
 private:
     class KOperaBookmarkExporterImplPrivate *d;
 };

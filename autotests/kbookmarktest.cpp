@@ -7,12 +7,12 @@
 
 #include <QTest>
 
+#include <QDir>
+#include <QMimeData>
+#include <QObject>
+#include <QStandardPaths>
 #include <kbookmark.h>
 #include <kbookmarkmanager.h>
-#include <QMimeData>
-#include <QStandardPaths>
-#include <QDir>
-#include <QObject>
 
 class KBookmarkTest : public QObject
 {
@@ -130,7 +130,6 @@ void KBookmarkTest::testFileCreatedExternally()
     KBookmark bk = sharedBookmarkManager->root().first();
     QCOMPARE(bk.url().toString(), QString("file:///external"));
     QCOMPARE(bk.fullText(), QString("external"));
-
 }
 
 void KBookmarkTest::testBookmarkManager()

@@ -59,6 +59,7 @@ public:
     KBookmarkGroup selectFolder(KBookmark start = KBookmark());
 
     ~KBookmarkDialog() override;
+
 protected:
     void accept() override;
 
@@ -71,4 +72,3 @@ private:
 };
 
 #endif
-

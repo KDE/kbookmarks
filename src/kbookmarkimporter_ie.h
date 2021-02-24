@@ -9,8 +9,8 @@
 #ifndef __kbookmarkimporter_ie_h
 #define __kbookmarkimporter_ie_h
 
-#include <kbookmarkimporter.h>
 #include <kbookmarkexporter.h>
+#include <kbookmarkimporter.h>
 
 /**
  * A class for importing IE bookmarks
@@ -19,9 +19,12 @@ class KBOOKMARKS_EXPORT KIEBookmarkImporterImpl : public KBookmarkImporterBase
 {
     Q_OBJECT
 public:
-    KIEBookmarkImporterImpl() { }
+    KIEBookmarkImporterImpl()
+    {
+    }
     void parse() override;
     QString findDefaultLocation(bool forSaving = false) const override;
+
 private:
     class KIEBookmarkImporterImplPrivate *d;
 };
@@ -34,8 +37,11 @@ public:
     {
         ;
     }
-    ~KIEBookmarkExporterImpl() override {}
+    ~KIEBookmarkExporterImpl() override
+    {
+    }
     void write(const KBookmarkGroup &) override;
+
 private:
     class KIEBookmarkExporterImplPrivate *d;
 };

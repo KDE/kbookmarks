@@ -8,13 +8,13 @@
 
 #include "kbookmarkaction.h"
 #include "kbookmarkowner.h"
-#include <QDesktopServices>
 #include <QApplication>
+#include <QDesktopServices>
 
 KBookmarkAction::KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent)
-    : QAction(bk.text().replace(QLatin1Char('&'), QLatin1String("&&")), parent),
-      KBookmarkActionInterface(bk),
-      m_pOwner(owner)
+    : QAction(bk.text().replace(QLatin1Char('&'), QLatin1String("&&")), parent)
+    , KBookmarkActionInterface(bk)
+    , m_pOwner(owner)
 {
     setIcon(QIcon::fromTheme(bookmark().icon()));
     setIconText(text());
@@ -45,4 +45,3 @@ void KBookmarkAction::slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km
         m_pOwner->openBookmark(bookmark(), mb, km);
     }
 }
-

@@ -22,8 +22,12 @@ class KBOOKMARKS_EXPORT KBookmarkImporterBase : public QObject
 {
     Q_OBJECT
 public:
-    KBookmarkImporterBase() {}
-    virtual ~KBookmarkImporterBase() {}
+    KBookmarkImporterBase()
+    {
+    }
+    virtual ~KBookmarkImporterBase()
+    {
+    }
 
     void setFilename(const QString &filename)
     {
@@ -75,16 +79,20 @@ class KBOOKMARKS_EXPORT KXBELBookmarkImporterImpl : public KBookmarkImporterBase
 {
     Q_OBJECT
 public:
-    KXBELBookmarkImporterImpl() {}
+    KXBELBookmarkImporterImpl()
+    {
+    }
     void parse() override;
     QString findDefaultLocation(bool = false) const override
     {
         return QString();
     }
+
 protected:
     void visit(const KBookmark &) override;
     void visitEnter(const KBookmarkGroup &) override;
     void visitLeave(const KBookmarkGroup &) override;
+
 private:
     class KXBELBookmarkImporterImplPrivate *d;
 };

@@ -6,8 +6,8 @@
     SPDX-License-Identifier: LGPL-2.0-only
 */
 
-#include "kbookmarkmanageradaptor_p.h"
 #include "kbookmarkmanager.h"
+#include "kbookmarkmanageradaptor_p.h"
 
 KBookmarkManagerAdaptor::KBookmarkManagerAdaptor(KBookmarkManager *parent)
     : QDBusAbstractAdaptor(parent)

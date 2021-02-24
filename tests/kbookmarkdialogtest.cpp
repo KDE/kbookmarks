@@ -17,4 +17,3 @@ int main(int argc, char **argv)
     dlg.addBookmark(QStringLiteral("KDE"), QUrl(QStringLiteral("http://www.kde.org")), QStringLiteral("www")); // calls exec()
     return 0;
 }
-
