@@ -83,12 +83,12 @@ void KBookmarkMenuImporter::openBookmarks(const QString &location, const QString
 
 void KBookmarkMenuImporter::connectToImporter(const QObject &importer)
 {
-    connect(&importer, SIGNAL(newBookmark(QString,QString,QString)),
-            SLOT(newBookmark(QString,QString,QString)));
-    connect(&importer, SIGNAL(newFolder(QString,bool,QString)),
-            SLOT(newFolder(QString,bool,QString)));
+    // clang-format off
+    connect(&importer, SIGNAL(newBookmark(QString,QString,QString)), SLOT(newBookmark(QString,QString,QString)));
+    connect(&importer, SIGNAL(newFolder(QString,bool,QString)), SLOT(newFolder(QString,bool,QString)));
     connect(&importer, SIGNAL(newSeparator()), SLOT(newSeparator()));
     connect(&importer, SIGNAL(endFolder()), SLOT(endFolder()));
+    // clang-format on
 }
 
 void KBookmarkMenuImporter::newBookmark(const QString &text, const QString &url, const QString &)

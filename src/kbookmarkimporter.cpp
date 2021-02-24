@@ -55,10 +55,10 @@ void KXBELBookmarkImporterImpl::visitLeave(const KBookmarkGroup &)
 
 void KBookmarkImporterBase::setupSignalForwards(QObject *src, QObject *dst)
 {
-    connect(src, SIGNAL(newBookmark(QString,QString,QString)),
-            dst, SIGNAL(newBookmark(QString,QString,QString)));
-    connect(src, SIGNAL(newFolder(QString,bool,QString)),
-            dst, SIGNAL(newFolder(QString,bool,QString)));
+    // clang-format off
+    connect(src, SIGNAL(newBookmark(QString,QString,QString)), dst, SIGNAL(newBookmark(QString,QString,QString)));
+    connect(src, SIGNAL(newFolder(QString,bool,QString)), dst, SIGNAL(newFolder(QString,bool,QString)));
+    // clang-format on
     connect(src, SIGNAL(newSeparator()),
             dst, SIGNAL(newSeparator()));
     connect(src, SIGNAL(endFolder()),

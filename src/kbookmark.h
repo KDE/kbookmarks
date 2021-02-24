@@ -29,7 +29,7 @@ class KBOOKMARKS_EXPORT KBookmark
     friend class KBookmarkGroup;
 public:
     enum MetaDataOverwriteMode {
-        OverwriteMetaData, DontOverwriteMetaData
+        OverwriteMetaData, DontOverwriteMetaData,
     };
 
     /**

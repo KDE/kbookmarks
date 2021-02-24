@@ -26,10 +26,10 @@ KBookmarkDomBuilder::~KBookmarkDomBuilder()
 
 void KBookmarkDomBuilder::connectImporter(const QObject *importer)
 {
-    connect(importer, SIGNAL(newBookmark(QString,QString,QString)),
-            SLOT(newBookmark(QString,QString,QString)));
-    connect(importer, SIGNAL(newFolder(QString,bool,QString)),
-            SLOT(newFolder(QString,bool,QString)));
+    // clang-format off
+    connect(importer, SIGNAL(newBookmark(QString,QString,QString)), SLOT(newBookmark(QString,QString,QString)));
+    connect(importer, SIGNAL(newFolder(QString,bool,QString)), SLOT(newFolder(QString,bool,QString)));
+    // clang-format on
     connect(importer, SIGNAL(newSeparator()),
             SLOT(newSeparator()));
     connect(importer, SIGNAL(endFolder()),
