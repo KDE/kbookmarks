@@ -724,7 +724,7 @@ void KBookmarkManager::updateFavicon(const QString &url, const QString & /*favic
 KBookmarkManager *KBookmarkManager::userBookmarksManager()
 {
     const QString bookmarksFile =
-        QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1Char('/') + QLatin1String("konqueror/bookmarks.xml");
+        QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
     KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(bookmarksFile, QStringLiteral("konqueror"));
     QString caption = QGuiApplication::applicationDisplayName();
     if (caption.isEmpty()) {
