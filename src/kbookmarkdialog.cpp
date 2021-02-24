@@ -15,6 +15,7 @@
 #include <QDialogButtonBox>
 #include <QFormLayout>
 #include <QHeaderView>
+#include <QIcon>
 #include <QInputDialog>
 #include <QLabel>
 #include <QLineEdit>
@@ -22,7 +23,6 @@
 #include <QTreeWidget>
 
 #include <KGuiItem>
-#include <QIcon>
 
 KBookmarkDialogPrivate::KBookmarkDialogPrivate(KBookmarkDialog *q)
     : q(q)

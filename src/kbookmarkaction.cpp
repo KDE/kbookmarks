@@ -8,6 +8,7 @@
 
 #include "kbookmarkaction.h"
 #include "kbookmarkowner.h"
+
 #include <QApplication>
 #include <QDesktopServices>
 

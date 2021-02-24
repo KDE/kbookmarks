@@ -5,14 +5,14 @@
     SPDX-License-Identifier: LGPL-2.0-only
 */
 
-#include <QTest>
+#include <kbookmark.h>
+#include <kbookmarkmanager.h>
 
 #include <QDir>
 #include <QMimeData>
 #include <QObject>
 #include <QStandardPaths>
-#include <kbookmark.h>
-#include <kbookmarkmanager.h>
+#include <QTest>
 
 class KBookmarkTest : public QObject
 {

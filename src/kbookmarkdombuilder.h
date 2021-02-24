@@ -8,9 +8,10 @@
 #ifndef __kbookmarkdombuilder_h
 #define __kbookmarkdombuilder_h
 
+#include <kbookmark.h>
+
 #include <QObject>
 #include <QStack>
-#include <kbookmark.h>
 
 /**
  * @class KBookmarkDomBuilder kbookmarkdombuilder.h KBookmarkDomBuilder

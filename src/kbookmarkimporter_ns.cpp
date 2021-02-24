@@ -11,10 +11,11 @@
 #include "kbookmarkimporter_ns.h"
 #include "kbookmarkmanager.h"
 #include "kbookmarks_debug.h"
+
 #include <KCharsets>
+
 #include <QFileDialog>
 #include <QMessageBox>
-
 #include <QApplication>
 #include <QTextCodec>
 

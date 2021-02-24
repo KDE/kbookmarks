@@ -7,16 +7,16 @@
 */
 
 #include "kbookmarkimporter_opera.h"
+#include "kbookmarkimporter.h"
 #include "kbookmarkimporter_opera_p.h"
-
 #include "kbookmarks_debug.h"
+
 #include <QApplication>
 #include <QFileDialog>
 #include <QTextCodec>
 
 #include <qplatformdefs.h>
 
-#include "kbookmarkimporter.h"
 
 void KOperaBookmarkImporter::parseOperaBookmarks()
 {

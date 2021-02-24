@@ -8,17 +8,14 @@
 
 #include "kbookmarkimporter.h"
 
-#include "kbookmarks_debug.h"
-
-#include <assert.h>
-#include <qplatformdefs.h>
-#include <stddef.h>
-
-#include "kbookmarkmanager.h"
-
 #include "kbookmarkimporter_ie.h"
 #include "kbookmarkimporter_ns.h"
 #include "kbookmarkimporter_opera.h"
+#include "kbookmarkmanager.h"
+#include "kbookmarks_debug.h"
+
+#include <assert.h>
+#include <stddef.h>
 
 void KXBELBookmarkImporterImpl::parse()
 {

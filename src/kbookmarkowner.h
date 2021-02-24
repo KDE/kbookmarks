@@ -7,13 +7,12 @@
 #ifndef KBOOKMARK_OWNER_H
 #define KBOOKMARK_OWNER_H
 
+#include "kbookmark.h"
+
 #include <QSharedDataPointer>
 #include <QString>
 
-#include "kbookmark.h"
-
 class KBookmarkGroup;
-
 class KBookmarkDialog;
 
 /**

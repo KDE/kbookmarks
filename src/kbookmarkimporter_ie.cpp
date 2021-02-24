@@ -7,16 +7,16 @@
 */
 
 #include "kbookmarkimporter_ie.h"
+#include "kbookmarkimporter.h"
+#include "kbookmarks_debug.h"
 
 #include <QFileDialog>
 
-#include "kbookmarks_debug.h"
 #include <QApplication>
 #include <QRegularExpression>
 
 #include <qplatformdefs.h>
 
-#include "kbookmarkimporter.h"
 
 /**
  * A class for importing IE bookmarks

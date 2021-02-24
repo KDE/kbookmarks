@@ -9,8 +9,15 @@
 */
 
 #include "kbookmarkmanager.h"
-
+#include "kbookmarkdialog.h"
+#include "kbookmarkimporter.h"
+#include "kbookmarkmenu.h"
+#include "kbookmarkmenu_p.h"
 #include "kbookmarks_debug.h"
+#ifndef KBOOKMARKS_NO_DBUS
+#include "kbookmarkmanageradaptor_p.h"
+#endif
+
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
@@ -33,14 +40,6 @@
 #include <KDirWatch>
 #include <QSaveFile>
 #include <QStandardPaths>
-
-#include "kbookmarkdialog.h"
-#include "kbookmarkimporter.h"
-#include "kbookmarkmenu.h"
-#include "kbookmarkmenu_p.h"
-#ifndef KBOOKMARKS_NO_DBUS
-#include "kbookmarkmanageradaptor_p.h"
-#endif
 
 namespace
 {

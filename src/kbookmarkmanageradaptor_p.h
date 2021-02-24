@@ -10,6 +10,7 @@
 #define KBOOKMARKMANAGERADAPTOR_H
 
 #include <QDBusAbstractAdaptor>
+
 class KBookmarkManager;
 
 class KBookmarkManagerAdaptor : public QDBusAbstractAdaptor

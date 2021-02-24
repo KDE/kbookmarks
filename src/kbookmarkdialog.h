@@ -9,6 +9,7 @@
 
 #include "kbookmark.h"
 #include "kbookmarkowner.h"
+
 #include <QDialog>
 #include <memory>
 

@@ -10,13 +10,14 @@
 
 #include "kbookmark.h"
 #include "kbookmarks_debug.h"
+#include <kbookmarkmanager.h>
+
 #include <KStringHandler>
+#include <kurlmimedata.h>
+
 #include <QCoreApplication>
 #include <QMimeDatabase>
 #include <QStack>
-#include <kbookmarkmanager.h>
-#include <kurlmimedata.h>
-
 #include <QDateTime>
 #include <QMimeData>
 
@@ -286,7 +287,8 @@ KBookmark::KBookmark(const QDomElement &elem)
 bool KBookmark::isGroup() const
 {
     QString tag = element.tagName();
-    return (tag == QLatin1String("folder") || tag == QLatin1String("xbel")); // don't forget the toplevel group
+    return tag == QLatin1String("folder") //
+        || tag == QLatin1String("xbel"); // don't forget the toplevel group
 }
 
 bool KBookmark::isSeparator() const

@@ -11,7 +11,9 @@
 #include <QDomDocument>
 #include <QObject>
 #include <QString>
+
 #include <memory>
+
 class KBookmarkManagerPrivate;
 
 #include "kbookmark.h"

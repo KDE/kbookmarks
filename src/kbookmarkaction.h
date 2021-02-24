@@ -10,6 +10,7 @@
 #define KBOOKMARKACTION_H
 
 #include "kbookmarkactioninterface.h"
+
 #include <QAction>
 
 class KBookmark;
