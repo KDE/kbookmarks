@@ -13,7 +13,6 @@
 
 #include <QApplication>
 #include <QFileDialog>
-#include <QTextCodec>
 
 #include <qplatformdefs.h>
 
@@ -25,16 +24,12 @@ void KOperaBookmarkImporter::parseOperaBookmarks()
         return;
     }
 
-    QTextCodec *codec = QTextCodec::codecForName("UTF-8");
-    Q_ASSERT(codec);
-    if (!codec) {
-        return;
-    }
-
     QString url, name, type;
     int lineno = 0;
     QTextStream stream(&file);
-    stream.setCodec(codec);
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    stream.setCodec("UTF-8");
+#endif
     while (!stream.atEnd()) {
         lineno++;
         QString line = stream.readLine().trimmed();
@@ -174,7 +169,9 @@ void KOperaBookmarkExporterImpl::write(const KBookmarkGroup &parent)
         return;
     }
     QTextStream fstream(&file);
-    fstream.setCodec(QTextCodec::codecForName("UTF-8"));
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    fstream.setCodec("UTF-8");
+#endif
     fstream << content;
 }
 
