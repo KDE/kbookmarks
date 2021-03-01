@@ -12,6 +12,8 @@
 #include <QSharedDataPointer>
 #include <QString>
 
+class QWidget;
+
 class KBookmarkGroup;
 class KBookmarkDialog;
 
