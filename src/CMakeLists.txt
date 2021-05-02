@@ -58,7 +58,7 @@ else()
   target_compile_definitions(KF5Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
 endif()
 
-set_target_properties(KF5Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION_STRING}
+set_target_properties(KF5Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION}
                                               SOVERSION ${KBOOKMARKS_SOVERSION}
                                               EXPORT_NAME Bookmarks
 )
