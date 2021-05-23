@@ -52,7 +52,6 @@ find_package(KF5WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 find_package(KF5XmlGui ${KF_DEP_VERSION} REQUIRED)
 
 ecm_install_po_files_as_qm(po)
-add_definitions(-DQT_NO_FOREACH)
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050f00)
 add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055100)
 
