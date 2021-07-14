@@ -95,7 +95,7 @@ static QDomNode findMetadata(const QString &forOwner, QDomNode &parent, bool cre
         metadataElement.setAttribute(QStringLiteral("owner"), forOwner);
 
     } else if (!metadataElement.isNull() && forOwnerIsKDE) {
-        // i'm not sure if this is good, we shouln't take over foreign metatdata
+        // i'm not sure if this is good, we shouldn't take over foreign metadata
         metadataElement.setAttribute(QStringLiteral("owner"), Strings::metaDataKDEOwner());
     }
     return metadataElement;

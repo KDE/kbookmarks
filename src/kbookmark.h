@@ -272,7 +272,7 @@ public:
     static QString commonParent(const QString &A, const QString &B);
 
     /**
-     * @return the metadata container node for a certain matadata owner
+     * @return the metadata container node for a certain metadata owner
      * @since 4.1
      */
     QDomNode metaData(const QString &owner, bool create) const;
@@ -345,7 +345,7 @@ public:
      */
     KBookmark first() const;
     /**
-     * Return the prevous sibling of a child bookmark of this group
+     * Return the previous sibling of a child bookmark of this group
      * @param current has to be one of our child bookmarks.
      */
     KBookmark previous(const KBookmark &current) const;

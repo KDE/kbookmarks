@@ -139,7 +139,7 @@ public:
     /** Returns true if \p action should be shown in the menu
      *  The default is to show both a add and editBookmark Entry
      *  //TODO ContextMenuAction? to disable the contextMenu?
-     *         Delete and Propeties to disable those in the
+     *         Delete and Properties to disable those in the
      *         context menu?
      */
     virtual bool enableOption(BookmarkOption option) const;
