@@ -262,10 +262,11 @@ static QDomElement createXbelTopLevelElement(QDomDocument &doc)
 KBookmarkManager::KBookmarkManager(const QString &bookmarksFile, const QString &dbusObjectName)
     : d(new KBookmarkManagerPrivate(false, dbusObjectName))
 {
-    if (dbusObjectName.isNull()) // get dbusObjectName from file
+    if (dbusObjectName.isNull()) { // get dbusObjectName from file
         if (QFile::exists(d->m_bookmarksFile)) {
             parse(); // sets d->m_dbusObjectName
         }
+    }
 
     init(QLatin1String("/KBookmarkManager/") + d->m_dbusObjectName);
 
@@ -572,7 +573,8 @@ KBookmark KBookmarkManager::findByAddress(const QString &address)
         uint number = (*it).toUInt();
         Q_ASSERT(result.isGroup());
         KBookmarkGroup group = result.toGroup();
-        KBookmark bk = group.first(), lbk = bk; // last non-null bookmark
+        KBookmark bk = group.first();
+        KBookmark lbk = bk; // last non-null bookmark
         for (uint i = 0; ((i < number) || append) && !bk.isNull(); ++i) {
             lbk = bk;
             bk = group.next(bk);

@@ -24,7 +24,9 @@ void KOperaBookmarkImporter::parseOperaBookmarks()
         return;
     }
 
-    QString url, name, type;
+    QString url;
+    QString name;
+    QString type;
     int lineno = 0;
     QTextStream stream(&file);
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)

@@ -90,10 +90,11 @@ QString KNSBookmarkImporterImpl::findDefaultLocation(bool forSaving) const
 {
     if (m_utf8) {
         const QString mozillaHomePath = QDir::homePath() + QLatin1String("/.mozilla");
-        if (forSaving)
+        if (forSaving) {
             return QFileDialog::getSaveFileName(QApplication::activeWindow(), QString(), mozillaHomePath, tr("HTML Files (*.html)"));
-        else
+        } else {
             return QFileDialog::getOpenFileName(QApplication::activeWindow(), QString(), mozillaHomePath, tr("*.html|HTML Files (*.html)"));
+        }
     } else {
         return QDir::homePath() + QLatin1String("/.netscape/bookmarks.html");
     }
