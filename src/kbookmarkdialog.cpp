@@ -154,7 +154,7 @@ void KBookmarkDialog::accept()
         }
         d->bm = parent.createNewFolder(d->title->text());
         d->bm.setDescription(d->comment->text());
-        for (const KBookmarkOwner::FutureBookmark &fb : qAsConst(d->list)) {
+        for (const KBookmarkOwner::FutureBookmark &fb : std::as_const(d->list)) {
             d->bm.toGroup().addBookmark(fb.title(), fb.url(), fb.icon());
         }
         d->mgr->emitChanged(parent);
