@@ -24,8 +24,8 @@
 
 #include <KGuiItem>
 
-KBookmarkDialogPrivate::KBookmarkDialogPrivate(KBookmarkDialog *q)
-    : q(q)
+KBookmarkDialogPrivate::KBookmarkDialogPrivate(KBookmarkDialog *qq)
+    : q(qq)
     , folderTree(nullptr)
     , layout(false)
 {

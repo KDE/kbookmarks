@@ -22,7 +22,7 @@ class QTreeWidgetItem;
 class KBookmarkDialogPrivate
 {
 public:
-    explicit KBookmarkDialogPrivate(KBookmarkDialog *q);
+    explicit KBookmarkDialogPrivate(KBookmarkDialog *qq);
     ~KBookmarkDialogPrivate();
 
     typedef enum { NewFolder, NewBookmark, EditBookmark, NewMultipleBookmarks, SelectFolder } BookmarkDialogMode;
