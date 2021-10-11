@@ -566,7 +566,11 @@ QString KBookmark::parentAddress(const QString &address)
 
 uint KBookmark::positionInParent(const QString &address)
 {
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    return QStringView(address).mid(address.lastIndexOf(QLatin1Char('/')) + 1).toInt();
+#else
     return address.midRef(address.lastIndexOf(QLatin1Char('/')) + 1).toInt();
+#endif
 }
 
 QString KBookmark::previousAddress(const QString &address)
