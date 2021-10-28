@@ -25,7 +25,7 @@ public:
     KBookmarkImporterBase()
     {
     }
-    virtual ~KBookmarkImporterBase()
+    ~KBookmarkImporterBase() override
     {
     }
 

@@ -23,7 +23,7 @@ class KBOOKMARKS_EXPORT KBookmarkActionMenu : public KActionMenu, public KBookma
 public:
     KBookmarkActionMenu(const KBookmark &bm, QObject *parent);
     KBookmarkActionMenu(const KBookmark &bm, const QString &text, QObject *parent);
-    virtual ~KBookmarkActionMenu();
+    ~KBookmarkActionMenu() override;
 };
 
 #endif

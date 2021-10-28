@@ -27,7 +27,7 @@ class KBOOKMARKS_EXPORT KBookmarkContextMenu : public QMenu
 
 public:
     KBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *manager, KBookmarkOwner *owner, QWidget *parent = nullptr);
-    virtual ~KBookmarkContextMenu();
+    ~KBookmarkContextMenu() override;
     virtual void addActions();
 
 public Q_SLOTS:

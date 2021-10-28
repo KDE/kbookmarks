@@ -118,7 +118,7 @@ public:
      */
     KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, const QString &parentAddress);
 
-    ~KBookmarkMenu();
+    ~KBookmarkMenu() override;
 
     /**
      * Call ensureUpToDate() if you need KBookmarkMenu to adjust to its

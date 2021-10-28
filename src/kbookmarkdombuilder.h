@@ -23,7 +23,7 @@ class KBOOKMARKS_EXPORT KBookmarkDomBuilder : public QObject
     Q_OBJECT
 public:
     KBookmarkDomBuilder(const KBookmarkGroup &group, KBookmarkManager *);
-    virtual ~KBookmarkDomBuilder();
+    ~KBookmarkDomBuilder() override;
     void connectImporter(const QObject *);
 protected Q_SLOTS:
     void newBookmark(const QString &text, const QString &url, const QString &additionalInfo);

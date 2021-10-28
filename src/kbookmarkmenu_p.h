@@ -25,7 +25,7 @@ class KBookmarkTreeItem : public QTreeWidgetItem
 public:
     explicit KBookmarkTreeItem(QTreeWidget *tree);
     KBookmarkTreeItem(QTreeWidgetItem *parent, QTreeWidget *tree, const KBookmarkGroup &bk);
-    ~KBookmarkTreeItem();
+    ~KBookmarkTreeItem() override;
     QString address();
 
 private:

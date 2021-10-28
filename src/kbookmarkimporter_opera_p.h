@@ -20,7 +20,7 @@ public:
         : m_fileName(fileName)
     {
     }
-    ~KOperaBookmarkImporter()
+    ~KOperaBookmarkImporter() override
     {
     }
 

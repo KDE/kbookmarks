@@ -87,7 +87,7 @@ public:
     /**
      * Destructor
      */
-    ~KBookmarkManager();
+    ~KBookmarkManager() override;
 
     /**
      * Check whether auto error handling is enabled.

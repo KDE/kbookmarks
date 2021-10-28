@@ -30,7 +30,7 @@ public:
         : m_fileName(fileName)
     {
     }
-    ~KIEBookmarkImporter()
+    ~KIEBookmarkImporter() override
     {
     }
 

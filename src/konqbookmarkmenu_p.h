@@ -25,7 +25,7 @@ public:
     // TODO simplfy
     KImportedBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, const QString &type, const QString &location);
     KImportedBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu);
-    ~KImportedBookmarkMenu();
+    ~KImportedBookmarkMenu() override;
     void clear() override;
     void refill() override;
 protected Q_SLOTS:
@@ -75,7 +75,7 @@ public:
         , KBookmarkActionInterface(KBookmark())
     {
     }
-    ~KImportedBookmarkActionMenu()
+    ~KImportedBookmarkActionMenu() override
     {
     }
 };

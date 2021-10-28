@@ -28,7 +28,7 @@ class KBOOKMARKS_EXPORT KBookmarkAction : public QAction, public KBookmarkAction
     Q_OBJECT
 public:
     KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent);
-    virtual ~KBookmarkAction();
+    ~KBookmarkAction() override;
 
 public Q_SLOTS:
     void slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km);
