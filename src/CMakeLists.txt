@@ -24,7 +24,6 @@ set(kbookmarks_SRCS
     kbookmarkimporter_opera.cpp
     kbookmarkimporter_opera.h
     kbookmarkimporter_opera_p.h
-    kbookmarkmanageradaptor.cpp
     kbookmarkmanager.cpp
     kbookmarkmanager.h
     kbookmarkmenu.cpp
@@ -38,7 +37,7 @@ set(kbookmarks_SRCS
   ${kbookmarks_QM_LOADER}
 )
 if (TARGET Qt5::DBus)
-  list(APPEND kbookmarks_SRCS kbookmarkmanageradaptor.cpp)
+  list(APPEND kbookmarks_SRCS kbookmarkmanageradaptor.cpp kbookmarkmanageradaptor_p.h)
 endif()
 
 ecm_qt_declare_logging_category(kbookmarks_SRCS
