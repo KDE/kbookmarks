@@ -25,7 +25,6 @@ set(kbookmarks_SRCS
     kbookmarkimporter_opera.h
     kbookmarkimporter_opera_p.h
     kbookmarkmanageradaptor.cpp
-    kbookmarkmanageradaptor_p.h
     kbookmarkmanager.cpp
     kbookmarkmanager.h
     kbookmarkmenu.cpp
