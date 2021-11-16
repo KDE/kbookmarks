@@ -1,21 +1,41 @@
 ecm_create_qm_loader(kbookmarks_QM_LOADER kbookmarks5_qt)
 
 set(kbookmarks_SRCS
-  kbookmark.cpp
-  kbookmarkaction.cpp
-  kbookmarkactioninterface.cpp
-  kbookmarkactionmenu.cpp
-  kbookmarkcontextmenu.cpp
-  kbookmarkimporter.cpp
-  kbookmarkmanager.cpp
-  kbookmarkmenu.cpp
-  kbookmarkowner.cpp
-  konqbookmarkmenu.cpp
-  kbookmarkimporter_opera.cpp
-  kbookmarkimporter_ie.cpp
-  kbookmarkimporter_ns.cpp
-  kbookmarkdombuilder.cpp
-  kbookmarkdialog.cpp
+    kbookmarkaction.cpp
+    kbookmarkaction.h
+    kbookmarkactioninterface.cpp
+    kbookmarkactioninterface.h
+    kbookmarkactionmenu.cpp
+    kbookmarkactionmenu.h
+    kbookmarkcontextmenu.cpp
+    kbookmarkcontextmenu.h
+    kbookmark.cpp
+    kbookmarkdialog.cpp
+    kbookmarkdialog.h
+    kbookmarkdialog_p.h
+    kbookmarkexporter.h
+    kbookmark.h
+    kbookmarkimporter.cpp
+    kbookmarkimporter.h
+    kbookmarkimporter_ie.cpp
+    kbookmarkimporter_ie.h
+    kbookmarkimporter_ns.cpp
+    kbookmarkimporter_ns.h
+    kbookmarkimporter_opera.cpp
+    kbookmarkimporter_opera.h
+    kbookmarkimporter_opera_p.h
+    kbookmarkmanageradaptor.cpp
+    kbookmarkmanageradaptor_p.h
+    kbookmarkmanager.cpp
+    kbookmarkmanager.h
+    kbookmarkmenu.cpp
+    kbookmarkmenu.h
+    kbookmarkmenu_p.h
+    kbookmarkowner.cpp
+    kbookmarkowner.h
+    konqbookmarkmenu.cpp
+    konqbookmarkmenu.h
+    konqbookmarkmenu_p.h
   ${kbookmarks_QM_LOADER}
 )
 if (TARGET Qt5::DBus)
