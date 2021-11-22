@@ -34,6 +34,8 @@ set(kbookmarks_SRCS
     konqbookmarkmenu.cpp
     konqbookmarkmenu.h
     konqbookmarkmenu_p.h
+    kbookmarkdombuilder.cpp
+    kbookmarkdombuilder.h
   ${kbookmarks_QM_LOADER}
 )
 if (TARGET Qt5::DBus)
