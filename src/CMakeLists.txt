@@ -38,7 +38,7 @@ set(kbookmarks_SRCS
     kbookmarkdombuilder.h
   ${kbookmarks_QM_LOADER}
 )
-if (TARGET Qt5::DBus)
+if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
   list(APPEND kbookmarks_SRCS kbookmarkmanageradaptor.cpp kbookmarkmanageradaptor_p.h)
 endif()
 
@@ -62,9 +62,9 @@ ecm_generate_export_header(KF5Bookmarks
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
 )
 
-target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks>")
+target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks>")
 
-target_link_libraries(KF5Bookmarks PUBLIC Qt5::Widgets Qt5::Xml KF5::WidgetsAddons)
+target_link_libraries(KF5Bookmarks PUBLIC Qt${QT_MAJOR_VERSION}::Widgets Qt${QT_MAJOR_VERSION}::Xml KF5::WidgetsAddons)
 target_link_libraries(KF5Bookmarks PRIVATE
     KF5::CoreAddons # for KStringHandler
     KF5::Codecs # for KCharsets
@@ -72,10 +72,14 @@ target_link_libraries(KF5Bookmarks PRIVATE
     KF5::ConfigWidgets # for KStandardAction
     KF5::XmlGui # for KActionCollection
 )
-if (TARGET Qt5::DBus)
-  target_link_libraries(KF5Bookmarks PRIVATE Qt5::DBus) # dbus usage in kbookmarkmanager.cpp
+if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
+  target_link_libraries(KF5Bookmarks PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # dbus usage in kbookmarkmanager.cpp
 else()
   target_compile_definitions(KF5Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
+endif()
+
+if (TARGET Qt6::Core5Compat)
+    target_link_libraries(KF5Bookmarks PRIVATE Qt6::Core5Compat)  # QTextCodec
 endif()
 
 set_target_properties(KF5Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION}
@@ -114,7 +118,7 @@ install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${KF5_INSTALL_TARGETS_DE
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_export.h
   ${KBookmarks_HEADERS}
-  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks COMPONENT Devel
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks COMPONENT Devel
 )
 
 ecm_qt_install_logging_categories(
@@ -151,5 +155,5 @@ if(BUILD_QCH)
 endif()
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KBookmarks LIB_NAME KF5Bookmarks DEPS "widgets xml" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KBookmarks)
+ecm_generate_pri_file(BASE_NAME KBookmarks LIB_NAME KF5Bookmarks DEPS "widgets xml" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})

@@ -129,7 +129,12 @@ void KNSBookmarkExporterImpl::write(const KBookmarkGroup &parent)
     }
 
     QTextStream fstream(&file);
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    // NOTE: QStringConverter::System assumes the encoding is UTF-8 for Unix based systems
+    fstream.setEncoding(m_utf8 ? QStringConverter::Utf8 : QStringConverter::System);
+#else
     fstream.setCodec(m_utf8 ? QTextCodec::codecForName("UTF-8") : QTextCodec::codecForLocale());
+#endif
 
     QString charset = m_utf8 ? QStringLiteral("UTF-8") : QString::fromLatin1(QTextCodec::codecForLocale()->name()).toUpper();
 
