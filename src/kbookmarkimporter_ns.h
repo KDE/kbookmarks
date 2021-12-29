@@ -31,6 +31,7 @@ class KBOOKMARKS_EXPORT KNSBookmarkImporterImpl : public KBookmarkImporterBase
     QString findDefaultLocation(bool forSaving = false) const override;
 
 private:
+    QString toUnicode(const QByteArray &data) const;
     bool m_utf8;
     class KNSBookmarkImporterImplPrivate *d;
 };

@@ -78,10 +78,6 @@ else()
   target_compile_definitions(KF5Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
 endif()
 
-if (TARGET Qt6::Core5Compat)
-    target_link_libraries(KF5Bookmarks PRIVATE Qt6::Core5Compat)  # QTextCodec
-endif()
-
 set_target_properties(KF5Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION}
                                               SOVERSION ${KBOOKMARKS_SOVERSION}
                                               EXPORT_NAME Bookmarks
