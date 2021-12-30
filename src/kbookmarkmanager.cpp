@@ -569,7 +569,8 @@ KBookmark KBookmarkManager::findByAddress(const QString &address)
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkManager::findByAddress " << address;
     KBookmark result = root();
     // The address is something like /5/10/2+
-    const QStringList addresses = address.split(QRegularExpression(QStringLiteral("[/+]")), Qt::SkipEmptyParts);
+    static const QRegularExpression separator(QStringLiteral("[/+]"));
+    const QStringList addresses = address.split(separator, Qt::SkipEmptyParts);
     // qCWarning(KBOOKMARKS_LOG) << addresses.join(",");
     for (QStringList::const_iterator it = addresses.begin(); it != addresses.end();) {
         bool append = ((*it) == QLatin1String("+"));
