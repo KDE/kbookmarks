@@ -341,7 +341,11 @@ void KBookmarkManager::init(const QString &dbusPath)
 
 void KBookmarkManager::startKEditBookmarks(const QStringList &args)
 {
-    bool success = QProcess::startDetached(QStringLiteral(KEDITBOOKMARKS_BINARY), args);
+    bool success = false;
+    const QString exec = QStandardPaths::findExecutable(QStringLiteral(KEDITBOOKMARKS_BINARY));
+    if (!exec.isEmpty()) {
+        success = QProcess::startDetached(exec, args);
+    }
 
     if (!success) {
         QString err =
