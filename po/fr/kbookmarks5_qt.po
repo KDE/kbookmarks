@@ -1,0 +1,319 @@
+# translation of kio4.po to Français
+# translation of kio4.po to
+# traduction de kio4.po en Français
+# Matthieu Robin <kde@macolu.org>, 2002,2003, 2004.
+# Robert Jacolin <rjacolin@ifrance.com>, 2003.
+# Gilles CAULIER <caulier.gilles@free.fr>, 2003.
+# Delafond <gerard@delafond.org>, 2003, 2004.
+# Matthieu Robin <kde@macolu.org>, 2004, 2005, 2006.
+# Sebastien Renard <Sebastien.Renard@digitalfox.homeip.net>, 2004.
+# Nicolas Ternisien <nicolas.ternisien@gmail.com>, 2004, 2005.
+# Nicolas Ternisien <nicolas.ternisien@gmail.com>, 2005, 2008.
+# Matthieu Robin <matthieu@macolu.org>, 2005.
+# Sébastien Renard <Sebastien.Renard@digitalfox.org>, 2007, 2008, 2009.
+# Sebastien Renard <Sebastien.Renard@digitalfox.org>, 2009, 2010, 2012, 2013.
+# Sébastien Renard <renard@kde.org>, 2010, 2011, 2012, 2014.
+# Vincent Pinon <vpinon@kde.org>, 2017.
+# Xavier Besnard <xavier.besnard@neuf.fr>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2020-05-27 09:29+0200\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
+"Language-Team: French <kde-francophone@kde.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 20.04.1\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: qtrich\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:318
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- séparateur ---"
+
+#: kbookmarkcontextmenu.cpp:52
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Ajouter un signet ici"
+
+#: kbookmarkcontextmenu.cpp:58
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Ouvrir le dossier dans l'éditeur de signets"
+
+#: kbookmarkcontextmenu.cpp:61
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Supprimer le dossier"
+
+#: kbookmarkcontextmenu.cpp:66
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Propriétés"
+
+#: kbookmarkcontextmenu.cpp:71
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Copier l'adresse du lien"
+
+#: kbookmarkcontextmenu.cpp:74
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Supprimer le signet"
+
+#: kbookmarkcontextmenu.cpp:80
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Ouvrir le dossier dans des onglets"
+
+#: kbookmarkcontextmenu.cpp:105
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Impossible d'ajouter un signet avec une URL vide."
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Suppression d'un dossier de signets"
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Suppression d'un signet"
+
+#: kbookmarkcontextmenu.cpp:135
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Voulez-vous vraiment supprimer le dossier de signets\n"
+"« %1 » ?"
+
+#: kbookmarkcontextmenu.cpp:136
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Voulez-vous vraiment supprimer le signet\n"
+"« %1 » ?"
+
+#: kbookmarkdialog.cpp:57
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Nom :"
+
+#: kbookmarkdialog.cpp:62
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Emplacement :"
+
+#: kbookmarkdialog.cpp:67
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Commentaire :"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Mettre à jour"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:179
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Propriétés du signet"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Nouveau dossier..."
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Ajouter"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:214
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Ajouter un signet"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:252
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Ajouter un signet"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:285
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Sélectionnez le dossier"
+
+#: kbookmarkdialog.cpp:313
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nouveau dossier"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:343
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Créer un dossier de signets"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:344
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Créer un nouveau dossier dans %1"
+
+# unreviewed-context
+#: kbookmarkdialog.cpp:346
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nouveau dossier :"
+
+#: kbookmarkdialog.cpp:367
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Signets"
+
+#: kbookmarkimporter_ns.cpp:108
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "Fichiers HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:110
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|Fichiers HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:127
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Impossible de trouver %1. Netscape n'est probablement pas installé. Arrêt de "
+"l'exportation."
+
+#: kbookmarkimporter_ns.cpp:131
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Impossible de trouver Netscape"
+
+#: kbookmarkimporter_ns.cpp:156
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Ce fichier a été généré par Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:158 kbookmarkimporter_ns.cpp:159
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Signets"
+
+#: kbookmarkimporter_opera.cpp:103
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Fichiers de signets d'Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:104
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Fichiers de signets d'Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:348
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+"Impossible de démarrer keditbookmarks.\n"
+"\n"
+"keditbookmarks n'est probablement pas installé"
+
+#: kbookmarkmanager.cpp:500
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Impossible d'enregistrer les signets dans %1. L'erreur rapportée était : %2. "
+"Ce message d'erreur ne sera affiché qu'une fois. La cause de l'erreur a "
+"besoin d'être corrigée aussi rapidement que possible, ce qui est "
+"probablement un disque dur plein."
+
+#: kbookmarkmenu.cpp:264
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Ouvrir un dossier dans des onglets"
+
+#: kbookmarkmenu.cpp:268
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Ouvrir tous les signets de ce dossier dans un nouvel onglet."
+
+#: kbookmarkmenu.cpp:284
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Marquer les onglets comme un dossier..."
+
+#: kbookmarkmenu.cpp:292
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Ajouter un dossier de signets pour tous les onglets ouverts"
+
+#: kbookmarkmenu.cpp:339
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Modifier votre collection de signets dans une fenêtre séparée"
+
+#: kbookmarkmenu.cpp:354
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Nouveau dossier de signets..."
+
+#: kbookmarkmenu.cpp:356
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Créer un nouveau dossier de signets pour ce menu"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Cacher dans la barre d'outils"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Afficher dans la barre d'outils"
+
+#: konqbookmarkmenu.cpp:154
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Ouvrir dans une nouvelle fenêtre"
+
+#: konqbookmarkmenu.cpp:157
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Ouvrir dans un nouvel onglet"

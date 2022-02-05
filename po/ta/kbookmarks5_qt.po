@@ -1,0 +1,391 @@
+# translation of kio4.po to தமிழ்
+# translation of kio4.po to
+# Tamil.
+# Copyright (C) 2000,2002, 2004, 2007 Free Software Foundation, Inc.
+# Sivakumar Shanmugasundaram <sshanmu@yahoo.com>, 2000.
+# Thuraiappah Vaseeharan <t_vasee@yahoo.com>, 2000-2001.
+# Thuraiappah Vaseeharan <vasee@ieee.org>, 2002.
+# Vasee Vaseeharan <vasee@ieee.org>, 2004.
+# Ambalam <tamilpc@ambalam.com>, 2004.
+# root <root@localhost.localdomain>, 2004.
+# ஸ்ரீராமதாஸ் <shriramadhas@gmail.com>, 2007.
+# ஆமாச்சு <amachu@ubuntu.com>, 2007.
+# ramadas <amachu@yavarkkum.org>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2012-03-28 00:36+0530\n"
+"Last-Translator: ramadas <amachu@yavarkkum.org>\n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:318
+#, fuzzy
+#| msgid "--- separator ---"
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- separator ---"
+
+#: kbookmarkcontextmenu.cpp:52
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "இங்கு புத்தகக்குறியைச் சேர்"
+
+#: kbookmarkcontextmenu.cpp:58
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "புத்தகக்குறி தொகுப்பானில் இந்த அடைவை திற"
+
+#: kbookmarkcontextmenu.cpp:61
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "அடைவை நீக்கு"
+
+#: kbookmarkcontextmenu.cpp:66
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr " பண்புகள்"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "இணைப்பு முகவரியை நகல் எடுக்கவும்"
+
+#: kbookmarkcontextmenu.cpp:74
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "புத்தகக்குறியை நீக்கவும்"
+
+#: kbookmarkcontextmenu.cpp:80
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "அடைவினை தத்துக்களில் திறக்க"
+
+#: kbookmarkcontextmenu.cpp:105
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "புத்தகக்குறியுடன் காலி URLலை சேர்க்க முடியவில்லை"
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "புத்தககுறிப்பு அடைவு நீக்கல்"
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "புத்தக குறிப்புகள் நீக்கல்"
+
+#: kbookmarkcontextmenu.cpp:135
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"புத்தகக்குறி அடைவை நீக்கவேண்டுமா\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:136
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"புத்தகக்குறியை நீக்கவேண்டுமா\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:57
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "பெயர்:"
+
+#: kbookmarkdialog.cpp:62
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "இடம்:"
+
+#: kbookmarkdialog.cpp:67
+#, fuzzy
+#| msgid "Comm&ent:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "&குறிப்பு:"
+
+#: kbookmarkdialog.cpp:178
+#, fuzzy
+#| msgid "Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "புதுப்பிக்க"
+
+#: kbookmarkdialog.cpp:179
+#, fuzzy
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "புத்தகக்குறிப்பின் பண்புகள்"
+
+#: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
+#, fuzzy
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "புதிய அடைவு:"
+
+#: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
+#, fuzzy
+#| msgid "Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "சேர்க்க"
+
+#: kbookmarkdialog.cpp:214
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "புத்தகக்குறியைச் சேர்"
+
+#: kbookmarkdialog.cpp:252
+#, fuzzy
+#| msgid "Add Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "நினைவுக்குறிகளைச் சேர்க்க"
+
+#: kbookmarkdialog.cpp:285
+#, fuzzy
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "அடைவை தேர்வு செய்"
+
+#: kbookmarkdialog.cpp:313
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "புதிய அடைவு:"
+
+#: kbookmarkdialog.cpp:343
+#, fuzzy
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "ஒரு புதிய புத்தகக் குறிப்பு அடைவு உருவாக்கவும்"
+
+#: kbookmarkdialog.cpp:344
+#, fuzzy, qt-format
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "%1 இல் ஒரு புதிய புத்தகக் குறிப்பு அடைவு உருவாக்கவும்"
+
+#: kbookmarkdialog.cpp:346
+#, fuzzy
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "புதிய அடைவு:"
+
+#: kbookmarkdialog.cpp:367
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "நினைவுக்குறிகள்"
+
+#: kbookmarkimporter_ns.cpp:108
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|HTML கோப்புகள் (*.html)"
+
+#: kbookmarkimporter_ns.cpp:110
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML கோப்புகள் (*.html)"
+
+#: kbookmarkimporter_ns.cpp:127
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:131
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:156
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- இந்த கோப்பு Konquerorஆல் உருவாக்கப்பட்டது -->"
+
+#: kbookmarkimporter_ns.cpp:158 kbookmarkimporter_ns.cpp:159
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "நினைவுக்குறிகள்"
+
+#: kbookmarkimporter_opera.cpp:103
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|ஓபரா புத்தகக் குறிப்பு கோப்புகள் (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:104
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|ஓபரா புத்தகக் குறிப்பு கோப்புகள் (*.adr)"
+
+#: kbookmarkmanager.cpp:348
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+
+#: kbookmarkmanager.cpp:500
+#, fuzzy, qt-format
+#| msgid ""
+#| "Unable to save bookmarks in %1. Reported error was: %2. This error "
+#| "message will only be shown once. The cause of the error needs to be fixed "
+#| "as quickly as possible, which is most likely a full hard drive."
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"%1 ல் முகவரிக் குறிப்புகளைச் சேமிக்க முடியவில்லை. %2 என்ற பிழை நேர்ந்தது. இந்தப் பிழை "
+"செய்தி ஒரே ஒரு முறை தான் காட்டப்படும். பிழையின் காரணத்தை கூடிய விரைவில் சரி செய்ய "
+"வேண்டும். முழு வன்தகடையும் மாற்ற வேண்டியிருக்கலாம்."
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "அடைவினை தத்துக்களில் திறக்க"
+
+#: kbookmarkmenu.cpp:268
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "இவ்வடைவிலிருக்கும் அனைத்து நினைவுக் குறிகளையும் புதிய தத்தாக திறக்கவும்."
+
+#: kbookmarkmenu.cpp:284
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "தத்தல்களை அடைவாக புத்தகக் குறிப்பாக்கவும்..."
+
+#: kbookmarkmenu.cpp:292
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "திறந்திருக்கும் எல்லா தத்தல்களையும், ஒரு அடைவில் முகவரி குறிப்பாக்கவும்"
+
+#: kbookmarkmenu.cpp:339
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "உங்கள் புத்தகக் குறிப்பு சேமிப்பை தனியான சாளரத்தில் மாற்றவும்"
+
+#: kbookmarkmenu.cpp:354
+#, fuzzy
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "நினைவுக்குறிக்கான புதிய அடைவு"
+
+#: kbookmarkmenu.cpp:356
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "இந்த பட்டியில் ஒரு புதிய புத்தகக் குறிப்பு அடைவு உருவாக்கவும் "
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#, fuzzy
+#| msgid "Hide in toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "கருவிப் பட்டையில் மறைக்க"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#, fuzzy
+#| msgid "Show in toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "கருவிப்பட்டையில் காட்டுக"
+
+#: konqbookmarkmenu.cpp:154
+#, fuzzy
+#| msgid "Open in New Window"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "புதிய சாளரத்தில் திறக்க"
+
+#: konqbookmarkmenu.cpp:157
+#, fuzzy
+#| msgid "Open in New Tab"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "புதியத் தத்தில் திறக்க"

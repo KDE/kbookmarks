@@ -1,0 +1,354 @@
+# translation of kio4.po to Esperanto
+# Esperantaj mesaĝoj por "kio4"
+# Copyright (C) 2007, 2008 Free Software Foundation, Inc.
+# Oliver M. Kellogg <okellogg@users.sourceforge.net>, 2007.
+# Cindy McKee <cfmckee@gmail.com>, 2007, 2008.
+#
+# Minuskloj: ĉ ĝ ĵ ĥ ŝ ŭ   Majuskloj: Ĉ Ĝ Ĵ Ĥ Ŝ Ŭ
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2008-05-14 13:25-0500\n"
+"Last-Translator: Cindy McKee <cfmckee@gmail.com>\n"
+"Language-Team: Esperanto <kde-i18n-doc@lists.kde.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KAider 0.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:318
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- apartigilo ---"
+
+#: kbookmarkcontextmenu.cpp:52
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Aldonu legosignon ĉi tie"
+
+#: kbookmarkcontextmenu.cpp:58
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Malfermi dosierujon en legosigna redaktilo"
+
+#: kbookmarkcontextmenu.cpp:61
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Forigi dosierujon"
+
+#: kbookmarkcontextmenu.cpp:66
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Ecoj"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Kopii adreson de ligilo"
+
+#: kbookmarkcontextmenu.cpp:74
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Forigi legosignon"
+
+#: kbookmarkcontextmenu.cpp:80
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Malfermi Dosierujon en Langetoj"
+
+#: kbookmarkcontextmenu.cpp:105
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Ne eblas aldoni legosignon sen URL."
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Forigo de legosigna dosierujo"
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Forigo de legosigno"
+
+#: kbookmarkcontextmenu.cpp:135
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Ĉu vi certas ke vi volas forpreni la legosignan dosierujon\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:136
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Ĉu vi certas ke vi volas forpreni la legosignon\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:57
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Nomo:"
+
+#: kbookmarkdialog.cpp:62
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Loko:"
+
+#: kbookmarkdialog.cpp:67
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Komento:"
+
+#: kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Ĝisdatigo"
+
+#: kbookmarkdialog.cpp:179
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Ecoj de legosignoj"
+
+#: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Nova dosierujo..."
+
+#: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Aldoni"
+
+#: kbookmarkdialog.cpp:214
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Aldoni Legosignon"
+
+#: kbookmarkdialog.cpp:252
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Aldoni Legosignojn"
+
+#: kbookmarkdialog.cpp:285
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Elekti dosierujon"
+
+#: kbookmarkdialog.cpp:313
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nova dosierujo"
+
+#: kbookmarkdialog.cpp:343
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Krei novan legosignujon"
+
+#: kbookmarkdialog.cpp:344
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Krei novan legosignujon en %1"
+
+#: kbookmarkdialog.cpp:346
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nova dosierujo:"
+
+#: kbookmarkdialog.cpp:367
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Legosignoj"
+
+#: kbookmarkimporter_ns.cpp:108
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "HTML-dosieroj (*.html)"
+
+#: kbookmarkimporter_ns.cpp:110
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML-dosieroj (*.html)"
+
+#: kbookmarkimporter_ns.cpp:127
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:131
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:156
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Tiu dosiero estas kreita de Konkeranto -->"
+
+#: kbookmarkimporter_ns.cpp:158 kbookmarkimporter_ns.cpp:159
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Legosignoj"
+
+#: kbookmarkimporter_opera.cpp:103
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Opera-legosignaj dosieroj (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:104
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera-legosignaj dosieroj (*.adr)"
+
+#: kbookmarkmanager.cpp:348
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+
+#: kbookmarkmanager.cpp:500
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Ne povas konservi legosignojn en %1. La liverita eraro diris: %2. Ĉi tiu "
+"erarmesaĝo nur montriĝas unufoje. La kaŭzo de la eraro bezonas riparon kiel "
+"eble plej rapide, kaj verŝajne estas plenplena fiksita disko."
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Malfermi Dosierujon en Langetoj"
+
+#: kbookmarkmenu.cpp:268
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Malfermi ĉiujn legosignojn en la dosierujo en nova langeto"
+
+#: kbookmarkmenu.cpp:284
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Legosigni langetojn kiel dosierujon..."
+
+#: kbookmarkmenu.cpp:292
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Aldoni dosierujon de legosignoj por ĉiuj malfermitaj langetoj"
+
+#: kbookmarkmenu.cpp:339
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Redaktu la legosignaron en aparta fenestro"
+
+#: kbookmarkmenu.cpp:354
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Nova legosigna dosierujo..."
+
+#: kbookmarkmenu.cpp:356
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Krei novan legosignujon en tiu menuo"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#, fuzzy
+#| msgctxt "KonqBookmarkContextMenu|"
+#| msgid "Hide in toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Kaŝi en ilobreto"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#, fuzzy
+#| msgctxt "KonqBookmarkContextMenu|"
+#| msgid "Show in toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Montriĝi en ilobreto"
+
+#: konqbookmarkmenu.cpp:154
+#, fuzzy
+#| msgctxt "KonqBookmarkContextMenu|"
+#| msgid "Open in New Window"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Malfermi en nova fenestro"
+
+#: konqbookmarkmenu.cpp:157
+#, fuzzy
+#| msgctxt "KonqBookmarkContextMenu|"
+#| msgid "Open in New Tab"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Malfermi en nova langeto"

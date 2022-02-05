@@ -1,0 +1,311 @@
+# translation of kio4.po to Russian
+# Copyright (C) 2004-2006, KDE Russian translation team.
+# Denis Perchine <dyp@perchine.com>, 2000.
+# Gregory Mokhin <mok@kde.ru>, 2000, 2004, 2005.
+# Albert R. Valiev <darkstar@altlinux.ru>, 2002.
+# Leonid Kanter <leon@asplinux.ru>, 2002-2003, 2004, 2005, 2008.
+# Nick Shaforostoff <shafff@ukr.net>, 2005, 2006, 2007, 2009.
+# Andrey Cherepanov <sibskull@mail.ru>, 2005-2006.
+# Nick Shaforostoff <shaforostoff@kde.ru>, 2007, 2008, 2009.
+# Evgeniy Ivanov <powerfox@kde.ru>, 2008.
+# Андрей Черепанов <cas@altlinux.ru>, 2009.
+# Andrey Cherepanov <skull@kde.ru>, 2009, 2011.
+# Alexander Potashev <aspotashev@gmail.com>, 2009, 2010, 2011, 2014, 2017.
+# Yuri Efremov <yur.arh@gmail.com>, 2011, 2012.
+# Inga Barinova <ingabarinova@gmail.com>, 2012.
+# Julia Dronova <juliette.tux@gmail.com>, 2012.
+# Alexander Lakhin <exclusion@gmail.com>, 2013.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2020-09-01 09:26+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.08.0\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:318
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- разделитель ---"
+
+#: kbookmarkcontextmenu.cpp:52
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Добавить закладку"
+
+#: kbookmarkcontextmenu.cpp:58
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Открыть папку в редакторе закладок"
+
+#: kbookmarkcontextmenu.cpp:61
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Удалить папку"
+
+#: kbookmarkcontextmenu.cpp:66
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Свойства"
+
+#: kbookmarkcontextmenu.cpp:71
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Скопировать адрес ссылки"
+
+#: kbookmarkcontextmenu.cpp:74
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Удалить закладку"
+
+#: kbookmarkcontextmenu.cpp:80
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Открыть все закладки в папке во вкладках"
+
+#: kbookmarkcontextmenu.cpp:105
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Невозможно добавить закладку с пустым URL."
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Удаление папки закладок"
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Удаление закладки"
+
+#: kbookmarkcontextmenu.cpp:135
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Удалить папку закладок\n"
+"«%1»?"
+
+#: kbookmarkcontextmenu.cpp:136
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Удалить закладку\n"
+"«%1»?"
+
+#: kbookmarkdialog.cpp:57
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Название:"
+
+#: kbookmarkdialog.cpp:62
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Адрес:"
+
+#: kbookmarkdialog.cpp:67
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Комментарий:"
+
+#: kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Обновить"
+
+#: kbookmarkdialog.cpp:179
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Свойства закладки"
+
+#: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Создать папку..."
+
+#: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Добавить"
+
+#: kbookmarkdialog.cpp:214
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Добавление закладки"
+
+#: kbookmarkdialog.cpp:252
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Добавление закладок"
+
+#: kbookmarkdialog.cpp:285
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Выбор папки"
+
+#: kbookmarkdialog.cpp:313
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Создание папки закладок"
+
+#: kbookmarkdialog.cpp:343
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Создание папки закладок"
+
+#: kbookmarkdialog.cpp:344
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Создание папки закладок в %1"
+
+#: kbookmarkdialog.cpp:346
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Название новой папки:"
+
+#: kbookmarkdialog.cpp:367
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: kbookmarkimporter_ns.cpp:108
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "Документы HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:110
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|Документы HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:127
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Не удалось найти %1. Netscape вероятнее всего не установлен. Экспортирование "
+"не будет выполнено."
+
+#: kbookmarkimporter_ns.cpp:131
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Netscape не найден"
+
+#: kbookmarkimporter_ns.cpp:156
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Этот файл был создан программой Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:158 kbookmarkimporter_ns.cpp:159
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Закладки"
+
+#: kbookmarkimporter_opera.cpp:103
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Файлы закладок Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:104
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "Файлы закладок Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:348
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+"Не удалось запустить редактор закладок (keditbookmarks).\n"
+"\n"
+"Скорее всего, программа keditbookmarks не установлена."
+
+#: kbookmarkmanager.cpp:500
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Не удалось сохранить закладки в %1. Сообщение об ошибке: %2. Это сообщение "
+"об ошибке будет показано только один раз. Причина ошибки должна быть "
+"исправлена как можно быстрее, скорее всего переполнен жёсткий диск."
+
+#: kbookmarkmenu.cpp:264
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Открыть все закладки в папке во вкладках"
+
+# BUGME: "as a new tab" -> "as new tabs"? --aspotashev
+#: kbookmarkmenu.cpp:268
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Открыть закладки из этой папки в новых вкладках."
+
+#: kbookmarkmenu.cpp:284
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Создать папку для всех открытых вкладок..."
+
+#: kbookmarkmenu.cpp:292
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Создать папку с закладками для всех открытых вкладок."
+
+#: kbookmarkmenu.cpp:339
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Редактировать коллекцию закладок в отдельном окне"
+
+#: kbookmarkmenu.cpp:354
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Создать папку закладок..."
+
+#: kbookmarkmenu.cpp:356
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Создать новую папку закладок в этом меню"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Скрыть на панели инструментов"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Показать на панели инструментов"
+
+#: konqbookmarkmenu.cpp:154
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Открыть в новом окне"
+
+#: konqbookmarkmenu.cpp:157
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Открыть в новой вкладке"

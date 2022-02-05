@@ -1,0 +1,368 @@
+# KDE breton translation
+# Copyright (C) 1998-2001 Free Software Foundation, Inc.
+# Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>, 1998
+# Thierry Vignaud <tvignaud@mandriva.com>, 2001-2005
+# $Id: kio4.po 685076 2007-07-08 04:11:55Z scripty $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2004-09-28 03:02+0200\n"
+"Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
+"Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
+"Language: br\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:318
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr ""
+
+#: kbookmarkcontextmenu.cpp:52
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Ouzhpennañ ur sined amañ"
+
+#: kbookmarkcontextmenu.cpp:58
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Digeriñ ar renkell en aozer siloù"
+
+#: kbookmarkcontextmenu.cpp:61
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Distruj renkell"
+
+#: kbookmarkcontextmenu.cpp:66
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Perzhioù"
+
+#: kbookmarkcontextmenu.cpp:71
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Eilañ chomlec'h al liamm"
+
+#: kbookmarkcontextmenu.cpp:74
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Distruj ar sined"
+
+#: kbookmarkcontextmenu.cpp:80
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Digeriñ ar renkell er bevennigoù"
+
+#: kbookmarkcontextmenu.cpp:105
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "N'hellan ket ouzhpennañ ur sined gant un URL goullo."
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "O lemel ur renkell sined"
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Emaon o tistruj ar sined"
+
+#: kbookmarkcontextmenu.cpp:135
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Ha sur oc'h bezañ mennet da zilemel ar renkell sined\n"
+"« %1 » ?"
+
+#: kbookmarkcontextmenu.cpp:136
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Ha sur oc'h bezañ mennet da zilemel ar sined\n"
+"« %1 » ?"
+
+#: kbookmarkdialog.cpp:57
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Anv :"
+
+#: kbookmarkdialog.cpp:62
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Lec'hiadur :"
+
+#: kbookmarkdialog.cpp:67
+#, fuzzy
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Askelenn :"
+
+#: kbookmarkdialog.cpp:178
+#, fuzzy
+#| msgid "&Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "&Hizivaat"
+
+#: kbookmarkdialog.cpp:179
+#, fuzzy
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Perzhioù ar sinedoù"
+
+#: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
+#, fuzzy
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "Renkell &nevez ..."
+
+#: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
+#, fuzzy
+#| msgid "&Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "&Ouzhpennañ"
+
+#: kbookmarkdialog.cpp:214
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Ouzhpennañ ur sined"
+
+#: kbookmarkdialog.cpp:252
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Ouzhpennañ ur sined"
+
+#: kbookmarkdialog.cpp:285
+#, fuzzy
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Dibabit ur renkell"
+
+#: kbookmarkdialog.cpp:313
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Renkell nevez"
+
+#: kbookmarkdialog.cpp:343
+#, fuzzy
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Krouiñ ur renkell &nevez ar sinedoù"
+
+#: kbookmarkdialog.cpp:344
+#, fuzzy, qt-format
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Krouiñ ur renkell &nevez ar sinedoù e %1"
+
+#: kbookmarkdialog.cpp:346
+#, fuzzy
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Renkell nevez :"
+
+#: kbookmarkdialog.cpp:367
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Sinedoù"
+
+#: kbookmarkimporter_ns.cpp:108
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|Restroù HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:110
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|Restroù HTML (*.html)"
+
+#: kbookmarkimporter_ns.cpp:127
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:131
+#, fuzzy
+#| msgid "Netscape Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Sinedoù Netscape"
+
+#: kbookmarkimporter_ns.cpp:156
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Skrivet a oa ar restr-se gant Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:158 kbookmarkimporter_ns.cpp:159
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Sinedoù"
+
+#: kbookmarkimporter_opera.cpp:103
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Restroù sined Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:104
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Restroù sined Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:348
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+
+#: kbookmarkmanager.cpp:500
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Digeriñ ar renkell er bevennigoù"
+
+#: kbookmarkmenu.cpp:268
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr ""
+
+#: kbookmarkmenu.cpp:284
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "&Gwel nevez"
+
+#: kbookmarkmenu.cpp:292
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr ""
+
+#: kbookmarkmenu.cpp:339
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr ""
+
+#: kbookmarkmenu.cpp:354
+#, fuzzy
+#| msgid "&New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Renkell &nevez ar sinedoù ..."
+
+#: kbookmarkmenu.cpp:356
+#, fuzzy
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Krouiñ ur renkell nevez"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#, fuzzy
+#| msgid "Hide Bookmarks"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Kuzhat ar sinedoù"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#, fuzzy
+#| msgid "Show toolbar"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Diskouez ar barrenn &ostilhoù"
+
+#: konqbookmarkmenu.cpp:154
+#, fuzzy
+#| msgid "Open in New Window"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Digeriñ en ur prenestr nevez"
+
+#: konqbookmarkmenu.cpp:157
+#, fuzzy
+#| msgid "Open in New Tab"
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Digeriñ en ur vevennig nevez"

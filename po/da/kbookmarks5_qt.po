@@ -1,0 +1,298 @@
+# translation of kio4.po to
+# Danish translation of kio
+# Copyright (C)
+#
+# Steffen Hansen <stefh@nostromo>, 1998.
+# Thorbjoern Ravn Andersen <ravn@mip.sdu.dk>, 1999.
+# Birger Langkjer <birger.langkjer@image.dk>, 1999.
+# Erik Kjær Pedersen <erik@binghamton.edu>, 1999-2001, 2002, 2003, 2004, 2005, 2006.
+# Lars K. Schunk <lars@schunk.dk>, 2001-2002.
+# Martin Schlander <mschlander@opensuse.org>, 2008, 2009, 2010, 2011, 2012, 2014, 2017, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2020-07-27 17:28+0200\n"
+"Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
+"Language-Team: Danish <kde-i18n-doc@kde.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.04.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:318
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- adskiller ---"
+
+#: kbookmarkcontextmenu.cpp:52
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Tilføj bogmærke her"
+
+#: kbookmarkcontextmenu.cpp:58
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Åbn mappe i bogmærke-editor"
+
+#: kbookmarkcontextmenu.cpp:61
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Slet mappe"
+
+#: kbookmarkcontextmenu.cpp:66
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Egenskaber"
+
+#: kbookmarkcontextmenu.cpp:71
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Kopiér linkadresse"
+
+#: kbookmarkcontextmenu.cpp:74
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Slet bogmærke"
+
+#: kbookmarkcontextmenu.cpp:80
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Åbn mappe i faneblade"
+
+#: kbookmarkcontextmenu.cpp:105
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Kan ikke tilføje bogmærke med tom URL."
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Sletning af bogmærkemappe"
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Sletning af bogmærke"
+
+#: kbookmarkcontextmenu.cpp:135
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Vil du virkelig fjerne fjerne bogmærkemappen\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:136
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Vil du virkelig fjerne bogmærket\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:57
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Navn:"
+
+#: kbookmarkdialog.cpp:62
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Placering:"
+
+#: kbookmarkdialog.cpp:67
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#: kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Opdatér"
+
+#: kbookmarkdialog.cpp:179
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Bogmærkeegenskaber"
+
+#: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Ny mappe..."
+
+#: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Tilføj"
+
+#: kbookmarkdialog.cpp:214
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Tilføj bogmærke"
+
+#: kbookmarkdialog.cpp:252
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Tilføj bogmærker"
+
+#: kbookmarkdialog.cpp:285
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Vælg mappe"
+
+#: kbookmarkdialog.cpp:313
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Ny mappe"
+
+#: kbookmarkdialog.cpp:343
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Opret ny bogmærkemappe"
+
+#: kbookmarkdialog.cpp:344
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Opret ny bogmærkemappe i %1"
+
+#: kbookmarkdialog.cpp:346
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Ny mappe:"
+
+#: kbookmarkdialog.cpp:367
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Bogmærker"
+
+#: kbookmarkimporter_ns.cpp:108
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "HTML-filer (*.html)"
+
+#: kbookmarkimporter_ns.cpp:110
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML-filer (*.html)"
+
+#: kbookmarkimporter_ns.cpp:127
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+"Kunne ikke finde %1. Netscape er formentlig ikke installeret. Afbryder "
+"eksport."
+
+#: kbookmarkimporter_ns.cpp:131
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr "Netscape ikke fundet"
+
+#: kbookmarkimporter_ns.cpp:156
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Denne fil blev genereret af Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:158 kbookmarkimporter_ns.cpp:159
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Bogmærker"
+
+#: kbookmarkimporter_opera.cpp:103
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "Opera bogmærkefiler (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:104
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Opera bogmærkefiler (*.adr)"
+
+#: kbookmarkmanager.cpp:348
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+"Kan ikke køre keditbookmarks.\n"
+"\n"
+"Sandsynligvis har du ikke keditbookmarks installeret i øjeblikket"
+
+#: kbookmarkmanager.cpp:500
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Kunne ikke gemme bogmærker i %1. Den rapporterede fejl var: %2. Denne "
+"fejlmeddelelse vil kun blive vist én gang. Grunden til fejlen skal rettes så "
+"hurtigt som muligt, det mest sandsynlige er en fuld harddisk"
+
+#: kbookmarkmenu.cpp:264
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Åbn mappe i faneblade"
+
+#: kbookmarkmenu.cpp:268
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Åbn alle bogmærker i denne mappe som nyt faneblad."
+
+#: kbookmarkmenu.cpp:284
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Tilføj bogmærkemappe med faneblade..."
+
+#: kbookmarkmenu.cpp:292
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Tilføj en mappe med bogmærker for alle åbne faneblade."
+
+#: kbookmarkmenu.cpp:339
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Redigér din bogmærkesamling i et separat vindue"
+
+#: kbookmarkmenu.cpp:354
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Ny bogmærkemappe..."
+
+#: kbookmarkmenu.cpp:356
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Lav en ny bogmærkemappe i denne menu"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Skjul i værktøjslinje"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Vis i værktøjslinje"
+
+#: konqbookmarkmenu.cpp:154
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Åbn i nyt vindue"
+
+#: konqbookmarkmenu.cpp:157
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Åbn i nyt faneblad"

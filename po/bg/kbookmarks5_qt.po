@@ -1,0 +1,327 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Zlatko Popov <zlatkopopov@fsa-bg.org>, 2006, 2007, 2008, 2009.
+# Yasen Pramatarov <yasen@lindeas.com>, 2010, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: kio4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-03-28 02:03+0000\n"
+"PO-Revision-Date: 2021-01-06 18:31+0200\n"
+"Last-Translator: Yasen Pramatarov <yasen@lindeas.com>\n"
+"Language-Team: Bulgarian <dict@ludost.net>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.08.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Qt-Contexts: true\n"
+
+#: kbookmark.cpp:318
+msgctxt "KBookmark|Bookmark separator"
+msgid "--- separator ---"
+msgstr "--- разделител ---"
+
+#: kbookmarkcontextmenu.cpp:52
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Добавяне на отметка"
+
+#: kbookmarkcontextmenu.cpp:58
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Отваряне на папка в редактора на отметки"
+
+#: kbookmarkcontextmenu.cpp:61
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Изтриване на папка"
+
+#: kbookmarkcontextmenu.cpp:66
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Настройки"
+
+#: kbookmarkcontextmenu.cpp:71
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Копиране на адреса"
+
+#: kbookmarkcontextmenu.cpp:74
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Изтриване на отметка"
+
+#: kbookmarkcontextmenu.cpp:80
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Отваряне на папка в подпрозорец"
+
+#: kbookmarkcontextmenu.cpp:105
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Не може да бъде добавена отметка без адрес."
+
+#: kbookmarkcontextmenu.cpp:134
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Изтриване на папка за отметки"
+
+#: kbookmarkcontextmenu.cpp:134
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Изтриване на отметка"
+
+#: kbookmarkcontextmenu.cpp:135
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Сигурни ли сте, че искате да бъде изтрита папката с отметки\n"
+"\"%1\"?"
+
+#: kbookmarkcontextmenu.cpp:136
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Сигурни ли сте, че искате да бъде изтрита отметката\n"
+"\"%1\"?"
+
+#: kbookmarkdialog.cpp:57
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Име:"
+
+#: kbookmarkdialog.cpp:62
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Местоположение:"
+
+#: kbookmarkdialog.cpp:67
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Коментар:"
+
+#: kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Обновяване"
+
+#: kbookmarkdialog.cpp:179
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Настройки на отметките"
+
+#: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Нова папка..."
+
+#: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Добавяне"
+
+#: kbookmarkdialog.cpp:214
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Добавяне на отметка"
+
+#: kbookmarkdialog.cpp:252
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Добавяне на отметки"
+
+#: kbookmarkdialog.cpp:285
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Избор на папка"
+
+#: kbookmarkdialog.cpp:313
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Нова папка"
+
+#: kbookmarkdialog.cpp:343
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Създаване на нова папка за отметки"
+
+#: kbookmarkdialog.cpp:344
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Създаване на нова папка за отметки в %1"
+
+#: kbookmarkdialog.cpp:346
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Нова папка:"
+
+#: kbookmarkdialog.cpp:367
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Отметки"
+
+#: kbookmarkimporter_ns.cpp:108
+#, fuzzy
+#| msgid "*.html|HTML Files (*.html)"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "HTML Files (*.html)"
+msgstr "*.html|HTML файлове (*.html)"
+
+#: kbookmarkimporter_ns.cpp:110
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "*.html|HTML Files (*.html)"
+msgstr "*.html|HTML файлове (*.html)"
+
+#: kbookmarkimporter_ns.cpp:127
+#, qt-format
+msgctxt "KNSBookmarkImporterImpl|"
+msgid ""
+"Could not find %1. Netscape is probably not installed. Aborting the export."
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:131
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Netscape not found"
+msgstr ""
+
+#: kbookmarkimporter_ns.cpp:156
+#, fuzzy
+#| msgid "<!-- This file was generated by Konqueror -->"
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "<!-- This file was generated by Konqueror -->"
+msgstr "<!-- Този файл е генериран от Konqueror -->"
+
+#: kbookmarkimporter_ns.cpp:158 kbookmarkimporter_ns.cpp:159
+msgctxt "KNSBookmarkImporterImpl|"
+msgid "Bookmarks"
+msgstr "Отметки"
+
+#: kbookmarkimporter_opera.cpp:103
+#, fuzzy
+#| msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Отметки на Opera (*.adr)"
+
+#: kbookmarkimporter_opera.cpp:104
+msgctxt "KOperaBookmarkImporterImpl|"
+msgid "*.adr|Opera Bookmark Files (*.adr)"
+msgstr "*.adr|Отметки на Opera (*.adr)"
+
+#: kbookmarkmanager.cpp:348
+msgctxt "KBookmarkManager|"
+msgid ""
+"Cannot launch keditbookmarks.\n"
+"\n"
+"Most likely you do not have keditbookmarks currently installed"
+msgstr ""
+
+#: kbookmarkmanager.cpp:500
+#, fuzzy, qt-format
+#| msgid ""
+#| "Unable to save bookmarks in %1. Reported error was: %2. This error "
+#| "message will only be shown once. The cause of the error needs to be fixed "
+#| "as quickly as possible, which is most likely a full hard drive."
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+"Отметките не могат да бъдат записани в \"%1\". Съобщение за грешка: %2. То "
+"ще бъде показано само веднъж. Трябва да отстраните грешката колкото се може "
+"по-бързо. Най-вероятно нямате достатъчно свободно място на диска."
+
+#: kbookmarkmenu.cpp:264
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Отваряне на папка в подпрозорец"
+
+#: kbookmarkmenu.cpp:268
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Отваряне на всички отметки в тази папка като нови подпрозорци."
+
+#: kbookmarkmenu.cpp:284
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Отмятане на подпрозорците в директория..."
+
+#: kbookmarkmenu.cpp:292
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr ""
+
+#: kbookmarkmenu.cpp:339
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Редактиране на отметките в друг прозорец"
+
+#: kbookmarkmenu.cpp:354
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Нова папка за отметки..."
+
+#: kbookmarkmenu.cpp:356
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Създаване на нова папка за отметки"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Hide in Toolbar"
+msgstr "Скриване в лентата с инструментите"
+
+#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Show in Toolbar"
+msgstr "Показване в лентата с инструментите"
+
+#: konqbookmarkmenu.cpp:154
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Window"
+msgstr "Отваряне в нов прозорец"
+
+#: konqbookmarkmenu.cpp:157
+msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+msgid "Open in New Tab"
+msgstr "Отваряне в нов подпрозорец"
