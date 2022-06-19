@@ -55,7 +55,7 @@ find_package(KF5XmlGui ${KF_DEP_VERSION} REQUIRED)
 ecm_install_po_files_as_qm(po)
 ecm_set_disabled_deprecation_versions(
     QT 5.15.2
-    KF 5.90.0
+    KF 5.95.0
 )
 
 
