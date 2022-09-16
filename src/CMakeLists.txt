@@ -109,7 +109,7 @@ set(KBookmarks_HEADERS
   kbookmarkimporter_ie.h
   kbookmarkimporter_ns.h
 )
-install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_export.h
