@@ -7,6 +7,9 @@
 */
 
 #include "konqbookmarkmenu.h"
+
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 65)
+
 #include "kbookmarkaction.h"
 
 #include "kbookmarks_debug.h"
@@ -24,8 +27,6 @@
 #include "kbookmarkimporter_opera.h"
 #include "kbookmarkmanager.h"
 #include "konqbookmarkmenu_p.h"
-
-#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 65)
 
 KImportedBookmarkMenu::KImportedBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, const QString &type, const QString &location)
     : KBookmarkMenu(mgr, owner, parentMenu, QString())

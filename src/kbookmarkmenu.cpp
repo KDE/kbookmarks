@@ -16,7 +16,9 @@
 #include "kbookmarkowner.h"
 #include "kbookmarks_debug.h"
 
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
 #include <KActionCollection>
+#endif
 #include <KAuthorized>
 #include <KStandardAction>
 
@@ -55,7 +57,9 @@ KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *_owner, QMen
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager *manager, KBookmarkOwner *_owner, QMenu *_parentMenu)
     : QObject()
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
     , m_actionCollection(new KActionCollection(this))
+#endif
     , d(new KBookmarkMenuPrivate())
     , m_bIsRoot(true)
     , m_pManager(manager)
@@ -105,7 +109,9 @@ void KBookmarkMenu::addActions()
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *_owner, QMenu *_parentMenu, const QString &parentAddress)
     : QObject()
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
     , m_actionCollection(new KActionCollection(this))
+#endif
     , d(new KBookmarkMenuPrivate())
     , m_bIsRoot(false)
     , m_pManager(mgr)
@@ -293,9 +299,11 @@ void KBookmarkMenu::addAddBookmarksList()
         d->bookmarksToFolderAction->setStatusTip(d->bookmarksToFolderAction->toolTip());
         connect(d->bookmarksToFolderAction, &QAction::triggered, this, &KBookmarkMenu::slotAddBookmarksList);
 
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
         if (m_actionCollection) {
             m_actionCollection->addAction(d->bookmarksToFolderAction->objectName(), d->bookmarksToFolderAction);
         }
+#endif
     }
 
     m_parentMenu->addAction(d->bookmarksToFolderAction);
@@ -313,9 +321,11 @@ void KBookmarkMenu::addAddBookmark()
             d->addBookmarkAction->setObjectName(QStringLiteral("add_bookmark"));
         }
 
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
         if (m_actionCollection) {
             m_actionCollection->addAction(d->addBookmarkAction->objectName(), d->addBookmarkAction);
         }
+#endif
 
         if (!m_bIsRoot) {
             d->addBookmarkAction->setShortcut(QKeySequence());
@@ -339,9 +349,11 @@ void KBookmarkMenu::addEditBookmarks()
     d->editBookmarksAction->setToolTip(tr("Edit your bookmark collection in a separate window", "@info:tooltip"));
     d->editBookmarksAction->setStatusTip(d->editBookmarksAction->toolTip());
 
+#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
     if (m_actionCollection) {
         m_actionCollection->addAction(d->editBookmarksAction->objectName(), d->editBookmarksAction);
     }
+#endif
 }
 
 void KBookmarkMenu::addNewFolder()

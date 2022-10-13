@@ -10,4 +10,8 @@ endif()
 include(ECMAddTests)
 
 ecm_add_test(kbookmarktest.cpp TEST_NAME kbookmarktest LINK_LIBRARIES KF5::Bookmarks Qt${QT_MAJOR_VERSION}::Test)
-ecm_add_test(kbookmarkmenutest.cpp TEST_NAME kbookmarkmenutest LINK_LIBRARIES KF5::Bookmarks KF5::XmlGui Qt${QT_MAJOR_VERSION}::Test)
+ecm_add_test(kbookmarkmenutest.cpp TEST_NAME kbookmarkmenutest LINK_LIBRARIES KF5::Bookmarks Qt${QT_MAJOR_VERSION}::Test)
+
+if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.69.0)
+    target_link_libraries(kbookmarkmenutest KF5::XmlGui)
+endif()
