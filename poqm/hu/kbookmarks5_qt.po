@@ -234,57 +234,57 @@ msgstr ""
 "Ez az üzenet csak egyszer jelenik meg. A hiba okát célszerű minél hamarabb "
 "elhárítani, valószínű, hogy több üres lemezterületre van szükség."
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Mappamegnyitás lapokon"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "A mappában található könyvjelzők megnyitása új lapon."
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Könyvjelző az összes lapra (mappaként)…"
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Könyvjelzőmappa létrehozása az összes megnyitott lapra"
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "A könyvjelzők szerkesztése külön ablakban"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Új könyvjelzőmappa…"
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Új könyvjelzőmappa létrehozása a menüben"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "Elrejtés az eszköztárból"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "Megjelenítés az eszköztárban"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "Megnyitás új ablakban"
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Tab"
 msgstr "Megnyitás új lapon"

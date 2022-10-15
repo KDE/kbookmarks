@@ -232,57 +232,57 @@ msgstr ""
 "تعذر حفظ العلامات في %1. الخطأ كان: %2. رسالة الخطأ هذه ستظهر مرة واحدة فقط. "
 "يجب إصلاح سبب الخطأ بأسرع ما أمكن، وهو على الأرجح امتلاء القرص الصلب."
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "افتح المجلد في ألسنة"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "افتح كل العلامات في هذا المجلد كَلسان جديد."
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "علّم الألسنة كَمجلد..."
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "أضف مجلد علامات لكل الألسنة المفتوحة."
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "حرّر مجموعة العلامات في نافذة منفصلة"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "مجلد علامات جديد…"
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "أنشئ مجلد علامات جديد في هذه القائمة"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "أخفِ في شريط الأدوات"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "اعرض في شريط الأدوات"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "افتح في نافذة جديدة"
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Tab"
 msgstr "افتح في لسان جديد"

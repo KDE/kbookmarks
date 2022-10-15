@@ -263,57 +263,57 @@ msgstr ""
 "besoin d'être corrigée aussi rapidement que possible, ce qui est "
 "probablement un disque dur plein."
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Ouvrir un dossier dans des onglets"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Ouvrir tous les signets de ce dossier dans un nouvel onglet."
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Marquer les onglets comme un dossier..."
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Ajouter un dossier de signets pour tous les onglets ouverts"
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Modifier votre collection de signets dans une fenêtre séparée"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Nouveau dossier de signets..."
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Créer un nouveau dossier de signets pour ce menu"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "Cacher dans la barre d'outils"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "Afficher dans la barre d'outils"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "Ouvrir dans une nouvelle fenêtre"
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Tab"
 msgstr "Ouvrir dans un nouvel onglet"

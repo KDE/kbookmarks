@@ -276,7 +276,7 @@ msgstr ""
 "mensaxe de erro só se mostrará unha vez. A causa do erro debe corrixirse tan "
 "axiña como se poida, posibelmente sexa un disco duro cheo."
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -284,7 +284,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Abrir o cartafol en separadores"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Open all bookmarks in this folder as a new tab."
@@ -292,7 +292,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Abrir cada marcador deste cartafol nun novo separador."
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -300,7 +300,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Marcar estes separadores como un cartafol…"
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Add a folder of bookmarks for all open tabs."
@@ -308,7 +308,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Engade un cartafol de marcadores con todos os separadores abertos."
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Edit your bookmark collection in a separate window"
@@ -316,7 +316,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Editar a súa colección de marcadores nunha xanela separada"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -324,7 +324,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Novo cartafol de marcadores…"
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"
@@ -332,7 +332,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Crea un novo cartafol de marcadores neste menú"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgctxt "KonqBookmarkContextMenu|"
 #| msgid "Hide in toolbar"
@@ -340,7 +340,7 @@ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "Agochar na barra de ferramentas"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgctxt "KonqBookmarkContextMenu|"
 #| msgid "Show in toolbar"
@@ -348,7 +348,7 @@ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "Mostrar na barra de ferramentas"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 #, fuzzy
 #| msgctxt "KonqBookmarkContextMenu|"
 #| msgid "Open in New Window"
@@ -356,7 +356,7 @@ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "Abrir nunha xanela nova"
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 #, fuzzy
 #| msgctxt "KonqBookmarkContextMenu|"
 #| msgid "Open in New Tab"

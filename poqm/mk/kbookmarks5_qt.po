@@ -324,77 +324,77 @@ msgstr ""
 "Оваа порака за грешка ќе се појави само еднаш. Причината за грешката треба "
 "да се отстрани што побрзо и најверојатно причината е полн тврд диск."
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Отвори папка во ливчиња"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 #, fuzzy
 #| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Ги отвора сите обележувачи од оваа папка како ново ливче."
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Ливчињата во папка со обележувачи..."
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Додава папка со обележувачи од сите отворени ливчиња."
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Уредете ја вашата колекција на обележувачи во посебен прозорец"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 #, fuzzy
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Нова папка со обележувачи..."
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Создава нова папка со обележувачи во ова мени"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgid "Hide in toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "Скриј во алатникот"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgid "Show in toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "Прикажи во алатникот"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 #, fuzzy
 #| msgid "Open in New Window"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "Отвори во нов прозорец"
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 #, fuzzy
 #| msgid "Open in New Tab"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"

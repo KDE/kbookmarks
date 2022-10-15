@@ -226,57 +226,57 @@ msgstr ""
 "გამოჩნდება. საჭიროა ამ შეცდომის მიზეზის სასწრაფოდ აღმოფხვრა, რასაც ყველაზე "
 "ხშირად დისკზე ადგილის უკმარისობა იწვევს ხოლმე."
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "საქაღალდის ჩანართებში გახსნა"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "ამ საქაღალდის ყველა სანიშნის ახალ ჩანართში გახსნა"
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "ჩანართების, როგორც საქაღალდის, შენახვა..."
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "ყველა ღია ჩანართისთვის სანიშნების საქაღალდის დამატება"
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "თქვენი სანიშნების კოლექციის ცალკე ფანჯარაში ჩასწორება"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "ახალი სანიშნების საქაღალდე..."
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "ამ მენიუში ახალი სანიშნების საქაღალდის შექმნა"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "ამ ხელსაწყოთა ზოლში დამალვა"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "ამ ხელსაწყოთა ზოლში ჩვენება"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "ახალ ფანჯარაში გახსნა"
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Tab"
 msgstr "ახალ ჩანართში გახსნა"

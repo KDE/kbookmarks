@@ -302,77 +302,77 @@ msgid ""
 "as possible, which is most likely a full hard drive."
 msgstr ""
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "फोल्डर टैब मे खोलू"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 #, fuzzy
 #| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "ई फ़ोल्डरो मे पसंदीदा केँ एकटा नवीन टैब केर रूपेँ देखाबू"
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "टैब्स केँ पसंदीदा फोल्डर केर रूपेँ  बनाबू"
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "सभटा खुलल टैब्स क' लेल एकटा  पसंदीदा  फोल्डर जोड़ू."
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "अलग विंडो मे पसंदीदा  संग्रह क' संपादन करू"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 #, fuzzy
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "नवीन पसंदीदा फोल्डर..."
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "ई मेनू मे एकटा नवीन  पसंदीदा  फोल्डर बनाबू"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgid "Hide in toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "अओजार पट्टी मे नुकाबू"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgid "Show in toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "अओजार पट्टी मे देखाबू"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 #, fuzzy
 #| msgid "Open in New Window"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "नवीन विंडोमे खोलू."
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 #, fuzzy
 #| msgid "Open in New Tab"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"

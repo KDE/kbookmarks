@@ -261,7 +261,7 @@ msgstr ""
 "error ini hanya akan ditampilkan satu kali. Penyebab error perlu diperbaiki "
 "sesegera mungkin, yang kemungkinan besar merupakan hard drive penuh."
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -269,7 +269,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Buka Folder dalam Tab-tab"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Open all bookmarks in this folder as a new tab."
@@ -277,7 +277,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Buka semua markah dalam folder ini sebagai tab baru."
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -285,7 +285,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Markahi Tab sebagai Folder..."
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Add a folder of bookmarks for all open tabs."
@@ -293,7 +293,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Tambahkan sebuah folder markah untuk semua tab yang terbuka"
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Edit your bookmark collection in a separate window"
@@ -301,7 +301,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Edit koleksi markahmu dalam window terpisah"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -309,7 +309,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Folder Markah Baru."
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"
@@ -317,7 +317,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Ciptakan sebuah folder markah baru di menu ini"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgctxt "KonqBookmarkContextMenu|"
 #| msgid "Hide in toolbar"
@@ -325,7 +325,7 @@ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "Sembunyikan dalam bilah alat"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgctxt "KonqBookmarkContextMenu|"
 #| msgid "Show in toolbar"
@@ -333,7 +333,7 @@ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "Tampilkan dalam bilah alat"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 #, fuzzy
 #| msgctxt "KonqBookmarkContextMenu|"
 #| msgid "Open in New Window"
@@ -341,7 +341,7 @@ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "Buka di Window Baru"
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 #, fuzzy
 #| msgctxt "KonqBookmarkContextMenu|"
 #| msgid "Open in New Tab"

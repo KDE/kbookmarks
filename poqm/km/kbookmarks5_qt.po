@@ -316,77 +316,77 @@ msgstr ""
 "តែ​ម្តង​គត់ ។ មូលហេតុ​ដែល​បណ្តាល​ឲ្យ​មាន​កំហុស​នេះ ចាំបាច់​ត្រូវ​តែ​ជួសជុល​ឲ្យ​បាន​លឿន​តាមដែលអាច​ធ្វើបាន ដែល​"
 "ទំនង​ជា​​មកពីដ្រាយ​ថាសរឹង​ពេញ ។"
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "បើក​ថត​ជា​ផ្ទាំងៗ"
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 #, fuzzy
 #| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "បើក​ចំណាំ​ទាំងអស់​ក្នុង​ថតនេះ​ជា​ផ្ទាំងថ្មី ។"
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "ផ្ទាំង​ចំណាំ​ជា​ថត..."
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "បន្ថែម​ថត​របស់​ចំណាំ​សម្រាប់​ផ្ទាំង​ដែល​បើក​ទាំងអស់ ។"
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "កែសម្រួល​បណ្ដុំ​ចំណាំ​នៅ​ក្នុង​បង្អួច​ដាច់ដោយឡែក"
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 #, fuzzy
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "ថត​ចំណាំ​ថ្មី..."
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "បង្កើត​ថត​ចំណាំ​ថ្មី​ក្នុង​ម៉ឺនុយ​នេះ"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgid "Hide in toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "លាក់​ក្នុង​របារ​ឧបករណ៍"
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 #, fuzzy
 #| msgid "Show in toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "បង្ហាញ​ក្នុង​របារ​ឧបករណ៍"
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 #, fuzzy
 #| msgid "Open in New Window"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "បើក​ក្នុង​បង្អួច​ថ្មី"
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 #, fuzzy
 #| msgid "Open in New Tab"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
