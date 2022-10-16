@@ -261,57 +261,57 @@ msgstr ""
 "lei: %2. Dát vihkedieđáhus čájehuvvo dušše oktii. Fertet divvut meattáhusa "
 "siva nu johtilit go lea vojolaš, mii árvideames lea deavva garraskearru."
 
-#: kbookmarkmenu.cpp:264
+#: kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr ""
 
-#: kbookmarkmenu.cpp:268
+#: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr ""
 
-#: kbookmarkmenu.cpp:284
+#: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr ""
 
-#: kbookmarkmenu.cpp:292
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr ""
 
-#: kbookmarkmenu.cpp:339
+#: kbookmarkmenu.cpp:349
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr ""
 
-#: kbookmarkmenu.cpp:354
+#: kbookmarkmenu.cpp:366
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr ""
 
-#: kbookmarkmenu.cpp:356
+#: kbookmarkmenu.cpp:368
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr ""
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr ""
 
-#: konqbookmarkmenu.cpp:146 konqbookmarkmenu.cpp:162
+#: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr ""
 
-#: konqbookmarkmenu.cpp:154
+#: konqbookmarkmenu.cpp:155
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr ""
 
-#: konqbookmarkmenu.cpp:157
+#: konqbookmarkmenu.cpp:158
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Tab"
 msgstr ""
