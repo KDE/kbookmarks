@@ -1,7 +1,3 @@
-# translation of kio4.po to Belarusian
-# Belarusian (classic spelling) translation of kio4.pot
-# Copyright (C) 2003-2004 KDE Team.
-#
 # Eugene Zelenko <greendeath@mail.ru>, 2003-2004.
 # Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2006.
 # Symbol <symbol@akeeri.tk>, 2006.
@@ -9,10 +5,10 @@
 # Siarhei Liantsevich <serzh.by@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: kio4\n"
+"Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2008-05-02 14:14+0200\n"
+"PO-Revision-Date: 2022-11-04 18:38\n"
 "Last-Translator: Siarhei Liantsevich <serzh.by@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -24,227 +20,172 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
 "X-Qt-Contexts: true\n"
+"X-Crowdin-Project: 86ff119b1606fcaa910d6b44fc14b611\n"
+"X-Crowdin-Project-ID: 127\n"
+"X-Crowdin-Language: be\n"
+"X-Crowdin-File: /main/be/kbookmarks/kbookmarks5_qt.po\n"
+"X-Crowdin-File-ID: 7757\n"
 
 #: kbookmark.cpp:318
-#, fuzzy
-#| msgid "--- separator ---"
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- падзяляльнік ---"
 
 #: kbookmarkcontextmenu.cpp:52
-#, fuzzy
-#| msgid "Add Bookmark Here"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
-msgstr "Дадаць закладку тут"
+msgstr "Дадаць сюды закладку"
 
 #: kbookmarkcontextmenu.cpp:58
-#, fuzzy
-#| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
-msgstr "Адкрыць тэчку ў рэдактары закладак"
+msgstr "Адкрыць каталог у рэдактары закладак"
 
 #: kbookmarkcontextmenu.cpp:61
-#, fuzzy
-#| msgid "Delete Folder"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
-msgstr "Выдаліць тэчку"
+msgstr "Выдаліць каталог"
 
 #: kbookmarkcontextmenu.cpp:66
-#, fuzzy
-#| msgid "Properties for %1"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Уласцівасці"
 
 #: kbookmarkcontextmenu.cpp:71
-#, fuzzy
-#| msgid "Copy Link Address"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
-msgstr "Скапіраваць адрас спасылкі"
+msgstr "Скапіяваць адрас спасылкі"
 
 #: kbookmarkcontextmenu.cpp:74
-#, fuzzy
-#| msgid "Delete Bookmark"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Выдаліць закладку"
 
 #: kbookmarkcontextmenu.cpp:80
-#, fuzzy
-#| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
-msgstr "Адкрыць тэчку ў картках"
+msgstr "Адкрыць каталог ва ўкладках"
 
 #: kbookmarkcontextmenu.cpp:105
-#, fuzzy
-#| msgid "Cannot add bookmark with empty URL."
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
-msgstr "Немагчыма дадаць закладку з пустым URL."
+msgstr "Немагчыма дадаць закладку з пустым URL-адрасам."
 
 #: kbookmarkcontextmenu.cpp:134
-#, fuzzy
-#| msgid "Bookmark Folder Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
-msgstr "Выдаленне тэчкі закладак"
+msgstr "Выдаленне каталога закладак"
 
 #: kbookmarkcontextmenu.cpp:134
-#, fuzzy
-#| msgid "Bookmark Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
-msgstr "Выдаленне закладкі"
+msgstr "Выдаленне закладак"
 
 #: kbookmarkcontextmenu.cpp:135
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark folder\n"
-#| "\"%1\"?"
+#, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
 "\"%1\"?"
 msgstr ""
-"Вы сапраўды хочаце выдаліць тэчку закладак\n"
+"Сапраўды хочаце выдаліць каталог закладак\n"
 "\"%1\"?"
 
 #: kbookmarkcontextmenu.cpp:136
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark\n"
-#| "\"%1\"?"
+#, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
 "Are you sure you wish to remove the bookmark\n"
 "\"%1\"?"
 msgstr ""
-"Вы сапраўды хочаце выдаліць гэтую закладку\n"
+"Сапраўды хочаце выдаліць закладку\n"
 "\"%1\"?"
 
 #: kbookmarkdialog.cpp:57
-#, fuzzy
-#| msgid "Name:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Name:"
 msgstr "Назва:"
 
 #: kbookmarkdialog.cpp:62
-#, fuzzy
-#| msgid "Location:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Location:"
-msgstr "Месцазнаходжанне:"
+msgstr "Размяшчэнне:"
 
 #: kbookmarkdialog.cpp:67
-#, fuzzy
-#| msgid "Comm&ent:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Comment:"
-msgstr "Кам&ентар:"
+msgstr "Каментар:"
 
 #: kbookmarkdialog.cpp:178
-#, fuzzy
 msgctxt "KBookmarkDialog|@action:button"
 msgid "Update"
 msgstr "Абнавіць"
 
 #: kbookmarkdialog.cpp:179
-#, fuzzy
-#| msgid "Bookmark Properties"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Bookmark Properties"
 msgstr "Уласцівасці закладкі"
 
 #: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
-#, fuzzy
-#| msgid "&New Folder..."
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder..."
-msgstr "&Новая тэчка..."
+msgstr "&Новы каталог..."
 
 #: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
-#, fuzzy
-#| msgid "&Add"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "Add"
 msgstr "Дадаць"
 
 #: kbookmarkdialog.cpp:214
-#, fuzzy
-#| msgid "Add Bookmark"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Add Bookmark"
 msgstr "Дадаць закладку"
 
 #: kbookmarkdialog.cpp:252
-#, fuzzy
-#| msgid "Add Bookmark"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Add Bookmarks"
-msgstr "Дадаць закладку"
+msgstr "Дадаць закладкі"
 
 #: kbookmarkdialog.cpp:285
-#, fuzzy
-#| msgid "Select Folder"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Select Folder"
-msgstr "Выбраць тэчку"
+msgstr "Абраць каталог"
 
 #: kbookmarkdialog.cpp:313
-#, fuzzy
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "New Folder"
-msgstr "Новая тэчка"
+msgstr "Новы каталог"
 
 #: kbookmarkdialog.cpp:343
-#, fuzzy
-#| msgid "Create New Bookmark Folder"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder"
-msgstr "Стварыць новую тэчку закладак"
+msgstr "Стварыць новы каталог закладак"
 
 #: kbookmarkdialog.cpp:344
-#, fuzzy, qt-format
-#| msgid "Create New Bookmark Folder in %1"
+#, qt-format
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder in %1"
-msgstr "Стварыць новую тэчку закладак у %1"
+msgstr "Стварыць новы каталог закладак у %1"
 
 #: kbookmarkdialog.cpp:346
-#, fuzzy
-#| msgid "New folder:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "New folder:"
-msgstr "Новая тэчка:"
+msgstr "Новы каталог:"
 
 #: kbookmarkdialog.cpp:367
-#, fuzzy
-#| msgid "Bookmark"
 msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Закладкі"
 
 #: kbookmarkimporter_ns.cpp:108
-#, fuzzy
-#| msgid "*.html|HTML Files (*.html)"
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "HTML Files (*.html)"
-msgstr "*.html|Файлы HTML (*.html)"
+msgstr "Файлы HTML (*.html)"
 
 #: kbookmarkimporter_ns.cpp:110
-#, fuzzy
-#| msgid "*.html|HTML Files (*.html)"
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "*.html|HTML Files (*.html)"
-msgstr "*.html|Файлы HTML (*.html)"
+msgstr "*.html|файлы HTML (*.html)"
 
 #: kbookmarkimporter_ns.cpp:127
 #, qt-format
@@ -252,39 +193,33 @@ msgctxt "KNSBookmarkImporterImpl|"
 msgid ""
 "Could not find %1. Netscape is probably not installed. Aborting the export."
 msgstr ""
+"Не ўдалося знайсці %1. Магчыма, у вас не ўсталяваная праграма Netscape. "
+"Экспартаванне перарвана."
 
 #: kbookmarkimporter_ns.cpp:131
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "Netscape not found"
-msgstr ""
+msgstr "Не ўдалося знайсці Netscape"
 
 #: kbookmarkimporter_ns.cpp:156
-#, fuzzy
-#| msgid "<!-- This file was generated by Konqueror -->"
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "<!-- This file was generated by Konqueror -->"
-msgstr "<!-- Гэты файл стварыў Konqueror -->"
+msgstr "<!-- Гэты файлы створаны з дапамогай Konqueror -->"
 
 #: kbookmarkimporter_ns.cpp:158 kbookmarkimporter_ns.cpp:159
-#, fuzzy
-#| msgid "Bookmark"
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "Bookmarks"
 msgstr "Закладкі"
 
 #: kbookmarkimporter_opera.cpp:103
-#, fuzzy
-#| msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgctxt "KOperaBookmarkImporterImpl|"
 msgid "Opera Bookmark Files (*.adr)"
-msgstr "*.adr|Файлы закладак Opera (*.adr)"
+msgstr "Файлы Opera Bookmark (*.adr)"
 
 #: kbookmarkimporter_opera.cpp:104
-#, fuzzy
-#| msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgctxt "KOperaBookmarkImporterImpl|"
 msgid "*.adr|Opera Bookmark Files (*.adr)"
-msgstr "*.adr|Файлы закладак Opera (*.adr)"
+msgstr "*.adr|файлы Opera Bookmark (*.adr)"
 
 #: kbookmarkmanager.cpp:352
 msgctxt "KBookmarkManager|"
@@ -293,6 +228,9 @@ msgid ""
 "\n"
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
+"Не ўдалося запусціць keditbookmarks.\n"
+"\n"
+"Хутчэй за ўсё, праграма не ўсталяваная"
 
 #: kbookmarkmanager.cpp:504
 #, qt-format
@@ -302,79 +240,64 @@ msgid ""
 "will only be shown once. The cause of the error needs to be fixed as quickly "
 "as possible, which is most likely a full hard drive."
 msgstr ""
+"Не ўдалося захаваць закладкі ў %1. Паведамлена пра памылку: %2. Гэтае "
+"паведамленне пра памылку паказваецца толькі адзін раз. Прычыну памылкі трэба "
+"выправіць як мага хутчэй. Хутчэй за ўсё, скончылася месца на цвёрдым дыску."
 
 #: kbookmarkmenu.cpp:270
-#, fuzzy
-#| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
-msgstr "Адкрыць тэчку ў картках"
+msgstr "Адкрыць каталог ва ўкладках"
 
 #: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
-msgstr ""
+msgstr "Адкрыць усе закладкі з гэтага каталога ў новых укладках"
 
 #: kbookmarkmenu.cpp:290
-#, fuzzy
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
-msgstr "Укладкі закладак як тэчка..."
+msgstr "Дадаць укладкі ў закладкі як каталог..."
 
 #: kbookmarkmenu.cpp:298
-#, fuzzy
-#| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Дадаць тэчку закладак для ўсіх адкрытых укладак."
+msgstr "Дадаць усе адкрытыя ўкладкі ў каталог закладак"
 
 #: kbookmarkmenu.cpp:349
-#, fuzzy
-#| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
-msgstr "Змяніць вашу калекцыю закладак у асобным акне"
+msgstr "Рэдагаванне калекцыі закладак у асобным акне"
 
 #: kbookmarkmenu.cpp:366
-#, fuzzy
-#| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
-msgstr "&Новая тэчка закладак..."
+msgstr "Новы каталог закладак..."
 
 #: kbookmarkmenu.cpp:368
-#, fuzzy
-#| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
-msgstr "Стварыць новую тэчку закладак у гэтым меню"
+msgstr "Стварыць новы каталог закладак у гэтым меню"
 
 #: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
-#, fuzzy
-#| msgid "Hide Bookmarks"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
-msgstr "Схаваць закладкі"
+msgstr "Не паказваць на панэлі інструментаў"
 
 #: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
-#, fuzzy
-#| msgid "Show toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
-msgstr "Паказаць панэль начыння"
+msgstr "Паказваць на панэлі інструментаў"
 
 #: konqbookmarkmenu.cpp:155
-#, fuzzy
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "Адкрыць у новым акне"
 
 #: konqbookmarkmenu.cpp:158
-#, fuzzy
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Tab"
-msgstr "Адкрыць у новай картцы"
+msgstr "Адкрыць у новай укладцы"
 
 #, fuzzy
 #~| msgid "Open Folder in Bookmark Editor"
