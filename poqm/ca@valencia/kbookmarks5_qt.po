@@ -159,13 +159,13 @@ msgstr "Carpeta nova"
 #: kbookmarkdialog.cpp:343
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder"
-msgstr "Creació d'una carpeta nova d'adreces d'interés"
+msgstr "Creeu una carpeta nova d'adreces d'interés"
 
 #: kbookmarkdialog.cpp:344
 #, qt-format
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder in %1"
-msgstr "Creació d'una carpeta nova d'adreces d'interés a %1"
+msgstr "Creeu una carpeta nova d'adreces d'interés a %1"
 
 #: kbookmarkdialog.cpp:346
 msgctxt "KBookmarkDialog|@label:textbox"
