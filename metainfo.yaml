@@ -13,8 +13,8 @@ deprecated: false
 release: true
 libraries:
  - qmake: KBookmarks
-   cmake: "KF5::Bookmarks"
-cmakename: KF5Bookmarks
+   cmake: "KF6::Bookmarks"
+cmakename: KF6Bookmarks
 
 public_lib: true
 group: Frameworks

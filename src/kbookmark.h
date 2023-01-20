@@ -444,7 +444,7 @@ protected:
 Q_DECLARE_METATYPE(KBookmark)
 
 // needed when compiling this library with MSVC
-#if defined(Q_CC_MSVC) && defined(KF5Bookmarks_EXPORTS)
+#if defined(Q_CC_MSVC) && defined(KF6Bookmarks_EXPORTS)
 inline uint qHash(const KBookmark &)
 {
     qWarning("inline uint qHash(const KBookmark&) was called");

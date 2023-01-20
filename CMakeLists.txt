@@ -34,8 +34,8 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 ecm_setup_version(PROJECT
                   VARIABLE_PREFIX KBOOKMARKS
                   VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_version.h"
-                  PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5BookmarksConfigVersion.cmake"
-                  SOVERSION 5)
+                  PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF6BookmarksConfigVersion.cmake"
+                  SOVERSION 6)
 
 # Dependencies
 set(REQUIRED_QT_VERSION 6.4.0)
@@ -45,14 +45,14 @@ if (NOT ANDROID)
   find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED DBus)
 endif()
 
-find_package(KF5Config ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5CoreAddons ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5Codecs ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5ConfigWidgets ${KF_DEP_VERSION} REQUIRED)
-find_package(KF5WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6Config ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6CoreAddons ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6Codecs ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6ConfigWidgets ${KF_DEP_VERSION} REQUIRED)
+find_package(KF6WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 
 if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.69.0)
-  find_package(KF5XmlGui ${KF_DEP_VERSION} REQUIRED)
+  find_package(KF6XmlGui ${KF_DEP_VERSION} REQUIRED)
 endif()
 
 ecm_install_po_files_as_qm(poqm)
@@ -69,34 +69,34 @@ if (BUILD_TESTING)
 endif()
 
 # create a Config.cmake and a ConfigVersion.cmake file and install them
-set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF5Bookmarks")
+set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF6Bookmarks")
 
 if (BUILD_QCH)
     ecm_install_qch_export(
-        TARGETS KF5Bookmarks_QCH
-        FILE KF5BookmarksQchTargets.cmake
+        TARGETS KF6Bookmarks_QCH
+        FILE KF6BookmarksQchTargets.cmake
         DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
         COMPONENT Devel
     )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF5BookmarksQchTargets.cmake\")")
+    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF6BookmarksQchTargets.cmake\")")
 endif()
 
 include(CMakePackageConfigHelpers)
 
 configure_package_config_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/KF5BookmarksConfig.cmake.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5BookmarksConfig.cmake"
+  "${CMAKE_CURRENT_SOURCE_DIR}/KF6BookmarksConfig.cmake.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF6BookmarksConfig.cmake"
   INSTALL_DESTINATION  ${CMAKECONFIG_INSTALL_DIR}
 )
 
 install(FILES
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5BookmarksConfig.cmake"
-  "${CMAKE_CURRENT_BINARY_DIR}/KF5BookmarksConfigVersion.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF6BookmarksConfig.cmake"
+  "${CMAKE_CURRENT_BINARY_DIR}/KF6BookmarksConfigVersion.cmake"
   DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
   COMPONENT Devel
 )
 
-install(EXPORT KF5BookmarksTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF5BookmarksTargets.cmake NAMESPACE KF5:: )
+install(EXPORT KF6BookmarksTargets DESTINATION "${CMAKECONFIG_INSTALL_DIR}" FILE KF6BookmarksTargets.cmake NAMESPACE KF6:: )
 
 install(FILES
    ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_version.h

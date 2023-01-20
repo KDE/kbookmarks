@@ -51,9 +51,9 @@ ecm_qt_declare_logging_category(kbookmarks_SRCS
     EXPORT KBOOKMARKS
 )
 
-add_library(KF5Bookmarks ${kbookmarks_SRCS})
-add_library(KF5::Bookmarks ALIAS KF5Bookmarks)
-ecm_generate_export_header(KF5Bookmarks
+add_library(KF6Bookmarks ${kbookmarks_SRCS})
+add_library(KF6::Bookmarks ALIAS KF6Bookmarks)
+ecm_generate_export_header(KF6Bookmarks
     BASE_NAME KBookmarks
     GROUP_BASE_NAME KF
     VERSION ${KF_VERSION}
@@ -62,29 +62,29 @@ ecm_generate_export_header(KF5Bookmarks
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
 )
 
-target_include_directories(KF5Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks>")
+target_include_directories(KF6Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks>")
 
-target_link_libraries(KF5Bookmarks PUBLIC Qt${QT_MAJOR_VERSION}::Widgets Qt${QT_MAJOR_VERSION}::Xml KF5::WidgetsAddons)
-target_link_libraries(KF5Bookmarks PRIVATE
-    KF5::CoreAddons # for KStringHandler
-    KF5::Codecs # for KCharsets
-    KF5::ConfigCore # for KConfigGroup
-    KF5::ConfigWidgets # for KStandardAction
+target_link_libraries(KF6Bookmarks PUBLIC Qt${QT_MAJOR_VERSION}::Widgets Qt${QT_MAJOR_VERSION}::Xml KF6::WidgetsAddons)
+target_link_libraries(KF6Bookmarks PRIVATE
+    KF6::CoreAddons # for KStringHandler
+    KF6::Codecs # for KCharsets
+    KF6::ConfigCore # for KConfigGroup
+    KF6::ConfigWidgets # for KStandardAction
 )
 
 if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.69.0)
-  target_link_libraries(KF5Bookmarks PRIVATE
-    KF5::XmlGui # for KActionCollection
+  target_link_libraries(KF6Bookmarks PRIVATE
+    KF6::XmlGui # for KActionCollection
   )
 endif()
 
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
-  target_link_libraries(KF5Bookmarks PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # dbus usage in kbookmarkmanager.cpp
+  target_link_libraries(KF6Bookmarks PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # dbus usage in kbookmarkmanager.cpp
 else()
-  target_compile_definitions(KF5Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
+  target_compile_definitions(KF6Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
 endif()
 
-set_target_properties(KF5Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION}
+set_target_properties(KF6Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION}
                                               SOVERSION ${KBOOKMARKS_SOVERSION}
                                               EXPORT_NAME Bookmarks
 )
@@ -115,7 +115,7 @@ set(KBookmarks_HEADERS
   kbookmarkimporter_ie.h
   kbookmarkimporter_ns.h
 )
-install(TARGETS KF5Bookmarks EXPORT KF5BookmarksTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF6Bookmarks EXPORT KF6BookmarksTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_export.h
@@ -131,9 +131,9 @@ ecm_qt_install_logging_categories(
 
 if(BUILD_QCH)
     ecm_add_qch(
-        KF5Bookmarks_QCH
+        KF6Bookmarks_QCH
         NAME KBookmarks
-        BASE_NAME KF5Bookmarks
+        BASE_NAME KF6Bookmarks
         VERSION ${KF_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
@@ -142,7 +142,7 @@ if(BUILD_QCH)
         LINK_QCHS
             Qt5Widgets_QCH
             Qt5Xml_QCH
-            KF5WidgetsAddons_QCH
+            KF6WidgetsAddons_QCH
         INCLUDE_DIRS
             ${CMAKE_CURRENT_BINARY_DIR}
         BLANK_MACROS
@@ -157,5 +157,5 @@ if(BUILD_QCH)
 endif()
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KBookmarks LIB_NAME KF5Bookmarks DEPS "widgets xml" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks)
+ecm_generate_pri_file(BASE_NAME KBookmarks LIB_NAME KF6Bookmarks DEPS "widgets xml" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
