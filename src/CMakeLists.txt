@@ -31,9 +31,6 @@ set(kbookmarks_SRCS
     kbookmarkmenu_p.h
     kbookmarkowner.cpp
     kbookmarkowner.h
-    konqbookmarkmenu.cpp
-    konqbookmarkmenu.h
-    konqbookmarkmenu_p.h
     kbookmarkdombuilder.cpp
     kbookmarkdombuilder.h
   ${kbookmarks_QM_LOADER}
@@ -58,7 +55,7 @@ ecm_generate_export_header(KF6Bookmarks
     GROUP_BASE_NAME KF
     VERSION ${KF_VERSION}
     DEPRECATED_BASE_VERSION 0
-    DEPRECATION_VERSIONS 5.0 5.65 5.69
+    DEPRECATION_VERSIONS
     EXCLUDE_DEPRECATED_BEFORE_AND_AT ${EXCLUDE_DEPRECATED_BEFORE_AND_AT}
 )
 
@@ -71,12 +68,6 @@ target_link_libraries(KF6Bookmarks PRIVATE
     KF6::ConfigCore # for KConfigGroup
     KF6::ConfigWidgets # for KStandardAction
 )
-
-if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.69.0)
-  target_link_libraries(KF6Bookmarks PRIVATE
-    KF6::XmlGui # for KActionCollection
-  )
-endif()
 
 if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
   target_link_libraries(KF6Bookmarks PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # dbus usage in kbookmarkmanager.cpp
@@ -101,7 +92,6 @@ ecm_generate_headers(KBookmarks_HEADERS
   KBookmarkOwner
   KBookmarkDomBuilder
   KBookmarkDialog
-  KonqBookmarkMenu
 
   REQUIRED_HEADERS KBookmarks_HEADERS
 )

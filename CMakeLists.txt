@@ -51,10 +51,6 @@ find_package(KF6Codecs ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6ConfigWidgets ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 
-if(NOT EXCLUDE_DEPRECATED_BEFORE_AND_AT STREQUAL "CURRENT" AND EXCLUDE_DEPRECATED_BEFORE_AND_AT VERSION_LESS 5.69.0)
-  find_package(KF6XmlGui ${KF_DEP_VERSION} REQUIRED)
-endif()
-
 ecm_install_po_files_as_qm(poqm)
 ecm_set_disabled_deprecation_versions(
     QT 5.15.2

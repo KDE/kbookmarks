@@ -17,9 +17,6 @@
 class KBookmarkManagerPrivate;
 
 #include "kbookmark.h"
-#if KBOOKMARKS_ENABLE_DEPRECATED_SINCE(5, 79)
-#include "kbookmarkowner.h" // for SC reasons
-#endif
 
 class KBookmarkGroup;
 class QDBusMessage;

@@ -51,51 +51,6 @@ class KBOOKMARKS_EXPORT KBookmarkMenu : public QObject
 {
     Q_OBJECT
 public:
-#if KBOOKMARKS_ENABLE_DEPRECATED_SINCE(5, 69)
-    /**
-     * Fills a bookmark menu
-     * (one instance of KBookmarkMenu is created for the toplevel menu,
-     *  but also one per submenu).
-     *
-     * @param mgr The bookmark manager to use (i.e. for reading and writing)
-     * @param owner implementation of the KBookmarkOwner callback interface.
-     * Note: If you pass a null KBookmarkOwner to the constructor, the
-     * openBookmark signal is not emitted, instead QDesktopServices::openUrl is used to open the bookmark.
-     * @param parentMenu menu to be filled
-     * @param collec parent collection for the KActions.
-     *
-     * @todo KDE 5: give ownership of the bookmarkmenu to another qobject, e.g. parentMenu.
-     * Currently this is a QObject without a parent, use setParent to benefit from automatic deletion.
-     *
-     * @deprecated since 5.69. Use overload without KActionCollection and add actions manually to your actioncollection if desired.
-     * @code
-     * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
-     *
-     * QAction *addAction = menu->addBookmarkAction();
-     * actionCollection()->addAction(addAction->objectName(), addAction);
-     *
-     * QAction *bookmarkTabsAction = menu->bookmarkTabsAsFolderAction();
-     * actionCollection()->addAction(bookmarkTabsAction->objectName(), bookmarkTabsAction);
-     *
-     * QAction *editAction = menu->editBookmarksAction();
-     * actionCollection()->addAction(editAction->objectName(), editAction);
-     * @endcode
-     *
-     * Alternatively you can get a list of the actions from @p parentMenu, and add them to your
-     * actionCollection:
-     * @code
-     * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
-     * actionCollection()->addActions(parentMenu->actions());
-     * @endcode
-     *
-     * Note that adding the actions to your KActionCollection will make them show up in the shortcuts editor
-     * dialog.
-     *
-     */
-    KBOOKMARKS_DEPRECATED_VERSION(5, 69, "Use overload without KActionCollection and add actions manually to your actionCollection if desired")
-    KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, KActionCollection *collec);
-#endif
-
     /**
      * Fills a bookmark menu
      * (one instance of KBookmarkMenu is created for the toplevel menu,

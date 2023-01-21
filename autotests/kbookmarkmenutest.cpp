@@ -7,9 +7,6 @@
 #include <kbookmarkmanager.h>
 #include <kbookmarkmenu.h>
 #include <kbookmarkowner.h>
-#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
-#include <KActionCollection>
-#endif
 
 #include <QMenu>
 #include <QStandardPaths>
@@ -25,11 +22,6 @@ private Q_SLOTS:
     void tabsOpen_data();
     void tabsOpen();
     void tabsOpenChanges();
-#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
-    void tabsOpenActionCollection_data();
-    void tabsOpenActionCollection();
-    void tabsOpenChangesActionCollection();
-#endif
 };
 
 static bool hasBookmarkEditorInstalled()
@@ -145,52 +137,6 @@ void KBookmarkMenuTest::tabsOpenChanges()
     testObject->ensureUpToDate();
     VERIFY_MENU_WITH_BOOKMARK_TABS_AS_FOLDER();
 }
-
-#if KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 69)
-void KBookmarkMenuTest::tabsOpenActionCollection_data()
-{
-    tabsOpen_data();
-}
-
-void KBookmarkMenuTest::tabsOpenActionCollection()
-{
-    QFETCH(bool, supportsTabs);
-    QFETCH(int, numberOfOpenTabs);
-    auto manager = KBookmarkManager::createTempManager();
-    std::unique_ptr<TestKBookmarkOwner> bookmarkOwner(new TestKBookmarkOwner(supportsTabs));
-    QMenu *menu = new QMenu;
-    std::unique_ptr<KActionCollection> actionCollection(new KActionCollection(nullptr, QString()));
-    std::unique_ptr<KBookmarkMenu> testObject(new KBookmarkMenu(manager, bookmarkOwner.get(), menu, actionCollection.get()));
-    testObject->setNumberOfOpenTabs(numberOfOpenTabs);
-    testObject->ensureUpToDate();
-    if (supportsTabs && numberOfOpenTabs > 1) {
-        VERIFY_MENU_WITH_BOOKMARK_TABS_AS_FOLDER();
-    } else {
-        VERIFY_MENU_WITHOUT_BOOKMARK_TABS_AS_FOLDER();
-    }
-}
-
-void KBookmarkMenuTest::tabsOpenChangesActionCollection()
-{
-    auto manager = KBookmarkManager::createTempManager();
-    std::unique_ptr<TestKBookmarkOwner> bookmarkOwner(new TestKBookmarkOwner(true));
-    QMenu *menu = new QMenu;
-    std::unique_ptr<KActionCollection> actionCollection(new KActionCollection(nullptr, QString()));
-    std::unique_ptr<KBookmarkMenu> testObject(new KBookmarkMenu(manager, bookmarkOwner.get(), menu, actionCollection.get()));
-    testObject->ensureUpToDate();
-    // If the number of open tabs has not been set it will default to 2
-    const int DefaultNumberOfOpenTabs = 2;
-    QCOMPARE(testObject->numberOfOpenTabs(), DefaultNumberOfOpenTabs);
-    testObject->ensureUpToDate();
-    VERIFY_MENU_WITH_BOOKMARK_TABS_AS_FOLDER();
-    testObject->setNumberOfOpenTabs(1);
-    testObject->ensureUpToDate();
-    VERIFY_MENU_WITHOUT_BOOKMARK_TABS_AS_FOLDER();
-    testObject->setNumberOfOpenTabs(2);
-    testObject->ensureUpToDate();
-    VERIFY_MENU_WITH_BOOKMARK_TABS_AS_FOLDER();
-}
-#endif
 
 QTEST_MAIN(KBookmarkMenuTest)
 

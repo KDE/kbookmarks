@@ -8,7 +8,6 @@ Dependencies:
     'frameworks/kconfig' : '@same'
     'frameworks/kiconthemes' : '@same'
     'frameworks/kconfigwidgets' : '@same'
-    'frameworks/kxmlgui' : '@same'
 
 Options:
   test-before-installing: True
