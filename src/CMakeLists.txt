@@ -130,8 +130,8 @@ if(BUILD_QCH)
             ${KBookmarks_HEADERS}
         MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
         LINK_QCHS
-            Qt5Widgets_QCH
-            Qt5Xml_QCH
+            Qt6Widgets_QCH
+            Qt6Xml_QCH
             KF6WidgetsAddons_QCH
         INCLUDE_DIRS
             ${CMAKE_CURRENT_BINARY_DIR}
