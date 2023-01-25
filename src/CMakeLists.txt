@@ -35,7 +35,7 @@ set(kbookmarks_SRCS
     kbookmarkdombuilder.h
   ${kbookmarks_QM_LOADER}
 )
-if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
+if (TARGET Qt6::DBus)
   list(APPEND kbookmarks_SRCS kbookmarkmanageradaptor.cpp kbookmarkmanageradaptor_p.h)
 endif()
 
@@ -61,7 +61,7 @@ ecm_generate_export_header(KF6Bookmarks
 
 target_include_directories(KF6Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks>")
 
-target_link_libraries(KF6Bookmarks PUBLIC Qt${QT_MAJOR_VERSION}::Widgets Qt${QT_MAJOR_VERSION}::Xml KF6::WidgetsAddons)
+target_link_libraries(KF6Bookmarks PUBLIC Qt6::Widgets Qt6::Xml KF6::WidgetsAddons)
 target_link_libraries(KF6Bookmarks PRIVATE
     KF6::CoreAddons # for KStringHandler
     KF6::Codecs # for KCharsets
@@ -69,8 +69,8 @@ target_link_libraries(KF6Bookmarks PRIVATE
     KF6::ConfigWidgets # for KStandardAction
 )
 
-if (TARGET Qt${QT_MAJOR_VERSION}::DBus)
-  target_link_libraries(KF6Bookmarks PRIVATE Qt${QT_MAJOR_VERSION}::DBus) # dbus usage in kbookmarkmanager.cpp
+if (TARGET Qt6::DBus)
+  target_link_libraries(KF6Bookmarks PRIVATE Qt6::DBus) # dbus usage in kbookmarkmanager.cpp
 else()
   target_compile_definitions(KF6Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
 endif()

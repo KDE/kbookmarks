@@ -40,9 +40,9 @@ ecm_setup_version(PROJECT
 # Dependencies
 set(REQUIRED_QT_VERSION 6.4.0)
 
-find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets Xml)
+find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets Xml)
 if (NOT ANDROID)
-  find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED DBus)
+  find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED DBus)
 endif()
 
 find_package(KF6Config ${KF_DEP_VERSION} REQUIRED)
@@ -53,8 +53,8 @@ find_package(KF6WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 
 ecm_install_po_files_as_qm(poqm)
 ecm_set_disabled_deprecation_versions(
-    QT 5.15.2
-    KF 5.95.0
+    QT 6.4
+    KF 5.102.0
 )
 
 

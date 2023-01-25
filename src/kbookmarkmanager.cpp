@@ -489,9 +489,6 @@ bool KBookmarkManager::saveAs(const QString &filename, bool toolbarCache) const
         KBackup::simpleBackupFile(file.fileName(), QString(), QStringLiteral(".bak"));
         QTextStream stream(&file);
         // In Qt6 it's UTF-8 by default
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-        stream.setCodec(QTextCodec::codecForName("UTF-8"));
-#endif
         stream << internalDocument().toString();
         stream.flush();
         if (file.commit()) {

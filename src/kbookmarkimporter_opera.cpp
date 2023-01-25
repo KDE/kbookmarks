@@ -29,9 +29,6 @@ void KOperaBookmarkImporter::parseOperaBookmarks()
     QString type;
     int lineno = 0;
     QTextStream stream(&file);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    stream.setCodec("UTF-8");
-#endif
     while (!stream.atEnd()) {
         lineno++;
         QString line = stream.readLine().trimmed();
@@ -171,9 +168,6 @@ void KOperaBookmarkExporterImpl::write(const KBookmarkGroup &parent)
         return;
     }
     QTextStream fstream(&file);
-#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
-    fstream.setCodec("UTF-8");
-#endif
     fstream << content;
 }
 
