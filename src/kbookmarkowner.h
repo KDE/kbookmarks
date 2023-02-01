@@ -43,10 +43,8 @@ class KBookmarkDialog;
 class KBOOKMARKS_EXPORT KBookmarkOwner
 {
 public:
-    // TODO KF6: add non-inline constructor, de-inline destructor. Otherwise the d pointer cannot be used.
-    virtual ~KBookmarkOwner()
-    {
-    }
+    KBookmarkOwner();
+    virtual ~KBookmarkOwner();
 
     /**
      * This function is called whenever the user wants to add the

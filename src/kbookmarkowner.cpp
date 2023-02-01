@@ -57,6 +57,13 @@ QString KBookmarkOwner::FutureBookmark::icon() const
     return d->icon;
 }
 
+KBookmarkOwner::KBookmarkOwner()
+    : d(nullptr)
+{
+}
+
+KBookmarkOwner::~KBookmarkOwner() = default;
+
 bool KBookmarkOwner::enableOption(BookmarkOption action) const
 {
     if (action == ShowAddBookmark) {
