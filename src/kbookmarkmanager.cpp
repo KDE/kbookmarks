@@ -23,7 +23,6 @@
 #include <QFileInfo>
 #include <QProcess>
 #include <QRegularExpression>
-#include <QTextCodec>
 #include <QTextStream>
 #ifndef KBOOKMARKS_NO_DBUS
 #include <QDBusConnection>
