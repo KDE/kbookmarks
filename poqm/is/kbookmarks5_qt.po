@@ -9,13 +9,13 @@
 # Svanur Palsson <svanur@tern.is>, 2004.
 # Arnar Leosson <leosson@frisurf.no>, 2004, 2005.
 # Arnar Leósson <leosson@frisurf.no>, 2005.
-# Sveinn í Felli <sveinki@nett.is>, 2008, 2009, 2010, 2011, 2012, 2022.
+# Sveinn í Felli <sveinki@nett.is>, 2008, 2009, 2010, 2011, 2012, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2022-11-11 18:33+0000\n"
+"PO-Revision-Date: 2023-02-02 14:27+0000\n"
 "Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
 "Language-Team: Icelandic\n"
 "Language: is\n"
@@ -227,6 +227,9 @@ msgid ""
 "\n"
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
+"Ekki er hægt að ræsa keditbookmarks.\n"
+"\n"
+"Líklega er keditbookmarks ekki uppsett"
 
 #: kbookmarkmanager.cpp:504
 #, qt-format
