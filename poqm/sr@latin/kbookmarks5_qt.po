@@ -24,12 +24,12 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:316
+#: kbookmark.cpp:318
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- razdvajač ---"
 
-#: kbookmarkcontextmenu.cpp:62
+#: kbookmarkcontextmenu.cpp:52
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Add Bookmark Here"
@@ -37,7 +37,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "Dodaj obeleživač ovde"
 
-#: kbookmarkcontextmenu.cpp:68
+#: kbookmarkcontextmenu.cpp:58
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Bookmark Editor"
@@ -45,7 +45,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "Otvori fasciklu u uređivaču obeleživača"
 
-#: kbookmarkcontextmenu.cpp:71
+#: kbookmarkcontextmenu.cpp:61
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Folder"
@@ -53,7 +53,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "Obriši fasciklu"
 
-#: kbookmarkcontextmenu.cpp:76
+#: kbookmarkcontextmenu.cpp:66
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Properties"
@@ -61,7 +61,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Svojstva"
 
-#: kbookmarkcontextmenu.cpp:81
+#: kbookmarkcontextmenu.cpp:71
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Copy Link Address"
@@ -69,7 +69,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "Kopiraj adresu veze"
 
-#: kbookmarkcontextmenu.cpp:84
+#: kbookmarkcontextmenu.cpp:74
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Bookmark"
@@ -77,7 +77,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Obriši obeleživač"
 
-#: kbookmarkcontextmenu.cpp:90
+#: kbookmarkcontextmenu.cpp:80
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -85,7 +85,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Otvori fasciklu u jezičcima"
 
-#: kbookmarkcontextmenu.cpp:116
+#: kbookmarkcontextmenu.cpp:105
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Cannot add bookmark with empty URL."
@@ -93,7 +93,7 @@ msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "Ne može se dodati obeleživač sa praznim URL‑om."
 
-#: kbookmarkcontextmenu.cpp:146
+#: kbookmarkcontextmenu.cpp:134
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Folder Deletion"
@@ -101,7 +101,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "Brisanje fascikle obeleživača"
 
-#: kbookmarkcontextmenu.cpp:147
+#: kbookmarkcontextmenu.cpp:134
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Deletion"
@@ -109,7 +109,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "Brisanje obeleživača"
 
-#: kbookmarkcontextmenu.cpp:148
+#: kbookmarkcontextmenu.cpp:135
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -119,7 +119,7 @@ msgstr ""
 "Želite li zaista da uklonite fasciklu obeleživača\n"
 "„%1“?"
 
-#: kbookmarkcontextmenu.cpp:149
+#: kbookmarkcontextmenu.cpp:136
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -129,93 +129,93 @@ msgstr ""
 "Želite li zaista da uklonite obeleživač\n"
 "„%1“?"
 
-#: kbookmarkdialog.cpp:70
+#: kbookmarkdialog.cpp:57
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Name:"
 msgstr "Ime:"
 
-#: kbookmarkdialog.cpp:75
+#: kbookmarkdialog.cpp:62
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Location:"
 msgstr "Lokacija:"
 
-#: kbookmarkdialog.cpp:80
+#: kbookmarkdialog.cpp:67
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Comment:"
 msgstr "Komentar:"
 
-#: kbookmarkdialog.cpp:191
+#: kbookmarkdialog.cpp:178
 msgctxt "KBookmarkDialog|@action:button"
 msgid "Update"
 msgstr "Ažuriraj"
 
-#: kbookmarkdialog.cpp:192
+#: kbookmarkdialog.cpp:179
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Bookmark Properties"
 msgstr "Svojstva obeleživača"
 
-#: kbookmarkdialog.cpp:223 kbookmarkdialog.cpp:261 kbookmarkdialog.cpp:295
+#: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder..."
 msgstr "&Nova fascikla..."
 
-#: kbookmarkdialog.cpp:227 kbookmarkdialog.cpp:265
+#: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
 msgctxt "KBookmarkDialog|@action:button"
 msgid "Add"
 msgstr "Dodaj"
 
-#: kbookmarkdialog.cpp:228
+#: kbookmarkdialog.cpp:214
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Add Bookmark"
 msgstr "Dodavanje obeleživača"
 
-#: kbookmarkdialog.cpp:266
+#: kbookmarkdialog.cpp:252
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Add Bookmarks"
 msgstr "Dodavanje obeleživača"
 
-#: kbookmarkdialog.cpp:299
+#: kbookmarkdialog.cpp:285
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Select Folder"
 msgstr "Izbor fascikle"
 
-#: kbookmarkdialog.cpp:327
+#: kbookmarkdialog.cpp:313
 msgctxt "KBookmarkDialog|@title:window"
 msgid "New Folder"
 msgstr "Nova fascikla"
 
-#: kbookmarkdialog.cpp:362
+#: kbookmarkdialog.cpp:343
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Nova fascikla za obeleživače"
 
-#: kbookmarkdialog.cpp:363
+#: kbookmarkdialog.cpp:344
 #, qt-format
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder in %1"
 msgstr "Nova fascikla za obeleživače u %1"
 
-#: kbookmarkdialog.cpp:365
+#: kbookmarkdialog.cpp:346
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "New folder:"
 msgstr "Nova fascikla:"
 
-#: kbookmarkdialog.cpp:386
+#: kbookmarkdialog.cpp:367
 msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Obeleživači"
 
-#: kbookmarkimporter_ns.cpp:115
+#: kbookmarkimporter_ns.cpp:95
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "HTML Files (*.html)"
 msgstr "HTML fajlovi (*.html)"
 
-#: kbookmarkimporter_ns.cpp:119
+#: kbookmarkimporter_ns.cpp:97
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "*.html|HTML Files (*.html)"
 msgstr "*.html|HTML fajlovi (*.html)"
 
-#: kbookmarkimporter_ns.cpp:135
+#: kbookmarkimporter_ns.cpp:114
 #, qt-format
 msgctxt "KNSBookmarkImporterImpl|"
 msgid ""
@@ -223,32 +223,32 @@ msgid ""
 msgstr ""
 "Ne mogu da nađem %1. Netscape verovatno nije instaliran. Obustavljam uvoz."
 
-#: kbookmarkimporter_ns.cpp:137
+#: kbookmarkimporter_ns.cpp:118
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "Netscape not found"
 msgstr "Netscape nije nađen"
 
-#: kbookmarkimporter_ns.cpp:158
+#: kbookmarkimporter_ns.cpp:138
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "<!-- This file was generated by Konqueror -->"
 msgstr "<!-- Ovaj fajl je napravio K‑osvajač -->"
 
-#: kbookmarkimporter_ns.cpp:161 kbookmarkimporter_ns.cpp:162
+#: kbookmarkimporter_ns.cpp:140 kbookmarkimporter_ns.cpp:141
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "Bookmarks"
 msgstr "Obeleživači"
 
-#: kbookmarkimporter_opera.cpp:121
+#: kbookmarkimporter_opera.cpp:100
 msgctxt "KOperaBookmarkImporterImpl|"
 msgid "Opera Bookmark Files (*.adr)"
 msgstr "Operini obeleživači (*.adr)"
 
-#: kbookmarkimporter_opera.cpp:124
+#: kbookmarkimporter_opera.cpp:101
 msgctxt "KOperaBookmarkImporterImpl|"
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|Operini obeleživači (*.adr)"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:351
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -259,7 +259,7 @@ msgstr ""
 "\n"
 "Verovatno nije instaliran Uređivač obeleživača (naredba keditbookmarks)."
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:500
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -271,7 +271,7 @@ msgstr ""
 "će biti prikazana samo jednom. Najbolje je da što pre otklonite uzrok "
 "greške, a to je najverovatnije pun hard‑disk."
 
-#: kbookmarkmenu.cpp:299
+#: kbookmarkmenu.cpp:245
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -279,7 +279,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Otvori fasciklu u jezičcima"
 
-#: kbookmarkmenu.cpp:303
+#: kbookmarkmenu.cpp:249
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Open all bookmarks in this folder as a new tab."
@@ -287,7 +287,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Otvori sve obeleživače u ovoj fascikli kao novi jezičak."
 
-#: kbookmarkmenu.cpp:319
+#: kbookmarkmenu.cpp:265
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -295,7 +295,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Obeleži jezičke kao fasciklu..."
 
-#: kbookmarkmenu.cpp:327
+#: kbookmarkmenu.cpp:273
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Add a folder of bookmarks for all open tabs."
@@ -303,7 +303,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Dodaj fasciklu obeleživača za sve otvorene jezičke."
 
-#: kbookmarkmenu.cpp:376
+#: kbookmarkmenu.cpp:312
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Edit your bookmark collection in a separate window"
@@ -311,7 +311,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Uredite svoju zbirku obeleživača u posebnom prozoru"
 
-#: kbookmarkmenu.cpp:392
+#: kbookmarkmenu.cpp:323
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -319,7 +319,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Nova fascikla obeleživača..."
 
-#: kbookmarkmenu.cpp:394
+#: kbookmarkmenu.cpp:325
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"
@@ -327,34 +327,30 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Napravi novu fasciklu obeleživača u ovom meniju"
 
-#: konqbookmarkmenu.cpp:159 konqbookmarkmenu.cpp:172
 #, fuzzy
-#| msgctxt "KonqBookmarkContextMenu|"
-#| msgid "Hide in toolbar"
-msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-msgid "Hide in Toolbar"
-msgstr "Sakrij u traci alatki"
+#~| msgctxt "KonqBookmarkContextMenu|"
+#~| msgid "Hide in toolbar"
+#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+#~ msgid "Hide in Toolbar"
+#~ msgstr "Sakrij u traci alatki"
 
-#: konqbookmarkmenu.cpp:159 konqbookmarkmenu.cpp:172
 #, fuzzy
-#| msgctxt "KonqBookmarkContextMenu|"
-#| msgid "Show in toolbar"
-msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-msgid "Show in Toolbar"
-msgstr "Prikaži u traci alatki"
+#~| msgctxt "KonqBookmarkContextMenu|"
+#~| msgid "Show in toolbar"
+#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+#~ msgid "Show in Toolbar"
+#~ msgstr "Prikaži u traci alatki"
 
-#: konqbookmarkmenu.cpp:166
 #, fuzzy
-#| msgctxt "KonqBookmarkContextMenu|"
-#| msgid "Open in New Window"
-msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-msgid "Open in New Window"
-msgstr "Otvori u novom prozoru"
+#~| msgctxt "KonqBookmarkContextMenu|"
+#~| msgid "Open in New Window"
+#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+#~ msgid "Open in New Window"
+#~ msgstr "Otvori u novom prozoru"
 
-#: konqbookmarkmenu.cpp:167
 #, fuzzy
-#| msgctxt "KonqBookmarkContextMenu|"
-#| msgid "Open in New Tab"
-msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-msgid "Open in New Tab"
-msgstr "Otvori u novom jezičku"
+#~| msgctxt "KonqBookmarkContextMenu|"
+#~| msgid "Open in New Tab"
+#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
+#~ msgid "Open in New Tab"
+#~ msgstr "Otvori u novom jezičku"
