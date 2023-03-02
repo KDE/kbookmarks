@@ -1,6 +1,15 @@
-ecm_create_qm_loader(kbookmarks_QM_LOADER kbookmarks5_qt)
+add_library(KF6Bookmarks)
+add_library(KF6::Bookmarks ALIAS KF6Bookmarks)
 
-set(kbookmarks_SRCS
+set_target_properties(KF6Bookmarks PROPERTIES
+    VERSION     ${KBOOKMARKS_VERSION}
+    SOVERSION   ${KBOOKMARKS_SOVERSION}
+    EXPORT_NAME Bookmarks
+)
+
+ecm_create_qm_loader(KF6Bookmarks kbookmarks5_qt)
+
+target_sources(KF6Bookmarks PRIVATE
     kbookmarkaction.cpp
     kbookmarkaction.h
     kbookmarkactioninterface.cpp
@@ -33,13 +42,15 @@ set(kbookmarks_SRCS
     kbookmarkowner.h
     kbookmarkdombuilder.cpp
     kbookmarkdombuilder.h
-  ${kbookmarks_QM_LOADER}
 )
 if (TARGET Qt6::DBus)
-  list(APPEND kbookmarks_SRCS kbookmarkmanageradaptor.cpp kbookmarkmanageradaptor_p.h)
+    target_sources(KF6Bookmarks PRIVATE
+        kbookmarkmanageradaptor.cpp
+        kbookmarkmanageradaptor_p.h
+    )
 endif()
 
-ecm_qt_declare_logging_category(kbookmarks_SRCS
+ecm_qt_declare_logging_category(KF6Bookmarks
     HEADER kbookmarks_debug.h
     IDENTIFIER KBOOKMARKS_LOG
     CATEGORY_NAME kf.bookmarks
@@ -48,8 +59,6 @@ ecm_qt_declare_logging_category(kbookmarks_SRCS
     EXPORT KBOOKMARKS
 )
 
-add_library(KF6Bookmarks ${kbookmarks_SRCS})
-add_library(KF6::Bookmarks ALIAS KF6Bookmarks)
 ecm_generate_export_header(KF6Bookmarks
     BASE_NAME KBookmarks
     GROUP_BASE_NAME KF
@@ -74,11 +83,6 @@ if (TARGET Qt6::DBus)
 else()
   target_compile_definitions(KF6Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
 endif()
-
-set_target_properties(KF6Bookmarks PROPERTIES VERSION   ${KBOOKMARKS_VERSION}
-                                              SOVERSION ${KBOOKMARKS_SOVERSION}
-                                              EXPORT_NAME Bookmarks
-)
 
 ecm_generate_headers(KBookmarks_HEADERS
   HEADER_NAMES
