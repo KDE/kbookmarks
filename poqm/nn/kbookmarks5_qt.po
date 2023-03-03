@@ -274,19 +274,3 @@ msgstr "Ny bokmerkemappe …"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Lag ei ny bokmerkemappe i denne menyen"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Hide in Toolbar"
-#~ msgstr "Ikkje vis på verktøylinja"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Show in Toolbar"
-#~ msgstr "Vis på verktøylinja"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Window"
-#~ msgstr "Opna i nytt vindauge"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Tab"
-#~ msgstr "Opna i ny fane"
