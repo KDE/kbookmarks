@@ -279,19 +279,3 @@ msgstr "Carpeta nova d'adreces d'interés..."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Crea una carpeta nova d'adreces d'interés en este menú"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Hide in Toolbar"
-#~ msgstr "Oculta en la barra d'eines"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Show in Toolbar"
-#~ msgstr "Mostra en la barra d'eines"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Window"
-#~ msgstr "Obri en una finestra nova"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Tab"
-#~ msgstr "Obri en una pestanya nova"
