@@ -271,19 +271,3 @@ msgstr "Nová složka záložek..."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Vytvořit novou složku se záložkami v této nabídce"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Hide in Toolbar"
-#~ msgstr "Skrýt v panelu nástrojů"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Show in Toolbar"
-#~ msgstr "Zobrazit v panelu nástrojů"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Window"
-#~ msgstr "Otevřít v novém okně"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Tab"
-#~ msgstr "Otevřít v nové kartě"
