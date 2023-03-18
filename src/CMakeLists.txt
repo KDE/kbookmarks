@@ -7,7 +7,7 @@ set_target_properties(KF6Bookmarks PROPERTIES
     EXPORT_NAME Bookmarks
 )
 
-ecm_create_qm_loader(KF6Bookmarks kbookmarks5_qt)
+ecm_create_qm_loader(KF6Bookmarks kbookmarks6_qt)
 
 target_sources(KF6Bookmarks PRIVATE
     kbookmarkaction.cpp
