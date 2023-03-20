@@ -1,4 +1,4 @@
-# Translation of kbookmarks5_qt.po to Catalan
+# Translation of kbookmarks6_qt.po to Catalan
 # Copyright (C) 1998-2020 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
@@ -281,23 +281,3 @@ msgstr "Carpeta nova d'adreces d'interès..."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Crea una carpeta nova d'adreces d'interès en aquest menú"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Hide in Toolbar"
-#~ msgstr "Oculta a la barra d'eines"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Show in Toolbar"
-#~ msgstr "Mostra a la barra d'eines"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Window"
-#~ msgstr "Obre en una finestra nova"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Tab"
-#~ msgstr "Obre en una pestanya nova"
-
-#~ msgctxt "KBookmarkMenu|"
-#~ msgid "Open Folder in Tabs"
-#~ msgstr "Obre la carpeta en pestanyes"

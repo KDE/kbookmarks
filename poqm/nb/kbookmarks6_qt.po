@@ -1,4 +1,4 @@
-# Translation of kbookmarks5_qt to Norwegian Bokmål
+# Translation of kbookmarks6_qt to Norwegian Bokmål
 #
 # Knut Yrvin <knut.yrvin@gmail.com>, 2003, 2004, 2005.
 # Knut Erik Hollund <khollund@responze.net>, 2003.
