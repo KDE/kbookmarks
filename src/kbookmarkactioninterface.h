@@ -19,7 +19,7 @@
 class KBOOKMARKS_EXPORT KBookmarkActionInterface
 {
 public:
-    KBookmarkActionInterface(const KBookmark &bk);
+    explicit KBookmarkActionInterface(const KBookmark &bk);
     virtual ~KBookmarkActionInterface();
     const KBookmark bookmark() const;
 
