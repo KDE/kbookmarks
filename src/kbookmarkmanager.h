@@ -321,10 +321,10 @@ private Q_SLOTS:
 
 private:
     // consts added to avoid a copy-and-paste of internalDocument
-    void parse() const;
-    void init(const QString &dbusPath);
+    KBOOKMARKS_NO_EXPORT void parse() const;
+    KBOOKMARKS_NO_EXPORT void init(const QString &dbusPath);
 
-    void startKEditBookmarks(const QStringList &args);
+    KBOOKMARKS_NO_EXPORT void startKEditBookmarks(const QStringList &args);
 
 private:
     std::unique_ptr<KBookmarkManagerPrivate> const d;
