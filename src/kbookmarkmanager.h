@@ -66,19 +66,19 @@ private:
      * The final D-Bus object path is /KBookmarkManager/dbusObjectName
      * An empty @p dbusObjectName disables the registration to D-Bus (used for temporary managers)
      */
-    KBookmarkManager(const QString &bookmarksFile, const QString &dbusObjectName);
+    KBOOKMARKS_NO_EXPORT KBookmarkManager(const QString &bookmarksFile, const QString &dbusObjectName);
 
     /**
      * Creates a bookmark manager for an external file
      * (Using QFileSystemWatcher for change monitoring)
      * @since 4.1
      */
-    KBookmarkManager(const QString &bookmarksFile);
+    KBOOKMARKS_NO_EXPORT explicit KBookmarkManager(const QString &bookmarksFile);
 
     /**
      * Creates a temp bookmark manager
      */
-    KBookmarkManager();
+    KBOOKMARKS_NO_EXPORT KBookmarkManager();
 
 public:
     /**
