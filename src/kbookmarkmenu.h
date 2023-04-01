@@ -251,7 +251,7 @@ protected:
     QList<QAction *> m_actions;
 
 private Q_SLOTS:
-    void slotCustomContextMenu(const QPoint &);
+    KBOOKMARKS_NO_EXPORT void slotCustomContextMenu(const QPoint &);
 
 private:
     void init();
