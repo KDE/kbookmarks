@@ -317,7 +317,7 @@ Q_SIGNALS:
     void error(const QString &errorMessage);
 
 private Q_SLOTS:
-    void slotFileChanged(const QString &path); // external bookmarks
+    KBOOKMARKS_NO_EXPORT void slotFileChanged(const QString &path); // external bookmarks
 
 private:
     // consts added to avoid a copy-and-paste of internalDocument

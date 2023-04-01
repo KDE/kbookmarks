@@ -50,7 +50,7 @@ protected:
     KBookmark bookmark() const;
 
 private Q_SLOTS:
-    void slotAboutToShow();
+    KBOOKMARKS_NO_EXPORT void slotAboutToShow();
 
 private:
     const KBookmark bm;
