@@ -254,7 +254,7 @@ private Q_SLOTS:
     KBOOKMARKS_NO_EXPORT void slotCustomContextMenu(const QPoint &);
 
 private:
-    void init();
+    KBOOKMARKS_NO_EXPORT void init();
 
 private:
     std::unique_ptr<KBookmarkMenuPrivate> const d;
