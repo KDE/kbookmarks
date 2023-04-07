@@ -1,5 +1,6 @@
-# translation of kbookmarks5_qt.pot to Esperanto
+# translation of kbookmarks6_qt.pot to Esperanto
 # Copyright (C) 2007, 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the kbookmarks package.
 # Oliver M. Kellogg <okellogg@users.sourceforge.net>, 2007.
 # Cindy McKee <cfmckee@gmail.com>, 2007, 2008.
 #
@@ -7,10 +8,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: kio4\n"
+"Project-Id-Version: kbookmarks\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-01-04 22:00+0100\n"
+"PO-Revision-Date: 2023-04-07 00:35+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@lists.kde.org>\n"
 "Language: eo\n"
@@ -188,11 +189,13 @@ msgctxt "KNSBookmarkImporterImpl|"
 msgid ""
 "Could not find %1. Netscape is probably not installed. Aborting the export."
 msgstr ""
+"Ne eblis trovi %1. Netscape verŝajne ne estas instalita. Rezignanta pri "
+"eksporto."
 
 #: kbookmarkimporter_ns.cpp:118
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "Netscape not found"
-msgstr ""
+msgstr "Netscape ne trovita"
 
 #: kbookmarkimporter_ns.cpp:138
 msgctxt "KNSBookmarkImporterImpl|"
@@ -221,6 +224,9 @@ msgid ""
 "\n"
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
+"Ne eblas lanĉi keditbookmarks.\n"
+"\n"
+"Plej verŝajne vi ne havas keditbookmarks aktuale instalita"
 
 #: kbookmarkmanager.cpp:500
 #, qt-format
@@ -268,19 +274,3 @@ msgstr "Nova legosigna dosierujo..."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Krei novan legosignujon en tiu menuo"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Hide in Toolbar"
-#~ msgstr "Kaŝi en Ilobreto"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Show in Toolbar"
-#~ msgstr "Montri en Ilobreto"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Window"
-#~ msgstr "Malfermi en Nova Fenestro"
-
-#~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
-#~ msgid "Open in New Tab"
-#~ msgstr "Malfermi en Nova Langeto"
