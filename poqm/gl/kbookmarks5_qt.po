@@ -8,14 +8,14 @@
 # Marce Villarino <mvillarino@kde-espana.es>, 2009, 2010, 2011, 2012.
 # Xosé <xosecalvo@gmail.com>, 2010.
 # Marce Villarino <mvillarino@kde-espana.es>, 2011, 2012, 2013, 2014.
-# Adrián Chaves <adrian@chaves.io>, 2017, 2018, 2020.
+# Adrián Chaves <adrian@chaves.io>, 2017, 2018, 2020, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2020-01-12 11:03+0100\n"
+"PO-Revision-Date: 2023-05-01 09:34+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:318
@@ -32,81 +32,51 @@ msgid "--- separator ---"
 msgstr "--- separador ---"
 
 #: kbookmarkcontextmenu.cpp:52
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Add Bookmark Here"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "Engadir aquí un marcador"
 
 #: kbookmarkcontextmenu.cpp:58
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "Abrir o cartafol no editor de marcadores"
 
 #: kbookmarkcontextmenu.cpp:61
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Delete Folder"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "Eliminar o cartafol"
 
 #: kbookmarkcontextmenu.cpp:66
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Properties"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Propiedades"
 
 #: kbookmarkcontextmenu.cpp:71
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Copy Link Address"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "Copiar o enderezo da ligazón"
 
 #: kbookmarkcontextmenu.cpp:74
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Delete Bookmark"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Eliminar o marcador"
 
 #: kbookmarkcontextmenu.cpp:80
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Abrir o cartafol en separadores"
 
 #: kbookmarkcontextmenu.cpp:105
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Cannot add bookmark with empty URL."
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "Non se pode engadir un marcador cun URL baleiro."
 
 #: kbookmarkcontextmenu.cpp:134
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Bookmark Folder Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "Borrado dun cartafol de marcadores"
 
 #: kbookmarkcontextmenu.cpp:134
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Bookmark Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "Borrado dun marcador"
@@ -277,89 +247,56 @@ msgstr ""
 "axiña como se poida, posibelmente sexa un disco duro cheo."
 
 #: kbookmarkmenu.cpp:270
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Abrir o cartafol en separadores"
 
 #: kbookmarkmenu.cpp:274
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Abrir cada marcador deste cartafol nun novo separador."
+msgstr "Abrir cada marcador deste cartafol nun novo separador"
 
 #: kbookmarkmenu.cpp:290
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Marcar estes separadores como un cartafol…"
 
 #: kbookmarkmenu.cpp:298
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Engade un cartafol de marcadores con todos os separadores abertos."
+msgstr "Engade un cartafol de marcadores con todos os separadores abertos"
 
 #: kbookmarkmenu.cpp:349
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Editar a súa colección de marcadores nunha xanela separada"
 
 #: kbookmarkmenu.cpp:366
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Novo cartafol de marcadores…"
 
 #: kbookmarkmenu.cpp:368
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Crea un novo cartafol de marcadores neste menú"
 
 #: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
-#, fuzzy
-#| msgctxt "KonqBookmarkContextMenu|"
-#| msgid "Hide in toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
 msgstr "Agochar na barra de ferramentas"
 
 #: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
-#, fuzzy
-#| msgctxt "KonqBookmarkContextMenu|"
-#| msgid "Show in toolbar"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Show in Toolbar"
 msgstr "Mostrar na barra de ferramentas"
 
 #: konqbookmarkmenu.cpp:155
-#, fuzzy
-#| msgctxt "KonqBookmarkContextMenu|"
-#| msgid "Open in New Window"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Window"
 msgstr "Abrir nunha xanela nova"
 
 #: konqbookmarkmenu.cpp:158
-#, fuzzy
-#| msgctxt "KonqBookmarkContextMenu|"
-#| msgid "Open in New Tab"
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Open in New Tab"
 msgstr "Abrir nun novo separador"
