@@ -1,6 +1,6 @@
 # translation of kbookmarks5_qt.pot to Esperanto
 # Copyright (C) 2007, 2008 Free Software Foundation, Inc.
-# Oliver M. Kellogg <okellogg@users.sourceforge.net>, 2007.
+# Oliver M. Kellogg <okellogg@users.sourceforge.net>, 2007, 2023.
 # Cindy McKee <cfmckee@gmail.com>, 2007, 2008.
 #
 # Minuskloj: ĉ ĝ ĵ ĥ ŝ ŭ   Majuskloj: Ĉ Ĝ Ĵ Ĥ Ŝ Ŭ
@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-01-04 22:00+0100\n"
+"PO-Revision-Date: 2023-06-04 23:16+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@lists.kde.org>\n"
 "Language: eo\n"
@@ -188,11 +188,13 @@ msgctxt "KNSBookmarkImporterImpl|"
 msgid ""
 "Could not find %1. Netscape is probably not installed. Aborting the export."
 msgstr ""
+"Ne povis trovi %1. Netscape probable ne estas instalita. Ĉesigante la "
+"eksporton."
 
 #: kbookmarkimporter_ns.cpp:131
 msgctxt "KNSBookmarkImporterImpl|"
 msgid "Netscape not found"
-msgstr ""
+msgstr "Netscape ne trovita"
 
 #: kbookmarkimporter_ns.cpp:156
 msgctxt "KNSBookmarkImporterImpl|"
@@ -221,6 +223,9 @@ msgid ""
 "\n"
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
+"Ne povas lanĉi keditbookmarks.\n"
+"\n"
+"Plej verŝajne vi ne havas keditbookmarks aktuale instalita"
 
 #: kbookmarkmanager.cpp:504
 #, qt-format
