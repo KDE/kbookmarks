@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-05-01 09:34+0200\n"
+"PO-Revision-Date: 2023-06-05 13:59+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.04.1\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:318
@@ -232,7 +232,7 @@ msgid ""
 msgstr ""
 "Non se pode iniciar keditbookmarks.\n"
 "\n"
-"Probabelmente non teña keditbookmarks instalado actualmente."
+"Probabelmente non teña keditbookmarks instalado."
 
 #: kbookmarkmanager.cpp:500
 #, qt-format
