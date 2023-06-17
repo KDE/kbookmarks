@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-03-07 19:04+0300\n"
+"PO-Revision-Date: 2023-06-16 11:52+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.07.70\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:318
@@ -47,7 +47,7 @@ msgstr "Buraya Yer İmi Ekle"
 #: kbookmarkcontextmenu.cpp:58
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
-msgstr "Klasörü Yer İmi Düzenleyicide Aç"
+msgstr "Klasörü Yer İmi Düzenleyicisinde Aç"
 
 #: kbookmarkcontextmenu.cpp:61
 msgctxt "KBookmarkContextMenu|@action:inmenu"
