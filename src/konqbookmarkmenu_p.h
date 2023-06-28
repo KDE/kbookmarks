@@ -5,6 +5,9 @@
     SPDX-License-Identifier: LGPL-2.0-or-later
 */
 
+#ifndef KONQBOOKMARKMENU_P_H
+#define KONQBOOKMARKMENU_P_H
+
 #include "kbookmarkimporter.h"
 #include "kbookmarkmenu.h"
 
@@ -79,5 +82,7 @@ public:
     {
     }
 };
+
+#endif
 
 #endif
