@@ -25,3 +25,5 @@ KBookmarkActionMenu::KBookmarkActionMenu(const KBookmark &bm, const QString &tex
 KBookmarkActionMenu::~KBookmarkActionMenu()
 {
 }
+
+#include "moc_kbookmarkactionmenu.cpp"

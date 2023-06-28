@@ -388,3 +388,5 @@ QString KBookmarkTreeItem::address()
 {
     return m_address;
 }
+
+#include "moc_kbookmarkdialog.cpp"

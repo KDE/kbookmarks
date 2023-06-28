@@ -214,3 +214,4 @@ void KIEBookmarkExporterImpl::write(const KBookmarkGroup &parent)
 }
 
 #include "kbookmarkimporter_ie.moc"
+#include "moc_kbookmarkimporter_ie.cpp"

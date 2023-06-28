@@ -46,3 +46,5 @@ void KBookmarkAction::slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km
         m_pOwner->openBookmark(bookmark(), mb, km);
     }
 }
+
+#include "moc_kbookmarkaction.cpp"

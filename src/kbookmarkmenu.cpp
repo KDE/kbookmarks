@@ -440,3 +440,5 @@ QAction *KBookmarkMenu::editBookmarksAction() const
 {
     return d->editBookmarksAction;
 }
+
+#include "moc_kbookmarkmenu.cpp"

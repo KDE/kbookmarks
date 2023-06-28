@@ -177,3 +177,5 @@ KBookmark KBookmarkContextMenu::bookmark() const
 {
     return bm;
 }
+
+#include "moc_kbookmarkcontextmenu.cpp"
