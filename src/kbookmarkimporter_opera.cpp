@@ -177,4 +177,5 @@ void KOperaBookmarkExporterImpl::write(const KBookmarkGroup &parent)
     fstream << content;
 }
 
+#include "moc_kbookmarkimporter_opera.cpp"
 #include "moc_kbookmarkimporter_opera_p.cpp"

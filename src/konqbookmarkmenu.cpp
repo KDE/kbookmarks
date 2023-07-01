@@ -325,5 +325,6 @@ QMenu *KonqBookmarkMenu::contextMenu(QAction *action)
 }
 
 #include "moc_konqbookmarkmenu.cpp"
+#include "moc_konqbookmarkmenu_p.cpp"
 
 #endif // KBOOKMARKS_BUILD_DEPRECATED_SINCE(5, 65)
