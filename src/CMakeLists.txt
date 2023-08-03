@@ -22,17 +22,7 @@ target_sources(KF6Bookmarks PRIVATE
     kbookmarkdialog.cpp
     kbookmarkdialog.h
     kbookmarkdialog_p.h
-    kbookmarkexporter.h
     kbookmark.h
-    kbookmarkimporter.cpp
-    kbookmarkimporter.h
-    kbookmarkimporter_ie.cpp
-    kbookmarkimporter_ie.h
-    kbookmarkimporter_ns.cpp
-    kbookmarkimporter_ns.h
-    kbookmarkimporter_opera.cpp
-    kbookmarkimporter_opera.h
-    kbookmarkimporter_opera_p.h
     kbookmarkmanager.cpp
     kbookmarkmanager.h
     kbookmarkmenu.cpp
@@ -40,8 +30,6 @@ target_sources(KF6Bookmarks PRIVATE
     kbookmarkmenu_p.h
     kbookmarkowner.cpp
     kbookmarkowner.h
-    kbookmarkdombuilder.cpp
-    kbookmarkdombuilder.h
 )
 if (TARGET Qt6::DBus)
     target_sources(KF6Bookmarks PRIVATE
@@ -74,7 +62,6 @@ target_include_directories(KF6Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INS
 target_link_libraries(KF6Bookmarks PUBLIC Qt6::Widgets Qt6::Xml KF6::WidgetsAddons)
 target_link_libraries(KF6Bookmarks PRIVATE
     KF6::CoreAddons # for KStringHandler
-    KF6::Codecs # for KCharsets
     KF6::ConfigCore # for KConfigGroup
     KF6::ConfigWidgets # for KStandardAction
 )
@@ -95,21 +82,11 @@ ecm_generate_headers(KBookmarks_HEADERS
   KBookmarkManager
   KBookmarkMenu
   KBookmarkOwner
-  KBookmarkDomBuilder
   KBookmarkDialog
 
   REQUIRED_HEADERS KBookmarks_HEADERS
 )
 
-# These classes have weirdly named classes, no forwarding headers.
-set(KBookmarks_HEADERS
-  ${KBookmarks_HEADERS}
-  kbookmarkexporter.h
-  kbookmarkimporter.h
-  kbookmarkimporter_opera.h
-  kbookmarkimporter_ie.h
-  kbookmarkimporter_ns.h
-)
 install(TARGETS KF6Bookmarks EXPORT KF6BookmarksTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES

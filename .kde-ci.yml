@@ -4,7 +4,6 @@ Dependencies:
     'frameworks/extra-cmake-modules': '@same'
     'frameworks/kconfigwidgets' : '@same'
     'frameworks/kcoreaddons' : '@same'
-    'frameworks/kcodecs' : '@same'
     'frameworks/kconfig' : '@same'
     'frameworks/kiconthemes' : '@same'
     'frameworks/kconfigwidgets' : '@same'

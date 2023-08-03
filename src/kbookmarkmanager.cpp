@@ -10,7 +10,6 @@
 
 #include "kbookmarkmanager.h"
 #include "kbookmarkdialog.h"
-#include "kbookmarkimporter.h"
 #include "kbookmarkmenu.h"
 #include "kbookmarkmenu_p.h"
 #include "kbookmarks_debug.h"
