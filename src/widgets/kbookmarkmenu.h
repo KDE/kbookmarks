@@ -9,7 +9,7 @@
 #ifndef __kbookmarkmenu_h__
 #define __kbookmarkmenu_h__
 
-#include <kbookmarks_export.h>
+#include <kbookmarkswidgets_export.h>
 
 #include <QObject>
 #include <memory>
@@ -46,7 +46,7 @@ class KBookmarkMenuPrivate;
  * The functionality of this class can be disabled with the "action/bookmarks"
  * Kiosk action (see the KAuthorized namespace).
  */
-class KBOOKMARKS_EXPORT KBookmarkMenu : public QObject
+class KBOOKMARKSWIDGETS_EXPORT KBookmarkMenu : public QObject
 {
     Q_OBJECT
 public:
@@ -200,11 +200,11 @@ protected:
     QList<QAction *> m_actions;
 
 private Q_SLOTS:
-    KBOOKMARKS_NO_EXPORT void slotCustomContextMenu(const QPoint &);
+    KBOOKMARKSWIDGETS_NO_EXPORT void slotCustomContextMenu(const QPoint &);
 
 private:
-    KBOOKMARKS_NO_EXPORT void init();
     void slotEditBookmarks();
+    KBOOKMARKSWIDGETS_NO_EXPORT void init();
 
 private:
     std::unique_ptr<KBookmarkMenuPrivate> const d;

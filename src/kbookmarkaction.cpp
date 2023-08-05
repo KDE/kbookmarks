@@ -9,8 +9,8 @@
 #include "kbookmarkaction.h"
 #include "kbookmarkowner.h"
 
-#include <QApplication>
 #include <QDesktopServices>
+#include <QGuiApplication>
 
 KBookmarkAction::KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent)
     : QAction(bk.text().replace(QLatin1Char('&'), QLatin1String("&&")), parent)
@@ -35,7 +35,7 @@ KBookmarkAction::~KBookmarkAction()
 
 void KBookmarkAction::slotTriggered()
 {
-    slotSelected(QApplication::mouseButtons(), QApplication::keyboardModifiers());
+    slotSelected(QGuiApplication::mouseButtons(), QGuiApplication::keyboardModifiers());
 }
 
 void KBookmarkAction::slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km)

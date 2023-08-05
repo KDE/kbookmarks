@@ -9,13 +9,14 @@
 #include "kbookmarkmenu.h"
 #include "kbookmarkmenu_p.h"
 
+#include "../kbookmarksettings_p.h"
 #include "kbookmarkaction.h"
 #include "kbookmarkactionmenu.h"
 #include "kbookmarkcontextmenu.h"
 #include "kbookmarkdialog.h"
 #include "kbookmarkmanager.h"
 #include "kbookmarkowner.h"
-#include "kbookmarks_debug.h"
+#include "kbookmarkswidgets_debug.h"
 #include "keditbookmarks_p.h"
 
 #include <KAuthorized>
@@ -187,7 +188,7 @@ QMenu *KBookmarkMenu::parentMenu() const
 
 void KBookmarkMenu::slotBookmarksChanged(const QString &groupAddress)
 {
-    qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotBookmarksChanged groupAddress: " << groupAddress;
+    qCDebug(KBOOKMARKSWIDGETS_LOG) << "KBookmarkMenu::slotBookmarksChanged groupAddress: " << groupAddress;
     if (groupAddress == m_parentAddress) {
         // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotBookmarksChanged -> setting m_bDirty on " << groupAddress;
         m_bDirty = true;

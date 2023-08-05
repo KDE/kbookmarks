@@ -1,3 +1,5 @@
+add_subdirectory(widgets)
+
 add_library(KF6Bookmarks)
 add_library(KF6::Bookmarks ALIAS KF6Bookmarks)
 
@@ -14,24 +16,15 @@ target_sources(KF6Bookmarks PRIVATE
     kbookmarkaction.h
     kbookmarkactioninterface.cpp
     kbookmarkactioninterface.h
-    kbookmarkactionmenu.cpp
-    kbookmarkactionmenu.h
-    kbookmarkcontextmenu.cpp
-    kbookmarkcontextmenu.h
     kbookmark.cpp
-    kbookmarkdialog.cpp
-    kbookmarkdialog.h
-    kbookmarkdialog_p.h
     kbookmark.h
     kbookmarkmanager.cpp
     kbookmarkmanager.h
-    kbookmarkmenu.cpp
-    kbookmarkmenu.h
-    kbookmarkmenu_p.h
     kbookmarkowner.cpp
     kbookmarkowner.h
     keditbookmarks_p.h
     keditbookmarks.cpp
+    kbookmarksettings.cpp
 )
 
 ecm_qt_declare_logging_category(KF6Bookmarks
@@ -55,11 +48,10 @@ ecm_generate_export_header(KF6Bookmarks
 
 target_include_directories(KF6Bookmarks INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks>")
 
-target_link_libraries(KF6Bookmarks PUBLIC Qt6::Widgets Qt6::Xml KF6::WidgetsAddons)
+target_link_libraries(KF6Bookmarks PUBLIC Qt6::Gui Qt6::Xml)
 target_link_libraries(KF6Bookmarks PRIVATE
     KF6::CoreAddons # for KStringHandler
     KF6::ConfigCore # for KConfigGroup
-    KF6::ConfigWidgets # for KStandardAction
 )
 
 ecm_generate_headers(KBookmarks_HEADERS
@@ -67,12 +59,8 @@ ecm_generate_headers(KBookmarks_HEADERS
   KBookmark
   KBookmarkAction
   KBookmarkActionInterface
-  KBookmarkActionMenu
-  KBookmarkContextMenu
   KBookmarkManager
-  KBookmarkMenu
   KBookmarkOwner
-  KBookmarkDialog
 
   REQUIRED_HEADERS KBookmarks_HEADERS
 )
@@ -117,4 +105,3 @@ if(BUILD_QCH)
         COMPONENT Devel
     )
 endif()
-

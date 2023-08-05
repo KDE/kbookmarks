@@ -9,25 +9,21 @@
 */
 
 #include "kbookmarkmanager.h"
-#include "kbookmarkmenu_p.h"
 #include "kbookmarks_debug.h"
 
-#include <QApplication>
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
-#include <QProcess>
 #include <QReadWriteLock>
 #include <QRegularExpression>
+#include <QSaveFile>
+#include <QStandardPaths>
 #include <QTextStream>
-#include <QThread>
 
 #include <KBackup>
 #include <KConfig>
 #include <KConfigGroup>
 #include <KDirWatch>
-#include <QSaveFile>
-#include <QStandardPaths>
 
 namespace
 {
@@ -484,29 +480,6 @@ bool KBookmarkManager::updateAccessMetadata(const QString &url)
     }
 
     return true;
-}
-
-KBookmarkSettings *KBookmarkSettings::s_self = nullptr;
-
-void KBookmarkSettings::readSettings()
-{
-    KConfig config(QStringLiteral("kbookmarkrc"), KConfig::NoGlobals);
-    KConfigGroup cg(&config, "Bookmarks");
-
-    // add bookmark dialog usage - no reparse
-    s_self->m_advancedaddbookmark = cg.readEntry("AdvancedAddBookmarkDialog", false);
-
-    // this one alters the menu, therefore it needs a reparse
-    s_self->m_contextmenu = cg.readEntry("ContextMenuActions", true);
-}
-
-KBookmarkSettings *KBookmarkSettings::self()
-{
-    if (!s_self) {
-        s_self = new KBookmarkSettings;
-        readSettings();
-    }
-    return s_self;
 }
 
 #include "moc_kbookmarkmanager.cpp"

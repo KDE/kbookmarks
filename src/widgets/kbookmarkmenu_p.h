@@ -17,8 +17,6 @@ class QString;
 class KBookmark;
 class KBookmarkGroup;
 
-#define KEDITBOOKMARKS_BINARY "keditbookmarks"
-
 class KBookmarkTreeItem : public QTreeWidgetItem
 {
 public:
@@ -29,16 +27,6 @@ public:
 
 private:
     QString m_address;
-};
-
-class KBookmarkSettings
-{
-public:
-    bool m_advancedaddbookmark;
-    bool m_contextmenu;
-    static KBookmarkSettings *s_self;
-    static void readSettings();
-    static KBookmarkSettings *self();
 };
 
 #endif

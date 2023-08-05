@@ -12,7 +12,7 @@
 #include <QProcess>
 #include <QStandardPaths>
 
-#include "kbookmarkmenu_p.h"
+#include "kbookmarksettings_p.h"
 
 void KEditBookmarks::setBrowserMode(bool browserMode)
 {

@@ -11,13 +11,14 @@
 
 #include "kbookmarkactioninterface.h"
 #include <KActionMenu>
+#include <kbookmarkswidgets_export.h>
 
 /**
  * @class KBookmarkActionMenu kbookmarkactionmenu.h KBookmarkActionMenu
  *
  * A wrapper around KActionMenu to provide a nice constructor for bookmark groups.
  */
-class KBOOKMARKS_EXPORT KBookmarkActionMenu : public KActionMenu, public KBookmarkActionInterface
+class KBOOKMARKSWIDGETS_EXPORT KBookmarkActionMenu : public KActionMenu, public KBookmarkActionInterface
 {
     Q_OBJECT
 public:

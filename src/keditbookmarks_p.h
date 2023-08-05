@@ -7,7 +7,9 @@
 
 #include <QString>
 
-class KEditBookmarks
+#include "kbookmarks_export.h"
+
+class KBOOKMARKS_EXPORT KEditBookmarks
 {
 public:
     class OpenResult

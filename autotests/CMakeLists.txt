@@ -9,4 +9,4 @@ endif()
 
 include(ECMAddTests)
 
-ecm_add_test(kbookmarktest.cpp TEST_NAME kbookmarktest LINK_LIBRARIES KF6::Bookmarks Qt6::Test)
+ecm_add_test(kbookmarktest.cpp TEST_NAME kbookmarktest LINK_LIBRARIES KF6::Bookmarks KF6::BookmarksWidgets Qt6::Test)

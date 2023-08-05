@@ -9,6 +9,7 @@
 
 #include "kbookmark.h"
 #include "kbookmarkowner.h"
+#include <kbookmarkswidgets_export.h>
 
 #include <QDialog>
 #include <memory>
@@ -26,7 +27,7 @@ class KBookmarkDialogPrivate;
  * If you want to customize those dialogs, derive from KBookmarkOwner and reimplement bookmarkDialog(),
  * return a KBookmarkDialog subclass and reimplement initLayout(), aboutToShow() and save().
  */
-class KBOOKMARKS_EXPORT KBookmarkDialog : public QDialog
+class KBOOKMARKSWIDGETS_EXPORT KBookmarkDialog : public QDialog
 {
     Q_OBJECT
 
