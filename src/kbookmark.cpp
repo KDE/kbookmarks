@@ -9,7 +9,6 @@
 */
 
 #include "kbookmark.h"
-#include "kbookmarks_debug.h"
 #include <kbookmarkmanager.h>
 
 #include <KStringHandler>

@@ -13,6 +13,7 @@
 #include "kbookmarkactionmenu.h"
 #include "kbookmarkcontextmenu.h"
 #include "kbookmarkdialog.h"
+#include "kbookmarkmanager.h"
 #include "kbookmarkowner.h"
 #include "kbookmarks_debug.h"
 

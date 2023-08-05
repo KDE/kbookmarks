@@ -9,7 +9,6 @@
 #include "kbookmarkdialog.h"
 #include "kbookmarkdialog_p.h"
 #include "kbookmarkmanager.h"
-#include "kbookmarkmenu.h"
 #include "kbookmarkmenu_p.h"
 
 #include <QDialogButtonBox>

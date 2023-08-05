@@ -12,7 +12,6 @@
 #include <QTreeWidget>
 
 #include "kbookmark.h"
-#include "kbookmarkmanager.h"
 
 class QString;
 class KBookmark;

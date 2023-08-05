@@ -9,7 +9,6 @@
 */
 
 #include "kbookmarkowner.h"
-#include "kbookmarkdialog.h"
 
 class Q_DECL_HIDDEN KBookmarkOwner::FutureBookmarkPrivate : public QSharedData
 {

@@ -9,8 +9,6 @@
 */
 
 #include "kbookmarkmanager.h"
-#include "kbookmarkdialog.h"
-#include "kbookmarkmenu.h"
 #include "kbookmarkmenu_p.h"
 #include "kbookmarks_debug.h"
 #ifndef KBOOKMARKS_NO_DBUS
