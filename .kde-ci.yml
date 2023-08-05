@@ -5,8 +5,6 @@ Dependencies:
     'frameworks/kconfigwidgets' : '@same'
     'frameworks/kcoreaddons' : '@same'
     'frameworks/kconfig' : '@same'
-    'frameworks/kiconthemes' : '@same'
-    'frameworks/kconfigwidgets' : '@same'
 
 Options:
   test-before-installing: True
