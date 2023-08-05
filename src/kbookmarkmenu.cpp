@@ -379,7 +379,7 @@ void KBookmarkMenu::slotAddBookmarksList()
 
     KBookmarkGroup parentBookmark = m_pManager->findByAddress(m_parentAddress).toGroup();
 
-    KBookmarkDialog *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
+    KBookmarkDialog *dlg = new KBookmarkDialog(m_pManager, QApplication::activeWindow());
     dlg->addBookmarks(m_pOwner->currentBookmarkList(), QLatin1String(""), parentBookmark);
     delete dlg;
 }
@@ -395,7 +395,7 @@ void KBookmarkMenu::slotAddBookmark()
     KBookmarkGroup parentBookmark = m_pManager->findByAddress(m_parentAddress).toGroup();
 
     if (KBookmarkSettings::self()->m_advancedaddbookmark) {
-        KBookmarkDialog *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
+        KBookmarkDialog *dlg = new KBookmarkDialog(m_pManager, QApplication::activeWindow());
         dlg->addBookmark(m_pOwner->currentTitle(), m_pOwner->currentUrl(), m_pOwner->currentIcon(), parentBookmark);
         delete dlg;
     } else {
@@ -416,7 +416,7 @@ void KBookmarkMenu::slotNewFolder()
     }
     KBookmarkGroup parentBookmark = m_pManager->findByAddress(m_parentAddress).toGroup();
     Q_ASSERT(!parentBookmark.isNull());
-    KBookmarkDialog *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
+    KBookmarkDialog *dlg = new KBookmarkDialog(m_pManager, QApplication::activeWindow());
     dlg->createNewFolder(QLatin1String(""), parentBookmark);
     delete dlg;
 }

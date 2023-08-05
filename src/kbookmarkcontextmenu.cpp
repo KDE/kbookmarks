@@ -91,7 +91,7 @@ void KBookmarkContextMenu::slotProperties()
 {
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotProperties" << m_highlightedAddress;
 
-    KBookmarkDialog *dlg = m_pOwner->bookmarkDialog(m_pManager, QApplication::activeWindow());
+    KBookmarkDialog *dlg = new KBookmarkDialog(m_pManager, QApplication::activeWindow());
     dlg->editBookmark(bm);
     delete dlg;
 }

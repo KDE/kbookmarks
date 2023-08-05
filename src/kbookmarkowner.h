@@ -15,7 +15,6 @@
 class QWidget;
 
 class KBookmarkGroup;
-class KBookmarkDialog;
 
 /**
  * @class KBookmarkOwner kbookmarkowner.h KBookmarkOwner
@@ -153,8 +152,6 @@ public:
      * This is only called if supportsTabs() returns true
      */
     virtual void openFolderinTabs(const KBookmarkGroup &bm);
-
-    virtual KBookmarkDialog *bookmarkDialog(KBookmarkManager *mgr, QWidget *parent);
 
     /**
      * Called when a bookmark should be opened in a new tab.

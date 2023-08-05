@@ -75,11 +75,6 @@ bool KBookmarkOwner::enableOption(BookmarkOption action) const
     return false;
 }
 
-KBookmarkDialog *KBookmarkOwner::bookmarkDialog(KBookmarkManager *mgr, QWidget *parent)
-{
-    return new KBookmarkDialog(mgr, parent);
-}
-
 void KBookmarkOwner::openFolderinTabs(const KBookmarkGroup &)
 {
 }
