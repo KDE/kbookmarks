@@ -156,11 +156,6 @@ public:
     {
     }
 
-    ~KBookmarkManagerPrivate()
-    {
-        delete m_dirWatch;
-    }
-
     mutable QDomDocument m_doc;
     mutable QDomDocument m_toolbarDoc;
     QString m_bookmarksFile;
@@ -296,11 +291,10 @@ KBookmarkManager::KBookmarkManager(const QString &bookmarksFile)
     d->m_docIsLoaded = true;
 
     // start KDirWatch
-    d->m_dirWatch = new KDirWatch;
-    d->m_dirWatch->addFile(d->m_bookmarksFile);
-    QObject::connect(d->m_dirWatch, &KDirWatch::dirty, this, &KBookmarkManager::slotFileChanged);
-    QObject::connect(d->m_dirWatch, &KDirWatch::created, this, &KBookmarkManager::slotFileChanged);
-    QObject::connect(d->m_dirWatch, &KDirWatch::deleted, this, &KBookmarkManager::slotFileChanged);
+    KDirWatch::self()->addFile(d->m_bookmarksFile);
+    QObject::connect(KDirWatch::self(), &KDirWatch::dirty, this, &KBookmarkManager::slotFileChanged);
+    QObject::connect(KDirWatch::self(), &KDirWatch::created, this, &KBookmarkManager::slotFileChanged);
+    QObject::connect(KDirWatch::self(), &KDirWatch::deleted, this, &KBookmarkManager::slotFileChanged);
 
     // qCDebug(KBOOKMARKS_LOG) << "starting KDirWatch for" << d->m_bookmarksFile;
 }
@@ -726,8 +720,7 @@ void KBookmarkManager::updateFavicon(const QString &url, const QString & /*favic
 
 KBookmarkManager *KBookmarkManager::userBookmarksManager()
 {
-    const QString bookmarksFile =
-        QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
+    const QString bookmarksFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
     KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(bookmarksFile, QStringLiteral("konqueror"));
     QString caption = QGuiApplication::applicationDisplayName();
     if (caption.isEmpty()) {
