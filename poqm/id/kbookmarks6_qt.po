@@ -194,7 +194,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Markah"
 
-#: kbookmarkmanager.cpp:348
+#: kbookmarkmanager.cpp:342
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -205,7 +205,7 @@ msgstr ""
 "\n"
 "Kemungkinan besar saat ini kamu belum memiliki keditbookmarks yang terinstal"
 
-#: kbookmarkmanager.cpp:497
+#: kbookmarkmanager.cpp:491
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""

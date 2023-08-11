@@ -177,7 +177,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Adreces d'interés"
 
-#: kbookmarkmanager.cpp:348
+#: kbookmarkmanager.cpp:342
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -188,7 +188,7 @@ msgstr ""
 "\n"
 "Probablement «keditbookmarks» no estiga instal·lat"
 
-#: kbookmarkmanager.cpp:497
+#: kbookmarkmanager.cpp:491
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""

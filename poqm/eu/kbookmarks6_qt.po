@@ -178,7 +178,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Lastermarkak"
 
-#: kbookmarkmanager.cpp:348
+#: kbookmarkmanager.cpp:342
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -189,7 +189,7 @@ msgstr ""
 "\n"
 "Seguruekin ez daukazu kedibookmarks une honetan instalatuta"
 
-#: kbookmarkmanager.cpp:497
+#: kbookmarkmanager.cpp:491
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
