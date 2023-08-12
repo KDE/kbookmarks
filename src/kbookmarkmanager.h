@@ -240,11 +240,6 @@ public:
     static KBookmarkManager *managerForExternalFile(const QString &bookmarksFile);
 
     /**
-     * only used for KBookmarkBar
-     */
-    static KBookmarkManager *createTempManager();
-
-    /**
      * Returns a pointer to the user's main (konqueror) bookmark collection.
      */
     static KBookmarkManager *userBookmarksManager();

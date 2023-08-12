@@ -231,14 +231,6 @@ KBookmarkManager *KBookmarkManager::managerForExternalFile(const QString &bookma
     return mgr;
 }
 
-// principally used for filtered toolbars
-KBookmarkManager *KBookmarkManager::createTempManager()
-{
-    KBookmarkManager *mgr = new KBookmarkManager();
-    s_pSelf()->append(mgr);
-    return mgr;
-}
-
 static QDomElement createXbelTopLevelElement(QDomDocument &doc)
 {
     QDomElement topLevel = doc.createElement(QStringLiteral("xbel"));
