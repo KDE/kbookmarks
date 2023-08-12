@@ -33,7 +33,7 @@ class KBookmarkGroup;
  * Rather, just use something like:
  *
  * @code
- * bookmarks = new KBookmarkMenu(manager, nullptr, menu, actionCollection);
+ * bookmarks = new KBookmarkMenu(manager, nullptr, menu);
  * @endcode
  *
  * If you wish to use your own editor or allow the user to add

@@ -17,7 +17,6 @@
 class QAction;
 class QMenu;
 class KBookmark;
-class KActionCollection;
 class KBookmarkManager;
 class KBookmarkOwner;
 class KBookmarkMenu;
@@ -196,10 +195,6 @@ protected:
      */
     QList<KBookmarkMenu *> m_lstSubMenus;
 
-    // This is used to "export" our actions into an actionlist
-    // we got in the constructor. So that the program can show our
-    // actions in their shortcut dialog
-    KActionCollection *m_actionCollection;
     /**
      * List of our actions.
      */
