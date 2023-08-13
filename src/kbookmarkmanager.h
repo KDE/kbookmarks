@@ -245,11 +245,6 @@ public:
     static KBookmarkManager *createTempManager();
 
     /**
-     * Returns a pointer to the user's main (konqueror) bookmark collection.
-     */
-    static KBookmarkManager *userBookmarksManager();
-
-    /**
      * @internal
      */
     QDomDocument internalDocument() const;

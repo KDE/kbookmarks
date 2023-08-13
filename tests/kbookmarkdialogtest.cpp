@@ -6,6 +6,7 @@
 
 #include <QApplication>
 #include <QPushButton>
+#include <QStandardPaths>
 
 #include <kbookmarkdialog.h>
 #include <kbookmarkmanager.h>
@@ -13,7 +14,9 @@
 int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
-    KBookmarkDialog dlg(KBookmarkManager::userBookmarksManager());
+    const QString bookmarksFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
+    KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(bookmarksFile, QStringLiteral("konqueror"));
+    KBookmarkDialog dlg(bookmarkManager);
     dlg.addBookmark(QStringLiteral("KDE"), QUrl(QStringLiteral("http://www.kde.org")), QStringLiteral("www")); // calls exec()
     return 0;
 }
