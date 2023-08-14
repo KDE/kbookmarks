@@ -183,7 +183,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "ਬੁੱਕਮਾਰਕ"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -191,7 +191,7 @@ msgid ""
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -200,12 +200,12 @@ msgid ""
 "as possible, which is most likely a full hard drive."
 msgstr ""
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "ਟੈਬਾਂ ਵਿੱਚ ਫੋਲਡਰ ਖੋਲ੍ਹੋ"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Open all bookmarks in this folder as a new tab."
@@ -213,7 +213,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "ਇਹ ਫੋਲਡਰ ਵਿੱਚ ਸਭ ਬੁੱਕਮਾਰਕ ਇੱਕ ਨਵੀਂ ਟੈਬ ਵਾਂਗ ਖੋਲ੍ਹੋ"
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -221,7 +221,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "ਬੁੱਕਮਾਰਕ ਟੈਬ ਫੋਲਡਰ ਵਾਂਗ..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Add a folder of bookmarks for all open tabs."
@@ -229,7 +229,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "ਸਭ ਖੁੱਲੀਆਂ ਟੈਬਾਂ ਲਈ ਬੁੱਕਮਾਰਕ ਵਿੱਚ ਫੋਲਡਰ ਸ਼ਾਮਿਲ ਕਰੋ।"
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Edit your bookmark collection in a separate window"
@@ -237,7 +237,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਇੱਕ ਵੱਖਰੀ ਵਿੰਡੋ ਵਿੱਚ ਸੋਧੋ"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -245,7 +245,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "ਨਵਾਂ ਬੁੱਕਮਾਰਕ ਫੋਲਡਰ..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"

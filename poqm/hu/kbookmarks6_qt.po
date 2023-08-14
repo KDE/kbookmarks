@@ -168,7 +168,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Könyvjelzők"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -179,7 +179,7 @@ msgstr ""
 "\n"
 "Valószínűleg nincs telepítve"
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -191,37 +191,37 @@ msgstr ""
 "Ez az üzenet csak egyszer jelenik meg. A hiba okát célszerű minél hamarabb "
 "elhárítani, valószínű, hogy több üres lemezterületre van szükség."
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Mappamegnyitás lapokon"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "A mappában található könyvjelzők megnyitása új lapon."
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Könyvjelző az összes lapra (mappaként)…"
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Könyvjelzőmappa létrehozása az összes megnyitott lapra"
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "A könyvjelzők szerkesztése külön ablakban"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Új könyvjelzőmappa…"
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Új könyvjelzőmappa létrehozása a menüben"

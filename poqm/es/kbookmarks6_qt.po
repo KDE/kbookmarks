@@ -179,7 +179,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Marcadores"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -190,7 +190,7 @@ msgstr ""
 "\n"
 "Lo más probable es que no tenga instalado keditbookmarks."
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -202,37 +202,37 @@ msgstr ""
 "Este mensaje de error solo se mostrará una vez. La causa del error, "
 "posiblemente un disco duro lleno, necesita ser corregida cuanto antes."
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Abrir carpeta en pestañas"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Abrir todos los marcadores de esta carpeta como nuevas pestañas"
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Marcar las pestañas como carpeta..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Añadir una carpeta de marcadores para todas las pestañas abiertas"
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Editar la colección de marcadores en una ventana separada"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Nueva carpeta de marcadores..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Crear una nueva carpeta de marcadores en este menú"

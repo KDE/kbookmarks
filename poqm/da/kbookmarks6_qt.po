@@ -175,7 +175,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Bogmærker"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -186,7 +186,7 @@ msgstr ""
 "\n"
 "Sandsynligvis har du ikke keditbookmarks installeret i øjeblikket"
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -198,37 +198,37 @@ msgstr ""
 "fejlmeddelelse vil kun blive vist én gang. Grunden til fejlen skal rettes så "
 "hurtigt som muligt, det mest sandsynlige er en fuld harddisk"
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Åbn mappe i faneblade"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Åbn alle bogmærker i denne mappe som nyt faneblad."
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Tilføj bogmærkemappe med faneblade..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Tilføj en mappe med bogmærker for alle åbne faneblade."
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Redigér din bogmærkesamling i et separat vindue"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Ny bogmærkemappe..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Lav en ny bogmærkemappe i denne menu"

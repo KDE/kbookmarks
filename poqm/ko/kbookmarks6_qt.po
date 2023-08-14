@@ -166,7 +166,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "책갈피"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -177,7 +177,7 @@ msgstr ""
 "\n"
 "keditbookmarks 설치 상태를 확인하십시오"
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -189,37 +189,37 @@ msgstr ""
 "메시지는 한 번만 표시됩니다. 이 원인의 오류는 가능한 한 빨리 수정되어야 하"
 "며, 대개 하드 디스크 드라이브 전체의 오류입니다."
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "폴더를 탭으로 열기"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "이 폴더의 모든 책갈피를 새 탭으로 엽니다."
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "탭을 책갈피 폴더에 추가..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "모든 열린 탭을 새 책갈피 폴더로 추가합니다"
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "새 창에서 책갈피 모음집 편집하기"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "새 책갈피 폴더..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "이 메뉴에 새 책갈피 폴더 만들기"

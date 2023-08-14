@@ -246,7 +246,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Обележувачи"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -254,7 +254,7 @@ msgid ""
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, fuzzy, qt-format
 #| msgid ""
 #| "Unable to save bookmarks in %1. Reported error was: %2. This error "
@@ -270,49 +270,49 @@ msgstr ""
 "Оваа порака за грешка ќе се појави само еднаш. Причината за грешката треба "
 "да се отстрани што побрзо и најверојатно причината е полн тврд диск."
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Отвори папка во ливчиња"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 #, fuzzy
 #| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Ги отвора сите обележувачи од оваа папка како ново ливче."
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Ливчињата во папка со обележувачи..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Додава папка со обележувачи од сите отворени ливчиња."
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Уредете ја вашата колекција на обележувачи во посебен прозорец"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 #, fuzzy
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Нова папка со обележувачи..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"

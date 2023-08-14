@@ -171,7 +171,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "पुस्तचिन्ह"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -182,7 +182,7 @@ msgstr ""
 "\n"
 "सबसे अधिक संभावना है कि आपके पास अभी में केडिटबुकमार्क स्थापित नहीं हैं।"
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -194,37 +194,37 @@ msgstr ""
 "दिखाया जाएगा। त्रुटि के कारण को जल्द से जल्द ठीक करने की आवश्यकता है, जो कि पूर्ण हार्ड "
 "ड्राइव होने की सबसे अधिक संभावना है।"
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "फ़ोल्डर टैबों में खोलें"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "इस फ़ोल्सडर में सभी पुस्तचिन्ह को एक नए टैब के रूप में खोलें"
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "टैब्स के फ़ोल्डर के रूप में पुस्तचिन्हित करें..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "सभी खुले टैब्स के लिए एक पुस्तचिन्ह फ़ोल्डर जोड़ें।"
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "अलग विंडो में पुस्तचिन्ह संग्रह का संपादन करें"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "नया पुस्तचिन्ह फ़ोल्डर..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "इस मेन्यू में एक नया पुस्तचिन्ह फ़ोल्डर बनाएँ"

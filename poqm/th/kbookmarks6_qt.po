@@ -241,7 +241,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "ที่คั่นหน้า"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -249,7 +249,7 @@ msgid ""
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, fuzzy, qt-format
 #| msgid ""
 #| "Unable to save bookmarks in %1. Reported error was: %2. This error "
@@ -266,49 +266,49 @@ msgstr ""
 "สาเหตุของข้อผิดพลาดจำเป็นต้องถูกแก้ไขให้เร็วที่สุดเท่าที่จะเป็นไปได้ "
 "ซึ่งน่าจะเกิดจากฮาร์ดดิสก์เต็มมากที่สุด"
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "เปิดโฟลเดอร์ในแท็บ"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 #, fuzzy
 #| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "เปิดที่คั่นหน้าทั้งหมดในโฟลเดอร์นี้เป็นแท็บใหม่"
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "ทำคั่นหน้าแท็บเป็นโฟลเดอร์..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "เพิ่มโฟลเดอร์ที่คั่นหน้าสำหรับแท็บที่เปิดอยู่ทั้งหมด"
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "แก้ไขรายการที่คั่นหน้าของคุณในหน้าต่างใหม่"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 #, fuzzy
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "สร้างโฟลเดอร์ที่คั่นหน้าใหม่..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"

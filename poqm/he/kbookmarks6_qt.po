@@ -207,7 +207,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "סימניות"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -215,7 +215,7 @@ msgid ""
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, fuzzy, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -227,43 +227,43 @@ msgstr ""
 "תוצג פעם אחת בלבד. יש לתקן בהקדם האפשרי את הגורם לשגיאה, שהוא ככל הנראה כונן "
 "קשיח מלא."
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "פתח תיקייה בלשוניות"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 #, fuzzy
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "פתח את כל הסימניות בתיקייה זאת בלשונית חדשה."
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "הוסף לשוניות לסימניות בתור תיקייה..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 #, fuzzy
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "הוסף תיקיית סימניות עבור כל הלשוניות הפתוחות."
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 #, fuzzy
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "עריכת אוסף הסימניות שלך בחלון נפרד"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "תיקיית סימניות חדשה..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 #, fuzzy
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"

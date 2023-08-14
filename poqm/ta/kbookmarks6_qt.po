@@ -179,7 +179,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "நினைவுக்குறிகள்"
 
-#: kbookmarkmanager.cpp:342
+#: kbookmarkmanager.cpp:334
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -190,7 +190,7 @@ msgstr ""
 "\n"
 "அது நிறுவப்படாத‍துபோல் தெரிகிறது"
 
-#: kbookmarkmanager.cpp:491
+#: kbookmarkmanager.cpp:483
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -202,37 +202,37 @@ msgstr ""
 "இச்சிக்கலறிக்கை இனிமேல் காட்டப்படாது. பெரும்பாலும், வட்டு நிறைந்திருந்தால் இச்சிக்கல் "
 "நேரும். இச்சிக்கலை கூடியசீக்கிரம் சரிசெய்ய வேண்டும்."
 
-#: kbookmarkmenu.cpp:246
+#: kbookmarkmenu.cpp:231
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "அடைவை கீற்றுகளில் திற"
 
-#: kbookmarkmenu.cpp:250
+#: kbookmarkmenu.cpp:235
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "இவ்வடைவிலுள்ள ஒவ்வொரு நினைவுக்குறியையும் புதிய கீற்றாக திறக்கும்"
 
-#: kbookmarkmenu.cpp:266
+#: kbookmarkmenu.cpp:251
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "கீற்றுகளை அடைவாக நினைவுக்குறியிடு..."
 
-#: kbookmarkmenu.cpp:274
+#: kbookmarkmenu.cpp:259
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "திறுந்துள்ள அனைத்து கீற்றுகளுக்கான நினைவுக்குறிகளை ஓர் அடைவாக சேர்க்கும்"
 
-#: kbookmarkmenu.cpp:313
+#: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "உங்கள் நினைவுக்குறிகளைத் திருத்தவிடும் தனிப்பட்ட சாளரத்தைத் திறக்கும்"
 
-#: kbookmarkmenu.cpp:324
+#: kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "புதிய நினைவுக்குறி அடைவு..."
 
-#: kbookmarkmenu.cpp:326
+#: kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "இப்பட்டியைக் கொண்டு புதிய நினைவுக்குறி அடைவை உருவாக்கலாம்"
