@@ -271,7 +271,7 @@ void KBookmarkMenu::addAddBookmark()
     }
 
     if (!d->addBookmarkAction) {
-        d->addBookmarkAction = KStandardAction::addBookmark(this, SLOT(slotAddBookmark()), this);
+        d->addBookmarkAction = KStandardAction::addBookmark(this, &KBookmarkMenu::slotAddBookmark, this);
         if (m_bIsRoot) {
             d->addBookmarkAction->setObjectName(QStringLiteral("add_bookmark"));
         }
@@ -291,7 +291,7 @@ void KBookmarkMenu::addEditBookmarks()
         return;
     }
 
-    d->editBookmarksAction = KStandardAction::editBookmarks(m_pManager, SLOT(slotEditBookmarks()), this);
+    d->editBookmarksAction = KStandardAction::editBookmarks(m_pManager, &KBookmarkManager::slotEditBookmarks, this);
     d->editBookmarksAction->setObjectName(QStringLiteral("edit_bookmarks"));
 
     m_parentMenu->addAction(d->editBookmarksAction);
