@@ -31,12 +31,6 @@ target_sources(KF6Bookmarks PRIVATE
     kbookmarkowner.cpp
     kbookmarkowner.h
 )
-if (TARGET Qt6::DBus)
-    target_sources(KF6Bookmarks PRIVATE
-        kbookmarkmanageradaptor.cpp
-        kbookmarkmanageradaptor_p.h
-    )
-endif()
 
 ecm_qt_declare_logging_category(KF6Bookmarks
     HEADER kbookmarks_debug.h
@@ -65,12 +59,6 @@ target_link_libraries(KF6Bookmarks PRIVATE
     KF6::ConfigCore # for KConfigGroup
     KF6::ConfigWidgets # for KStandardAction
 )
-
-if (TARGET Qt6::DBus)
-  target_link_libraries(KF6Bookmarks PRIVATE Qt6::DBus) # dbus usage in kbookmarkmanager.cpp
-else()
-  target_compile_definitions(KF6Bookmarks PUBLIC -DKBOOKMARKS_NO_DBUS)
-endif()
 
 ecm_generate_headers(KBookmarks_HEADERS
   HEADER_NAMES

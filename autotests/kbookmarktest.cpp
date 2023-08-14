@@ -118,7 +118,7 @@ void KBookmarkTest::testMimeDataBookmarkList()
 
 void KBookmarkTest::testFileCreatedExternally()
 {
-    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile());
+    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForFile(placesFile());
     QVERIFY(sharedBookmarkManager->root().first().isNull());
 
     QFile file(placesFile());
@@ -136,17 +136,17 @@ void KBookmarkTest::testBookmarkManager()
 {
     // like kfileplacesmodel.cpp used to do
     const QString placesModelFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfileplaces/bookmarks.xml";
-    KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(placesModelFile, QStringLiteral("kfilePlaces"));
+    KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(placesModelFile);
 
     // like kfileplacessharedbookmarks.cpp does
-    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForExternalFile(placesFile());
+    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForFile(placesFile());
 
     // like kfilebookmarkhandler.cpp does
     QString file = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kfile/bookmarks.xml"));
     if (file.isEmpty()) {
         file = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfile/bookmarks.xml";
     }
-    KBookmarkManager *manager = KBookmarkManager::managerForFile(file, QStringLiteral("kfile"));
+    KBookmarkManager *manager = KBookmarkManager::managerForFile(file);
 
     // This is just to check an old crash in the global-static destructor, not doing anything with
     // these managers yet.

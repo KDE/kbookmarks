@@ -19,7 +19,6 @@ class KBookmarkManagerPrivate;
 #include "kbookmark.h"
 
 class KBookmarkGroup;
-class QDBusMessage;
 
 /**
  * @class KBookmarkManager kbookmarkmanager.h KBookmarkManager
@@ -49,25 +48,6 @@ class KBOOKMARKS_EXPORT KBookmarkManager : public QObject
 {
     Q_OBJECT
 private:
-    /**
-     * Creates a bookmark manager with a path to the bookmarks.  By
-     * default, it will use the KDE standard dirs to find and create the
-     * correct location.  If you are using your own app-specific
-     * bookmarks directory, you must instantiate this class with your
-     * own path <em>before</em> KBookmarkManager::managerForFile() is ever
-     * called.
-     *
-     * @param bookmarksFile full path to the bookmarks file,
-     * Use ~/.kde/share/apps/konqueror/bookmarks.xml for the konqueror bookmarks
-     *
-     * @param dbusObjectName a unique name that represents this bookmark collection,
-     * usually your component (e.g. application) name. This is "konqueror" for the
-     * konqueror bookmarks, "kfile" for KFileDialog bookmarks, etc.
-     * The final D-Bus object path is /KBookmarkManager/dbusObjectName
-     * An empty @p dbusObjectName disables the registration to D-Bus (used for temporary managers)
-     */
-    KBOOKMARKS_NO_EXPORT KBookmarkManager(const QString &bookmarksFile, const QString &dbusObjectName);
-
     /**
      * Creates a bookmark manager for an external file
      * (Using QFileSystemWatcher for change monitoring)
@@ -219,25 +199,13 @@ public:
      * behaviors, you <em>must</em> derive your own class and
      * instantiate it before this method is ever called.
      *
+     * The manager watches the file for change detection.
+     *
      * @param bookmarksFile full path to the bookmarks file,
      * Use ~/.kde/share/apps/konqueror/bookmarks.xml for the konqueror bookmarks
      *
-     * @param dbusObjectName a unique name that represents this bookmark collection,
-     * usually your component (e.g. application) name. This is "konqueror" for the
-     * konqueror bookmarks, "kfile" for KFileDialog bookmarks, etc.
-     * The final D-Bus object path is /KBookmarkManager/dbusObjectName
-     * An empty @p dbusObjectName disables the registration to D-Bus (used for temporary managers)
-     *
      */
-    static KBookmarkManager *managerForFile(const QString &bookmarksFile, const QString &dbusObjectName);
-
-    /**
-     * Returns a KBookmarkManager, which will use QFileSystemWatcher for change detection
-     * This is important when sharing bookmarks with other Desktops.
-     * @param bookmarksFile full path to the bookmarks file
-     * @since 4.1
-     */
-    static KBookmarkManager *managerForExternalFile(const QString &bookmarksFile);
+    static KBookmarkManager *managerForFile(const QString &bookmarksFile);
 
     /**
      * Returns a pointer to the user's main (konqueror) bookmark collection.
@@ -260,20 +228,6 @@ public Q_SLOTS:
      *
      */
     void notifyCompleteChange(const QString &caller);
-
-#ifndef KBOOKMARKS_NO_DBUS
-    /**
-     * Emit the changed signal for the group whose address is given
-     * @see KBookmark::address()
-     * Called by the process that saved the file after
-     * a small change (new bookmark or new folder).
-     * Does not send signal over D-Bus to the other Bookmark Managers
-     * You probably want to call emitChanged()
-     */
-    void notifyChanged(const QString &groupAddress, const QDBusMessage &msg);
-#endif
-
-    void notifyConfigChanged();
 
 Q_SIGNALS:
     /**
@@ -317,7 +271,6 @@ private Q_SLOTS:
 private:
     // consts added to avoid a copy-and-paste of internalDocument
     KBOOKMARKS_NO_EXPORT void parse() const;
-    KBOOKMARKS_NO_EXPORT void init(const QString &dbusPath);
 
     KBOOKMARKS_NO_EXPORT void startKEditBookmarks(const QStringList &args);
 

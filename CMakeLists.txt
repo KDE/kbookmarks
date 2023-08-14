@@ -42,9 +42,6 @@ ecm_setup_version(PROJECT
 set(REQUIRED_QT_VERSION 6.4.0)
 
 find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets Xml)
-if (NOT ANDROID)
-  find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED DBus)
-endif()
 
 find_package(KF6Config ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6CoreAddons ${KF_DEP_VERSION} REQUIRED)

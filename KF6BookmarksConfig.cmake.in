@@ -7,10 +7,6 @@ find_dependency(Qt6Widgets @REQUIRED_QT_VERSION@)
 find_dependency(Qt6Xml @REQUIRED_QT_VERSION@)
 
 if (NOT @BUILD_SHARED_LIBS@)
-    if (@Qt6DBus_FOUND@)
-        find_dependency(Qt6DBus @REQUIRED_QT_VERSION@)
-    endif()
-
     find_dependency(KF6CoreAddons "@KF_DEP_VERSION@")
     find_dependency(KF6Codecs "@KF_DEP_VERSION@")
     find_dependency(KF6Config "@KF_DEP_VERSION@")
