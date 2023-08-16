@@ -175,7 +175,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Järjehoidjad"
 
-#: kbookmarkmanager.cpp:334
+#: kbookmarkmanager.cpp:244
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -186,7 +186,7 @@ msgstr ""
 "\n"
 "Tõenäoliselt ei ole keditbookmarks veel paigaldatud"
 
-#: kbookmarkmanager.cpp:483
+#: kbookmarkmanager.cpp:386
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""

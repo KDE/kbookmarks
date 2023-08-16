@@ -178,7 +178,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Záložky"
 
-#: kbookmarkmanager.cpp:334
+#: kbookmarkmanager.cpp:244
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -189,7 +189,7 @@ msgstr ""
 "\n"
 "S najväčšou pravdepodobnosťou, nemáte keditbookmarks nainštalované"
 
-#: kbookmarkmanager.cpp:483
+#: kbookmarkmanager.cpp:386
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""

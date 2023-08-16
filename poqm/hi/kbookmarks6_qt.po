@@ -171,7 +171,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "पुस्तचिन्ह"
 
-#: kbookmarkmanager.cpp:334
+#: kbookmarkmanager.cpp:244
 msgctxt "KBookmarkManager|"
 msgid ""
 "Cannot launch keditbookmarks.\n"
@@ -182,7 +182,7 @@ msgstr ""
 "\n"
 "सबसे अधिक संभावना है कि आपके पास अभी में केडिटबुकमार्क स्थापित नहीं हैं।"
 
-#: kbookmarkmanager.cpp:483
+#: kbookmarkmanager.cpp:386
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
