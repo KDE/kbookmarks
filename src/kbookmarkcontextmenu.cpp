@@ -10,6 +10,7 @@
 #include "kbookmarkdialog.h"
 #include "kbookmarkmanager.h"
 #include "kbookmarkowner.h"
+#include "keditbookmarks_p.h"
 
 #include <QApplication>
 #include <QClipboard>
@@ -84,7 +85,13 @@ void KBookmarkContextMenu::addOpenFolderInTabs()
 void KBookmarkContextMenu::slotEditAt()
 {
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkMenu::slotEditAt" << m_highlightedAddress;
-    m_pManager->slotEditBookmarksAtAddress(bm.address());
+    KEditBookmarks editBookmarks;
+    editBookmarks.setBrowserMode(m_browserMode);
+    auto result = editBookmarks.openForFileAtAddress(m_pManager->path(), bm.address());
+
+    if (!result.sucess()) {
+        QMessageBox::critical(QApplication::activeWindow(), QApplication::applicationDisplayName(), result.errorMessage());
+    }
 }
 
 void KBookmarkContextMenu::slotProperties()
@@ -176,6 +183,16 @@ KBookmarkOwner *KBookmarkContextMenu::owner() const
 KBookmark KBookmarkContextMenu::bookmark() const
 {
     return bm;
+}
+
+void KBookmarkContextMenu::setBrowserMode(bool browserMode)
+{
+    m_browserMode = browserMode;
+}
+
+bool KBookmarkContextMenu::browserMode() const
+{
+    return m_browserMode;
 }
 
 #include "moc_kbookmarkcontextmenu.cpp"

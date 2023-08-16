@@ -30,6 +30,8 @@ target_sources(KF6Bookmarks PRIVATE
     kbookmarkmenu_p.h
     kbookmarkowner.cpp
     kbookmarkowner.h
+    keditbookmarks_p.h
+    keditbookmarks.cpp
 )
 
 ecm_qt_declare_logging_category(KF6Bookmarks

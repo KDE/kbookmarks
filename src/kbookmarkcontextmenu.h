@@ -30,6 +30,22 @@ public:
     ~KBookmarkContextMenu() override;
     virtual void addActions();
 
+    /**
+     * Set this to true to make any "Edit Bookmarks" dialog
+     * show UI elements that are specific to browsers.
+     *
+     * @since 6.0
+     */
+    void setBrowserMode(bool browserMode);
+
+    /**
+     * Whether any "Edit Bookmarks" dialog shows UI elements
+     * that are specific to browsers.
+     *
+     * @since 6.0
+     */
+    bool browserMode() const;
+
 public Q_SLOTS:
     void slotEditAt();
     void slotProperties();
@@ -53,9 +69,11 @@ private Q_SLOTS:
     KBOOKMARKS_NO_EXPORT void slotAboutToShow();
 
 private:
+    // TODO KF6 dptr it
     const KBookmark bm;
     KBookmarkManager *const m_pManager;
     KBookmarkOwner *const m_pOwner;
+    bool m_browserMode = false;
 };
 
 #endif

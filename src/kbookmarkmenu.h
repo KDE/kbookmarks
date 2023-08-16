@@ -132,6 +132,22 @@ public:
      */
     QAction *editBookmarksAction() const;
 
+    /**
+     * Set this to true to make any "Edit Bookmarks" dialog
+     * show UI elements that are specific to browsers.
+     *
+     * @since 6.0
+     */
+    void setBrowserMode(bool browserMode);
+
+    /**
+     * Whether any "Edit Bookmarks" dialog shows UI elements
+     * that are specific to browsers.
+     *
+     * @since 6.0
+     */
+    bool browserMode() const;
+
 public Q_SLOTS:
     // public for KonqBookmarkBar
     void slotBookmarksChanged(const QString &);
@@ -188,6 +204,7 @@ private Q_SLOTS:
 
 private:
     KBOOKMARKS_NO_EXPORT void init();
+    void slotEditBookmarks();
 
 private:
     std::unique_ptr<KBookmarkMenuPrivate> const d;

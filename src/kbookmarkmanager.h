@@ -179,18 +179,6 @@ public:
     void emitConfigChanged();
 
     /**
-     * Set options with which slotEditBookmarks called keditbookmarks
-     * this can be used to change the appearance of the keditbookmarks
-     * in order to provide a slightly differing outer shell depending
-     * on the bookmarks file / app which calls it.
-     * @param caption the --caption string, for instance "Konsole"
-     * @param browser iff false display no browser specific
-     *            menu items in keditbookmarks :: --nobrowser
-     */
-    // KF6 TODO: Use an enum and not a bool
-    void setEditorOptions(const QString &caption, bool browser);
-
-    /**
      * This static function will return an instance of the
      * KBookmarkManager, responsible for the given @p bookmarksFile.
      * If you do not instantiate this class either
@@ -213,9 +201,6 @@ public:
     QDomDocument internalDocument() const;
 
 public Q_SLOTS:
-    void slotEditBookmarks();
-    void slotEditBookmarksAtAddress(const QString &address);
-
     /**
      * Reparse the whole bookmarks file and notify about the change
      * Doesn't send signal over D-Bus to the other Bookmark Managers

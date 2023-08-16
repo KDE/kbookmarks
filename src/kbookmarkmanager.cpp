@@ -132,7 +132,6 @@ public:
         , m_update(false)
         , m_dialogAllowed(true)
         , m_dialogParent(nullptr)
-        , m_browserEditor(false)
         , m_dirWatch(nullptr)
     {
     }
@@ -144,9 +143,6 @@ public:
     bool m_update;
     bool m_dialogAllowed;
     QWidget *m_dialogParent;
-
-    bool m_browserEditor;
-    QString m_editorCaption;
 
     KDirWatch *m_dirWatch; // for monitoring changes on bookmark files
 
@@ -229,28 +225,6 @@ KBookmarkManager::KBookmarkManager()
     d->m_update = false; // TODO - make it read/write
 
     createXbelTopLevelElement(d->m_doc);
-}
-
-void KBookmarkManager::startKEditBookmarks(const QStringList &args)
-{
-    bool success = false;
-    const QString exec = QStandardPaths::findExecutable(QStringLiteral(KEDITBOOKMARKS_BINARY));
-    if (!exec.isEmpty()) {
-        success = QProcess::startDetached(exec, args);
-    }
-
-    if (!success) {
-        QString err =
-            tr("Cannot launch keditbookmarks.\n\n"
-               "Most likely you do not have keditbookmarks currently installed");
-
-        if (d->m_dialogAllowed && qobject_cast<QApplication *>(qApp) && QThread::currentThread() == qApp->thread()) {
-            QMessageBox::warning(QApplication::activeWindow(), QApplication::applicationName(), err);
-        }
-
-        qCWarning(KBOOKMARKS_LOG) << QStringLiteral("Failed to start keditbookmarks");
-        Q_EMIT this->error(err);
-    }
 }
 
 void KBookmarkManager::slotFileChanged(const QString &path)
@@ -517,38 +491,6 @@ void KBookmarkManager::notifyCompleteChange(const QString &caller) // DBUS call
     // Tell our GUI
     // (emit where group is "" to directly mark the root menu as dirty)
     Q_EMIT changed(QLatin1String(""), caller);
-}
-
-void KBookmarkManager::setEditorOptions(const QString &caption, bool browser)
-{
-    d->m_editorCaption = caption;
-    d->m_browserEditor = browser;
-}
-
-void KBookmarkManager::slotEditBookmarks()
-{
-    QStringList args;
-    if (!d->m_editorCaption.isEmpty()) {
-        args << QStringLiteral("--customcaption") << d->m_editorCaption;
-    }
-    if (!d->m_browserEditor) {
-        args << QStringLiteral("--nobrowser");
-    }
-    args << d->m_bookmarksFile;
-    startKEditBookmarks(args);
-}
-
-void KBookmarkManager::slotEditBookmarksAtAddress(const QString &address)
-{
-    QStringList args;
-    if (!d->m_editorCaption.isEmpty()) {
-        args << QStringLiteral("--customcaption") << d->m_editorCaption;
-    }
-    if (!d->m_browserEditor) {
-        args << QStringLiteral("--nobrowser");
-    }
-    args << QStringLiteral("--address") << address << d->m_bookmarksFile;
-    startKEditBookmarks(args);
 }
 
 ///////

@@ -16,12 +16,14 @@
 #include "kbookmarkmanager.h"
 #include "kbookmarkowner.h"
 #include "kbookmarks_debug.h"
+#include "keditbookmarks_p.h"
 
 #include <KAuthorized>
 #include <KStandardAction>
 
 #include <QApplication>
 #include <QMenu>
+#include <QMessageBox>
 #include <QStandardPaths>
 
 /********************************************************************/
@@ -34,6 +36,7 @@ public:
     QAction *addBookmarkAction = nullptr;
     QAction *bookmarksToFolderAction = nullptr;
     QAction *editBookmarksAction = nullptr;
+    bool browserMode = false;
 };
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager *manager, KBookmarkOwner *_owner, QMenu *_parentMenu)
@@ -291,12 +294,23 @@ void KBookmarkMenu::addEditBookmarks()
         return;
     }
 
-    d->editBookmarksAction = KStandardAction::editBookmarks(m_pManager, &KBookmarkManager::slotEditBookmarks, this);
+    d->editBookmarksAction = KStandardAction::editBookmarks(this, &KBookmarkMenu::slotEditBookmarks, this);
     d->editBookmarksAction->setObjectName(QStringLiteral("edit_bookmarks"));
 
     m_parentMenu->addAction(d->editBookmarksAction);
     d->editBookmarksAction->setToolTip(tr("Edit your bookmark collection in a separate window", "@info:tooltip"));
     d->editBookmarksAction->setStatusTip(d->editBookmarksAction->toolTip());
+}
+
+void KBookmarkMenu::slotEditBookmarks()
+{
+    KEditBookmarks editBookmarks;
+    editBookmarks.setBrowserMode(d->browserMode);
+    auto result = editBookmarks.openForFile(m_pManager->path());
+
+    if (!result.sucess()) {
+        QMessageBox::critical(QApplication::activeWindow(), QApplication::applicationDisplayName(), result.errorMessage());
+    }
 }
 
 void KBookmarkMenu::addNewFolder()
@@ -425,6 +439,16 @@ QAction *KBookmarkMenu::newBookmarkFolderAction() const
 QAction *KBookmarkMenu::editBookmarksAction() const
 {
     return d->editBookmarksAction;
+}
+
+void KBookmarkMenu::setBrowserMode(bool browserMode)
+{
+    d->browserMode = browserMode;
+}
+
+bool KBookmarkMenu::browserMode() const
+{
+    return d->browserMode;
 }
 
 #include "moc_kbookmarkmenu.cpp"
