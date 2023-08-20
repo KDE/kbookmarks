@@ -509,17 +509,6 @@ bool KBookmarkManager::updateAccessMetadata(const QString &url)
     return true;
 }
 
-void KBookmarkManager::updateFavicon(const QString &url, const QString & /*faviconurl*/)
-{
-    d->m_map.update(this);
-    QList<KBookmark> list = d->m_map.find(url);
-    for (QList<KBookmark>::iterator it = list.begin(); it != list.end(); ++it) {
-        // TODO - update favicon data based on faviconurl
-        //        but only when the previously used icon
-        //        isn't a manually set one.
-    }
-}
-
 KBookmarkSettings *KBookmarkSettings::s_self = nullptr;
 
 void KBookmarkSettings::readSettings()

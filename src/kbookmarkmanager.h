@@ -112,15 +112,6 @@ public:
      */
     bool updateAccessMetadata(const QString &url);
 
-    /*
-     * NB. currently *unimplemented*
-     *
-     * Update favicon url for a given url.
-     * @param url the viewed url
-     * @param faviconurl the favicion url
-     */
-    void updateFavicon(const QString &url, const QString &faviconurl);
-
     /**
      * This will return the path that this manager is using to read
      * the bookmarks.
