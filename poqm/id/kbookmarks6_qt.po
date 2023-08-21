@@ -18,7 +18,7 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- pemisah ---"
 
-#: kbookmarkcontextmenu.cpp:52
+#: kbookmarkcontextmenu.cpp:53
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Add Bookmark Here"
@@ -26,7 +26,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "Tambahkan Markah Sini"
 
-#: kbookmarkcontextmenu.cpp:58
+#: kbookmarkcontextmenu.cpp:59
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Bookmark Editor"
@@ -34,7 +34,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "Buka Folder dalam Pengedit Markah"
 
-#: kbookmarkcontextmenu.cpp:61
+#: kbookmarkcontextmenu.cpp:62
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Folder"
@@ -42,7 +42,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "Hapus Folder"
 
-#: kbookmarkcontextmenu.cpp:66
+#: kbookmarkcontextmenu.cpp:67
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Properties"
@@ -50,7 +50,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Properti"
 
-#: kbookmarkcontextmenu.cpp:71
+#: kbookmarkcontextmenu.cpp:72
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Copy Link Address"
@@ -58,7 +58,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "Salin Alamat Tautan"
 
-#: kbookmarkcontextmenu.cpp:74
+#: kbookmarkcontextmenu.cpp:75
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Bookmark"
@@ -66,7 +66,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Hapus Markah"
 
-#: kbookmarkcontextmenu.cpp:80
+#: kbookmarkcontextmenu.cpp:81
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -74,7 +74,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Buka Folder dalam Tab-tab"
 
-#: kbookmarkcontextmenu.cpp:105
+#: kbookmarkcontextmenu.cpp:112
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Cannot add bookmark with empty URL."
@@ -82,7 +82,7 @@ msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "Tak dapat menambahkan markah dengan URL kosong."
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Folder Deletion"
@@ -90,7 +90,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "Penghapusan Folder Markah"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Deletion"
@@ -98,7 +98,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "Penghapusan Markah"
 
-#: kbookmarkcontextmenu.cpp:135
+#: kbookmarkcontextmenu.cpp:142
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -108,7 +108,7 @@ msgstr ""
 "Apakah kamu yakin hendak menghapus folder markah\n"
 "\"%1\"?"
 
-#: kbookmarkcontextmenu.cpp:136
+#: kbookmarkcontextmenu.cpp:143
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -194,18 +194,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Markah"
 
-#: kbookmarkmanager.cpp:244
-msgctxt "KBookmarkManager|"
-msgid ""
-"Cannot launch keditbookmarks.\n"
-"\n"
-"Most likely you do not have keditbookmarks currently installed"
-msgstr ""
-"Tak dapat meluncurkan keditbookmarks.\n"
-"\n"
-"Kemungkinan besar saat ini kamu belum memiliki keditbookmarks yang terinstal"
-
-#: kbookmarkmanager.cpp:386
+#: kbookmarkmanager.cpp:360
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -217,7 +206,7 @@ msgstr ""
 "error ini hanya akan ditampilkan satu kali. Penyebab error perlu diperbaiki "
 "sesegera mungkin, yang kemungkinan besar merupakan hard drive penuh."
 
-#: kbookmarkmenu.cpp:231
+#: kbookmarkmenu.cpp:234
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -225,7 +214,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Buka Folder dalam Tab-tab"
 
-#: kbookmarkmenu.cpp:235
+#: kbookmarkmenu.cpp:238
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Open all bookmarks in this folder as a new tab."
@@ -233,7 +222,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Buka semua markah dalam folder ini sebagai tab baru."
 
-#: kbookmarkmenu.cpp:251
+#: kbookmarkmenu.cpp:254
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -241,7 +230,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Markahi Tab sebagai Folder..."
 
-#: kbookmarkmenu.cpp:259
+#: kbookmarkmenu.cpp:262
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Add a folder of bookmarks for all open tabs."
@@ -249,7 +238,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Tambahkan sebuah folder markah untuk semua tab yang terbuka"
 
-#: kbookmarkmenu.cpp:298
+#: kbookmarkmenu.cpp:301
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Edit your bookmark collection in a separate window"
@@ -257,7 +246,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Edit koleksi markahmu dalam window terpisah"
 
-#: kbookmarkmenu.cpp:309
+#: kbookmarkmenu.cpp:323
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -265,13 +254,34 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Folder Markah Baru."
 
-#: kbookmarkmenu.cpp:311
+#: kbookmarkmenu.cpp:325
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Ciptakan sebuah folder markah baru di menu ini"
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
+
+#~ msgctxt "KBookmarkManager|"
+#~ msgid ""
+#~ "Cannot launch keditbookmarks.\n"
+#~ "\n"
+#~ "Most likely you do not have keditbookmarks currently installed"
+#~ msgstr ""
+#~ "Tak dapat meluncurkan keditbookmarks.\n"
+#~ "\n"
+#~ "Kemungkinan besar saat ini kamu belum memiliki keditbookmarks yang "
+#~ "terinstal"
 
 #~ msgctxt "KNSBookmarkImporterImpl|"
 #~ msgid "HTML Files (*.html)"

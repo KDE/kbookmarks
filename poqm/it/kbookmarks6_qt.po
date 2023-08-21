@@ -29,57 +29,57 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- separatore ---"
 
-#: kbookmarkcontextmenu.cpp:52
+#: kbookmarkcontextmenu.cpp:53
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "Aggiungi segnalibro qui"
 
-#: kbookmarkcontextmenu.cpp:58
+#: kbookmarkcontextmenu.cpp:59
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "Apri cartella nell'editor dei segnalibri"
 
-#: kbookmarkcontextmenu.cpp:61
+#: kbookmarkcontextmenu.cpp:62
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "Elimina cartella"
 
-#: kbookmarkcontextmenu.cpp:66
+#: kbookmarkcontextmenu.cpp:67
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Proprietà"
 
-#: kbookmarkcontextmenu.cpp:71
+#: kbookmarkcontextmenu.cpp:72
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "Copia indirizzo del collegamento"
 
-#: kbookmarkcontextmenu.cpp:74
+#: kbookmarkcontextmenu.cpp:75
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Elimina segnalibro"
 
-#: kbookmarkcontextmenu.cpp:80
+#: kbookmarkcontextmenu.cpp:81
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Apri cartella in schede"
 
-#: kbookmarkcontextmenu.cpp:105
+#: kbookmarkcontextmenu.cpp:112
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "Impossibile aggiungere un segnalibro con un URL vuoto."
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "Eliminazione cartella dei segnalibri"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "Eliminazione segnalibro"
 
-#: kbookmarkcontextmenu.cpp:135
+#: kbookmarkcontextmenu.cpp:142
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -89,7 +89,7 @@ msgstr ""
 "Sei sicuro di voler eliminare la cartella di segnalibri\n"
 "«%1»?"
 
-#: kbookmarkcontextmenu.cpp:136
+#: kbookmarkcontextmenu.cpp:143
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -175,18 +175,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Segnalibri"
 
-#: kbookmarkmanager.cpp:244
-msgctxt "KBookmarkManager|"
-msgid ""
-"Cannot launch keditbookmarks.\n"
-"\n"
-"Most likely you do not have keditbookmarks currently installed"
-msgstr ""
-"Impossibile avviare keditbookmarks.\n"
-"\n"
-"Molto probabilmente keditbookmarks non è attualmente installato"
-
-#: kbookmarkmanager.cpp:386
+#: kbookmarkmanager.cpp:360
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -198,40 +187,60 @@ msgstr ""
 "messaggio di errore sarà mostrato soltanto una volta. La causa dell'errore "
 "deve essere risolta al più presto; quasi sicuramente il disco rigido è pieno."
 
-#: kbookmarkmenu.cpp:231
+#: kbookmarkmenu.cpp:234
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Apri cartella in schede"
 
-#: kbookmarkmenu.cpp:235
+#: kbookmarkmenu.cpp:238
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Apri tutti i segnalibri di questa cartella in una nuova scheda."
 
-#: kbookmarkmenu.cpp:251
+#: kbookmarkmenu.cpp:254
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Crea cartella di segnalibri per le schede..."
 
-#: kbookmarkmenu.cpp:259
+#: kbookmarkmenu.cpp:262
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Aggiungi una cartella di segnalibri per tutte le schede aperte"
 
-#: kbookmarkmenu.cpp:298
+#: kbookmarkmenu.cpp:301
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Modifica la raccolta di segnalibri in una finestra separata"
 
-#: kbookmarkmenu.cpp:309
+#: kbookmarkmenu.cpp:323
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Nuova cartella di segnalibri..."
 
-#: kbookmarkmenu.cpp:311
+#: kbookmarkmenu.cpp:325
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Crea una nuova cartella di segnalibri in questo menu"
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
+
+#~ msgctxt "KBookmarkManager|"
+#~ msgid ""
+#~ "Cannot launch keditbookmarks.\n"
+#~ "\n"
+#~ "Most likely you do not have keditbookmarks currently installed"
+#~ msgstr ""
+#~ "Impossibile avviare keditbookmarks.\n"
+#~ "\n"
+#~ "Molto probabilmente keditbookmarks non è attualmente installato"
 
 #~ msgctxt "KNSBookmarkImporterImpl|"
 #~ msgid "HTML Files (*.html)"

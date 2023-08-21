@@ -41,57 +41,57 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- разделитель ---"
 
-#: kbookmarkcontextmenu.cpp:52
+#: kbookmarkcontextmenu.cpp:53
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "Добавить закладку"
 
-#: kbookmarkcontextmenu.cpp:58
+#: kbookmarkcontextmenu.cpp:59
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "Открыть папку в редакторе закладок"
 
-#: kbookmarkcontextmenu.cpp:61
+#: kbookmarkcontextmenu.cpp:62
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "Удалить папку"
 
-#: kbookmarkcontextmenu.cpp:66
+#: kbookmarkcontextmenu.cpp:67
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Свойства"
 
-#: kbookmarkcontextmenu.cpp:71
+#: kbookmarkcontextmenu.cpp:72
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "Скопировать адрес ссылки"
 
-#: kbookmarkcontextmenu.cpp:74
+#: kbookmarkcontextmenu.cpp:75
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Удалить закладку"
 
-#: kbookmarkcontextmenu.cpp:80
+#: kbookmarkcontextmenu.cpp:81
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Открыть все закладки в папке во вкладках"
 
-#: kbookmarkcontextmenu.cpp:105
+#: kbookmarkcontextmenu.cpp:112
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "Невозможно добавить закладку с пустым URL."
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "Удаление папки закладок"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "Удаление закладки"
 
-#: kbookmarkcontextmenu.cpp:135
+#: kbookmarkcontextmenu.cpp:142
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -101,7 +101,7 @@ msgstr ""
 "Удалить папку закладок\n"
 "«%1»?"
 
-#: kbookmarkcontextmenu.cpp:136
+#: kbookmarkcontextmenu.cpp:143
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -187,18 +187,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Закладки"
 
-#: kbookmarkmanager.cpp:244
-msgctxt "KBookmarkManager|"
-msgid ""
-"Cannot launch keditbookmarks.\n"
-"\n"
-"Most likely you do not have keditbookmarks currently installed"
-msgstr ""
-"Не удалось запустить редактор закладок (keditbookmarks).\n"
-"\n"
-"Скорее всего, программа keditbookmarks не установлена."
-
-#: kbookmarkmanager.cpp:386
+#: kbookmarkmanager.cpp:360
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -210,41 +199,61 @@ msgstr ""
 "об ошибке будет показано только один раз. Причина ошибки должна быть "
 "исправлена как можно быстрее, скорее всего переполнен жёсткий диск."
 
-#: kbookmarkmenu.cpp:231
+#: kbookmarkmenu.cpp:234
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Открыть все закладки в папке во вкладках"
 
 # BUGME: "as a new tab" -> "as new tabs"? --aspotashev
-#: kbookmarkmenu.cpp:235
+#: kbookmarkmenu.cpp:238
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Открыть закладки из этой папки в новых вкладках."
 
-#: kbookmarkmenu.cpp:251
+#: kbookmarkmenu.cpp:254
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Создать папку для всех открытых вкладок..."
 
-#: kbookmarkmenu.cpp:259
+#: kbookmarkmenu.cpp:262
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Создать папку с закладками для всех открытых вкладок."
 
-#: kbookmarkmenu.cpp:298
+#: kbookmarkmenu.cpp:301
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Редактировать коллекцию закладок в отдельном окне"
 
-#: kbookmarkmenu.cpp:309
+#: kbookmarkmenu.cpp:323
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Создать папку закладок..."
 
-#: kbookmarkmenu.cpp:311
+#: kbookmarkmenu.cpp:325
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Создать новую папку закладок в этом меню"
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
+
+#~ msgctxt "KBookmarkManager|"
+#~ msgid ""
+#~ "Cannot launch keditbookmarks.\n"
+#~ "\n"
+#~ "Most likely you do not have keditbookmarks currently installed"
+#~ msgstr ""
+#~ "Не удалось запустить редактор закладок (keditbookmarks).\n"
+#~ "\n"
+#~ "Скорее всего, программа keditbookmarks не установлена."
 
 #~ msgctxt "KNSBookmarkImporterImpl|"
 #~ msgid "HTML Files (*.html)"

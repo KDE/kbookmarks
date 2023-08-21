@@ -31,7 +31,7 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- セパレータ ---"
 
-#: kbookmarkcontextmenu.cpp:52
+#: kbookmarkcontextmenu.cpp:53
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Add Bookmark Here"
@@ -39,7 +39,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "ここにブックマークを追加"
 
-#: kbookmarkcontextmenu.cpp:58
+#: kbookmarkcontextmenu.cpp:59
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Bookmark Editor"
@@ -47,7 +47,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "ブックマークエディタでフォルダを開く"
 
-#: kbookmarkcontextmenu.cpp:61
+#: kbookmarkcontextmenu.cpp:62
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Folder"
@@ -55,7 +55,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "フォルダを削除"
 
-#: kbookmarkcontextmenu.cpp:66
+#: kbookmarkcontextmenu.cpp:67
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Properties"
@@ -63,7 +63,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "プロパティ"
 
-#: kbookmarkcontextmenu.cpp:71
+#: kbookmarkcontextmenu.cpp:72
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Copy Link Address"
@@ -71,7 +71,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "リンクアドレスをコピー"
 
-#: kbookmarkcontextmenu.cpp:74
+#: kbookmarkcontextmenu.cpp:75
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Bookmark"
@@ -79,7 +79,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "ブックマークを削除"
 
-#: kbookmarkcontextmenu.cpp:80
+#: kbookmarkcontextmenu.cpp:81
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -87,7 +87,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "フォルダを複数のタブで開く"
 
-#: kbookmarkcontextmenu.cpp:105
+#: kbookmarkcontextmenu.cpp:112
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Cannot add bookmark with empty URL."
@@ -95,7 +95,7 @@ msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "ブックマークには空の URL は追加できません。"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Folder Deletion"
@@ -103,7 +103,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "ブックマークフォルダの削除"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Deletion"
@@ -111,7 +111,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "ブックマークの削除"
 
-#: kbookmarkcontextmenu.cpp:135
+#: kbookmarkcontextmenu.cpp:142
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -119,7 +119,7 @@ msgid ""
 "\"%1\"?"
 msgstr "本当にブックマークフォルダ %1 を削除しますか？"
 
-#: kbookmarkcontextmenu.cpp:136
+#: kbookmarkcontextmenu.cpp:143
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -203,15 +203,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "ブックマーク"
 
-#: kbookmarkmanager.cpp:244
-msgctxt "KBookmarkManager|"
-msgid ""
-"Cannot launch keditbookmarks.\n"
-"\n"
-"Most likely you do not have keditbookmarks currently installed"
-msgstr ""
-
-#: kbookmarkmanager.cpp:386
+#: kbookmarkmanager.cpp:360
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -223,7 +215,7 @@ msgstr ""
 "メッセージの表示は一度のみです。エラーの要因を早急に修正する必要があります。"
 "ハードドライブがいっぱいの可能性があります。"
 
-#: kbookmarkmenu.cpp:231
+#: kbookmarkmenu.cpp:234
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -231,7 +223,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "フォルダを複数のタブで開く"
 
-#: kbookmarkmenu.cpp:235
+#: kbookmarkmenu.cpp:238
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Open all bookmarks in this folder as a new tab."
@@ -240,7 +232,7 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "このフォルダのすべてのブックマークを新しいタブとして開く"
 
 # ACCELERATOR added by translator
-#: kbookmarkmenu.cpp:251
+#: kbookmarkmenu.cpp:254
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -248,7 +240,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "タブをフォルダとしてブックマークに追加(&B)..."
 
-#: kbookmarkmenu.cpp:259
+#: kbookmarkmenu.cpp:262
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Add a folder of bookmarks for all open tabs."
@@ -256,7 +248,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "開いているすべてのタブをフォルダとしてブックマークに追加"
 
-#: kbookmarkmenu.cpp:298
+#: kbookmarkmenu.cpp:301
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Edit your bookmark collection in a separate window"
@@ -265,7 +257,7 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "別のウィンドウでブックマークコレクションを編集"
 
 # ACCELERATOR added by translator
-#: kbookmarkmenu.cpp:309
+#: kbookmarkmenu.cpp:323
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -273,13 +265,23 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "新しいブックマークフォルダ(&N)..."
 
-#: kbookmarkmenu.cpp:311
+#: kbookmarkmenu.cpp:325
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "このメニューに新しいブックマークフォルダを作成"
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
 
 #~ msgctxt "KNSBookmarkImporterImpl|"
 #~ msgid "HTML Files (*.html)"

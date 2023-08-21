@@ -20,7 +20,7 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- sgaradair ---"
 
-#: kbookmarkcontextmenu.cpp:52
+#: kbookmarkcontextmenu.cpp:53
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Add Bookmark Here"
@@ -28,7 +28,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "Cuir comharra-lìn ris an-seo"
 
-#: kbookmarkcontextmenu.cpp:58
+#: kbookmarkcontextmenu.cpp:59
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Bookmark Editor"
@@ -36,7 +36,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "Fosgail am pasgan ann an deasaiche nan comharran-lìn"
 
-#: kbookmarkcontextmenu.cpp:61
+#: kbookmarkcontextmenu.cpp:62
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Folder"
@@ -44,7 +44,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "Sguab às dhan phasgan"
 
-#: kbookmarkcontextmenu.cpp:66
+#: kbookmarkcontextmenu.cpp:67
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Properties"
@@ -52,7 +52,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Roghainnean"
 
-#: kbookmarkcontextmenu.cpp:71
+#: kbookmarkcontextmenu.cpp:72
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Copy Link Address"
@@ -60,7 +60,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "Dèan lethbhreac de sheòladh a' cheangail"
 
-#: kbookmarkcontextmenu.cpp:74
+#: kbookmarkcontextmenu.cpp:75
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Bookmark"
@@ -68,7 +68,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Sguab às dhan chomharra-lìn"
 
-#: kbookmarkcontextmenu.cpp:80
+#: kbookmarkcontextmenu.cpp:81
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -76,7 +76,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Fosgail am pasgan ann an tabaichean"
 
-#: kbookmarkcontextmenu.cpp:105
+#: kbookmarkcontextmenu.cpp:112
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Cannot add bookmark with empty URL."
@@ -84,7 +84,7 @@ msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "Chan urrainn dhut comharra-lìn le URL falamh a chur ris."
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Folder Deletion"
@@ -92,7 +92,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "A' sguabadh às pasgan chomharran-lìn"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Deletion"
@@ -100,7 +100,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "A' sguabadh às comharra-lìn"
 
-#: kbookmarkcontextmenu.cpp:135
+#: kbookmarkcontextmenu.cpp:142
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -110,7 +110,7 @@ msgstr ""
 "A bheil thu cinnteach gu bheil thu airson am pasgan chomharran-lìn\n"
 "\"%1\" a sguabadh às?"
 
-#: kbookmarkcontextmenu.cpp:136
+#: kbookmarkcontextmenu.cpp:143
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -196,15 +196,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Comharran-lìn"
 
-#: kbookmarkmanager.cpp:244
-msgctxt "KBookmarkManager|"
-msgid ""
-"Cannot launch keditbookmarks.\n"
-"\n"
-"Most likely you do not have keditbookmarks currently installed"
-msgstr ""
-
-#: kbookmarkmanager.cpp:386
+#: kbookmarkmanager.cpp:360
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -217,7 +209,7 @@ msgstr ""
 "a-rithist. Feumaidh tu adhbhar na mearachd a chàradh cho luath 's a ghabhas "
 "agus 's e diosga cruaidh làn a th' ann gun teagamh."
 
-#: kbookmarkmenu.cpp:231
+#: kbookmarkmenu.cpp:234
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -225,7 +217,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Fosgail am pasgan ann an tabaichean"
 
-#: kbookmarkmenu.cpp:235
+#: kbookmarkmenu.cpp:238
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Open all bookmarks in this folder as a new tab."
@@ -235,7 +227,7 @@ msgstr ""
 "Fosgail a h-uile comharra-leabhair a tha am broinn a' phasgain seo 'na thaba "
 "ùr."
 
-#: kbookmarkmenu.cpp:251
+#: kbookmarkmenu.cpp:254
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -243,7 +235,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Dèan pasgan chomharran-leabhair dhe na tabaichean..."
 
-#: kbookmarkmenu.cpp:259
+#: kbookmarkmenu.cpp:262
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Add a folder of bookmarks for all open tabs."
@@ -251,7 +243,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Cuir pasgan chomharran-leabhair ris leis a h-uile taba fosgailte ann."
 
-#: kbookmarkmenu.cpp:298
+#: kbookmarkmenu.cpp:301
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Edit your bookmark collection in a separate window"
@@ -260,7 +252,7 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr ""
 "Deasaich cruinneachadh nan comharran-leabhair agad ann an uinneag fa leth"
 
-#: kbookmarkmenu.cpp:309
+#: kbookmarkmenu.cpp:323
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -268,13 +260,23 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Pasgan chomharran-leabhair ùr..."
 
-#: kbookmarkmenu.cpp:311
+#: kbookmarkmenu.cpp:325
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Cruthaich pasgan chomharran-leabhair ùr sa chlàr-taice seo"
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
 
 #~ msgctxt "KNSBookmarkImporterImpl|"
 #~ msgid "HTML Files (*.html)"

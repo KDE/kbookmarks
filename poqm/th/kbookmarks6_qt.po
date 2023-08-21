@@ -29,77 +29,77 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- ตัวแบ่ง ---"
 
-#: kbookmarkcontextmenu.cpp:52
+#: kbookmarkcontextmenu.cpp:53
 #, fuzzy
 #| msgid "Add Bookmark Here"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "เพิ่มคั่นหน้าไว้ที่นี่"
 
-#: kbookmarkcontextmenu.cpp:58
+#: kbookmarkcontextmenu.cpp:59
 #, fuzzy
 #| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "เปิดโฟลเดอร์ในตัวแก้ไขที่คั่นหน้า"
 
-#: kbookmarkcontextmenu.cpp:61
+#: kbookmarkcontextmenu.cpp:62
 #, fuzzy
 #| msgid "Delete Folder"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "ลบโฟลเดอร์"
 
-#: kbookmarkcontextmenu.cpp:66
+#: kbookmarkcontextmenu.cpp:67
 #, fuzzy
 #| msgid "Properties"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "คุณสมบัติ"
 
-#: kbookmarkcontextmenu.cpp:71
+#: kbookmarkcontextmenu.cpp:72
 #, fuzzy
 #| msgid "Copy Link Address"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "คัดลอกที่อยู่เชื่อมโยง"
 
-#: kbookmarkcontextmenu.cpp:74
+#: kbookmarkcontextmenu.cpp:75
 #, fuzzy
 #| msgid "Delete Bookmark"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "ลบที่คั่นหน้า"
 
-#: kbookmarkcontextmenu.cpp:80
+#: kbookmarkcontextmenu.cpp:81
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "เปิดโฟลเดอร์ในแท็บ"
 
-#: kbookmarkcontextmenu.cpp:105
+#: kbookmarkcontextmenu.cpp:112
 #, fuzzy
 #| msgid "Cannot add bookmark with empty URL."
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "ไม่สามารถเพิ่มที่อยู่ URL ว่าง เข้าไปยังที่คั่นหน้าได้"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgid "Bookmark Folder Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "การลบโฟลเดอร์ที่คั่นหน้า"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgid "Bookmark Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "การลบที่คั่นหน้า"
 
-#: kbookmarkcontextmenu.cpp:135
+#: kbookmarkcontextmenu.cpp:142
 #, fuzzy, qt-format
 #| msgid ""
 #| "Are you sure you wish to remove the bookmark folder\n"
@@ -112,7 +112,7 @@ msgstr ""
 "คุณแน่ใจหรือไม่ว่า ต้องการที่จะลบโฟลเดอร์ที่คั่นหน้า\n"
 "\"%1\" นี้ ?"
 
-#: kbookmarkcontextmenu.cpp:136
+#: kbookmarkcontextmenu.cpp:143
 #, fuzzy, qt-format
 #| msgid ""
 #| "Are you sure you wish to remove the bookmark\n"
@@ -241,15 +241,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "ที่คั่นหน้า"
 
-#: kbookmarkmanager.cpp:244
-msgctxt "KBookmarkManager|"
-msgid ""
-"Cannot launch keditbookmarks.\n"
-"\n"
-"Most likely you do not have keditbookmarks currently installed"
-msgstr ""
-
-#: kbookmarkmanager.cpp:386
+#: kbookmarkmanager.cpp:360
 #, fuzzy, qt-format
 #| msgid ""
 #| "Unable to save bookmarks in %1. Reported error was: %2. This error "
@@ -266,54 +258,64 @@ msgstr ""
 "สาเหตุของข้อผิดพลาดจำเป็นต้องถูกแก้ไขให้เร็วที่สุดเท่าที่จะเป็นไปได้ "
 "ซึ่งน่าจะเกิดจากฮาร์ดดิสก์เต็มมากที่สุด"
 
-#: kbookmarkmenu.cpp:231
+#: kbookmarkmenu.cpp:234
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "เปิดโฟลเดอร์ในแท็บ"
 
-#: kbookmarkmenu.cpp:235
+#: kbookmarkmenu.cpp:238
 #, fuzzy
 #| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "เปิดที่คั่นหน้าทั้งหมดในโฟลเดอร์นี้เป็นแท็บใหม่"
 
-#: kbookmarkmenu.cpp:251
+#: kbookmarkmenu.cpp:254
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "ทำคั่นหน้าแท็บเป็นโฟลเดอร์..."
 
-#: kbookmarkmenu.cpp:259
+#: kbookmarkmenu.cpp:262
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "เพิ่มโฟลเดอร์ที่คั่นหน้าสำหรับแท็บที่เปิดอยู่ทั้งหมด"
 
-#: kbookmarkmenu.cpp:298
+#: kbookmarkmenu.cpp:301
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "แก้ไขรายการที่คั่นหน้าของคุณในหน้าต่างใหม่"
 
-#: kbookmarkmenu.cpp:309
+#: kbookmarkmenu.cpp:323
 #, fuzzy
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "สร้างโฟลเดอร์ที่คั่นหน้าใหม่..."
 
-#: kbookmarkmenu.cpp:311
+#: kbookmarkmenu.cpp:325
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "สร้างโฟลเดอร์ที่คั่นหน้าใหม่ในเมนูนี้"
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

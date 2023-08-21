@@ -23,7 +23,7 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- विभाजक ---"
 
-#: kbookmarkcontextmenu.cpp:52
+#: kbookmarkcontextmenu.cpp:53
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Add Bookmark Here"
@@ -31,7 +31,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "येथे ओळखचिन्ह जोडा"
 
-#: kbookmarkcontextmenu.cpp:58
+#: kbookmarkcontextmenu.cpp:59
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Bookmark Editor"
@@ -39,7 +39,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "टॅब अंतर्गत संचयीका उघडा"
 
-#: kbookmarkcontextmenu.cpp:61
+#: kbookmarkcontextmenu.cpp:62
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Folder"
@@ -47,7 +47,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "संचयीका काढून टाका"
 
-#: kbookmarkcontextmenu.cpp:66
+#: kbookmarkcontextmenu.cpp:67
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Properties"
@@ -55,7 +55,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "गुणधर्म"
 
-#: kbookmarkcontextmenu.cpp:71
+#: kbookmarkcontextmenu.cpp:72
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Copy Link Address"
@@ -63,7 +63,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "लिंक पत्ता प्रतिकृत करा"
 
-#: kbookmarkcontextmenu.cpp:74
+#: kbookmarkcontextmenu.cpp:75
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Delete Bookmark"
@@ -71,7 +71,7 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "ओळखचिन्ह काढून टाका"
 
-#: kbookmarkcontextmenu.cpp:80
+#: kbookmarkcontextmenu.cpp:81
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -79,12 +79,12 @@ msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "टॅब अंतर्गत संचयीका उघडा"
 
-#: kbookmarkcontextmenu.cpp:105
+#: kbookmarkcontextmenu.cpp:112
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr ""
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Folder Deletion"
@@ -92,7 +92,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "ओळखचिन्ह संचयीका नष्ट करणे"
 
-#: kbookmarkcontextmenu.cpp:134
+#: kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Bookmark Deletion"
@@ -100,7 +100,7 @@ msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "ओळखचिन्ह काढून टाकणे"
 
-#: kbookmarkcontextmenu.cpp:135
+#: kbookmarkcontextmenu.cpp:142
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -110,7 +110,7 @@ msgstr ""
 "तुम्हाला नक्की ओळखचिन्ह संचयीका\n"
 "\"%1\" काढून टाकायचे?"
 
-#: kbookmarkcontextmenu.cpp:136
+#: kbookmarkcontextmenu.cpp:143
 #, qt-format
 msgctxt "KBookmarkContextMenu|"
 msgid ""
@@ -196,15 +196,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "ओळखचिन्ह"
 
-#: kbookmarkmanager.cpp:244
-msgctxt "KBookmarkManager|"
-msgid ""
-"Cannot launch keditbookmarks.\n"
-"\n"
-"Most likely you do not have keditbookmarks currently installed"
-msgstr ""
-
-#: kbookmarkmanager.cpp:386
+#: kbookmarkmanager.cpp:360
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -213,7 +205,7 @@ msgid ""
 "as possible, which is most likely a full hard drive."
 msgstr ""
 
-#: kbookmarkmenu.cpp:231
+#: kbookmarkmenu.cpp:234
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -221,12 +213,12 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "टॅब अंतर्गत संचयीका उघडा"
 
-#: kbookmarkmenu.cpp:235
+#: kbookmarkmenu.cpp:238
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr ""
 
-#: kbookmarkmenu.cpp:251
+#: kbookmarkmenu.cpp:254
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -234,17 +226,17 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "नवीन ओळखचिन्ह संचयीका..."
 
-#: kbookmarkmenu.cpp:259
+#: kbookmarkmenu.cpp:262
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr ""
 
-#: kbookmarkmenu.cpp:298
+#: kbookmarkmenu.cpp:301
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr ""
 
-#: kbookmarkmenu.cpp:309
+#: kbookmarkmenu.cpp:323
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -252,13 +244,23 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "नवीन ओळखचिन्ह संचयीका..."
 
-#: kbookmarkmenu.cpp:311
+#: kbookmarkmenu.cpp:325
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "या मेन्यूमध्ये नवीन ओळखचिन्ह संचयीका तयार करा"
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
 
 #~ msgctxt "KNSBookmarkImporterImpl|"
 #~ msgid "Bookmarks"
