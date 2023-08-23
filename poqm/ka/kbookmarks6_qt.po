@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: kbookmark.cpp:317
 msgctxt "KBookmark|Bookmark separator"
@@ -211,12 +211,12 @@ msgstr "ამ მენიუში ახალი სანიშნები
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
-msgstr ""
+msgstr "keditbookmark-ის გაშვება შეუძლებელია"
 
 #: keditbookmarks.cpp:66
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
-msgstr ""
+msgstr "გამშვები ფაილი keditbookmarks ვერ ვიპოვე"
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""
