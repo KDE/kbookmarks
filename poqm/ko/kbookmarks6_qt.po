@@ -1,14 +1,14 @@
 # Translation of kio4 to Korean.
 # Copyright (c) 2003, 2004, 2007-2008 Free Software Foundation, Inc.
 # KIM KyungHeon <tody@teoal.net>, 2003, 2004.
-# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2020, 2021.
+# Shinjo Park <kde@peremen.name>, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2017, 2020, 2021, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2021-07-18 12:07+0200\n"
+"PO-Revision-Date: 2023-08-25 22:27+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 20.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:317
@@ -216,12 +216,12 @@ msgstr "이 메뉴에 새 책갈피 폴더 만들기"
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
-msgstr ""
+msgstr "keditbookmarks를 시작할 수 없음"
 
 #: keditbookmarks.cpp:66
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
-msgstr ""
+msgstr "keditbookmarks 실행 파일을 찾을 수 없음"
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""
