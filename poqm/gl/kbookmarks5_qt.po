@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-06-05 13:59+0200\n"
+"PO-Revision-Date: 2023-08-26 04:17+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -23,13 +23,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:318
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
-msgstr "--- separador ---"
+msgstr "— divisoria —"
 
 #: kbookmarkcontextmenu.cpp:52
 msgctxt "KBookmarkContextMenu|@action:inmenu"
@@ -254,7 +254,7 @@ msgstr "Abrir o cartafol en separadores"
 #: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Abrir cada marcador deste cartafol nun novo separador"
+msgstr "Abrir cada marcador deste cartafol nun novo separador."
 
 #: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
@@ -264,12 +264,12 @@ msgstr "Marcar estes separadores como un cartafol…"
 #: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Engade un cartafol de marcadores con todos os separadores abertos"
+msgstr "Engade un cartafol de marcadores con todos os separadores abertos."
 
 #: kbookmarkmenu.cpp:349
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
-msgstr "Editar a súa colección de marcadores nunha xanela separada"
+msgstr "Editar a súa colección de marcadores nunha xanela separada."
 
 #: kbookmarkmenu.cpp:366
 msgctxt "KBookmarkMenu|@action:inmenu"
@@ -279,7 +279,7 @@ msgstr "Novo cartafol de marcadores…"
 #: kbookmarkmenu.cpp:368
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
-msgstr "Crea un novo cartafol de marcadores neste menú"
+msgstr "Crea un novo cartafol de marcadores neste menú."
 
 #: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
