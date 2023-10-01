@@ -69,7 +69,7 @@ msgstr "Abrir o cartafol en separadores"
 #: kbookmarkcontextmenu.cpp:112
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
-msgstr "Non se pode engadir un marcador cun URL baleiro."
+msgstr "Non é posíbel engadir un marcador cun URL baleiro."
 
 #: kbookmarkcontextmenu.cpp:141
 msgctxt "KBookmarkContextMenu|@title:window"
@@ -185,7 +185,7 @@ msgid ""
 "will only be shown once. The cause of the error needs to be fixed as quickly "
 "as possible, which is most likely a full hard drive."
 msgstr ""
-"Non se poden gardar os marcadores en %1. O erro recibido foi: %2. Esta "
+"Non é posíbel gardar os marcadores en %1. O erro recibido foi: %2. Esta "
 "mensaxe de erro só se amosará unha vez. A causa do erro debe corrixirse tan "
 "axiña como se poida, posibelmente sexa un disco duro cheo."
 
@@ -227,7 +227,7 @@ msgstr "Crea un novo cartafol de marcadores neste menú."
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
-msgstr "Non se puido iniciar keditbookmarks."
+msgstr "Non foi posíbel iniciar keditbookmarks."
 
 #: keditbookmarks.cpp:66
 msgctxt "QObject|"
