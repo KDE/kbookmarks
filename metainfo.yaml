@@ -12,8 +12,7 @@ portingAid: false
 deprecated: false
 release: true
 libraries:
- - qmake: KBookmarks
-   cmake: "KF6::Bookmarks"
+ - cmake: "KF6::Bookmarks"
 cmakename: KF6Bookmarks
 
 public_lib: true
