@@ -69,7 +69,7 @@ msgstr "Abrir o cartafol en separadores"
 #: kbookmarkcontextmenu.cpp:105
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
-msgstr "Non se pode engadir un marcador cun URL baleiro."
+msgstr "Non é posíbel engadir un marcador cun URL baleiro."
 
 #: kbookmarkcontextmenu.cpp:134
 msgctxt "KBookmarkContextMenu|@title:window"
@@ -193,7 +193,7 @@ msgctxt "KNSBookmarkImporterImpl|"
 msgid ""
 "Could not find %1. Netscape is probably not installed. Aborting the export."
 msgstr ""
-"Non se puido atopar %1. Netscape posibelmente non estea instalado. "
+"Non foi posíbel atopar %1. Netscape posibelmente non estea instalado. "
 "Interrómpese a exportación."
 
 #: kbookmarkimporter_ns.cpp:131
@@ -230,7 +230,7 @@ msgid ""
 "\n"
 "Most likely you do not have keditbookmarks currently installed"
 msgstr ""
-"Non se pode iniciar keditbookmarks.\n"
+"Non é posíbel iniciar keditbookmarks.\n"
 "\n"
 "Probabelmente non teña keditbookmarks instalado."
 
@@ -242,7 +242,7 @@ msgid ""
 "will only be shown once. The cause of the error needs to be fixed as quickly "
 "as possible, which is most likely a full hard drive."
 msgstr ""
-"Non se poden gardar os marcadores en %1. O erro recibido foi: %2. Esta "
+"Non é posíbel gardar os marcadores en %1. O erro recibido foi: %2. Esta "
 "mensaxe de erro só se amosará unha vez. A causa do erro debe corrixirse tan "
 "axiña como se poida, posibelmente sexa un disco duro cheo."
 
