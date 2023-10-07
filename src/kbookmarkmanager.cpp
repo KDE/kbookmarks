@@ -125,7 +125,6 @@ public:
         : m_doc(QStringLiteral("xbel"))
         , m_docIsLoaded(bDocIsloaded)
         , m_update(false)
-        , m_dialogParent(nullptr)
         , m_dirWatch(nullptr)
     {
     }
@@ -135,7 +134,6 @@ public:
     QString m_bookmarksFile;
     mutable bool m_docIsLoaded;
     bool m_update;
-    QWidget *m_dialogParent;
 
     KDirWatch *m_dirWatch; // for monitoring changes on bookmark files
 
