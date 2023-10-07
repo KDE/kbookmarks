@@ -14,7 +14,6 @@
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
-#include <QReadWriteLock>
 #include <QRegularExpression>
 #include <QSaveFile>
 #include <QStandardPaths>
@@ -34,33 +33,6 @@ QString piData()
     return QStringLiteral("version=\"1.0\" encoding=\"UTF-8\"");
 }
 }
-}
-
-class KBookmarkManagerList : public QList<KBookmarkManager *>
-{
-public:
-    KBookmarkManagerList();
-    ~KBookmarkManagerList()
-    {
-        cleanup();
-    }
-    void cleanup()
-    {
-        QList<KBookmarkManager *> copy = *this;
-        qDeleteAll(copy); // auto-delete functionality
-        clear();
-    }
-
-    QReadWriteLock lock;
-};
-
-Q_GLOBAL_STATIC(KBookmarkManagerList, s_pSelf)
-
-KBookmarkManagerList::KBookmarkManagerList()
-{
-    if (s_pSelf.exists()) {
-        s_pSelf->cleanup();
-    }
 }
 
 class KBookmarkMap : private KBookmarkGroupTraverser
@@ -143,38 +115,6 @@ public:
 // ################
 // KBookmarkManager
 
-static KBookmarkManager *lookupExisting(const QString &bookmarksFile)
-{
-    for (KBookmarkManagerList::ConstIterator bmit = s_pSelf()->constBegin(), bmend = s_pSelf()->constEnd(); bmit != bmend; ++bmit) {
-        if ((*bmit)->path() == bookmarksFile) {
-            return *bmit;
-        }
-    }
-    return nullptr;
-}
-
-KBookmarkManager *KBookmarkManager::managerForFile(const QString &bookmarksFile)
-{
-    KBookmarkManager *mgr(nullptr);
-    {
-        QReadLocker readLock(&s_pSelf()->lock);
-        mgr = lookupExisting(bookmarksFile);
-        if (mgr) {
-            return mgr;
-        }
-    }
-
-    QWriteLocker writeLock(&s_pSelf()->lock);
-    mgr = lookupExisting(bookmarksFile);
-    if (mgr) {
-        return mgr;
-    }
-
-    mgr = new KBookmarkManager(bookmarksFile);
-    s_pSelf()->append(mgr);
-    return mgr;
-}
-
 static QDomElement createXbelTopLevelElement(QDomDocument &doc)
 {
     QDomElement topLevel = doc.createElement(QStringLiteral("xbel"));
@@ -186,8 +126,9 @@ static QDomElement createXbelTopLevelElement(QDomDocument &doc)
     return topLevel;
 }
 
-KBookmarkManager::KBookmarkManager(const QString &bookmarksFile)
-    : d(new KBookmarkManagerPrivate(false))
+KBookmarkManager::KBookmarkManager(const QString &bookmarksFile, QObject *parent)
+    : QObject(parent)
+    , d(new KBookmarkManagerPrivate(false))
 {
     d->m_update = true;
 
@@ -210,14 +151,6 @@ KBookmarkManager::KBookmarkManager(const QString &bookmarksFile)
     // qCDebug(KBOOKMARKS_LOG) << "starting KDirWatch for" << d->m_bookmarksFile;
 }
 
-KBookmarkManager::KBookmarkManager()
-    : d(new KBookmarkManagerPrivate(true))
-{
-    d->m_update = false; // TODO - make it read/write
-
-    createXbelTopLevelElement(d->m_doc);
-}
-
 void KBookmarkManager::slotFileChanged(const QString &path)
 {
     if (path == d->m_bookmarksFile) {
@@ -232,9 +165,6 @@ void KBookmarkManager::slotFileChanged(const QString &path)
 
 KBookmarkManager::~KBookmarkManager()
 {
-    if (!s_pSelf.isDestroyed()) {
-        s_pSelf()->removeAll(this);
-    }
 }
 
 void KBookmarkManager::setUpdate(bool update)

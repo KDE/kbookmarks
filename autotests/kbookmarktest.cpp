@@ -118,16 +118,16 @@ void KBookmarkTest::testMimeDataBookmarkList()
 
 void KBookmarkTest::testFileCreatedExternally()
 {
-    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForFile(placesFile());
-    QVERIFY(sharedBookmarkManager->root().first().isNull());
+    KBookmarkManager sharedBookmarkManager(placesFile());
+    QVERIFY(sharedBookmarkManager.root().first().isNull());
 
     QFile file(placesFile());
     QVERIFY(file.open(QIODevice::WriteOnly));
     file.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?><xbel version=\"1.0\"><bookmark href=\"file:///external\"><title>external</title></bookmark></xbel>");
     file.close();
 
-    QTRY_VERIFY(!sharedBookmarkManager->root().first().isNull());
-    KBookmark bk = sharedBookmarkManager->root().first();
+    QTRY_VERIFY(!sharedBookmarkManager.root().first().isNull());
+    KBookmark bk = sharedBookmarkManager.root().first();
     QCOMPARE(bk.url().toString(), QString("file:///external"));
     QCOMPARE(bk.fullText(), QString("external"));
 }
@@ -136,17 +136,17 @@ void KBookmarkTest::testBookmarkManager()
 {
     // like kfileplacesmodel.cpp used to do
     const QString placesModelFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfileplaces/bookmarks.xml";
-    KBookmarkManager *bookmarkManager = KBookmarkManager::managerForFile(placesModelFile);
+    KBookmarkManager bookmarkManager(placesModelFile);
 
     // like kfileplacessharedbookmarks.cpp does
-    KBookmarkManager *sharedBookmarkManager = KBookmarkManager::managerForFile(placesFile());
+    KBookmarkManager sharedBookmarkManager(placesFile());
 
     // like kfilebookmarkhandler.cpp does
     QString file = QStandardPaths::locate(QStandardPaths::GenericDataLocation, QStringLiteral("kfile/bookmarks.xml"));
     if (file.isEmpty()) {
         file = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + "/kfile/bookmarks.xml";
     }
-    KBookmarkManager *manager = KBookmarkManager::managerForFile(file);
+    KBookmarkManager manager(file);
 
     // This is just to check an old crash in the global-static destructor, not doing anything with
     // these managers yet.

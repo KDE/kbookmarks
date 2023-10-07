@@ -15,7 +15,8 @@ int main(int argc, char **argv)
 {
     QApplication app(argc, argv);
     const QString bookmarksFile = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/konqueror/bookmarks.xml");
-    KBookmarkDialog dlg(KBookmarkManager::managerForFile(bookmarksFile));
+    KBookmarkManager manager(bookmarksFile);
+    KBookmarkDialog dlg(&manager);
     dlg.addBookmark(QStringLiteral("KDE"), QUrl(QStringLiteral("http://www.kde.org")), QStringLiteral("www")); // calls exec()
     return 0;
 }

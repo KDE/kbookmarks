@@ -47,20 +47,21 @@ class KBookmarkGroup;
 class KBOOKMARKS_EXPORT KBookmarkManager : public QObject
 {
     Q_OBJECT
-private:
-    /**
-     * Creates a bookmark manager for an external file
-     * (Using QFileSystemWatcher for change monitoring)
-     * @since 4.1
-     */
-    KBOOKMARKS_NO_EXPORT explicit KBookmarkManager(const QString &bookmarksFile);
-
-    /**
-     * Creates a temp bookmark manager
-     */
-    KBOOKMARKS_NO_EXPORT KBookmarkManager();
 
 public:
+    /**
+     * Create a KBookmarkManager responsible for the given @p bookmarksFile.
+     *
+     * The manager watches the file for change detection.
+     *
+     * @param bookmarksFile full path to the bookmarks file,
+     * Use ~/.kde/share/apps/konqueror/bookmarks.xml for the konqueror bookmarks
+     *
+     * @since 6.0
+     *
+     */
+    explicit KBookmarkManager(const QString &bookmarksFile, QObject *parent = nullptr);
+
     /**
      * Destructor
      */
@@ -144,23 +145,6 @@ public:
     bool save(bool toolbarCache = true) const;
 
     void emitConfigChanged();
-
-    /**
-     * This static function will return an instance of the
-     * KBookmarkManager, responsible for the given @p bookmarksFile.
-     * If you do not instantiate this class either
-     * natively or in a derived class, then it will return an object
-     * with the default behaviors.  If you wish to use different
-     * behaviors, you <em>must</em> derive your own class and
-     * instantiate it before this method is ever called.
-     *
-     * The manager watches the file for change detection.
-     *
-     * @param bookmarksFile full path to the bookmarks file,
-     * Use ~/.kde/share/apps/konqueror/bookmarks.xml for the konqueror bookmarks
-     *
-     */
-    static KBookmarkManager *managerForFile(const QString &bookmarksFile);
 
     /**
      * @internal
