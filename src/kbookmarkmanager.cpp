@@ -16,7 +16,6 @@
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
-#include <QMessageBox>
 #include <QProcess>
 #include <QReadWriteLock>
 #include <QRegularExpression>
@@ -130,7 +129,6 @@ public:
         : m_doc(QStringLiteral("xbel"))
         , m_docIsLoaded(bDocIsloaded)
         , m_update(false)
-        , m_dialogAllowed(true)
         , m_dialogParent(nullptr)
         , m_dirWatch(nullptr)
     {
@@ -141,7 +139,6 @@ public:
     QString m_bookmarksFile;
     mutable bool m_docIsLoaded;
     bool m_update;
-    bool m_dialogAllowed;
     QWidget *m_dialogParent;
 
     KDirWatch *m_dirWatch; // for monitoring changes on bookmark files
@@ -246,17 +243,6 @@ KBookmarkManager::~KBookmarkManager()
     }
 }
 
-bool KBookmarkManager::autoErrorHandlingEnabled() const
-{
-    return d->m_dialogAllowed;
-}
-
-void KBookmarkManager::setAutoErrorHandlingEnabled(bool enable, QWidget *parent)
-{
-    d->m_dialogAllowed = enable;
-    d->m_dialogParent = parent;
-}
-
 void KBookmarkManager::setUpdate(bool update)
 {
     d->m_update = update;
@@ -355,23 +341,14 @@ bool KBookmarkManager::saveAs(const QString &filename, bool toolbarCache) const
         }
     }
 
-    static int hadSaveError = false;
-    if (!hadSaveError) {
-        QString err = tr("Unable to save bookmarks in %1. Reported error was: %2. "
-                         "This error message will only be shown once. The cause "
-                         "of the error needs to be fixed as quickly as possible, "
-                         "which is most likely a full hard drive.")
-                          .arg(filename, file.errorString());
+    QString err = tr("Unable to save bookmarks in %1. Reported error was: %2. "
+                     "This error message will only be shown once. The cause "
+                     "of the error needs to be fixed as quickly as possible, "
+                     "which is most likely a full hard drive.")
+                      .arg(filename, file.errorString());
+    qCCritical(KBOOKMARKS_LOG) << QStringLiteral("Unable to save bookmarks in %1. File reported the following error-code: %2.").arg(filename).arg(file.error());
+    Q_EMIT const_cast<KBookmarkManager *>(this)->error(err);
 
-        if (d->m_dialogAllowed && qobject_cast<QApplication *>(qApp) && QThread::currentThread() == qApp->thread()) {
-            QMessageBox::critical(QApplication::activeWindow(), QApplication::applicationName(), err);
-        }
-
-        qCCritical(KBOOKMARKS_LOG)
-            << QStringLiteral("Unable to save bookmarks in %1. File reported the following error-code: %2.").arg(filename).arg(file.error());
-        Q_EMIT const_cast<KBookmarkManager *>(this)->error(err);
-    }
-    hadSaveError = true;
     return false;
 }
 

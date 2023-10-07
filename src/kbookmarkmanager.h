@@ -67,30 +67,6 @@ public:
     ~KBookmarkManager() override;
 
     /**
-     * Check whether auto error handling is enabled.
-     * If enabled, it will show an error dialog to the user when an
-     * error occurs. It is turned on by default.
-     * @return true if auto error handling is enabled, false otherwise
-     * @note dialogs will only be displayed if the current thread is the gui thread
-     * @since 4.6
-     * @see setAutoErrorHandlingEnabled()
-     */
-    bool autoErrorHandlingEnabled() const;
-
-    /**
-     * Enable or disable auto error handling is enabled.
-     * If enabled, it will show an error dialog to the user when an
-     * error occurs. It is turned on by default.
-     * If disabled, the application should react on the error() signal.
-     * @param enable true to enable auto error handling, false to disable
-     * @param parent the parent widget for the error dialogs, can be @c nullptr for
-     *               top-level
-     * @since 4.6
-     * @see autoErrorHandlingEnabled()
-     */
-    void setAutoErrorHandlingEnabled(bool enable, QWidget *parent);
-
-    /**
      * Set the update flag. Defaults to true.
      * @param update if true then KBookmarkManager will listen to D-Bus update requests.
      */
