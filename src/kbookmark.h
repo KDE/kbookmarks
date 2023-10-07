@@ -16,7 +16,6 @@
 #include <QUrl>
 
 class QMimeData;
-class KBookmarkManager;
 class KBookmarkGroup;
 
 /**
@@ -223,12 +222,6 @@ public:
      * Return the position in the parent, i.e. the last number in the address
      */
     int positionInParent() const;
-
-    // Hard to decide. Good design would imply that each bookmark
-    // knows about its manager, so that there can be several managers.
-    // But if we say there is only one manager (i.e. set of bookmarks)
-    // per application, then KBookmarkManager::self() is much easier.
-    // KBookmarkManager * manager() const { return m_manager; }
 
     /**
      * @internal for KEditBookmarks
