@@ -17,208 +17,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 #, fuzzy
 #| msgid "--- separator ---"
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- skeier ---"
 
-#: kbookmarkcontextmenu.cpp:53
-#, fuzzy
-#| msgid "Add Bookmark Here"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "Voeg Boekmerk hier by"
-
-#: kbookmarkcontextmenu.cpp:59
-#, fuzzy
-#| msgid "Open Folder in Bookmark Editor"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "Maak gids in boekmerk redigeerder oop"
-
-#: kbookmarkcontextmenu.cpp:62
-#, fuzzy
-#| msgid "Delete Folder"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "Vee Gids Uit"
-
-#: kbookmarkcontextmenu.cpp:67
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "Eienskappe vir %1"
-
-#: kbookmarkcontextmenu.cpp:72
-#, fuzzy
-#| msgid "Copy Link Address"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "Kopiëer Skakel Adres"
-
-#: kbookmarkcontextmenu.cpp:75
-#, fuzzy
-#| msgid "Delete Bookmark"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "Vee Boekmerk Uit"
-
-#: kbookmarkcontextmenu.cpp:81
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Maak gids in boekmerk redigeerder oop"
-
-#: kbookmarkcontextmenu.cpp:112
-#, fuzzy
-#| msgid "Cannot add bookmark with empty URL."
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "Kan nie 'n boekmerk met 'n leë URL byvoeg nie."
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Bookmark Folder Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Vee Boekmerk gids uit"
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Bookmark Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "Vee boekmerk uit"
-
-#: kbookmarkcontextmenu.cpp:142
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark folder\n"
-#| "\"%1\"?"
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr "Is jy seker dat jy boekmerk gids \"%1\" wil verwyder?"
-
-#: kbookmarkcontextmenu.cpp:143
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark\n"
-#| "\"%1\"?"
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr "Is jy seker dat jy boekmerk \"%1\" wil verwyder?"
-
-#: kbookmarkdialog.cpp:56
-#, fuzzy
-#| msgid "Name:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "Naam:"
-
-#: kbookmarkdialog.cpp:61
-#, fuzzy
-#| msgid "Location:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "Ligging:"
-
-#: kbookmarkdialog.cpp:66
-#, fuzzy
-#| msgid "Comment:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "Kommentaar:"
-
-#: kbookmarkdialog.cpp:177
-#, fuzzy
-#| msgid "Date"
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "Datum"
-
-#: kbookmarkdialog.cpp:178
-#, fuzzy
-#| msgid "Bookmark Properties"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "Boekmerk Eienskappe"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgid "&New Folder..."
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "Nuwe Gids..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-#, fuzzy
-#| msgid "&Add"
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "Voeg by"
-
-#: kbookmarkdialog.cpp:213
-#, fuzzy
-#| msgid "Add Bookmark"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "Voeg Boekmerk By"
-
-#: kbookmarkdialog.cpp:251
-#, fuzzy
-#| msgid "Add Bookmark"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "Voeg Boekmerk By"
-
-#: kbookmarkdialog.cpp:284
-#, fuzzy
-#| msgid "Select Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "Kies Gids"
-
-#: kbookmarkdialog.cpp:312
-#, fuzzy
-#| msgid "New Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "Nuwe Gids"
-
-#: kbookmarkdialog.cpp:342
-#, fuzzy
-#| msgid "Create New Bookmark Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "Skep Nuwe Boekmerk Kabinet"
-
-#: kbookmarkdialog.cpp:343
-#, fuzzy, qt-format
-#| msgid "Create New Bookmark Folder in %1"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "Skep Nuwe Boekmerk Kabinet in %1"
-
-#: kbookmarkdialog.cpp:345
-#, fuzzy
-#| msgid "New folder:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "Nuwe gids:"
-
-#: kbookmarkdialog.cpp:366
-#, fuzzy
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Boekmerk"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, fuzzy, qt-format
 #| msgid ""
 #| "Unable to save bookmarks in %1. Reported error was: %2. This error "
@@ -234,52 +40,6 @@ msgstr ""
 "fout sal net een keer vertoon word. Die oorsaak van die fout moet so gou "
 "moontlik opgelos word, wat waarskynlik 'n vol hardeskyf beteken."
 
-#: kbookmarkmenu.cpp:234
-#, fuzzy
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Maak gids in boekmerk redigeerder oop"
-
-#: kbookmarkmenu.cpp:238
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr ""
-
-#: kbookmarkmenu.cpp:254
-#, fuzzy
-#| msgid "Bookmark Tabs as Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "Boekmerk Oortjie as Gids..."
-
-#: kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgid "Add a folder of bookmarks for all open tabs."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Voeg 'n gids van boekmerke vir al die oop oortjies by."
-
-#: kbookmarkmenu.cpp:301
-#, fuzzy
-#| msgid "Edit your bookmark collection in a separate window"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "Redigeer jou boekmerk versameling in 'n aparte venster"
-
-#: kbookmarkmenu.cpp:323
-#, fuzzy
-#| msgid "&New Bookmark Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "Nuwe Boekmerk Kabinet..."
-
-#: kbookmarkmenu.cpp:325
-#, fuzzy
-#| msgid "Create a new bookmark folder in this menu"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "Skep 'n nuwe boekmerk kabinet in hierdie kieslys"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -289,6 +49,247 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Voeg Boekmerk hier by"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Maak gids in boekmerk redigeerder oop"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Vee Gids Uit"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Eienskappe vir %1"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Kopiëer Skakel Adres"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Vee Boekmerk Uit"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Maak gids in boekmerk redigeerder oop"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Kan nie 'n boekmerk met 'n leë URL byvoeg nie."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Vee Boekmerk gids uit"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Vee boekmerk uit"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr "Is jy seker dat jy boekmerk gids \"%1\" wil verwyder?"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr "Is jy seker dat jy boekmerk \"%1\" wil verwyder?"
+
+#: widgets/kbookmarkdialog.cpp:56
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Naam:"
+
+#: widgets/kbookmarkdialog.cpp:61
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Ligging:"
+
+#: widgets/kbookmarkdialog.cpp:66
+#, fuzzy
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Kommentaar:"
+
+#: widgets/kbookmarkdialog.cpp:177
+#, fuzzy
+#| msgid "Date"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Datum"
+
+#: widgets/kbookmarkdialog.cpp:178
+#, fuzzy
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Boekmerk Eienskappe"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "Nuwe Gids..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+#, fuzzy
+#| msgid "&Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Voeg by"
+
+#: widgets/kbookmarkdialog.cpp:213
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Voeg Boekmerk By"
+
+#: widgets/kbookmarkdialog.cpp:251
+#, fuzzy
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Voeg Boekmerk By"
+
+#: widgets/kbookmarkdialog.cpp:284
+#, fuzzy
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Kies Gids"
+
+#: widgets/kbookmarkdialog.cpp:312
+#, fuzzy
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nuwe Gids"
+
+#: widgets/kbookmarkdialog.cpp:342
+#, fuzzy
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Skep Nuwe Boekmerk Kabinet"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, fuzzy, qt-format
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Skep Nuwe Boekmerk Kabinet in %1"
+
+#: widgets/kbookmarkdialog.cpp:345
+#, fuzzy
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nuwe gids:"
+
+#: widgets/kbookmarkdialog.cpp:366
+#, fuzzy
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Boekmerk"
+
+#: widgets/kbookmarkmenu.cpp:235
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Maak gids in boekmerk redigeerder oop"
+
+#: widgets/kbookmarkmenu.cpp:239
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr ""
+
+#: widgets/kbookmarkmenu.cpp:255
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Boekmerk Oortjie as Gids..."
+
+#: widgets/kbookmarkmenu.cpp:263
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Voeg 'n gids van boekmerke vir al die oop oortjies by."
+
+#: widgets/kbookmarkmenu.cpp:302
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Redigeer jou boekmerk versameling in 'n aparte venster"
+
+#: widgets/kbookmarkmenu.cpp:324
+#, fuzzy
+#| msgid "&New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Nuwe Boekmerk Kabinet..."
+
+#: widgets/kbookmarkmenu.cpp:326
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Skep 'n nuwe boekmerk kabinet in hierdie kieslys"
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

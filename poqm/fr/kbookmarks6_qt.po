@@ -35,168 +35,12 @@ msgstr ""
 "X-Text-Markup: qtrich\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- séparateur ---"
 
-#: kbookmarkcontextmenu.cpp:53
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "Ajouter un signet ici"
-
-#: kbookmarkcontextmenu.cpp:59
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "Ouvrir le dossier dans l'éditeur de signets"
-
-#: kbookmarkcontextmenu.cpp:62
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "Supprimer le dossier"
-
-#: kbookmarkcontextmenu.cpp:67
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "Propriétés"
-
-#: kbookmarkcontextmenu.cpp:72
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "Copier l'adresse du lien"
-
-#: kbookmarkcontextmenu.cpp:75
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "Supprimer le signet"
-
-#: kbookmarkcontextmenu.cpp:81
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Ouvrir le dossier dans des onglets"
-
-#: kbookmarkcontextmenu.cpp:112
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "Impossible d'ajouter un signet avec une URL vide."
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Suppression d'un dossier de signets"
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "Suppression d'un signet"
-
-#: kbookmarkcontextmenu.cpp:142
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"Voulez-vous vraiment supprimer le dossier de signets\n"
-"« %1 » ?"
-
-#: kbookmarkcontextmenu.cpp:143
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"Voulez-vous vraiment supprimer le signet\n"
-"« %1 » ?"
-
-#: kbookmarkdialog.cpp:56
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "Nom :"
-
-#: kbookmarkdialog.cpp:61
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "Emplacement :"
-
-#: kbookmarkdialog.cpp:66
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "Commentaire :"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:177
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "Mettre à jour"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:178
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "Propriétés du signet"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Nouveau dossier..."
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "Ajouter"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:213
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "Ajouter un signet"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:251
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "Ajouter un signet"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:284
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "Sélectionnez le dossier"
-
-#: kbookmarkdialog.cpp:312
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "Nouveau dossier"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:342
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "Créer un dossier de signets"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:343
-#, qt-format
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "Créer un nouveau dossier dans %1"
-
-# unreviewed-context
-#: kbookmarkdialog.cpp:345
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "Nouveau dossier :"
-
-#: kbookmarkdialog.cpp:366
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Signets"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -209,41 +53,6 @@ msgstr ""
 "besoin d'être corrigée aussi rapidement que possible, ce qui est "
 "probablement un disque dur plein."
 
-#: kbookmarkmenu.cpp:234
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Ouvrir un dossier dans des onglets"
-
-#: kbookmarkmenu.cpp:238
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Ouvrir tous les signets de ce dossier dans un nouvel onglet."
-
-#: kbookmarkmenu.cpp:254
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "Marquer les onglets comme un dossier..."
-
-#: kbookmarkmenu.cpp:262
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Ajouter un dossier de signets pour tous les onglets ouverts"
-
-#: kbookmarkmenu.cpp:301
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "Modifier votre collection de signets dans une fenêtre séparée"
-
-#: kbookmarkmenu.cpp:323
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "Nouveau dossier de signets..."
-
-#: kbookmarkmenu.cpp:325
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "Créer un nouveau dossier de signets pour ce menu"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -254,6 +63,198 @@ msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
 "Il est impossible de trouver l'exécutable du module « keditbookmarks »."
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Ajouter un signet ici"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Ouvrir le dossier dans l'éditeur de signets"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Supprimer le dossier"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Propriétés"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Copier l'adresse du lien"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Supprimer le signet"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Ouvrir le dossier dans des onglets"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Impossible d'ajouter un signet avec une URL vide."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Suppression d'un dossier de signets"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Suppression d'un signet"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Voulez-vous vraiment supprimer le dossier de signets\n"
+"« %1 » ?"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Voulez-vous vraiment supprimer le signet\n"
+"« %1 » ?"
+
+#: widgets/kbookmarkdialog.cpp:56
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Nom :"
+
+#: widgets/kbookmarkdialog.cpp:61
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Emplacement :"
+
+#: widgets/kbookmarkdialog.cpp:66
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Commentaire :"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:177
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Mettre à jour"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Propriétés du signet"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Nouveau dossier..."
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Ajouter"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:213
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Ajouter un signet"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Ajouter un signet"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:284
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Sélectionnez le dossier"
+
+#: widgets/kbookmarkdialog.cpp:312
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nouveau dossier"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:342
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Créer un dossier de signets"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:343
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Créer un nouveau dossier dans %1"
+
+# unreviewed-context
+#: widgets/kbookmarkdialog.cpp:345
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nouveau dossier :"
+
+#: widgets/kbookmarkdialog.cpp:366
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Signets"
+
+#: widgets/kbookmarkmenu.cpp:235
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Ouvrir un dossier dans des onglets"
+
+#: widgets/kbookmarkmenu.cpp:239
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Ouvrir tous les signets de ce dossier dans un nouvel onglet."
+
+#: widgets/kbookmarkmenu.cpp:255
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Marquer les onglets comme un dossier..."
+
+#: widgets/kbookmarkmenu.cpp:263
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Ajouter un dossier de signets pour tous les onglets ouverts"
+
+#: widgets/kbookmarkmenu.cpp:302
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Modifier votre collection de signets dans une fenêtre séparée"
+
+#: widgets/kbookmarkmenu.cpp:324
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Nouveau dossier de signets..."
+
+#: widgets/kbookmarkmenu.cpp:326
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Créer un nouveau dossier de signets pour ce menu"
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

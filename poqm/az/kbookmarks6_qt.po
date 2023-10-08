@@ -15,154 +15,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 20.12.0\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- ayırıcı ---"
 
-#: kbookmarkcontextmenu.cpp:53
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "Əlfəcini bura əlavə edin"
-
-#: kbookmarkcontextmenu.cpp:59
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "Qovluğu Yeni Əlfəcin Redaktorunda açın"
-
-#: kbookmarkcontextmenu.cpp:62
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "Qovluğu Silmək"
-
-#: kbookmarkcontextmenu.cpp:67
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "Özəllikləri"
-
-#: kbookmarkcontextmenu.cpp:72
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "Keçid Ünvanını Kopyalamaq"
-
-#: kbookmarkcontextmenu.cpp:75
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "Əlfəcini Silmək"
-
-#: kbookmarkcontextmenu.cpp:81
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Qovluğu vərəqlərdə açmaq"
-
-#: kbookmarkcontextmenu.cpp:112
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "Boş URL ünvanı olan Əlfəcini əlavə etmək mümkün deyil"
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Əlfəcin Qovluğunun Silinməsi"
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "Əlfəcin Silinməsi"
-
-#: kbookmarkcontextmenu.cpp:142
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr "Siz \"%1\" əlfəcin qovluğunu silməyə əminsinizmi?"
-
-#: kbookmarkcontextmenu.cpp:143
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr "Siz %1 əlfəcini silməyə əminsinizmi?"
-
-#: kbookmarkdialog.cpp:56
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "Ad:"
-
-#: kbookmarkdialog.cpp:61
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "Məkan:"
-
-#: kbookmarkdialog.cpp:66
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "Şərh:"
-
-#: kbookmarkdialog.cpp:177
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "Yeniləmə"
-
-#: kbookmarkdialog.cpp:178
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "Əlfəcin Xüsusiyyətləri"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Yeni Qovluq..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "Əlavə Et"
-
-#: kbookmarkdialog.cpp:213
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "Əlfəcin əlavə et"
-
-#: kbookmarkdialog.cpp:251
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "Əlfəcinlər əlavə et"
-
-#: kbookmarkdialog.cpp:284
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "Qovluq Seç"
-
-#: kbookmarkdialog.cpp:312
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "Yeni qovluq"
-
-#: kbookmarkdialog.cpp:342
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "Yeni Əlfəcin Qovluğu Yarat"
-
-#: kbookmarkdialog.cpp:343
-#, qt-format
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "%1 -də Yeni Əlfəcin Qovluğu Yarat"
-
-#: kbookmarkdialog.cpp:345
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "Yeni qovluq:"
-
-#: kbookmarkdialog.cpp:366
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Əlfəcinlər"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -174,41 +32,6 @@ msgstr ""
 "bildirişi. ancaq bir dəfə göstəriləcək. Bu səhvin mümkün qədər tez "
 "düzəldilməsi lazımdır, bu da çox güman ki, tam bir sabit diskdir."
 
-#: kbookmarkmenu.cpp:234
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Qovluğu vərəqdə açmaq"
-
-#: kbookmarkmenu.cpp:238
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Bütün qovluqdakı əlfəcinləri yeni vərəq kimi açmaq"
-
-#: kbookmarkmenu.cpp:254
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "Əlfəcin vərəqləri qovluq kimi..."
-
-#: kbookmarkmenu.cpp:262
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Əlfəcinlərin qovluğunu bütün açıq vərəqlərə əlavə etmək"
-
-#: kbookmarkmenu.cpp:301
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "Əlfəcin kolleksiyanız başqa bir pəncərədə düzəş edin"
-
-#: kbookmarkmenu.cpp:323
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "Yeni Əlfəcin Qovluğu..."
-
-#: kbookmarkmenu.cpp:325
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "Bu menyuda yeni əlfəcin qovluğu yaratmaq"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -218,6 +41,184 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Əlfəcini bura əlavə edin"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Qovluğu Yeni Əlfəcin Redaktorunda açın"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Qovluğu Silmək"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Özəllikləri"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Keçid Ünvanını Kopyalamaq"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Əlfəcini Silmək"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Qovluğu vərəqlərdə açmaq"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Boş URL ünvanı olan Əlfəcini əlavə etmək mümkün deyil"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Əlfəcin Qovluğunun Silinməsi"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Əlfəcin Silinməsi"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr "Siz \"%1\" əlfəcin qovluğunu silməyə əminsinizmi?"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr "Siz %1 əlfəcini silməyə əminsinizmi?"
+
+#: widgets/kbookmarkdialog.cpp:56
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Ad:"
+
+#: widgets/kbookmarkdialog.cpp:61
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Məkan:"
+
+#: widgets/kbookmarkdialog.cpp:66
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Şərh:"
+
+#: widgets/kbookmarkdialog.cpp:177
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Yeniləmə"
+
+#: widgets/kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Əlfəcin Xüsusiyyətləri"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Yeni Qovluq..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Əlavə Et"
+
+#: widgets/kbookmarkdialog.cpp:213
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Əlfəcin əlavə et"
+
+#: widgets/kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Əlfəcinlər əlavə et"
+
+#: widgets/kbookmarkdialog.cpp:284
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Qovluq Seç"
+
+#: widgets/kbookmarkdialog.cpp:312
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Yeni qovluq"
+
+#: widgets/kbookmarkdialog.cpp:342
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Yeni Əlfəcin Qovluğu Yarat"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "%1 -də Yeni Əlfəcin Qovluğu Yarat"
+
+#: widgets/kbookmarkdialog.cpp:345
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Yeni qovluq:"
+
+#: widgets/kbookmarkdialog.cpp:366
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Əlfəcinlər"
+
+#: widgets/kbookmarkmenu.cpp:235
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Qovluğu vərəqdə açmaq"
+
+#: widgets/kbookmarkmenu.cpp:239
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Bütün qovluqdakı əlfəcinləri yeni vərəq kimi açmaq"
+
+#: widgets/kbookmarkmenu.cpp:255
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Əlfəcin vərəqləri qovluq kimi..."
+
+#: widgets/kbookmarkmenu.cpp:263
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Əlfəcinlərin qovluğunu bütün açıq vərəqlərə əlavə etmək"
+
+#: widgets/kbookmarkmenu.cpp:302
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Əlfəcin kolleksiyanız başqa bir pəncərədə düzəş edin"
+
+#: widgets/kbookmarkmenu.cpp:324
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Yeni Əlfəcin Qovluğu..."
+
+#: widgets/kbookmarkmenu.cpp:326
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Bu menyuda yeni əlfəcin qovluğu yaratmaq"
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

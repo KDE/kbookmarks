@@ -19,227 +19,14 @@ msgstr ""
 "X-Generator: Poedit 1.5.5\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 #, fuzzy
 #| msgid "--- separator ---"
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- ئايرىغۇچ---"
 
-#: kbookmarkcontextmenu.cpp:53
-#, fuzzy
-#| msgid "Add Bookmark Here"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "بۇ جايغا خەتكۈش قوش"
-
-#: kbookmarkcontextmenu.cpp:59
-#, fuzzy
-#| msgid "Open Folder in Bookmark Editor"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "قىسقۇچنى خەتكۈش تەھرىرلىگۈچتە ئاچ"
-
-#: kbookmarkcontextmenu.cpp:62
-#, fuzzy
-#| msgid "Delete Folder"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "قىسقۇچ ئۆچۈر"
-
-#: kbookmarkcontextmenu.cpp:67
-#, fuzzy
-#| msgid "Properties"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "خاسلىق"
-
-#: kbookmarkcontextmenu.cpp:72
-#, fuzzy
-#| msgid "Copy Link Address"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "ئۇلانما ئادرېسىنى كۆچۈر"
-
-#: kbookmarkcontextmenu.cpp:75
-#, fuzzy
-#| msgid "Delete Bookmark"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "خەتكۈش ئۆچۈر"
-
-#: kbookmarkcontextmenu.cpp:81
-#, fuzzy
-#| msgid "Open Folder in Tabs"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "قىسقۇچلارنى بەتكۈچلەردە ئاچ"
-
-#: kbookmarkcontextmenu.cpp:112
-#, fuzzy
-#| msgid "Cannot add bookmark with empty URL."
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "بوش URL نى خەتكۈشكە قوشالمايدۇ."
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Bookmark Folder Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "خەتكۈش بالدىقىنى ئۆچۈرۈش"
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Bookmark Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "خەتكۈش ئۆچۈرۈش"
-
-#: kbookmarkcontextmenu.cpp:142
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark folder\n"
-#| "\"%1\"?"
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"تۆۋەندىكى خەتكۈش قىسقۇچىنى ئۆچۈرگۈڭىز بارمۇ\n"
-"«%1»؟"
-
-#: kbookmarkcontextmenu.cpp:143
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark\n"
-#| "\"%1\"?"
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"تۆۋەندىكى خەتكۈشنى ئۆچۈرگۈڭىز بارمۇ\n"
-"«%1»؟"
-
-#: kbookmarkdialog.cpp:56
-#, fuzzy
-#| msgid "Name:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "ئاتى:"
-
-#: kbookmarkdialog.cpp:61
-#, fuzzy
-#| msgid "Location:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "ئورنى:"
-
-#: kbookmarkdialog.cpp:66
-#, fuzzy
-#| msgctxt "@label:textbox"
-#| msgid "Comment:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "ئىزاھات:"
-
-#: kbookmarkdialog.cpp:177
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Update"
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "يېڭىلا"
-
-#: kbookmarkdialog.cpp:178
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Bookmark Properties"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "خەتكۈش خاسلىقى"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "&New Folder..."
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "يېڭى قىسقۇچ(&N)…"
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Add"
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "قوش"
-
-#: kbookmarkdialog.cpp:213
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Add Bookmark"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "خەتكۈش قوش"
-
-#: kbookmarkdialog.cpp:251
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Add Bookmarks"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "خەتكۈچلەرنى قوش"
-
-#: kbookmarkdialog.cpp:284
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Select Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "قىسقۇچ تاللا"
-
-#: kbookmarkdialog.cpp:312
-#, fuzzy
-#| msgctxt "folder name"
-#| msgid "New Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "يېڭى قىسقۇچ"
-
-#: kbookmarkdialog.cpp:342
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Create New Bookmark Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "يېڭى خەتكۈش قىسقۇچى قۇرۇش"
-
-#: kbookmarkdialog.cpp:343
-#, fuzzy, qt-format
-#| msgctxt "@title:window"
-#| msgid "Create New Bookmark Folder in %1"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "%1 دا يېڭى خەتكۈش قىسقۇچى قۇر"
-
-#: kbookmarkdialog.cpp:345
-#, fuzzy
-#| msgctxt "@label:textbox"
-#| msgid "New folder:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "يېڭى قىسقۇچ:"
-
-#: kbookmarkdialog.cpp:366
-#, fuzzy
-#| msgid "Bookmarks"
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "خەتكۈشلەر"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, fuzzy, qt-format
 #| msgid ""
 #| "Unable to save bookmarks in %1. Reported error was: %2. This error "
@@ -255,55 +42,6 @@ msgstr ""
 "بىرلا قېتىم كۆرۈنىدۇ. خاتالىق كېلىپ چىقىشنىڭ سەۋەبىنى تېزلىكتە ئوڭلاش زۆرۈر "
 "چۈنكى قاتتىق دىسكا توشۇپ كەتكەندەك تۇرىدۇ."
 
-#: kbookmarkmenu.cpp:234
-#, fuzzy
-#| msgid "Open Folder in Tabs"
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "قىسقۇچلارنى بەتكۈچلەردە ئاچ"
-
-#: kbookmarkmenu.cpp:238
-#, fuzzy
-#| msgid "Open all bookmarks in this folder as a new tab."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "بۇ قىسقۇچتىكى ھەممە خەتكۈشلەرنى يېڭى بىر بەتكۈچتە ئاچىدۇ."
-
-#: kbookmarkmenu.cpp:254
-#, fuzzy
-#| msgid "Bookmark Tabs as Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "بەتكۈچلەرنى خەتكۈش قىسقۇچقا قوش…"
-
-#: kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgid "Add a folder of bookmarks for all open tabs."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "ئېچىلغان ھەممە بەتكۈچلەرگە خەتكۈش قىسقۇچى قوشىدۇ."
-
-#: kbookmarkmenu.cpp:301
-#, fuzzy
-#| msgid "Edit your bookmark collection in a separate window"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "باشقا بىر كۆزنەكتە خەتكۈش توپلىمىڭىزنى تەھرىرلەڭ"
-
-#: kbookmarkmenu.cpp:323
-#, fuzzy
-#| msgid "New Bookmark Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "يېڭى خەتكۈش قىسقۇچى…"
-
-#: kbookmarkmenu.cpp:325
-#, fuzzy
-#| msgid "Create a new bookmark folder in this menu"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "بۇ تىزىملىكتە يېڭى بىر خەتكۈش قىسقۇچى قۇر"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -313,6 +51,269 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "بۇ جايغا خەتكۈش قوش"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "قىسقۇچنى خەتكۈش تەھرىرلىگۈچتە ئاچ"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "قىسقۇچ ئۆچۈر"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "خاسلىق"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "ئۇلانما ئادرېسىنى كۆچۈر"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "خەتكۈش ئۆچۈر"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "قىسقۇچلارنى بەتكۈچلەردە ئاچ"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "بوش URL نى خەتكۈشكە قوشالمايدۇ."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "خەتكۈش بالدىقىنى ئۆچۈرۈش"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "خەتكۈش ئۆچۈرۈش"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"تۆۋەندىكى خەتكۈش قىسقۇچىنى ئۆچۈرگۈڭىز بارمۇ\n"
+"«%1»؟"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"تۆۋەندىكى خەتكۈشنى ئۆچۈرگۈڭىز بارمۇ\n"
+"«%1»؟"
+
+#: widgets/kbookmarkdialog.cpp:56
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "ئاتى:"
+
+#: widgets/kbookmarkdialog.cpp:61
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "ئورنى:"
+
+#: widgets/kbookmarkdialog.cpp:66
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "ئىزاھات:"
+
+#: widgets/kbookmarkdialog.cpp:177
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "يېڭىلا"
+
+#: widgets/kbookmarkdialog.cpp:178
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "خەتكۈش خاسلىقى"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "يېڭى قىسقۇچ(&N)…"
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "قوش"
+
+#: widgets/kbookmarkdialog.cpp:213
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "خەتكۈش قوش"
+
+#: widgets/kbookmarkdialog.cpp:251
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "خەتكۈچلەرنى قوش"
+
+#: widgets/kbookmarkdialog.cpp:284
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "قىسقۇچ تاللا"
+
+#: widgets/kbookmarkdialog.cpp:312
+#, fuzzy
+#| msgctxt "folder name"
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "يېڭى قىسقۇچ"
+
+#: widgets/kbookmarkdialog.cpp:342
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "يېڭى خەتكۈش قىسقۇچى قۇرۇش"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, fuzzy, qt-format
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "%1 دا يېڭى خەتكۈش قىسقۇچى قۇر"
+
+#: widgets/kbookmarkdialog.cpp:345
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "يېڭى قىسقۇچ:"
+
+#: widgets/kbookmarkdialog.cpp:366
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "خەتكۈشلەر"
+
+#: widgets/kbookmarkmenu.cpp:235
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "قىسقۇچلارنى بەتكۈچلەردە ئاچ"
+
+#: widgets/kbookmarkmenu.cpp:239
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "بۇ قىسقۇچتىكى ھەممە خەتكۈشلەرنى يېڭى بىر بەتكۈچتە ئاچىدۇ."
+
+#: widgets/kbookmarkmenu.cpp:255
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "بەتكۈچلەرنى خەتكۈش قىسقۇچقا قوش…"
+
+#: widgets/kbookmarkmenu.cpp:263
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "ئېچىلغان ھەممە بەتكۈچلەرگە خەتكۈش قىسقۇچى قوشىدۇ."
+
+#: widgets/kbookmarkmenu.cpp:302
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "باشقا بىر كۆزنەكتە خەتكۈش توپلىمىڭىزنى تەھرىرلەڭ"
+
+#: widgets/kbookmarkmenu.cpp:324
+#, fuzzy
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "يېڭى خەتكۈش قىسقۇچى…"
+
+#: widgets/kbookmarkmenu.cpp:326
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "بۇ تىزىملىكتە يېڭى بىر خەتكۈش قىسقۇچى قۇر"
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

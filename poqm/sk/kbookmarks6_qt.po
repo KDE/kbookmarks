@@ -27,158 +27,12 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- oddeľovač ---"
 
-#: kbookmarkcontextmenu.cpp:53
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "Pridať záložku sem"
-
-#: kbookmarkcontextmenu.cpp:59
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "Otvoriť priečinok v editore záložiek"
-
-#: kbookmarkcontextmenu.cpp:62
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "Vymazať priečinok"
-
-#: kbookmarkcontextmenu.cpp:67
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "Vlastnosti"
-
-#: kbookmarkcontextmenu.cpp:72
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "Kopírovať adresu odkazu"
-
-#: kbookmarkcontextmenu.cpp:75
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "Odstrániť záložku"
-
-#: kbookmarkcontextmenu.cpp:81
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Otvoriť priečinok v kartách"
-
-#: kbookmarkcontextmenu.cpp:112
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "Nie je možné pridať záložku s prázdnym URL."
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Vymazanie priečinka záložiek"
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "Odstránenie záložky"
-
-#: kbookmarkcontextmenu.cpp:142
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"Naozaj chcete odstrániť priečinok záložiek\n"
-"\"%1\"?"
-
-#: kbookmarkcontextmenu.cpp:143
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"Naozaj chcete odstrániť záložku\n"
-"\"%1\"?"
-
-#: kbookmarkdialog.cpp:56
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "Názov:"
-
-#: kbookmarkdialog.cpp:61
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "Umiestnenie:"
-
-#: kbookmarkdialog.cpp:66
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "Komentár:"
-
-#: kbookmarkdialog.cpp:177
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "Aktualizovať"
-
-#: kbookmarkdialog.cpp:178
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "Vlastnosti záložky"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Nový priečinok..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "Pridať"
-
-#: kbookmarkdialog.cpp:213
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "Pridať záložku"
-
-#: kbookmarkdialog.cpp:251
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "Pridať záložky"
-
-#: kbookmarkdialog.cpp:284
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "Vybrať priečinok"
-
-#: kbookmarkdialog.cpp:312
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "Nový priečinok"
-
-#: kbookmarkdialog.cpp:342
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "Vytvoriť nový priečinok záložiek"
-
-#: kbookmarkdialog.cpp:343
-#, qt-format
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "Vytvoriť nový priečinok záložiek v %1"
-
-#: kbookmarkdialog.cpp:345
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "Nový priečinok:"
-
-#: kbookmarkdialog.cpp:366
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Záložky"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -190,41 +44,6 @@ msgstr ""
 "zobrazená iba raz. Túto chybu je nutné opraviť čo najskôr, pravdepodobne je "
 "zaplnený disk."
 
-#: kbookmarkmenu.cpp:234
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Otvoriť priečinok v kartách"
-
-#: kbookmarkmenu.cpp:238
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Otvoriť všetky záložky v tomto priečinku ako nové karty"
-
-#: kbookmarkmenu.cpp:254
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "Vytvoriť záložky z kariet ako priečinok..."
-
-#: kbookmarkmenu.cpp:262
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Pridať priečinok záložiek pre všetky otvorené karty"
-
-#: kbookmarkmenu.cpp:301
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "Upraviť zbierku záložiek v samostatnom okne"
-
-#: kbookmarkmenu.cpp:323
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "Nový priečinok záložiek..."
-
-#: kbookmarkmenu.cpp:325
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "Vytvoriť nový priečinok záložiek v tejto ponuke"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -234,6 +53,188 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Pridať záložku sem"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Otvoriť priečinok v editore záložiek"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Vymazať priečinok"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Vlastnosti"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Kopírovať adresu odkazu"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Odstrániť záložku"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Otvoriť priečinok v kartách"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Nie je možné pridať záložku s prázdnym URL."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Vymazanie priečinka záložiek"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Odstránenie záložky"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Naozaj chcete odstrániť priečinok záložiek\n"
+"\"%1\"?"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Naozaj chcete odstrániť záložku\n"
+"\"%1\"?"
+
+#: widgets/kbookmarkdialog.cpp:56
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Názov:"
+
+#: widgets/kbookmarkdialog.cpp:61
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Umiestnenie:"
+
+#: widgets/kbookmarkdialog.cpp:66
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Komentár:"
+
+#: widgets/kbookmarkdialog.cpp:177
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Aktualizovať"
+
+#: widgets/kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Vlastnosti záložky"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Nový priečinok..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Pridať"
+
+#: widgets/kbookmarkdialog.cpp:213
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Pridať záložku"
+
+#: widgets/kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Pridať záložky"
+
+#: widgets/kbookmarkdialog.cpp:284
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Vybrať priečinok"
+
+#: widgets/kbookmarkdialog.cpp:312
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nový priečinok"
+
+#: widgets/kbookmarkdialog.cpp:342
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Vytvoriť nový priečinok záložiek"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Vytvoriť nový priečinok záložiek v %1"
+
+#: widgets/kbookmarkdialog.cpp:345
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nový priečinok:"
+
+#: widgets/kbookmarkdialog.cpp:366
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Záložky"
+
+#: widgets/kbookmarkmenu.cpp:235
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Otvoriť priečinok v kartách"
+
+#: widgets/kbookmarkmenu.cpp:239
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Otvoriť všetky záložky v tomto priečinku ako nové karty"
+
+#: widgets/kbookmarkmenu.cpp:255
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Vytvoriť záložky z kariet ako priečinok..."
+
+#: widgets/kbookmarkmenu.cpp:263
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Pridať priečinok záložiek pre všetky otvorené karty"
+
+#: widgets/kbookmarkmenu.cpp:302
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Upraviť zbierku záložiek v samostatnom okne"
+
+#: widgets/kbookmarkmenu.cpp:324
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Nový priečinok záložiek..."
+
+#: widgets/kbookmarkmenu.cpp:326
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Vytvoriť nový priečinok záložiek v tejto ponuke"
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

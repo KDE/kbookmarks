@@ -40,158 +40,12 @@ msgstr ""
 "X-POFile-IgnoreConsistency: Status\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- separador ---"
 
-#: kbookmarkcontextmenu.cpp:53
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "Adicionar um Favorito Aqui"
-
-#: kbookmarkcontextmenu.cpp:59
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "Abrir a Pasta no Editor de Favoritos"
-
-#: kbookmarkcontextmenu.cpp:62
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "Apagar a Pasta"
-
-#: kbookmarkcontextmenu.cpp:67
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "Propriedades"
-
-#: kbookmarkcontextmenu.cpp:72
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "Copiar o Endereço da Ligação"
-
-#: kbookmarkcontextmenu.cpp:75
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "Apagar o Favorito"
-
-#: kbookmarkcontextmenu.cpp:81
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Abrir a Pasta em Páginas"
-
-#: kbookmarkcontextmenu.cpp:112
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "Não é possível adicionar um favorito com o URL em branco."
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Remoção de Pasta de Favoritos"
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "Remoção de Favorito"
-
-#: kbookmarkcontextmenu.cpp:142
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"Tem a certeza que que remover a pasta de favoritos\n"
-"\"%1\"?"
-
-#: kbookmarkcontextmenu.cpp:143
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"Tem a certeza que quer remover o favorito\n"
-"\"%1\"?"
-
-#: kbookmarkdialog.cpp:56
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "Nome:"
-
-#: kbookmarkdialog.cpp:61
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "Localização:"
-
-#: kbookmarkdialog.cpp:66
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "Comentário:"
-
-#: kbookmarkdialog.cpp:177
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "Actualizar"
-
-#: kbookmarkdialog.cpp:178
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "Propriedades do Favorito"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Nova Pasta..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "Adicionar"
-
-#: kbookmarkdialog.cpp:213
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "Adicionar aos Favoritos"
-
-#: kbookmarkdialog.cpp:251
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "Adicionar aos Favoritos"
-
-#: kbookmarkdialog.cpp:284
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "Seleccionar a Pasta"
-
-#: kbookmarkdialog.cpp:312
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "Nova Pasta"
-
-#: kbookmarkdialog.cpp:342
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "Criar uma Nova Pasta de Favoritos"
-
-#: kbookmarkdialog.cpp:343
-#, qt-format
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "Criar uma Nova Pasta de Favoritos em %1"
-
-#: kbookmarkdialog.cpp:345
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "Nova pasta:"
-
-#: kbookmarkdialog.cpp:366
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Favoritos"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -204,41 +58,6 @@ msgstr ""
 "deverá ser resolvida o mais depressa possível, dado que a causa mais "
 "possível é um disco cheio."
 
-#: kbookmarkmenu.cpp:234
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Abrir a Pasta em Páginas"
-
-#: kbookmarkmenu.cpp:238
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Abre todos os favoritos nesta pasta como uma página nova"
-
-#: kbookmarkmenu.cpp:254
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "Adicionar as Páginas a uma Pasta de Favoritos..."
-
-#: kbookmarkmenu.cpp:262
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Adicionar uma pasta de favoritos para todas as páginas abertas"
-
-#: kbookmarkmenu.cpp:301
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "Editar a sua colecção de favoritos numa janela em separado"
-
-#: kbookmarkmenu.cpp:323
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "Nova Pasta de Favoritos..."
-
-#: kbookmarkmenu.cpp:325
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "Criar uma nova pasta de favoritos neste menu"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -248,6 +67,188 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Adicionar um Favorito Aqui"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Abrir a Pasta no Editor de Favoritos"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Apagar a Pasta"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Propriedades"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Copiar o Endereço da Ligação"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Apagar o Favorito"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Abrir a Pasta em Páginas"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Não é possível adicionar um favorito com o URL em branco."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Remoção de Pasta de Favoritos"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Remoção de Favorito"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Tem a certeza que que remover a pasta de favoritos\n"
+"\"%1\"?"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Tem a certeza que quer remover o favorito\n"
+"\"%1\"?"
+
+#: widgets/kbookmarkdialog.cpp:56
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Nome:"
+
+#: widgets/kbookmarkdialog.cpp:61
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Localização:"
+
+#: widgets/kbookmarkdialog.cpp:66
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Comentário:"
+
+#: widgets/kbookmarkdialog.cpp:177
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Actualizar"
+
+#: widgets/kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Propriedades do Favorito"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Nova Pasta..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Adicionar"
+
+#: widgets/kbookmarkdialog.cpp:213
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Adicionar aos Favoritos"
+
+#: widgets/kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Adicionar aos Favoritos"
+
+#: widgets/kbookmarkdialog.cpp:284
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Seleccionar a Pasta"
+
+#: widgets/kbookmarkdialog.cpp:312
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nova Pasta"
+
+#: widgets/kbookmarkdialog.cpp:342
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Criar uma Nova Pasta de Favoritos"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Criar uma Nova Pasta de Favoritos em %1"
+
+#: widgets/kbookmarkdialog.cpp:345
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nova pasta:"
+
+#: widgets/kbookmarkdialog.cpp:366
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Favoritos"
+
+#: widgets/kbookmarkmenu.cpp:235
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Abrir a Pasta em Páginas"
+
+#: widgets/kbookmarkmenu.cpp:239
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Abre todos os favoritos nesta pasta como uma página nova"
+
+#: widgets/kbookmarkmenu.cpp:255
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Adicionar as Páginas a uma Pasta de Favoritos..."
+
+#: widgets/kbookmarkmenu.cpp:263
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Adicionar uma pasta de favoritos para todas as páginas abertas"
+
+#: widgets/kbookmarkmenu.cpp:302
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Editar a sua colecção de favoritos numa janela em separado"
+
+#: widgets/kbookmarkmenu.cpp:324
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Nova Pasta de Favoritos..."
+
+#: widgets/kbookmarkmenu.cpp:326
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Criar uma nova pasta de favoritos neste menu"
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

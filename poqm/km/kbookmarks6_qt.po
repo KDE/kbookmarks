@@ -18,227 +18,14 @@ msgstr ""
 "X-Language: km-KH\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 #, fuzzy
 #| msgid "--- separator ---"
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- បន្ទាត់​ខណ្ឌចែក ---"
 
-#: kbookmarkcontextmenu.cpp:53
-#, fuzzy
-#| msgid "Add Bookmark Here"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "បន្ថែម​ចំណាំ​នៅ​ទីនេះ"
-
-#: kbookmarkcontextmenu.cpp:59
-#, fuzzy
-#| msgid "Open Folder in Bookmark Editor"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "បើក​ថត​ក្នុង​កម្មវិធី​និពន្ធ​ចំណាំ"
-
-#: kbookmarkcontextmenu.cpp:62
-#, fuzzy
-#| msgid "Delete Folder"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "លុប​ថត"
-
-#: kbookmarkcontextmenu.cpp:67
-#, fuzzy
-#| msgid "Properties"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "លក្ខណៈ​សម្បត្តិ"
-
-#: kbookmarkcontextmenu.cpp:72
-#, fuzzy
-#| msgid "Copy Link Address"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "ចម្លង​អាសយដ្ឋាន​តំណ"
-
-#: kbookmarkcontextmenu.cpp:75
-#, fuzzy
-#| msgid "Delete Bookmark"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "លុប​ចំណាំ"
-
-#: kbookmarkcontextmenu.cpp:81
-#, fuzzy
-#| msgid "Open Folder in Tabs"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "បើក​ថត​ជា​ផ្ទាំងៗ"
-
-#: kbookmarkcontextmenu.cpp:112
-#, fuzzy
-#| msgid "Cannot add bookmark with empty URL."
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "មិនអាច​បន្ថែម​ចំណាំ​ដែល​គ្មាន URL បានទេ ។"
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Bookmark Folder Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "ការ​លុប​ថត​ចំណាំ"
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Bookmark Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "ការ​លុប​ចំណាំ"
-
-#: kbookmarkcontextmenu.cpp:142
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark folder\n"
-#| "\"%1\"?"
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"តើ​អ្នក​ពិត​ជា​ចង់​យក​ថត​ការ​ចំណាំ\n"
-"\"%1\" ចេញ​ឬ ?​"
-
-#: kbookmarkcontextmenu.cpp:143
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark\n"
-#| "\"%1\"?"
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"តើ​អ្នក​ពិត​ជា​ចង់​យកចំណាំ\n"
-"\"%1\" ចេញ​ឬ ?"
-
-#: kbookmarkdialog.cpp:56
-#, fuzzy
-#| msgid "Name:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "ឈ្មោះ ៖"
-
-#: kbookmarkdialog.cpp:61
-#, fuzzy
-#| msgid "Location:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "ទីតាំង ៖"
-
-#: kbookmarkdialog.cpp:66
-#, fuzzy
-#| msgctxt "@label:textbox"
-#| msgid "Comment:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "មតិយោបល់ ៖"
-
-#: kbookmarkdialog.cpp:177
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Update"
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "ធ្វើបច្ចុប្បន្នភាព"
-
-#: kbookmarkdialog.cpp:178
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Bookmark Properties"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "លក្ខណៈ​សម្បត្តិ​ចំណាំ"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "&New Folder..."
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "ថត​ថ្មី..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Add"
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "បន្ថែម"
-
-#: kbookmarkdialog.cpp:213
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Add Bookmark"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "បន្ថែម​ចំណាំ"
-
-#: kbookmarkdialog.cpp:251
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Add Bookmarks"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "បន្ថែម​ចំណាំ"
-
-#: kbookmarkdialog.cpp:284
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Select Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "ជ្រើស​ថត"
-
-#: kbookmarkdialog.cpp:312
-#, fuzzy
-#| msgctxt "folder name"
-#| msgid "New Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "ថត​ថ្មី"
-
-#: kbookmarkdialog.cpp:342
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Create New Bookmark Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "បង្កើត​ថត​ចំណាំ​ថ្មី"
-
-#: kbookmarkdialog.cpp:343
-#, fuzzy, qt-format
-#| msgctxt "@title:window"
-#| msgid "Create New Bookmark Folder in %1"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "បង្កើត​ថត​ចំណាំ​ថ្មី​ក្នុង %1"
-
-#: kbookmarkdialog.cpp:345
-#, fuzzy
-#| msgctxt "@label:textbox"
-#| msgid "New folder:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "ថត​ថ្មី ៖"
-
-#: kbookmarkdialog.cpp:366
-#, fuzzy
-#| msgid "Bookmarks"
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "ចំណាំ"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, fuzzy, qt-format
 #| msgid ""
 #| "Unable to save bookmarks in %1. Reported error was: %2. This error "
@@ -254,55 +41,6 @@ msgstr ""
 "តែ​ម្តង​គត់ ។ មូលហេតុ​ដែល​បណ្តាល​ឲ្យ​មាន​កំហុស​នេះ ចាំបាច់​ត្រូវ​តែ​ជួសជុល​ឲ្យ​បាន​លឿន​តាមដែលអាច​ធ្វើបាន ដែល​"
 "ទំនង​ជា​​មកពីដ្រាយ​ថាសរឹង​ពេញ ។"
 
-#: kbookmarkmenu.cpp:234
-#, fuzzy
-#| msgid "Open Folder in Tabs"
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "បើក​ថត​ជា​ផ្ទាំងៗ"
-
-#: kbookmarkmenu.cpp:238
-#, fuzzy
-#| msgid "Open all bookmarks in this folder as a new tab."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "បើក​ចំណាំ​ទាំងអស់​ក្នុង​ថតនេះ​ជា​ផ្ទាំងថ្មី ។"
-
-#: kbookmarkmenu.cpp:254
-#, fuzzy
-#| msgid "Bookmark Tabs as Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "ផ្ទាំង​ចំណាំ​ជា​ថត..."
-
-#: kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgid "Add a folder of bookmarks for all open tabs."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "បន្ថែម​ថត​របស់​ចំណាំ​សម្រាប់​ផ្ទាំង​ដែល​បើក​ទាំងអស់ ។"
-
-#: kbookmarkmenu.cpp:301
-#, fuzzy
-#| msgid "Edit your bookmark collection in a separate window"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "កែសម្រួល​បណ្ដុំ​ចំណាំ​នៅ​ក្នុង​បង្អួច​ដាច់ដោយឡែក"
-
-#: kbookmarkmenu.cpp:323
-#, fuzzy
-#| msgid "New Bookmark Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "ថត​ចំណាំ​ថ្មី..."
-
-#: kbookmarkmenu.cpp:325
-#, fuzzy
-#| msgid "Create a new bookmark folder in this menu"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "បង្កើត​ថត​ចំណាំ​ថ្មី​ក្នុង​ម៉ឺនុយ​នេះ"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -312,6 +50,269 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "បន្ថែម​ចំណាំ​នៅ​ទីនេះ"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "បើក​ថត​ក្នុង​កម្មវិធី​និពន្ធ​ចំណាំ"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "លុប​ថត"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "លក្ខណៈ​សម្បត្តិ"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "ចម្លង​អាសយដ្ឋាន​តំណ"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "លុប​ចំណាំ"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "បើក​ថត​ជា​ផ្ទាំងៗ"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "មិនអាច​បន្ថែម​ចំណាំ​ដែល​គ្មាន URL បានទេ ។"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "ការ​លុប​ថត​ចំណាំ"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "ការ​លុប​ចំណាំ"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"តើ​អ្នក​ពិត​ជា​ចង់​យក​ថត​ការ​ចំណាំ\n"
+"\"%1\" ចេញ​ឬ ?​"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"តើ​អ្នក​ពិត​ជា​ចង់​យកចំណាំ\n"
+"\"%1\" ចេញ​ឬ ?"
+
+#: widgets/kbookmarkdialog.cpp:56
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "ឈ្មោះ ៖"
+
+#: widgets/kbookmarkdialog.cpp:61
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "ទីតាំង ៖"
+
+#: widgets/kbookmarkdialog.cpp:66
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Comment:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "មតិយោបល់ ៖"
+
+#: widgets/kbookmarkdialog.cpp:177
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "ធ្វើបច្ចុប្បន្នភាព"
+
+#: widgets/kbookmarkdialog.cpp:178
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "លក្ខណៈ​សម្បត្តិ​ចំណាំ"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "ថត​ថ្មី..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "បន្ថែម"
+
+#: widgets/kbookmarkdialog.cpp:213
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "បន្ថែម​ចំណាំ"
+
+#: widgets/kbookmarkdialog.cpp:251
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "បន្ថែម​ចំណាំ"
+
+#: widgets/kbookmarkdialog.cpp:284
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "ជ្រើស​ថត"
+
+#: widgets/kbookmarkdialog.cpp:312
+#, fuzzy
+#| msgctxt "folder name"
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "ថត​ថ្មី"
+
+#: widgets/kbookmarkdialog.cpp:342
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "បង្កើត​ថត​ចំណាំ​ថ្មី"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, fuzzy, qt-format
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "បង្កើត​ថត​ចំណាំ​ថ្មី​ក្នុង %1"
+
+#: widgets/kbookmarkdialog.cpp:345
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "ថត​ថ្មី ៖"
+
+#: widgets/kbookmarkdialog.cpp:366
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "ចំណាំ"
+
+#: widgets/kbookmarkmenu.cpp:235
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "បើក​ថត​ជា​ផ្ទាំងៗ"
+
+#: widgets/kbookmarkmenu.cpp:239
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "បើក​ចំណាំ​ទាំងអស់​ក្នុង​ថតនេះ​ជា​ផ្ទាំងថ្មី ។"
+
+#: widgets/kbookmarkmenu.cpp:255
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "ផ្ទាំង​ចំណាំ​ជា​ថត..."
+
+#: widgets/kbookmarkmenu.cpp:263
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "បន្ថែម​ថត​របស់​ចំណាំ​សម្រាប់​ផ្ទាំង​ដែល​បើក​ទាំងអស់ ។"
+
+#: widgets/kbookmarkmenu.cpp:302
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "កែសម្រួល​បណ្ដុំ​ចំណាំ​នៅ​ក្នុង​បង្អួច​ដាច់ដោយឡែក"
+
+#: widgets/kbookmarkmenu.cpp:324
+#, fuzzy
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "ថត​ចំណាំ​ថ្មី..."
+
+#: widgets/kbookmarkmenu.cpp:326
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "បង្កើត​ថត​ចំណាំ​ថ្មី​ក្នុង​ម៉ឺនុយ​នេះ"
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

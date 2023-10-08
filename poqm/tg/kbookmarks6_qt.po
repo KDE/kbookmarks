@@ -22,188 +22,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- ҷудокунанда ---"
 
-#: kbookmarkcontextmenu.cpp:53
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Add Bookmark Here"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "Гузоштани хатчӯб дар ин ҷо"
-
-#: kbookmarkcontextmenu.cpp:59
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Bookmark Editor"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "Кушодани ҷузвадон дар муҳаррири хатчӯбҳо"
-
-#: kbookmarkcontextmenu.cpp:62
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Delete Folder"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "Нест кардани ҷузвадон"
-
-#: kbookmarkcontextmenu.cpp:67
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Properties"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "Хусусиятҳо"
-
-#: kbookmarkcontextmenu.cpp:72
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Copy Link Address"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "Нусхабардории пайванди нишонӣ"
-
-#: kbookmarkcontextmenu.cpp:75
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Delete Bookmark"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "Нест кардани хатчӯб"
-
-#: kbookmarkcontextmenu.cpp:81
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Tabs"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Кушодани ҷузвадон дар варақаҳо"
-
-#: kbookmarkcontextmenu.cpp:112
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Cannot add bookmark with empty URL."
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "Илова намудани хатчӯб бе нишонии URL имконпазир нест."
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Bookmark Folder Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Несткунии ҷузвадони хатҷӯбҳо"
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Bookmark Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "Несткунии хатҷӯбҳо"
-
-#: kbookmarkcontextmenu.cpp:142
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"Шумо дар ҳақиқат мехоҳед, ки ҷузвадони хатчӯбҳои зеринро тоза намоед:\n"
-"\"%1\"?"
-
-#: kbookmarkcontextmenu.cpp:143
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"Шумо дар ҳақиқат мехоҳед, ки хатчӯби зеринро тоза намоед:\n"
-"\"%1\"?"
-
-#: kbookmarkdialog.cpp:56
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "Ном:"
-
-#: kbookmarkdialog.cpp:61
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "Ҷойгиршавӣ:"
-
-#: kbookmarkdialog.cpp:66
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "Шарҳ:"
-
-#: kbookmarkdialog.cpp:177
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "Навсозӣ кардан"
-
-#: kbookmarkdialog.cpp:178
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "Хусусиятҳои хатчӯб"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Ҷузвадони нав..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "Илова кардан"
-
-#: kbookmarkdialog.cpp:213
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "Илова кардани хатчӯб"
-
-#: kbookmarkdialog.cpp:251
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "Илова кардани хатчӯбҳо"
-
-#: kbookmarkdialog.cpp:284
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "Интихоби ҷузвадон"
-
-#: kbookmarkdialog.cpp:312
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "Ҷузвадони нав"
-
-#: kbookmarkdialog.cpp:342
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "Эҷод кардани ҷузвадони хатчӯбҳои нав"
-
-#: kbookmarkdialog.cpp:343
-#, qt-format
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "Эҷод кардани ҷузвадони хатчӯбҳои нав дар %1"
-
-#: kbookmarkdialog.cpp:345
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "Ҷузвадони нав:"
-
-#: kbookmarkdialog.cpp:366
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Хатчӯбҳо"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -216,62 +40,6 @@ msgstr ""
 "бояд ҳар чӣ зудтар ислоҳ карда шавад ва эҳтимол аст диски компютерии шумо "
 "пур шудааст."
 
-#: kbookmarkmenu.cpp:234
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Tabs"
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Кушодани ҷузвадон дар варақаҳо"
-
-#: kbookmarkmenu.cpp:238
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Open all bookmarks in this folder as a new tab."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Кушодани ҳамаи хатчӯбҳо дар ин ҷузвадон ҳамчун варақаи нав."
-
-#: kbookmarkmenu.cpp:254
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Bookmark Tabs as Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "Хатчӯби варақаҳоро ҳамчун ҷузвадон гузоред..."
-
-#: kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Add a folder of bookmarks for all open tabs."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Илова кардани ҷузвадони хатчӯбҳо барои ҳамаи варақаҳои кушода."
-
-#: kbookmarkmenu.cpp:301
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Edit your bookmark collection in a separate window"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "Таҳрир кардани маҷмӯаи хатчӯбҳо дар равзанаи алоҳида"
-
-#: kbookmarkmenu.cpp:323
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "New Bookmark Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "Ҷузвадони хатчӯбҳои нав..."
-
-#: kbookmarkmenu.cpp:325
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Create a new bookmark folder in this menu"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "Эҷод кардани ҷузвадони хатчӯбҳои нав дар ин феҳрист"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -281,6 +49,239 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Гузоштани хатчӯб дар ин ҷо"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Кушодани ҷузвадон дар муҳаррири хатчӯбҳо"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Нест кардани ҷузвадон"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Хусусиятҳо"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Нусхабардории пайванди нишонӣ"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Нест кардани хатчӯб"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Кушодани ҷузвадон дар варақаҳо"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Илова намудани хатчӯб бе нишонии URL имконпазир нест."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Несткунии ҷузвадони хатҷӯбҳо"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Несткунии хатҷӯбҳо"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Шумо дар ҳақиқат мехоҳед, ки ҷузвадони хатчӯбҳои зеринро тоза намоед:\n"
+"\"%1\"?"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Шумо дар ҳақиқат мехоҳед, ки хатчӯби зеринро тоза намоед:\n"
+"\"%1\"?"
+
+#: widgets/kbookmarkdialog.cpp:56
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Ном:"
+
+#: widgets/kbookmarkdialog.cpp:61
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Ҷойгиршавӣ:"
+
+#: widgets/kbookmarkdialog.cpp:66
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Шарҳ:"
+
+#: widgets/kbookmarkdialog.cpp:177
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Навсозӣ кардан"
+
+#: widgets/kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Хусусиятҳои хатчӯб"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Ҷузвадони нав..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Илова кардан"
+
+#: widgets/kbookmarkdialog.cpp:213
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Илова кардани хатчӯб"
+
+#: widgets/kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Илова кардани хатчӯбҳо"
+
+#: widgets/kbookmarkdialog.cpp:284
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Интихоби ҷузвадон"
+
+#: widgets/kbookmarkdialog.cpp:312
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Ҷузвадони нав"
+
+#: widgets/kbookmarkdialog.cpp:342
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Эҷод кардани ҷузвадони хатчӯбҳои нав"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Эҷод кардани ҷузвадони хатчӯбҳои нав дар %1"
+
+#: widgets/kbookmarkdialog.cpp:345
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Ҷузвадони нав:"
+
+#: widgets/kbookmarkdialog.cpp:366
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Хатчӯбҳо"
+
+#: widgets/kbookmarkmenu.cpp:235
+#, fuzzy
+#| msgctxt "KBookmarkContextMenu|"
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Кушодани ҷузвадон дар варақаҳо"
+
+#: widgets/kbookmarkmenu.cpp:239
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Кушодани ҳамаи хатчӯбҳо дар ин ҷузвадон ҳамчун варақаи нав."
+
+#: widgets/kbookmarkmenu.cpp:255
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Хатчӯби варақаҳоро ҳамчун ҷузвадон гузоред..."
+
+#: widgets/kbookmarkmenu.cpp:263
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Илова кардани ҷузвадони хатчӯбҳо барои ҳамаи варақаҳои кушода."
+
+#: widgets/kbookmarkmenu.cpp:302
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Таҳрир кардани маҷмӯаи хатчӯбҳо дар равзанаи алоҳида"
+
+#: widgets/kbookmarkmenu.cpp:324
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Ҷузвадони хатчӯбҳои нав..."
+
+#: widgets/kbookmarkmenu.cpp:326
+#, fuzzy
+#| msgctxt "KBookmarkMenu|"
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Эҷод кардани ҷузвадони хатчӯбҳои нав дар ин феҳрист"
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

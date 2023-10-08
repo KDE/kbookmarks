@@ -27,226 +27,14 @@ msgstr ""
 "2;\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 #, fuzzy
 #| msgid "--- separator ---"
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- раздвојувач ---"
 
-#: kbookmarkcontextmenu.cpp:53
-#, fuzzy
-#| msgid "Add Bookmark Here"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "Додај обележувач тука"
-
-#: kbookmarkcontextmenu.cpp:59
-#, fuzzy
-#| msgid "Open Folder in Bookmark Editor"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "Отвори ја папката во уредувачот за обележувачи"
-
-#: kbookmarkcontextmenu.cpp:62
-#, fuzzy
-#| msgid "Delete Folder"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "Избриши папка"
-
-#: kbookmarkcontextmenu.cpp:67
-#, fuzzy
-#| msgid "Properties"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "Својства"
-
-#: kbookmarkcontextmenu.cpp:72
-#, fuzzy
-#| msgid "Copy Link Address"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "Копирај ја адресата на врската"
-
-#: kbookmarkcontextmenu.cpp:75
-#, fuzzy
-#| msgid "Delete Bookmark"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "Избриши обележувач"
-
-#: kbookmarkcontextmenu.cpp:81
-#, fuzzy
-#| msgid "Open Folder in Tabs"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Отвори папка во ливчиња"
-
-#: kbookmarkcontextmenu.cpp:112
-#, fuzzy
-#| msgid "Cannot add bookmark with empty URL."
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "Не можам да додадам обележувач со празен URL."
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Bookmark Folder Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "Бришење на папка со обележувачи"
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Bookmark Deletion"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "Бришење на обележувач"
-
-#: kbookmarkcontextmenu.cpp:142
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark folder\n"
-#| "\"%1\"?"
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"Дали сте сигурни дека сакате да ја отстраните оваа папка со обележувачи\n"
-"„%1“?"
-
-#: kbookmarkcontextmenu.cpp:143
-#, fuzzy, qt-format
-#| msgid ""
-#| "Are you sure you wish to remove the bookmark\n"
-#| "\"%1\"?"
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"Дали сте сигурни дека сакате да го отстраните овој обележувач\n"
-"„%1“?"
-
-#: kbookmarkdialog.cpp:56
-#, fuzzy
-#| msgid "Name:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "Име:"
-
-#: kbookmarkdialog.cpp:61
-#, fuzzy
-#| msgid "Location:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "Локација:"
-
-#: kbookmarkdialog.cpp:66
-#, fuzzy
-#| msgid "Comm&ent:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "Ком&ентар:"
-
-#: kbookmarkdialog.cpp:177
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Update"
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "Ажурирај"
-
-#: kbookmarkdialog.cpp:178
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Bookmark Properties"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "Својства на обележувачот"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "&New Folder..."
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Нова папка..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Add"
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "Додај"
-
-#: kbookmarkdialog.cpp:213
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Add Bookmark"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "Додај обележувач"
-
-#: kbookmarkdialog.cpp:251
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Add Bookmarks"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "Додавање обележувачи"
-
-#: kbookmarkdialog.cpp:284
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Select Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "Избор на папка"
-
-#: kbookmarkdialog.cpp:312
-#, fuzzy
-#| msgctxt "folder name"
-#| msgid "New Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "Нова папка"
-
-#: kbookmarkdialog.cpp:342
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Create New Bookmark Folder"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "Креирање нова папка со обележувачи"
-
-#: kbookmarkdialog.cpp:343
-#, fuzzy, qt-format
-#| msgctxt "@title:window"
-#| msgid "Create New Bookmark Folder in %1"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "Креирање нова папка со обележувачи во %1"
-
-#: kbookmarkdialog.cpp:345
-#, fuzzy
-#| msgctxt "@label:textbox"
-#| msgid "New folder:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "Нова папка:"
-
-#: kbookmarkdialog.cpp:366
-#, fuzzy
-#| msgid "Bookmarks"
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Обележувачи"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, fuzzy, qt-format
 #| msgid ""
 #| "Unable to save bookmarks in %1. Reported error was: %2. This error "
@@ -262,55 +50,6 @@ msgstr ""
 "Оваа порака за грешка ќе се појави само еднаш. Причината за грешката треба "
 "да се отстрани што побрзо и најверојатно причината е полн тврд диск."
 
-#: kbookmarkmenu.cpp:234
-#, fuzzy
-#| msgid "Open Folder in Tabs"
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Отвори папка во ливчиња"
-
-#: kbookmarkmenu.cpp:238
-#, fuzzy
-#| msgid "Open all bookmarks in this folder as a new tab."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Ги отвора сите обележувачи од оваа папка како ново ливче."
-
-#: kbookmarkmenu.cpp:254
-#, fuzzy
-#| msgid "Bookmark Tabs as Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "Ливчињата во папка со обележувачи..."
-
-#: kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgid "Add a folder of bookmarks for all open tabs."
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Додава папка со обележувачи од сите отворени ливчиња."
-
-#: kbookmarkmenu.cpp:301
-#, fuzzy
-#| msgid "Edit your bookmark collection in a separate window"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "Уредете ја вашата колекција на обележувачи во посебен прозорец"
-
-#: kbookmarkmenu.cpp:323
-#, fuzzy
-#| msgid "New Bookmark Folder..."
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "Нова папка со обележувачи..."
-
-#: kbookmarkmenu.cpp:325
-#, fuzzy
-#| msgid "Create a new bookmark folder in this menu"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "Создава нова папка со обележувачи во ова мени"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -320,6 +59,268 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+#, fuzzy
+#| msgid "Add Bookmark Here"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Додај обележувач тука"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+#, fuzzy
+#| msgid "Open Folder in Bookmark Editor"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Отвори ја папката во уредувачот за обележувачи"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgid "Delete Folder"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Избриши папка"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+#, fuzzy
+#| msgid "Properties"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Својства"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+#, fuzzy
+#| msgid "Copy Link Address"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "Копирај ја адресата на врската"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+#, fuzzy
+#| msgid "Delete Bookmark"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Избриши обележувач"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Отвори папка во ливчиња"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+#, fuzzy
+#| msgid "Cannot add bookmark with empty URL."
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "Не можам да додадам обележувач со празен URL."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Bookmark Folder Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "Бришење на папка со обележувачи"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Bookmark Deletion"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Бришење на обележувач"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark folder\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"Дали сте сигурни дека сакате да ја отстраните оваа папка со обележувачи\n"
+"„%1“?"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, fuzzy, qt-format
+#| msgid ""
+#| "Are you sure you wish to remove the bookmark\n"
+#| "\"%1\"?"
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"Дали сте сигурни дека сакате да го отстраните овој обележувач\n"
+"„%1“?"
+
+#: widgets/kbookmarkdialog.cpp:56
+#, fuzzy
+#| msgid "Name:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Име:"
+
+#: widgets/kbookmarkdialog.cpp:61
+#, fuzzy
+#| msgid "Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "Локација:"
+
+#: widgets/kbookmarkdialog.cpp:66
+#, fuzzy
+#| msgid "Comm&ent:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "Ком&ентар:"
+
+#: widgets/kbookmarkdialog.cpp:177
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Update"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "Ажурирај"
+
+#: widgets/kbookmarkdialog.cpp:178
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Bookmark Properties"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Својства на обележувачот"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "&New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&Нова папка..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Add"
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "Додај"
+
+#: widgets/kbookmarkdialog.cpp:213
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmark"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Додај обележувач"
+
+#: widgets/kbookmarkdialog.cpp:251
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Add Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Додавање обележувачи"
+
+#: widgets/kbookmarkdialog.cpp:284
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Select Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Избор на папка"
+
+#: widgets/kbookmarkdialog.cpp:312
+#, fuzzy
+#| msgctxt "folder name"
+#| msgid "New Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Нова папка"
+
+#: widgets/kbookmarkdialog.cpp:342
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "Креирање нова папка со обележувачи"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, fuzzy, qt-format
+#| msgctxt "@title:window"
+#| msgid "Create New Bookmark Folder in %1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "Креирање нова папка со обележувачи во %1"
+
+#: widgets/kbookmarkdialog.cpp:345
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "New folder:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Нова папка:"
+
+#: widgets/kbookmarkdialog.cpp:366
+#, fuzzy
+#| msgid "Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Обележувачи"
+
+#: widgets/kbookmarkmenu.cpp:235
+#, fuzzy
+#| msgid "Open Folder in Tabs"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Отвори папка во ливчиња"
+
+#: widgets/kbookmarkmenu.cpp:239
+#, fuzzy
+#| msgid "Open all bookmarks in this folder as a new tab."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "Ги отвора сите обележувачи од оваа папка како ново ливче."
+
+#: widgets/kbookmarkmenu.cpp:255
+#, fuzzy
+#| msgid "Bookmark Tabs as Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "Ливчињата во папка со обележувачи..."
+
+#: widgets/kbookmarkmenu.cpp:263
+#, fuzzy
+#| msgid "Add a folder of bookmarks for all open tabs."
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "Додава папка со обележувачи од сите отворени ливчиња."
+
+#: widgets/kbookmarkmenu.cpp:302
+#, fuzzy
+#| msgid "Edit your bookmark collection in a separate window"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "Уредете ја вашата колекција на обележувачи во посебен прозорец"
+
+#: widgets/kbookmarkmenu.cpp:324
+#, fuzzy
+#| msgid "New Bookmark Folder..."
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "Нова папка со обележувачи..."
+
+#: widgets/kbookmarkmenu.cpp:326
+#, fuzzy
+#| msgid "Create a new bookmark folder in this menu"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "Создава нова папка со обележувачи во ова мени"
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

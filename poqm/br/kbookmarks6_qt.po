@@ -19,82 +19,101 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr ""
 
-#: kbookmarkcontextmenu.cpp:53
+#: kbookmarkmanager.cpp:338
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
 #, fuzzy
 #| msgid "Add Bookmark Here"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "Ouzhpennañ ur sined amañ"
 
-#: kbookmarkcontextmenu.cpp:59
+#: widgets/kbookmarkcontextmenu.cpp:59
 #, fuzzy
 #| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "Digeriñ ar renkell en aozer siloù"
 
-#: kbookmarkcontextmenu.cpp:62
+#: widgets/kbookmarkcontextmenu.cpp:62
 #, fuzzy
 #| msgid "Delete Folder"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "Distruj renkell"
 
-#: kbookmarkcontextmenu.cpp:67
+#: widgets/kbookmarkcontextmenu.cpp:67
 #, fuzzy
 #| msgid "Properties"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Perzhioù"
 
-#: kbookmarkcontextmenu.cpp:72
+#: widgets/kbookmarkcontextmenu.cpp:72
 #, fuzzy
 #| msgid "Copy Link Address"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "Eilañ chomlec'h al liamm"
 
-#: kbookmarkcontextmenu.cpp:75
+#: widgets/kbookmarkcontextmenu.cpp:75
 #, fuzzy
 #| msgid "Delete Bookmark"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Distruj ar sined"
 
-#: kbookmarkcontextmenu.cpp:81
+#: widgets/kbookmarkcontextmenu.cpp:81
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Digeriñ ar renkell er bevennigoù"
 
-#: kbookmarkcontextmenu.cpp:112
+#: widgets/kbookmarkcontextmenu.cpp:112
 #, fuzzy
 #| msgid "Cannot add bookmark with empty URL."
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "N'hellan ket ouzhpennañ ur sined gant un URL goullo."
 
-#: kbookmarkcontextmenu.cpp:141
+#: widgets/kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgid "Bookmark Folder Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "O lemel ur renkell sined"
 
-#: kbookmarkcontextmenu.cpp:141
+#: widgets/kbookmarkcontextmenu.cpp:141
 #, fuzzy
 #| msgid "Bookmark Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "Emaon o tistruj ar sined"
 
-#: kbookmarkcontextmenu.cpp:142
+#: widgets/kbookmarkcontextmenu.cpp:142
 #, fuzzy, qt-format
 #| msgid ""
 #| "Are you sure you wish to remove the bookmark folder\n"
@@ -107,7 +126,7 @@ msgstr ""
 "Ha sur oc'h bezañ mennet da zilemel ar renkell sined\n"
 "« %1 » ?"
 
-#: kbookmarkcontextmenu.cpp:143
+#: widgets/kbookmarkcontextmenu.cpp:143
 #, fuzzy, qt-format
 #| msgid ""
 #| "Are you sure you wish to remove the bookmark\n"
@@ -120,170 +139,152 @@ msgstr ""
 "Ha sur oc'h bezañ mennet da zilemel ar sined\n"
 "« %1 » ?"
 
-#: kbookmarkdialog.cpp:56
+#: widgets/kbookmarkdialog.cpp:56
 #, fuzzy
 #| msgid "Name:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Name:"
 msgstr "Anv :"
 
-#: kbookmarkdialog.cpp:61
+#: widgets/kbookmarkdialog.cpp:61
 #, fuzzy
 #| msgid "Location:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Location:"
 msgstr "Lec'hiadur :"
 
-#: kbookmarkdialog.cpp:66
+#: widgets/kbookmarkdialog.cpp:66
 #, fuzzy
 #| msgid "Comment:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Comment:"
 msgstr "Askelenn :"
 
-#: kbookmarkdialog.cpp:177
+#: widgets/kbookmarkdialog.cpp:177
 #, fuzzy
 #| msgid "&Update"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "Update"
 msgstr "&Hizivaat"
 
-#: kbookmarkdialog.cpp:178
+#: widgets/kbookmarkdialog.cpp:178
 #, fuzzy
 #| msgid "Bookmark Properties"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Bookmark Properties"
 msgstr "Perzhioù ar sinedoù"
 
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
 #, fuzzy
 #| msgid "&New Folder..."
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder..."
 msgstr "Renkell &nevez ..."
 
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 #, fuzzy
 #| msgid "&Add"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "Add"
 msgstr "&Ouzhpennañ"
 
-#: kbookmarkdialog.cpp:213
+#: widgets/kbookmarkdialog.cpp:213
 #, fuzzy
 #| msgid "Add Bookmark"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Add Bookmark"
 msgstr "Ouzhpennañ ur sined"
 
-#: kbookmarkdialog.cpp:251
+#: widgets/kbookmarkdialog.cpp:251
 #, fuzzy
 #| msgid "Add Bookmark"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Add Bookmarks"
 msgstr "Ouzhpennañ ur sined"
 
-#: kbookmarkdialog.cpp:284
+#: widgets/kbookmarkdialog.cpp:284
 #, fuzzy
 #| msgid "Select Folder"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Select Folder"
 msgstr "Dibabit ur renkell"
 
-#: kbookmarkdialog.cpp:312
+#: widgets/kbookmarkdialog.cpp:312
 #, fuzzy
 #| msgid "New Folder"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "New Folder"
 msgstr "Renkell nevez"
 
-#: kbookmarkdialog.cpp:342
+#: widgets/kbookmarkdialog.cpp:342
 #, fuzzy
 #| msgid "Create New Bookmark Folder"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "Krouiñ ur renkell &nevez ar sinedoù"
 
-#: kbookmarkdialog.cpp:343
+#: widgets/kbookmarkdialog.cpp:343
 #, fuzzy, qt-format
 #| msgid "Create New Bookmark Folder in %1"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder in %1"
 msgstr "Krouiñ ur renkell &nevez ar sinedoù e %1"
 
-#: kbookmarkdialog.cpp:345
+#: widgets/kbookmarkdialog.cpp:345
 #, fuzzy
 #| msgid "New folder:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "New folder:"
 msgstr "Renkell nevez :"
 
-#: kbookmarkdialog.cpp:366
+#: widgets/kbookmarkdialog.cpp:366
 #, fuzzy
 #| msgid "Bookmarks"
 msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Sinedoù"
 
-#: kbookmarkmanager.cpp:360
-#, qt-format
-msgctxt "KBookmarkManager|"
-msgid ""
-"Unable to save bookmarks in %1. Reported error was: %2. This error message "
-"will only be shown once. The cause of the error needs to be fixed as quickly "
-"as possible, which is most likely a full hard drive."
-msgstr ""
-
-#: kbookmarkmenu.cpp:234
+#: widgets/kbookmarkmenu.cpp:235
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Digeriñ ar renkell er bevennigoù"
 
-#: kbookmarkmenu.cpp:238
+#: widgets/kbookmarkmenu.cpp:239
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr ""
 
-#: kbookmarkmenu.cpp:254
+#: widgets/kbookmarkmenu.cpp:255
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "&Gwel nevez"
 
-#: kbookmarkmenu.cpp:262
+#: widgets/kbookmarkmenu.cpp:263
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr ""
 
-#: kbookmarkmenu.cpp:301
+#: widgets/kbookmarkmenu.cpp:302
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr ""
 
-#: kbookmarkmenu.cpp:323
+#: widgets/kbookmarkmenu.cpp:324
 #, fuzzy
 #| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Renkell &nevez ar sinedoù ..."
 
-#: kbookmarkmenu.cpp:325
+#: widgets/kbookmarkmenu.cpp:326
 #, fuzzy
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Krouiñ ur renkell nevez"
-
-#: keditbookmarks.cpp:59
-msgctxt "QObject|"
-msgid "keditbookmarks could not be started"
-msgstr ""
-
-#: keditbookmarks.cpp:66
-msgctxt "QObject|"
-msgid "The keditbookmarks executable was not found"
-msgstr ""
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

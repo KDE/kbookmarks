@@ -18,76 +18,95 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 #, fuzzy
 #| msgid "--- separator ---"
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- বিভাজক ---"
 
-#: kbookmarkcontextmenu.cpp:53
+#: kbookmarkmanager.cpp:338
+#, qt-format
+msgctxt "KBookmarkManager|"
+msgid ""
+"Unable to save bookmarks in %1. Reported error was: %2. This error message "
+"will only be shown once. The cause of the error needs to be fixed as quickly "
+"as possible, which is most likely a full hard drive."
+msgstr ""
+
+#: keditbookmarks.cpp:59
+msgctxt "QObject|"
+msgid "keditbookmarks could not be started"
+msgstr ""
+
+#: keditbookmarks.cpp:66
+msgctxt "QObject|"
+msgid "The keditbookmarks executable was not found"
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
 #, fuzzy
 #| msgid "Add Bookmark Here"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "এখানে বুকমার্ক যোগ করো"
 
-#: kbookmarkcontextmenu.cpp:59
+#: widgets/kbookmarkcontextmenu.cpp:59
 #, fuzzy
 #| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "ফোল্ডার বুকমার্ক সম্পাদকে খোলো"
 
-#: kbookmarkcontextmenu.cpp:62
+#: widgets/kbookmarkcontextmenu.cpp:62
 #, fuzzy
 #| msgid "Delete Folder"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "ফোল্ডার মুছে ফেল"
 
-#: kbookmarkcontextmenu.cpp:67
+#: widgets/kbookmarkcontextmenu.cpp:67
 #, fuzzy
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "এখানে বুকমার্ক যোগ করো"
 
-#: kbookmarkcontextmenu.cpp:72
+#: widgets/kbookmarkcontextmenu.cpp:72
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr ""
 
-#: kbookmarkcontextmenu.cpp:75
+#: widgets/kbookmarkcontextmenu.cpp:75
 #, fuzzy
 #| msgid "Delete Bookmark"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "বুকমার্ক মুছে ফেল"
 
-#: kbookmarkcontextmenu.cpp:81
+#: widgets/kbookmarkcontextmenu.cpp:81
 #, fuzzy
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "ফোল্ডার বুকমার্ক সম্পাদকে খোলো"
 
-#: kbookmarkcontextmenu.cpp:112
+#: widgets/kbookmarkcontextmenu.cpp:112
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr ""
 
-#: kbookmarkcontextmenu.cpp:141
+#: widgets/kbookmarkcontextmenu.cpp:141
 #, fuzzy
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "&নতুন বুকমার্ক ফোল্ডার..."
 
-#: kbookmarkcontextmenu.cpp:141
+#: widgets/kbookmarkcontextmenu.cpp:141
 #, fuzzy
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "এখানে বুকমার্ক যোগ করো"
 
-#: kbookmarkcontextmenu.cpp:142
+#: widgets/kbookmarkcontextmenu.cpp:142
 #, fuzzy, qt-format
 #| msgid ""
 #| "Are you sure you wish to remove the bookmark folder\n"
@@ -100,7 +119,7 @@ msgstr ""
 "আপনি কি \"%1\"\n"
 "বুকমার্ক ফোল্ডারটি  মুছে ফেলার ব্যাপারে নিশ্চিত?"
 
-#: kbookmarkcontextmenu.cpp:143
+#: widgets/kbookmarkcontextmenu.cpp:143
 #, fuzzy, qt-format
 #| msgid ""
 #| "Are you sure you wish to remove the bookmark\n"
@@ -113,163 +132,145 @@ msgstr ""
 "আপনি কি \"%1\"\n"
 "বুকমার্কটি মুছে ফেলার ব্যাপারে নিশ্চিত?"
 
-#: kbookmarkdialog.cpp:56
+#: widgets/kbookmarkdialog.cpp:56
 #, fuzzy
 #| msgid "Name:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Name:"
 msgstr "নাম:"
 
-#: kbookmarkdialog.cpp:61
+#: widgets/kbookmarkdialog.cpp:61
 #, fuzzy
 #| msgid "Location:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Location:"
 msgstr "অবস্থান:"
 
-#: kbookmarkdialog.cpp:66
+#: widgets/kbookmarkdialog.cpp:66
 #, fuzzy
 #| msgid "Comment:"
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "Comment:"
 msgstr "মন্তব্য:"
 
-#: kbookmarkdialog.cpp:177
+#: widgets/kbookmarkdialog.cpp:177
 #, fuzzy
 msgctxt "KBookmarkDialog|@action:button"
 msgid "Update"
 msgstr "তারিখ"
 
-#: kbookmarkdialog.cpp:178
+#: widgets/kbookmarkdialog.cpp:178
 #, fuzzy
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Bookmark Properties"
 msgstr "এখানে বুকমার্ক যোগ করো"
 
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
 #, fuzzy
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder..."
 msgstr "&নতুন ফোল্ডার..."
 
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 #, fuzzy
 msgctxt "KBookmarkDialog|@action:button"
 msgid "Add"
 msgstr "যো&গ"
 
-#: kbookmarkdialog.cpp:213
+#: widgets/kbookmarkdialog.cpp:213
 #, fuzzy
 #| msgid "Add Bookmark"
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Add Bookmark"
 msgstr "বুকমার্ক যোগ করো"
 
-#: kbookmarkdialog.cpp:251
+#: widgets/kbookmarkdialog.cpp:251
 #, fuzzy
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Add Bookmarks"
 msgstr "বুকমার্ক যোগ করো"
 
-#: kbookmarkdialog.cpp:284
+#: widgets/kbookmarkdialog.cpp:284
 #, fuzzy
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Select Folder"
 msgstr "ফোল্ডার নির্বাচন করো"
 
-#: kbookmarkdialog.cpp:312
+#: widgets/kbookmarkdialog.cpp:312
 #, fuzzy
 msgctxt "KBookmarkDialog|@title:window"
 msgid "New Folder"
 msgstr "নতুন ফোল্ডার"
 
-#: kbookmarkdialog.cpp:342
+#: widgets/kbookmarkdialog.cpp:342
 #, fuzzy
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder"
 msgstr "নতুন বুকমার্ক ফোল্ডার তৈরি করো"
 
-#: kbookmarkdialog.cpp:343
+#: widgets/kbookmarkdialog.cpp:343
 #, fuzzy, qt-format
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Create New Bookmark Folder in %1"
 msgstr "%1-এ নতুন বুকমার্ক ফোল্ডার তৈরি করো"
 
-#: kbookmarkdialog.cpp:345
+#: widgets/kbookmarkdialog.cpp:345
 #, fuzzy
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "New folder:"
 msgstr "নতুন ফোল্ডার:"
 
-#: kbookmarkdialog.cpp:366
+#: widgets/kbookmarkdialog.cpp:366
 #, fuzzy
 msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "বুকমার্ক"
 
-#: kbookmarkmanager.cpp:360
-#, qt-format
-msgctxt "KBookmarkManager|"
-msgid ""
-"Unable to save bookmarks in %1. Reported error was: %2. This error message "
-"will only be shown once. The cause of the error needs to be fixed as quickly "
-"as possible, which is most likely a full hard drive."
-msgstr ""
-
-#: kbookmarkmenu.cpp:234
+#: widgets/kbookmarkmenu.cpp:235
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "ফোল্ডার বুকমার্ক সম্পাদকে খোলো"
 
-#: kbookmarkmenu.cpp:238
+#: widgets/kbookmarkmenu.cpp:239
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr ""
 
-#: kbookmarkmenu.cpp:254
+#: widgets/kbookmarkmenu.cpp:255
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "ট্যাবগুলি ফোল্ডার হিসাবে বুকমার্ক করো"
 
-#: kbookmarkmenu.cpp:262
+#: widgets/kbookmarkmenu.cpp:263
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "সবকটি প্রদর্শিত ট্যাব মিলিয়ে একটি বুকমার্ক ফোল্ডার যোগ করা হবে"
 
-#: kbookmarkmenu.cpp:301
+#: widgets/kbookmarkmenu.cpp:302
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "আলাদা উইণ্ডোয় বুকমার্কের সংগ্রহ সম্পাদনা করা হবে"
 
-#: kbookmarkmenu.cpp:323
+#: widgets/kbookmarkmenu.cpp:324
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "&নতুন বুকমার্ক ফোল্ডার..."
 
-#: kbookmarkmenu.cpp:325
+#: widgets/kbookmarkmenu.cpp:326
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "এই মেনুতে নতুন বুকমার্ক ফোল্ডার তৈরি করো"
-
-#: keditbookmarks.cpp:59
-msgctxt "QObject|"
-msgid "keditbookmarks could not be started"
-msgstr ""
-
-#: keditbookmarks.cpp:66
-msgctxt "QObject|"
-msgid "The keditbookmarks executable was not found"
-msgstr ""
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

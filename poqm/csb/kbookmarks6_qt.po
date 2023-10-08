@@ -21,209 +21,12 @@ msgstr ""
 "X-Generator: Lokalize 0.3\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr ""
 
-#: kbookmarkcontextmenu.cpp:53
-#, fuzzy
-#| msgid "Show Bookmarks"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "Pòkôżë załóżczi"
-
-#: kbookmarkcontextmenu.cpp:59
-#, fuzzy
-#| msgid "One Folder"
-#| msgid_plural "%1 Folders"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "Jeden katalog"
-
-#: kbookmarkcontextmenu.cpp:62
-#, fuzzy
-#| msgid "One Folder"
-#| msgid_plural "%1 Folders"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "Jeden katalog"
-
-#: kbookmarkcontextmenu.cpp:67
-#, fuzzy
-#| msgid "Show Bookmarks"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "Pòkôżë załóżczi"
-
-#: kbookmarkcontextmenu.cpp:72
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr ""
-
-#: kbookmarkcontextmenu.cpp:75
-#, fuzzy
-#| msgid "Show Bookmarks"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "Pòkôżë załóżczi"
-
-#: kbookmarkcontextmenu.cpp:81
-#, fuzzy
-#| msgid "One Folder"
-#| msgid_plural "%1 Folders"
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Jeden katalog"
-
-#: kbookmarkcontextmenu.cpp:112
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr ""
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid ""
-#| "Create new folder in:\n"
-#| "%1"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr ""
-"Ùsôdzë nowi katalog w:\n"
-"%1"
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgid "Show Bookmarks"
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "Pòkôżë załóżczi"
-
-#: kbookmarkcontextmenu.cpp:142
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-
-#: kbookmarkcontextmenu.cpp:143
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-
-#: kbookmarkdialog.cpp:56
-#, fuzzy
-#| msgid "By Name"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "Wedle miona"
-
-#: kbookmarkdialog.cpp:61
-#, fuzzy
-#| msgid "&Location:"
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "&Lokalizacëjô:"
-
-#: kbookmarkdialog.cpp:66
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr ""
-
-#: kbookmarkdialog.cpp:177
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr ""
-
-#: kbookmarkdialog.cpp:178
-#, fuzzy
-#| msgid "Show Bookmarks"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "Pòkôżë załóżczi"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgid "New Folder..."
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "Nowi katalog..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr ""
-
-#: kbookmarkdialog.cpp:213
-#, fuzzy
-#| msgid "Show Bookmarks"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "Pòkôżë załóżczi"
-
-#: kbookmarkdialog.cpp:251
-#, fuzzy
-#| msgid "Show Bookmarks"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "Pòkôżë załóżczi"
-
-#: kbookmarkdialog.cpp:284
-#, fuzzy
-#| msgid "One Folder"
-#| msgid_plural "%1 Folders"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "Jeden katalog"
-
-#: kbookmarkdialog.cpp:312
-#, fuzzy
-#| msgid "New Folder..."
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "Nowi katalog..."
-
-#: kbookmarkdialog.cpp:342
-#, fuzzy
-#| msgid ""
-#| "Create new folder in:\n"
-#| "%1"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr ""
-"Ùsôdzë nowi katalog w:\n"
-"%1"
-
-#: kbookmarkdialog.cpp:343
-#, fuzzy, qt-format
-#| msgid ""
-#| "Create new folder in:\n"
-#| "%1"
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr ""
-"Ùsôdzë nowi katalog w:\n"
-"%1"
-
-#: kbookmarkdialog.cpp:345
-#, fuzzy
-#| msgid "New Folder..."
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "Nowi katalog..."
-
-#: kbookmarkdialog.cpp:366
-#, fuzzy
-#| msgid "Show Bookmarks"
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "Pòkôżë załóżczi"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -231,62 +34,6 @@ msgid ""
 "will only be shown once. The cause of the error needs to be fixed as quickly "
 "as possible, which is most likely a full hard drive."
 msgstr ""
-
-#: kbookmarkmenu.cpp:234
-#, fuzzy
-#| msgid "One Folder"
-#| msgid_plural "%1 Folders"
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "Jeden katalog"
-
-#: kbookmarkmenu.cpp:238
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr ""
-
-#: kbookmarkmenu.cpp:254
-#, fuzzy
-#| msgid ""
-#| "Create new folder in:\n"
-#| "%1"
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr ""
-"Ùsôdzë nowi katalog w:\n"
-"%1"
-
-#: kbookmarkmenu.cpp:262
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr ""
-
-#: kbookmarkmenu.cpp:301
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr ""
-
-#: kbookmarkmenu.cpp:323
-#, fuzzy
-#| msgid ""
-#| "Create new folder in:\n"
-#| "%1"
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr ""
-"Ùsôdzë nowi katalog w:\n"
-"%1"
-
-#: kbookmarkmenu.cpp:325
-#, fuzzy
-#| msgid ""
-#| "Create new folder in:\n"
-#| "%1"
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr ""
-"Ùsôdzë nowi katalog w:\n"
-"%1"
 
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
@@ -297,6 +44,260 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+#, fuzzy
+#| msgid "Show Bookmarks"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "Pòkôżë załóżczi"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+#, fuzzy
+#| msgid "One Folder"
+#| msgid_plural "%1 Folders"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "Jeden katalog"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+#, fuzzy
+#| msgid "One Folder"
+#| msgid_plural "%1 Folders"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "Jeden katalog"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+#, fuzzy
+#| msgid "Show Bookmarks"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "Pòkôżë załóżczi"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+#, fuzzy
+#| msgid "Show Bookmarks"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "Pòkôżë załóżczi"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+#, fuzzy
+#| msgid "One Folder"
+#| msgid_plural "%1 Folders"
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Jeden katalog"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr ""
+"Ùsôdzë nowi katalog w:\n"
+"%1"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+#| msgid "Show Bookmarks"
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "Pòkôżë załóżczi"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:56
+#, fuzzy
+#| msgid "By Name"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "Wedle miona"
+
+#: widgets/kbookmarkdialog.cpp:61
+#, fuzzy
+#| msgid "&Location:"
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "&Lokalizacëjô:"
+
+#: widgets/kbookmarkdialog.cpp:66
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:177
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:178
+#, fuzzy
+#| msgid "Show Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "Pòkôżë załóżczi"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgid "New Folder..."
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "Nowi katalog..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:213
+#, fuzzy
+#| msgid "Show Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "Pòkôżë załóżczi"
+
+#: widgets/kbookmarkdialog.cpp:251
+#, fuzzy
+#| msgid "Show Bookmarks"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "Pòkôżë załóżczi"
+
+#: widgets/kbookmarkdialog.cpp:284
+#, fuzzy
+#| msgid "One Folder"
+#| msgid_plural "%1 Folders"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "Jeden katalog"
+
+#: widgets/kbookmarkdialog.cpp:312
+#, fuzzy
+#| msgid "New Folder..."
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "Nowi katalog..."
+
+#: widgets/kbookmarkdialog.cpp:342
+#, fuzzy
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr ""
+"Ùsôdzë nowi katalog w:\n"
+"%1"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, fuzzy, qt-format
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr ""
+"Ùsôdzë nowi katalog w:\n"
+"%1"
+
+#: widgets/kbookmarkdialog.cpp:345
+#, fuzzy
+#| msgid "New Folder..."
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "Nowi katalog..."
+
+#: widgets/kbookmarkdialog.cpp:366
+#, fuzzy
+#| msgid "Show Bookmarks"
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "Pòkôżë załóżczi"
+
+#: widgets/kbookmarkmenu.cpp:235
+#, fuzzy
+#| msgid "One Folder"
+#| msgid_plural "%1 Folders"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "Jeden katalog"
+
+#: widgets/kbookmarkmenu.cpp:239
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr ""
+
+#: widgets/kbookmarkmenu.cpp:255
+#, fuzzy
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr ""
+"Ùsôdzë nowi katalog w:\n"
+"%1"
+
+#: widgets/kbookmarkmenu.cpp:263
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr ""
+
+#: widgets/kbookmarkmenu.cpp:302
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr ""
+
+#: widgets/kbookmarkmenu.cpp:324
+#, fuzzy
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr ""
+"Ùsôdzë nowi katalog w:\n"
+"%1"
+
+#: widgets/kbookmarkmenu.cpp:326
+#, fuzzy
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr ""
+"Ùsôdzë nowi katalog w:\n"
+"%1"
 
 #, fuzzy
 #~| msgid "Show Bookmarks"

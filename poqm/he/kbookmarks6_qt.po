@@ -31,183 +31,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 #, fuzzy
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- מפריד ---"
 
-#: kbookmarkcontextmenu.cpp:53
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "הוסף סימנייה כאן"
-
-#: kbookmarkcontextmenu.cpp:59
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "פתח תיקייה בעורך הסימניות"
-
-#: kbookmarkcontextmenu.cpp:62
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "מחק תיקייה"
-
-#: kbookmarkcontextmenu.cpp:67
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr "מאפיינים"
-
-#: kbookmarkcontextmenu.cpp:72
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr "העתק כתובת הקישור"
-
-#: kbookmarkcontextmenu.cpp:75
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "מחק סימנייה"
-
-#: kbookmarkcontextmenu.cpp:81
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "פתח תיקייה בלשוניות"
-
-#: kbookmarkcontextmenu.cpp:112
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr "אין אפשרות להוסיף סימנייה עם כתובת ריקה."
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "מחיקת תיקיית סימניות"
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr "מחיקת סימנייה"
-
-#: kbookmarkcontextmenu.cpp:142
-#, fuzzy, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-"האם אתה בטוח שברצונך להסיר את תיקיית הסימניות\n"
-"\"%1\"?"
-
-#: kbookmarkcontextmenu.cpp:143
-#, fuzzy, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-"האם אתה בטוח שברצונך להסיר את הסימנייה\n"
-"\"%1\"?"
-
-#: kbookmarkdialog.cpp:56
-#, fuzzy
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "שם:"
-
-#: kbookmarkdialog.cpp:61
-#, fuzzy
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "מיקום:"
-
-#: kbookmarkdialog.cpp:66
-#, fuzzy
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr "הערה:"
-
-#: kbookmarkdialog.cpp:177
-#, fuzzy
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr "עדכן"
-
-#: kbookmarkdialog.cpp:178
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr "מאפייני הסימנייה"
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-#, fuzzy
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&תיקייה חדשה..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-#, fuzzy
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr "הוסף"
-
-#: kbookmarkdialog.cpp:213
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr "הוסף לסימניות"
-
-#: kbookmarkdialog.cpp:251
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr "הוסף סימניות"
-
-#: kbookmarkdialog.cpp:284
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "בחר תיקייה"
-
-#: kbookmarkdialog.cpp:312
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "תיקייה חדשה"
-
-#: kbookmarkdialog.cpp:342
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "יצירת תיקיית סימניות חדשה"
-
-#: kbookmarkdialog.cpp:343
-#, fuzzy, qt-format
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr "יצירת תיקיית סימניות חדשה ב־%1"
-
-#: kbookmarkdialog.cpp:345
-#, fuzzy
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "תיקייה חדשה:"
-
-#: kbookmarkdialog.cpp:366
-#, fuzzy
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr "סימניות"
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, fuzzy, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -219,48 +49,6 @@ msgstr ""
 "תוצג פעם אחת בלבד. יש לתקן בהקדם האפשרי את הגורם לשגיאה, שהוא ככל הנראה כונן "
 "קשיח מלא."
 
-#: kbookmarkmenu.cpp:234
-#, fuzzy
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "פתח תיקייה בלשוניות"
-
-#: kbookmarkmenu.cpp:238
-#, fuzzy
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr "פתח את כל הסימניות בתיקייה זאת בלשונית חדשה."
-
-#: kbookmarkmenu.cpp:254
-#, fuzzy
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "הוסף לשוניות לסימניות בתור תיקייה..."
-
-#: kbookmarkmenu.cpp:262
-#, fuzzy
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr "הוסף תיקיית סימניות עבור כל הלשוניות הפתוחות."
-
-#: kbookmarkmenu.cpp:301
-#, fuzzy
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr "עריכת אוסף הסימניות שלך בחלון נפרד"
-
-#: kbookmarkmenu.cpp:323
-#, fuzzy
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "תיקיית סימניות חדשה..."
-
-#: kbookmarkmenu.cpp:325
-#, fuzzy
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr "צור תיקיית סימניות חדשה בתפריט זה"
-
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
@@ -270,6 +58,219 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "הוסף סימנייה כאן"
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "פתח תיקייה בעורך הסימניות"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "מחק תיקייה"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr "מאפיינים"
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr "העתק כתובת הקישור"
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "מחק סימנייה"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "פתח תיקייה בלשוניות"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr "אין אפשרות להוסיף סימנייה עם כתובת ריקה."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "מחיקת תיקיית סימניות"
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr "מחיקת סימנייה"
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, fuzzy, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+"האם אתה בטוח שברצונך להסיר את תיקיית הסימניות\n"
+"\"%1\"?"
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, fuzzy, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+"האם אתה בטוח שברצונך להסיר את הסימנייה\n"
+"\"%1\"?"
+
+#: widgets/kbookmarkdialog.cpp:56
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "שם:"
+
+#: widgets/kbookmarkdialog.cpp:61
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "מיקום:"
+
+#: widgets/kbookmarkdialog.cpp:66
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr "הערה:"
+
+#: widgets/kbookmarkdialog.cpp:177
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr "עדכן"
+
+#: widgets/kbookmarkdialog.cpp:178
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr "מאפייני הסימנייה"
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "&תיקייה חדשה..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr "הוסף"
+
+#: widgets/kbookmarkdialog.cpp:213
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr "הוסף לסימניות"
+
+#: widgets/kbookmarkdialog.cpp:251
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr "הוסף סימניות"
+
+#: widgets/kbookmarkdialog.cpp:284
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "בחר תיקייה"
+
+#: widgets/kbookmarkdialog.cpp:312
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "תיקייה חדשה"
+
+#: widgets/kbookmarkdialog.cpp:342
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "יצירת תיקיית סימניות חדשה"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, fuzzy, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr "יצירת תיקיית סימניות חדשה ב־%1"
+
+#: widgets/kbookmarkdialog.cpp:345
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "תיקייה חדשה:"
+
+#: widgets/kbookmarkdialog.cpp:366
+#, fuzzy
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr "סימניות"
+
+#: widgets/kbookmarkmenu.cpp:235
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "פתח תיקייה בלשוניות"
+
+#: widgets/kbookmarkmenu.cpp:239
+#, fuzzy
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr "פתח את כל הסימניות בתיקייה זאת בלשונית חדשה."
+
+#: widgets/kbookmarkmenu.cpp:255
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "הוסף לשוניות לסימניות בתור תיקייה..."
+
+#: widgets/kbookmarkmenu.cpp:263
+#, fuzzy
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr "הוסף תיקיית סימניות עבור כל הלשוניות הפתוחות."
+
+#: widgets/kbookmarkmenu.cpp:302
+#, fuzzy
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr "עריכת אוסף הסימניות שלך בחלון נפרד"
+
+#: widgets/kbookmarkmenu.cpp:324
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "תיקיית סימניות חדשה..."
+
+#: widgets/kbookmarkmenu.cpp:326
+#, fuzzy
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr "צור תיקיית סימניות חדשה בתפריט זה"
 
 #, fuzzy
 #~ msgctxt "KNSBookmarkImporterImpl|"

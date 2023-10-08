@@ -19,169 +19,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Qt-Contexts: true\n"
 
-#: kbookmark.cpp:317
+#: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr ""
 
-#: kbookmarkcontextmenu.cpp:53
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Add Bookmark Here"
-msgstr "പുതിയ ഫോള്‍ഡര്‍..."
-
-#: kbookmarkcontextmenu.cpp:59
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Bookmark Editor"
-msgstr "ഒരു ഫോള്‍ഡര്‍"
-
-#: kbookmarkcontextmenu.cpp:62
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Folder"
-msgstr "ഫയല്‍ വെട്ടിമാറ്റുക"
-
-#: kbookmarkcontextmenu.cpp:67
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Properties"
-msgstr ""
-
-#: kbookmarkcontextmenu.cpp:72
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Copy Link Address"
-msgstr ""
-
-#: kbookmarkcontextmenu.cpp:75
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Delete Bookmark"
-msgstr "വെട്ടിമാറ്റുക"
-
-#: kbookmarkcontextmenu.cpp:81
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "ഒരു ഫോള്‍ഡര്‍"
-
-#: kbookmarkcontextmenu.cpp:112
-msgctxt "KBookmarkContextMenu|@info"
-msgid "Cannot add bookmark with empty URL."
-msgstr ""
-
-#: kbookmarkcontextmenu.cpp:141
-#, fuzzy
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Folder Deletion"
-msgstr "പുതിയ ഫോള്‍ഡര്‍..."
-
-#: kbookmarkcontextmenu.cpp:141
-msgctxt "KBookmarkContextMenu|@title:window"
-msgid "Bookmark Deletion"
-msgstr ""
-
-#: kbookmarkcontextmenu.cpp:142
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark folder\n"
-"\"%1\"?"
-msgstr ""
-
-#: kbookmarkcontextmenu.cpp:143
-#, qt-format
-msgctxt "KBookmarkContextMenu|"
-msgid ""
-"Are you sure you wish to remove the bookmark\n"
-"\"%1\"?"
-msgstr ""
-
-#: kbookmarkdialog.cpp:56
-#, fuzzy
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Name:"
-msgstr "പേരനുസരിച്ചു്"
-
-#: kbookmarkdialog.cpp:61
-#, fuzzy
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Location:"
-msgstr "വിവരം"
-
-#: kbookmarkdialog.cpp:66
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "Comment:"
-msgstr ""
-
-#: kbookmarkdialog.cpp:177
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Update"
-msgstr ""
-
-#: kbookmarkdialog.cpp:178
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Bookmark Properties"
-msgstr ""
-
-#: kbookmarkdialog.cpp:208 kbookmarkdialog.cpp:246 kbookmarkdialog.cpp:280
-#, fuzzy
-msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "പുതിയ ഫോള്‍ഡര്‍..."
-
-#: kbookmarkdialog.cpp:212 kbookmarkdialog.cpp:250
-msgctxt "KBookmarkDialog|@action:button"
-msgid "Add"
-msgstr ""
-
-#: kbookmarkdialog.cpp:213
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmark"
-msgstr ""
-
-#: kbookmarkdialog.cpp:251
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Add Bookmarks"
-msgstr ""
-
-#: kbookmarkdialog.cpp:284
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Select Folder"
-msgstr "ഒരു ഫോള്‍ഡര്‍"
-
-#: kbookmarkdialog.cpp:312
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "New Folder"
-msgstr "പുതിയ ഫോള്‍ഡര്‍"
-
-#: kbookmarkdialog.cpp:342
-#, fuzzy
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder"
-msgstr "വിശദമായ കാഴ്ച"
-
-#: kbookmarkdialog.cpp:343
-#, fuzzy, qt-format
-msgctxt "KBookmarkDialog|@title:window"
-msgid "Create New Bookmark Folder in %1"
-msgstr ""
-"ഇവിടെ പുതിയ ഫോള്‍ഡര്‍ ഉണ്ടാക്കുക:\n"
-"%1"
-
-#: kbookmarkdialog.cpp:345
-#, fuzzy
-msgctxt "KBookmarkDialog|@label:textbox"
-msgid "New folder:"
-msgstr "പുതിയ ഫോള്‍ഡര്‍"
-
-#: kbookmarkdialog.cpp:366
-msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
-msgid "Bookmarks"
-msgstr ""
-
-#: kbookmarkmanager.cpp:360
+#: kbookmarkmanager.cpp:338
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
@@ -189,47 +32,6 @@ msgid ""
 "will only be shown once. The cause of the error needs to be fixed as quickly "
 "as possible, which is most likely a full hard drive."
 msgstr ""
-
-#: kbookmarkmenu.cpp:234
-#, fuzzy
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Open Folder in Tabs"
-msgstr "ഒരു ഫോള്‍ഡര്‍"
-
-#: kbookmarkmenu.cpp:238
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Open all bookmarks in this folder as a new tab"
-msgstr ""
-
-#: kbookmarkmenu.cpp:254
-#, fuzzy
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
-msgstr "പുതിയ ഫോള്‍ഡര്‍..."
-
-#: kbookmarkmenu.cpp:262
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Add a folder of bookmarks for all open tabs"
-msgstr ""
-
-#: kbookmarkmenu.cpp:301
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Edit your bookmark collection in a separate window"
-msgstr ""
-
-#: kbookmarkmenu.cpp:323
-#, fuzzy
-msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
-msgstr "പുതിയ ഫോള്‍ഡര്‍..."
-
-#: kbookmarkmenu.cpp:325
-#, fuzzy
-msgctxt "KBookmarkMenu|@info:tooltip"
-msgid "Create a new bookmark folder in this menu"
-msgstr ""
-"ഇവിടെ പുതിയ ഫോള്‍ഡര്‍ ഉണ്ടാക്കുക:\n"
-"%1"
 
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
@@ -240,6 +42,205 @@ msgstr ""
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
 msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:53
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Add Bookmark Here"
+msgstr "പുതിയ ഫോള്‍ഡര്‍..."
+
+#: widgets/kbookmarkcontextmenu.cpp:59
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Bookmark Editor"
+msgstr "ഒരു ഫോള്‍ഡര്‍"
+
+#: widgets/kbookmarkcontextmenu.cpp:62
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Folder"
+msgstr "ഫയല്‍ വെട്ടിമാറ്റുക"
+
+#: widgets/kbookmarkcontextmenu.cpp:67
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Properties"
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:72
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Copy Link Address"
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:75
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Delete Bookmark"
+msgstr "വെട്ടിമാറ്റുക"
+
+#: widgets/kbookmarkcontextmenu.cpp:81
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "ഒരു ഫോള്‍ഡര്‍"
+
+#: widgets/kbookmarkcontextmenu.cpp:112
+msgctxt "KBookmarkContextMenu|@info"
+msgid "Cannot add bookmark with empty URL."
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+#, fuzzy
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Folder Deletion"
+msgstr "പുതിയ ഫോള്‍ഡര്‍..."
+
+#: widgets/kbookmarkcontextmenu.cpp:141
+msgctxt "KBookmarkContextMenu|@title:window"
+msgid "Bookmark Deletion"
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:142
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark folder\n"
+"\"%1\"?"
+msgstr ""
+
+#: widgets/kbookmarkcontextmenu.cpp:143
+#, qt-format
+msgctxt "KBookmarkContextMenu|"
+msgid ""
+"Are you sure you wish to remove the bookmark\n"
+"\"%1\"?"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:56
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Name:"
+msgstr "പേരനുസരിച്ചു്"
+
+#: widgets/kbookmarkdialog.cpp:61
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Location:"
+msgstr "വിവരം"
+
+#: widgets/kbookmarkdialog.cpp:66
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "Comment:"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:177
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Update"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:178
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Bookmark Properties"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
+#: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+msgctxt "KBookmarkDialog|@action:button"
+msgid "&New Folder..."
+msgstr "പുതിയ ഫോള്‍ഡര്‍..."
+
+#: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
+msgctxt "KBookmarkDialog|@action:button"
+msgid "Add"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:213
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmark"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:251
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Add Bookmarks"
+msgstr ""
+
+#: widgets/kbookmarkdialog.cpp:284
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Select Folder"
+msgstr "ഒരു ഫോള്‍ഡര്‍"
+
+#: widgets/kbookmarkdialog.cpp:312
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "New Folder"
+msgstr "പുതിയ ഫോള്‍ഡര്‍"
+
+#: widgets/kbookmarkdialog.cpp:342
+#, fuzzy
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder"
+msgstr "വിശദമായ കാഴ്ച"
+
+#: widgets/kbookmarkdialog.cpp:343
+#, fuzzy, qt-format
+msgctxt "KBookmarkDialog|@title:window"
+msgid "Create New Bookmark Folder in %1"
+msgstr ""
+"ഇവിടെ പുതിയ ഫോള്‍ഡര്‍ ഉണ്ടാക്കുക:\n"
+"%1"
+
+#: widgets/kbookmarkdialog.cpp:345
+#, fuzzy
+msgctxt "KBookmarkDialog|@label:textbox"
+msgid "New folder:"
+msgstr "പുതിയ ഫോള്‍ഡര്‍"
+
+#: widgets/kbookmarkdialog.cpp:366
+msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
+msgid "Bookmarks"
+msgstr ""
+
+#: widgets/kbookmarkmenu.cpp:235
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Open Folder in Tabs"
+msgstr "ഒരു ഫോള്‍ഡര്‍"
+
+#: widgets/kbookmarkmenu.cpp:239
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Open all bookmarks in this folder as a new tab"
+msgstr ""
+
+#: widgets/kbookmarkmenu.cpp:255
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "Bookmark Tabs as Folder..."
+msgstr "പുതിയ ഫോള്‍ഡര്‍..."
+
+#: widgets/kbookmarkmenu.cpp:263
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Add a folder of bookmarks for all open tabs"
+msgstr ""
+
+#: widgets/kbookmarkmenu.cpp:302
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Edit your bookmark collection in a separate window"
+msgstr ""
+
+#: widgets/kbookmarkmenu.cpp:324
+#, fuzzy
+msgctxt "KBookmarkMenu|@action:inmenu"
+msgid "New Bookmark Folder..."
+msgstr "പുതിയ ഫോള്‍ഡര്‍..."
+
+#: widgets/kbookmarkmenu.cpp:326
+#, fuzzy
+msgctxt "KBookmarkMenu|@info:tooltip"
+msgid "Create a new bookmark folder in this menu"
+msgstr ""
+"ഇവിടെ പുതിയ ഫോള്‍ഡര്‍ ഉണ്ടാക്കുക:\n"
+"%1"
 
 #, fuzzy
 #~ msgctxt "KonqBookmarkContextMenu|@action:inmenu"
