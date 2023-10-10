@@ -284,7 +284,7 @@ msgstr "Crea una carpeta nova d'adreces d'interés en este menú"
 #: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
 msgid "Hide in Toolbar"
-msgstr "Oculta en la barra d'eines"
+msgstr "Amaga en la barra d'eines"
 
 #: konqbookmarkmenu.cpp:147 konqbookmarkmenu.cpp:163
 msgctxt "KonqBookmarkContextMenu|@action:inmenu"
