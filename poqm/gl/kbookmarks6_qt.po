@@ -110,7 +110,7 @@ msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
 "\"%1\"?"
 msgstr ""
-"Está seguro de que quere retirar o cartafol de marcadores\n"
+"Seguro que quere retirar o cartafol de marcadores\n"
 "«%1»?"
 
 #: widgets/kbookmarkcontextmenu.cpp:143
@@ -120,7 +120,7 @@ msgid ""
 "Are you sure you wish to remove the bookmark\n"
 "\"%1\"?"
 msgstr ""
-"Está seguro de que quere retirar o marcador\n"
+"Seguro que quere retirar o marcador\n"
 "«%1»?"
 
 #: widgets/kbookmarkdialog.cpp:56
