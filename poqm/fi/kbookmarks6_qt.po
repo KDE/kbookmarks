@@ -36,7 +36,7 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- erotin ---"
 
-#: kbookmarkmanager.cpp:338
+#: kbookmarkmanager.cpp:268
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""

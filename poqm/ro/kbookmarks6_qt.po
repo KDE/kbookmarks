@@ -29,7 +29,7 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- separator ---"
 
-#: kbookmarkmanager.cpp:338
+#: kbookmarkmanager.cpp:268
 #, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""

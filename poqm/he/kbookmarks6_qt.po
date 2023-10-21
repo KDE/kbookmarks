@@ -28,7 +28,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Zanata 3.9.6\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:316
@@ -37,7 +38,7 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- מפריד ---"
 
-#: kbookmarkmanager.cpp:338
+#: kbookmarkmanager.cpp:268
 #, fuzzy, qt-format
 msgctxt "KBookmarkManager|"
 msgid ""
