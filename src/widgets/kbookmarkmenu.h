@@ -208,14 +208,6 @@ private:
 
 private:
     std::unique_ptr<KBookmarkMenuPrivate> const d;
-
-    // TODO KF6:: move into KBookmarkMenuPrivate
-    bool m_bIsRoot;
-    bool m_bDirty;
-    KBookmarkManager *m_pManager;
-    KBookmarkOwner *m_pOwner;
-    QMenu *m_parentMenu;
-    QString m_parentAddress;
 };
 
 #endif
