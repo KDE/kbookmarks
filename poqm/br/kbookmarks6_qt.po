@@ -245,42 +245,42 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Sinedoù"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:242
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Digeriñ ar renkell er bevennigoù"
 
-#: widgets/kbookmarkmenu.cpp:239
+#: widgets/kbookmarkmenu.cpp:246
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:255
+#: widgets/kbookmarkmenu.cpp:262
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "&Gwel nevez"
 
-#: widgets/kbookmarkmenu.cpp:263
+#: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:302
+#: widgets/kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:324
+#: widgets/kbookmarkmenu.cpp:331
 #, fuzzy
 #| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Renkell &nevez ar sinedoù ..."
 
-#: widgets/kbookmarkmenu.cpp:326
+#: widgets/kbookmarkmenu.cpp:333
 #, fuzzy
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"

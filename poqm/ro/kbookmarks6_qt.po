@@ -199,37 +199,37 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Semne de carte"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:242
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Deschide dosarul în file"
 
-#: widgets/kbookmarkmenu.cpp:239
+#: widgets/kbookmarkmenu.cpp:246
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Deschide toate semnele de carte din acest dosar ca filă nouă"
 
-#: widgets/kbookmarkmenu.cpp:255
+#: widgets/kbookmarkmenu.cpp:262
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Înseamnă filele ca dosar..."
 
-#: widgets/kbookmarkmenu.cpp:263
+#: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Adaugă un dosar cu semne de carte pentru toate filele deschise"
 
-#: widgets/kbookmarkmenu.cpp:302
+#: widgets/kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Modifică colecția de semne de carte într-o fereastră separată"
 
-#: widgets/kbookmarkmenu.cpp:324
+#: widgets/kbookmarkmenu.cpp:331
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Dosar cu semne de carte nou..."
 
-#: widgets/kbookmarkmenu.cpp:326
+#: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Creează un nou dosar cu semne de carte în acest meniu"

@@ -194,37 +194,37 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "पुस्तचिन्ह"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:242
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "फ़ोल्डर टैबों में खोलें"
 
-#: widgets/kbookmarkmenu.cpp:239
+#: widgets/kbookmarkmenu.cpp:246
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "इस फ़ोल्सडर में सभी पुस्तचिन्ह को एक नए टैब के रूप में खोलें"
 
-#: widgets/kbookmarkmenu.cpp:255
+#: widgets/kbookmarkmenu.cpp:262
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "टैब्स के फ़ोल्डर के रूप में पुस्तचिन्हित करें..."
 
-#: widgets/kbookmarkmenu.cpp:263
+#: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "सभी खुले टैब्स के लिए एक पुस्तचिन्ह फ़ोल्डर जोड़ें।"
 
-#: widgets/kbookmarkmenu.cpp:302
+#: widgets/kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "अलग विंडो में पुस्तचिन्ह संग्रह का संपादन करें"
 
-#: widgets/kbookmarkmenu.cpp:324
+#: widgets/kbookmarkmenu.cpp:331
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "नया पुस्तचिन्ह फ़ोल्डर..."
 
-#: widgets/kbookmarkmenu.cpp:326
+#: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "इस मेन्यू में एक नया पुस्तचिन्ह फ़ोल्डर बनाएँ"

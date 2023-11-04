@@ -200,37 +200,37 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Закладки"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:242
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Відкрити теку у вкладках"
 
-#: widgets/kbookmarkmenu.cpp:239
+#: widgets/kbookmarkmenu.cpp:246
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Відкрити всі закладки в цій теці як нові вкладки"
 
-#: widgets/kbookmarkmenu.cpp:255
+#: widgets/kbookmarkmenu.cpp:262
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "Зробити з вкладок теку закладок…"
 
-#: widgets/kbookmarkmenu.cpp:263
+#: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Додати теку з закладками, створену з усіх відкритих вкладок"
 
-#: widgets/kbookmarkmenu.cpp:302
+#: widgets/kbookmarkmenu.cpp:309
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Редагувати збірку закладок у окремому вікні"
 
-#: widgets/kbookmarkmenu.cpp:324
+#: widgets/kbookmarkmenu.cpp:331
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "Створити теку закладок…"
 
-#: widgets/kbookmarkmenu.cpp:326
+#: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Створити нову теку закладок в цьому меню"

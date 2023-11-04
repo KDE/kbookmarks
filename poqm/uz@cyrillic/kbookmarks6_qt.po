@@ -243,44 +243,44 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Хатчўплар"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:242
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Жилдни хатчўп таҳрирчида очиш"
 
-#: widgets/kbookmarkmenu.cpp:239
+#: widgets/kbookmarkmenu.cpp:246
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:255
+#: widgets/kbookmarkmenu.cpp:262
 #, fuzzy
 #| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
 msgstr "&Янги хатчўплар жилди"
 
-#: widgets/kbookmarkmenu.cpp:263
+#: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:302
+#: widgets/kbookmarkmenu.cpp:309
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Хатчўплар тўпламингизни алохида ойнада тузатиш"
 
-#: widgets/kbookmarkmenu.cpp:324
+#: widgets/kbookmarkmenu.cpp:331
 #, fuzzy
 #| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
 msgstr "&Янги хатчўплар жилди"
 
-#: widgets/kbookmarkmenu.cpp:326
+#: widgets/kbookmarkmenu.cpp:333
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Create New Bookmark Folder in %1"
