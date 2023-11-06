@@ -18,7 +18,7 @@ KBookmarkSettings *KBookmarkSettings::s_self = nullptr;
 void KBookmarkSettings::readSettings()
 {
     KConfig config(QStringLiteral("kbookmarkrc"), KConfig::NoGlobals);
-    KConfigGroup cg(&config, "Bookmarks");
+    KConfigGroup cg(&config, QStringLiteral("Bookmarks"));
 
     // add bookmark dialog usage - no reparse
     s_self->m_advancedaddbookmark = cg.readEntry("AdvancedAddBookmarkDialog", false);
