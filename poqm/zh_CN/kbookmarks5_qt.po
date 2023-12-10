@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
-"PO-Revision-Date: 2023-11-25 02:29\n"
+"PO-Revision-Date: 2023-12-09 09:27\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -53,7 +53,7 @@ msgstr "删除书签"
 #: kbookmarkcontextmenu.cpp:80
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
-msgstr "在标签中打开文件夹"
+msgstr "在标签页中打开文件夹"
 
 #: kbookmarkcontextmenu.cpp:105
 msgctxt "KBookmarkContextMenu|@info"
@@ -233,12 +233,12 @@ msgstr ""
 #: kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
-msgstr "在标签中打开文件夹"
+msgstr "在标签页中打开文件夹"
 
 #: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
-msgstr "将此文件夹中的所有书签在新标签中打开"
+msgstr "将此文件夹中的所有书签在新标签页中打开"
 
 #: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
