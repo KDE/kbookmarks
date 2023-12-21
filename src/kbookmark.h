@@ -436,13 +436,4 @@ protected:
 #define KIO_KBOOKMARK_METATYPE_DEFINED 1
 Q_DECLARE_METATYPE(KBookmark)
 
-// needed when compiling this library with MSVC
-#if defined(Q_CC_MSVC) && defined(KF6Bookmarks_EXPORTS)
-inline uint qHash(const KBookmark &)
-{
-    qWarning("inline uint qHash(const KBookmark&) was called");
-    return 0;
-}
-#endif
-
 #endif
