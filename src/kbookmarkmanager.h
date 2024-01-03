@@ -147,10 +147,10 @@ Q_SIGNALS:
     /**
      * Signals that the group (or any of its children) with the address
      * @p groupAddress (e.g. "/4/5")
-     * has been modified by the caller @p caller.
+     * has been modified.
      * connect to this
      */
-    void changed(const QString &groupAddress, const QString &caller);
+    void changed(const QString &groupAddress);
 
     /**
      * Emitted when an error occurs.

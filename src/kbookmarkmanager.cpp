@@ -155,7 +155,7 @@ void KBookmarkManager::slotFileChanged(const QString &path)
         parse();
         // Tell our GUI
         // (emit where group is "" to directly mark the root menu as dirty)
-        Q_EMIT changed(QLatin1String(""), QString());
+        Q_EMIT changed(QLatin1String(""));
     }
 }
 
@@ -359,7 +359,7 @@ void KBookmarkManager::emitChanged(const KBookmarkGroup &group)
     // Tell the other processes too
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkManager::emitChanged : broadcasting change " << group.address();
 
-    Q_EMIT changed(group.address(), QString());
+    Q_EMIT changed(group.address());
 }
 
 ///////
