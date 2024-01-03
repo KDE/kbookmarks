@@ -144,38 +144,12 @@ public:
     // KF6 TODO: Use an enum and not a bool
     bool save(bool toolbarCache = true) const;
 
-    void emitConfigChanged();
-
     /**
      * @internal
      */
     QDomDocument internalDocument() const;
 
-public Q_SLOTS:
-    /**
-     * Reparse the whole bookmarks file and notify about the change
-     * Doesn't send signal over D-Bus to the other Bookmark Managers
-     * You probably want to use emitChanged()
-     *
-     */
-    void notifyCompleteChange(const QString &caller);
-
 Q_SIGNALS:
-    /**
-     * Signal send over D-Bus
-     */
-    void bookmarkCompleteChange(QString caller);
-
-    /**
-     * Signal send over D-Bus
-     */
-    void bookmarksChanged(QString groupAddress);
-
-    /**
-     * Signal send over D-Bus
-     */
-    void bookmarkConfigChanged();
-
     /**
      * Signals that the group (or any of its children) with the address
      * @p groupAddress (e.g. "/4/5")
@@ -183,11 +157,6 @@ Q_SIGNALS:
      * connect to this
      */
     void changed(const QString &groupAddress, const QString &caller);
-
-    /**
-     * Signals that the config changed
-     */
-    void configChanged();
 
     /**
      * Emitted when an error occurs.

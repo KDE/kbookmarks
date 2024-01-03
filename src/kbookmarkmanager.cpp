@@ -368,29 +368,7 @@ void KBookmarkManager::emitChanged(const KBookmarkGroup &group)
     // Tell the other processes too
     // qCDebug(KBOOKMARKS_LOG) << "KBookmarkManager::emitChanged : broadcasting change " << group.address();
 
-    Q_EMIT bookmarksChanged(group.address());
-
     Q_EMIT changed(group.address(), QString());
-}
-
-void KBookmarkManager::emitConfigChanged()
-{
-    Q_EMIT bookmarkConfigChanged();
-}
-
-void KBookmarkManager::notifyCompleteChange(const QString &caller) // DBUS call
-{
-    if (!d->m_update) {
-        return;
-    }
-
-    // qCDebug(KBOOKMARKS_LOG) << "KBookmarkManager::notifyCompleteChange";
-    // The bk editor tells us we should reload everything
-    // Reparse
-    parse();
-    // Tell our GUI
-    // (emit where group is "" to directly mark the root menu as dirty)
-    Q_EMIT changed(QLatin1String(""), caller);
 }
 
 ///////
