@@ -96,7 +96,6 @@ public:
     KBookmarkManagerPrivate(bool bDocIsloaded)
         : m_doc(QStringLiteral("xbel"))
         , m_docIsLoaded(bDocIsloaded)
-        , m_update(false)
         , m_dirWatch(nullptr)
     {
     }
@@ -105,7 +104,6 @@ public:
     mutable QDomDocument m_toolbarDoc;
     QString m_bookmarksFile;
     mutable bool m_docIsLoaded;
-    bool m_update;
 
     KDirWatch *m_dirWatch; // for monitoring changes on bookmark files
 
@@ -130,8 +128,6 @@ KBookmarkManager::KBookmarkManager(const QString &bookmarksFile, QObject *parent
     : QObject(parent)
     , d(new KBookmarkManagerPrivate(false))
 {
-    d->m_update = true;
-
     Q_ASSERT(!bookmarksFile.isEmpty());
     d->m_bookmarksFile = bookmarksFile;
 
@@ -165,11 +161,6 @@ void KBookmarkManager::slotFileChanged(const QString &path)
 
 KBookmarkManager::~KBookmarkManager()
 {
-}
-
-void KBookmarkManager::setUpdate(bool update)
-{
-    d->m_update = update;
 }
 
 QDomDocument KBookmarkManager::internalDocument() const

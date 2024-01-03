@@ -68,12 +68,6 @@ public:
     ~KBookmarkManager() override;
 
     /**
-     * Set the update flag. Defaults to true.
-     * @param update if true then KBookmarkManager will listen to D-Bus update requests.
-     */
-    void setUpdate(bool update);
-
-    /**
      * Save the bookmarks to the given XML file on disk.
      * @param filename full path to the desired bookmarks file location
      * @param toolbarCache iff true save a cache of the toolbar folder, too
