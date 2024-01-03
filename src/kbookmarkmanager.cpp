@@ -370,8 +370,7 @@ void KBookmarkManager::emitChanged(const KBookmarkGroup &group)
 
     Q_EMIT bookmarksChanged(group.address());
 
-    // We do get our own broadcast, so no need for this anymore
-    // emit changed( group );
+    Q_EMIT changed(group.address(), QString());
 }
 
 void KBookmarkManager::emitConfigChanged()
