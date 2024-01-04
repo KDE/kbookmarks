@@ -33,7 +33,7 @@ msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
 msgstr "--- razmak ---"
 
-#: kbookmarkmanager.cpp:268
+#: kbookmarkmanager.cpp:259
 #, fuzzy, qt-format
 #| msgid ""
 #| "Unable to save bookmarks in %1. Reported error was: %2. This error "
