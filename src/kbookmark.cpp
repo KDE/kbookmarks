@@ -589,6 +589,11 @@ QDomNode KBookmark::metaData(const QString &owner, bool create) const
 
 QString KBookmark::metaDataItem(const QString &key) const
 {
+    return metaDataItem(QAnyStringView(key));
+}
+
+QString KBookmark::metaDataItem(QAnyStringView key) const
+{
     QDomNode metaDataNode = metaData(Strings::metaDataKDEOwner(), false);
     for (QDomElement e = metaDataNode.firstChildElement(); !e.isNull(); e = e.nextSiblingElement()) {
         if (e.tagName() == key) {

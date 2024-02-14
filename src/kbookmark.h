@@ -276,6 +276,11 @@ public:
      * @return Value of the metadata item. QString() is returned in case
      * the specified key does not exist.
      */
+    QString metaDataItem(QAnyStringView key) const;
+
+    /*
+     * QString overload of metaDataItem
+     */
     QString metaDataItem(const QString &key) const;
 
     /**
