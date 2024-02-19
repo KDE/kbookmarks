@@ -1,27 +1,22 @@
-# translation of kio4.po to
-# translation of kio4.po to
-# translation of kio4.po to
 # translation of kio4.po to Romanian
 # Claudiu Costin <claudiuc@kde.org>, 2002, 2003, 2004, 2005, 2006.
-# Claudiu Costin <claudiuc@geocities.com>, 2002.
-# Sergiu Bivol <sergiu@cip.md>, 2008, 2009.
-# Sergiu Bivol <sergiu@cip.md>, 2010, 2012, 2013, 2014, 2020.
+# Sergiu Bivol <sergiu@cip.md>, 2008, 2009, 2010, 2012, 2013, 2014, 2020, 2024.
 # Cristian Oneț <onet.cristian@gmail.com>, 2010, 2011, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2020-09-13 16:02+0100\n"
+"PO-Revision-Date: 2024-02-18 14:57+0000\n"
 "Last-Translator: Sergiu Bivol <sergiu@cip.md>\n"
-"Language-Team: Romanian\n"
+"Language-Team: Romanian <kde-i18n-ro@kde.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Lokalize 19.12.3\n"
+"X-Generator: Lokalize 21.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:316
@@ -45,12 +40,12 @@ msgstr ""
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
-msgstr ""
+msgstr "keditbookmarks nu a putut fi pornit"
 
 #: keditbookmarks.cpp:66
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
-msgstr ""
+msgstr "Executabilul keditbookmarks nu a fost găsit"
 
 #: widgets/kbookmarkcontextmenu.cpp:53
 msgctxt "KBookmarkContextMenu|@action:inmenu"
@@ -298,14 +293,6 @@ msgstr "Creează un nou dosar cu semne de carte în acest meniu"
 #~ msgctxt "KBookmarkMenu|"
 #~ msgid "Open Folder in Tabs"
 #~ msgstr "Deschide dosarul în file"
-
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "Sergiu Bivol, Cristian Oneț"
-
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr "sergiu@ase.md,onet.cristian@gmail.com"
 
 #~ msgid "A file or folder named %1 already exists."
 #~ msgstr "Există deja un fișier sau un dosar cu numele %1."
