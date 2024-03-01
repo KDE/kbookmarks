@@ -5,10 +5,10 @@
 # Siarhei Liantsevich <serzh.by@gmail.com>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
+"Project-Id-Version: fc57ad16a28d02dea100ceb1c60de14e\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2022-11-04 18:38\n"
+"PO-Revision-Date: 2024-02-28 07:41\n"
 "Last-Translator: Siarhei Liantsevich <serzh.by@gmail.com>\n"
 "Language-Team: Belarusian\n"
 "Language: be\n"
@@ -20,11 +20,12 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
 "X-Qt-Contexts: true\n"
-"X-Crowdin-Project: 86ff119b1606fcaa910d6b44fc14b611\n"
-"X-Crowdin-Project-ID: 127\n"
+"X-Crowdin-Project: fc57ad16a28d02dea100ceb1c60de14e\n"
+"X-Crowdin-Project-ID: 136\n"
 "X-Crowdin-Language: be\n"
-"X-Crowdin-File: /main/be/kbookmarks/kbookmarks5_qt.po\n"
-"X-Crowdin-File-ID: 7757\n"
+"X-Crowdin-File: /[antikruk.KDE] main/KDE6/be/messages/kbookmarks/"
+"kbookmarks6_qt.po\n"
+"X-Crowdin-File-ID: 9904\n"
 
 #: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
@@ -46,12 +47,12 @@ msgstr ""
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
-msgstr ""
+msgstr "не ўдалося запусціць keditbookmarks"
 
 #: keditbookmarks.cpp:66
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
-msgstr ""
+msgstr "Не знойдзены выканальны файл keditbookmarks"
 
 #: widgets/kbookmarkcontextmenu.cpp:53
 msgctxt "KBookmarkContextMenu|@action:inmenu"
