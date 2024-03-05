@@ -244,27 +244,37 @@ bool KBookmarkManager::saveAs(const QString &filename, bool toolbarCache) const
     QFileInfo info(filename);
     QDir().mkpath(info.absolutePath());
 
+    if (filename == d->m_bookmarksFile) {
+        KDirWatch::self()->removeFile(d->m_bookmarksFile);
+    }
+
     QSaveFile file(filename);
+    bool success = false;
     if (file.open(QIODevice::WriteOnly)) {
         KBackup::simpleBackupFile(file.fileName(), QString(), QStringLiteral(".bak"));
         QTextStream stream(&file);
         // In Qt6 it's UTF-8 by default
         stream << internalDocument().toString();
         stream.flush();
-        if (file.commit()) {
-            return true;
-        }
+        success = file.commit();
     }
 
-    QString err = tr("Unable to save bookmarks in %1. Reported error was: %2. "
-                     "This error message will only be shown once. The cause "
-                     "of the error needs to be fixed as quickly as possible, "
-                     "which is most likely a full hard drive.")
-                      .arg(filename, file.errorString());
-    qCCritical(KBOOKMARKS_LOG) << QStringLiteral("Unable to save bookmarks in %1. File reported the following error-code: %2.").arg(filename).arg(file.error());
-    Q_EMIT const_cast<KBookmarkManager *>(this)->error(err);
+    if (filename == d->m_bookmarksFile) {
+        KDirWatch::self()->addFile(d->m_bookmarksFile);
+    }
 
-    return false;
+    if (!success) {
+        QString err = tr("Unable to save bookmarks in %1. Reported error was: %2. "
+                         "This error message will only be shown once. The cause "
+                         "of the error needs to be fixed as quickly as possible, "
+                         "which is most likely a full hard drive.")
+                          .arg(filename, file.errorString());
+        qCCritical(KBOOKMARKS_LOG)
+            << QStringLiteral("Unable to save bookmarks in %1. File reported the following error-code: %2.").arg(filename).arg(file.error());
+        Q_EMIT const_cast<KBookmarkManager *>(this)->error(err);
+    }
+
+    return success;
 }
 
 QString KBookmarkManager::path() const
