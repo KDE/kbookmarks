@@ -17,13 +17,13 @@
 # Serdar SOYTETİR <tulliana@gmail.com>, 2010, 2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2013, 2014.
 # Kaan Ozdincer <kaanozdincer@gmail.com>, 2014.
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-08-21 12:58+0300\n"
+"PO-Revision-Date: 2024-03-08 19:40+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.11.70\n"
+"X-Generator: Lokalize 24.02.0\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:316
@@ -118,8 +118,8 @@ msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
 "\"%1\"?"
 msgstr ""
-"Gerçekten bu yer imi klasörünü silmek istiyor musunuz\n"
-"\"%1\"?"
+"Bu yer imi klasörünü silmeyi gerçekten istiyor musunuz?\n"
+"“%1”"
 
 #: widgets/kbookmarkcontextmenu.cpp:143
 #, qt-format
@@ -128,8 +128,8 @@ msgid ""
 "Are you sure you wish to remove the bookmark\n"
 "\"%1\"?"
 msgstr ""
-"Gerçekten bu yer imini silmek istiyor musunuz\n"
-"\"%1\"?"
+"Bu yer imini silmeyi gerçekten istiyor musunuz?\n"
+"“%1”"
 
 #: widgets/kbookmarkdialog.cpp:56
 msgctxt "KBookmarkDialog|@label:textbox"
@@ -160,7 +160,7 @@ msgstr "Yer İmi Özellikleri"
 #: widgets/kbookmarkdialog.cpp:280
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder..."
-msgstr "&Yeni Klasör..."
+msgstr "&Yeni Klasör…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -221,7 +221,7 @@ msgstr "Bu klasördeki tüm yer imlerini yeni bir sekme olarak aç."
 #: widgets/kbookmarkmenu.cpp:262
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
-msgstr "Sekmeleri Klasör Olarak Yer İmlerine Ekle..."
+msgstr "Sekmeleri Klasör Olarak Yer İmlerine Ekle…"
 
 #: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
@@ -236,7 +236,7 @@ msgstr "Ayrı bir pencerede yer imi koleksiyonunu düzenle"
 #: widgets/kbookmarkmenu.cpp:331
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
-msgstr "Yeni Yer İmi Klasörü..."
+msgstr "Yeni Yer İmi Klasörü…"
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
