@@ -259,7 +259,7 @@ void KBookmarkMenu::addAddBookmarksList()
     }
 
     if (!d->bookmarksToFolderAction) {
-        const QString title = tr("Bookmark Tabs as Folder...", "@action:inmenu");
+        const QString title = tr("Bookmark Tabs as Folder…", "@action:inmenu");
         d->bookmarksToFolderAction = new QAction(title, this);
 
         if (d->isRoot) {
@@ -328,7 +328,7 @@ void KBookmarkMenu::addNewFolder()
     }
 
     if (!d->newBookmarkFolderAction) {
-        d->newBookmarkFolderAction = new QAction(tr("New Bookmark Folder...", "@action:inmenu"), this);
+        d->newBookmarkFolderAction = new QAction(tr("New Bookmark Folder…", "@action:inmenu"), this);
         d->newBookmarkFolderAction->setIcon(QIcon::fromTheme(QStringLiteral("folder-new")));
         d->newBookmarkFolderAction->setToolTip(tr("Create a new bookmark folder in this menu", "@info:tooltip"));
         d->newBookmarkFolderAction->setStatusTip(d->newBookmarkFolderAction->toolTip());

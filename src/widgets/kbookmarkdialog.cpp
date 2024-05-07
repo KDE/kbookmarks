@@ -205,7 +205,7 @@ KBookmark KBookmarkDialog::addBookmark(const QString &title, const QUrl &url, co
     }
 
     QPushButton *newButton = new QPushButton;
-    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), QStringLiteral("folder-new")));
+    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder…", "@action:button"), QStringLiteral("folder-new")));
     d->buttonBox->addButton(newButton, QDialogButtonBox::ActionRole);
     connect(newButton, &QAbstractButton::clicked, this, &KBookmarkDialog::newFolderButton);
 
@@ -243,7 +243,7 @@ KBookmarkGroup KBookmarkDialog::addBookmarks(const QList<KBookmarkOwner::FutureB
     d->list = list;
 
     QPushButton *newButton = new QPushButton;
-    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), QStringLiteral("folder-new")));
+    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder…", "@action:button"), QStringLiteral("folder-new")));
     d->buttonBox->addButton(newButton, QDialogButtonBox::ActionRole);
     connect(newButton, &QAbstractButton::clicked, this, &KBookmarkDialog::newFolderButton);
 
@@ -277,7 +277,7 @@ KBookmarkGroup KBookmarkDialog::selectFolder(KBookmark parent)
     }
 
     QPushButton *newButton = new QPushButton;
-    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder...", "@action:button"), QStringLiteral("folder-new")));
+    KGuiItem::assign(newButton, KGuiItem(tr("&New Folder…", "@action:button"), QStringLiteral("folder-new")));
     d->buttonBox->addButton(newButton, QDialogButtonBox::ActionRole);
     connect(newButton, &QAbstractButton::clicked, this, &KBookmarkDialog::newFolderButton);
 
