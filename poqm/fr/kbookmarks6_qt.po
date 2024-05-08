@@ -160,12 +160,14 @@ msgctxt "KBookmarkDialog|@title:window"
 msgid "Bookmark Properties"
 msgstr "Propriétés du signet"
 
-# unreviewed-context
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "KBookmarkDialog|@title:window"
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Nouveau dossier..."
+msgid "&New Folder…"
+msgstr "Nouveau dossier"
 
 # unreviewed-context
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
@@ -231,8 +233,11 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Ouvrir tous les signets de ce dossier dans un nouvel onglet."
 
 #: widgets/kbookmarkmenu.cpp:262
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "Marquer les onglets comme un dossier..."
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -246,14 +251,22 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Modifier votre collection de signets dans une fenêtre séparée"
 
 #: widgets/kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "Nouveau dossier de signets..."
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Créer un nouveau dossier de signets pour ce menu"
+
+# unreviewed-context
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "&Nouveau dossier..."
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

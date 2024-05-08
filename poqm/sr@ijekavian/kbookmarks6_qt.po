@@ -178,9 +178,12 @@ msgstr "Својства обиљеживача"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "KBookmarkDialog|@title:window"
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Нова фасцикла..."
+msgid "&New Folder…"
+msgstr "Нова фасцикла"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -249,7 +252,7 @@ msgstr "Отвори све обиљеживаче у овој фасцикли 
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "Обиљежи језичке као фасциклу..."
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -273,7 +276,7 @@ msgstr "Уредите своју збирку обиљеживача у пос�
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "Нова фасцикла обиљеживача..."
 
 #: widgets/kbookmarkmenu.cpp:333
@@ -283,6 +286,10 @@ msgstr "Нова фасцикла обиљеживача..."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Направи нову фасциклу обиљеживача у овом менију"
+
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "&Нова фасцикла..."
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

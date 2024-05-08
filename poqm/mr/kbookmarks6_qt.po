@@ -166,9 +166,12 @@ msgstr "ओळखचिन्ह गुणधर्म"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "KBookmarkDialog|@title:window"
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "नवीन संचयीका (&N)..."
+msgid "&New Folder…"
+msgstr "नवीन संचयीका"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -234,7 +237,7 @@ msgstr ""
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "नवीन ओळखचिन्ह संचयीका..."
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -252,7 +255,7 @@ msgstr ""
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "नवीन ओळखचिन्ह संचयीका..."
 
 #: widgets/kbookmarkmenu.cpp:333
@@ -262,6 +265,10 @@ msgstr "नवीन ओळखचिन्ह संचयीका..."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "या मेन्यूमध्ये नवीन ओळखचिन्ह संचयीका तयार करा"
+
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "नवीन संचयीका (&N)..."
 
 #~ msgctxt "KNSBookmarkImporterImpl|"
 #~ msgid "Bookmarks"

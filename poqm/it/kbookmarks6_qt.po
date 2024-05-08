@@ -148,9 +148,12 @@ msgstr "Proprietà segnalibro"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "KBookmarkDialog|@title:window"
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Nuova cartella..."
+msgid "&New Folder…"
+msgstr "Nuova cartella"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -209,8 +212,11 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Apri tutti i segnalibri di questa cartella in una nuova scheda."
 
 #: widgets/kbookmarkmenu.cpp:262
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "Crea cartella di segnalibri per le schede..."
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -224,14 +230,21 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Modifica la raccolta di segnalibri in una finestra separata"
 
 #: widgets/kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "Nuova cartella di segnalibri..."
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Crea una nuova cartella di segnalibri in questo menu"
+
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "&Nuova cartella..."
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

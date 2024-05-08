@@ -169,8 +169,8 @@ msgstr "এখানে বুকমার্ক যোগ করো"
 #: widgets/kbookmarkdialog.cpp:280
 #, fuzzy
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&নতুন ফোল্ডার..."
+msgid "&New Folder…"
+msgstr "নতুন ফোল্ডার"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 #, fuzzy
@@ -242,7 +242,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "ট্যাবগুলি ফোল্ডার হিসাবে বুকমার্ক করো"
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -262,7 +262,7 @@ msgstr "আলাদা উইণ্ডোয় বুকমার্কের স
 #: widgets/kbookmarkmenu.cpp:331
 #, fuzzy
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "&নতুন বুকমার্ক ফোল্ডার..."
 
 #: widgets/kbookmarkmenu.cpp:333
@@ -271,6 +271,11 @@ msgstr "&নতুন বুকমার্ক ফোল্ডার..."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "এই মেনুতে নতুন বুকমার্ক ফোল্ডার তৈরি করো"
+
+#, fuzzy
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "&নতুন ফোল্ডার..."
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

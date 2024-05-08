@@ -191,11 +191,10 @@ msgstr "Blêdwizereigenskippen"
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
 #, fuzzy
-#| msgctxt "@action:button"
-#| msgid "&New Folder..."
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Nije map..."
+msgid "&New Folder…"
+msgstr "Nije map"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 #, fuzzy
@@ -279,7 +278,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "Flappen bewarje as blêdwizermap..."
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -300,7 +299,7 @@ msgstr "Pas jo blêdwizerkolleksje oan yn in apart finster"
 #, fuzzy
 #| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "Nije blêdwizermap oanmeitsje"
 
 #: widgets/kbookmarkmenu.cpp:333
@@ -309,6 +308,13 @@ msgstr "Nije blêdwizermap oanmeitsje"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Meitsje in nije blêdwizermap oan yn dit menu"
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "&New Folder..."
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "&Nije map..."
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

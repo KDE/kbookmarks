@@ -155,9 +155,12 @@ msgstr "Kirjanmerkin ominaisuudet"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "KBookmarkDialog|@title:window"
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Uusi kansio…"
+msgid "&New Folder…"
+msgstr "Uusi kansio"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -216,8 +219,11 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Avaa kansion kaikki kirjanmerkit uusiin välilehtiin"
 
 #: widgets/kbookmarkmenu.cpp:262
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "Lisää välilehdet kirjanmerkkikansioksi…"
 
 # ”Tee” avautuu tässä paremmin kuin ”lisää”
@@ -232,14 +238,21 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Muokkaa kirjanmerkkikokoelmaa erillisessä ikkunassa"
 
 #: widgets/kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "Uusi kirjanmerkkikansio…"
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Luo tähän valikkoon uusi kirjanmerkkikansio"
+
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "&Uusi kansio…"
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""

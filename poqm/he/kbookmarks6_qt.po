@@ -158,9 +158,12 @@ msgstr "מאפייני הסימנייה"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "KBookmarkDialog|@title:window"
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "תיקייה &חדשה…"
+msgid "&New Folder…"
+msgstr "תיקייה חדשה"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -219,8 +222,11 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "פתיחת כל הסימניות בתיקייה זאת כלשונית חדשה"
 
 #: widgets/kbookmarkmenu.cpp:262
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "הוספת לשוניות לתיקייה כסימניות.."
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -234,14 +240,21 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "עריכת אוסף הסימניות שלך בחלון נפרד"
 
 #: widgets/kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "תיקיית סימניות חדשה…"
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "יצירת תיקיית סימניות חדשה בתפריט זה"
+
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "תיקייה &חדשה…"
 
 #, fuzzy
 #~ msgctxt "KNSBookmarkImporterImpl|"

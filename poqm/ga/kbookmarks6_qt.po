@@ -191,11 +191,11 @@ msgstr "Airíonna an Leabharmhairc"
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
 #, fuzzy
-#| msgctxt "@action:button"
-#| msgid "&New Folder..."
+#| msgctxt "folder name"
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "Fillteán &Nua..."
+msgid "&New Folder…"
+msgstr "Fillteán Nua"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 #, fuzzy
@@ -285,7 +285,7 @@ msgstr "Oscail na leabharmharcanna san fhillteán seo mar chluaisín nua."
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "Cruthaigh fillteán leabharmharcanna do na cluaisíní..."
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -306,7 +306,7 @@ msgstr "Cuir do leabharmharcanna in eagar i bhfuinneog ar leith"
 #, fuzzy
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "Fillteán Nua Leabharmharcanna..."
 
 #: widgets/kbookmarkmenu.cpp:333
@@ -315,6 +315,13 @@ msgstr "Fillteán Nua Leabharmharcanna..."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Cruthaigh fillteán nua leabharmharcanna sa roghchlár seo"
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "&New Folder..."
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "Fillteán &Nua..."
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

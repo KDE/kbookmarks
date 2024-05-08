@@ -168,11 +168,10 @@ msgstr "Хатчўпнинг хоссалари"
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
 #, fuzzy
-#| msgctxt "@action:button"
-#| msgid "&New Folder..."
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Янги жилд..."
+msgid "&New Folder…"
+msgstr "Янги жилд"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 #, fuzzy
@@ -258,7 +257,7 @@ msgstr ""
 #, fuzzy
 #| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "&Янги хатчўплар жилди"
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -277,7 +276,7 @@ msgstr "Хатчўплар тўпламингизни алохида ойнад�
 #, fuzzy
 #| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "&Янги хатчўплар жилди"
 
 #: widgets/kbookmarkmenu.cpp:333
@@ -287,6 +286,13 @@ msgstr "&Янги хатчўплар жилди"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Янги хатчўп жилдини %1'да яратиш"
+
+#, fuzzy
+#~| msgctxt "@action:button"
+#~| msgid "&New Folder..."
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "&Янги жилд..."
 
 #, fuzzy
 #~| msgid "*.html|HTML Files (*.html)"

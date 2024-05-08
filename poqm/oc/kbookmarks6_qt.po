@@ -169,8 +169,8 @@ msgstr "Propietats del favorit"
 #, fuzzy
 #| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "Repertòri &nòu..."
+msgid "&New Folder…"
+msgstr "Repertòri novèl"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 #, fuzzy
@@ -250,7 +250,7 @@ msgstr ""
 #, fuzzy
 #| msgid "New Folder"
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "Repertòri novèl"
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -267,7 +267,7 @@ msgstr ""
 #, fuzzy
 #| msgid "New Folder"
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "Repertòri novèl"
 
 #: widgets/kbookmarkmenu.cpp:333
@@ -276,6 +276,12 @@ msgstr "Repertòri novèl"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Creat :"
+
+#, fuzzy
+#~| msgid "New Folder"
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "Repertòri &nòu..."
 
 #, fuzzy
 #~| msgid "Bookmarks"

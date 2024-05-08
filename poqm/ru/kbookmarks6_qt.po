@@ -160,9 +160,12 @@ msgstr "Свойства закладки"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
+#, fuzzy
+#| msgctxt "KBookmarkDialog|@title:window"
+#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
-msgid "&New Folder..."
-msgstr "&Создать папку..."
+msgid "&New Folder…"
+msgstr "Создание папки закладок"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -222,8 +225,11 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Открыть закладки из этой папки в новых вкладках."
 
 #: widgets/kbookmarkmenu.cpp:262
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "Bookmark Tabs as Folder..."
+msgid "Bookmark Tabs as Folder…"
 msgstr "Создать папку для всех открытых вкладок..."
 
 #: widgets/kbookmarkmenu.cpp:270
@@ -237,14 +243,21 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Редактировать коллекцию закладок в отдельном окне"
 
 #: widgets/kbookmarkmenu.cpp:331
+#, fuzzy
+#| msgctxt "KBookmarkMenu|@action:inmenu"
+#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
-msgid "New Bookmark Folder..."
+msgid "New Bookmark Folder…"
 msgstr "Создать папку закладок..."
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Создать новую папку закладок в этом меню"
+
+#~ msgctxt "KBookmarkDialog|@action:button"
+#~ msgid "&New Folder..."
+#~ msgstr "&Создать папку..."
 
 #~ msgctxt "KBookmarkManager|"
 #~ msgid ""
