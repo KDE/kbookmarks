@@ -252,9 +252,3 @@ msgstr "Ráhkat ođđa girjemearkkamáhpa"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr ""
-
-# unreviewed-context
-#, fuzzy
-#~ msgctxt "KBookmarkDialog|@action:button"
-#~ msgid "&New Folder..."
-#~ msgstr "&Ođđa máhppa …"
