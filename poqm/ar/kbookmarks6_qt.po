@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-06-28 15:38+0300\n"
-"PO-Revision-Date: 2024-01-17 19:19+0400\n"
+"PO-Revision-Date: 2024-05-09 10:05+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -140,12 +140,9 @@ msgstr "خصائص العلامة"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "KBookmarkDialog|@title:window"
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr "مجلد جديد"
+msgstr "مجلد &جديد…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -204,12 +201,9 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "افتح كل العلامات في هذا المجلد كَلسان جديد."
 
 #: widgets/kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
-msgstr "علّم الألسنة كَمجلد..."
+msgstr "علّم الألسنة كَمجلد…"
 
 #: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
@@ -222,9 +216,6 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "حرّر مجموعة العلامات في نافذة منفصلة"
 
 #: widgets/kbookmarkmenu.cpp:331
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "مجلد علامات جديد…"

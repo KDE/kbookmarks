@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013, 2014, 2020, 2023.
+# g.sora <g.sora@tiscali.it>, 2010, 2011, 2012, 2013, 2014, 2020, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-08-23 16:58+0200\n"
+"PO-Revision-Date: 2024-05-09 10:38+0200\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
 "Language: ia\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:316
@@ -143,12 +143,9 @@ msgstr "Proprietates de Marcator de Libro"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "KBookmarkDialog|@title:window"
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr "Nove dossier"
+msgstr "&Nove dossier…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -207,9 +204,6 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Aperi omne marcatores de libro in iste dossier como un nove scheda"
 
 #: widgets/kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "Schedas de marcator de libros como dossier..."
@@ -225,9 +219,6 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Edita tu collection de marcator de libro in un fenestra separate"
 
 #: widgets/kbookmarkmenu.cpp:331
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "Nove dossier de marcator de libro..."

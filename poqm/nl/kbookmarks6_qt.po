@@ -12,7 +12,7 @@
 # Rinse de Vries <rinsedevries@kde.nl>, 2004, 2005, 2007, 2008, 2009.
 # Sander Koning <sanderkoning@kde.nl>, 2005.
 # Kristof Bal <kristof.bal@gmail.com>, 2008.
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2008, 2009, 2010.
+# SPDX-FileCopyrightText: 2008, 2009, 2010, 2024 Freek de Kruijf <freekdekruijf@kde.nl>
 # Freek de Kruijf <freekdekruijf@kde.nl>, 2010, 2011, 2012.
 # Freek de Kruijf <freekdekruijf@kde.nl>, 2011, 2013, 2014, 2017, 2020, 2023.
 msgid ""
@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-08-22 12:02+0200\n"
+"PO-Revision-Date: 2024-05-08 10:39+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Files: kfarch.cpp kfdird.cpp kfind.cpp kfindtop.cpp kfoptions.cpp kfsave.cpp "
 "kftabdlg.cpp kftypes.cpp kfwin.cpp main.cpp mkfdird.cpp mkfind.cpp \n"
-"X-Generator: Lokalize 23.04.3\n"
+"X-Generator: Lokalize 24.02.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Qt-Contexts: true\n"
 
@@ -158,12 +158,9 @@ msgstr "Bladwijzereigenschappen"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "KBookmarkDialog|@title:window"
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr "Nieuwe map"
+msgstr "&Nieuwe map…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -222,12 +219,9 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Alle bladwijzers in deze map openen als nieuw een nieuw tabblad"
 
 #: widgets/kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
-msgstr "Tabs bewaren als bladwijzermap..."
+msgstr "Tabs bewaren als bladwijzermap…"
 
 #: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
@@ -240,12 +234,9 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Bewerk uw bladwijzercollectie in een apart venster"
 
 #: widgets/kbookmarkmenu.cpp:331
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
-msgstr "Nieuwe bladwijzermap..."
+msgstr "Nieuwe bladwijzermap…"
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"

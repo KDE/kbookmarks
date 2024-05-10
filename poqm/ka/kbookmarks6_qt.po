@@ -134,12 +134,9 @@ msgstr "სანიშნის თვისებები"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "KBookmarkDialog|@title:window"
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr "ახალი საქაღალდე"
+msgstr "&ახალი საქაღალდე…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -198,12 +195,9 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "ამ საქაღალდის ყველა სანიშნის ახალ ჩანართში გახსნა"
 
 #: widgets/kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
-msgstr "ჩანართების, როგორც საქაღალდის, შენახვა..."
+msgstr "ჩანართების, როგორც საქაღალდის, ჩანიშვნა…"
 
 #: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
@@ -216,12 +210,9 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "თქვენი სანიშნების კოლექციის ცალკე ფანჯარაში ჩასწორება"
 
 #: widgets/kbookmarkmenu.cpp:331
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
-msgstr "ახალი სანიშნების საქაღალდე..."
+msgstr "ახალი სანიშნეების საქაღალდე…"
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"

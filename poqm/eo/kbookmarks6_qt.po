@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: kbookmarks\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2023-08-26 14:21+0100\n"
+"PO-Revision-Date: 2024-05-09 22:01+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-doc@lists.kde.org>\n"
 "Language: eo\n"
@@ -146,12 +146,9 @@ msgstr "Ecoj de legosignoj"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "KBookmarkDialog|@title:window"
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr "Nova dosierujo"
+msgstr "&Nova Dosierujo…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -210,12 +207,9 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Malfermi ĉiujn legosignojn en la dosierujo en nova langeto"
 
 #: widgets/kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
-msgstr "Legosignaj Langetoj kiel Dosierujo..."
+msgstr "Legomarki Langetojn kiel Dosierujo…"
 
 #: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
@@ -228,18 +222,11 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Redaktu vian legosignaron en aparta fenestro"
 
 #: widgets/kbookmarkmenu.cpp:331
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
-msgstr "Nova legosigna dosierujo..."
+msgstr "Nova Legosigna Dosierujo…"
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Krei novan legosignujon en tiu menuo"
-
-#~ msgctxt "KBookmarkDialog|@action:button"
-#~ msgid "&New Folder..."
-#~ msgstr "&Nova dosierujo..."
