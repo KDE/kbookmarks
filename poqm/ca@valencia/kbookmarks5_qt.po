@@ -74,12 +74,12 @@ msgstr "No s'ha pogut afegir una adreça d'interés amb un URL buit."
 #: kbookmarkcontextmenu.cpp:134
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
-msgstr "Supressió de la carpeta d'adreces d'interés"
+msgstr "Suprimiu la carpeta d'adreces d'interés"
 
 #: kbookmarkcontextmenu.cpp:134
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
-msgstr "Supressió de l'adreça d'interés"
+msgstr "Suprimiu l'adreça d'interés"
 
 #: kbookmarkcontextmenu.cpp:135
 #, qt-format
@@ -129,7 +129,7 @@ msgstr "Propietats de l'adreça d'interés"
 #: kbookmarkdialog.cpp:209 kbookmarkdialog.cpp:247 kbookmarkdialog.cpp:281
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder..."
-msgstr "Carpeta &nova..."
+msgstr "Carpeta &nova…"
 
 #: kbookmarkdialog.cpp:213 kbookmarkdialog.cpp:251
 msgctxt "KBookmarkDialog|@action:button"
@@ -259,7 +259,7 @@ msgstr "Obri totes les adreces d'interés d'esta carpeta com a pestanya nova"
 #: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
-msgstr "Pestanyes d'adreces d'interés com a carpeta..."
+msgstr "Pestanyes d'adreces d'interés com a carpeta…"
 
 #: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
@@ -274,7 +274,7 @@ msgstr "Edita la col·lecció d'adreces d'interés en una finestra separada"
 #: kbookmarkmenu.cpp:366
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder..."
-msgstr "Carpeta nova d'adreces d'interés..."
+msgstr "Carpeta nova d'adreces d'interés…"
 
 #: kbookmarkmenu.cpp:368
 msgctxt "KBookmarkMenu|@info:tooltip"
