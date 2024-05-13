@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2024-04-26 15:38+0200\n"
+"PO-Revision-Date: 2024-05-08 18:14+0200\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
@@ -162,12 +162,9 @@ msgstr "Propriétés du signet"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "KBookmarkDialog|@title:window"
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr "Nouveau dossier"
+msgstr "&Nouveau dossier"
 
 # unreviewed-context
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
@@ -233,9 +230,6 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Ouvrir tous les signets de ce dossier dans un nouvel onglet."
 
 #: widgets/kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "Marquer les onglets comme un dossier..."
@@ -251,9 +245,6 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Modifier votre collection de signets dans une fenêtre séparée"
 
 #: widgets/kbookmarkmenu.cpp:331
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "Nouveau dossier de signets..."
