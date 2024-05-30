@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2024-04-26 11:01+0200\n"
+"PO-Revision-Date: 2024-05-27 15:22+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -147,7 +147,7 @@ msgstr "Vlastnosti záložky"
 #: widgets/kbookmarkdialog.cpp:280
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr ""
+msgstr "&Nová složka…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -208,7 +208,7 @@ msgstr "Otevřít všechny záložky v této složce jako novou kartu"
 #: widgets/kbookmarkmenu.cpp:262
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
-msgstr ""
+msgstr "Karty jako složka…"
 
 #: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
@@ -223,7 +223,7 @@ msgstr "Upravit záložky v novém okně"
 #: widgets/kbookmarkmenu.cpp:331
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
-msgstr ""
+msgstr "Nová složka záložek…"
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
