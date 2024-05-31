@@ -229,7 +229,3 @@ msgstr "Нова папка за отметки…"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Създаване на нова папка с отметки в това меню"
-
-#~ msgctxt "KBookmarkDialog|@action:button"
-#~ msgid "&New Folder..."
-#~ msgstr "&Нова папка..."
