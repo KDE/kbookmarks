@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2019-06-30 19:34+0300\n"
+"PO-Revision-Date: 2024-08-28 17:02+0300\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:316
@@ -41,89 +41,59 @@ msgstr ""
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
-msgstr ""
+msgstr "Nepavyko paleisti keditbookmarks"
 
 #: keditbookmarks.cpp:66
 msgctxt "QObject|"
 msgid "The keditbookmarks executable was not found"
-msgstr ""
+msgstr "Nerastas keditbookmarks vykdomasis"
 
 #: widgets/kbookmarkcontextmenu.cpp:53
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Add Bookmark Here"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Add Bookmark Here"
 msgstr "Pridėti žymelę čia"
 
 #: widgets/kbookmarkcontextmenu.cpp:59
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Bookmark Editor"
 msgstr "Atverti aplanką žymelių redaktoriuje"
 
 #: widgets/kbookmarkcontextmenu.cpp:62
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Delete Folder"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Folder"
 msgstr "Ištrinti aplanką"
 
 #: widgets/kbookmarkcontextmenu.cpp:67
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Properties"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Properties"
 msgstr "Savybės"
 
 #: widgets/kbookmarkcontextmenu.cpp:72
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Copy Link Address"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Copy Link Address"
 msgstr "Kopijuoti nuorodos adresą"
 
 #: widgets/kbookmarkcontextmenu.cpp:75
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Delete Bookmark"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Delete Bookmark"
 msgstr "Ištrinti žymelę"
 
 #: widgets/kbookmarkcontextmenu.cpp:81
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Atverti aplanką kortelėse"
 
 #: widgets/kbookmarkcontextmenu.cpp:112
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Cannot add bookmark with empty URL."
 msgctxt "KBookmarkContextMenu|@info"
 msgid "Cannot add bookmark with empty URL."
 msgstr "Nepavyksta pridėti žymelės su tuščiu URL."
 
 #: widgets/kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Bookmark Folder Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
 msgstr "Žymelių aplanko ištrynimas"
 
 #: widgets/kbookmarkcontextmenu.cpp:141
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Bookmark Deletion"
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
 msgstr "Žymelių ištrynimas"
@@ -175,12 +145,9 @@ msgstr "Žymelės savybės"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "KBookmarkDialog|@title:window"
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr "Naujas aplankas"
+msgstr "&Naujas aplankas…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -229,57 +196,36 @@ msgid "Bookmarks"
 msgstr "Žymelės"
 
 #: widgets/kbookmarkmenu.cpp:242
-#, fuzzy
-#| msgctxt "KBookmarkContextMenu|"
-#| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Atverti aplanką kortelėse"
 
 #: widgets/kbookmarkmenu.cpp:246
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Atverti visas šio aplanko žymeles naujose kortelėse."
+msgstr "Atverti visas šio aplanko žymeles naujose kortelėse"
 
 #: widgets/kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
-msgstr "Sukurti žymelių aplanką iš kortelių..."
+msgstr "Sukurti žymelių aplanką iš kortelių…"
 
 #: widgets/kbookmarkmenu.cpp:270
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
-msgstr "Iš visų atvertų kortelių sukurti žymelių aplanką."
+msgstr "Iš visų atvertų kortelių sukurti žymelių aplanką"
 
 #: widgets/kbookmarkmenu.cpp:309
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
-msgstr "Redaguoti savo žymelių kolekciją atskirame lange"
+msgstr "Taisyti žymelių kolekciją atskirame lange"
 
 #: widgets/kbookmarkmenu.cpp:331
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
-msgstr "Naujas žymelių aplankas..."
+msgstr "Naujas žymelių aplankas…"
 
 #: widgets/kbookmarkmenu.cpp:333
-#, fuzzy
-#| msgctxt "KBookmarkMenu|"
-#| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Sukurti naują žymelių aplanką šiame meniu"
