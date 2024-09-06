@@ -9,7 +9,7 @@
 # Torbjörn Klatt <torbjoern.k@googlemail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: kio4\n"
+"Project-Id-Version: kbookmarks6_qt\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
 "PO-Revision-Date: 2020-09-09 13:56+0200\n"
