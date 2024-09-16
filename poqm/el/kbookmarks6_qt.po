@@ -28,8 +28,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 20.04.2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.04.2\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:316
@@ -157,12 +157,9 @@ msgstr "Ιδιότητες σελιδοδείκτη"
 
 #: widgets/kbookmarkdialog.cpp:208 widgets/kbookmarkdialog.cpp:246
 #: widgets/kbookmarkdialog.cpp:280
-#, fuzzy
-#| msgctxt "KBookmarkDialog|@title:window"
-#| msgid "New Folder"
 msgctxt "KBookmarkDialog|@action:button"
 msgid "&New Folder…"
-msgstr "Νέος φάκελος"
+msgstr "Νέος φά&κελος…"
 
 #: widgets/kbookmarkdialog.cpp:212 widgets/kbookmarkdialog.cpp:250
 msgctxt "KBookmarkDialog|@action:button"
@@ -221,12 +218,9 @@ msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Άνοιγμα όλων των σελιδοδεικτών του φακέλου ως νέα καρτέλα"
 
 #: widgets/kbookmarkmenu.cpp:262
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
-msgstr "Προσθήκη σελιδοδεικτών για τις καρτέλες σαν φάκελο..."
+msgstr "Προσθήκη σελιδοδεικτών για τις καρτέλες σαν φάκελο…"
 
 #: widgets/kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@info:tooltip"
@@ -239,12 +233,9 @@ msgid "Edit your bookmark collection in a separate window"
 msgstr "Επεξεργασία της συλλογής σελιδοδεικτών σας σε ένα ξεχωριστό παράθυρο"
 
 #: widgets/kbookmarkmenu.cpp:331
-#, fuzzy
-#| msgctxt "KBookmarkMenu|@action:inmenu"
-#| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
-msgstr "Νέος φάκελος σελιδοδεικτών..."
+msgstr "Νέος φάκελος σελιδοδεικτών…"
 
 #: widgets/kbookmarkmenu.cpp:333
 msgctxt "KBookmarkMenu|@info:tooltip"
