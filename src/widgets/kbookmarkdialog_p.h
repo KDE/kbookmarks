@@ -9,6 +9,7 @@
 #define __kbookmarkdialog_p_h__
 
 #include "kbookmark.h"
+#include "kbookmarkowner.h"
 #include <QDialog>
 
 class KBookmarkDialog;
