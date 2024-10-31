@@ -20,7 +20,7 @@
 #include "keditbookmarks_p.h"
 
 #include <KAuthorized>
-#include <KStandardAction>
+#include <KStandardActions>
 
 #include <QApplication>
 #include <QMenu>
@@ -282,7 +282,7 @@ void KBookmarkMenu::addAddBookmark()
     }
 
     if (!d->addBookmarkAction) {
-        d->addBookmarkAction = KStandardAction::addBookmark(this, &KBookmarkMenu::slotAddBookmark, this);
+        d->addBookmarkAction = KStandardActions::addBookmark(this, &KBookmarkMenu::slotAddBookmark, this);
         if (d->isRoot) {
             d->addBookmarkAction->setObjectName(QStringLiteral("add_bookmark"));
         }
@@ -302,7 +302,7 @@ void KBookmarkMenu::addEditBookmarks()
         return;
     }
 
-    d->editBookmarksAction = KStandardAction::editBookmarks(this, &KBookmarkMenu::slotEditBookmarks, this);
+    d->editBookmarksAction = KStandardActions::editBookmarks(this, &KBookmarkMenu::slotEditBookmarks, this);
     d->editBookmarksAction->setObjectName(QStringLiteral("edit_bookmarks"));
 
     d->parentMenu->addAction(d->editBookmarksAction);

@@ -45,7 +45,6 @@ find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets Xml)
 
 find_package(KF6Config ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6CoreAddons ${KF_DEP_VERSION} REQUIRED)
-find_package(KF6ConfigWidgets ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 
 ecm_install_po_files_as_qm(poqm)
