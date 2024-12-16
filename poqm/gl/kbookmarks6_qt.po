@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2024-05-09 19:22+0200\n"
+"PO-Revision-Date: 2024-12-16 00:37+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.02.2\n"
+"X-Generator: Lokalize 24.12.0\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:316
@@ -96,12 +96,12 @@ msgstr "Non é posíbel engadir un marcador cun URL baleiro."
 #: widgets/kbookmarkcontextmenu.cpp:141
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Folder Deletion"
-msgstr "Borrado dun cartafol de marcadores"
+msgstr "Eliminación dun cartafol de marcadores"
 
 #: widgets/kbookmarkcontextmenu.cpp:141
 msgctxt "KBookmarkContextMenu|@title:window"
 msgid "Bookmark Deletion"
-msgstr "Borrado dun marcador"
+msgstr "Eliminación dun marcador"
 
 #: widgets/kbookmarkcontextmenu.cpp:142
 #, qt-format
