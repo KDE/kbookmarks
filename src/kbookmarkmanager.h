@@ -20,7 +20,7 @@ class KBookmarkManagerPrivate;
 
 class KBookmarkGroup;
 
-/**
+/*!
  * @class KBookmarkManager kbookmarkmanager.h KBookmarkManager
  *
  * This class implements the reading/writing of bookmarks in XML.
@@ -49,7 +49,7 @@ class KBOOKMARKS_EXPORT KBookmarkManager : public QObject
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Create a KBookmarkManager responsible for the given @p bookmarksFile.
      *
      * The manager watches the file for change detection.
@@ -62,12 +62,12 @@ public:
      */
     explicit KBookmarkManager(const QString &bookmarksFile, QObject *parent = nullptr);
 
-    /**
+    /*!
      * Destructor
      */
     ~KBookmarkManager() override;
 
-    /**
+    /*!
      * Save the bookmarks to the given XML file on disk.
      * @param filename full path to the desired bookmarks file location
      * @param toolbarCache iff true save a cache of the toolbar folder, too
@@ -76,14 +76,14 @@ public:
     // KF6 TODO: Use an enum and not a bool
     bool saveAs(const QString &filename, bool toolbarCache = true) const;
 
-    /**
+    /*!
      * Update access time stamps for a given url.
      * @param url the viewed url
      * @return true if any metadata was modified (bookmarks file is not saved automatically)
      */
     bool updateAccessMetadata(const QString &url);
 
-    /**
+    /*!
      * This will return the path that this manager is using to read
      * the bookmarks.
      * @internal
@@ -91,7 +91,7 @@ public:
      */
     QString path() const;
 
-    /**
+    /*!
      * This will return the root bookmark.  It is used to iterate
      * through the bookmarks manually.  It is mostly used internally.
      *
@@ -99,7 +99,7 @@ public:
      */
     KBookmarkGroup root() const;
 
-    /**
+    /*!
      * This returns the root of the toolbar menu.
      * In the XML, this is the group with the attribute toolbar=yes
      *
@@ -107,7 +107,7 @@ public:
      */
     KBookmarkGroup toolbar();
 
-    /**
+    /*!
      * @return the bookmark designated by @p address
      * @param address the address belonging to the bookmark you're looking for
      * @param tolerate when true tries to find the most tolerable bookmark position
@@ -115,19 +115,19 @@ public:
      */
     KBookmark findByAddress(const QString &address);
 
-    /**
+    /*!
      * Saves the bookmark file and notifies everyone.
      *
      **/
     void emitChanged();
 
-    /**
+    /*!
      * Saves the bookmark file and notifies everyone.
      * @param group the parent of all changed bookmarks
      */
     void emitChanged(const KBookmarkGroup &group);
 
-    /**
+    /*!
      * Save the bookmarks to an XML file on disk.
      * You should use emitChanged() instead of this function, it saves
      * and notifies everyone that the file has changed.
@@ -138,13 +138,13 @@ public:
     // KF6 TODO: Use an enum and not a bool
     bool save(bool toolbarCache = true) const;
 
-    /**
+    /*!
      * @internal
      */
     QDomDocument internalDocument() const;
 
 Q_SIGNALS:
-    /**
+    /*!
      * Signals that the group (or any of its children) with the address
      * @p groupAddress (e.g. "/4/5")
      * has been modified.
@@ -152,7 +152,7 @@ Q_SIGNALS:
      */
     void changed(const QString &groupAddress);
 
-    /**
+    /*!
      * Emitted when an error occurs.
      * Contains the translated error message.
      * @since 4.6

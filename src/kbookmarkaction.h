@@ -16,7 +16,7 @@
 class KBookmark;
 class KBookmarkOwner;
 
-/**
+/*!
  * @class KBookmarkAction kbookmarkaction.h KBookmarkAction
  *
  * This class is a QAction for bookmarks.

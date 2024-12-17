@@ -16,7 +16,7 @@ class QWidget;
 
 class KBookmarkGroup;
 
-/**
+/*!
  * @class KBookmarkOwner kbookmarkowner.h KBookmarkOwner
  *
  * The KBookmarkMenu and KBookmarkBar classes gives the user
@@ -45,7 +45,7 @@ public:
     KBookmarkOwner();
     virtual ~KBookmarkOwner();
 
-    /**
+    /*!
      * This function is called whenever the user wants to add the
      * current page to the bookmarks list.  The title will become the
      * "name" of the bookmark.  You must overload this function if you
@@ -59,7 +59,7 @@ public:
         return QString();
     }
 
-    /**
+    /*!
      * This function is called whenever the user wants to add the
      * current page to the bookmarks list.  The URL will become the URL
      * of the bookmark.  You must overload this function if you wish to
@@ -74,7 +74,7 @@ public:
         return QUrl();
     }
 
-    /**
+    /*!
      * This function is called whenever the user wants to add the
      * current page to the bookmarks list.  The icon will become the icon
      * of the bookmark.  You must overload this function if you wish to
@@ -92,7 +92,7 @@ public:
         return QString();
     }
 
-    /**
+    /*!
      * This function returns whether the owner supports tabs.
      * The default returns @c false.
      */
@@ -102,7 +102,7 @@ public:
     }
 
     class FutureBookmarkPrivate;
-    /**
+    /*!
      * Represents the data for a bookmark that will be added.
      * @since 5.0
      */
@@ -122,7 +122,7 @@ public:
         QSharedDataPointer<FutureBookmarkPrivate> d;
     };
 
-    /**
+    /*!
      * Returns a list of bookmark data for the open tabs.
      * The default returns an empty list.
      */
@@ -133,7 +133,7 @@ public:
 
     enum BookmarkOption { ShowAddBookmark, ShowEditBookmark };
 
-    /** Returns true if \p action should be shown in the menu
+    /*! Returns true if \p action should be shown in the menu
      *  The default is to show both a add and editBookmark Entry
      *  //TODO ContextMenuAction? to disable the contextMenu?
      *         Delete and Properties to disable those in the
@@ -141,26 +141,26 @@ public:
      */
     virtual bool enableOption(BookmarkOption option) const;
 
-    /**
+    /*!
      * Called if a bookmark is selected. You need to override this.
      */
     virtual void openBookmark(const KBookmark &bm, Qt::MouseButtons mb, Qt::KeyboardModifiers km) = 0;
 
-    /**
+    /*!
      * Called if the user wants to open every bookmark in this folder in a new tab.
      * The default implementation does nothing.
      * This is only called if supportsTabs() returns true
      */
     virtual void openFolderinTabs(const KBookmarkGroup &bm);
 
-    /**
+    /*!
      * Called when a bookmark should be opened in a new tab.
      * The default implementation calls openBookmark.
      * @since 5.0
      */
     virtual void openInNewTab(const KBookmark &bm);
 
-    /**
+    /*!
      * Called when a bookmark should be opened in a new window.
      * The default implementation calls openBookmark.
      * @since 5.0
