@@ -65,6 +65,8 @@ ecm_generate_headers(KBookmarks_HEADERS
   REQUIRED_HEADERS KBookmarks_HEADERS
 )
 
+ecm_generate_qdoc(KF6Bookmarks kbookmarks.qdocconf)
+
 install(TARGETS KF6Bookmarks EXPORT KF6BookmarksTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES

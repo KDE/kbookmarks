@@ -22,6 +22,7 @@ include(ECMDeprecationSettings)
 include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
+include(ECMGenerateQDoc)
 
 include(ECMAddQch)
 include(ECMPoQmTools)
