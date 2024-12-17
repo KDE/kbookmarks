@@ -57,7 +57,7 @@ public:
      * @param bookmarksFile full path to the bookmarks file,
      * Use ~/.kde/share/apps/konqueror/bookmarks.xml for the konqueror bookmarks
      *
-     * @since 6.0
+     * \since 6.0
      *
      */
     explicit KBookmarkManager(const QString &bookmarksFile, QObject *parent = nullptr);
@@ -155,7 +155,7 @@ Q_SIGNALS:
     /*!
      * Emitted when an error occurs.
      * Contains the translated error message.
-     * @since 4.6
+     * \since 4.6
      */
     void error(const QString &errorMessage);
 

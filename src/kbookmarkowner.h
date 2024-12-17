@@ -85,7 +85,7 @@ public:
      * return KIO::iconNameForUrl(currentUrl());
      *
      * @return the icon name of the current page.
-     * @since 5.0
+     * \since 5.0
      */
     virtual QString currentIcon() const
     {
@@ -104,7 +104,7 @@ public:
     class FutureBookmarkPrivate;
     /*!
      * Represents the data for a bookmark that will be added.
-     * @since 5.0
+     * \since 5.0
      */
     class KBOOKMARKS_EXPORT FutureBookmark
     {
@@ -156,14 +156,14 @@ public:
     /*!
      * Called when a bookmark should be opened in a new tab.
      * The default implementation calls openBookmark.
-     * @since 5.0
+     * \since 5.0
      */
     virtual void openInNewTab(const KBookmark &bm);
 
     /*!
      * Called when a bookmark should be opened in a new window.
      * The default implementation calls openBookmark.
-     * @since 5.0
+     * \since 5.0
      */
     virtual void openInNewWindow(const KBookmark &bm);
 
