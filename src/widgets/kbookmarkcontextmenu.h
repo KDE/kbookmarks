@@ -35,7 +35,7 @@ public:
      * Set this to true to make any "Edit Bookmarks" dialog
      * show UI elements that are specific to browsers.
      *
-     * @since 6.0
+     * \since 6.0
      */
     void setBrowserMode(bool browserMode);
 
@@ -43,7 +43,7 @@ public:
      * Whether any "Edit Bookmarks" dialog shows UI elements
      * that are specific to browsers.
      *
-     * @since 6.0
+     * \since 6.0
      */
     bool browserMode() const;
 

@@ -60,7 +60,7 @@ public:
      * @note If you pass a null KBookmarkOwner to the constructor, the
      * openBookmark signal is not emitted, instead QDesktopServices::openUrl is used to open the bookmark.
      * @param parentMenu menu to be filled
-     * @since 5.69
+     * \since 5.69
      */
     KBookmarkMenu(KBookmarkManager *manager, KBookmarkOwner *owner, QMenu *parentMenu);
 
@@ -89,7 +89,7 @@ public:
      * actionCollection()->addAction(addAction->objectName(), addAction);
      * @endcode
      * @return the action for adding a bookmark.
-     * @since 5.69
+     * \since 5.69
      */
     QAction *addBookmarkAction() const;
 
@@ -102,7 +102,7 @@ public:
      * actionCollection()->addAction(bookmarkTabsAction->objectName(), bookmarkTabsAction);
      * @endcode
      * @return the action for adding all current tabs as bookmarks.
-     * @since 5.69
+     * \since 5.69
      */
     QAction *bookmarkTabsAsFolderAction() const;
 
@@ -115,7 +115,7 @@ public:
      * actionCollection()->addAction(newBookmarkFolderAction->objectName(), newBookmarkFolderAction);
      * @endcode
      * @return the action for adding a new bookmarks folder
-     * @since 5.70
+     * \since 5.70
      */
     QAction *newBookmarkFolderAction() const;
 
@@ -128,7 +128,7 @@ public:
      * actionCollection()->addAction(editAction->objectName(), editAction);
      * @endcode
      * @return the action for editing bookmarks.
-     * @since 5.69
+     * \since 5.69
      */
     QAction *editBookmarksAction() const;
 
@@ -136,7 +136,7 @@ public:
      * Set this to true to make any "Edit Bookmarks" dialog
      * show UI elements that are specific to browsers.
      *
-     * @since 6.0
+     * \since 6.0
      */
     void setBrowserMode(bool browserMode);
 
@@ -144,7 +144,7 @@ public:
      * Whether any "Edit Bookmarks" dialog shows UI elements
      * that are specific to browsers.
      *
-     * @since 6.0
+     * \since 6.0
      */
     bool browserMode() const;
 
