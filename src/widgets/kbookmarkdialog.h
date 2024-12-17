@@ -17,10 +17,12 @@
 class KBookmarkManager;
 class KBookmarkDialogPrivate;
 
-/**
- * @class KBookmarkDialog kbookmarkdialog.h KBookmarkDialog
+/*!
+ * \class KBookmarkDialog
+ * \inmodule KBookmarksWidgets
  *
- * This class provides a Dialog for editing properties, adding Bookmarks and creating new folders.
+ * \brief This class provides a Dialog for editing properties, adding Bookmarks and creating new folders.
+ *
  * It can be used to show dialogs for common tasks with bookmarks.
  *
  * It is used by KBookmarkMenu to show a dialog for "Properties", "Add Bookmark" and "Create New Folder".
@@ -32,30 +34,30 @@ class KBOOKMARKSWIDGETS_EXPORT KBookmarkDialog : public QDialog
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Creates a KBookmarkDialog instance
      */
     KBookmarkDialog(KBookmarkManager *manager, QWidget *parent = nullptr);
-    /**
+    /*!
      * Shows a properties dialog
-     * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
+     * \note this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmark editBookmark(const KBookmark &bm);
-    /**
+    /*!
      * Shows a "Add Bookmark" dialog
-     * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
+     * \note this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmark addBookmark(const QString &title, const QUrl &url, const QString &icon, KBookmark parent = KBookmark());
-    /**
+    /*!
      * Creates a folder from a list of bookmarks
-     * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
+     * \note this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmarkGroup addBookmarks(const QList<KBookmarkOwner::FutureBookmark> &list, const QString &name = QString(), KBookmarkGroup parent = KBookmarkGroup());
-    /**
+    /*!
      * Shows a dialog to create a new folder.
      */
     KBookmarkGroup createNewFolder(const QString &name, KBookmark parent = KBookmark());
-    /**
+    /*!
      * Shows a dialog to select a folder.
      */
     KBookmarkGroup selectFolder(KBookmark start = KBookmark());
@@ -66,6 +68,8 @@ protected:
     void accept() override;
 
 protected Q_SLOTS:
+    /*!
+     */
     void newFolderButton();
 
 private:

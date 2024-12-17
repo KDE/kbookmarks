@@ -17,53 +17,98 @@
 class KBookmarkManager;
 class KBookmarkOwner;
 
-/**
- * @class KBookmarkContextMenu kbookmarkcontextmenu.h KBookmarkContextMenu
+/*!
+ * \class KBookmarkContextMenu
+ * \inmodule KBookmarksWidgets
  *
- * A context menu for a bookmark.
+ * \brief A context menu for a bookmark.
  */
 class KBOOKMARKSWIDGETS_EXPORT KBookmarkContextMenu : public QMenu
 {
     Q_OBJECT
 
 public:
+    /*!
+     */
     KBookmarkContextMenu(const KBookmark &bm, KBookmarkManager *manager, KBookmarkOwner *owner, QWidget *parent = nullptr);
     ~KBookmarkContextMenu() override;
+
+    /*!
+     */
     virtual void addActions();
 
-    /**
+    /*!
      * Set this to true to make any "Edit Bookmarks" dialog
      * show UI elements that are specific to browsers.
      *
-     * @since 6.0
+     * \since 6.0
      */
     void setBrowserMode(bool browserMode);
 
-    /**
+    /*!
      * Whether any "Edit Bookmarks" dialog shows UI elements
      * that are specific to browsers.
      *
-     * @since 6.0
+     * \since 6.0
      */
     bool browserMode() const;
 
 public Q_SLOTS:
+    /*!
+     */
     void slotEditAt();
+
+    /*!
+     */
     void slotProperties();
+
+    /*!
+     */
     void slotInsert();
+
+    /*!
+     */
     void slotRemove();
+
+    /*!
+     */
     void slotCopyLocation();
+
+    /*!
+     */
     void slotOpenFolderInTabs();
 
 protected:
+    /*!
+     */
     void addBookmark();
+
+    /*!
+     */
     void addFolderActions();
+
+    /*!
+     */
     void addProperties();
+
+    /*!
+     */
     void addBookmarkActions();
+
+    /*!
+     */
     void addOpenFolderInTabs();
 
+    /*!
+     */
     KBookmarkManager *manager() const;
+
+    /*!
+     */
     KBookmarkOwner *owner() const;
+
+    /*!
+     */
     KBookmark bookmark() const;
 
 private Q_SLOTS:

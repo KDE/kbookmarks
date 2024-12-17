@@ -11,16 +11,24 @@
 
 #include "kbookmark.h"
 
-/**
- * @class KBookmarkActionInterface kbookmarkactioninterface.h KBookmarkActionInterface
+/*!
+ * \class KBookmarkActionInterface
+ * \inmodule KBookmarks
  *
- * The interface to implement by actions and menus which represent a bookimark
+ * \brief The interface to implement by actions and menus which represent a bookmark.
  */
 class KBOOKMARKS_EXPORT KBookmarkActionInterface
 {
 public:
+    /*!
+     *
+     */
     explicit KBookmarkActionInterface(const KBookmark &bk);
     virtual ~KBookmarkActionInterface();
+
+    /*!
+     *
+     */
     const KBookmark bookmark() const;
 
 private:

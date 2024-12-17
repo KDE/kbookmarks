@@ -59,6 +59,8 @@ ecm_generate_headers(KBookmarksWidgets_HEADERS
   REQUIRED_HEADERS KBookmarksWidgets_HEADERS
 )
 
+ecm_generate_qdoc(KF6BookmarksWidgets kbookmarkswidgets.qdocconf)
+
 install(TARGETS KF6BookmarksWidgets EXPORT KF6BookmarksTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 install(FILES
@@ -72,30 +74,3 @@ ecm_qt_install_logging_categories(
     FILE kbookmarkswidgets.categories
     DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
 )
-
-if(BUILD_QCH)
-    ecm_add_qch(
-        KF6BookmarksWidgets_QCH
-        NAME KBookmarksWidgets
-        BASE_NAME KF6BookmarksWidgets
-        VERSION ${KF_VERSION}
-        ORG_DOMAIN org.kde
-        SOURCES # using only public headers, to cover only public API
-            ${KBookmarksWidgets_HEADERS}
-        MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
-        LINK_QCHS
-            Qt6Widgets_QCH
-            Qt6Xml_QCH
-            KF6WidgetsAddons_QCH
-        INCLUDE_DIRS
-            ${CMAKE_CURRENT_BINARY_DIR}
-        BLANK_MACROS
-            KBOOKMARKSWIDGETS_EXPORT
-            KBOOKMARKSWIDGETS_DEPRECATED
-            KBOOKMARKSWIDGETS_DEPRECATED_EXPORT
-            "KBOOKMARKS_DEPRECATED_VERSION(x, y, t)"
-        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        COMPONENT Devel
-    )
-endif()
