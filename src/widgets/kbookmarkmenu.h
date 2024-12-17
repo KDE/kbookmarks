@@ -24,10 +24,12 @@ class KBookmarkMenu;
 class KBookmarkMenuPrivate;
 
 /*!
- * @class KBookmarkMenu kbookmarkmenu.h KBookmarkMenu
+ * \class KBookmarkMenu
+ * \inmodule KBookmarksWidgets
  *
- * This class provides a bookmark menu.  It is typically used in
- * cooperation with KActionMenu but doesn't have to be.
+ * \brief This class provides a bookmark menu.
+ *
+ *  It is typically used in cooperation with KActionMenu but doesn't have to be.
  *
  * If you use this class by itself, then it will use KDE defaults for
  * everything -- the bookmark path, bookmark editor, bookmark launcher..
@@ -55,19 +57,22 @@ public:
      * (one instance of KBookmarkMenu is created for the toplevel menu,
      *  but also one per submenu).
      *
-     * @param manager the bookmark manager to use (i.e. for reading and writing)
-     * @param owner implementation of the KBookmarkOwner callback interface.
-     * @note If you pass a null KBookmarkOwner to the constructor, the
+     * \a manager the bookmark manager to use (i.e. for reading and writing)
+     *
+     * \a owner implementation of the KBookmarkOwner callback interface.
+     * \note If you pass a null KBookmarkOwner to the constructor, the
      * openBookmark signal is not emitted, instead QDesktopServices::openUrl is used to open the bookmark.
-     * @param parentMenu menu to be filled
+     *
+     * \a parentMenu menu to be filled
+     *
      * \since 5.69
      */
     KBookmarkMenu(KBookmarkManager *manager, KBookmarkOwner *owner, QMenu *parentMenu);
 
+    // TODO KF6: give ownership of the bookmarkmenu to another qobject, e.g. parentMenu.
     /*!
      * Creates a bookmark submenu
      *
-     * @todo KF6: give ownership of the bookmarkmenu to another qobject, e.g. parentMenu.
      * Currently this is a QObject without a parent, use setParent to benefit from automatic deletion.
      */
     KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *owner, QMenu *parentMenu, const QString &parentAddress);
@@ -77,18 +82,18 @@ public:
     /*!
      * Call ensureUpToDate() if you need KBookmarkMenu to adjust to its
      * final size before it is executed.
-     **/
+     */
     void ensureUpToDate();
 
     /*!
      * Returns the action for adding a bookmark. If you are using KXmlGui, you can add it to your
      * action collection.
-     * @code
+     * \code
      * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
      * QAction *addAction = menu->addBookmarkAction();
      * actionCollection()->addAction(addAction->objectName(), addAction);
-     * @endcode
-     * @return the action for adding a bookmark.
+     * \endcode
+     * Returns the action for adding a bookmark.
      * \since 5.69
      */
     QAction *addBookmarkAction() const;
@@ -96,12 +101,12 @@ public:
     /*!
      * Returns the action for adding all current tabs as bookmarks. If you are using KXmlGui, you can
      * add it to your action collection.
-     * @code
+     * \code
      * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
      * QAction *bookmarkTabsAction = menu->bookmarkTabsAsFolderAction();
      * actionCollection()->addAction(bookmarkTabsAction->objectName(), bookmarkTabsAction);
-     * @endcode
-     * @return the action for adding all current tabs as bookmarks.
+     * \endcode
+     * Returns the action for adding all current tabs as bookmarks.
      * \since 5.69
      */
     QAction *bookmarkTabsAsFolderAction() const;
@@ -109,12 +114,12 @@ public:
     /*!
      * Returns the action for adding a new bookmarks folder. If you are using KXmlGui, you can add it
      * to your action collection.
-     * @code
+     * \code
      * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
      * QAction *newBookmarkFolderAction = menu->bookmarkTabsAsFolderAction();
      * actionCollection()->addAction(newBookmarkFolderAction->objectName(), newBookmarkFolderAction);
-     * @endcode
-     * @return the action for adding a new bookmarks folder
+     * \endcode
+     * Returns the action for adding a new bookmarks folder
      * \since 5.70
      */
     QAction *newBookmarkFolderAction() const;
@@ -122,12 +127,12 @@ public:
     /*!
      * Returns the action for editing bookmarks.  If you are using KXmlGui, you can add it to your
      * action collection.
-     * @code
+     * \code
      * KBookmarkMenu *menu = new KBookmarkMenu(manager, owner, parentMenu);
      * QAction *editAction = menu->editBookmarksAction();
      * actionCollection()->addAction(editAction->objectName(), editAction);
-     * @endcode
-     * @return the action for editing bookmarks.
+     * \endcode
+     * Returns the action for editing bookmarks.
      * \since 5.69
      */
     QAction *editBookmarksAction() const;
@@ -153,27 +158,77 @@ public Q_SLOTS:
     void slotBookmarksChanged(const QString &);
 
 protected Q_SLOTS:
+    /*
+     */
     void slotAboutToShow();
+
+    /*
+     */
     void slotAddBookmarksList();
+
+    /*
+     */
     void slotAddBookmark();
+
+    /*
+     */
     void slotNewFolder();
+
+    /*
+     */
     void slotOpenFolderInTabs();
 
 protected:
+    /*
+     */
     virtual void clear();
+
+    /*
+     */
     virtual void refill();
+
+    /*
+     */
     virtual QAction *actionForBookmark(const KBookmark &bm);
+
+    /*
+     */
     virtual QMenu *contextMenu(QAction *action);
 
+    /*
+     */
     void addActions();
+
+    /*
+     */
     void fillBookmarks();
+
+    /*
+     */
     void addAddBookmark();
+
+    /*
+     */
     void addAddBookmarksList();
+
+    /*
+     */
     void addEditBookmarks();
+
+    /*
+     */
     void addNewFolder();
+
+    /*
+     */
     void addOpenInTabs();
 
+    /*
+     */
     bool isRoot() const;
+
+    /*
+     */
     bool isDirty() const;
 
     /*!
@@ -181,8 +236,15 @@ protected:
      */
     QString parentAddress() const;
 
+    /*!
+     */
     KBookmarkManager *manager() const;
+
+    /*!
+     *
+     */
     KBookmarkOwner *owner() const;
+
     /*!
      * The menu in which we insert our actions
      * Supplied in the constructor.

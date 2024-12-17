@@ -14,15 +14,21 @@
 #include <kbookmarkswidgets_export.h>
 
 /*!
- * @class KBookmarkActionMenu kbookmarkactionmenu.h KBookmarkActionMenu
+ * \class KBookmarkActionMenu
+ * \inmodule KBookmarksWidgets
  *
- * A wrapper around KActionMenu to provide a nice constructor for bookmark groups.
+ * \brief A wrapper around KActionMenu to provide a nice constructor for bookmark groups.
  */
 class KBOOKMARKSWIDGETS_EXPORT KBookmarkActionMenu : public KActionMenu, public KBookmarkActionInterface
 {
     Q_OBJECT
 public:
+    /*!
+     */
     KBookmarkActionMenu(const KBookmark &bm, QObject *parent);
+
+    /*!
+     */
     KBookmarkActionMenu(const KBookmark &bm, const QString &text, QObject *parent);
     ~KBookmarkActionMenu() override;
 };

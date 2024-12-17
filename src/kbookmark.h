@@ -189,8 +189,6 @@ public:
 
     /*!
      * Set the Mime-Type of this item
-     *
-     * \a Mime-Type
      * \since 4.1
      */
     void setMimeType(const QString &mimeType);
@@ -198,7 +196,6 @@ public:
     /*!
      * Returns if the bookmark should be shown in the toolbar
      * (used by the filtered toolbar)
-     *
      */
     bool showInToolbar() const;
 
@@ -233,7 +230,7 @@ public:
     int positionInParent() const;
 
     /*!
-     * @internal for KEditBookmarks
+     * \internal for KEditBookmarks
      */
     QDomElement internalElement() const;
 
@@ -281,7 +278,9 @@ public:
 
     /*!
      * Get the value of a specific metadata item (owner = "http://www.kde.org").
-     * \a key Name of the metadata item
+     * \
+     * a key Name of the metadata item
+     *
      * Returns Value of the metadata item. QString() is returned in case
      * the specified key does not exist.
      */
@@ -290,8 +289,11 @@ public:
     /*!
      * Change the value of a specific metadata item, or create the given item
      * if it doesn't exist already (owner = "http://www.kde.org").
+     *
      * \a key Name of the metadata item to change
+     *
      * \a value Value to use for the specified metadata item
+     *
      * \a mode Whether to overwrite the item's value if it exists already or not.
      */
     void setMetaDataItem(const QString &key, const QString &value, MetaDataOverwriteMode mode = OverwriteMetaData);
@@ -299,7 +301,7 @@ public:
     /*!
      * Adds this bookmark into the given QMimeData.
      *
-     * WARNING: do not call this method multiple times, use KBookmark::List::populateMimeData instead.
+     * \warning do not call this method multiple times, use KBookmark::List::populateMimeData instead.
      *
      * \a mimeData the QMimeData instance used to drag or copy this bookmark
      */
@@ -319,6 +321,10 @@ protected:
 };
 
 /*!
+ * \class KBookmarkGroup
+ * \inmodule KBookmarks
+ * \inheaderfile KBookmark
+ *
  * A group of bookmarks
  */
 class KBOOKMARKS_EXPORT KBookmarkGroup : public KBookmark
@@ -348,11 +354,13 @@ public:
     KBookmark first() const;
     /*!
      * Return the previous sibling of a child bookmark of this group
+     *
      * \a current has to be one of our child bookmarks.
      */
     KBookmark previous(const KBookmark &current) const;
     /*!
      * Return the next sibling of a child bookmark of this group
+     *
      * \a current has to be one of our child bookmarks.
      */
     KBookmark next(const KBookmark &current) const;
@@ -364,7 +372,9 @@ public:
 
     /*!
      * Create a new bookmark folder, as the last child of this group
+     *
      * \a text for the folder.
+     *
      * If you want an dialog use KBookmarkDialog
      */
     KBookmarkGroup createNewFolder(const QString &text);
@@ -377,6 +387,7 @@ public:
     /*!
      * Create a new bookmark, as the last child of this group
      * Don't forget to use KBookmarkManager::self()->emitChanged( parentBookmark );
+     *
      * \a bm the bookmark to add
      */
     KBookmark addBookmark(const KBookmark &bm);
@@ -384,17 +395,20 @@ public:
     /*!
      * Create a new bookmark, as the last child of this group
      * Don't forget to use KBookmarkManager::self()->emitChanged( parentBookmark );
+     *
      * \a text for the bookmark
+     *
      * \a url the URL that the bookmark points to.
-     * It will be stored in its QUrl::FullyEncoded string format.
+     *  It will be stored in its QUrl::FullyEncoded string format.
+     *
      * \a icon the name of the icon to associate with the bookmark. A suitable default
      * will be determined from the URL if not specified.
      */
     KBookmark addBookmark(const QString &text, const QUrl &url, const QString &icon);
 
     /*!
-     * Moves @p bookmark after @p after (which should be a child of ours).
-     * If after is null, @p bookmark is moved as the first child.
+     * Moves \a bookmark after \a after (which should be a child of ours).
+     * If after is null, \a bookmark is moved as the first child.
      * Don't forget to use KBookmarkManager::self()->emitChanged( parentBookmark );
      */
     bool moveBookmark(const KBookmark &bookmark, const KBookmark &after);
@@ -410,7 +424,7 @@ public:
      */
     bool isToolbarGroup() const;
     /*!
-     * @internal
+     * \internal
      */
     QDomElement findToolbar() const;
 
@@ -430,15 +444,31 @@ private:
 };
 
 /*!
+ * \class KBookmarkGroupTraverser
+ * \inmodule KBookmarks
+ * \inheaderfile KBookmark
+ *
  * A class to traverse bookarm groups
  */
 class KBOOKMARKS_EXPORT KBookmarkGroupTraverser
 {
 protected:
     virtual ~KBookmarkGroupTraverser();
+
+    /*!
+     */
     void traverse(const KBookmarkGroup &);
+
+    /*!
+     */
     virtual void visit(const KBookmark &);
+
+    /*!
+     */
     virtual void visitEnter(const KBookmarkGroup &);
+
+    /*!
+     */
     virtual void visitLeave(const KBookmarkGroup &);
 };
 
