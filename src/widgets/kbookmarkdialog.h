@@ -17,7 +17,7 @@
 class KBookmarkManager;
 class KBookmarkDialogPrivate;
 
-/**
+/*!
  * @class KBookmarkDialog kbookmarkdialog.h KBookmarkDialog
  *
  * This class provides a Dialog for editing properties, adding Bookmarks and creating new folders.
@@ -32,30 +32,30 @@ class KBOOKMARKSWIDGETS_EXPORT KBookmarkDialog : public QDialog
     Q_OBJECT
 
 public:
-    /**
+    /*!
      * Creates a KBookmarkDialog instance
      */
     KBookmarkDialog(KBookmarkManager *manager, QWidget *parent = nullptr);
-    /**
+    /*!
      * Shows a properties dialog
      * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmark editBookmark(const KBookmark &bm);
-    /**
+    /*!
      * Shows a "Add Bookmark" dialog
      * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmark addBookmark(const QString &title, const QUrl &url, const QString &icon, KBookmark parent = KBookmark());
-    /**
+    /*!
      * Creates a folder from a list of bookmarks
      * Note: this updates the bookmark and calls KBookmarkManager::emitChanged
      */
     KBookmarkGroup addBookmarks(const QList<KBookmarkOwner::FutureBookmark> &list, const QString &name = QString(), KBookmarkGroup parent = KBookmarkGroup());
-    /**
+    /*!
      * Shows a dialog to create a new folder.
      */
     KBookmarkGroup createNewFolder(const QString &name, KBookmark parent = KBookmark());
-    /**
+    /*!
      * Shows a dialog to select a folder.
      */
     KBookmarkGroup selectFolder(KBookmark start = KBookmark());

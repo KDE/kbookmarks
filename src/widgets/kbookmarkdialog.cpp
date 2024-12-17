@@ -357,7 +357,7 @@ void KBookmarkDialog::newFolderButton()
     }
 }
 
-/********************************************************************/
+/*!******************************************************************/
 
 KBookmarkTreeItem::KBookmarkTreeItem(QTreeWidget *tree)
     : QTreeWidgetItem(tree)

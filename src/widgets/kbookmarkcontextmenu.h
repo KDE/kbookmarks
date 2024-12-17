@@ -17,7 +17,7 @@
 class KBookmarkManager;
 class KBookmarkOwner;
 
-/**
+/*!
  * @class KBookmarkContextMenu kbookmarkcontextmenu.h KBookmarkContextMenu
  *
  * A context menu for a bookmark.
@@ -31,7 +31,7 @@ public:
     ~KBookmarkContextMenu() override;
     virtual void addActions();
 
-    /**
+    /*!
      * Set this to true to make any "Edit Bookmarks" dialog
      * show UI elements that are specific to browsers.
      *
@@ -39,7 +39,7 @@ public:
      */
     void setBrowserMode(bool browserMode);
 
-    /**
+    /*!
      * Whether any "Edit Bookmarks" dialog shows UI elements
      * that are specific to browsers.
      *

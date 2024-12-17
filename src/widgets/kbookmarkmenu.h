@@ -23,7 +23,7 @@ class KBookmarkMenu;
 
 class KBookmarkMenuPrivate;
 
-/**
+/*!
  * @class KBookmarkMenu kbookmarkmenu.h KBookmarkMenu
  *
  * This class provides a bookmark menu.  It is typically used in
@@ -50,7 +50,7 @@ class KBOOKMARKSWIDGETS_EXPORT KBookmarkMenu : public QObject
 {
     Q_OBJECT
 public:
-    /**
+    /*!
      * Fills a bookmark menu
      * (one instance of KBookmarkMenu is created for the toplevel menu,
      *  but also one per submenu).
@@ -64,7 +64,7 @@ public:
      */
     KBookmarkMenu(KBookmarkManager *manager, KBookmarkOwner *owner, QMenu *parentMenu);
 
-    /**
+    /*!
      * Creates a bookmark submenu
      *
      * @todo KF6: give ownership of the bookmarkmenu to another qobject, e.g. parentMenu.
@@ -74,13 +74,13 @@ public:
 
     ~KBookmarkMenu() override;
 
-    /**
+    /*!
      * Call ensureUpToDate() if you need KBookmarkMenu to adjust to its
      * final size before it is executed.
      **/
     void ensureUpToDate();
 
-    /**
+    /*!
      * Returns the action for adding a bookmark. If you are using KXmlGui, you can add it to your
      * action collection.
      * @code
@@ -93,7 +93,7 @@ public:
      */
     QAction *addBookmarkAction() const;
 
-    /**
+    /*!
      * Returns the action for adding all current tabs as bookmarks. If you are using KXmlGui, you can
      * add it to your action collection.
      * @code
@@ -106,7 +106,7 @@ public:
      */
     QAction *bookmarkTabsAsFolderAction() const;
 
-    /**
+    /*!
      * Returns the action for adding a new bookmarks folder. If you are using KXmlGui, you can add it
      * to your action collection.
      * @code
@@ -119,7 +119,7 @@ public:
      */
     QAction *newBookmarkFolderAction() const;
 
-    /**
+    /*!
      * Returns the action for editing bookmarks.  If you are using KXmlGui, you can add it to your
      * action collection.
      * @code
@@ -132,7 +132,7 @@ public:
      */
     QAction *editBookmarksAction() const;
 
-    /**
+    /*!
      * Set this to true to make any "Edit Bookmarks" dialog
      * show UI elements that are specific to browsers.
      *
@@ -140,7 +140,7 @@ public:
      */
     void setBrowserMode(bool browserMode);
 
-    /**
+    /*!
      * Whether any "Edit Bookmarks" dialog shows UI elements
      * that are specific to browsers.
      *
@@ -176,25 +176,25 @@ protected:
     bool isRoot() const;
     bool isDirty() const;
 
-    /**
+    /*!
      * Parent bookmark for this menu.
      */
     QString parentAddress() const;
 
     KBookmarkManager *manager() const;
     KBookmarkOwner *owner() const;
-    /**
+    /*!
      * The menu in which we insert our actions
      * Supplied in the constructor.
      */
     QMenu *parentMenu() const;
 
-    /**
+    /*!
      * List of our sub menus
      */
     QList<KBookmarkMenu *> m_lstSubMenus;
 
-    /**
+    /*!
      * List of our actions.
      */
     QList<QAction *> m_actions;

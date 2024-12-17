@@ -13,7 +13,7 @@
 #include <KActionMenu>
 #include <kbookmarkswidgets_export.h>
 
-/**
+/*!
  * @class KBookmarkActionMenu kbookmarkactionmenu.h KBookmarkActionMenu
  *
  * A wrapper around KActionMenu to provide a nice constructor for bookmark groups.
