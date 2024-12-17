@@ -16,10 +16,12 @@
 class KBookmark;
 class KBookmarkOwner;
 
-/**
- * @class KBookmarkAction kbookmarkaction.h KBookmarkAction
+/*!
+ * \class KBookmarkAction
+ * \inmodule KBookmarks
  *
- * This class is a QAction for bookmarks.
+ * \brief This class is a QAction for bookmarks.
+ *
  * It provides a nice constructor.
  * And on triggered uses the owner to open the bookmark.
  */
@@ -27,10 +29,16 @@ class KBOOKMARKS_EXPORT KBookmarkAction : public QAction, public KBookmarkAction
 {
     Q_OBJECT
 public:
+    /*!
+     *
+     */
     KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent);
     ~KBookmarkAction() override;
 
 public Q_SLOTS:
+    /*!
+     *
+     */
     void slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km);
 
 private Q_SLOTS:
