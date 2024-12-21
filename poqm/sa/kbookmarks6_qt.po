@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-12-14 01:48+0530\n"
+"PO-Revision-Date: 2024-12-20 21:51+0530\n"
 "Last-Translator: kali <skkalwar999@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
 "Language: sa\n"
@@ -180,7 +180,7 @@ msgstr "%1 मध्ये नूतनं बुकमार्कपुटं 
 #: widgets/kbookmarkdialog.cpp:345
 msgctxt "KBookmarkDialog|@label:textbox"
 msgid "New folder:"
-msgstr "नवीनं पुटम् : १."
+msgstr "नवीनं पुटम् :"
 
 #: widgets/kbookmarkdialog.cpp:366
 msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
