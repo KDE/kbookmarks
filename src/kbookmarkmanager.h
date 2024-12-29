@@ -166,8 +166,6 @@ private:
     // consts added to avoid a copy-and-paste of internalDocument
     KBOOKMARKS_NO_EXPORT void parse() const;
 
-    KBOOKMARKS_NO_EXPORT void startKEditBookmarks(const QStringList &args);
-
 private:
     std::unique_ptr<KBookmarkManagerPrivate> const d;
 
