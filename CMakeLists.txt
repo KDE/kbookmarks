@@ -49,7 +49,7 @@ find_package(KF6WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 
 ecm_install_po_files_as_qm(poqm)
 ecm_set_disabled_deprecation_versions(
-    QT 6.8.0
+    QT 6.9.0
     KF 6.12.0
 )
 
