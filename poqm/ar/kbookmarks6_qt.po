@@ -189,37 +189,37 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "العلامات"
 
-#: widgets/kbookmarkmenu.cpp:242
+#: widgets/kbookmarkmenu.cpp:231
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "افتح المجلد في ألسنة"
 
-#: widgets/kbookmarkmenu.cpp:246
+#: widgets/kbookmarkmenu.cpp:235
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "افتح كل العلامات في هذا المجلد كَلسان جديد."
 
-#: widgets/kbookmarkmenu.cpp:262
+#: widgets/kbookmarkmenu.cpp:251
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "علّم الألسنة كَمجلد…"
 
-#: widgets/kbookmarkmenu.cpp:270
+#: widgets/kbookmarkmenu.cpp:259
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "أضف مجلد علامات لكل الألسنة المفتوحة."
 
-#: widgets/kbookmarkmenu.cpp:309
+#: widgets/kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "حرّر مجموعة العلامات في نافذة منفصلة"
 
-#: widgets/kbookmarkmenu.cpp:331
+#: widgets/kbookmarkmenu.cpp:320
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "مجلد علامات جديد…"
 
-#: widgets/kbookmarkmenu.cpp:333
+#: widgets/kbookmarkmenu.cpp:322
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "أنشئ مجلد علامات جديد في هذه القائمة"

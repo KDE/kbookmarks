@@ -262,47 +262,47 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Blêdwizers"
 
-#: widgets/kbookmarkmenu.cpp:242
+#: widgets/kbookmarkmenu.cpp:231
 #, fuzzy
 #| msgid "Open Folder in Bookmark Editor"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Map yn ljeppers iepenje"
 
-#: widgets/kbookmarkmenu.cpp:246
+#: widgets/kbookmarkmenu.cpp:235
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:262
+#: widgets/kbookmarkmenu.cpp:251
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "Flappen bewarje as blêdwizermap..."
 
-#: widgets/kbookmarkmenu.cpp:270
+#: widgets/kbookmarkmenu.cpp:259
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Meitsje in map mei blêdwizers oan foar alle iepen flappen."
 
-#: widgets/kbookmarkmenu.cpp:309
+#: widgets/kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Pas jo blêdwizerkolleksje oan yn in apart finster"
 
-#: widgets/kbookmarkmenu.cpp:331
+#: widgets/kbookmarkmenu.cpp:320
 #, fuzzy
 #| msgid "&New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "Nije blêdwizermap oanmeitsje"
 
-#: widgets/kbookmarkmenu.cpp:333
+#: widgets/kbookmarkmenu.cpp:322
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"

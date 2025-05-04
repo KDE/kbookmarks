@@ -230,7 +230,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Хатчӯбҳо"
 
-#: widgets/kbookmarkmenu.cpp:242
+#: widgets/kbookmarkmenu.cpp:231
 #, fuzzy
 #| msgctxt "KBookmarkContextMenu|"
 #| msgid "Open Folder in Tabs"
@@ -238,7 +238,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Кушодани ҷузвадон дар варақаҳо"
 
-#: widgets/kbookmarkmenu.cpp:246
+#: widgets/kbookmarkmenu.cpp:235
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Open all bookmarks in this folder as a new tab."
@@ -246,7 +246,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Кушодани ҳамаи хатчӯбҳо дар ин ҷузвадон ҳамчун варақаи нав."
 
-#: widgets/kbookmarkmenu.cpp:262
+#: widgets/kbookmarkmenu.cpp:251
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Bookmark Tabs as Folder..."
@@ -254,7 +254,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "Хатчӯби варақаҳоро ҳамчун ҷузвадон гузоред..."
 
-#: widgets/kbookmarkmenu.cpp:270
+#: widgets/kbookmarkmenu.cpp:259
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Add a folder of bookmarks for all open tabs."
@@ -262,7 +262,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Илова кардани ҷузвадони хатчӯбҳо барои ҳамаи варақаҳои кушода."
 
-#: widgets/kbookmarkmenu.cpp:309
+#: widgets/kbookmarkmenu.cpp:298
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Edit your bookmark collection in a separate window"
@@ -270,7 +270,7 @@ msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Таҳрир кардани маҷмӯаи хатчӯбҳо дар равзанаи алоҳида"
 
-#: widgets/kbookmarkmenu.cpp:331
+#: widgets/kbookmarkmenu.cpp:320
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "New Bookmark Folder..."
@@ -278,7 +278,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "Ҷузвадони хатчӯбҳои нав..."
 
-#: widgets/kbookmarkmenu.cpp:333
+#: widgets/kbookmarkmenu.cpp:322
 #, fuzzy
 #| msgctxt "KBookmarkMenu|"
 #| msgid "Create a new bookmark folder in this menu"
