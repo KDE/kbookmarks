@@ -12,6 +12,8 @@ excludedirs += widgets
 
 outputformats = HTML
 
+navigation.landingpage  = "KBookmarks"
+
 depends += \
     kde \
     qtcore \
