@@ -32,3 +32,5 @@ qhp.KBookmarks.subprojects.classes.title = C++ Classes
 qhp.KBookmarks.subprojects.classes.indexTitle = KBookmarks C++ Classes
 qhp.KBookmarks.subprojects.classes.selectors = class fake:headerfile
 qhp.KBookmarks.subprojects.classes.sortPages = true
+
+tagfile = kbookmarks.tags
