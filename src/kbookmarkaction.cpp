@@ -7,6 +7,7 @@
 */
 
 #include "kbookmarkaction.h"
+#include "kbookmarkaction_p.h"
 #include "kbookmarkowner.h"
 
 #include <QDesktopServices>
@@ -15,7 +16,7 @@
 KBookmarkAction::KBookmarkAction(const KBookmark &bk, KBookmarkOwner *owner, QObject *parent)
     : QAction(bk.text().replace(QLatin1Char('&'), QLatin1String("&&")), parent)
     , KBookmarkActionInterface(bk)
-    , m_pOwner(owner)
+    , d(new KBookmarkActionPrivate(this, owner))
 {
     setIcon(QIcon::fromTheme(bookmark().icon()));
     setIconText(text());
@@ -35,15 +36,15 @@ KBookmarkAction::~KBookmarkAction()
 
 void KBookmarkAction::slotTriggered()
 {
-    slotSelected(QGuiApplication::mouseButtons(), QGuiApplication::keyboardModifiers());
+    slotSelected(d->buttons, QGuiApplication::keyboardModifiers());
 }
 
 void KBookmarkAction::slotSelected(Qt::MouseButtons mb, Qt::KeyboardModifiers km)
 {
-    if (!m_pOwner) {
+    if (!d->owner) {
         QDesktopServices::openUrl(bookmark().url());
     } else {
-        m_pOwner->openBookmark(bookmark(), mb, km);
+        d->owner->openBookmark(bookmark(), mb, km);
     }
 }
 

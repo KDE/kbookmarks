@@ -14,6 +14,7 @@
 #include <QAction>
 
 class KBookmark;
+class KBookmarkActionPrivate;
 class KBookmarkOwner;
 
 /*!
@@ -45,7 +46,8 @@ private Q_SLOTS:
     KBOOKMARKS_NO_EXPORT void slotTriggered();
 
 private:
-    KBookmarkOwner *const m_pOwner;
+    friend KBookmarkActionPrivate;
+    KBookmarkActionPrivate *d;
 };
 
 #endif

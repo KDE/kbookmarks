@@ -11,6 +11,7 @@
 
 #include "../kbookmarksettings_p.h"
 #include "kbookmarkaction.h"
+#include "kbookmarkaction_p.h"
 #include "kbookmarkactionmenu.h"
 #include "kbookmarkcontextmenu.h"
 #include "kbookmarkdialog.h"
@@ -25,11 +26,71 @@
 #include <QApplication>
 #include <QMenu>
 #include <QMessageBox>
+#include <QMouseEvent>
+#include <QPointer>
 #include <QStandardPaths>
+
+class KBookmarkMenuEventFilter : public QObject
+{
+public:
+    KBookmarkMenuEventFilter(KBookmarkMenu *bMenu, QMenu *const qMenu)
+        : bookmarkMenu(bMenu)
+        , parentMenu(qMenu)
+    {
+        parentMenu->installEventFilter(this);
+    }
+
+    ~KBookmarkMenuEventFilter()
+    {
+        if (parentMenu) {
+            parentMenu->removeEventFilter(this);
+        }
+    }
+
+    bool eventFilter(QObject *watched, QEvent *event) override
+    {
+        Q_ASSERT(watched == parentMenu);
+
+        if (inFilter) {
+            return false;
+        }
+
+        if (event->type() != QEvent::MouseButtonRelease) {
+            return false;
+        }
+
+        const auto *me = static_cast<QMouseEvent *>(event);
+
+        QAction *action = parentMenu->actionAt(me->position().toPoint());
+        KBookmarkAction *bAction = dynamic_cast<KBookmarkAction *>(action);
+        if (!bAction) {
+            return false;
+        }
+
+        KBookmarkActionPrivate *bActionPrivate = KBookmarkActionPrivate::get(bAction);
+        bActionPrivate->buttons = me->button() | me->buttons();
+        inFilter = true;
+        QCoreApplication::sendEvent(parentMenu, event);
+        inFilter = false;
+        bActionPrivate->buttons = Qt::NoButton;
+
+        return true;
+    }
+
+    bool inFilter = false;
+    KBookmarkMenu *const bookmarkMenu;
+    QPointer<QMenu> parentMenu;
+};
 
 class KBookmarkMenuPrivate
 {
 public:
+    KBookmarkMenuPrivate(KBookmarkMenu *bookmarkMenu, QMenu *const menu)
+        : parentMenu(menu)
+        , eventFilter(bookmarkMenu, menu)
+    {
+    }
+
     QAction *newBookmarkFolderAction = nullptr;
     QAction *addBookmarkAction = nullptr;
     QAction *bookmarksToFolderAction = nullptr;
@@ -39,18 +100,18 @@ public:
     bool dirty;
     KBookmarkManager *manager;
     KBookmarkOwner *owner;
-    QMenu *parentMenu;
+    QMenu *const parentMenu;
     QString parentAddress;
+    KBookmarkMenuEventFilter eventFilter;
 };
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager *manager, KBookmarkOwner *_owner, QMenu *_parentMenu)
     : QObject()
-    , d(new KBookmarkMenuPrivate())
+    , d(new KBookmarkMenuPrivate(this, _parentMenu))
 {
     d->isRoot = true;
     d->manager = manager;
     d->owner = _owner;
-    d->parentMenu = _parentMenu;
     d->parentAddress = QString(); // TODO KBookmarkAdress::root
     // TODO KDE5 find a QMenu equvalnet for this one
     // m_parentMenu->setKeyboardShortcutsEnabled( true );
@@ -94,12 +155,11 @@ void KBookmarkMenu::addActions()
 
 KBookmarkMenu::KBookmarkMenu(KBookmarkManager *mgr, KBookmarkOwner *_owner, QMenu *_parentMenu, const QString &parentAddress)
     : QObject()
-    , d(new KBookmarkMenuPrivate())
+    , d(new KBookmarkMenuPrivate(this, _parentMenu))
 {
     d->isRoot = false;
     d->manager = mgr;
     d->owner = _owner;
-    d->parentMenu = _parentMenu;
     d->parentAddress = parentAddress;
 
     connect(_parentMenu, &QMenu::aboutToShow, this, &KBookmarkMenu::slotAboutToShow);
