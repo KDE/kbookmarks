@@ -188,17 +188,17 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Əlfəcinlər"
 
-#: widgets/kbookmarkmenu.cpp:231
+#: widgets/kbookmarkmenu.cpp:291
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Qovluğu vərəqdə açmaq"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:295
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Bütün qovluqdakı əlfəcinləri yeni vərəq kimi açmaq"
 
-#: widgets/kbookmarkmenu.cpp:251
+#: widgets/kbookmarkmenu.cpp:311
 #, fuzzy
 #| msgctxt "KBookmarkMenu|@action:inmenu"
 #| msgid "Bookmark Tabs as Folder..."
@@ -206,17 +206,17 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "Əlfəcin vərəqləri qovluq kimi..."
 
-#: widgets/kbookmarkmenu.cpp:259
+#: widgets/kbookmarkmenu.cpp:319
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Əlfəcinlərin qovluğunu bütün açıq vərəqlərə əlavə etmək"
 
-#: widgets/kbookmarkmenu.cpp:298
+#: widgets/kbookmarkmenu.cpp:358
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Əlfəcin kolleksiyanız başqa bir pəncərədə düzəş edin"
 
-#: widgets/kbookmarkmenu.cpp:320
+#: widgets/kbookmarkmenu.cpp:380
 #, fuzzy
 #| msgctxt "KBookmarkMenu|@action:inmenu"
 #| msgid "New Bookmark Folder..."
@@ -224,7 +224,7 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "Yeni Əlfəcin Qovluğu..."
 
-#: widgets/kbookmarkmenu.cpp:322
+#: widgets/kbookmarkmenu.cpp:382
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Bu menyuda yeni əlfəcin qovluğu yaratmaq"

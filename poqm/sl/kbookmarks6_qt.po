@@ -205,37 +205,37 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Zaznamki"
 
-#: widgets/kbookmarkmenu.cpp:231
+#: widgets/kbookmarkmenu.cpp:291
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Odpri mapo v zavihkih"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:295
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "Odpri vse zaznamke v tej mapi kot novi zavihek"
 
-#: widgets/kbookmarkmenu.cpp:251
+#: widgets/kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "Zaznamuj zavihke kot mapo…"
 
-#: widgets/kbookmarkmenu.cpp:259
+#: widgets/kbookmarkmenu.cpp:319
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "Dodaj mapo z zaznamki za vse odprte zavihke"
 
-#: widgets/kbookmarkmenu.cpp:298
+#: widgets/kbookmarkmenu.cpp:358
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "Uredite vašo zbirko zaznamkov v ločenem oknu"
 
-#: widgets/kbookmarkmenu.cpp:320
+#: widgets/kbookmarkmenu.cpp:380
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "Nova mapa z zaznamki…"
 
-#: widgets/kbookmarkmenu.cpp:322
+#: widgets/kbookmarkmenu.cpp:382
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "Ustvari novo mapo z zaznamki v tem meniju"

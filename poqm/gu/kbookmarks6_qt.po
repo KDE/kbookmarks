@@ -257,49 +257,49 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "બુકમાર્કો"
 
-#: widgets/kbookmarkmenu.cpp:231
+#: widgets/kbookmarkmenu.cpp:291
 #, fuzzy
 #| msgid "Open Folder in Tabs"
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "ફોલ્ડર ટેબ્સમાં ખોલો"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:295
 #, fuzzy
 #| msgid "Open all bookmarks in this folder as a new tab."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "આ ફોલ્ડરનાં બધા બુકમાર્કોને નવી ટેબ તરીકે ખોલો."
 
-#: widgets/kbookmarkmenu.cpp:251
+#: widgets/kbookmarkmenu.cpp:311
 #, fuzzy
 #| msgid "Bookmark Tabs as Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "ટેબ્સને ફોલ્ડર તરીકે બુકમાર્ક કરો..."
 
-#: widgets/kbookmarkmenu.cpp:259
+#: widgets/kbookmarkmenu.cpp:319
 #, fuzzy
 #| msgid "Add a folder of bookmarks for all open tabs."
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "બધી ખુલ્લી ટેબ્સ માટે બુકમાર્ક્સ ફોલ્ડર ઉમેરો"
 
-#: widgets/kbookmarkmenu.cpp:298
+#: widgets/kbookmarkmenu.cpp:358
 #, fuzzy
 #| msgid "Edit your bookmark collection in a separate window"
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "તમારાં બુકમાર્ક સંગ્રહને અલગ વિન્ડોમાં ફેરફાર કરો"
 
-#: widgets/kbookmarkmenu.cpp:320
+#: widgets/kbookmarkmenu.cpp:380
 #, fuzzy
 #| msgid "New Bookmark Folder..."
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "નવું બુકમાર્ક ફોલ્ડર..."
 
-#: widgets/kbookmarkmenu.cpp:322
+#: widgets/kbookmarkmenu.cpp:382
 #, fuzzy
 #| msgid "Create a new bookmark folder in this menu"
 msgctxt "KBookmarkMenu|@info:tooltip"

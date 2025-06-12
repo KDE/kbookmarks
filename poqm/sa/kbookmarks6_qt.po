@@ -187,37 +187,37 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "बुकमार्क्स"
 
-#: widgets/kbookmarkmenu.cpp:231
+#: widgets/kbookmarkmenu.cpp:291
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Tabs इत्यत्र Folder उद्घाटयन्तु"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:295
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "अस्मिन् पुटे सर्वाणि पुस्तकचिह्नानि नूतनट्याब्रूपेण उद्घाटयन्तु"
 
-#: widgets/kbookmarkmenu.cpp:251
+#: widgets/kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "पुटरूपेण ट्याब्स् बुकमार्कं कुर्वन्तु…"
 
-#: widgets/kbookmarkmenu.cpp:259
+#: widgets/kbookmarkmenu.cpp:319
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "सर्वेषां उद्घाटितानां ट्याब्स् कृते बुकमार्क्-पुटं योजयन्तु"
 
-#: widgets/kbookmarkmenu.cpp:298
+#: widgets/kbookmarkmenu.cpp:358
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "पृथक् विण्डो मध्ये स्वस्य बुकमार्कसङ्ग्रहं सम्पादयन्तु"
 
-#: widgets/kbookmarkmenu.cpp:320
+#: widgets/kbookmarkmenu.cpp:380
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "नवीनं बुकमार्कपुटम्…"
 
-#: widgets/kbookmarkmenu.cpp:322
+#: widgets/kbookmarkmenu.cpp:382
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "अस्मिन् मेन्यू मध्ये नूतनं बुकमार्कपुटं रचयन्तु"

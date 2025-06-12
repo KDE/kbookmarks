@@ -189,37 +189,37 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "책갈피"
 
-#: widgets/kbookmarkmenu.cpp:231
+#: widgets/kbookmarkmenu.cpp:291
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "폴더를 탭으로 열기"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:295
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr "이 폴더의 모든 책갈피를 새 탭으로 엽니다."
 
-#: widgets/kbookmarkmenu.cpp:251
+#: widgets/kbookmarkmenu.cpp:311
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder…"
 msgstr "탭을 책갈피 폴더에 추가…"
 
-#: widgets/kbookmarkmenu.cpp:259
+#: widgets/kbookmarkmenu.cpp:319
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr "모든 열린 탭을 새 책갈피 폴더로 추가합니다"
 
-#: widgets/kbookmarkmenu.cpp:298
+#: widgets/kbookmarkmenu.cpp:358
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr "새 창에서 책갈피 모음집 편집하기"
 
-#: widgets/kbookmarkmenu.cpp:320
+#: widgets/kbookmarkmenu.cpp:380
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "New Bookmark Folder…"
 msgstr "새 책갈피 폴더…"
 
-#: widgets/kbookmarkmenu.cpp:322
+#: widgets/kbookmarkmenu.cpp:382
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Create a new bookmark folder in this menu"
 msgstr "이 메뉴에 새 책갈피 폴더 만들기"

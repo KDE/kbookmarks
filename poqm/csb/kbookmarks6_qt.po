@@ -243,7 +243,7 @@ msgctxt "KBookmarkDialog|name of the container of all browser bookmarks"
 msgid "Bookmarks"
 msgstr "Pòkôżë załóżczi"
 
-#: widgets/kbookmarkmenu.cpp:231
+#: widgets/kbookmarkmenu.cpp:291
 #, fuzzy
 #| msgid "One Folder"
 #| msgid_plural "%1 Folders"
@@ -251,12 +251,12 @@ msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
 msgstr "Jeden katalog"
 
-#: widgets/kbookmarkmenu.cpp:235
+#: widgets/kbookmarkmenu.cpp:295
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:251
+#: widgets/kbookmarkmenu.cpp:311
 #, fuzzy
 #| msgid ""
 #| "Create new folder in:\n"
@@ -267,17 +267,17 @@ msgstr ""
 "Ùsôdzë nowi katalog w:\n"
 "%1"
 
-#: widgets/kbookmarkmenu.cpp:259
+#: widgets/kbookmarkmenu.cpp:319
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Add a folder of bookmarks for all open tabs"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:298
+#: widgets/kbookmarkmenu.cpp:358
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Edit your bookmark collection in a separate window"
 msgstr ""
 
-#: widgets/kbookmarkmenu.cpp:320
+#: widgets/kbookmarkmenu.cpp:380
 #, fuzzy
 #| msgid ""
 #| "Create new folder in:\n"
@@ -288,7 +288,7 @@ msgstr ""
 "Ùsôdzë nowi katalog w:\n"
 "%1"
 
-#: widgets/kbookmarkmenu.cpp:322
+#: widgets/kbookmarkmenu.cpp:382
 #, fuzzy
 #| msgid ""
 #| "Create new folder in:\n"
