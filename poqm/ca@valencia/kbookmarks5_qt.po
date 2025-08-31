@@ -149,7 +149,7 @@ msgstr "Afig a les adreces d'interés"
 #: kbookmarkdialog.cpp:285
 msgctxt "KBookmarkDialog|@title:window"
 msgid "Select Folder"
-msgstr "Seleccioneu una carpeta"
+msgstr "Trieu una carpeta"
 
 #: kbookmarkdialog.cpp:313
 msgctxt "KBookmarkDialog|@title:window"
