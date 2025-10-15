@@ -541,7 +541,7 @@ void KBookmark::updateAccessMetadata()
 {
     // qCDebug(KBOOKMARKS_LOG) << "KBookmark::updateAccessMetadata " << address() << " " << url();
 
-    const uint timet = QDateTime::currentDateTimeUtc().toSecsSinceEpoch();
+    const quint64 timet = QDateTime::currentSecsSinceEpoch();
     setMetaDataItem(QStringLiteral("time_added"), QString::number(timet), DontOverwriteMetaData);
     setMetaDataItem(QStringLiteral("time_visited"), QString::number(timet));
 
