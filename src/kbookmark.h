@@ -449,7 +449,7 @@ private:
  * \inmodule KBookmarks
  * \inheaderfile KBookmark
  *
- * A class to traverse bookarm groups
+ * A class to traverse bookmark groups
  */
 class KBOOKMARKS_EXPORT KBookmarkGroupTraverser
 {
