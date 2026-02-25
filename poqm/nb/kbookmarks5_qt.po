@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-14 04:54+0000\n"
-"PO-Revision-Date: 2026-02-07 00:07+0100\n"
+"PO-Revision-Date: 2026-02-23 13:50+0100\n"
 "Last-Translator: Kjetil Sorlund <translate@sorlund.no>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
 "Language: nb\n"
@@ -68,7 +68,7 @@ msgstr "Slett bokmerke"
 #: kbookmarkcontextmenu.cpp:80
 msgctxt "KBookmarkContextMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
-msgstr "Åpne mappen i faner"
+msgstr "Åpne mappa i faner"
 
 #: kbookmarkcontextmenu.cpp:105
 msgctxt "KBookmarkContextMenu|@info"
@@ -92,7 +92,7 @@ msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
 "\"%1\"?"
 msgstr ""
-"Er du sikker på at den bokmerkede mappen\n"
+"Er du sikker på at den bokmerkede mappa\n"
 "«%1» skal fjernes?"
 
 #: kbookmarkcontextmenu.cpp:136
@@ -251,12 +251,12 @@ msgstr ""
 #: kbookmarkmenu.cpp:270
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Open Folder in Tabs"
-msgstr "Åpne mappen i faner"
+msgstr "Åpne mappa i faner"
 
 #: kbookmarkmenu.cpp:274
 msgctxt "KBookmarkMenu|@info:tooltip"
 msgid "Open all bookmarks in this folder as a new tab"
-msgstr "Åpne alle bokmerkene i denne mappen i ny fane"
+msgstr "Åpne alle bokmerkene i denne mappa i ny fane"
 
 #: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
