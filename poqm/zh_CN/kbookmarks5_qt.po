@@ -18,7 +18,7 @@ msgstr ""
 #: kbookmark.cpp:318
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
-msgstr "--- 分隔线 ---"
+msgstr "--- 间隔 ---"
 
 #: kbookmarkcontextmenu.cpp:52
 msgctxt "KBookmarkContextMenu|@action:inmenu"
