@@ -18,7 +18,7 @@ msgstr ""
 #: kbookmark.cpp:316
 msgctxt "KBookmark|Bookmark separator"
 msgid "--- separator ---"
-msgstr "--- 间隔 ---"
+msgstr "--- 分隔线 ---"
 
 #: kbookmarkmanager.cpp:267
 #, qt-format
