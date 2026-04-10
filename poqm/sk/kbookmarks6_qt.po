@@ -47,7 +47,7 @@ msgstr ""
 #: keditbookmarks.cpp:59
 msgctxt "QObject|"
 msgid "keditbookmarks could not be started"
-msgstr ""
+msgstr "keditbookmarks sa nepodarilo spustiť"
 
 #: keditbookmarks.cpp:66
 msgctxt "QObject|"
