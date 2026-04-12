@@ -3,7 +3,7 @@
 # translation of kdelibs.po to
 # translation of kdelibs.po to
 # translation of kdelibs.po to
-# SPDX-FileCopyrightText: 2011, 2012, 2014, 2016, 2017, 2021, 2022, 2023, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+# SPDX-FileCopyrightText: 2011, 2012, 2014, 2016, 2017, 2021, 2022, 2023, 2024, 2026 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 # Ostatnie poprawki przed 2.0 Jacek Stolarczyk <jstolarz@kde.org>
 # Jacek Stolarczyk <jstolarz@kde.org>, 2001.
 # Piotr Roszatycki <dexter@debian.org>, 1997-2000.
@@ -21,15 +21,16 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2022-08-06 09:47+0200\n"
+"PO-Revision-Date: 2026-04-11 09:12+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
-"Language-Team: Polish <kde-i18n-doc@kde.org>\n"
+"Language-Team: pl\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 25.08.2\n"
 "X-Qt-Contexts: true\n"
 
 #: kbookmark.cpp:318
@@ -264,7 +265,7 @@ msgstr "Otwórz wszystkie zakładki w tym katalogu jako nową kartę"
 #: kbookmarkmenu.cpp:290
 msgctxt "KBookmarkMenu|@action:inmenu"
 msgid "Bookmark Tabs as Folder..."
-msgstr "Utwórz katalog zakładek z kart..."
+msgstr "Utwórz katalog zakładek z kart…"
 
 #: kbookmarkmenu.cpp:298
 msgctxt "KBookmarkMenu|@info:tooltip"
