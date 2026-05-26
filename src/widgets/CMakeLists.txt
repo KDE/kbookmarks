@@ -42,11 +42,14 @@ ecm_generate_export_header(KF6BookmarksWidgets
 
 target_include_directories(KF6BookmarksWidgets INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarksWidgets>")
 
-target_link_libraries(KF6BookmarksWidgets PUBLIC Qt6::Widgets KF6::WidgetsAddons)
-target_link_libraries(KF6BookmarksWidgets PRIVATE
-    KF6::Bookmarks
-    KF6::ConfigCore # for KAuthorized
-    KF6::ConfigGui # for KStandardAction
+target_link_libraries(KF6BookmarksWidgets
+    PUBLIC
+        Qt6::Widgets
+        KF6::WidgetsAddons
+        KF6::Bookmarks
+    PRIVATE
+        KF6::ConfigCore # for KAuthorized
+        KF6::ConfigGui # for KStandardAction
 )
 
 ecm_generate_headers(KBookmarksWidgets_HEADERS
