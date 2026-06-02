@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2014-03-28 02:03+0000\n"
-"PO-Revision-Date: 2026-05-11 20:53-0400\n"
+"PO-Revision-Date: 2026-05-30 17:04-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
@@ -102,7 +102,7 @@ msgctxt "KBookmarkContextMenu|"
 msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
 "\"%1\"?"
-msgstr "خەتكۈش قىسقۇچ «%1» نى راستتىنلا چىقىرىۋېتەمسىز؟"
+msgstr "خەتكۈش قىسقۇچ «%1»نى راستتىنلا چىقىرىۋېتەمسىز؟"
 
 #: widgets/kbookmarkcontextmenu.cpp:143
 #, qt-format
