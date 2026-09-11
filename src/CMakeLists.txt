@@ -54,7 +54,7 @@ target_link_libraries(KF6Bookmarks PRIVATE
     KF6::ConfigCore # for KConfigGroup
 )
 
-ecm_generate_headers(KBookmarks_HEADERS
+ecm_generate_headers(KBookmarks_CamelCase_HEADERS
   HEADER_NAMES
   KBookmark
   KBookmarkAction
@@ -72,6 +72,7 @@ install(TARGETS KF6Bookmarks EXPORT KF6BookmarksTargets ${KF_INSTALL_TARGETS_DEF
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/kbookmarks_export.h
   ${KBookmarks_HEADERS}
+  ${KBookmarks_CamelCase_HEADERS}
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KBookmarks COMPONENT Devel
 )
 
@@ -79,4 +80,17 @@ ecm_qt_install_logging_categories(
     EXPORT KBOOKMARKS
     FILE kbookmarks.categories
     DESTINATION ${KDE_INSTALL_LOGGINGCATEGORIESDIR}
+)
+
+ecm_add_installed_library_check(KF6Bookmarks
+    PACKAGE_NAME "KF6Bookmarks"
+    PACKAGE_TARGET_NAMESPACE "KF6::"
+)
+
+ecm_installed_library_check_include_strings(KF6Bookmarks
+    HEADERS ${KBookmarks_CamelCase_HEADERS}
+)
+
+ecm_installed_library_check_version_preprocessor_macros(KF6Bookmarks
+    PREFIX KBOOKMARKS
 )
