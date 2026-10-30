@@ -14,7 +14,6 @@
 #include "kbookmark.h"
 
 class QString;
-class KBookmark;
 class KBookmarkGroup;
 
 class KBookmarkTreeItem : public QTreeWidgetItem

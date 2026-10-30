@@ -11,10 +11,6 @@
 
 #include <kbookmarks_export.h>
 
-class QString;
-class KBookmark;
-class KBookmarkGroup;
-
 #define KEDITBOOKMARKS_BINARY "keditbookmarks"
 
 class KBOOKMARKS_EXPORT KBookmarkSettings
