@@ -32,7 +32,6 @@ public:
     };
 
     void setBrowserMode(bool browserMode);
-    bool browserMode() const;
 
     OpenResult openForFile(const QString &file);
 
